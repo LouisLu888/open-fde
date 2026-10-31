@@ -138,7 +138,7 @@ await page.locator('#importFile').setInputFiles({name:'bad.json',mimeType:'appli
 await page.waitForFunction(()=>document.getElementById('toast').textContent.startsWith('Could not import'));
 assert.equal(await page.locator('#progressSummary').textContent(),'1 / 36 roadmap tasks');
 const downloadPromise=page.waitForEvent('download');
-await page.getByRole('link',{name:'Download HTML'}).click();
+await page.locator('#downloadHtml').click();
 const download=await downloadPromise;
 assert.equal(await download.failure(),null);
 const downloaded=readFileSync(await download.path());
@@ -171,7 +171,7 @@ await page.locator('#globalResults').waitFor({state:'visible'});
 assert.match(await page.locator('#global-hit-0').textContent(),/Permission revocation/);
 await page.keyboard.press('Enter');
 await page.locator('#fieldcraft').waitFor({state:'visible'});
-assert.match(await page.evaluate(()=>document.activeElement.querySelector('h3')?.textContent||''),/Permission revocation/);
+await page.waitForFunction(()=>/Permission revocation/.test(document.activeElement.querySelector('h3')?.textContent||''),null,{timeout:3000});
 assert(await page.locator('#globalResults').isHidden());
 await page.locator('.nav a[href="#library"]').click();
 await page.locator('[data-search="library"]').fill('impossible-search-zz');

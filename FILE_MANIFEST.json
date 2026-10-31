@@ -5,8 +5,8 @@
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 125,
-      "sha256": "1236df0f10aabd08601073382981ae9c79f713edf03dd4717cdfd478bc2f7b26"
+      "bytes": 152,
+      "sha256": "899d6ad3803f3cf7e3fb2c594ca3c705d4a3eb898cfaeccd2dd69489eaf0ed0e"
     },
     {
       "path": "AGENTS.md",
@@ -50,43 +50,43 @@
     },
     {
       "path": "outputs/FDE_SPE_Field_Academy.html",
-      "bytes": 562805,
-      "sha256": "f2949911a2b1df652397ff5f1ad84cb40fa951505c1d65a7684450e5b86018eb"
+      "bytes": 573481,
+      "sha256": "7c4a5ddb5361ca2843856842f5b81678a7ee46394a599f784c607d874c1cd02b"
     },
     {
       "path": "package-lock.json",
-      "bytes": 1802,
-      "sha256": "934e2bc6745b15d6a00301f4d09cde966aa45c211d158bcf9f067ed84455ab8c"
+      "bytes": 16131,
+      "sha256": "be506739b7c3ab4eb519f05dc6a8dfcc8789e79b056cc490066095ea553866ae"
     },
     {
       "path": "package.json",
-      "bytes": 711,
-      "sha256": "65922ec79982c283f00cb95e216f441884eb297ca367bf5af6ca8be954ac8eef"
+      "bytes": 863,
+      "sha256": "44785d63787df428caff248516306c3c9863b5019dc610ad027d90f3513ef3bf"
     },
     {
       "path": "previews/desktop-preview.png",
-      "bytes": 346559,
-      "sha256": "557714a6301c09cadf82d89b57a178fc74df4952b3690fe7d13ce388821bf1e9"
+      "bytes": 121119,
+      "sha256": "dc38e7e56afe2d2bf26a013480dbbe2cbd849c60f8fd6ff08de0b696b7619a98"
     },
     {
       "path": "previews/mobile-preview.png",
-      "bytes": 215208,
-      "sha256": "ac579b48347c9c89156e098715346b4bc977d2de9ba69e8082c5241e8b71cafd"
+      "bytes": 68846,
+      "sha256": "cec9901df0e0185bb97983d7457c1ad8d62e8d426c8be4d36b35d324ab557af9"
     },
     {
       "path": "previews/stories-mobile-preview.png",
-      "bytes": 232790,
-      "sha256": "5b2fc20e3b50676aa8c252b220d0fe9c31d11c946beca0ad30c5236a2fff18f7"
+      "bytes": 78628,
+      "sha256": "410c8e4860fc0077d7f663f6a84ef5b246a3f1530a5d811f39c07273d1db2cb9"
     },
     {
       "path": "previews/stories-preview.png",
-      "bytes": 223153,
-      "sha256": "7f4485dc33bb547b54f459ce8b4e8f743cabcac5992875c3d98e7a59784a90a0"
+      "bytes": 176238,
+      "sha256": "9b97afbdafdf27a51257b534d37a0e24147c417cf26eae612dcad10ba6795862"
     },
     {
       "path": "work/build.mjs",
-      "bytes": 83789,
-      "sha256": "7c77ab7263ef3fc102e4bb399b85f30033896b3b038fe262ac9c2d2ef791a6a1"
+      "bytes": 94574,
+      "sha256": "8b39287da86c53c99ec4b346980699f6a40be7b55be32a140baa9bda7e456dab"
     },
     {
       "path": "work/check-package.mjs",
@@ -115,8 +115,8 @@
     },
     {
       "path": "work/verify.mjs",
-      "bytes": 19561,
-      "sha256": "cd455c7f72cb26ce657747d2414a36b14f585383677090c568f8647f0b1508df"
+      "bytes": 19603,
+      "sha256": "2848dc3d09d0a17f5909454b6aeb71c06ba2aa95d3af18b8a6dd63c579baa8fa"
     },
     {
       "path": "README.md",
@@ -135,13 +135,13 @@
     },
     {
       "path": "work/og-image.mjs",
-      "bytes": 2870,
-      "sha256": "1a5f108a8bb7b776bb079496042742c1bcb30399a333db4d45be965eb5ad00ce"
+      "bytes": 1794,
+      "sha256": "acf4d572e68b81d8d344c623647c4721269b93ffe7abf73b86302b8d61d6f4b2"
     },
     {
       "path": "outputs/og.png",
-      "bytes": 65456,
-      "sha256": "18c193e6b6979ed7b2c98ef361d667ad5c60c291f9d691db2d5fe0bee8de04fd"
+      "bytes": 62830,
+      "sha256": "2fbdd3ea3d26be25f30ef9f23568ea9b5f9ce7351b4d4c9117419b32b766a1a9"
     },
     {
       "path": "work/fetch-jobs.mjs",
