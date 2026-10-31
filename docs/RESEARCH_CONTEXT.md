@@ -74,3 +74,4 @@ There is no promised unfinished feature. Start with an audit. Potential opportun
 
 - Simplified design: top nav, serif headings, full-width hero, folded disclaimers.
 - Removed progress tracking entirely: checkboxes, interview notes, self-assessment, export/import/reset, the My progress page, the share-text button, and local storage. Roadmap tasks are a plain list. The analytics disclosure moved to the footer.
+- List view everywhere: library, fieldcraft, cases, stories, interviews, people, routes and roadmap weeks are single-column rows (eyebrow, title, one-line meta, one summary, one disclosure). Library category and preset buttons removed; the select filters remain. GitHub link in the masthead and footer; CONTRIBUTING.md, CODEOWNERS and branch protection on main.

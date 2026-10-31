@@ -35,8 +35,8 @@
     },
     {
       "path": "docs/RESEARCH_CONTEXT.md",
-      "bytes": 8656,
-      "sha256": "10f9eec28afa1cbf010ef373005989f60baf1d7d7df3abb183ea33240fce3b22"
+      "bytes": 9018,
+      "sha256": "c8854851ad3b4f80497d4af400c1341f5c2c366e66e1297dd43d6e066742c7a3"
     },
     {
       "path": "docs/SOURCES.json",
@@ -50,8 +50,8 @@
     },
     {
       "path": "outputs/FDE_SPE_Field_Academy.html",
-      "bytes": 546822,
-      "sha256": "829727d513cf84d2989740d10e451cfecb1d2ba058798f3ef191348ac74a7c59"
+      "bytes": 508438,
+      "sha256": "421200a4e64b47b2f51052fbf3a9384917e23e29bb31d2b3d28e4c7682cb7bb6"
     },
     {
       "path": "package-lock.json",
@@ -65,28 +65,28 @@
     },
     {
       "path": "previews/desktop-preview.png",
-      "bytes": 120317,
-      "sha256": "3ce976b30a33f487fe0fdbc23bd1294126bee2b79e7c1e4b4228129425054493"
+      "bytes": 121096,
+      "sha256": "7234d67d38a97fe070225a5d87fe24d0353404876be2d7ebd6ce37aa703294e1"
     },
     {
       "path": "previews/mobile-preview.png",
-      "bytes": 68846,
-      "sha256": "cec9901df0e0185bb97983d7457c1ad8d62e8d426c8be4d36b35d324ab557af9"
+      "bytes": 67482,
+      "sha256": "7426daf152ad8ed45b289d78c7297438f530536603640039193d2b4db3cee7b6"
     },
     {
       "path": "previews/stories-mobile-preview.png",
-      "bytes": 78732,
-      "sha256": "2f3510c654ebe98ed29faf24fbc9b9f1effe9f1dedb982ec4b6036e2a526ae8e"
+      "bytes": 78528,
+      "sha256": "87593e4c8fd60c52dad2db47ea3818bea6b606b631de3dbfba2fb81a64f88e82"
     },
     {
       "path": "previews/stories-preview.png",
-      "bytes": 175476,
-      "sha256": "b57505be21a12fa64242ef59b29617c0b90ca085061e3558587db243cd3babd2"
+      "bytes": 130560,
+      "sha256": "cd2c398e0ce62a157f4fd4d8cd5120a51ff4702882187766c428d3899999d84b"
     },
     {
       "path": "work/build.mjs",
-      "bytes": 83475,
-      "sha256": "fb9d46907864ee56454ef50ed02f5553e134e155829bf52bed80624a5e81d819"
+      "bytes": 86266,
+      "sha256": "4abe6e12bff15f6843c47f1a60542dcde84dd27ce08518978ad1534a206dc2eb"
     },
     {
       "path": "work/check-package.mjs",
@@ -115,13 +115,13 @@
     },
     {
       "path": "work/verify.mjs",
-      "bytes": 16242,
-      "sha256": "2acfa742a89f5b102ed374ebc96cd707e365ab90b24e824969f7ed77cd764e12"
+      "bytes": 16610,
+      "sha256": "cad01d98f1a7d8479c710a377b258a5adadb45a88eb7175a40caf75e9a827677"
     },
     {
       "path": "README.md",
-      "bytes": 928,
-      "sha256": "778f786c1e1f94eb644ca8752049bdfd9cbfb94e14feeed34f2e73887fc776f4"
+      "bytes": 1357,
+      "sha256": "dd43ae44038642c8c335f8bffd3ffb8c2385b250543dddeec5f7c63a1b6c7533"
     },
     {
       "path": "wrangler.jsonc",
