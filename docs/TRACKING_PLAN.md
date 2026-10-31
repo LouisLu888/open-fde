@@ -29,3 +29,5 @@ Autocapture: page views, sessions, marketing attribution. Element clicks, form i
 Configure with `AMPLITUDE_API_KEY` (and `AMPLITUDE_SERVER_ZONE=EU` for EU projects) or `work/analytics/config.json` (`{"apiKey": "...", "serverZone": "US"}`). Without a key the build emits no loader.
 
 Verify with `npm run test:analytics`: serves the page as https://open-fde.ai in Playwright, loads the real SDK, intercepts ingestion so no live data is written, and checks event names, properties, opt-out, absence of private notes, and the clean download.
+
+Register the events above in Amplitude Data (category `open-fde.ai`, with descriptions and typed properties) via the Taxonomy API: `AMPLITUDE_SECRET_KEY=... npm run analytics:register` (`-- --dry-run` previews). The script parses this table, so edit the table first when events change; it is safe to re-run. The secret key is read from the environment only.
