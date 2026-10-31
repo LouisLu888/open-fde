@@ -1,0 +1,122 @@
+{
+  "edition": "3.1",
+  "packagedOn": "2026-10-31",
+  "note": "Checksums cover all shipped files except this manifest itself. Verify before editing.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 85,
+      "sha256": "792c8c3eacf1aa5bb9983f1d1fc2ecd88d4f31e616d5e38696a899ed8423b00b"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 1271,
+      "sha256": "c88547fd87acadc545ed9f98f79e9150dee561f4e9adc98ef9ec6506b796f5b1"
+    },
+    {
+      "path": "CONTINUE_WITH_AN_AGENT.md",
+      "bytes": 6220,
+      "sha256": "8405c7c7961728762d7aa861c6fc31889080de5ae25b5f68cbcaac353f615b4b"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 4762,
+      "sha256": "e133e3034a3b522e4bc3afc0641a124d9343817a2f6bad68919b4386bb66c9bc"
+    },
+    {
+      "path": "docs/CONTENT_INVENTORY.json",
+      "bytes": 80993,
+      "sha256": "aa609ad9109ab32f3979a05c8cf23dcd041e5194f51e39bf6230e10678eaf079"
+    },
+    {
+      "path": "docs/PACKAGE_TEST_REPORT.json",
+      "bytes": 1442,
+      "sha256": "fc204de408ecdfa7d15947f157be9d2f84b4b006bc6c46b3e4b20eaebe77b804"
+    },
+    {
+      "path": "docs/RESEARCH_CONTEXT.md",
+      "bytes": 7828,
+      "sha256": "c3b1c96a8ab949387f76157391ce98d13f901ddfc52ba4944a8bc2fcfa62f755"
+    },
+    {
+      "path": "docs/SOURCES.json",
+      "bytes": 35877,
+      "sha256": "73e3c8b2a57980d7beeb4eae4cd590bbef38b639ce70a056fdfe9a6f1ecc4026"
+    },
+    {
+      "path": "docs/VERIFICATION_BASELINE.json",
+      "bytes": 1354,
+      "sha256": "e33d2f2f0fab44f6a6a6ce30b94994a5da5770107101c6359e975a2d728892d3"
+    },
+    {
+      "path": "outputs/FDE_SPE_Field_Academy.html",
+      "bytes": 265106,
+      "sha256": "61dc3f5843742314c350729bd7b29e7f122ccc542738d103320f6e2e9699641f"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 1802,
+      "sha256": "934e2bc6745b15d6a00301f4d09cde966aa45c211d158bcf9f067ed84455ab8c"
+    },
+    {
+      "path": "package.json",
+      "bytes": 485,
+      "sha256": "1fb4cb65bbc2a724674932bf3ba5c5530507c7bb0c544abd13d7711f5e18e595"
+    },
+    {
+      "path": "previews/desktop-preview.png",
+      "bytes": 339699,
+      "sha256": "467f4a49332eb39aae87f6a87f875a2d761686190a994426a8e6c3c6c24c5958"
+    },
+    {
+      "path": "previews/mobile-preview.png",
+      "bytes": 211882,
+      "sha256": "8c16f48e2d16c565f64d3a88d5491ef7511643bd107a2e72a03ac7df73c54d7e"
+    },
+    {
+      "path": "previews/stories-mobile-preview.png",
+      "bytes": 229348,
+      "sha256": "bb3f89a7b57a829332a5581e2edfa7796460f0a73d0f1144cbfb498fd4f4e89a"
+    },
+    {
+      "path": "previews/stories-preview.png",
+      "bytes": 216370,
+      "sha256": "d903aa914a6d9c34ffd34859490ec00d9bd7e1ed4d0860647c87a9286b482575"
+    },
+    {
+      "path": "work/build.mjs",
+      "bytes": 66606,
+      "sha256": "a57628b1760727a2e07517fbd62c39a284e9b62611b1f901c6581fb9cbbbb516"
+    },
+    {
+      "path": "work/check-package.mjs",
+      "bytes": 618,
+      "sha256": "818fa0495bc5d949e8446a0fcfb9ea3bb281882291fd1a7f6209fc66d913ca46"
+    },
+    {
+      "path": "work/content.mjs",
+      "bytes": 29272,
+      "sha256": "38dc7425ca710884314c7a20d2d6d17db3aa6b66c008d826bee0225781cd3c58"
+    },
+    {
+      "path": "work/export-research.mjs",
+      "bytes": 796,
+      "sha256": "af76b122620300529db97ab81bc070d76c60342d0afe0b517c2494b4b2aeb9f3"
+    },
+    {
+      "path": "work/library.mjs",
+      "bytes": 43391,
+      "sha256": "c6d58633d758d214d3972f33b3894d29a3ad955021c87194d1c941cd277329f5"
+    },
+    {
+      "path": "work/stories.mjs",
+      "bytes": 13936,
+      "sha256": "b17408fa4182d9e546447ff7fe4f82e8060b1b0b08b763e7d92c408b96a1df6d"
+    },
+    {
+      "path": "work/verify.mjs",
+      "bytes": 14795,
+      "sha256": "8c873923611ad9df3abfe46213f63373f15af3e66dd79594928775ebb4e4d283"
+    }
+  ]
+}

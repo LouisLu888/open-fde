@@ -1,0 +1,1630 @@
+{
+  "categories": [
+    {
+      "id": "foundations",
+      "title": "Fundamental knowledge",
+      "description": "Reason about data, protocols, and failure before choosing a framework."
+    },
+    {
+      "id": "discovery",
+      "title": "Discovery & scoping",
+      "description": "Find the workflow worth changing and agree on a bounded intervention."
+    },
+    {
+      "id": "mindset",
+      "title": "Mindsets & judgment",
+      "description": "Choose consequential work, learn the domain, and influence without owning every team."
+    },
+    {
+      "id": "retrieval",
+      "title": "Retrieval & context",
+      "description": "Diagnose missing evidence, lost meaning, and overloaded context."
+    },
+    {
+      "id": "agents",
+      "title": "Agents & tool design",
+      "description": "Control actions, state, and recovery in systems that use models."
+    },
+    {
+      "id": "evaluation",
+      "title": "Evaluation & evidence",
+      "description": "Find failures, validate graders, and make release decisions defensible."
+    },
+    {
+      "id": "security",
+      "title": "Identity & security",
+      "description": "Preserve permissions across data, tools, caches, and changing access."
+    },
+    {
+      "id": "production",
+      "title": "Production engineering",
+      "description": "Operate under latency, reliability, capacity, and recovery constraints."
+    },
+    {
+      "id": "value",
+      "title": "Adoption & business value",
+      "description": "Connect use to a customer outcome and a credible comparison."
+    },
+    {
+      "id": "scale",
+      "title": "Productization & leadership",
+      "description": "Turn field learning into maintained capabilities and sustainable delivery."
+    }
+  ],
+  "readings": [
+    {
+      "id": "http",
+      "category": "foundations",
+      "level": "Foundation",
+      "format": "Documentation",
+      "access": "Free",
+      "why": "Understand the actual boundary between a client, proxy, and server.",
+      "focus": "Read client/server roles, requests, responses, and statelessness.",
+      "outcome": "Trace a failed integration across each hop; distinguish transport, authentication, and application failures.",
+      "caveat": "Skip if you can already explain headers, methods, status codes, cookies, and proxy behavior."
+    },
+    {
+      "id": "sql",
+      "category": "foundations",
+      "level": "Practitioner",
+      "format": "Documentation",
+      "access": "Free",
+      "why": "Diagnose slow customer queries with evidence instead of adding indexes blindly.",
+      "focus": "Use EXPLAIN basics, EXPLAIN ANALYZE, and caveats; compare estimates with actual rows.",
+      "outcome": "Annotate one slow plan with the first bad estimate, expensive operator, and a measured change.",
+      "caveat": "Requires SQL joins and indexes. ANALYZE executes the query; use a safe test environment."
+    },
+    {
+      "id": "ddia",
+      "category": "foundations",
+      "level": "Advanced",
+      "format": "Book",
+      "access": "Paid / library access",
+      "why": "Build a vocabulary for correctness and performance tradeoffs across data systems.",
+      "focus": "Second edition: chapters 5, 6, 8, 9 and 12 on evolution, replication, transactions, failures, and streams.",
+      "outcome": "Defend one consistency contract: stale reads allowed, invariants protected, and recovery under a partition.",
+      "caveat": "Use selected chapters as a reference. This is not a requirement to build a distributed database."
+    },
+    {
+      "id": "eip",
+      "category": "foundations",
+      "level": "Practitioner",
+      "format": "Book",
+      "access": "Paid / free selected excerpts",
+      "why": "Design message flows across systems with different schemas and failure semantics.",
+      "focus": "Prioritize message construction, routing, transformation, and endpoints; look for correlation and aggregation.",
+      "outcome": "Draw a multi-system workflow with correlation IDs, timeout behavior, and handling for late or duplicate messages.",
+      "caveat": "Examples use older technology; transfer the patterns and evaluate their fit to your stack."
+    },
+    {
+      "id": "pod-consistency",
+      "category": "foundations",
+      "level": "Advanced",
+      "format": "Podcast",
+      "access": "Free",
+      "why": "Expose ambiguity in the word consistency before it becomes an integration bug.",
+      "focus": "Episode 159: the discussion of convergence, ACID, and partially replicated data.",
+      "outcome": "Rewrite “eventually consistent” as an observable promise, plus the business invariant that must still hold.",
+      "caveat": "Transcript reviewed. Older episode, durable concepts; not a current Kafka configuration guide."
+    },
+    {
+      "id": "users",
+      "category": "discovery",
+      "level": "Foundation",
+      "format": "Talk",
+      "access": "Free",
+      "why": "Prepare conversations that uncover behavior and existing workarounds.",
+      "focus": "Focus on specific past events, current solutions, and user pain.",
+      "outcome": "Bring back a workflow timeline and direct evidence of a recurring problem.",
+      "caveat": "Use as a quick alternative before The Mom Test, not another mandatory introduction."
+    },
+    {
+      "id": "mom",
+      "category": "discovery",
+      "level": "Foundation",
+      "format": "Book",
+      "access": "Paid",
+      "why": "Reduce leading questions and false enthusiasm during discovery.",
+      "focus": "Read for biased feedback, concrete customer conversations, and evidence of commitment.",
+      "outcome": "Rewrite five hypothetical questions and identify the next observable commitment.",
+      "caveat": "Choose this when interviews are new to you; experienced interviewers can use the free YC talk as a refresher."
+    },
+    {
+      "id": "ramp",
+      "category": "discovery",
+      "level": "Practitioner",
+      "format": "Article",
+      "access": "Free",
+      "why": "Learn when a customer request warrants a product change and when a smaller intervention works.",
+      "focus": "Read the customer-workaround example and discussion of generalization.",
+      "outcome": "Write the underlying job, smallest acceptable solution, and conditions that would justify productizing it.",
+      "caveat": "Practitioner account; one successful workaround is not a rule against building features."
+    },
+    {
+      "id": "flawless",
+      "category": "discovery",
+      "level": "Practitioner",
+      "format": "Book",
+      "access": "Paid / library access",
+      "why": "Make expertise usable when the sponsor, operator, and engineer want different things.",
+      "focus": "Read for contracting, mutual expectations, resistance, and ownership of implementation.",
+      "outcome": "Create an engagement agreement: sponsor access, user access, decisions, responsibilities, and exit conditions.",
+      "caveat": "Book recommendation based on publisher scope; this guide does not reproduce its methods or claim a full-text review."
+    },
+    {
+      "id": "nabeel",
+      "category": "mindset",
+      "level": "Practitioner",
+      "format": "Article",
+      "access": "Free",
+      "why": "Study how direct exposure to messy enterprise work changes engineering judgment.",
+      "focus": "Focus on integrating data, working alongside users, and the tension between local usefulness and generality.",
+      "outcome": "Describe one belief about the workflow that changed after observing it.",
+      "caveat": "A personal retrospective, not a universal operating model or independently audited case."
+    },
+    {
+      "id": "staff",
+      "category": "mindset",
+      "level": "Advanced",
+      "format": "Book",
+      "access": "Paid / free companion guide",
+      "why": "Move from solving visible tasks to choosing consequential work across team boundaries.",
+      "focus": "Start with the free “Work on what matters” guide; use the book for archetypes and organizational alignment.",
+      "outcome": "Write a decision memo: why this problem, why now, who must agree, and what you will stop doing.",
+      "caveat": "The free guide is a starting point; buying the book is optional. FDE and Staff Engineer are different role dimensions."
+    },
+    {
+      "id": "rag",
+      "category": "retrieval",
+      "level": "Practitioner",
+      "format": "Article",
+      "access": "Free",
+      "why": "Distinguish missing chunk context from a weak embedding model.",
+      "focus": "Read the ambiguous-chunk example, hybrid lexical/semantic retrieval, and reranking evaluation.",
+      "outcome": "Compare recall on exact identifiers versus semantic queries, holding the evaluation set fixed.",
+      "caveat": "Requires a retrieval baseline. Published gains apply to the tested setup, not every corpus."
+    },
+    {
+      "id": "context",
+      "category": "retrieval",
+      "level": "Advanced",
+      "format": "Article",
+      "access": "Free",
+      "why": "Treat context selection as part of system design rather than an ever-longer prompt.",
+      "focus": "Read just-in-time retrieval and techniques for long-running tasks, including compaction and structured notes.",
+      "outcome": "Record which evidence a task needs, when it is loaded, and what must survive compaction.",
+      "caveat": "Prefer a reproducible failure before changing memory architecture; test information loss after compaction."
+    },
+    {
+      "id": "aie",
+      "category": "agents",
+      "level": "Practitioner",
+      "format": "Book",
+      "access": "Paid / library access",
+      "why": "Use one broad reference to connect evaluation, RAG, adaptation, and inference economics.",
+      "focus": "Chapters 3–4 for evaluation; 6 for RAG/agents; 7 for fine-tuning; 8–10 for data, serving, and feedback.",
+      "outcome": "Build a decision table: prompt change, retrieval change, fine-tuning, or no model; include the evidence required.",
+      "caveat": "Read the chapter matching your bottleneck. Current model capabilities and APIs need separate checking."
+    },
+    {
+      "id": "agents",
+      "category": "agents",
+      "level": "Foundation",
+      "format": "Article",
+      "access": "Free",
+      "why": "Choose the smallest amount of model-directed control the workflow needs.",
+      "focus": "Compare routing, chaining, orchestrator/worker, evaluator/optimizer, and autonomous agent patterns.",
+      "outcome": "Explain why a deterministic implementation or fixed workflow is insufficient before adding an agent loop.",
+      "caveat": "Patterns remain useful; the 2024 article explicitly notes that its tooling has evolved."
+    },
+    {
+      "id": "tools",
+      "category": "agents",
+      "level": "Advanced",
+      "format": "Article",
+      "access": "Free",
+      "why": "Measure whether tool design helps the model choose and execute useful actions.",
+      "focus": "Read tool selection, namespaces, response content, pagination, and held-out evaluation.",
+      "outcome": "Compare two tool contracts on task success, invalid arguments, redundant calls, latency, and token cost.",
+      "caveat": "Requires traces of real tasks. Do not score success only by matching one prescribed sequence of tool calls."
+    },
+    {
+      "id": "twelve",
+      "category": "agents",
+      "level": "Practitioner",
+      "format": "Guide + talk",
+      "access": "Free",
+      "why": "Reason about workflow state and recovery without adopting an opaque orchestration stack.",
+      "focus": "Read factor 5, then use the author-linked 12-Factor Agents talk as an alternative overview.",
+      "outcome": "Specify the persisted events needed to resume a paused task and reconcile any uncertain external side effect.",
+      "caveat": "A design opinion, not a standard. A serialized conversation alone does not make external writes exactly-once."
+    },
+    {
+      "id": "hamel",
+      "category": "evaluation",
+      "level": "Practitioner",
+      "format": "Article",
+      "access": "Free",
+      "why": "Discover failure types before selecting automated metrics.",
+      "focus": "Start with error analysis, sampling traces, stale datasets, and validating an LLM judge against expert labels.",
+      "outcome": "Create a labeled failure taxonomy and report judge false accepts and false rejects on held-out examples.",
+      "caveat": "Avoid turning suggested sample counts into universal rules; coverage and failure cost determine the needed evidence."
+    },
+    {
+      "id": "evals",
+      "category": "evaluation",
+      "level": "Advanced",
+      "format": "Article",
+      "access": "Free",
+      "why": "Evaluate an agent’s resulting state and repeated reliability, not just plausible final text.",
+      "focus": "Read tasks, trials, graders, transcripts, outcomes, and repeated-run metrics.",
+      "outcome": "Build a release report with outcome checks, multiple trials where appropriate, and unresolved failure slices.",
+      "caveat": "Keep grader validation separate from agent evaluation; aggregate success can hide critical failures."
+    },
+    {
+      "id": "pod-data",
+      "category": "evaluation",
+      "level": "Practitioner",
+      "format": "Podcast",
+      "access": "Free",
+      "why": "Connect ML data discipline to current AI application delivery.",
+      "focus": "05:45 dev/prod gap; 08:40 leakage; 15:03 versioning; 16:30 data validation; 22:50 shadow models.",
+      "outcome": "List the data, code, model, and configuration versions needed to reproduce a customer failure.",
+      "caveat": "2023 episode: use the operational ideas, not its period-specific tooling predictions."
+    },
+    {
+      "id": "authorization",
+      "category": "security",
+      "level": "Foundation",
+      "format": "Documentation",
+      "access": "Free",
+      "why": "Separate who a user is from what that user may read or change.",
+      "focus": "Focus on least privilege, deny-by-default, per-request checks, and authorization regression tests.",
+      "outcome": "Create an access matrix with allowed and denied actions across users, tenants, resources, and exports.",
+      "caveat": "Authentication success is not authorization. Test object-level checks on the server."
+    },
+    {
+      "id": "zanzibar",
+      "category": "security",
+      "level": "Advanced",
+      "format": "Paper",
+      "access": "Free",
+      "why": "Understand how stale authorization can expose new content after access is removed.",
+      "focus": "Paper section 2: relation tuples, the “new enemy” problem, and consistency tokens.",
+      "outcome": "Specify revocation and content-update ordering for a retrieval service; demonstrate a forbidden read stays forbidden.",
+      "caveat": "Study the invariant without assuming you need Google-scale infrastructure. See case C17 for the transfer question."
+    },
+    {
+      "id": "mcp",
+      "category": "security",
+      "level": "Advanced",
+      "format": "Documentation",
+      "access": "Free",
+      "why": "Inspect the authorization boundary when an agent connects through an MCP proxy.",
+      "focus": "Read confused-deputy attacks, per-client consent, token audience checks, and the prohibition on token passthrough.",
+      "outcome": "Draw who issues each token, its audience, which component validates it, and the downstream authorization boundary.",
+      "caveat": "This link is draft guidance; implement against your chosen released protocol version and identity provider."
+    },
+    {
+      "id": "injection",
+      "category": "security",
+      "level": "Practitioner",
+      "format": "Documentation",
+      "access": "Free",
+      "why": "Limit what injected instructions can cause a system to do.",
+      "focus": "Read indirect injection, least privilege, action checks, and the stated limits of model-based guardrails.",
+      "outcome": "Threat-model a retrieved document that asks for a write or data export; enforce permissions outside the model.",
+      "caveat": "Filters and a second model do not establish a complete security boundary. Test the actual action path."
+    },
+    {
+      "id": "retries",
+      "category": "production",
+      "level": "Practitioner",
+      "format": "Article",
+      "access": "Free",
+      "why": "Prevent well-intended retries from multiplying an outage.",
+      "focus": "Read timeout selection, retry amplification, backoff, and jitter.",
+      "outcome": "Give a dependency a time budget and bounded retry policy; identify the one layer responsible for retrying.",
+      "caveat": "Retrying a failed-looking write can repeat its effect; pair with the idempotency resource."
+    },
+    {
+      "id": "idempotency",
+      "category": "production",
+      "level": "Practitioner",
+      "format": "Article",
+      "access": "Free",
+      "why": "Give repeated requests a defined effect when a response is lost.",
+      "focus": "Read request identifiers, server behavior, and retryable operations.",
+      "outcome": "Specify key scope, request-parameter matching, concurrent duplicate handling, and result retention.",
+      "caveat": "A deduplication key is part of a contract, not a blanket guarantee about downstream systems."
+    },
+    {
+      "id": "slo-workbook",
+      "category": "production",
+      "level": "Practitioner",
+      "format": "Book chapter",
+      "access": "Free",
+      "why": "Make a reliability target drive an actual decision.",
+      "focus": "Read good-events/total-events indicators, stakeholder agreement, and error-budget policy.",
+      "outcome": "Write one user-centered indicator and the action taken when its budget is exhausted.",
+      "caveat": "Prefer this implementation chapter if you already know SLI/SLO definitions; the original chapter remains in citations."
+    },
+    {
+      "id": "canary",
+      "category": "production",
+      "level": "Advanced",
+      "format": "Book chapter",
+      "access": "Free",
+      "why": "Distinguish a small deployment from a useful release experiment.",
+      "focus": "Read representative canaries, comparison signals, and automated rollout decisions.",
+      "outcome": "Define cohort, exposure, observation window, rollback trigger, and how low traffic affects detection.",
+      "caveat": "A canary that sees no representative failures cannot establish that the full rollout is safe."
+    },
+    {
+      "id": "guidellm",
+      "category": "production",
+      "level": "Advanced",
+      "format": "Repository",
+      "access": "Free / compute costs",
+      "why": "Find a safe operating range under the workload users will actually produce.",
+      "focus": "Inspect load patterns, input/output length distributions, time-to-first-token, and end-to-end latency.",
+      "outcome": "Report latency distributions against request rate and task length; state model, hardware, and workload.",
+      "caveat": "README reviewed, tool not run. Synthetic benchmark throughput is not application quality."
+    },
+    {
+      "id": "pod-observe",
+      "category": "production",
+      "level": "Advanced",
+      "format": "Podcast",
+      "access": "Free",
+      "why": "Design telemetry that can explain an unexpected customer failure.",
+      "focus": "18:53 agent decisions and operator ownership; 26:00 relationships in business-critical telemetry.",
+      "outcome": "Choose trace attributes that connect task, tool action, version, latency, and outcome without recording secrets.",
+      "caveat": "Publisher notes reviewed, not full audio. Separate useful product traces from indiscriminate log retention."
+    },
+    {
+      "id": "experiments",
+      "category": "value",
+      "level": "Advanced",
+      "format": "Paper",
+      "access": "Free",
+      "why": "Challenge apparent impact with experiment design and data-quality checks.",
+      "focus": "Read organizational adoption, experiment interactions, and skepticism toward surprising results.",
+      "outcome": "Specify the comparison, unit of assignment, guardrails, and what would invalidate a claimed lift.",
+      "caveat": "Large-scale web experiments do not directly fit every enterprise pilot; state limits when randomization is infeasible."
+    },
+    {
+      "id": "university",
+      "category": "value",
+      "level": "Practitioner",
+      "format": "Article",
+      "access": "Free",
+      "why": "Treat operator capability as part of the deployment deliverable.",
+      "focus": "Look at how training is organized around designing, building, and deploying agents.",
+      "outcome": "Create a role-specific onboarding plan and test whether an operator can diagnose and escalate a failure unaided.",
+      "caveat": "A company account of training design, not evidence that a particular course causes better outcomes."
+    },
+    {
+      "id": "openai-fde",
+      "category": "scale",
+      "level": "Advanced",
+      "format": "Article",
+      "access": "Free",
+      "why": "Read the product feedback and consolidation lessons after the role overview.",
+      "focus": "Focus on customer-defined evaluations and replacing repeated custom implementations with reusable capability.",
+      "outcome": "Identify one repeated field constraint and propose a shared change with a second-deployment test.",
+      "caveat": "Company-reported examples. Do not infer universal ROI or staffing ratios from them."
+    },
+    {
+      "id": "team",
+      "category": "scale",
+      "level": "Advanced",
+      "format": "Book",
+      "access": "Paid / library access",
+      "why": "Design a handoff that respects team capacity and cognitive load.",
+      "focus": "Read for team boundaries and interaction modes: collaboration, facilitation, and service consumption.",
+      "outcome": "Name when an embedded engagement ends and how the customer team gets a supported service afterward.",
+      "caveat": "An organization-design lens; avoid copying a team chart without understanding the work."
+    },
+    {
+      "id": "toil",
+      "category": "scale",
+      "level": "Advanced",
+      "format": "Book chapter",
+      "access": "Free",
+      "why": "Count the work a successful deployment creates for its maintainers.",
+      "focus": "Read identifying, quantifying, and prioritizing toil; inspect the case examples.",
+      "outcome": "Record support time per successful task and compare automation cost with recurring manual effort.",
+      "caveat": "Google’s operational-work target is contextual, not a required FDE staffing ratio."
+    },
+    {
+      "id": "agents-cli",
+      "category": "scale",
+      "level": "Practitioner",
+      "format": "Repository",
+      "access": "Free / cloud costs",
+      "why": "Inspect what a repeatable deployment package includes beyond agent code.",
+      "focus": "Review lifecycle commands, evaluation, infrastructure, CI/CD, observation, and upgrade paths.",
+      "outcome": "Create a vendor-neutral package checklist and have a second engineer deploy from the documented inputs.",
+      "caveat": "Google-specific reference, not a required stack. It succeeds Agent Starter Pack, now in maintenance mode."
+    },
+    {
+      "id": "plank-handoff",
+      "category": "scale",
+      "level": "Practitioner",
+      "format": "Hands-on lesson",
+      "access": "Free / cloud costs if run",
+      "why": "Treat the handoff as a usability study: can another person deploy and operate what you built?",
+      "focus": "Day 37: the runbook test, security review, observed stalls, and findings routed into fixes.",
+      "outcome": "Have a peer follow the runbook without coaching. Record blocked steps and give each finding an owner.",
+      "caveat": "The published reference run used agents as simulated participants without a real customer cloud account. It does not establish human usability or production deployment; the lesson itself acknowledges this."
+    }
+  ],
+  "related": [
+    {
+      "id": "pierpaolo",
+      "title": "A broad technical roadmap",
+      "learned": "Used its coverage of data systems, infrastructure, consulting, and communication to identify gaps in the old library.",
+      "boundary": "Tool-specific instructions and headline business claims were not treated as universal guidance."
+    },
+    {
+      "id": "xdash",
+      "title": "The full customer lifecycle",
+      "learned": "Selected chapters informed the progression from problem selection to activation, renewal, and repeatable delivery.",
+      "boundary": "Chinese original. Brief original synthesis only; noncommercial sharing terms do not grant a blanket license to republish the book."
+    },
+    {
+      "id": "vangong",
+      "title": "Enterprise boundaries and learning routes",
+      "learned": "The authorization and productization chapters informed access-control reviews, handoff criteria, and routes for different experience levels.",
+      "boundary": "Chinese original. Hypothetical exercises remain hypothetical; MCP advice is checked against protocol documentation."
+    },
+    {
+      "id": "global",
+      "title": "References worth inspecting",
+      "learned": "Followed its leads into 12-Factor Agents, deployment lifecycle tooling, and GuideLLM rather than copying a long tool list.",
+      "boundary": "Maintenance status was checked. Agent Starter Pack now points to agents-cli; framework labels do not certify production readiness."
+    }
+  ],
+  "routes": [
+    {
+      "title": "Entering FDE work",
+      "tag": "Build the foundation",
+      "description": "For a software engineer new to customer delivery. Start with the gaps in your knowledge, then follow the 12-week project.",
+      "steps": [
+        [
+          "discovery",
+          "Observe a workflow",
+          "users",
+          "ramp"
+        ],
+        [
+          "foundation",
+          "Make a reliable integration",
+          "http",
+          "idempotency",
+          "authorization"
+        ],
+        [
+          "evidence",
+          "Prove one useful change",
+          "agents",
+          "hamel",
+          "slo-workbook"
+        ]
+      ],
+      "artifact": "A working customer workflow, an evaluation report, and a handoff another person can use."
+    },
+    {
+      "title": "Working FDE",
+      "tag": "Improve a real deployment",
+      "description": "Use the current failure or bottleneck to choose a short reading sequence. Skip the role introductions.",
+      "steps": [
+        [
+          "diagnosis",
+          "Locate the first failure",
+          "rag",
+          "tools",
+          "hamel"
+        ],
+        [
+          "release",
+          "Make recovery predictable",
+          "retries",
+          "canary",
+          "mcp"
+        ],
+        [
+          "impact",
+          "Test what changed for users",
+          "experiments",
+          "pod-observe"
+        ]
+      ],
+      "artifact": "A before/after comparison with failure slices, operating cost, and a rollout decision."
+    },
+    {
+      "title": "Senior FDE / team lead",
+      "tag": "Build durable capability",
+      "description": "Study the boundaries where local success can create shared risk, maintenance cost, or organizational dependence.",
+      "steps": [
+        [
+          "correctness",
+          "Define the invariants",
+          "ddia",
+          "zanzibar"
+        ],
+        [
+          "capacity",
+          "Find the actual constraint",
+          "guidellm",
+          "toil"
+        ],
+        [
+          "reuse",
+          "Make the next engagement easier",
+          "staff",
+          "team",
+          "agents-cli"
+        ]
+      ],
+      "artifact": "A reusable delivery package, explicit ownership, and a measured reduction in second-deployment effort."
+    }
+  ],
+  "fieldnotes": [
+    {
+      "id": "F01",
+      "title": "A high score can hide the failures that matter",
+      "category": "Evaluation",
+      "scenario": "A model change improves average success, but users report more incorrect actions.",
+      "inspect": "Slice by task, customer, severity, and workflow version. Inspect resulting system state as well as the answer. Validate the grader separately on expert-labeled pass and fail cases.",
+      "decision": "Keep a representative estimate of normal performance alongside a deliberately difficult regression suite. Track false acceptance of harmful outcomes separately; do not bury it in an average.",
+      "artifact": "A release table: baseline → candidate, task slice, sample size, uncertainty, severe failures, latency, and decision owner.",
+      "trap": "Repeatedly tuning against the held-out set quietly turns it into development data.",
+      "refs": [
+        "hamel",
+        "evals"
+      ]
+    },
+    {
+      "id": "F02",
+      "title": "Permission revocation is a data-consistency problem",
+      "category": "Security",
+      "scenario": "A removed user can still obtain a newly edited document through a search cache.",
+      "inspect": "Trace identity and permissions through ingestion, retrieval, cached results, citations, and export. Check whether the authorization snapshot is fresh enough for the content version.",
+      "decision": "Specify revocation behavior and fail-closed conditions. Partition cached data appropriately and reauthorize at the protected resource boundary; SSO alone cannot supply these guarantees.",
+      "artifact": "A regression sequence: grant → fetch → revoke → edit → fetch/export, across two users and two tenants.",
+      "trap": "Testing only the initial retrieval misses caches, previews, and generated summaries.",
+      "refs": [
+        "zanzibar",
+        "authorization",
+        "mcp"
+      ]
+    },
+    {
+      "id": "F03",
+      "title": "A timeout does not tell you whether a write happened",
+      "category": "Integration",
+      "scenario": "A CRM update times out after the remote system commits it. An agent retries.",
+      "inspect": "Locate the durable operation identifier, commit boundary, and status lookup. Determine whether a retry can be correlated with the first attempt and whether effects span multiple systems.",
+      "decision": "Choose an explicit contract for deduplication, reconciliation, and compensation. Bound retries within the overall deadline. Report an uncertain outcome when you cannot safely infer completion.",
+      "artifact": "A state diagram covering not started, in flight, committed, failed, and unknown; test a lost response after commit.",
+      "trap": "Persisting the conversation or retry counter does not make the external effect exactly-once.",
+      "refs": [
+        "idempotency",
+        "retries",
+        "twelve"
+      ]
+    },
+    {
+      "id": "F04",
+      "title": "Find the first broken step in retrieval",
+      "category": "Retrieval",
+      "scenario": "A convincing answer cites the wrong policy despite an apparently strong language model.",
+      "inspect": "Check source coverage, access eligibility, freshness, chunk meaning, candidate retrieval, reranking, and final answer support in order. Test exact identifiers separately from broad semantic queries.",
+      "decision": "Measure evidence retrieval independently of generation. Compare a simple lexical or hybrid baseline before adding a larger model or a more autonomous search loop.",
+      "artifact": "A failure ledger that points each bad answer to the earliest failed stage and the correct source passage.",
+      "trap": "Improving answer fluency can conceal that the evidence was never available to the model.",
+      "refs": [
+        "rag",
+        "context"
+      ]
+    },
+    {
+      "id": "F05",
+      "title": "Lower token cost can raise cost per successful task",
+      "category": "Economics",
+      "scenario": "A cheaper model needs more retries and longer human review.",
+      "inspect": "Count inference, retrieval, infrastructure, review, rework, support, and amortized implementation. Use accepted task outcomes as the denominator; include failed attempts in the numerator.",
+      "decision": "Compare alternatives under the same quality and workload requirements. Separate cash savings, capacity released, and time that users actually redeploy to valuable work.",
+      "artifact": "A sensitivity table for task volume, success rate, review minutes, and support hours; use ranges rather than an unsupported ROI point estimate.",
+      "trap": "Multiplying every minute saved by a salary rate does not establish realized financial savings.",
+      "refs": [
+        "aie",
+        "toil",
+        "experiments"
+      ]
+    },
+    {
+      "id": "F06",
+      "title": "A pilot can be technically good and operationally abandoned",
+      "category": "Adoption",
+      "scenario": "The sponsor likes the demo, but operators return to spreadsheets after launch.",
+      "inspect": "Observe the real task, handoffs, exception handling, and review burden. Identify the operator’s incentives, training gaps, and who owns policy or data changes.",
+      "decision": "Expand after evidence of successful repeat use in an eligible cohort, with a named operator and support path. Revisit the workflow if the system creates hidden work elsewhere.",
+      "artifact": "A cohort table from eligible users → first successful task → repeat success, alongside support load and reasons for abandonment.",
+      "trap": "A signed-off demo, a login, and a successfully completed task are different events.",
+      "refs": [
+        "flawless",
+        "university",
+        "sonos"
+      ]
+    },
+    {
+      "id": "F07",
+      "title": "Productize the repeated constraint",
+      "category": "Productization",
+      "scenario": "Three customers need similar integrations, each living on a different branch.",
+      "inspect": "Separate shared behavior, variable configuration, domain policy, and genuinely unique work. Count upgrade effort and support exceptions, not just initial reuse of code.",
+      "decision": "Promote a capability when repeated evidence justifies its maintenance contract. Keep ownership, versioning, evaluation cases, and upgrade paths with the package.",
+      "artifact": "A second engineer deploys to a second environment; measure effort, exceptions, and the remaining dependency on the original author.",
+      "trap": "Copying a repository creates another instance. It does not establish a supported product.",
+      "refs": [
+        "openai-fde",
+        "team",
+        "agents-cli",
+        "toil"
+      ]
+    },
+    {
+      "id": "F08",
+      "title": "Protect the invariant before optimizing recovery time",
+      "category": "Reliability",
+      "scenario": "Automated database failover restores connectivity but leaves divergent writes.",
+      "inspect": "Compare the recovery topology with application latency assumptions, replication state, background queues, and the integrity of accepted writes.",
+      "decision": "Predefine when to stop writes, pause consumers, serve degraded results, or reconcile. Exercise restore and backlog recovery, not just the failover trigger.",
+      "artifact": "A recovery drill recording the protected invariant, data-loss exposure, restoration time, and safe replay conditions.",
+      "trap": "A healthy infrastructure dashboard does not prove the recovered application is correct.",
+      "refs": [
+        "github-incident",
+        "ddia",
+        "canary"
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "id": "S01",
+      "source": "story-vinoo",
+      "person": "Vinoo Ganesh",
+      "company": "Palantir · retrospective",
+      "category": "Career transitions",
+      "kind": "Personal retrospective",
+      "title": "The field changed how he built product software",
+      "journey": "Product engineering ↔ customer deployments → Frontline rotations",
+      "account": "Ganesh describes an empty date field triggering runaway Cassandra keyspace creation in a customer deployment. Alternating between product work and the field changed the failures he anticipated. He later helped build Frontline, a program that put product engineers into customer deployments.",
+      "tension": "He describes both overengineering a one-off cleanup and underengineering a script that stayed in use. Urgency alone did not reveal the right lifespan for a solution.",
+      "focus": "Read “My Transformation” and “Building Frontline,” then compare the two scoping mistakes.",
+      "question": "What assumption would you test on site before building? Who decides whether a temporary fix is retired or becomes a supported capability?",
+      "boundary": "Firsthand recollection. The essay’s forecasts and program impact claims are not independently validated here.",
+      "related": [
+        "ramp",
+        "toil"
+      ]
+    },
+    {
+      "id": "S02",
+      "source": "story-chinemerem",
+      "person": "Chinemerem E.",
+      "company": "Palantir · joined from Nigerian fintech",
+      "category": "Career transitions",
+      "kind": "Employer-hosted essay",
+      "title": "From backend APIs to owning the customer outcome",
+      "journey": "Fintech backend engineer → Forward Deployed Software Engineer",
+      "account": "After building APIs and payment infrastructure, Chinemerem joined Palantir in 2020. Initially, using an existing platform felt less like engineering than writing the tooling. The role expanded to discovering the problem, scoping it, delivering a solution, and enabling the customer’s IT team.",
+      "tension": "An identity built around writing code had to accommodate work that made existing capabilities useful. The account connects data work to operational action.",
+      "focus": "Read the sections on becoming a Delta, redefining engineering, and taking ownership.",
+      "question": "Which part of your last delivery needed new code, and which needed a better workflow, clearer ownership, or customer enablement?",
+      "boundary": "Recruiting context and a Foundry-specific experience from 2020–21. Reuse is a judgment call, not a rule against building.",
+      "related": [
+        "users",
+        "flawless"
+      ]
+    },
+    {
+      "id": "S03",
+      "source": "story-het",
+      "person": "Het Trivedi",
+      "company": "Baseten",
+      "category": "Career transitions",
+      "kind": "Employer-hosted essay",
+      "title": "A public technical project became a route into FDE",
+      "journey": "Startup founder → AI projects and writing → inference FDE",
+      "account": "After a startup failed to find product–market fit, Trivedi built AI projects and wrote about them. A post using Baseten’s Truss reached a cofounder and led toward the role. His early work involved customer requirements, inference benchmarks, production hardening, and support handoff.",
+      "tension": "Several technically demanding projects competed for attention. Losing a customer also carried an emotional cost after investing in the deployment.",
+      "focus": "Follow the path into the job and the sections on customer work and challenges.",
+      "question": "What public artifact would demonstrate your engineering reasoning and understanding of a customer constraint, beyond showing a polished demo?",
+      "boundary": "One early-career account hosted by the employer. A visible project can show ability; it does not guarantee an offer.",
+      "related": [
+        "guidellm",
+        "flawless"
+      ]
+    },
+    {
+      "id": "S04",
+      "source": "story-hiro",
+      "person": "Hiro Hayami",
+      "company": "AI Shift · Japan",
+      "category": "Career transitions",
+      "kind": "Translated personal essay",
+      "title": "From waterfall delivery to feedback through working software",
+      "journey": "Systems integrator / project lead → first two months as an FDE",
+      "account": "Hayami moved from years of structured systems delivery into AI Shift. Showing working agents surfaced requirements earlier than completing specifications. Integration setup, demos, and feedback became central to the work; colleagues helped challenge the expectation of working alone.",
+      "tension": "Unstable model behavior challenged habits built around fixed specifications. At publication, the project was released for customer verification; sustained operational use was still ahead.",
+      "focus": "Read the background, development, and team-collaboration sections in the English view.",
+      "question": "Where would a prototype clarify uncertainty? Which action still needs deterministic checks and human approval before it can run?",
+      "boundary": "Japanese original, platform AI translation; names and nuance may differ. Prompt instructions described in the story are not a guarantee of tool ordering or safety.",
+      "related": [
+        "agents",
+        "authorization"
+      ]
+    },
+    {
+      "id": "S05",
+      "source": "story-milos",
+      "person": "Milos Mandic",
+      "company": "Lleverage · AI startup",
+      "category": "Life in the field",
+      "kind": "First-person work diary",
+      "title": "The hidden workload between scoping and shipping",
+      "journey": "Experienced software engineer → parallel customer deployments",
+      "account": "Mandic follows a week of simultaneous deployments: an insurance document pipeline needed better edge-case coverage, a shared infrastructure outage interrupted plans, and communication scattered across customer tools. Repeated onboarding explanations became a playbook; recurring implementation needs fed product discussions.",
+      "tension": "Protected building time competed with support, presales, and status calls. His reported workload is one startup arrangement, not a universal FDE schedule.",
+      "focus": "Read the active builds, outage, communication, and Friday product-feedback sections.",
+      "question": "Which interruptions need an immediate response, which can be batched, and which recurring requests should change the product or onboarding process?",
+      "boundary": "Self-reported diary. Customer examples and time allocation were not independently audited.",
+      "related": [
+        "toil",
+        "hamel"
+      ]
+    },
+    {
+      "id": "S06",
+      "source": "story-henry",
+      "person": "Henry Chang",
+      "company": "Palantir · new graduate",
+      "category": "Life in the field",
+      "kind": "Short public post",
+      "title": "A first year across several industries",
+      "journey": "UCLA graduate → first year as a Forward Deployed Software Engineer",
+      "account": "Chang describes work spanning utilities, construction, manufacturing, and historical documents, alongside product-team collaboration. He credits peers and a technical lead, and explicitly says that some projects had not reached production.",
+      "tension": "A broad project portfolio can contain both deployed services and unfinished experiments. A learning story needs to preserve that distinction.",
+      "focus": "A brief first-year reflection, useful for project variety and mentorship rather than architecture detail.",
+      "question": "For each project on your résumé, can you separate your contribution, deployment status, and evidence of use or business impact?",
+      "boundary": "Personal recruiting post; exact publication date is not exposed. LinkedIn may require sign-in. Scale and impact claims are not independently verified.",
+      "related": [
+        "staff",
+        "experiments"
+      ]
+    },
+    {
+      "id": "S07",
+      "source": "story-vlad",
+      "person": "Vlad Shulman",
+      "company": "Baseten",
+      "category": "Building FDE teams",
+      "kind": "Team leader’s account",
+      "title": "Building a team that keeps contributing to the product",
+      "journey": "Founder and technical leader → leading an FDE function",
+      "account": "Shulman describes early engineers becoming Baseten’s first FDEs. Keeping the function in engineering preserved product contributions while adding coordination overhead. Hiring broadened after the team learned that strong software engineers could acquire the required ML knowledge.",
+      "tension": "A customer workaround can satisfy an immediate need while never reaching the product. Organizational placement alone does not close that loop.",
+      "focus": "Skip the role introduction; read establishing the function, hiring lessons, and the product-feedback loop.",
+      "question": "Which recurring field problem has a product owner, adoption criterion, and maintenance budget? What customer work should another function handle?",
+      "boundary": "One leader’s account. Its preferred reporting line and product-integration target are contextual choices, not universal staffing rules.",
+      "related": [
+        "team",
+        "openai-fde"
+      ]
+    },
+    {
+      "id": "S08",
+      "source": "story-dongying",
+      "person": "Dongying Zhou",
+      "company": "ActionIQ · 2021 role boundaries",
+      "category": "After FDE",
+      "kind": "Employer-hosted essay",
+      "title": "Moving from field breadth into engineering depth",
+      "journey": "Forward Deployed Engineer → product Software Engineer",
+      "account": "Zhou moved internally from field engineering to the Execute team in July 2021. Broad platform knowledge had been valuable, but customer-specific configuration did not satisfy the desire to understand the codebase more deeply. The transition brought difficult learning in implementation, debugging, and testing.",
+      "tension": "Field experience contributed a user perspective; deeper engineering work exposed system internals that had been hard to see from the field.",
+      "focus": "Read “Making the Move” and “Bringing from and back to Field.”",
+      "question": "Does your next role offer the depth, customer exposure, mentorship, and ownership you want? Ask about actual work rather than relying on the title.",
+      "boundary": "ActionIQ’s 2021 organization is not a definition of FDE everywhere. This is an individual internal transfer, not a promised career path.",
+      "related": [
+        "ddia",
+        "staff"
+      ]
+    }
+  ],
+  "people": [
+    {
+      "company": "Cognition",
+      "name": "Nick Wong",
+      "role": "SPE practitioner",
+      "why": "Unowned problems → useful infrastructure → product opportunities.",
+      "handle": "",
+      "talk": "",
+      "article": "nick"
+    },
+    {
+      "company": "Cognition",
+      "name": "Jia Wu",
+      "role": "FDE practitioner / speaker",
+      "why": "Customer outcomes, engineering adoption, and product feedback.",
+      "handle": "",
+      "talk": "jia",
+      "article": ""
+    },
+    {
+      "company": "Ramp (at publication)",
+      "name": "Leo Mehr",
+      "role": "FDE team builder",
+      "why": "How to scope work and decide when to generalize.",
+      "handle": "LeoMehr",
+      "talk": "leo-talk",
+      "article": "ramp"
+    },
+    {
+      "company": "Palantir (former)",
+      "name": "Nabeel S. Qureshi",
+      "role": "Former FDE",
+      "why": "Field context, enterprise data, and product development.",
+      "handle": "nabeelqu",
+      "talk": "",
+      "article": "nabeel"
+    },
+    {
+      "company": "OpenAI",
+      "name": "Colin Jarvis",
+      "role": "FDE leader / author",
+      "why": "Turn delivery experience into reusable capabilities.",
+      "handle": "",
+      "talk": "",
+      "article": "openai-fde"
+    },
+    {
+      "company": "Sierra",
+      "name": "Natalie Meurer",
+      "role": "Agent engineering practitioner",
+      "why": "Domain expertise and production agent delivery.",
+      "handle": "natalie_meurer",
+      "talk": "",
+      "article": "natalie"
+    },
+    {
+      "company": "DeepLearning.AI",
+      "name": "Andrew Ng",
+      "role": "Educator / industry perspective",
+      "why": "Where customer-embedded engineering fits in applied AI.",
+      "handle": "AndrewYNg",
+      "talk": "",
+      "article": "ng"
+    },
+    {
+      "company": "Latent Space / AI Engineer",
+      "name": "swyx",
+      "role": "Educator / community builder",
+      "why": "Broader AI engineering concepts and communities.",
+      "handle": "swyx",
+      "talk": "",
+      "article": "ai-engineer"
+    },
+    {
+      "company": "Y Combinator (at publication)",
+      "name": "Eric Migicovsky",
+      "role": "Founder / educator",
+      "why": "Discover real user problems through concrete past behavior.",
+      "handle": "",
+      "talk": "users",
+      "article": ""
+    },
+    {
+      "company": "Morgan Stanley (at publication)",
+      "name": "Jeff McMillan",
+      "role": "AI business leader",
+      "why": "Enterprise adoption and the role of evaluation.",
+      "handle": "",
+      "talk": "",
+      "article": "morgan"
+    },
+    {
+      "company": "Morgan Stanley (at publication)",
+      "name": "David Wu",
+      "role": "AI architecture leader",
+      "why": "Retrieval quality and expert review at enterprise scale.",
+      "handle": "",
+      "talk": "",
+      "article": "morgan"
+    },
+    {
+      "company": "Sierra",
+      "name": "Vijay Iyengar",
+      "role": "Engineering author",
+      "why": "A published interview format that tests building and judgment.",
+      "handle": "",
+      "talk": "",
+      "article": "sierra-interview"
+    },
+    {
+      "company": "AWS (at publication)",
+      "name": "Marc Brooker",
+      "role": "Systems engineering author",
+      "why": "Reliable integrations under partial failure.",
+      "handle": "",
+      "talk": "",
+      "article": "retries"
+    },
+    {
+      "company": "Independent / AI evaluation",
+      "name": "Hamel Husain",
+      "role": "Practitioner / educator",
+      "why": "Error analysis and trustworthy automated judges.",
+      "handle": "",
+      "talk": "",
+      "article": "hamel"
+    },
+    {
+      "company": "UC Berkeley (at episode publication)",
+      "name": "Shreya Shankar",
+      "role": "Researcher / educator",
+      "why": "Data validation, reproducibility, and evaluation.",
+      "handle": "",
+      "talk": "pod-data",
+      "article": "hamel"
+    },
+    {
+      "company": "Independent author",
+      "name": "Chip Huyen",
+      "role": "AI engineering author",
+      "why": "Choose adaptation and serving approaches from measured constraints.",
+      "handle": "",
+      "talk": "",
+      "article": "aie"
+    },
+    {
+      "company": "Honeycomb (at episode publication)",
+      "name": "Charity Majors",
+      "role": "Operations practitioner",
+      "why": "Connect production behavior to useful telemetry.",
+      "handle": "",
+      "talk": "pod-observe",
+      "article": ""
+    },
+    {
+      "company": "HumanLayer",
+      "name": "Dex Horthy",
+      "role": "Agent engineering author",
+      "why": "Control workflow state and understand framework tradeoffs.",
+      "handle": "",
+      "talk": "twelve-talk",
+      "article": "twelve"
+    },
+    {
+      "company": "Independent author",
+      "name": "Will Larson",
+      "role": "Technical leadership author",
+      "why": "Choose consequential work across organizational boundaries.",
+      "handle": "",
+      "talk": "",
+      "article": "matters"
+    }
+  ],
+  "weeks": [
+    {
+      "id": 1,
+      "title": "Understand the role",
+      "phase": "Discover",
+      "objective": "Define the customer, the workflow, and your decision rights.",
+      "refs": [
+        "openai-fde",
+        "nick",
+        "nabeel"
+      ],
+      "tasks": [
+        "Write a one-page role charter: customer, sponsor, authority, and handoff owner.",
+        "Compare an FDE engagement with an SPE project using one concrete workflow.",
+        "Name a measurable user outcome and record its current baseline."
+      ],
+      "gate": "A charter with one outcome, one owner, and an explicit out-of-scope list.",
+      "deeper": [
+        "staff"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Discover the real problem",
+      "phase": "Discover",
+      "objective": "Observe a recurring workflow before proposing a solution.",
+      "refs": [
+        "users",
+        "ramp"
+      ],
+      "tasks": [
+        "Interview three users about the last time the problem happened.",
+        "Map the current workflow, delays, workarounds, and data owners.",
+        "Validate a problem brief with a user and a sponsor."
+      ],
+      "gate": "A workflow map and evidence of repeated pain; avoid hypothetical willingness-to-use claims.",
+      "deeper": [
+        "flawless"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Decompose and scope",
+      "phase": "Frame",
+      "objective": "Choose the smallest valuable change you can evaluate.",
+      "refs": [
+        "ramp",
+        "sierra-interview"
+      ],
+      "tasks": [
+        "Rank three candidate projects by value, feasibility, and uncertainty.",
+        "Write acceptance criteria, dependencies, and a two-week pilot scope.",
+        "Answer interview question Q01 aloud and review the response guide."
+      ],
+      "gate": "A scoped proposal with a baseline, an acceptance test, and a stop condition.",
+      "deeper": [
+        "mom"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Make the data usable",
+      "phase": "Frame",
+      "objective": "Turn permissions, schemas, and dirty records into explicit constraints.",
+      "refs": [
+        "nabeel",
+        "idempotency"
+      ],
+      "tasks": [
+        "Document source schemas, access boundaries, refresh rates, and owners.",
+        "Build a small ingestion path with duplicate and missing-data checks.",
+        "Define what happens on stale data, access denial, or a failed write."
+      ],
+      "gate": "A reproducible data sample and an integration contract another engineer can understand.",
+      "deeper": [
+        "sql",
+        "authorization",
+        "zanzibar"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Build a thin vertical slice",
+      "phase": "Build",
+      "objective": "Deliver one complete user action through the system.",
+      "refs": [
+        "agents",
+        "sierra-interview"
+      ],
+      "tasks": [
+        "Compare deterministic logic, a fixed AI workflow, and an agent for the task.",
+        "Build the smallest end-to-end slice with a usable interface.",
+        "Demo it to a user and record the change you made from their feedback."
+      ],
+      "gate": "A working path from input to outcome, with assumptions and limitations written down.",
+      "deeper": [
+        "tools",
+        "twelve"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Evaluate before expanding",
+      "phase": "Build",
+      "objective": "Make failures visible and reproducible.",
+      "refs": [
+        "evals",
+        "tax"
+      ],
+      "tasks": [
+        "Collect representative cases, edge cases, and unacceptable failures.",
+        "Separate a development set from a held-out set and define graders.",
+        "Compare the new workflow with a baseline on quality, latency, and cost."
+      ],
+      "gate": "A versioned evaluation report with failure categories and release criteria.",
+      "deeper": [
+        "hamel"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Engineer for production",
+      "phase": "Deploy",
+      "objective": "Handle partial failure and make operations understandable.",
+      "refs": [
+        "retries",
+        "idempotency",
+        "slo"
+      ],
+      "tasks": [
+        "Add timeouts, bounded retries, idempotent writes, and useful traces.",
+        "Define service objectives and a rollback or human-fallback path.",
+        "Run a failure walkthrough with the future maintainer."
+      ],
+      "gate": "A runbook demonstrating how to detect, contain, and recover from failure.",
+      "deeper": [
+        "canary",
+        "guidellm"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Run a controlled pilot",
+      "phase": "Deploy",
+      "objective": "Put the system into a real workflow with a named owner.",
+      "refs": [
+        "ww",
+        "morgan"
+      ],
+      "tasks": [
+        "Choose a pilot cohort and document eligibility and consent needs.",
+        "Train users, observe actual sessions, and log support needs.",
+        "Review quality and failure thresholds before expanding traffic."
+      ],
+      "gate": "A pilot review with usage, failures, user feedback, and an explicit go/no-go decision.",
+      "deeper": [
+        "injection",
+        "mcp"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Measure adoption and value",
+      "phase": "Measure",
+      "objective": "Connect usage to outcomes and account for ongoing work.",
+      "refs": [
+        "sonos",
+        "rakuten"
+      ],
+      "tasks": [
+        "Measure eligible users, active users, successful tasks, and repeat use.",
+        "Estimate realized time or cost change including review and support.",
+        "Check whether case mix, seasonality, or other changes explain the result."
+      ],
+      "gate": "An impact memo with denominators, a comparison period, and uncertainty.",
+      "deeper": [
+        "experiments"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Close the feedback loop",
+      "phase": "Measure",
+      "objective": "Convert corrections into durable improvements.",
+      "refs": [
+        "tax",
+        "evals"
+      ],
+      "tasks": [
+        "Classify reported failures as data, model, integration, policy, or UX issues.",
+        "Turn three real failure reports into repeatable evaluation cases.",
+        "Ship one improvement and check for regressions on held-out cases."
+      ],
+      "gate": "A traceable chain from user feedback to a tested change.",
+      "deeper": [
+        "context"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Generalize and hand off",
+      "phase": "Scale",
+      "objective": "Make the next deployment cheaper to deliver and maintain.",
+      "refs": [
+        "ramp",
+        "openai-fde",
+        "nick"
+      ],
+      "tasks": [
+        "Separate customer-specific configuration from reusable components.",
+        "Write a product feedback memo with repeated evidence and tradeoffs.",
+        "Have another engineer operate the workflow using only the handoff."
+      ],
+      "gate": "A maintainable package, an accountable owner, and a measured second-deployment cost.",
+      "deeper": [
+        "team",
+        "toil",
+        "agents-cli",
+        "plank-handoff"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Defend the work",
+      "phase": "Scale",
+      "objective": "Show judgment, evidence, and an honest account of limits.",
+      "refs": [
+        "sierra-interview",
+        "palantir-loop"
+      ],
+      "tasks": [
+        "Run a mock interview using one reported question and one case discussion.",
+        "Present your project: problem, alternatives, design, results, and next decision.",
+        "Score your skills with evidence and choose the next capability to improve."
+      ],
+      "gate": "A portfolio case study, demo, evaluation report, and candid retrospective.",
+      "deeper": [
+        "ddia"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "Q01",
+      "topic": "Decomposition",
+      "evidence": "Candidate-reported",
+      "company": "Palantir FDSE",
+      "prompt": "Design an application that lets users share their interests.",
+      "source": "palantir-report",
+      "context": "The candidate reports this specific design prompt. Wording is paraphrased; no official confirmation.",
+      "guide": "Clarify who shares with whom, visibility, matching behavior, and success. Model users, interests, and interactions. Walk through one user journey before discussing scale.",
+      "followup": "What changes if interest visibility is private by default? How would you test matching quality?"
+    },
+    {
+      "id": "Q02",
+      "topic": "Coding",
+      "evidence": "Candidate-reported",
+      "company": "Palantir FDSE",
+      "prompt": "Implement search(user_id, users) for the interest-sharing application.",
+      "source": "palantir-report",
+      "context": "The function name is reported, but the full schema and requirements are not public. Agree on them with your mock interviewer first.",
+      "guide": "Ask what results mean, whether order matters, and how prior interactions affect eligibility. Start with a correct implementation; test empty data, duplicates, missing users, and ties.",
+      "followup": "Explain the time and space costs. Which lookup would you index, and why?"
+    },
+    {
+      "id": "Q03",
+      "topic": "Coding",
+      "evidence": "Candidate-reported",
+      "company": "Palantir FDSE",
+      "prompt": "How would you make meeting-history lookups faster?",
+      "source": "palantir-report",
+      "context": "Reported as a follow-up to the same interview; the original data model is incomplete.",
+      "guide": "Identify the lookup key and read/write pattern. Compare a scan with a keyed index, explain memory and update costs, and preserve the original matching semantics.",
+      "followup": "How do cancellations, duplicate records, or stale indexes affect correctness?"
+    },
+    {
+      "id": "Q04",
+      "topic": "Coding",
+      "evidence": "Candidate-reported",
+      "company": "Palantir FDSE",
+      "prompt": "How would you speed up searching interests if the data must remain an array?",
+      "source": "palantir-report",
+      "context": "Reported follow-up; the post suggests sorting and binary search. The correct design depends on the requested matching semantics.",
+      "guide": "Clarify exact, prefix, or substring matching. Consider sorted ranges for compatible queries; account for sorting and mutation costs. Explain why prefix indexing does not solve arbitrary substring search.",
+      "followup": "When is a simple scan better than maintaining sorted order?"
+    },
+    {
+      "id": "Q05",
+      "topic": "Motivation",
+      "evidence": "Candidate-reported",
+      "company": "Palantir FDSE — government track",
+      "prompt": "Why this company, why the government domain, and why the FDSE role?",
+      "source": "palantir-loop",
+      "context": "The author reports repeated motivation questions in one government-track process. This is not a universal interview sequence.",
+      "guide": "Connect a specific mission or workflow to your past work. Describe the role accurately and discuss genuine fit, including work you would decline.",
+      "followup": "What would you need to learn about the customer before accepting the role?"
+    },
+    {
+      "id": "Q06",
+      "topic": "Ownership",
+      "evidence": "Candidate-reported",
+      "company": "Palantir FDSE",
+      "prompt": "Walk through your internship project in detail. What did you enjoy most and least?",
+      "source": "palantir-loop",
+      "context": "A paraphrase of the reported hiring-manager project discussion.",
+      "guide": "Distinguish your contribution from the team’s. Explain a decision, an obstacle, a result, and what you would change. Be precise about whether outcomes were measured.",
+      "followup": "What evidence changed your mind during the project?"
+    },
+    {
+      "id": "Q07",
+      "topic": "Product & build",
+      "evidence": "Employer-published format",
+      "company": "Sierra engineering",
+      "prompt": "Define a product in a domain you know, build it using your chosen AI tools, then demonstrate and defend it.",
+      "source": "sierra-interview",
+      "context": "Sierra describes a plan/build/review onsite with a two-hour build. This is a published format, not a fixed question; the current recruiting process may differ.",
+      "guide": "Choose a narrow user problem, show the main flow, explain scope cuts, inspect generated code, and describe what must change before production.",
+      "followup": "Which model-generated change did you reject, and what evidence led you there?"
+    },
+    {
+      "id": "Q08",
+      "topic": "Debugging",
+      "evidence": "Employer-published format",
+      "company": "Sierra engineering",
+      "prompt": "Review and improve a draft change that introduces a cross-cutting feature in an existing codebase.",
+      "source": "sierra-interview",
+      "context": "Sierra describes this as a debugging-interview pilot, not a confirmed universal stage. No original codebase is provided.",
+      "guide": "Reproduce the behavior, trace affected boundaries, find the smallest responsible fix, and check regressions. Explain both the code change and its user impact.",
+      "followup": "What would you inspect before trusting an AI-generated patch?"
+    },
+    {
+      "id": "Q09",
+      "topic": "Scope & customers",
+      "evidence": "Case-derived question",
+      "company": "Ramp case discussion",
+      "prompt": "A customer asks for a feature that will take three days. How do you decide whether to build it?",
+      "source": "ramp",
+      "context": "An original interview-style question derived from a published delivery example; not reported as an actual hiring question.",
+      "guide": "Ask about the underlying blocker, deadline, existing alternatives, and acceptance criteria. Compare a workaround with a reusable feature and include maintenance cost.",
+      "followup": "When would a workaround create unacceptable long-term risk?"
+    },
+    {
+      "id": "Q10",
+      "topic": "SPE ownership",
+      "evidence": "Case-derived question",
+      "company": "Cognition case discussion",
+      "prompt": "Employees are rapidly building internal apps, but no team owns a safe deployment environment. What do you do first?",
+      "source": "nick",
+      "context": "An original question based on Nick Wong’s published account; not a reported Cognition interview question.",
+      "guide": "Identify the workflows, sensitive data, users, and ownership gap. Build a paved path with clear permissions, maintenance ownership, and a narrow first use case.",
+      "followup": "What evidence would justify turning the internal capability into a customer product?"
+    },
+    {
+      "id": "Q11",
+      "topic": "Evaluation",
+      "evidence": "Case-derived question",
+      "company": "Tax AI case discussion",
+      "prompt": "Experts keep correcting your AI output. How would you turn those corrections into a reliable improvement process?",
+      "source": "tax",
+      "context": "An original question derived from the published Tax AI engineering case.",
+      "guide": "Capture context and traces, distinguish genuine errors from policy changes, create representative held-out cases, and test fixes against regressions before rollout.",
+      "followup": "How do you keep the improvement loop from overfitting to the latest corrections?"
+    },
+    {
+      "id": "Q12",
+      "topic": "Adoption & value",
+      "evidence": "Case-derived question",
+      "company": "Sonos case discussion",
+      "prompt": "Your support agent resolves chats quickly, but customers still struggle to use the product. What should you measure next?",
+      "source": "sonos",
+      "context": "An original question grounded in the published time-to-music and customer-effort discussion.",
+      "guide": "Follow the full customer journey. Examine repeat contacts, actual task completion, cohort differences, and time to first value. Validate the data with users.",
+      "followup": "How would you distinguish genuine resolution from a customer giving up?"
+    },
+    {
+      "id": "Q13",
+      "topic": "Security & data",
+      "evidence": "Case-derived question",
+      "company": "Zanzibar architecture discussion",
+      "prompt": "A user loses access to a folder, then new content is added. How do you stop stale permission checks from exposing it?",
+      "source": "zanzibar",
+      "context": "An original design question based on the paper’s new-enemy problem; not a reported hiring question.",
+      "guide": "Model content and ACL versions, inherited permissions, and read consistency. Include caches and exports. State the revocation guarantee and test forbidden reads after changes.",
+      "followup": "Where is an authorization check too stale to be acceptable?"
+    },
+    {
+      "id": "Q14",
+      "topic": "Migration",
+      "evidence": "Case-derived question",
+      "company": "Stripe engineering discussion",
+      "prompt": "Move live customer subscriptions into a new data model without losing updates. How do you stage and reverse the change?",
+      "source": "migration",
+      "context": "An original question derived from the published online migration; not a Stripe interview report.",
+      "guide": "Separate write duplication, backfill, validation, read cutover, and retirement. Inspect concurrent updates, parity failures, load, and the conditions under which rollback remains possible.",
+      "followup": "A backfill races with a newer write. Which version wins and how would you detect a regression?"
+    },
+    {
+      "id": "Q15",
+      "topic": "Incident judgment",
+      "evidence": "Case-derived question",
+      "company": "GitHub incident discussion",
+      "prompt": "Failover has produced writes in two locations and increased application latency. What do you protect first?",
+      "source": "github-incident",
+      "context": "An original incident discussion based on the 2018 postmortem; not a GitHub interview report.",
+      "guide": "State the data-integrity invariant, freeze unrelated changes, inspect replication, and choose a containment path. Explain the consequences of degraded service versus unsafe failback.",
+      "followup": "Which queued jobs can be replayed safely, and which require reconciliation?"
+    },
+    {
+      "id": "Q16",
+      "topic": "Unit economics",
+      "evidence": "Case-derived question",
+      "company": "Production operations discussion",
+      "prompt": "The model bill falls, but review and support increase. How do you decide whether the deployment improved?",
+      "source": "toil",
+      "context": "An original synthesis applying the published toil framework to FDE delivery; the scenario is hypothetical.",
+      "guide": "Use total cost per accepted task, include failures and human work, and hold task mix and quality constant. Separate realized savings from theoretical capacity.",
+      "followup": "What changes if usage doubles but the support team cannot grow?"
+    }
+  ],
+  "cases": [
+    {
+      "id": "C01",
+      "title": "Cognition · Devin’s Playground",
+      "theme": "SPE",
+      "source": "nick",
+      "problem": "Internal app creation outpaced clear ownership of a protected deployment environment.",
+      "approach": "Nick Wong describes building a shared environment, then exploring security products.",
+      "result": "A public account connects the internal project to Devin for Security; no quantified business effect is supplied.",
+      "limit": "A company-hosted personal account, not an independent evaluation.",
+      "question": "Which ownership gap matters enough to justify a shared capability?"
+    },
+    {
+      "id": "C02",
+      "title": "Ramp · Resolve the onboarding blocker",
+      "theme": "Discovery",
+      "source": "ramp",
+      "problem": "A requested feature appeared to require roughly three engineering days.",
+      "approach": "The team spoke directly with the customer and found a workaround during the call.",
+      "result": "The article reports avoiding the implementation.",
+      "limit": "One anecdote; it does not quantify sustained adoption or maintenance cost.",
+      "question": "What did the customer need to accomplish, and which requirement was negotiable?"
+    },
+    {
+      "id": "C03",
+      "title": "Palantir × Airbus · A350 workflow",
+      "theme": "Delivery",
+      "source": "nabeel",
+      "problem": "Manufacturing work depended on fragmented information.",
+      "approach": "Qureshi describes connecting work orders, parts, quality issues, and schedules in one workflow.",
+      "result": "He reports the work contributed to a fourfold manufacturing ramp-up.",
+      "limit": "A former practitioner’s retrospective. The software’s isolated causal contribution is not established.",
+      "question": "How would you validate that a workflow improvement reduces a production bottleneck?"
+    },
+    {
+      "id": "C04",
+      "title": "OpenAI × semiconductor customer",
+      "theme": "Delivery",
+      "source": "openai-fde",
+      "problem": "Verification workflows needed useful AI under real engineering constraints.",
+      "approach": "FDEs learned the domain, built evaluations, and later consolidated custom implementations.",
+      "result": "OpenAI reports about 48% time savings for directed test generation and roughly 90% less custom code.",
+      "limit": "An unnamed customer; independent methodology and cost accounting are not public.",
+      "question": "Which domain-specific evaluation would block an unsafe launch?"
+    },
+    {
+      "id": "C05",
+      "title": "OpenAI × telecom customer",
+      "theme": "Evaluation",
+      "source": "openai-fde",
+      "problem": "Voice support exposed gaps in function calling and instruction following.",
+      "approach": "FDEs and researchers iterated against customer-defined evaluations.",
+      "result": "OpenAI reports key evaluation scores rising from about 60% to over 90% in six months.",
+      "limit": "The evaluation set is not public; this is not an overall customer-satisfaction measure.",
+      "question": "When should you reduce scope, involve research, or stop the deployment?"
+    },
+    {
+      "id": "C06",
+      "title": "Thrive / Crete × OpenAI · Tax AI",
+      "theme": "Evaluation",
+      "source": "tax",
+      "problem": "Practitioner corrections were difficult to convert into durable system improvements.",
+      "approach": "Capture corrections with production traces and turn failure patterns into evaluation targets.",
+      "result": "The article reports 7,000 pilot returns and about 50% higher throughput, with practitioner review.",
+      "limit": "Provider-reported pilot results; field-completion accuracy is not the same as error-free returns.",
+      "question": "How would you preserve expert review while reducing total handling time?"
+    },
+    {
+      "id": "C07",
+      "title": "Morgan Stanley · Knowledge retrieval",
+      "theme": "Adoption",
+      "source": "morgan",
+      "problem": "Advisors needed dependable access to a large internal knowledge base.",
+      "approach": "Expert-scored evaluations guided retrieval and response improvements.",
+      "result": "The source reports active use by more than 98% of advisor teams.",
+      "limit": "Team-level adoption does not establish individual usage intensity or financial impact.",
+      "question": "What usage denominator and quality thresholds would make adoption meaningful?"
+    },
+    {
+      "id": "C08",
+      "title": "Morgan Stanley · Debrief",
+      "theme": "Delivery",
+      "source": "morgan",
+      "problem": "Turning client conversations into usable notes and follow-ups required manual effort.",
+      "approach": "Meeting summaries enter the advisor workflow with consent and human review.",
+      "result": "The case describes CRM-integrated notes and draft follow-ups.",
+      "limit": "A qualitative deployment account; no isolated ROI estimate is provided.",
+      "question": "How do you evaluate omissions, incorrect action items, and review workload?"
+    },
+    {
+      "id": "C09",
+      "title": "Rakuten × Claude Code",
+      "theme": "Adoption",
+      "source": "rakuten",
+      "problem": "Large development teams wanted shorter feature-delivery cycles.",
+      "approach": "Teams adopted coding agents for development and refactoring work.",
+      "result": "The customer story reports feature time-to-market moving from 24 to 5 days.",
+      "limit": "Vendor-hosted results; scope and counterfactual are limited. Do not generalize this improvement to every task.",
+      "question": "How would you compare similar work and account for review time?"
+    },
+    {
+      "id": "C10",
+      "title": "Sonos × Sierra",
+      "theme": "Discovery",
+      "source": "sonos",
+      "problem": "Fast support interactions did not fully represent the customer’s goal: hearing music.",
+      "approach": "The case connects AI support to time-to-music and broader customer-effort signals.",
+      "result": "A documented operating approach; no universal improvement percentage is claimed here.",
+      "limit": "A customer story, with limited controlled measurement evidence.",
+      "question": "What is the end-to-end customer outcome beyond containment rate?"
+    },
+    {
+      "id": "C11",
+      "title": "WeightWatchers × Sierra",
+      "theme": "Adoption",
+      "source": "ww",
+      "problem": "Customer care needed domain-specific language and policy-aware assistance.",
+      "approach": "The team integrated business knowledge and systems, then started with a small set of use cases.",
+      "result": "The source displays approximately 70% resolution and a 4.6 CSAT.",
+      "limit": "Publisher-reported measures; the visible headline does not establish sampling, scale, or causal lift.",
+      "question": "Which cases should always escalate, and how will you detect silent failures?"
+    },
+    {
+      "id": "C12",
+      "title": "Nubank × Devin",
+      "theme": "Delivery",
+      "source": "latam",
+      "problem": "A large monolith migration would consume substantial engineering capacity.",
+      "approach": "Cognition describes applying Devin to the migration.",
+      "result": "The article claims years-to-weeks delivery and more than 20× lower cost.",
+      "limit": "An announcement with sparse methodology; no independent cost model or complete scope is disclosed.",
+      "question": "What would you request before using that claim in a business case?"
+    },
+    {
+      "id": "C13",
+      "title": "Itaú × Devin",
+      "theme": "Adoption",
+      "source": "latam",
+      "problem": "A bank needed to modernize and maintain a broad software estate.",
+      "approach": "The announcement describes repository documentation, migration, and vulnerability work.",
+      "result": "Cognition reports use by over 75% of technology teams and a 20–30% throughput increase.",
+      "limit": "Vendor-reported adoption and throughput are different measures; neither proves causation alone.",
+      "question": "How would you define accepted output and prevent quality from falling?"
+    },
+    {
+      "id": "C14",
+      "title": "Anthropic · Multi-agent research",
+      "theme": "Architecture",
+      "source": "multiagent",
+      "problem": "Broad research tasks needed effective parallel exploration and synthesis.",
+      "approach": "The engineering team describes an orchestrator with specialist subagents, evaluation, and reliability work.",
+      "result": "A published production-system account with architecture and evaluation lessons.",
+      "limit": "An internal product-engineering case, included as adjacent learning rather than evidence of an FDE engagement.",
+      "question": "When does parallel work justify coordination cost and extra token usage?"
+    },
+    {
+      "id": "C15",
+      "title": "Stripe · A live subscription migration",
+      "theme": "Integration",
+      "source": "migration",
+      "problem": "Subscriptions outgrew their original customer-record representation.",
+      "approach": "Stage duplicate writes and backfill, validate the new representation, switch reads, then retire the old path.",
+      "result": "The engineering account describes a staged live migration and verification strategy.",
+      "limit": "An adjacent software-engineering case, not an identified FDE engagement. The 2017 stack is historical.",
+      "question": "What must be true at every phase before you can advance or roll back?"
+    },
+    {
+      "id": "C16",
+      "title": "GitHub · When failover made recovery harder",
+      "theme": "Reliability",
+      "source": "github-incident",
+      "problem": "A short network partition triggered database failover into a topology the application could not tolerate.",
+      "approach": "The team preserved writes, degraded parts of the service, restored replication, and recovered queued work.",
+      "result": "GitHub reports 24 hours and 11 minutes of degradation after a 43-second connectivity loss.",
+      "limit": "A company postmortem from 2018; included for recovery judgment, not as an FDE project or a current architecture description.",
+      "question": "Which application assumptions should a disaster-recovery exercise test beyond database health?"
+    },
+    {
+      "id": "C17",
+      "title": "Google · Authorization that respects content changes",
+      "theme": "Security",
+      "source": "zanzibar",
+      "problem": "A stale access decision can expose newly changed content after a user’s permission is removed.",
+      "approach": "Zanzibar couples authorization reads to causal ordering and content-version consistency tokens.",
+      "result": "The paper describes a deployed authorization system and its production properties.",
+      "limit": "A research paper about Google’s infrastructure, not an FDE customer engagement. Its scale is not a requirement for applying the invariant.",
+      "question": "How would the same invariant appear in an enterprise search cache or a generated summary?"
+    }
+  ]
+}

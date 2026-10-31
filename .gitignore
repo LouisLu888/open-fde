@@ -1,0 +1,7 @@
+node_modules/
+work/*-preview.png
+work/downloaded-guide.html
+npm-debug.log*
+.DS_Store
+site/
+.wrangler/
