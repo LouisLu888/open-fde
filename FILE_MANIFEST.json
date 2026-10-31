@@ -35,8 +35,8 @@
     },
     {
       "path": "docs/RESEARCH_CONTEXT.md",
-      "bytes": 9986,
-      "sha256": "3730b1dbe3d1ae57e34b5546390aec6caf454220452b4285e2de41d5570be4a8"
+      "bytes": 10502,
+      "sha256": "5bc2d0b25e211f96b0f7110523c9412f5d43d9ed02bea474181f241142b274b7"
     },
     {
       "path": "docs/SOURCES.json",
@@ -50,8 +50,8 @@
     },
     {
       "path": "outputs/FDE_SPE_Field_Academy.html",
-      "bytes": 461854,
-      "sha256": "4b7f132e17f32c378b1ff808c5df824360ba7fc485b31ca3c2a2bf63aeb0a571"
+      "bytes": 472457,
+      "sha256": "0cf0029f6d0c6d57a9d6b5d424e564bf2441a4279c194122efbcad2a8b81cc81"
     },
     {
       "path": "package-lock.json",
@@ -65,28 +65,28 @@
     },
     {
       "path": "previews/desktop-preview.png",
-      "bytes": 102238,
-      "sha256": "125876a73489e733026d6c62873eb267baf0d59ac05ebeee58ac05a0d7ff7ec6"
+      "bytes": 98326,
+      "sha256": "533eeb58b03e9f20987cd562b0b4667dbc9f86e12c6de878763ec3b69fceab76"
     },
     {
       "path": "previews/mobile-preview.png",
-      "bytes": 64399,
-      "sha256": "25860703cecf1dcfc50a7ca7b5f4fbe9f097a4c22b64094972f576e6a36c1b67"
+      "bytes": 64602,
+      "sha256": "4a6991fd4707a16c5ee2543000a6e845b6d35835c4aca7169432377e2710395f"
     },
     {
       "path": "previews/stories-mobile-preview.png",
-      "bytes": 65791,
-      "sha256": "db451599fea755a239e985cd0d916cd62eec663cc4f257aeb77f2f3687d593b0"
+      "bytes": 66347,
+      "sha256": "955e1f66718996898d78c66d001abf5c2adcc933192703dbab03e797c191bc3f"
     },
     {
       "path": "previews/stories-preview.png",
-      "bytes": 113185,
-      "sha256": "17415da08ed08dda8ef869b67d839773d076169b7752564a8cab8b4e13b4c2b8"
+      "bytes": 117455,
+      "sha256": "dc836bff1deeaa41e6b930f6a31d083ac1ccb723f12debe4c437a536a03f6209"
     },
     {
       "path": "work/build.mjs",
-      "bytes": 80664,
-      "sha256": "48a48654b215bfd5d7f6137bc00d43f678718ee07a3977fc249a5d2b0fc2864c"
+      "bytes": 87119,
+      "sha256": "91606bbe89806f4f481f85e7dea6dfa3931e72ac39b2658a8fd20fb69e85ef0f"
     },
     {
       "path": "work/check-package.mjs",
@@ -115,8 +115,8 @@
     },
     {
       "path": "work/verify.mjs",
-      "bytes": 12040,
-      "sha256": "eb58936e9423333b0261068edec5777aed44c1e6287cc966cafd0dae0db632cf"
+      "bytes": 13605,
+      "sha256": "c1bcf9c7748062288ace7fe25745bc0a6fcde297941380f7ca38e0a439927e99"
     },
     {
       "path": "README.md",

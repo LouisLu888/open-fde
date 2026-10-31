@@ -22,6 +22,9 @@ await page.goto(outputPath.href);
 await page.locator('h1').waitFor();
 assert.deepEqual(await page.locator('.nav a').allTextContents(),['Learn','Resources','Interview','Stories & cases']);
 assert.equal(await page.locator('.door').count(),4);
+assert.equal(await page.locator('.compare tbody tr').count(),9,'FDE vs SPE comparison on home');
+assert.equal((await page.locator('.brand').textContent()).startsWith('FDE Academy'),true);
+assert.equal(await page.locator('#downloadHtml').count(),0,'No download button');
 assert.equal(await page.locator('input[type=checkbox],textarea,#progress').count(),0,'No progress tracking UI');
 await page.evaluate(()=>localStorage.setItem('fde-spe-field-academy-public-v2','{}'));
 await page.reload();
@@ -48,34 +51,45 @@ for(const [hash,visible] of [['roadmap','#learn'],['week-2','#ch-2'],['fieldcraf
 // Resources: every curated resource and person appears once.
 await page.locator('.nav a[href="#resources"]').click();
 await page.locator('#resources').waitFor({state:'visible'});
-assert.equal(await page.locator('#res-people .row').count(),people.length);
+assert.equal(await page.locator('#res-people tbody tr').count(),people.length);
+assert.equal(await page.locator('#res-people thead th').count(),5);
+assert.equal(await page.locator('#resources [role=tab]').count(),5);
+assert(await page.locator('#res-people').isVisible()&&await page.locator('#res-books').isHidden(),'People tab is the default');
+await page.locator('[role=tab][href="#res-books"]').click();
+await page.locator('#res-books').waitFor({state:'visible'});
+assert(await page.locator('#res-people').isHidden());
+assert.equal(await page.locator('[role=tab][href="#res-books"]').getAttribute('aria-selected'),'true');
+await page.keyboard.press('ArrowRight');
+await page.locator('#res-articles').waitFor({state:'visible'});
+assert.equal(await page.evaluate(()=>location.hash),'#res-articles');
 assert.equal(await page.locator('[id^="reading-"]').count(),readings.length);
 assert.equal(new Set(readings.map(reading=>reading.id)).size,readings.length);
 assert.equal(await page.locator('#res-books .row').count(),readings.filter(reading=>/^Book/.test(reading.format)).length);
 assert.equal(await page.locator('#res-podcasts .row').count(),3);
 assert(await page.locator('#res-videos .row').count()>=3);
+await page.goto(outputPath.href+'#res-books');
+await page.goto(outputPath.href+'#reading-zanzibar');
+await page.locator('#reading-zanzibar').waitFor({state:'visible'});
 await page.locator('#reading-zanzibar summary').click();
 assert(await page.locator('#reading-zanzibar details').getAttribute('open')!==null);
 
 // Interview and stories.
 await page.locator('.nav a[href="#interview"]').click();
+await page.locator('#questions').waitFor({state:'visible'});
 assert.equal(await page.locator('#questions .row').count(),questions.length);
+assert(await page.locator('#questions').isVisible()&&await page.locator('#jobs').isHidden(),'Questions tab is the default');
+await page.locator('[role=tab][href="#jobs"]').click();
+await page.locator('#jobs').waitFor({state:'visible'});
 await page.locator('.nav a[href="#stories"]').click();
 await page.locator('#stories').waitFor({state:'visible'});
 assert.equal(await page.locator('#story-list .row').count(),stories.length);
 assert.equal(new Set(stories.map(story=>story.source)).size,stories.length);
 assert.match(await page.locator('#story-S04').textContent(),/platform AI translation/);
 assert.equal(await page.locator('#cases .row').count(),cases.length);
+await page.locator('[role=tab][href="#cases"]').click();
+await page.locator('#cases').waitFor({state:'visible'});
+assert(await page.locator('#story-list').isHidden());
 await page.screenshot({path:fileURLToPath(new URL('stories-preview.png',import.meta.url)),fullPage:false});
-
-// Clean download.
-const downloadPromise=page.waitForEvent('download');
-await page.locator('#downloadHtml').click();
-const download=await downloadPromise;
-assert.equal(await download.failure(),null);
-const downloaded=readFileSync(await download.path());
-const cleanSnapshot=await page.evaluate(()=>cleanPage);
-assert.equal(createHash('sha256').update(downloaded).digest('hex'),createHash('sha256').update(cleanSnapshot).digest('hex'));
 
 // Phone width: no horizontal overflow.
 await page.setViewportSize({width:390,height:844});
@@ -104,6 +118,10 @@ await page.locator('#globalSearch').fill('Discover the real problem');
 await page.keyboard.press('Enter');
 await page.locator('#ch-2').waitFor({state:'visible'});
 await page.waitForFunction(()=>document.activeElement.id==='ch-2');
+await page.locator('#globalSearch').fill('Zanzibar');
+await page.locator('#globalResults a',{hasText:'Consistent, Global Authorization'}).click();
+await page.locator('#reading-zanzibar').waitFor({state:'visible'});
+await page.waitForFunction(()=>document.activeElement.id==='reading-zanzibar');
 await page.locator('#globalSearch').fill('Nabeel');
 assert(await page.locator('#globalResults a').count()>=2,'Site-wide search spans sections');
 assert.equal(new Set(await page.locator('#globalResults small').allTextContents()).size>1,true);
@@ -141,18 +159,16 @@ assert(links.every(url=>new URL(url).pathname!=='/'||new URL(url).search.length>
 assert(storySources.every(source=>links.includes(source.url)),'Missing new source attribution');
 assert.equal(new Set(sources.map(source=>source.id)).size,sources.length,'Duplicate source ID');
 assert.equal(new Set(sources.map(source=>source.url)).size,sources.length,'Duplicate source URL');
-const downloadedPath=new URL('downloaded-guide.html',import.meta.url);
-writeFileSync(downloadedPath,downloaded);
 const recipientPage=await browser.newPage();
 recipientPage.on('pageerror',error=>errors.push(error.message));
-await recipientPage.goto(downloadedPath.href);
+await recipientPage.goto(outputPath.href);
 await recipientPage.locator('.nav a[href="#stories"]').click();
 await recipientPage.locator('#stories').waitFor({state:'visible'});
 assert.equal(await recipientPage.locator('#story-list .row:visible').count(),stories.length);
 await recipientPage.locator('.nav a[href="#learn"]').click();
 await recipientPage.locator('#learn').waitFor({state:'visible'});
 assert.equal(errors.length,0,errors.join('\n'));
-const report={contentUpdated:'2026-10-31',testedAt:new Date().toISOString(),browser:process.argv.includes('--chrome')?'Google Chrome':'Playwright Chromium',checks:['English-only','No private-company content','Four navigation sections and home doors','No progress tracking UI; legacy saved progress cleared','Learn: table of contents, 7 parts, preface plus 20 chapters, TOC links scroll to chapters','Old section links forward to the new structure','Resources: every curated resource and person listed once, grouped by type','Interview questions and case studies all listed','Eight unique firsthand stories','HTML download matches pristine snapshot','Downloaded HTML opens and functions','390px viewport: all sections without body overflow','Site-wide search: keyboard shortcut, ranking, cross-section results, chapter navigation, empty state','Job openings: counts match snapshot, per-posting links, company search, region and role-family filters, empty state, global search','Social preview and canonical metadata','New source links present and unique','No JavaScript runtime errors'],bytes:Buffer.byteLength(html),sha256:createHash('sha256').update(html).digest('hex'),externalLinks:links.length};
+const report={contentUpdated:'2026-10-31',testedAt:new Date().toISOString(),browser:process.argv.includes('--chrome')?'Google Chrome':'Playwright Chromium',checks:['English-only','No private-company content','Four navigation sections; landing home with reasons, FDE vs SPE comparison, and doors; no download button','No progress tracking UI; legacy saved progress cleared','Learn: table of contents, 7 parts, preface plus 20 chapters, TOC links scroll to chapters','Old section links forward to the new structure','Resources: every curated resource and person listed once, grouped by type','Interview questions and case studies all listed','Eight unique firsthand stories','Tabs: Resources, Interview, Stories switch by click, link, and arrow keys; search opens the right tab','People table with intro, X handle, reading, and talks','Built HTML opens and functions in a fresh page','390px viewport: all sections without body overflow','Site-wide search: keyboard shortcut, ranking, cross-section results, chapter navigation, empty state','Job openings: counts match snapshot, per-posting links, company search, region and role-family filters, empty state, global search','Social preview and canonical metadata','New source links present and unique','No JavaScript runtime errors'],bytes:Buffer.byteLength(html),sha256:createHash('sha256').update(html).digest('hex'),externalLinks:links.length};
 writeFileSync(new URL('verification.json',import.meta.url),JSON.stringify(report,null,2));
 console.log(JSON.stringify(report,null,2));
 await browser.close();

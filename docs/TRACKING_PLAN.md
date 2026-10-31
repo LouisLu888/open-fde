@@ -16,8 +16,8 @@ Autocapture: page views, sessions, marketing attribution. Element clicks, form i
 | Resource Link Clicked | section, item_id, link_text, host | Any outbound link outside the jobs list |
 | Job Posting Clicked | company, job_title, role_family, location, host | A job posting link is clicked |
 | Job Board Clicked | company, host | "All <company> jobs" is clicked |
+| Tab Selected | section, tab | A tab is chosen in Resources, Interview, or Stories & cases |
 | Job Company Selected | company | A company chip in the jobs index is clicked |
-| Guide Downloaded | — | "Download HTML" clicked |
 
 Configure with `AMPLITUDE_API_KEY` (and `AMPLITUDE_SERVER_ZONE=EU` for EU projects) or `work/analytics/config.json` (`{"apiKey": "...", "serverZone": "US"}`). Without a key the build emits no loader.
 
@@ -25,6 +25,6 @@ Verify with `npm run test:analytics`: serves the page as https://open-fde.ai in 
 
 Register the events above in Amplitude Data (category `open-fde.ai`, with descriptions and typed properties) via the Taxonomy API: `AMPLITUDE_SECRET_KEY=... npm run analytics:register` (`-- --dry-run` previews). The script parses this table, so edit the table first when events change; it is safe to re-run. The secret key is read from the environment only.
 
-Retired in edition 3.4 with the old library jump buttons: Path Resource Opened. Section searches and filters now exist only in the jobs list.
+Retired in edition 3.4: Path Resource Opened (library jump buttons) and Guide Downloaded (download button removed). Section searches and filters now exist only in the jobs list.
 
 Retired in edition 3.3 with progress tracking: Progress Item Toggled, Self Assessment Scored, Progress Exported, Progress Imported, Progress Reset, Share Text Copied. They remain registered in Amplitude.

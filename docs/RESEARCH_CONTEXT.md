@@ -86,3 +86,5 @@ New information architecture, four sections:
 4. Stories & cases (`#stories`): stories (`#story-list`) and case studies (`#cases`).
 
 Old hashes forward: `#roadmap`, `#week-N`, `#fieldcraft`, `#library`, `#people`, `#interviews`. Site search indexes every element with `data-kind`. Section filters were removed except for jobs; the delivery-loop widget, quiz, and start-page routes were removed (the phases now open the book's preface and parts).
+
+Later in 3.4: Resources, Interview, and Stories & cases use tabs (`[role=tab]` links; the hash selects the tab, arrow keys move between tabs, search opens the right tab). People is a table (person, why follow, X, read, watch or listen) that stacks on phones. The header brand is "FDE Academy". Home is a landing page: hero, four reasons to use the guide, an FDE vs SPE comparison built from the phase lenses in `stages`, and the four section doors. The Download button and the clean-download snapshot were removed.
