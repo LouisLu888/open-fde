@@ -20,8 +20,8 @@
     },
     {
       "path": "START_HERE.md",
-      "bytes": 4860,
-      "sha256": "7343df6b7fd6117ff897b2a3c2320db6eec0ce4cafbb06467ff2a003d19a9706"
+      "bytes": 4848,
+      "sha256": "245aafcdfb20c1c053ff6d0cd390b5760d180122529ac79e7a3261737a93dbb2"
     },
     {
       "path": "docs/CONTENT_INVENTORY.json",
@@ -50,8 +50,8 @@
     },
     {
       "path": "outputs/FDE_SPE_Field_Academy.html",
-      "bytes": 472457,
-      "sha256": "0cf0029f6d0c6d57a9d6b5d424e564bf2441a4279c194122efbcad2a8b81cc81"
+      "bytes": 472397,
+      "sha256": "223df27d53e7569bb55c1b8a7bc5592ef31ae4b546045ce216e7145df9612b0d"
     },
     {
       "path": "package-lock.json",
@@ -60,8 +60,8 @@
     },
     {
       "path": "package.json",
-      "bytes": 863,
-      "sha256": "a7dfb5bb16314cfbbb23a9813c19427369dbee9b99970707a72983b82ee108c0"
+      "bytes": 853,
+      "sha256": "5fee1a5a2859c0a7b78f5e0fc4be41292e35bc86e449b35babe97493f22e4ed6"
     },
     {
       "path": "previews/desktop-preview.png",
@@ -80,13 +80,13 @@
     },
     {
       "path": "previews/stories-preview.png",
-      "bytes": 117455,
-      "sha256": "dc836bff1deeaa41e6b930f6a31d083ac1ccb723f12debe4c437a536a03f6209"
+      "bytes": 117446,
+      "sha256": "02aa94238f7947b2c44c9f8bf268e2e6479b6981924e4a7bcf7c9392ca3c42f6"
     },
     {
       "path": "work/build.mjs",
-      "bytes": 87119,
-      "sha256": "91606bbe89806f4f481f85e7dea6dfa3931e72ac39b2658a8fd20fb69e85ef0f"
+      "bytes": 87059,
+      "sha256": "c5e56b26695e824c8f593cca5e314bca7e762b2a43ad690d8a79ce3ca939393d"
     },
     {
       "path": "work/check-package.mjs",
@@ -120,8 +120,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 1357,
-      "sha256": "dd43ae44038642c8c335f8bffd3ffb8c2385b250543dddeec5f7c63a1b6c7533"
+      "bytes": 1345,
+      "sha256": "baae4adc846ad1a5041e533c54cc03fa95459335c577d3865080528d9a8551c1"
     },
     {
       "path": "wrangler.jsonc",
@@ -135,13 +135,13 @@
     },
     {
       "path": "work/og-image.mjs",
-      "bytes": 1794,
-      "sha256": "acf4d572e68b81d8d344c623647c4721269b93ffe7abf73b86302b8d61d6f4b2"
+      "bytes": 1783,
+      "sha256": "9b2fb95e6c1a462abc53fbd1af7e8dfda4c511c0469b986d1dc7a07e1208e1b0"
     },
     {
       "path": "outputs/og.png",
-      "bytes": 62830,
-      "sha256": "2fbdd3ea3d26be25f30ef9f23568ea9b5f9ce7351b4d4c9117419b32b766a1a9"
+      "bytes": 60335,
+      "sha256": "295da305282723c7b545d8428725105c374fbf936975ad769c09c5fce69ba8ca"
     },
     {
       "path": "work/fetch-jobs.mjs",

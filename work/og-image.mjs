@@ -12,8 +12,8 @@ const card=`<!doctype html><html><head><meta charset="utf-8"><link rel="styleshe
 .brand{font:500 28px 'Newsreader',Georgia,serif;color:#cfdcd4}
 h1{font:500 96px/1 'Newsreader',Georgia,serif;letter-spacing:-.025em;max-width:960px}
 .foot{display:flex;justify-content:space-between;align-items:baseline;font-size:24px;color:#a9bfb5}.foot b{color:#e9b824;font-weight:600}
-</style></head><body><div class="brand">FDE / SPE Field Academy</div><h1>From customer problem to measurable impact.</h1>
-<div class="foot"><span>${readings.length} resources, ${cases.length} cases, ${stories.length} stories and a 12-week roadmap</span><b>open-fde.ai</b></div></body></html>`;
+</style></head><body><div class="brand">FDE Academy</div><h1>From customer problem to measurable impact.</h1>
+<div class="foot"><span>A 20-chapter guide, ${readings.length} resources, ${stories.length} stories and ${cases.length} cases</span><b>open-fde.ai</b></div></body></html>`;
 const browser=await chromium.launch({headless:true});
 const page=await browser.newPage({viewport:{width:1200,height:630}});
 await page.setContent(card,{waitUntil:'networkidle'});await page.evaluate(()=>document.fonts.ready);

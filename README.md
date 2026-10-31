@@ -2,7 +2,7 @@
 
 **Live site: [open-fde.ai](https://open-fde.ai)**
 
-Source for the site: the FDE / SPE Field Academy, a free, independent, evidence-labeled learning guide for Forward Deployed Engineers and Special Projects Engineers.
+Source for the site: the FDE Academy, a free, independent, evidence-labeled learning guide for Forward Deployed Engineers and Special Projects Engineers.
 
 The whole site is one self-contained HTML file generated from the modules in `work/`. It works offline, stores nothing about visitors, and needs no backend.
 

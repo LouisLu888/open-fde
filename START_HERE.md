@@ -1,4 +1,4 @@
-# FDE / SPE Field Academy — complete handoff
+# FDE Academy — complete handoff
 
 Public edition 3.2 · Content updated October 31, 2026.
 

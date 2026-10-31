@@ -2,7 +2,7 @@
   "name": "fde-spe-field-academy",
   "version": "3.4.0",
   "private": true,
-  "description": "Portable source project for the independent FDE/SPE Field Academy learning website",
+  "description": "Portable source project for the independent FDE Academy learning website",
   "type": "module",
   "engines": {
     "node": ">=22"
