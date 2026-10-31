@@ -449,6 +449,83 @@
       "caveat": "Google-specific reference, not a required stack. It succeeds Agent Starter Pack, now in maintenance mode."
     },
     {
+      "id": "pod-fde-playbook",
+      "category": "mindset",
+      "level": "Foundation",
+      "format": "Podcast",
+      "access": "Free",
+      "why": "Hear why the FDE model fits AI products that have no incumbent to copy.",
+      "focus": "How McGrew explains the gap between product capability and customer need, and where pricing and executive involvement come in.",
+      "outcome": "Write down which part of your current deployment is product discovery and which part is custom delivery.",
+      "caveat": "A founder and investor perspective on startups; not a description of any one company’s current FDE program."
+    },
+    {
+      "id": "pod-lenny-palantir",
+      "category": "mindset",
+      "level": "Foundation",
+      "format": "Podcast",
+      "access": "Free",
+      "why": "Get a firsthand picture of FDE life at the company that named the role.",
+      "focus": "Chapters at 19:11 (FDEs at Palantir), 38:02 (life as an FDE), 46:36 (advice on implementing FDEs), and 50:41 (the current state).",
+      "outcome": "List the habits Qureshi describes that you could adopt on your next customer engagement.",
+      "caveat": "One former employee’s account; Palantir’s current program may differ."
+    },
+    {
+      "id": "pod-ramp-services",
+      "category": "value",
+      "level": "Practitioner",
+      "format": "Podcast",
+      "access": "Free",
+      "why": "Learn how an FDE team turns customer workflows into agents and charges for outcomes.",
+      "focus": "The parts on data access, unwritten tribal knowledge, and why the model is usually the easy part.",
+      "outcome": "Before your next build, list the data you need, who controls access to it, and how long access will take.",
+      "caveat": "A company leader describing his own team; business results are not independently verified."
+    },
+    {
+      "id": "pod-focal-happyrobot",
+      "category": "scale",
+      "level": "Practitioner",
+      "format": "Podcast",
+      "access": "Free",
+      "why": "See how a startup hires, organizes, and pays FDEs as it grows.",
+      "focus": "The sections on FDEs versus deployment strategists, hiring traits and equity, and FDE pods by vertical.",
+      "outcome": "Sketch which of your customer requests would justify a dedicated pod and which should become product.",
+      "caveat": "A founder describing his own company; compensation figures are his account."
+    },
+    {
+      "id": "pod-metrics-fde",
+      "category": "value",
+      "level": "Practitioner",
+      "format": "Podcast",
+      "access": "Free",
+      "why": "Understand how finance teams judge FDE work, so you can explain your cost and value.",
+      "focus": "The discussion of whether FDE spend belongs in cost of goods sold or operating expense, and how that changes reported metrics.",
+      "outcome": "Estimate the cost of one deployment in your team and say which revenue or retention it supports.",
+      "caveat": "Two SaaS finance commentators; an outside view, not a practitioner account."
+    },
+    {
+      "id": "pod-cco-fde",
+      "category": "value",
+      "level": "Practitioner",
+      "format": "Podcast",
+      "access": "Free",
+      "why": "Weigh the case against FDEs before you assume every company needs them.",
+      "focus": "The argument that only very large deals justify dedicated FDEs, and the onboarding-first alternative.",
+      "outcome": "For one customer, compare the value of FDE time with building a tool that removes the same work for everyone.",
+      "caveat": "A customer-success perspective; deliberately skeptical, and not based on a specific FDE program."
+    },
+    {
+      "id": "pod-ai-actually-fde",
+      "category": "mindset",
+      "level": "Foundation",
+      "format": "Podcast",
+      "access": "Free",
+      "why": "Test what the FDE title promises against what the work involves.",
+      "focus": "The debate over “engineer” versus “consultant,” and why business-process knowledge has become valuable.",
+      "outcome": "Describe your own role in one sentence without the word engineer, then decide which title fits.",
+      "caveat": "A services-firm panel with a commercial interest in the topic."
+    },
+    {
       "id": "plank-handoff",
       "category": "scale",
       "level": "Practitioner",
@@ -880,7 +957,7 @@
       "role": "Former FDE",
       "why": "Field context, enterprise data, and product development.",
       "handle": "nabeelqu",
-      "talk": "",
+      "talk": "pod-lenny-palantir",
       "article": "nabeel"
     },
     {
@@ -1037,7 +1114,9 @@
       ],
       "gate": "A charter with one outcome, one owner, and an explicit out-of-scope list.",
       "deeper": [
-        "staff"
+        "staff",
+        "pod-lenny-palantir",
+        "pod-fde-playbook"
       ]
     },
     {
@@ -1195,7 +1274,8 @@
       ],
       "gate": "An impact memo with denominators, a comparison period, and uncertainty.",
       "deeper": [
-        "experiments"
+        "experiments",
+        "pod-ramp-services"
       ]
     },
     {

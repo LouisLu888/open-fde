@@ -750,6 +750,83 @@
       "reviewed": "2026-10-31"
     },
     {
+      "id": "pod-fde-playbook",
+      "title": "The FDE Playbook for AI Startups with Bob McGrew",
+      "author": "Bob McGrew with Y Combinator · Lightcone",
+      "date": "2025-09-08",
+      "type": "Podcast",
+      "url": "https://www.ycombinator.com/library/Mt-the-fde-playbook-for-ai-startups-with-bob-mcgrew",
+      "status": "Publisher episode page and chapter notes checked; audio not played",
+      "why": "A former Palantir and OpenAI leader on why AI startups are adopting the FDE model.",
+      "reviewed": "2026-10-31"
+    },
+    {
+      "id": "pod-lenny-palantir",
+      "title": "How Palantir built the ultimate founder factory",
+      "author": "Nabeel S. Qureshi with Lenny Rachitsky · Lenny’s Podcast",
+      "date": "2025-05-11",
+      "type": "Podcast",
+      "url": "https://www.lennysnewsletter.com/p/inside-palantir-nabeel-qureshi",
+      "status": "Publisher episode page and chapter notes checked; audio not played",
+      "why": "A former Palantir FDE on daily field work and how to set up FDEs elsewhere.",
+      "reviewed": "2026-10-31"
+    },
+    {
+      "id": "pod-ramp-services",
+      "title": "Leo Mehr: Ramp’s $44B Bet on Services",
+      "author": "Leo Mehr with Basil Chatha · Forward Deployed",
+      "date": "2026-07-10",
+      "type": "Podcast",
+      "url": "https://podcasts.apple.com/us/podcast/leo-mehr-ramps-%2444b-bet-on-services/id1867103611?i=1000776303962",
+      "status": "Publisher episode page and chapter notes checked; audio not played",
+      "why": "How Ramp’s FDE team ships agents inside large customers, and why data access is the hard part.",
+      "reviewed": "2026-10-31"
+    },
+    {
+      "id": "pod-focal-happyrobot",
+      "title": "Why Every AI Company Needs Forward Deployed Engineers · episode 23",
+      "author": "Pablo Palafox · focal podcast",
+      "date": "2025-11-03",
+      "type": "Podcast",
+      "url": "https://podcasts.apple.com/us/podcast/why-every-ai-company-needs-forward-deployed-engineers/id1816802720?i=1000735070190",
+      "status": "Publisher episode page and chapter notes checked; audio not played",
+      "why": "A vertical-AI founder on hiring FDEs, FDE pods, and when to stop doing things that do not scale.",
+      "reviewed": "2026-10-31"
+    },
+    {
+      "id": "pod-metrics-fde",
+      "title": "The Forward-Deployed Engineer",
+      "author": "Dave Kellogg & Ray Rike · The Metrics Brothers",
+      "date": "2025-10-16",
+      "type": "Podcast",
+      "url": "https://podcasts.apple.com/us/podcast/the-forward-deployed-engineer/id1687214133?i=1000732131644",
+      "status": "Publisher episode page and chapter notes checked; audio not played",
+      "why": "The finance view: is FDE a services cost or product investment, and what that does to SaaS metrics.",
+      "reviewed": "2026-10-31"
+    },
+    {
+      "id": "pod-cco-fde",
+      "title": "EP029: Do You Actually Need Forward Deployed Engineers?",
+      "author": "Jay Nathan & Jeff Breunsbach · The Chief Customer Officer Podcast",
+      "date": "2026-08-20",
+      "type": "Podcast",
+      "url": "https://cspe.substack.com/p/ep029-do-you-actually-need-forward-685",
+      "status": "Publisher episode page and chapter notes checked; audio not played",
+      "why": "The skeptical case: most companies should point engineers at scalable onboarding instead.",
+      "reviewed": "2026-10-31"
+    },
+    {
+      "id": "pod-ai-actually-fde",
+      "title": "The Forward Deployed Engineer: What the Role Really Means",
+      "author": "AnswerRocket and StellarIQ panel · AI, Actually",
+      "date": "2026-04-21",
+      "type": "Podcast",
+      "url": "https://podcasts.apple.com/in/podcast/the-forward-deployed-engineer-what-the-role-really/id1835525734?i=1000762891774",
+      "status": "Publisher episode page and chapter notes checked; audio not played",
+      "why": "A services-side panel on what the title means and whether “consultant” is the honest word.",
+      "reviewed": "2026-10-31"
+    },
+    {
       "id": "story-vinoo",
       "title": "The Definitive Guide to Forward Deployed Engineering",
       "author": "Vinoo Ganesh · Next Play",

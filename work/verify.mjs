@@ -65,7 +65,7 @@ assert.equal(await page.evaluate(()=>location.hash),'#res-articles');
 assert.equal(await page.locator('[id^="reading-"]').count(),readings.length);
 assert.equal(new Set(readings.map(reading=>reading.id)).size,readings.length);
 assert.equal(await page.locator('#res-books .row').count(),readings.filter(reading=>/^Book/.test(reading.format)).length);
-assert.equal(await page.locator('#res-podcasts .row').count(),3);
+assert.equal(await page.locator('#res-podcasts .row').count(),readings.filter(reading=>reading.format==='Podcast').length);
 assert(await page.locator('#res-videos .row').count()>=3);
 await page.goto(outputPath.href+'#res-books');
 await page.goto(outputPath.href+'#reading-zanzibar');
