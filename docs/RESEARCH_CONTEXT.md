@@ -75,3 +75,14 @@ There is no promised unfinished feature. Start with an audit. Potential opportun
 - Simplified design: top nav, serif headings, full-width hero, folded disclaimers.
 - Removed progress tracking entirely: checkboxes, interview notes, self-assessment, export/import/reset, the My progress page, the share-text button, and local storage. Roadmap tasks are a plain list. The analytics disclosure moved to the footer.
 - List view everywhere: library, fieldcraft, cases, stories, interviews, people, routes and roadmap weeks are single-column rows (eyebrow, title, one-line meta, one summary, one disclosure). Library category and preset buttons removed; the select filters remain. GitHub link in the masthead and footer; CONTRIBUTING.md, CODEOWNERS and branch protection on main.
+
+## Edition 3.4 (2026-10-31)
+
+New information architecture, four sections:
+
+1. Learn (`#learn`): a book. Preface, Parts I–VI follow the delivery phases with the 12 former roadmap weeks as chapters 1–12, Part VII holds the 8 former fieldcraft guides as chapters 13–20. Chapters render inline with a table of contents; anchors `#preface`, `#part-N`, `#ch-N`.
+2. Resources (`#resources`): people (`#res-people`), books, articles and guides, podcasts, videos and talks, grouped by type.
+3. Interview (`#interview`): questions (`#questions`) and open jobs (`#jobs`).
+4. Stories & cases (`#stories`): stories (`#story-list`) and case studies (`#cases`).
+
+Old hashes forward: `#roadmap`, `#week-N`, `#fieldcraft`, `#library`, `#people`, `#interviews`. Site search indexes every element with `data-kind`. Section filters were removed except for jobs; the delivery-loop widget, quiz, and start-page routes were removed (the phases now open the book's preface and parts).

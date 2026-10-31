@@ -14,7 +14,6 @@ Autocapture: page views, sessions, marketing attribution. Element clicks, form i
 | Section Search Performed | section, query, result_count | A section search box settles for 0.9 s |
 | Section Filter Changed | section, filter, value | Category, level, format, role family, or region filter changes |
 | Resource Link Clicked | section, item_id, link_text, host | Any outbound link outside the jobs list |
-| Path Resource Opened | resource_id, path | A learning-path step jumps into the library |
 | Job Posting Clicked | company, job_title, role_family, location, host | A job posting link is clicked |
 | Job Board Clicked | company, host | "All <company> jobs" is clicked |
 | Job Company Selected | company | A company chip in the jobs index is clicked |
@@ -25,5 +24,7 @@ Configure with `AMPLITUDE_API_KEY` (and `AMPLITUDE_SERVER_ZONE=EU` for EU projec
 Verify with `npm run test:analytics`: serves the page as https://open-fde.ai in Playwright, loads the real SDK, intercepts ingestion so no live data is written, and checks event names, properties, opt-out, absence of private notes, and the clean download.
 
 Register the events above in Amplitude Data (category `open-fde.ai`, with descriptions and typed properties) via the Taxonomy API: `AMPLITUDE_SECRET_KEY=... npm run analytics:register` (`-- --dry-run` previews). The script parses this table, so edit the table first when events change; it is safe to re-run. The secret key is read from the environment only.
+
+Retired in edition 3.4 with the old library jump buttons: Path Resource Opened. Section searches and filters now exist only in the jobs list.
 
 Retired in edition 3.3 with progress tracking: Progress Item Toggled, Self Assessment Scored, Progress Exported, Progress Imported, Progress Reset, Share Text Copied. They remain registered in Amplitude.

@@ -15,8 +15,8 @@
     },
     {
       "path": "CONTINUE_WITH_AN_AGENT.md",
-      "bytes": 6574,
-      "sha256": "7d1b8b4c2c18847d11706fca09d47732e6c681ded506f9441b2dfbd233822e7d"
+      "bytes": 6649,
+      "sha256": "c8cc2d8e0c5f585b9f46d0268dabeaee10634489bb5902f25267dbe7bf88f474"
     },
     {
       "path": "START_HERE.md",
@@ -35,8 +35,8 @@
     },
     {
       "path": "docs/RESEARCH_CONTEXT.md",
-      "bytes": 9018,
-      "sha256": "c8854851ad3b4f80497d4af400c1341f5c2c366e66e1297dd43d6e066742c7a3"
+      "bytes": 9986,
+      "sha256": "3730b1dbe3d1ae57e34b5546390aec6caf454220452b4285e2de41d5570be4a8"
     },
     {
       "path": "docs/SOURCES.json",
@@ -50,8 +50,8 @@
     },
     {
       "path": "outputs/FDE_SPE_Field_Academy.html",
-      "bytes": 508438,
-      "sha256": "421200a4e64b47b2f51052fbf3a9384917e23e29bb31d2b3d28e4c7682cb7bb6"
+      "bytes": 461854,
+      "sha256": "4b7f132e17f32c378b1ff808c5df824360ba7fc485b31ca3c2a2bf63aeb0a571"
     },
     {
       "path": "package-lock.json",
@@ -61,32 +61,32 @@
     {
       "path": "package.json",
       "bytes": 863,
-      "sha256": "3a0346401da2e5495bd1eba41ceaa80ee800479b2ed9016a84b70ff04305cc56"
+      "sha256": "a7dfb5bb16314cfbbb23a9813c19427369dbee9b99970707a72983b82ee108c0"
     },
     {
       "path": "previews/desktop-preview.png",
-      "bytes": 121096,
-      "sha256": "7234d67d38a97fe070225a5d87fe24d0353404876be2d7ebd6ce37aa703294e1"
+      "bytes": 102238,
+      "sha256": "125876a73489e733026d6c62873eb267baf0d59ac05ebeee58ac05a0d7ff7ec6"
     },
     {
       "path": "previews/mobile-preview.png",
-      "bytes": 67482,
-      "sha256": "7426daf152ad8ed45b289d78c7297438f530536603640039193d2b4db3cee7b6"
+      "bytes": 64399,
+      "sha256": "25860703cecf1dcfc50a7ca7b5f4fbe9f097a4c22b64094972f576e6a36c1b67"
     },
     {
       "path": "previews/stories-mobile-preview.png",
-      "bytes": 78528,
-      "sha256": "87593e4c8fd60c52dad2db47ea3818bea6b606b631de3dbfba2fb81a64f88e82"
+      "bytes": 65791,
+      "sha256": "db451599fea755a239e985cd0d916cd62eec663cc4f257aeb77f2f3687d593b0"
     },
     {
       "path": "previews/stories-preview.png",
-      "bytes": 130560,
-      "sha256": "cd2c398e0ce62a157f4fd4d8cd5120a51ff4702882187766c428d3899999d84b"
+      "bytes": 113185,
+      "sha256": "17415da08ed08dda8ef869b67d839773d076169b7752564a8cab8b4e13b4c2b8"
     },
     {
       "path": "work/build.mjs",
-      "bytes": 86266,
-      "sha256": "4abe6e12bff15f6843c47f1a60542dcde84dd27ce08518978ad1534a206dc2eb"
+      "bytes": 80664,
+      "sha256": "48a48654b215bfd5d7f6137bc00d43f678718ee07a3977fc249a5d2b0fc2864c"
     },
     {
       "path": "work/check-package.mjs",
@@ -115,8 +115,8 @@
     },
     {
       "path": "work/verify.mjs",
-      "bytes": 16610,
-      "sha256": "cad01d98f1a7d8479c710a377b258a5adadb45a88eb7175a40caf75e9a827677"
+      "bytes": 12040,
+      "sha256": "eb58936e9423333b0261068edec5777aed44c1e6287cc966cafd0dae0db632cf"
     },
     {
       "path": "README.md",
