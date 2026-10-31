@@ -1,6 +1,6 @@
 # FDE / SPE Field Academy — complete handoff
 
-Public edition 3.1 · Content updated October 31, 2026.
+Public edition 3.2 · Content updated October 31, 2026.
 
 ## Open the website
 
@@ -78,6 +78,18 @@ After changing source content, regenerate the HTML and the research inventory:
 npm run build
 npm run refresh:research
 ```
+
+## Deploy to open-fde.ai
+
+The live site is a Cloudflare Worker serving static assets from `site/`. With Wrangler logged in to the owning account:
+
+```sh
+npm run build:og      # only when counts or the card design change
+npm test
+npm run deploy        # builds HTML, assembles site/, runs wrangler deploy
+```
+
+`wrangler.jsonc` binds both `open-fde.ai` and `www.open-fde.ai` as custom domains.
 
 ## Bring your personal progress separately, if wanted
 

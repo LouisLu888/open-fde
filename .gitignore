@@ -5,3 +5,4 @@ npm-debug.log*
 .DS_Store
 site/
 .wrangler/
+work/verification.json

@@ -12,7 +12,7 @@ The audience includes aspiring engineers, working practitioners, and people buil
 
 The public file is `outputs/FDE_SPE_Field_Academy.html`. Edit the modules under `work/` and regenerate it with `node work/build.mjs`. See `START_HERE.md` for portable build and test setup.
 
-Public edition 3.1, content updated October 31, 2026:
+Public edition 3.2, content updated October 31, 2026. Live at https://open-fde.ai (Cloudflare Workers static assets; source in the `open-fde` GitHub repository):
 
 - 37 learning resources across 10 skill areas, including 7 books and 3 specific podcast episodes
 - 17 case studies and 16 interview questions with evidence labels
@@ -22,7 +22,7 @@ Public edition 3.1, content updated October 31, 2026:
 
 Nine sections: Choose your path, Learning library, Advanced fieldcraft, 12-week roadmap, Case studies, Stories, Interview questions, People to learn from, My progress.
 
-The site is English-only, responsive, self-contained, and usable offline except for external reading. Search, filters, completion tracking, interview notes, assessments, progress import/export, and a clean HTML download already work. Preserve them. The previous edition passed 32 verification checks; package-specific evidence is in `docs/`.
+The site is English-only, responsive, self-contained, and usable offline except for external reading. A site-wide search (press `/` or Ctrl/Cmd+K) spans library, fieldcraft, roadmap, cases, stories, interview questions, and people. Per-section search, filters, completion tracking, interview notes, assessments, progress import/export, and a clean HTML download already work. Preserve them. Edition 3.2 passes 34 verification checks; package-specific evidence is in `docs/`.
 
 ## Research already incorporated
 
@@ -70,7 +70,7 @@ Source files are authoritative; do not make changes only in generated HTML. Keep
 
 ## Next actions
 
-Audit the existing content and experience, identify the highest-value gaps, and implement justified improvements. Research beyond the existing collections when necessary. Prioritize deeper learning and easier navigation over increasing counts. The prior work is complete; there is no hidden unfinished feature or requirement to deploy.
+Audit the existing content and experience, identify the highest-value gaps, and implement justified improvements. Research beyond the existing collections when necessary. Prioritize deeper learning and easier navigation over increasing counts. The prior work is complete; there is no hidden unfinished feature. Deploy with `npm run deploy` after tests pass (see `START_HERE.md`).
 
 Use judgment to proceed without routine confirmation. Do not publish externally or send messages to others without authorization.
 

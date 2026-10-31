@@ -1,6 +1,6 @@
 {
   "contentUpdated": "2026-10-31",
-  "testedAt": "2026-10-31T16:55:22.851Z",
+  "testedAt": "2026-10-31T17:05:33.905Z",
   "browser": "Playwright Chromium",
   "checks": [
     "English-only",
@@ -34,9 +34,11 @@
     "Story progress persistence and backup round trip",
     "New source links present and unique",
     "v2 backup compatibility",
+    "Site-wide search: keyboard shortcut, ranking, cross-section results, hidden-item reveal, roadmap expansion, empty state",
+    "Social preview and canonical metadata",
     "No JavaScript runtime errors"
   ],
-  "bytes": 265106,
-  "sha256": "61dc3f5843742314c350729bd7b29e7f122ccc542738d103320f6e2e9699641f",
+  "bytes": 272279,
+  "sha256": "91b7e0e21c0753c7ce5896d6aff49a2daf7b108a26295f6b95d9ad5f71605c7e",
   "externalLinks": 84
 }

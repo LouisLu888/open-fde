@@ -64,4 +64,9 @@ The website and four content/build modules are copied unchanged. The verifier us
 
 There is no promised unfinished feature. Start with an audit. Potential opportunities, if supported by concrete findings, include improving navigation through the dense material, adding unusually instructive non-Palantir stories, or filling a specific advanced delivery gap. These are suggestions, not an instruction to expand scope or add all of them. Read the existing annotations before adding resources, and keep the library selective.
 
-The HTML is ready to host as a static file. No public domain or hosting account has been configured. Publication requires a separate user instruction.
+## Edition 3.2: hosting and navigation
+
+- Hosted at https://open-fde.ai and https://www.open-fde.ai as a Cloudflare Worker with static assets (`wrangler.jsonc`). `work/build-site.mjs` assembles `site/` from `outputs/`; `site/` is generated and not committed.
+- Added a site-wide search in the top bar. It indexes `[data-item]` entries, fieldcraft guides (`.fieldnote`), and roadmap weeks (`details.week`) at runtime; opening a result clears that section's filters, switches panel via `history.pushState` (avoids the hashchange focus handler), expands the target, and highlights it. No content, IDs, storage key, or backup schema changed.
+- Added canonical URL, `og:url`, a 1200×630 `og:image` (`outputs/og.png`, rendered by `work/og-image.mjs` from live counts), `summary_large_image`, and an inline SVG favicon so shared links on X/LinkedIn show a preview card.
+- No new sources were added and no review dates changed in this edition.
