@@ -14,7 +14,8 @@
     "refresh:research": "node work/export-research.mjs",
     "build:site": "node work/build.mjs && node work/build-site.mjs",
     "deploy": "npm run build:site && wrangler deploy",
-    "build:og": "node work/og-image.mjs"
+    "build:og": "node work/og-image.mjs",
+    "refresh:jobs": "node work/fetch-jobs.mjs"
   },
   "devDependencies": {
     "playwright": "1.62.1"

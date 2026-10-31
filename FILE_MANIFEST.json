@@ -15,13 +15,13 @@
     },
     {
       "path": "CONTINUE_WITH_AN_AGENT.md",
-      "bytes": 6505,
-      "sha256": "2f433faf2cecb5f9979638c6aa88f970a41ae1be7d0a1043d1a9f52b77f9fc42"
+      "bytes": 6646,
+      "sha256": "7f99a44d098b44804126d6b8110b4749fe3e4570ff10f9bf778ef19bdb11df6d"
     },
     {
       "path": "START_HERE.md",
-      "bytes": 5155,
-      "sha256": "95473cbd4b74ef3c6ced66c0f54b9c920b9484b49b93105292194cb340371498"
+      "bytes": 5453,
+      "sha256": "ef91fa46f7e33987777d6b6586851688940ad19944d487398613ef848c2c9f8a"
     },
     {
       "path": "docs/CONTENT_INVENTORY.json",
@@ -30,8 +30,8 @@
     },
     {
       "path": "docs/PACKAGE_TEST_REPORT.json",
-      "bytes": 1614,
-      "sha256": "9c924f832a36481c3fe1bcd7e342a3f14298487c16b2a9841ea3fed53e4dd272"
+      "bytes": 1752,
+      "sha256": "89355574eba3e39ab252f37ce40001995b048fe2a47656018e7aa19a4a961e7c"
     },
     {
       "path": "docs/RESEARCH_CONTEXT.md",
@@ -50,8 +50,8 @@
     },
     {
       "path": "outputs/FDE_SPE_Field_Academy.html",
-      "bytes": 272279,
-      "sha256": "91b7e0e21c0753c7ce5896d6aff49a2daf7b108a26295f6b95d9ad5f71605c7e"
+      "bytes": 562805,
+      "sha256": "f2949911a2b1df652397ff5f1ad84cb40fa951505c1d65a7684450e5b86018eb"
     },
     {
       "path": "package-lock.json",
@@ -60,13 +60,13 @@
     },
     {
       "path": "package.json",
-      "bytes": 663,
-      "sha256": "10b3212d731e96f7ac6486afbd36ecea289606641a15024d92fd2e42f68f911d"
+      "bytes": 711,
+      "sha256": "65922ec79982c283f00cb95e216f441884eb297ca367bf5af6ca8be954ac8eef"
     },
     {
       "path": "previews/desktop-preview.png",
-      "bytes": 343962,
-      "sha256": "4dd6d7010ca85e5b229ef9054ac3582d3fadc2ffb485341385dcb995176bcad8"
+      "bytes": 346559,
+      "sha256": "557714a6301c09cadf82d89b57a178fc74df4952b3690fe7d13ce388821bf1e9"
     },
     {
       "path": "previews/mobile-preview.png",
@@ -80,13 +80,13 @@
     },
     {
       "path": "previews/stories-preview.png",
-      "bytes": 220709,
-      "sha256": "d2943bed3be3c406d7c4abfe2cf9a0f40f72a28cb359f75dec28a638fbabc2a0"
+      "bytes": 223153,
+      "sha256": "7f4485dc33bb547b54f459ce8b4e8f743cabcac5992875c3d98e7a59784a90a0"
     },
     {
       "path": "work/build.mjs",
-      "bytes": 73779,
-      "sha256": "5072939795bc9543f88916e3355ee1b2db9373c702d2d5c0c4ccc96bebb9e0aa"
+      "bytes": 83789,
+      "sha256": "7c77ab7263ef3fc102e4bb399b85f30033896b3b038fe262ac9c2d2ef791a6a1"
     },
     {
       "path": "work/check-package.mjs",
@@ -115,8 +115,8 @@
     },
     {
       "path": "work/verify.mjs",
-      "bytes": 17258,
-      "sha256": "f2f8d0a0c5ad6c6929668e67511757c3de2e93b7570351c54832a6c528d0938c"
+      "bytes": 19561,
+      "sha256": "cd455c7f72cb26ce657747d2414a36b14f585383677090c568f8647f0b1508df"
     },
     {
       "path": "README.md",
@@ -142,6 +142,16 @@
       "path": "outputs/og.png",
       "bytes": 65456,
       "sha256": "18c193e6b6979ed7b2c98ef361d667ad5c60c291f9d691db2d5fe0bee8de04fd"
+    },
+    {
+      "path": "work/fetch-jobs.mjs",
+      "bytes": 12939,
+      "sha256": "a890c1e5aeda9309c95caf38b46b684dc9545e9f1ebe3205d928aee170646141"
+    },
+    {
+      "path": "docs/JOBS.json",
+      "bytes": 215595,
+      "sha256": "84e503113f54406c91a65d5c762e2d4b55344b4229b0aaa921a8c528d4b88fc9"
     }
   ]
 }

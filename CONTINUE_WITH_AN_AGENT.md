@@ -22,7 +22,7 @@ Public edition 3.2, content updated October 31, 2026. Live at https://open-fde.a
 
 Nine sections: Choose your path, Learning library, Advanced fieldcraft, 12-week roadmap, Case studies, Stories, Interview questions, People to learn from, My progress.
 
-The site is English-only, responsive, self-contained, and usable offline except for external reading. A site-wide search (press `/` or Ctrl/Cmd+K) spans library, fieldcraft, roadmap, cases, stories, interview questions, and people. Per-section search, filters, completion tracking, interview notes, assessments, progress import/export, and a clean HTML download already work. Preserve them. Edition 3.2 passes 34 verification checks; package-specific evidence is in `docs/`.
+The site is English-only, responsive, self-contained, and usable offline except for external reading. An FDE job openings section groups open postings by company from a dated snapshot (`docs/JOBS.json`, refreshed with `npm run refresh:jobs`). A site-wide search (press `/` or Ctrl/Cmd+K) spans library, fieldcraft, roadmap, cases, stories, interview questions, and people. Per-section search, filters, completion tracking, interview notes, assessments, progress import/export, and a clean HTML download already work. Preserve them. Edition 3.2 passes 34 verification checks; package-specific evidence is in `docs/`.
 
 ## Research already incorporated
 

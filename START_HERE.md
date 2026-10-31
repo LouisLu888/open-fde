@@ -79,6 +79,15 @@ npm run build
 npm run refresh:research
 ```
 
+## Refresh the job openings
+
+The FDE job openings section is a snapshot in `docs/JOBS.json`. To refresh it from the public Greenhouse, Lever, and Ashby boards, then rebuild and deploy:
+
+```sh
+npm run refresh:jobs   # add companies to the list in work/fetch-jobs.mjs
+npm test && npm run deploy
+```
+
 ## Deploy to open-fde.ai
 
 The live site is a Cloudflare Worker serving static assets from `site/`. With Wrangler logged in to the owning account:

@@ -1,11 +1,11 @@
 {
   "contentUpdated": "2026-10-31",
-  "testedAt": "2026-10-31T17:05:33.905Z",
+  "testedAt": "2026-10-31T17:25:11.196Z",
   "browser": "Playwright Chromium",
   "checks": [
     "English-only",
     "No private-company content",
-    "All nine navigation panels",
+    "All ten navigation panels",
     "Six delivery phases and role lenses",
     "Quiz feedback",
     "Roadmap persistence",
@@ -36,9 +36,10 @@
     "v2 backup compatibility",
     "Site-wide search: keyboard shortcut, ranking, cross-section results, hidden-item reveal, roadmap expansion, empty state",
     "Social preview and canonical metadata",
+    "Job openings: counts match snapshot, per-posting links, company search, region and role-family filters, empty state, global search",
     "No JavaScript runtime errors"
   ],
-  "bytes": 272279,
-  "sha256": "91b7e0e21c0753c7ce5896d6aff49a2daf7b108a26295f6b95d9ad5f71605c7e",
-  "externalLinks": 84
+  "bytes": 562805,
+  "sha256": "f2949911a2b1df652397ff5f1ad84cb40fa951505c1d65a7684450e5b86018eb",
+  "externalLinks": 764
 }
