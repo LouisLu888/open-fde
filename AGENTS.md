@@ -4,7 +4,7 @@ Read `CONTINUE_WITH_AN_AGENT.md` and `docs/RESEARCH_CONTEXT.md` before making ch
 
 - Work on the existing implementation. Edit `work/*.mjs` and regenerate `outputs/FDE_SPE_Field_Academy.html`.
 - Keep the public website English, independent, and free of internal company material.
-- Preserve the local storage key, backup schema version, and existing completion/note IDs.
+- The site keeps no visitor state: no progress tracking, notes, or local storage (removed in edition 3.3 by owner decision). Do not reintroduce it without asking.
 - Keep the public HTML download free of private learning state.
 - Research substantive primary sources. Distinguish reported claims, verified facts, and editorial synthesis.
 - Prefer unique learning value over link counts. Use specific publications and clearly labeled provenance.

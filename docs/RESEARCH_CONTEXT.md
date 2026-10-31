@@ -52,9 +52,7 @@ Each story links to its specific original publication and related library resour
 
 Navigation uses hash IDs and shows one `main > .panel`. Search/filter helpers use `data-search`, `data-filter`, `data-item`, and `data-category`. Resource buttons select and reveal the matching library resource.
 
-Progress schema is `{version:2, checks:{}, notes:{}, scores:{}}`, stored at `fde-spe-field-academy-public-v2`. Allowed IDs are derived from the DOM. Check prefixes are `w` for roadmap tasks, `q-` for questions, `c-` for cases, `r-` for library resources, and `s-` for stories. Preserve IDs to retain old backups.
-
-The clean HTML snapshot is taken before personal state is restored. Keep that ordering. Never serialize the active page after private notes are applied and present it as the public download.
+The site keeps no visitor state (edition 3.3 removed progress, notes, self-assessment and backups). The clean HTML snapshot is still taken before filters or panel changes touch the DOM.
 
 ## Portable package changes
 
@@ -70,3 +68,9 @@ There is no promised unfinished feature. Start with an audit. Potential opportun
 - Added a site-wide search in the top bar. It indexes `[data-item]` entries, fieldcraft guides (`.fieldnote`), and roadmap weeks (`details.week`) at runtime; opening a result clears that section's filters, switches panel via `history.pushState` (avoids the hashchange focus handler), expands the target, and highlights it. No content, IDs, storage key, or backup schema changed.
 - Added canonical URL, `og:url`, a 1200×630 `og:image` (`outputs/og.png`, rendered by `work/og-image.mjs` from live counts), `summary_large_image`, and an inline SVG favicon so shared links on X/LinkedIn show a preview card.
 - No new sources were added and no review dates changed in this edition.
+
+
+## Edition 3.3 (2026-10-31)
+
+- Simplified design: top nav, serif headings, full-width hero, folded disclaimers.
+- Removed progress tracking entirely: checkboxes, interview notes, self-assessment, export/import/reset, the My progress page, the share-text button, and local storage. Roadmap tasks are a plain list. The analytics disclosure moved to the footer.

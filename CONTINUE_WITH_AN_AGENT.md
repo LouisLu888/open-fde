@@ -20,7 +20,7 @@ Public edition 3.2, content updated October 31, 2026. Live at https://open-fde.a
 - 19 people in a company/person/X/talk/article table
 - A 12-week roadmap and 79 source citations
 
-Nine sections: Choose your path, Learning library, Advanced fieldcraft, 12-week roadmap, Case studies, Stories, Interview questions, People to learn from, My progress.
+Nine sections: Choose your path, Learning library, Advanced fieldcraft, 12-week roadmap, Case studies, Stories, Interview questions, People to learn from, FDE job openings.
 
 The site is English-only, responsive, self-contained, and usable offline except for external reading. An FDE job openings section groups open postings by company from a dated snapshot (`docs/JOBS.json`, refreshed with `npm run refresh:jobs`). A site-wide search (press `/` or Ctrl/Cmd+K) spans library, fieldcraft, roadmap, cases, stories, interview questions, and people. Per-section search, filters, completion tracking, interview notes, assessments, progress import/export, and a clean HTML download already work. Preserve them. Edition 3.2 passes 34 verification checks; package-specific evidence is in `docs/`.
 
@@ -58,13 +58,7 @@ The Stories section covers Vinoo Ganesh, Chinemerem E., Het Trivedi, Hiro Hayami
 
 Keep the visual language and useful interactions. The website must remain portable without a required backend.
 
-Preserve compatibility:
-
-- Local storage key: `fde-spe-field-academy-public-v2`
-- Progress backup schema: version `2`, with `checks`, `notes`, and `scores`
-- Existing completion and note IDs
-- Clean downloaded HTML excludes private notes, scores, and completion state
-- Progress JSON intentionally includes private learning data
+The site keeps no visitor state. Progress tracking, notes, self-assessment, backups and local storage were removed in edition 3.3 at the owner's request; on load the page deletes the old `fde-spe-field-academy-public-v2` key. Do not reintroduce saved state without asking.
 
 Source files are authoritative; do not make changes only in generated HTML. Keep work files under `work/` and deliverables under `outputs/`. Preserve source licensing and use original annotations rather than copying external publications.
 
@@ -74,6 +68,6 @@ Audit the existing content and experience, identify the highest-value gaps, and 
 
 Use judgment to proceed without routine confirmation. Do not publish externally or send messages to others without authorization.
 
-Run relevant checks, inspect the site on desktop and mobile, verify source links and evidence labels, and test saved progress, backup compatibility, and the clean download. Refresh the research inventory after content changes.
+Run relevant checks, inspect the site on desktop and mobile, verify source links and evidence labels, and test search, filters, and the clean download. Refresh the research inventory after content changes.
 
 Deliver updated HTML with a verified downloadable link, and briefly explain what improved, what was tested, and any material limitations. If a specific new instruction accompanies this prompt, treat it as the priority for the next iteration.

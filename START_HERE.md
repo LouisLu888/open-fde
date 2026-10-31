@@ -31,7 +31,7 @@ The folder contains the website, editable source, handoff prompt, research conte
 | `docs/CONTENT_INVENTORY.json` | Resource categories, stories, and source relationships |
 | `docs/VERIFICATION_BASELINE.json` | Previous completed browser checks against this HTML |
 | `docs/PACKAGE_TEST_REPORT.json` | Verification performed for this handoff |
-| `previews/` | Desktop and mobile design references; screenshots may show synthetic test progress |
+| `previews/` | Desktop and mobile design references |
 | `FILE_MANIFEST.json` | File sizes and SHA-256 checksums for transfer verification |
 
 ## Rebuild on the other laptop
@@ -58,7 +58,7 @@ The first setup downloads test dependencies and the matching browser. Those plat
 
 On a supported Linux system that needs browser libraries, use `npx playwright install --with-deps chromium` instead; installing system packages may require administrator access. See the [official Playwright browser setup documentation](https://playwright.dev/docs/browsers).
 
-Tests use an isolated browser and synthetic progress. They do not open your personal browser profile. Results and fresh screenshots are written under `work/`. The test paths use portable file-URL conversion for folders with spaces and Windows-style paths. Windows and Linux have not been run in this handoff environment.
+Tests use an isolated browser. They do not open your personal browser profile. Results and fresh screenshots are written under `work/`. The test paths use portable file-URL conversion for folders with spaces and Windows-style paths. Windows and Linux have not been run in this handoff environment.
 
 If you intentionally use installed Google Chrome for testing, the verifier also accepts `--chrome`: `node work/verify.mjs --chrome`. The default uses Playwright's installed Chromium.
 
@@ -99,12 +99,6 @@ npm run deploy        # builds HTML, assembles site/, runs wrangler deploy
 ```
 
 `wrangler.jsonc` binds both `open-fde.ai` and `www.open-fde.ai` as custom domains.
-
-## Bring your personal progress separately, if wanted
-
-Progress and private notes live in the browser on the original laptop; they are not inside the website or this project package. On that laptop, open **My progress → Export progress**. Transfer that JSON file, then use **My progress → Import progress** on the new laptop. This is optional for continuing development.
-
-The public HTML remains clean. A downloaded progress JSON can contain private notes and scores, so it is separate from the public website package.
 
 ## Attribution
 

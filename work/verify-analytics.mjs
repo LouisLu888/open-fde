@@ -29,24 +29,23 @@ const run=await session();
 const {page,events}=run;
 await page.waitForFunction(()=>window.__openfdeReady===true,null,{timeout:20000});
 await page.locator('.nav a[href="#interviews"]').click();
-await page.locator('[data-note="Q01"]').fill('PRIVATE-NOTE-should-never-leave');
-await page.locator('[data-check="q-Q01"]').check();
+await page.locator('#interviews').waitFor({state:'visible'});
 await page.locator('#globalSearch').fill('permission revocation');
 await page.keyboard.press('Enter');
 await page.locator('.nav a[href="#jobs"]').click();
 await page.locator('#jobsRegion').selectOption('Europe & UK');
 await page.evaluate(()=>document.addEventListener('click',event=>{if(event.target.closest('.job-locations a'))event.preventDefault();}));
 await page.locator('#jobs .job-locations a:visible').first().click();
-await page.evaluate(()=>window.amplitude.flush().promise);
-await page.waitForTimeout(500);
+// The SDK batches and may retry after its remote config call, so poll instead of a fixed wait.
+const required=['Section Viewed','Site Search Result Opened','Section Filter Changed','Job Posting Clicked'];
+for(let attempt=0;attempt<40&&!required.every(name=>events.some(event=>event.event_type===name));attempt++){await page.evaluate(()=>window.amplitude.flush().promise);await page.waitForTimeout(250);}
 const names=events.map(event=>event.event_type);
-for(const name of ['Section Viewed','Progress Item Toggled','Site Search Result Opened','Section Filter Changed','Job Posting Clicked'])assert(names.includes(name),'Missing analytics event: '+name+' in '+names.join(', '));
+for(const name of ['Section Viewed','Site Search Result Opened','Section Filter Changed','Job Posting Clicked'])assert(names.includes(name),'Missing analytics event: '+name+' in '+names.join(', '));
 assert(names.some(name=>/page view/i.test(name)),'Autocaptured page view missing');
 const viewed=events.filter(event=>event.event_type==='Section Viewed').map(event=>event.event_properties.section);
 assert(viewed[0]==='start'&&viewed.includes('jobs'),'Section Viewed sequence '+viewed);
 const job=events.find(event=>event.event_type==='Job Posting Clicked').event_properties;
 assert(job.company&&job.job_title&&job.role_family&&job.location,'Job click properties '+JSON.stringify(job));
-assert(!JSON.stringify(events).includes('PRIVATE-NOTE'),'Private notes leaked to analytics');
 assert.equal(run.errors.length,0,run.errors.join('\n'));
 await run.browser.close();
 
