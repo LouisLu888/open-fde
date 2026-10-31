@@ -18,43 +18,29 @@ const apiKey = process.env.AMPLITUDE_API_KEY || config.apiKey;
 const zone = (process.env.AMPLITUDE_SERVER_ZONE || config.serverZone || 'US').toUpperCase();
 const secret = process.env.AMPLITUDE_SECRET_KEY;
 const dryRun = process.argv.includes('--dry-run');
-const category = 'open-fde.ai';
-
-const types = { checked: 'boolean', success: 'boolean', hosted: 'boolean', result_count: 'number', rank: 'number', score: 'number' };
-const propDescriptions = {
-  section: 'Panel id, e.g. library, jobs, progress',
-  query: 'Search text, lowercased, max 80 characters',
-  result_count: 'Number of matches shown',
-  result_section: 'Panel of the opened result',
-  result_title: 'Title of the opened result',
-  rank: '1-based position of the opened result',
-  filter: 'Which filter changed',
-  value: 'New filter value',
-  item_id: 'Stable id of the item',
-  link_text: 'Visible link text, truncated',
-  host: 'Destination hostname',
-  resource_id: 'Library resource id',
-  path: 'Learning path name',
-  company: 'Hiring company',
-  job_title: 'Posting title',
-  role_family: 'Engineering, Strategy & product, Leadership, or Internship & early career',
-  location: 'Posting location',
-  item_type: 'task, question, case, resource, or story',
-  checked: 'New checkbox state',
-  area: 'discovery, delivery, impact, or reuse',
-  score: 'Score 0-3',
-  success: 'Whether the backup imported cleanly',
-  hosted: 'True on open-fde.ai, false in a downloaded copy',
-};
+// Rows of a markdown table that starts after the given heading.
+function tableRows(md, heading) {
+  const start = md.indexOf(`\n## ${heading}\n`);
+  if (start < 0) throw new Error(`Missing "## ${heading}" in TRACKING_PLAN.md`);
+  const lines = md.slice(start).split('\n').slice(2);
+  const rows = [];
+  for (const line of lines) {
+    if (line.startsWith('## ')) break;
+    if (!line.startsWith('|') || /^\|\s*-/.test(line)) continue;
+    rows.push(line.split('|').slice(1, -1).map((cell) => cell.trim()));
+  }
+  return rows.slice(1);
+}
 
 function parsePlan() {
   const md = readFileSync(path.join(root, 'docs/TRACKING_PLAN.md'), 'utf8');
-  const rows = md.split('\n').filter((l) => /^\| [A-Z]/.test(l) && !l.startsWith('| Event'));
-  return rows.map((row) => {
-    const [name, props, when] = row.split('|').slice(1, 4).map((s) => s.trim());
-    const properties = props === '—' ? [] : props.split(',').map((s) => s.trim());
-    return { name, description: when, properties };
-  });
+  const properties = Object.fromEntries(tableRows(md, 'Properties').map(([name, type, description]) => [name, { type, description }]));
+  const events = tableRows(md, 'Events').map(([name, category, props, description]) => ({
+    name, category, description,
+    properties: props === '—' ? [] : props.split(',').map((prop) => prop.trim()),
+  }));
+  for (const event of events) for (const prop of event.properties) if (!properties[prop]) throw new Error(`${event.name}: property ${prop} missing from the Properties table`);
+  return { events, properties };
 }
 
 const base = zone === 'EU' ? 'https://analytics.eu.amplitude.com' : 'https://amplitude.com';
@@ -84,10 +70,10 @@ async function upsert(route, body, updateRoute, updateBody) {
   throw new Error(`POST ${route} ${created.status}: ${created.text}`);
 }
 
-const events = parsePlan();
+const { events, properties } = parsePlan();
 if (dryRun) {
-  for (const e of events) console.log(`${e.name}: ${e.properties.map((p) => `${p}:${types[p] || 'string'}`).join(', ') || '(no properties)'}`);
-  console.log(`${events.length} events, category "${category}", zone ${zone}`);
+  for (const e of events) console.log(`${e.name} [${e.category}]: ${e.properties.map((p) => `${p}:${properties[p].type}`).join(', ') || '(no properties)'}`);
+  console.log(`${events.length} events, ${Object.keys(properties).length} properties, zone ${zone}`);
   process.exit(0);
 }
 if (!apiKey || !secret) {
@@ -95,18 +81,20 @@ if (!apiKey || !secret) {
   process.exit(1);
 }
 
-const cat = await call('POST', '/api/2/taxonomy/category', { category_name: category });
-if (!cat.ok && cat.status !== 409 && !/already exists/i.test(cat.text)) throw new Error(`category ${cat.status}: ${cat.text}`);
+for (const category of new Set(events.map((e) => e.category))) {
+  const res = await call('POST', '/api/2/taxonomy/category', { category_name: category });
+  if (!res.ok && res.status !== 409 && !/already exists/i.test(res.text)) throw new Error(`category ${category} ${res.status}: ${res.text}`);
+}
 
 for (const e of events) {
   const enc = encodeURIComponent(e.name);
-  const state = await upsert('/api/2/taxonomy/event', { event_type: e.name, category, description: e.description },
-    `/api/2/taxonomy/event/${enc}`, { category, description: e.description });
+  const state = await upsert('/api/2/taxonomy/event', { event_type: e.name, category: e.category, description: e.description },
+    `/api/2/taxonomy/event/${enc}`, { category: e.category, description: e.description });
   for (const p of e.properties) {
-    const desc = propDescriptions[p] || '';
-    await upsert('/api/2/taxonomy/event-property', { event_type: e.name, event_property: p, description: desc, type: types[p] || 'string' },
-      `/api/2/taxonomy/event-property/${encodeURIComponent(p)}`, { event_type: e.name, description: desc, type: types[p] || 'string' });
+    const { type, description } = properties[p];
+    await upsert('/api/2/taxonomy/event-property', { event_type: e.name, event_property: p, description, type },
+      `/api/2/taxonomy/event-property/${encodeURIComponent(p)}`, { event_type: e.name, description, type });
   }
-  console.log(`${state}: ${e.name} (${e.properties.length} properties)`);
+  console.log(`${state}: ${e.name} [${e.category}] (${e.properties.length} properties)`);
 }
-console.log(`Done: ${events.length} events in category "${category}".`);
+console.log(`Done: ${events.length} events.`);
