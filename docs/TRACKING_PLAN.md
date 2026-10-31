@@ -28,3 +28,7 @@ Register the events above in Amplitude Data (category `open-fde.ai`, with descri
 Retired in edition 3.4: Path Resource Opened (library jump buttons) and Guide Downloaded (download button removed). Section searches and filters now exist only in the jobs list.
 
 Retired in edition 3.3 with progress tracking: Progress Item Toggled, Self Assessment Scored, Progress Exported, Progress Imported, Progress Reset, Share Text Copied. They remain registered in Amplitude.
+
+## Public stats page
+
+`#stats` embeds an Amplitude dashboard and a chart icon appears in the header, but only when `work/stats.json` has `embed` set (paste the dashboard's embed code or its `src` URL; only `https://*.amplitude.com` URLs are accepted). `publicLink` optionally adds an "Open the full dashboard" link. `STATS_EMBED` overrides the file at build time. Chart only aggregated counts (sections, tabs, companies, hosts, traffic sources); never chart raw search text.

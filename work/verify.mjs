@@ -12,7 +12,7 @@ enrichStories(sources,readings,weeks);
 const outputPath=new URL('../outputs/FDE_SPE_Field_Academy.html',import.meta.url);
 const html=readFileSync(outputPath,'utf8');
 assert(!/[\u3400-\u9fff]/u.test(html),'Chinese content remains');
-assert(!/amplitude/i.test(html.replace(/<!-- analytics -->[\s\S]*?<!-- \/analytics -->/g,'').replace(/<section[^>]*id="jobs"[\s\S]*?<\/section>/,'').replace('collected with Amplitude','')),'Company-specific content remains outside analytics and public job listings');
+assert(!/amplitude/i.test(html.replace(/<!-- analytics -->[\s\S]*?<!-- \/analytics -->/g,'').replace(/<section[^>]*id="jobs"[\s\S]*?<\/section>/,'').replace(/<section id="stats"[\s\S]*?<\/section>/,'').replace('collected with Amplitude','')),'Company-specific content remains outside analytics and public job listings');
 const browser=await chromium.launch({headless:true,...(process.argv.includes('--chrome')?{channel:'chrome'}:{})});
 const context=await browser.newContext({viewport:{width:1440,height:1000},acceptDownloads:true,reducedMotion:'reduce'});
 const page=await context.newPage();
@@ -25,6 +25,14 @@ assert.equal(await page.locator('.door').count(),4);
 assert.equal(await page.locator('.compare tbody tr').count(),9,'FDE vs SPE comparison on home');
 assert.equal((await page.locator('.brand').textContent()).startsWith('FDE Academy'),true);
 assert.equal(await page.locator('#downloadHtml').count(),0,'No download button');
+const statsOn=html.includes('id="stats"');
+assert.equal(await page.locator('.stats-link').count(),statsOn?1:0,'Stats icon appears only when a dashboard embed is configured');
+if(statsOn){
+ await page.locator('.stats-link').click();
+ await page.locator('#stats').waitFor({state:'visible'});
+ assert.match(await page.locator('#stats iframe').getAttribute('src'),/^https:\/\/([a-z0-9-]+\.)*amplitude\.com\//);
+ assert.equal(await page.locator('.stats-link').getAttribute('aria-current'),'page');
+}
 assert.equal(await page.locator('input[type=checkbox],textarea,#progress').count(),0,'No progress tracking UI');
 await page.evaluate(()=>localStorage.setItem('fde-spe-field-academy-public-v2','{}'));
 await page.reload();
@@ -168,7 +176,7 @@ assert.equal(await recipientPage.locator('#story-list .row:visible').count(),sto
 await recipientPage.locator('.nav a[href="#learn"]').click();
 await recipientPage.locator('#learn').waitFor({state:'visible'});
 assert.equal(errors.length,0,errors.join('\n'));
-const report={contentUpdated:'2026-10-31',testedAt:new Date().toISOString(),browser:process.argv.includes('--chrome')?'Google Chrome':'Playwright Chromium',checks:['English-only','No private-company content','Four navigation sections; landing home with reasons, FDE vs SPE comparison, and doors; no download button','No progress tracking UI; legacy saved progress cleared','Learn: table of contents, 7 parts, preface plus 20 chapters, TOC links scroll to chapters','Old section links forward to the new structure','Resources: every curated resource and person listed once, grouped by type','Interview questions and case studies all listed','Eight unique firsthand stories','Tabs: Resources, Interview, Stories switch by click, link, and arrow keys; search opens the right tab','People table with intro, X handle, reading, and talks','Built HTML opens and functions in a fresh page','390px viewport: all sections without body overflow','Site-wide search: keyboard shortcut, ranking, cross-section results, chapter navigation, empty state','Job openings: counts match snapshot, per-posting links, company search, region and role-family filters, empty state, global search','Social preview and canonical metadata','New source links present and unique','No JavaScript runtime errors'],bytes:Buffer.byteLength(html),sha256:createHash('sha256').update(html).digest('hex'),externalLinks:links.length};
+const report={contentUpdated:'2026-10-31',testedAt:new Date().toISOString(),browser:process.argv.includes('--chrome')?'Google Chrome':'Playwright Chromium',checks:['English-only','No private-company content','Stats icon and embedded Amplitude dashboard when configured (hidden otherwise)','Four navigation sections; landing home with reasons, FDE vs SPE comparison, and doors; no download button','No progress tracking UI; legacy saved progress cleared','Learn: table of contents, 7 parts, preface plus 20 chapters, TOC links scroll to chapters','Old section links forward to the new structure','Resources: every curated resource and person listed once, grouped by type','Interview questions and case studies all listed','Eight unique firsthand stories','Tabs: Resources, Interview, Stories switch by click, link, and arrow keys; search opens the right tab','People table with intro, X handle, reading, and talks','Built HTML opens and functions in a fresh page','390px viewport: all sections without body overflow','Site-wide search: keyboard shortcut, ranking, cross-section results, chapter navigation, empty state','Job openings: counts match snapshot, per-posting links, company search, region and role-family filters, empty state, global search','Social preview and canonical metadata','New source links present and unique','No JavaScript runtime errors'],bytes:Buffer.byteLength(html),sha256:createHash('sha256').update(html).digest('hex'),externalLinks:links.length};
 writeFileSync(new URL('verification.json',import.meta.url),JSON.stringify(report,null,2));
 console.log(JSON.stringify(report,null,2));
 await browser.close();

@@ -50,8 +50,8 @@
     },
     {
       "path": "outputs/FDE_SPE_Field_Academy.html",
-      "bytes": 481686,
-      "sha256": "7b868d18279eab7c9207ef416250910ee2ce51de469caf682f643088c269defe"
+      "bytes": 482087,
+      "sha256": "41c277575eedcceea614bdc7faaeeb7556ac77a36767c537a1f29a132e19982d"
     },
     {
       "path": "package-lock.json",
@@ -85,8 +85,8 @@
     },
     {
       "path": "work/build.mjs",
-      "bytes": 87059,
-      "sha256": "c5e56b26695e824c8f593cca5e314bca7e762b2a43ad690d8a79ce3ca939393d"
+      "bytes": 89032,
+      "sha256": "dbfa1eacda9b80d5aabed2f5cc9490fa95971c776d2aa3d1fe8205126ab4abb6"
     },
     {
       "path": "work/check-package.mjs",
@@ -115,8 +115,8 @@
     },
     {
       "path": "work/verify.mjs",
-      "bytes": 13663,
-      "sha256": "eeae0c9559ef73b0a3688f01c7e7206a1a8c071b8be33c135a8194381323d34f"
+      "bytes": 14292,
+      "sha256": "f4381a60505a83d1dd26449dc2f0479859473bdfa6d9129e81821b0ec2a99186"
     },
     {
       "path": "README.md",
