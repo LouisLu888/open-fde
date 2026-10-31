@@ -6,3 +6,4 @@ npm-debug.log*
 site/
 .wrangler/
 work/verification.json
+work/analytics/config.json

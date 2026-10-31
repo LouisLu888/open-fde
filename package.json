@@ -15,9 +15,11 @@
     "build:site": "node work/build.mjs && node work/build-site.mjs",
     "deploy": "npm run build:site && wrangler deploy",
     "build:og": "node work/og-image.mjs",
-    "refresh:jobs": "node work/fetch-jobs.mjs"
+    "refresh:jobs": "node work/fetch-jobs.mjs",
+    "test:analytics": "node work/verify-analytics.mjs"
   },
   "devDependencies": {
+    "esbuild": "^0.25.12",
     "playwright": "1.62.1"
   }
 }

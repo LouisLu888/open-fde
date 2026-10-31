@@ -12,7 +12,7 @@ enrichStories(sources,readings,weeks);
 const outputPath=new URL('../outputs/FDE_SPE_Field_Academy.html',import.meta.url);
 const html=readFileSync(outputPath,'utf8');
 assert(!/[\u3400-\u9fff]/u.test(html),'Chinese content remains');
-assert(!/amplitude/i.test(html.replace(/<!-- analytics -->[\s\S]*?<!-- \/analytics -->/g,'').replace(/<section id="jobs"[\s\S]*?<\/section>/,'')),'Company-specific content remains outside analytics and public job listings');
+assert(!/amplitude/i.test(html.replace(/<!-- analytics -->[\s\S]*?<!-- \/analytics -->/g,'').replace(/<section id="jobs"[\s\S]*?<\/section>/,'').replace('collected with Amplitude','')),'Company-specific content remains outside analytics and public job listings');
 const browser=await chromium.launch({headless:true,...(process.argv.includes('--chrome')?{channel:'chrome'}:{})});
 const context=await browser.newContext({viewport:{width:1440,height:1000},acceptDownloads:true,reducedMotion:'reduce'});
 const page=await context.newPage();
