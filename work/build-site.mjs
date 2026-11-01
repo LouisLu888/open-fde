@@ -102,7 +102,10 @@ const built=await page.evaluate(({spa,pages,pageIds,origin,today})=>{
   spec.fingerprint=[spec.title,spec.description,panel.innerHTML].join('\n');
   if(spec.type!=='home'){
    const updated=doc.createElement('p');updated.className='updated';updated.innerHTML='Updated <time datetime="__MODIFIED__">__MODIFIED_TEXT__</time>';
-   panel.querySelector('h1').after(updated);
+   // Section and tab pages: the masthead nav and tabs already name the page, so the h1 and
+   // breadcrumbs stay for search engines and screen readers but are not shown.
+   if(['collection','jobs','course'].includes(spec.type)){panel.classList.add('tab-page');panel.querySelector('.section-heading').append(updated);}
+   else panel.querySelector('h1').after(updated);
    const crumbs=[['Home','/'],...(spec.parents||[]),[spec.crumb,null]];
    const nav=doc.createElement('nav');nav.className='breadcrumbs';nav.setAttribute('aria-label','Breadcrumb');
    nav.innerHTML='<ol>'+crumbs.map(([name,href])=>href?`<li><a href="${href}">${name}</a></li>`:`<li aria-current="page">${name}</li>`).join('')+'</ol>';
