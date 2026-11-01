@@ -21,7 +21,7 @@ const server=createServer((request,response)=>{
 const base=`http://localhost:${server.address().port}`;
 const sitemap=readFileSync(new URL('sitemap.xml',site),'utf8');
 const paths=[...sitemap.matchAll(/<loc>https:\/\/open-fde\.ai([^<]*)<\/loc>/g)].map(match=>match[1]);
-assert(paths.length>=34,'Sitemap lists every page: '+paths.length);
+assert(paths.length>=36,'Sitemap lists every page: '+paths.length);
 
 const browser=await chromium.launch({headless:true});
 const page=await browser.newPage();
@@ -68,7 +68,7 @@ assert.equal(await page.locator('.nav a[aria-current=page]').textContent(),'Lear
 await page.locator('.chapter-nav .next').click();
 await page.waitForURL(base+'/learn/evaluate-before-expanding/');
 // Old hash links forward to the new pages.
-for(const [hash,target] of [['#learn','/learn/'],['#ch-5','/learn/build-a-thin-vertical-slice/'],['#jobs','/jobs/'],['#res-podcasts','/resources/podcasts/'],['#roadmap','/learn/'],['#week-2','/learn/discover-the-real-problem/']]){
+for(const [hash,target] of [['#learn','/learn/'],['#ch-5','/learn/build-a-thin-vertical-slice/'],['#jobs','/jobs/'],['#q-practice','/interview/practice/'],['#res-podcasts','/resources/podcasts/'],['#roadmap','/learn/'],['#week-2','/learn/discover-the-real-problem/']]){
  await page.goto(base+'/'+hash);
  await page.waitForURL(url=>url.pathname===target,{timeout:5000});
 }

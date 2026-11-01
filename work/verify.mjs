@@ -20,8 +20,8 @@ const errors=[];
 page.on('pageerror',error=>errors.push(error.message));
 await page.goto(outputPath.href);
 await page.locator('h1').waitFor();
-assert.deepEqual(await page.locator('.nav a').allTextContents(),['Learn','Resources','Interview','Stories & cases']);
-assert.equal(await page.locator('.door').count(),4);
+assert.deepEqual(await page.locator('.nav a').allTextContents(),['Learn','Resources','Interview','Jobs','Stories & cases']);
+assert.equal(await page.locator('.door').count(),5);
 assert.equal(await page.locator('#start .compare tbody tr').count(),9,'FDE vs SPE comparison on home');
 assert.equal((await page.locator('.brand').textContent()).startsWith('FDE Academy'),true);
 assert.equal(await page.locator('#downloadHtml').count(),0,'No download button');
@@ -84,10 +84,16 @@ assert(await page.locator('#reading-zanzibar details').getAttribute('open')!==nu
 // Interview and stories.
 await page.locator('.nav a[href="#interview"]').click();
 await page.locator('#questions').waitFor({state:'visible'});
-assert.equal(await page.locator('#questions .row').count(),questions.length);
-assert(await page.locator('#questions').isVisible()&&await page.locator('#jobs').isHidden(),'Questions tab is the default');
-await page.locator('[role=tab][href="#jobs"]').click();
+assert.equal(await page.locator('#interview .row').count(),questions.length,'Every question is in one source tab');
+assert.deepEqual(await page.locator('#interview [role=tab]').allTextContents(),['Candidate reports','Employer formats','Practice questions']);
+assert.equal(await page.locator('#questions .row').count(),6,'Candidate reports are Q01-Q06');
+assert(await page.locator('#questions').isVisible()&&await page.locator('#q-practice').isHidden(),'Candidate reports tab is the default');
+await page.locator('[role=tab][href="#q-employer"]').click();
+await page.locator('#q-employer').waitFor({state:'visible'});
+assert.deepEqual(await page.locator('#q-employer .eyebrow').evaluateAll(rows=>rows.map(row=>row.textContent.slice(0,3))),['Q07','Q08']);
+await page.locator('.nav a[href="#jobs"]').click();
 await page.locator('#jobs').waitFor({state:'visible'});
+assert(await page.locator('#interview').isHidden(),'Jobs is its own section');
 await page.locator('.nav a[href="#stories"]').click();
 await page.locator('#stories').waitFor({state:'visible'});
 assert.equal(await page.locator('#story-list .row').count(),stories.length);
@@ -101,7 +107,7 @@ await page.screenshot({path:fileURLToPath(new URL('stories-preview.png',import.m
 
 // Phone width: no horizontal overflow.
 await page.setViewportSize({width:390,height:844});
-for(const section of ['start','learn','resources','interview','stories']){
+for(const section of ['start','learn','resources','interview','jobs','stories']){
  await page.goto(outputPath.href+'#'+section);
  await page.locator('#'+section).waitFor({state:'visible'});
  const dimensions=await page.evaluate(()=>({width:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth}));

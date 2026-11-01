@@ -38,8 +38,7 @@ await page.waitForTimeout(2000);
 await page.locator('.nav a[href="#resources"]').click();
 await page.locator('[role=tab][href="#res-books"]').click();
 await page.locator('#res-books .row details summary').first().click();
-await page.locator('.nav a[href="#interview"]').click();
-await page.locator('[role=tab][href="#jobs"]').click();
+await page.locator('.nav a[href="#jobs"]').click();
 await page.locator('#jobsRegion').selectOption('Europe & UK');
 await page.evaluate(()=>document.addEventListener('click',event=>{if(event.target.closest('.job-locations a'))event.preventDefault();}));
 await page.locator('#jobs .job-locations a:visible').first().click();
@@ -52,7 +51,7 @@ for(const retired of ['Site Search Result Opened','Section Filter Changed','Reso
 assert(names.some(name=>/page view/i.test(name)),'Autocaptured page view missing');
 const props=name=>events.find(event=>event.event_type===name).event_properties;
 const viewed=events.filter(event=>event.event_type==='Section Viewed').map(event=>event.event_properties.section);
-assert(viewed[0]==='start'&&viewed.includes('interview'),'Section Viewed sequence '+viewed);
+assert(viewed[0]==='start'&&viewed.includes('jobs'),'Section Viewed sequence '+viewed);
 const chapter=props('Chapter Viewed');
 assert(typeof chapter.chapter_number==='number'&&chapter.chapter_title&&chapter.part_title&&chapter.entry_point,'Chapter Viewed properties '+JSON.stringify(chapter));
 const result=props('Search Result Opened');
@@ -60,7 +59,7 @@ assert(result.search_term==='permission revocation'&&result.result_rank===1&&res
 const expanded=props('Content Expanded');
 assert(expanded.section==='resources'&&expanded.content_type&&expanded.content_title,'Content Expanded properties '+JSON.stringify(expanded));
 const filter=props('Filter Applied');
-assert(filter.section==='interview'&&filter.filter_name==='region'&&filter.filter_value==='Europe & UK','Filter Applied properties '+JSON.stringify(filter));
+assert(filter.section==='jobs'&&filter.filter_name==='region'&&filter.filter_value==='Europe & UK','Filter Applied properties '+JSON.stringify(filter));
 assert(events.some(event=>event.event_properties?.['[Amplitude] Session Replay ID']),'Events carry a Session Replay ID, so replays link to events');
 const job=props('Job Posting Clicked');
 assert(job.company&&job.job_title&&job.role_family&&job.job_location&&job.destination_host,'Job click properties '+JSON.stringify(job));
