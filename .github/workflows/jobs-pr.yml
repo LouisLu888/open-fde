@@ -1,0 +1,49 @@
+# Weekly pull request that brings docs/JOBS.json on main up to date with the live snapshot.
+# main is protected, so CI cannot push there; the maintainer reviews and merges this PR.
+# The PR reuses one branch (jobs-snapshot), so an unmerged PR is updated rather than duplicated.
+# Needs: Settings > Actions > General > "Allow GitHub Actions to create and approve pull requests".
+name: Weekly jobs snapshot PR
+
+on:
+  schedule:
+    - cron: '23 15 * * 1'  # Mondays 15:23 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run refresh:jobs
+
+      - name: Open or update the pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -I '"checkedAt"' docs/JOBS.json; then echo "No posting changes since main."; exit 0; fi
+          day=$(date -u +%F)
+          summary=$(node -e "const d=require('./docs/JOBS.json');console.log(d.jobs.length+' postings at '+new Set(d.jobs.map(j=>j.company)).size+' companies')")
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -C jobs-snapshot
+          git commit -am "Update jobs snapshot ($day)"
+          git push --force origin jobs-snapshot
+          body="Weekly snapshot of public job boards, $day: $summary. Only docs/JOBS.json changes. The live site already refreshes daily; this keeps main in step."
+          if [ -n "$(gh pr list --head jobs-snapshot --state open --json number --jq '.[0].number')" ]; then
+            gh pr edit jobs-snapshot --title "Update jobs snapshot ($day)" --body "$body"
+          else
+            gh pr create --base main --head jobs-snapshot --title "Update jobs snapshot ($day)" --body "$body"
+          fi
