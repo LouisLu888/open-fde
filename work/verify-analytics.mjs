@@ -40,6 +40,7 @@ await page.locator('[role=tab][href="#res-books"]').click();
 await page.locator('#res-books .row details summary').first().click();
 await page.locator('.nav a[href="#jobs"]').click();
 await page.locator('#jobsRegion').selectOption('Europe & UK');
+await page.locator('#jobs details.co-row:not([hidden]) summary').first().click();
 await page.evaluate(()=>document.addEventListener('click',event=>{if(event.target.closest('.job-locations a'))event.preventDefault();}));
 await page.locator('#jobs .job-locations a:visible').first().click();
 // The SDK batches and may retry after its remote config call, so poll instead of a fixed wait.

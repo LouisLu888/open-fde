@@ -63,9 +63,9 @@ assert.equal(await page.locator('[role=tab][aria-selected=true]').textContent(),
 // Job filters update each company's count, and Market demand is its own tab page.
 await page.goto(base+'/jobs/');
 await page.locator('[data-filter="jobs"]').selectOption({index:1});
-const chip=page.locator('[data-job-company="Databricks"] span');
+const chip=page.locator('#company-databricks .co-count');
 const shown=await page.locator('#company-databricks .job-locations a:not([hidden])').evaluateAll(links=>links.filter(link=>!link.closest('[hidden]')).length);
-assert.equal(Number(await chip.textContent()),shown,'Company chip count follows the filters');
+assert.equal(Number(await chip.textContent()),shown,'Company row count follows the filters');
 await page.locator('[role=tab]',{hasText:'Market demand'}).click();
 await page.waitForURL(base+'/jobs/market/');
 // Chapter navigation.

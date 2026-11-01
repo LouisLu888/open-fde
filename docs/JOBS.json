@@ -1,8 +1,8 @@
 {
- "checkedAt": "2026-11-01T19:33:57.811Z",
+ "checkedAt": "2026-11-01T21:23:33.892Z",
  "method": "Public Greenhouse, Lever, and Ashby job-board APIs; titles matched forward[\\s-]*deploy|\\bFDE\\b|\\bFDSE\\b|special projects engineer|deployment strategist|ai deployment engineer",
- "boardsChecked": 237,
- "companiesProbed": 317,
+ "boardsChecked": 236,
+ "companiesProbed": 316,
  "jobs": [
   {
    "company": "Abridge",
@@ -6399,78 +6399,6 @@
    "posted": "2026-07-29",
    "department": "Deployment",
    "compensation": "$125K – $175K • Offers Equity • Offers Benefits"
-  },
-  {
-   "company": "Sitreps",
-   "ats": "greenhouse",
-   "board": "sitrepsllc",
-   "title": "Forward Deployed Mission Engagement Lead",
-   "url": "https://job-boards.greenhouse.io/sitrepsllc/jobs/4465135009",
-   "location": "Minneapolis, Minnesota",
-   "remote": false,
-   "posted": "2026-10-23",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Sitreps",
-   "ats": "greenhouse",
-   "board": "sitrepsllc",
-   "title": "Forward Deployed Mission Strategist, Navy",
-   "url": "https://job-boards.greenhouse.io/sitrepsllc/jobs/4465102009",
-   "location": "San Diego, California",
-   "remote": false,
-   "posted": "2026-10-23",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Sitreps",
-   "ats": "greenhouse",
-   "board": "sitrepsllc",
-   "title": "Forward Deployed Mission Strategist, Unmanned Maritime Systems",
-   "url": "https://job-boards.greenhouse.io/sitrepsllc/jobs/4465117009",
-   "location": "Norfolk, Virginia",
-   "remote": false,
-   "posted": "2026-10-23",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Sitreps",
-   "ats": "greenhouse",
-   "board": "sitrepsllc",
-   "title": "Forward Deployed Software Engineer",
-   "url": "https://job-boards.greenhouse.io/sitrepsllc/jobs/4465108009",
-   "location": "Remote in the US",
-   "remote": true,
-   "posted": "2026-10-23",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Sitreps",
-   "ats": "greenhouse",
-   "board": "sitrepsllc",
-   "title": "Senior Forward Deployed Engineer, Public Sector",
-   "url": "https://job-boards.greenhouse.io/sitrepsllc/jobs/4392928009",
-   "location": "Washington, DC or San Francisco, CA",
-   "remote": false,
-   "posted": "2026-09-02",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Sitreps",
-   "ats": "greenhouse",
-   "board": "sitrepsllc",
-   "title": "Senior Forward Deployed Strategist, Public Sector",
-   "url": "https://job-boards.greenhouse.io/sitrepsllc/jobs/4392929009",
-   "location": "Washington, DC or San Francisco, CA",
-   "remote": false,
-   "posted": "2026-09-02",
-   "department": "",
-   "compensation": ""
   },
   {
    "company": "Snorkel AI",

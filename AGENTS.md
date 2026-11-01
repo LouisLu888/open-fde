@@ -1,6 +1,8 @@
 # Project instructions
 
-Read `CONTINUE_WITH_AN_AGENT.md` and `docs/RESEARCH_CONTEXT.md` before making changes. All paths in this package are relative to its root; do not depend on the previous laptop or chat.
+Read `CONTINUE_WITH_AN_AGENT.md` and `docs/RESEARCH_CONTEXT.md` before making changes.
+
+**Recurring work has a runbook and scripts: read `.claude/skills/open-fde-maintenance/SKILL.md` before refreshing jobs, the Market demand analysis, company facts, interview loops, sources, or shipping.** All paths in this package are relative to its root; do not depend on the previous laptop or chat.
 
 - Work on the existing implementation. Edit `work/*.mjs` and regenerate `outputs/FDE_SPE_Field_Academy.html`.
 - Keep the public website English, independent, and free of internal company material.

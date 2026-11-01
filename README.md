@@ -13,6 +13,10 @@ npm run deploy          # refresh jobs, build, publish to Cloudflare
 npm run check:links     # report broken external links in work/link-report.md
 ```
 
+## Maintenance
+
+Recurring research and refresh tasks (Market demand analysis, company facts, interview loops, source checks, shipping) are scripted under `work/research/` and documented in [.claude/skills/open-fde-maintenance/SKILL.md](.claude/skills/open-fde-maintenance/SKILL.md).
+
 ## Automatic updates
 
 `.github/workflows/refresh.yml` rebuilds and deploys the site every day, on every merge to `main`, and on demand: it refreshes the jobs snapshot, runs all three test suites, deploys only if a page changed, and tells IndexNow which pages changed. A page's "Updated" date and sitemap `lastmod` move only when its content changes (hashes are published at `/page-dates.json`). Each day's jobs snapshot is committed to the `jobs-history` branch, with `counts.csv` for trends.

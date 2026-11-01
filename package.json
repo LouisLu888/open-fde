@@ -21,7 +21,11 @@
     "test:site": "node work/build-site.mjs && node work/verify-site.mjs",
     "seo:indexnow": "node work/indexnow.mjs",
     "seo:crawl": "node work/seo-crawl.mjs",
-    "check:links": "node work/build.mjs && node work/check-links.mjs"
+    "check:links": "node work/build.mjs && node work/check-links.mjs",
+    "research:jobs": "node work/research/analyze-jobs.mjs",
+    "research:merge-interviews": "node work/research/merge-interviews.mjs",
+    "research:merge-companies": "node work/research/merge-companies.mjs",
+    "research:check-sources": "node work/research/check-sources.mjs"
   },
   "devDependencies": {
     "esbuild": "^0.25.12",

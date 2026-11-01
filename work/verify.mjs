@@ -160,6 +160,7 @@ assert(await page.locator('#jobs .job-locations a').evaluateAll(links=>links.eve
 await page.locator('[data-search="jobs"]').fill('OpenAI');
 assert.equal(await page.locator('[data-item="jobs"]:visible').count(),1);
 await page.locator('[data-search="jobs"]').fill('');
+await page.locator('#jobs details.co-row').evaluateAll(rows=>rows.forEach(row=>row.open=true));
 await page.locator('#jobsRegion').selectOption('Europe & UK');
 const europe=await page.locator('#jobs .job-locations a:visible').allTextContents();
 assert(europe.length>0&&europe.length<jobsSnapshot.jobs.length,'Region filter narrows postings');
@@ -174,7 +175,7 @@ await page.locator('#globalSearch').fill('');
 assert.equal(await page.locator('meta[property="og:image"]').getAttribute('content'),'https://open-fde.ai/og.png');
 assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'),'https://open-fde.ai/');
 assert.equal(errors.length,0,errors.join('\n'));
-const links=await page.locator('a[href^="https://"]').evaluateAll(elements=>[...new Set(elements.map(element=>element.href))]);
+const links=await page.locator('a[href^="https://"]:not(.co-site)').evaluateAll(elements=>[...new Set(elements.map(element=>element.href))]);
 assert(links.every(url=>new URL(url).pathname!=='/'||new URL(url).search.length>1||new URL(url).hostname==='www.momtestbook.com'),'Generic homepage link');
 assert(storySources.every(source=>links.includes(source.url)),'Missing new source attribution');
 assert.equal(new Set(sources.map(source=>source.id)).size,sources.length,'Duplicate source ID');
