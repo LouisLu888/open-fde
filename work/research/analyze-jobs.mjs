@@ -23,7 +23,18 @@ await Promise.all(boards.map(async board=>{
  if(board.ats==='lever')for(const job of data||[])text[job.hostedUrl]=[job.descriptionPlain,...(job.lists||[]).map(list=>list.text+' '+strip(list.content||'')),job.additionalPlain].join(' ');
  if(board.ats==='ashby')for(const job of data.jobs||[])text[job.jobUrl]=job.descriptionPlain||strip(job.descriptionHtml||'');
 }));
-const jobs=snapshot.jobs.map(job=>({...job,segment:segmentOf[job.company]||'Other',body:(text[job.url]||'').toLowerCase()}));
+// Companies added by discovery have no hand-assigned segment; place them by the industry label in
+// docs/COMPANIES.json. Order matters: the first matching rule wins.
+const facts=Object.fromEntries(JSON.parse(readFileSync(new URL('docs/COMPANIES.json',root),'utf8')).companies.map(entry=>[entry.company,entry]));
+const industrySegments=[
+ ['Consultancies and services',/consult|services|agency|staffing|venture studio|advisory|private equity/i],
+ ['Defense, government, and industrial',/defen[cs]e|military|national security|government|govtech|public (sector|safety)|space|satellite|aerospace|robot|manufactur|industrial|mining|construction|energy|electrif|hardware|logistics|supply chain|trucking|fleet|warehouse|aviation|agtech|drone|autonom|utility|cities|permitting/i],
+ ['AI labs and model platforms',/ai models?|models? (marketplace|&)|language models|llm|inference|gpu|chips?\b|chip (design|ip)|foundation|interpretab|ai safety|ai research|training data|post-training|ai cloud|ai training|ai for (science|materials)|protein|drug discovery|benchmark|evals/i],
+ ['Data, infra, and devtools',/data|database|cloud|developer|devops|observability|\bapi\b|infrastructure|security|cyber|identity|integration|storage|network|mlops|coding|code|search|ci\/cd|testing|documentation/i],
+ ['Vertical and applied AI',/./],
+];
+const segmentFor=company=>{const curated=segmentOf[company];if(curated&&!/^Found /.test(curated))return curated;const industry=facts[company]?.industry||'';return industry?industrySegments.find(([,pattern])=>pattern.test(industry))[0]:'Unclassified';};
+const jobs=snapshot.jobs.map(job=>({...job,segment:segmentFor(job.company),body:(text[job.url]||'').toLowerCase()}));
 const distinct=[...new Map(jobs.map(job=>[job.company+'|'+job.title,job])).values()];
 
 const skills={'Clear communication':/communicat/,'Feeding lessons back to product':/feedback|roadmap/,'Customer-facing work':/customer[- ]facing|client[- ]facing|work directly with (customers|clients)/,'Agents':/\bagents?\b|agentic/,'Comfort with ambiguity':/ambigu/,'Startup or founder experience':/founder|startup|zero[- ]to[- ]one|0[- ]?to[- ]?1/,'Python':/\bpython\b/,'LLMs':/\bllms?\b|large language|generative ai|genai/,'TypeScript or JavaScript':/typescript|javascript/,'SQL':/\bsql\b/,'AWS, GCP, or Azure':/\baws\b|\bgcp\b|azure/,'Fine-tuning':/fine[- ]tun/,'RAG':/\brag\b|retrieval[- ]augmented/,'Data engineering':/data pipelines?|\betl\b|data engineering|data model/,'Executives':/executive|c-suite|c-level/,'Travel':/\btravel/,'Security clearance':/security clearance|ts\/sci|clearance/,'Consulting':/consult/,'Production':/\bproduction\b/,'Demos':/\bdemos?\b/};

@@ -158,7 +158,7 @@ assert.equal(await page.locator('[data-count="jobs"]').textContent(),jobsSnapsho
 assert.equal(await page.locator('#jobs .job-locations a').count(),jobsSnapshot.jobs.length,'Every posting has its own link');
 assert(await page.locator('#jobs .job-locations a').evaluateAll(links=>links.every(link=>/^https:\/\/(job-boards\.greenhouse\.io|boards\.greenhouse\.io|jobs\.lever\.co|jobs\.ashbyhq\.com)\//.test(link.href)||link.href.startsWith('https://'))));
 await page.locator('[data-search="jobs"]').fill('OpenAI');
-assert.equal(await page.locator('[data-item="jobs"]:visible').count(),1);
+assert.deepEqual(await page.locator('[data-item="jobs"]:visible').evaluateAll(rows=>rows.map(row=>row.dataset.company)),['OpenAI','OpenAI Deployment Company'],'Search narrows to matching companies');
 await page.locator('[data-search="jobs"]').fill('');
 await page.locator('#jobs details.co-row').evaluateAll(rows=>rows.forEach(row=>row.open=true));
 await page.locator('#jobsRegion').selectOption('Europe & UK');

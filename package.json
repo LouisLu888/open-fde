@@ -25,7 +25,9 @@
     "research:jobs": "node work/research/analyze-jobs.mjs",
     "research:merge-interviews": "node work/research/merge-interviews.mjs",
     "research:merge-companies": "node work/research/merge-companies.mjs",
-    "research:check-sources": "node work/research/check-sources.mjs"
+    "research:check-sources": "node work/research/check-sources.mjs",
+    "research:merge-discovery": "node work/research/merge-discovery.mjs",
+    "research:verify-companies": "node work/research/verify-companies.mjs"
   },
   "devDependencies": {
     "esbuild": "^0.25.12",

@@ -1,0 +1,1302 @@
+{
+ "checkedAt": "2026-11-01",
+ "note": "Companies hiring forward deployed roles on systems the daily fetcher cannot read (Workday, company careers sites, YC, Rippling, Gem, and others). Confirmed open when added; recheck before relying on them.",
+ "companies": [
+  {
+   "company": "4M Analytics",
+   "system": "Comeet",
+   "careersUrl": "https://www.comeet.com/jobs/4Manalytics",
+   "exampleTitle": "Lead Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.comeet.com/jobs/4Manalytics/B6.00F/lead-forward-deployed-engineer/1E.27A",
+   "website": "https://4manalytics.com",
+   "note": "Comeet; posting page returns HTTP 200; listed live on landed.jobs FDE list updated 2026-10-30"
+  },
+  {
+   "company": "Accelerant",
+   "system": "Rippling",
+   "careersUrl": "https://ats.rippling.com/accelerant/jobs/5dc3ac98-49ab-40a7-a56b-cbc0eabb9bbf",
+   "exampleTitle": "Forward Deployed Data Solution Engineer",
+   "examplePostingUrl": "https://ats.rippling.com/accelerant/jobs/5dc3ac98-49ab-40a7-a56b-cbc0eabb9bbf",
+   "website": "https://accelerant.ai",
+   "note": "Rippling ATS (ats.rippling.com); confirmed via Rippling board API"
+  },
+  {
+   "company": "Adobe",
+   "system": "Workday",
+   "careersUrl": "https://adobe.wd5.myworkdayjobs.com/external_experienced",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://adobe.wd5.myworkdayjobs.com/external_experienced/job/Lehi/Forward-Deployed-Engineer_R173252",
+   "website": "https://adobe.com",
+   "note": "Workday; posting open per Workday CXS API (2026-10-28)"
+  },
+  {
+   "company": "Adverity",
+   "system": "Workable",
+   "careersUrl": "https://apply.workable.com/j/9F88284CE7",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://apply.workable.com/j/9F88284CE7",
+   "website": "",
+   "note": "Workable; posting page live"
+  },
+  {
+   "company": "AI Technology Partners",
+   "system": "Rippling",
+   "careersUrl": "https://ats.rippling.com/aitp/jobs/7fff17c8-f59c-4e49-be7c-37d0b77fbeaf",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://ats.rippling.com/aitp/jobs/7fff17c8-f59c-4e49-be7c-37d0b77fbeaf",
+   "website": "https://aitp.ai",
+   "note": "Rippling ATS (ats.rippling.com); confirmed via Rippling board API"
+  },
+  {
+   "company": "Airweave",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/airweave/jobs",
+   "exampleTitle": "Founding Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/airweave/jobs/OH2VNh6-founding-forward-deployed-engineer",
+   "website": "https://airweave.ai",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Alation",
+   "system": "Workday",
+   "careersUrl": "https://alation.wd503.myworkdayjobs.com/ExternalSite",
+   "exampleTitle": "Senior Staff Forward Deployed Engineer",
+   "examplePostingUrl": "https://alation.wd503.myworkdayjobs.com/ExternalSite/job/USA-REMOTE/Senior-Staff-Forward-Deployed-Engineer_R10000800",
+   "website": "https://alation.com",
+   "note": "Workday; posting open per Workday CXS API (2026-10-08)"
+  },
+  {
+   "company": "Alchemy",
+   "system": "Company careers site",
+   "careersUrl": "https://alchemy.cloud/careers/ai-forward-deployed-engineer",
+   "exampleTitle": "AI Forward Deployed Engineer",
+   "examplePostingUrl": "https://alchemy.cloud/careers/ai-forward-deployed-engineer",
+   "website": "https://alchemy.cloud",
+   "note": "Own careers page / other ATS; posting page live"
+  },
+  {
+   "company": "Alguna",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/alguna/jobs",
+   "exampleTitle": "Forward Deployed Engineer (FDE)",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/alguna/jobs/9JBITuK-forward-deployed-engineer-fde",
+   "website": "https://alguna.com",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Alkami",
+   "system": "Workday",
+   "careersUrl": "https://alkami.wd12.myworkdayjobs.com/Alkami",
+   "exampleTitle": "Sr. Forward Deployed Engineer",
+   "examplePostingUrl": "https://alkami.wd12.myworkdayjobs.com/Alkami/job/US-Remote/Sr-Forward-Deployed-Engineer_JR-000920",
+   "website": "https://alkami.com",
+   "note": "Workday; posting open per Workday CXS API (2026-10-26)"
+  },
+  {
+   "company": "Amazon Web Services",
+   "system": "Other",
+   "careersUrl": "https://www.amazon.jobs/en/search?base_query=forward+deployed+engineer",
+   "exampleTitle": "Forward Deployed Engineer, AWS Forward Deployed Engineering",
+   "examplePostingUrl": "https://www.amazon.jobs/en/jobs/10592680/forward-deployed-engineer-aws-forward-deployed-engineering",
+   "website": "https://aws.amazon.com",
+   "note": "amazon.jobs; search API returned 47 FDE-titled hits, newest posted 2026-10-30"
+  },
+  {
+   "company": "Analog Devices",
+   "system": "Workday",
+   "careersUrl": "https://analogdevices.wd1.myworkdayjobs.com/External",
+   "exampleTitle": "Principal Forward Deployed Engineer, Enterprise AI Productivity",
+   "examplePostingUrl": "https://analogdevices.wd1.myworkdayjobs.com/External/job/US-TX-Dallas-Tollway/Principal-Forward-Deployed-Engineer--Enterprise-AI-Productivity_R266395-1",
+   "website": "https://analog.com",
+   "note": "Workday; posting open per Workday CXS API (2026-09-28)"
+  },
+  {
+   "company": "Anduin",
+   "system": "Trakstar",
+   "careersUrl": "https://anduin.hire.trakstar.com/jobs/fk0zizh/",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://anduin.hire.trakstar.com/jobs/fk0zizh/",
+   "website": "",
+   "note": "Trakstar Hire; posting page live"
+  },
+  {
+   "company": "Aravolta",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/aravolta/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/aravolta/jobs/F5owCzV-forward-deployed-engineer",
+   "website": "https://www.aravolta.com/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Arnata",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.workatastartup.com/jobs/77065",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.workatastartup.com/jobs/77065",
+   "website": "",
+   "note": "Y Combinator Work at a Startup / YC jobs page live"
+  },
+  {
+   "company": "Arva AI",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/arva-ai/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/arva-ai/jobs/VWRDWCW-forward-deployed-engineer",
+   "website": "https://www.arva.ai",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Automat",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.workatastartup.com/jobs/79159",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.workatastartup.com/jobs/79159",
+   "website": "https://runautomat.com",
+   "note": "Y Combinator Work at a Startup / YC jobs page live"
+  },
+  {
+   "company": "Avallon AI",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/avallon-ai/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/avallon-ai/jobs/EKbBPmB-forward-deployed-engineer",
+   "website": "https://www.avallon.ai/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Aviator",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/aviator/jobs",
+   "exampleTitle": "Software engineer, Forward Deployed",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/aviator/jobs/DTTCGHC-software-engineer-forward-deployed",
+   "website": "https://aviator.co",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "BackOps AI",
+   "system": "Gem",
+   "careersUrl": "https://jobs.gem.com/backops-ai/am9icG9zdDpps2EAYwBoWDOhqTLzbzNs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://jobs.gem.com/backops-ai/am9icG9zdDpps2EAYwBoWDOhqTLzbzNs",
+   "website": "https://backops.ai",
+   "note": "Gem job board; confirmed via api.gem.com job_board"
+  },
+  {
+   "company": "Beacon Software",
+   "system": "Dover",
+   "careersUrl": "https://app.dover.com/apply/beacon-software/fc7c16ed-74a6-4518-8bdb-82b24b870a84",
+   "exampleTitle": "Forward Deployed Software Engineer",
+   "examplePostingUrl": "https://app.dover.com/apply/beacon-software/fc7c16ed-74a6-4518-8bdb-82b24b870a84",
+   "website": "https://beaconsoftware.com",
+   "note": "Dover; confirmed active via Dover application-portal API"
+  },
+  {
+   "company": "Bilt Rewards",
+   "system": "Gem",
+   "careersUrl": "https://jobs.gem.com/bilt/am9icG9zdDoGHterSesZ5Myi9uQO0kZP",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://jobs.gem.com/bilt/am9icG9zdDoGHterSesZ5Myi9uQO0kZP",
+   "website": "https://bilt.com",
+   "note": "Gem job board; confirmed via api.gem.com job_board"
+  },
+  {
+   "company": "Bonsai Robotics",
+   "system": "Rippling",
+   "careersUrl": "https://ats.rippling.com/bonsairoboticsmain",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://ats.rippling.com/bonsairoboticsmain/jobs/384f9757-4d7d-49d1-8194-9d0f0e5e703e",
+   "website": "https://bonsairobotics.ai",
+   "note": "Rippling ATS; posting page returns HTTP 200; listed live on landed.jobs FDE list updated 2026-10-30"
+  },
+  {
+   "company": "Booko",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/booko/jobs",
+   "exampleTitle": "Founding Forward-Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/booko/jobs/K3Oj9Sa-founding-forward-deployed-engineer",
+   "website": "https://booko.com",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Booz Allen Hamilton",
+   "system": "Workday",
+   "careersUrl": "https://bah.wd1.myworkdayjobs.com/BAH_Jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://bah.wd1.myworkdayjobs.com/BAH_Jobs/job/Arlington-VA/Forward-Deployed-Engineer_R0252405",
+   "website": "https://boozallen.com",
+   "note": "Workday; posting open per Workday CXS API (2026-10-27)"
+  },
+  {
+   "company": "Boston Consulting Group (BCG X)",
+   "system": "Company careers site",
+   "careersUrl": "https://studenttalent.bcg.com/careerhub",
+   "exampleTitle": "Forward Deployed AI Scientist, Internship, Campus, United States - BCG X",
+   "examplePostingUrl": "https://studenttalent.bcg.com/careerhub/explore/jobs/790318711566?post_onboarding_pid=790318711566&show_apply=1&profile_type=candidate&customredirect=1&utm_source=Phenom",
+   "website": "https://bcg.com",
+   "note": "BCG careers site; posting page returns HTTP 200; listed live on landed.jobs FDE list updated 2026-10-30; Internship title only (Forward Deployed AI Scientist)"
+  },
+  {
+   "company": "Brickanta",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/brickanta/jobs",
+   "exampleTitle": "Forward Deployed Construction Engineer (Poland)",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/brickanta/jobs/dTecLEu-forward-deployed-construction-engineer-poland",
+   "website": "https://www.brickanta.com",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Bridge Defense",
+   "system": "Rippling",
+   "careersUrl": "https://ats.rippling.com/bridge-defense/jobs/94e359ca-5657-44c3-8dc5-606f8b90828a",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://ats.rippling.com/bridge-defense/jobs/94e359ca-5657-44c3-8dc5-606f8b90828a",
+   "website": "",
+   "note": "Rippling ATS (ats.rippling.com); confirmed via Rippling board API"
+  },
+  {
+   "company": "Broadcom",
+   "system": "Workday",
+   "careersUrl": "https://broadcom.wd1.myworkdayjobs.com/External_Career",
+   "exampleTitle": "Forward Deployed Engineer - Kubernetes",
+   "examplePostingUrl": "https://broadcom.wd1.myworkdayjobs.com/External_Career/job/USA-TN-Remote-Location/Forward-Deployed-Engineer---Kubernetes_R027412",
+   "website": "https://broadcom.com",
+   "note": "Workday; posting open per Workday CXS API (2026-10-21)"
+  },
+  {
+   "company": "Broadridge",
+   "system": "Workday",
+   "careersUrl": "https://broadridge.wd5.myworkdayjobs.com/Careers",
+   "exampleTitle": "Vice President, Forward Deployed Engineering - AI",
+   "examplePostingUrl": "https://broadridge.wd5.myworkdayjobs.com/Careers/job/New-York-NY/Vice-President--Forward-Deployed-Engineering---AI_JR1085935",
+   "website": "https://broadridge.com",
+   "note": "Workday; posting open per Workday CXS API (2026-09-17)"
+  },
+  {
+   "company": "Bucket Robotics",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.workatastartup.com/jobs/95797",
+   "exampleTitle": "Forward Deploy Engineer",
+   "examplePostingUrl": "https://www.workatastartup.com/jobs/95797",
+   "website": "https://bucket.bot",
+   "note": "Y Combinator Work at a Startup / YC jobs page live"
+  },
+  {
+   "company": "ByteDance",
+   "system": "Company careers site",
+   "careersUrl": "https://joinbytedance.com/search/7666005612636096773",
+   "exampleTitle": "Forward Deployed Engineer - BytePlus",
+   "examplePostingUrl": "https://joinbytedance.com/search/7666005612636096773",
+   "website": "https://bytedance.com",
+   "note": "Own careers page / other ATS; posting page live"
+  },
+  {
+   "company": "Cadre",
+   "system": "Gem",
+   "careersUrl": "https://jobs.gem.com/go-cadre/am9icG9zdDplB1w-B0DWpVzY7jEzZiqm",
+   "exampleTitle": "Forward Deployed AI Engineer",
+   "examplePostingUrl": "https://jobs.gem.com/go-cadre/am9icG9zdDplB1w-B0DWpVzY7jEzZiqm",
+   "website": "https://gocadre.ai",
+   "note": "Gem job board; confirmed via api.gem.com job_board"
+  },
+  {
+   "company": "Cair Health",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/cair-health/jobs",
+   "exampleTitle": "Founding Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/cair-health/jobs/Ye8X3VN-founding-forward-deployed-engineer",
+   "website": "https://www.cairhealth.com/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Cedana",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/cedana/jobs/d1vYocG-forward-deployed-engineer-ai-hpc",
+   "exampleTitle": "Forward Deployed Engineer: AI + HPC",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/cedana/jobs/d1vYocG-forward-deployed-engineer-ai-hpc",
+   "website": "",
+   "note": "Y Combinator Work at a Startup / YC jobs page live"
+  },
+  {
+   "company": "Cekura",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/cekura-ai/jobs",
+   "exampleTitle": "Forward Deployed Engineer (US)",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/cekura-ai/jobs/AiWwUxI-forward-deployed-engineer-us",
+   "website": "https://www.cekura.ai/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Cisco",
+   "system": "Workday",
+   "careersUrl": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers",
+   "exampleTitle": "Director, Solutions Engineer Forward Deployed - Splunk (Remote)",
+   "examplePostingUrl": "https://cisco.wd5.myworkdayjobs.com/Cisco_Careers/job/New-York-New-York-US/Director--Solutions-Engineer-Forward-Deployed---Splunk--Remote-_2028297-1",
+   "website": "https://cisco.com",
+   "note": "Workday; posting open per Workday CXS API (2026-10-27)"
+  },
+  {
+   "company": "Clicks Health",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/clicks-health/jobs",
+   "exampleTitle": "Forward Deployed Strategist",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/clicks-health/jobs/YsqWAXA-forward-deployed-strategist",
+   "website": "https://www.goclicks.ai/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found; Title is Forward Deployed Strategist"
+  },
+  {
+   "company": "Clipboard",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/clipboard/jobs",
+   "exampleTitle": "Forward Deployed Analyst",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/clipboard/jobs/HyNAsnd-forward-deployed-analyst",
+   "website": "https://www.clipboardworks.com/careers",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found; Title is Forward Deployed Analyst"
+  },
+  {
+   "company": "Closure",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/closure/jobs",
+   "exampleTitle": "Founding Forward-Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/closure/jobs/4gxpOAW-founding-forward-deployed-engineer",
+   "website": "https://closure-intel.com/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "CollectWise",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/collectwise/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/collectwise/jobs/rEWfZ6R-forward-deployed-engineer",
+   "website": "https://collectwise.com/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Cotera",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/cotera/jobs",
+   "exampleTitle": "Forward Deployed Engineer - Artificial Intelligence",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/cotera/jobs/FPIIOXR-forward-deployed-engineer-artificial-intelligence",
+   "website": "https://cotera.co",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Coursedog",
+   "system": "Workable",
+   "careersUrl": "https:/.workable.com/coursedog-1/j/41841DF1CA/",
+   "exampleTitle": "Forward Deployed Integrations Engineer",
+   "examplePostingUrl": "https:/.workable.com/coursedog-1/j/41841DF1CA/",
+   "website": "https://coursedog.com",
+   "note": "Workable; posting page returns HTTP 200; listed live on landed.jobs FDE list updated 2026-10-30"
+  },
+  {
+   "company": "Coval",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/coval/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/coval/jobs/ITTPluu-forward-deployed-engineer",
+   "website": "https://coval.dev",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "CrewAI",
+   "system": "Workable",
+   "careersUrl": "https://apply.workable.com/j/96051E9EDE",
+   "exampleTitle": "Forward Deployed Engineer - (East coast based)",
+   "examplePostingUrl": "https://apply.workable.com/j/96051E9EDE",
+   "website": "https://crewai.com",
+   "note": "Workable; posting page live"
+  },
+  {
+   "company": "Crustdata",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/crustdata/jobs",
+   "exampleTitle": "Software Engineering Intern (Forward Deployed) | Summer 2026",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/crustdata/jobs/xNllWNH-software-engineering-intern-forward-deployed-summer-2026",
+   "website": "https://crustdata.com",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Dataland",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/dataland/jobs",
+   "exampleTitle": "Founding Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/dataland/jobs/tDqkVx0-founding-forward-deployed-engineer",
+   "website": "https://dataland.io",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Dataminr",
+   "system": "Workday",
+   "careersUrl": "https://dataminr.wd12.myworkdayjobs.com/Dataminr",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://dataminr.wd12.myworkdayjobs.com/Dataminr/job/US-Remote/Forward-Deployed-Engineer_JR2111-1",
+   "website": "https://dataminr.com",
+   "note": "Workday; posting open per Workday CXS API (2026-10-07)"
+  },
+  {
+   "company": "Datasite",
+   "system": "Workday",
+   "careersUrl": "https://datasite.wd1.myworkdayjobs.com/datasite",
+   "exampleTitle": "Sr. Forward Deployed Engineer, Commercial Operations",
+   "examplePostingUrl": "https://datasite.wd1.myworkdayjobs.com/datasite/job/USA---NY---New-York-City---BlueFlame-AI--Grata/Senior-Forward-Deployed-Engineer--AI---Business-Transformation-_R36333",
+   "website": "https://datasite.com",
+   "note": "Workday; posting open per Workday CXS API (2026-10-23)"
+  },
+  {
+   "company": "Draftwise",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/draftwise/jobs",
+   "exampleTitle": "Forward Deployed AI Engineer, Backend - West Palm Beach",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/draftwise/jobs/0kxugND-forward-deployed-ai-engineer-backend-west-palm-beach",
+   "website": "https://www.draftwise.com/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Drivepoint",
+   "system": "Rippling",
+   "careersUrl": "https://ats.rippling.com/drivepoint/jobs/4216382c-427f-4db7-beb0-120f9c3eafb2",
+   "exampleTitle": "Forward Deployed Engineer (FDE)",
+   "examplePostingUrl": "https://ats.rippling.com/drivepoint/jobs/4216382c-427f-4db7-beb0-120f9c3eafb2",
+   "website": "",
+   "note": "Rippling ATS (ats.rippling.com); confirmed via Rippling board API"
+  },
+  {
+   "company": "Dynamo AI",
+   "system": "Rippling",
+   "careersUrl": "https://ats.rippling.com/dynamo-ai",
+   "exampleTitle": "Senior Forward Deployed Engineer, Public Sector",
+   "examplePostingUrl": "https://ats.rippling.com/dynamo-ai/jobs/e81c31e3-4511-4ecd-a231-e897b7e5b8e0",
+   "website": "https://dynamo.ai",
+   "note": "Rippling ATS; posting page returns HTTP 200; listed live on landed.jobs FDE list updated 2026-10-30"
+  },
+  {
+   "company": "Elergi",
+   "system": "Company careers site",
+   "careersUrl": "https://elergi.com/careers/founding-forward-deployed-engineer",
+   "exampleTitle": "Founding forward deployed engineer",
+   "examplePostingUrl": "https://elergi.com/careers/founding-forward-deployed-engineer",
+   "website": "https://elergi.com",
+   "note": "Own careers page / other ATS; posting page live"
+  },
+  {
+   "company": "Elevate",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/elevate-2/jobs",
+   "exampleTitle": "Forward Deployed Engineer (FDE)",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/elevate-2/jobs/FFGZvQq-forward-deployed-engineer-fde",
+   "website": "https://www.useelevate.dev/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Eloquent AI",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/eloquent-ai/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/eloquent-ai/jobs/H6NdVAs-forward-deployed-engineer",
+   "website": "https://www.eloquentai.co/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Ept AI",
+   "system": "Rippling",
+   "careersUrl": "https://ats.rippling.com/ept-ai-inc/jobs/f393d715-b01c-44a2-8f4b-cc0bb88a5c28",
+   "exampleTitle": "Forward-Deployed Engineer",
+   "examplePostingUrl": "https://ats.rippling.com/ept-ai-inc/jobs/f393d715-b01c-44a2-8f4b-cc0bb88a5c28",
+   "website": "",
+   "note": "Rippling ATS (ats.rippling.com); confirmed via Rippling board API"
+  },
+  {
+   "company": "EQTR",
+   "system": "Dover",
+   "careersUrl": "https://app.dover.com/apply/eqtr/ba73b340-ae0d-423c-9117-eeed770979d3",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://app.dover.com/apply/eqtr/ba73b340-ae0d-423c-9117-eeed770979d3",
+   "website": "",
+   "note": "Dover; confirmed active via Dover application-portal API"
+  },
+  {
+   "company": "F5",
+   "system": "Workday",
+   "careersUrl": "https://ffive.wd5.myworkdayjobs.com/f5jobs",
+   "exampleTitle": "Forward Deployed Engineer - AI Security",
+   "examplePostingUrl": "https://ffive.wd5.myworkdayjobs.com/f5jobs/job/Field-MA/Forward-Deployed-Engineer---AI-Cybersecurity_RP1038981",
+   "website": "https://f5.com",
+   "note": "Workday; posting open per Workday CXS API (2026-10-05)"
+  },
+  {
+   "company": "Factorial",
+   "system": "Company careers site",
+   "careersUrl": "https://careers.factorial.com/job_posting/technical-solutions-engineer-fde-325251",
+   "exampleTitle": "Technical Solutions Engineer (FDE)",
+   "examplePostingUrl": "https://careers.factorial.com/job_posting/technical-solutions-engineer-fde-325251",
+   "website": "https://factorial.com",
+   "note": "Own careers page / other ATS; posting page live"
+  },
+  {
+   "company": "Fenwick & West",
+   "system": "Workday",
+   "careersUrl": "https://fenwick.wd1.myworkdayjobs.com/fenwick_external_careers",
+   "exampleTitle": "Forward Deployed Operations Intern",
+   "examplePostingUrl": "https://fenwick.wd1.myworkdayjobs.com/fenwick_external_careers/job/Silicon-Valley/Forward-Deployed-Operations-Intern_R2964",
+   "website": "https://fenwick.com",
+   "note": "Workday; posting open per Workday CXS API (2026-09-28); Law firm; only an intern title (Forward Deployed Operations Intern)"
+  },
+  {
+   "company": "Finosu",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/finosu/jobs",
+   "exampleTitle": "Forward Deployed Engineering Lead",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/finosu/jobs/XBouheE-forward-deployed-engineering-lead",
+   "website": "https://www.finosu.com",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Flair Labs",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/flair-labs/jobs",
+   "exampleTitle": "Forward Deployed Engineer - Flair Labs",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/flair-labs/jobs/fyXhYIj-forward-deployed-engineer-flair-labs",
+   "website": "https://www.flairlabs.ai/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Flexion Robotics",
+   "system": "Workable",
+   "careersUrl": "https://apply.workable.com/j/15E54A027D",
+   "exampleTitle": "Forward Deployed Engineer - Robotics",
+   "examplePostingUrl": "https://apply.workable.com/j/15E54A027D",
+   "website": "",
+   "note": "Workable; posting page live"
+  },
+  {
+   "company": "Fortanix",
+   "system": "Workable",
+   "careersUrl": "https://apply.workable.com/j/265C35DDDE",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://apply.workable.com/j/265C35DDDE",
+   "website": "",
+   "note": "Workable; posting page live"
+  },
+  {
+   "company": "FurtherAI",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/furtherai/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/furtherai/jobs/2uFhWmi-forward-deployed-engineer",
+   "website": "https://www.furtherai.com/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Gaiia",
+   "system": "Rippling",
+   "careersUrl": "https://ats.rippling.com/gaiias-open-positions/jobs/56e20470-0648-4e6a-a2c4-acf907196110",
+   "exampleTitle": "Forward Deployed Engineer (FDE)",
+   "examplePostingUrl": "https://ats.rippling.com/gaiias-open-positions/jobs/56e20470-0648-4e6a-a2c4-acf907196110",
+   "website": "https://gaiia.com",
+   "note": "Rippling ATS (ats.rippling.com); confirmed via Rippling board API"
+  },
+  {
+   "company": "GlobalFoundries",
+   "system": "Workday",
+   "careersUrl": "https://globalfoundries.wd1.myworkdayjobs.com/External",
+   "exampleTitle": "Director — FDE Office (Forward Deployed Engineering)",
+   "examplePostingUrl": "https://globalfoundries.wd1.myworkdayjobs.com/External/job/Austin/Director---FDE-Office--Forward-Deployed-Engineering-_JR-2605504",
+   "website": "https://gf.com",
+   "note": "Workday; posting open per Workday CXS API (2026-10-12)"
+  },
+  {
+   "company": "Google",
+   "system": "Company careers site",
+   "careersUrl": "https://www.google.com/about/careers/applications/jobs/results?q=%22forward%20deployed%20engineer%22",
+   "exampleTitle": "Forward Deployed Engineer III, Generative AI, Google Cloud",
+   "examplePostingUrl": "https://www.google.com/about/careers/applications/jobs/results/101146256805372614-forward-deployed-engineer-iii-generative-ai-google-cloud",
+   "website": "https://cloud.google.com",
+   "note": "Google Careers (own site); many Google Cloud FDE reqs live on the results page"
+  },
+  {
+   "company": "goTenna",
+   "system": "Rippling",
+   "careersUrl": "https://ats.rippling.com/gotenna-inc/jobs/02a8d631-6d3c-405d-9128-8b6d4c51977d",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://ats.rippling.com/gotenna-inc/jobs/02a8d631-6d3c-405d-9128-8b6d4c51977d",
+   "website": "https://gotenna.com",
+   "note": "Rippling ATS (ats.rippling.com); confirmed via Rippling board API"
+  },
+  {
+   "company": "Gridsight",
+   "system": "Rippling",
+   "careersUrl": "https://ats.rippling.com/gridsight/jobs/fe75eb46-625f-427c-908b-ea0953c082ee",
+   "exampleTitle": "Forward Deployed Power Engineer",
+   "examplePostingUrl": "https://ats.rippling.com/gridsight/jobs/fe75eb46-625f-427c-908b-ea0953c082ee",
+   "website": "https://gridsight.ai",
+   "note": "Rippling ATS (ats.rippling.com); confirmed via Rippling board API"
+  },
+  {
+   "company": "Growth Signals",
+   "system": "Rippling",
+   "careersUrl": "https://ats.rippling.com/growth-signals/jobs/909e845f-6e44-4708-9c1d-35993e4bbd62",
+   "exampleTitle": "Forward Deployed Software Engineer",
+   "examplePostingUrl": "https://ats.rippling.com/growth-signals/jobs/909e845f-6e44-4708-9c1d-35993e4bbd62",
+   "website": "",
+   "note": "Rippling ATS (ats.rippling.com); confirmed via Rippling board API"
+  },
+  {
+   "company": "Guac",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/guac/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/guac/jobs/qTXMy4i-forward-deployed-engineer",
+   "website": "https://www.guac.com/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Hyperspell",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/hyperspell/jobs",
+   "exampleTitle": "Founding Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/hyperspell/jobs/iLXJT3r-founding-forward-deployed-engineer",
+   "website": "https://hyperspell.com",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "IBM",
+   "system": "Company careers site",
+   "careersUrl": "https://www.ibm.com/careers/search?q=forward%20deployed",
+   "exampleTitle": "Forward Deployed Engineer – AI",
+   "examplePostingUrl": "https://careers.ibm.com/careers/JobDetail?jobId=136972",
+   "website": "https://www.ibm.com",
+   "note": "IBM careers (own site); search API returned 7 forward-deployed titles"
+  },
+  {
+   "company": "IDC",
+   "system": "iCIMS",
+   "careersUrl": "https://idccareers-idg.icims.com/jobs/7215",
+   "exampleTitle": "Senior Forward Deployed Engineer, Research & Delivery Innovation",
+   "examplePostingUrl": "https://idccareers-idg.icims.com/jobs/7215/senior-forward-deployed-engineer%2c-research-%26-delivery-innovation/job",
+   "website": "https://idc.com",
+   "note": "iCIMS; posting page returns HTTP 200; listed live on landed.jobs FDE list updated 2026-10-30"
+  },
+  {
+   "company": "IFS",
+   "system": "SmartRecruiters",
+   "careersUrl": "https://jobs.smartrecruiters.com/IFS1",
+   "exampleTitle": "Forward Deployed Engineer | IFS Copperleaf",
+   "examplePostingUrl": "https://jobs.smartrecruiters.com/IFS1/744000157756219",
+   "website": "https://ifs.com",
+   "note": "SmartRecruiters (company IFS1); confirmed via SmartRecruiters API"
+  },
+  {
+   "company": "Infer",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/infer/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/infer/jobs/zrZchOv-forward-deployed-engineer",
+   "website": "https://www.infer.so/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "IVIX",
+   "system": "Comeet",
+   "careersUrl": "https://www.comeet.com/jobs/ivix",
+   "exampleTitle": "Forward Deployed Engineer (FDE)",
+   "examplePostingUrl": "https://www.comeet.com/jobs/ivix/09.002/forward-deployed-engineer-fde/C1.479",
+   "website": "https://ivix.ai",
+   "note": "Comeet; posting page returns HTTP 200; listed live on landed.jobs FDE list updated 2026-10-30"
+  },
+  {
+   "company": "Karumi",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/karumi/jobs",
+   "exampleTitle": "Forward Deployed Engineer (FDE)",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/karumi/jobs/mzQuJ9K-forward-deployed-engineer-fde",
+   "website": "https://www.karumi.ai/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Kela",
+   "system": "Comeet",
+   "careersUrl": "https://www.comeet.com/jobs/kelatechnologies",
+   "exampleTitle": "FDE- LA",
+   "examplePostingUrl": "https://www.comeet.com/jobs/kelatechnologies/2A.007/position/5A.27F",
+   "website": "https://kelasys.com",
+   "note": "Comeet; posting page returns HTTP 200; listed live on landed.jobs FDE list updated 2026-10-30"
+  },
+  {
+   "company": "Kyndryl",
+   "system": "Workday",
+   "careersUrl": "https://kyndryl.wd5.myworkdayjobs.com/KyndrylProfessionalCareers",
+   "exampleTitle": "Associate Director, Full-stack Forward Deployed Engineer",
+   "examplePostingUrl": "https://kyndryl.wd5.myworkdayjobs.com/KyndrylProfessionalCareers/job/FL-USA/Associate-Director--Full-stack-Forward-Deployed-Engineer_R-68992",
+   "website": "https://kyndryl.com",
+   "note": "Workday; posting open per Workday CXS API (2026-09-24)"
+  },
+  {
+   "company": "Lanesurf",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/lanesurf/jobs",
+   "exampleTitle": "Founding Deployment Strategist",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/lanesurf/jobs/0IBSwdh-founding-deployment-strategist",
+   "website": "https://www.lanesurf.com/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Lexoga",
+   "system": "Dover",
+   "careersUrl": "https://app.dover.com/apply/lexoga/45195fbc-e801-4a82-a507-b1cf781e9f7a",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://app.dover.com/apply/lexoga/45195fbc-e801-4a82-a507-b1cf781e9f7a",
+   "website": "",
+   "note": "Dover; confirmed active via Dover application-portal API"
+  },
+  {
+   "company": "Luminary Cloud",
+   "system": "Rippling",
+   "careersUrl": "https://ats.rippling.com/luminarycloud",
+   "exampleTitle": "Senior / Principal Forward Deployed Engineer, Applications (CFD)",
+   "examplePostingUrl": "https://ats.rippling.com/luminarycloud/jobs/ae016a8e-fec8-4934-910d-d8d248bc45fd",
+   "website": "https://luminary.ai",
+   "note": "Rippling ATS; posting page returns HTTP 200; listed live on landed.jobs FDE list updated 2026-10-30"
+  },
+  {
+   "company": "MadeThis",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/madethis/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/madethis/jobs/dgBaRrI-forward-deployed-engineer",
+   "website": "https://madethis.com",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Manufact",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/manufact/jobs",
+   "exampleTitle": "Founding Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/manufact/jobs/kp7OyFp-founding-forward-deployed-engineer",
+   "website": "https://manufact.com",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Matroid",
+   "system": "Breezy",
+   "careersUrl": "https://matroid.breezy.hr/p/d36035e073e0-vlm-vfm-forward-deployed-engineer",
+   "exampleTitle": "VLM & VFM Forward Deployed Engineer",
+   "examplePostingUrl": "https://matroid.breezy.hr/p/d36035e073e0-vlm-vfm-forward-deployed-engineer",
+   "website": "https://matroid.com",
+   "note": "Breezy HR; posting page live"
+  },
+  {
+   "company": "mdhub",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/mdhub/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/mdhub/jobs/pZxi9cF-forward-deployed-engineer",
+   "website": "https://www.mdhub.ai/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Medtronic",
+   "system": "Workday",
+   "careersUrl": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers",
+   "exampleTitle": "IT Forward Deployed Engineer Global Supply Management",
+   "examplePostingUrl": "https://medtronic.wd1.myworkdayjobs.com/MedtronicCareers/job/Minneapolis-Minnesota-United-States-of-America/IT-Forward-Deployed-Engineer-Global-Supply-Management_R80167-1",
+   "website": "https://medtronic.com",
+   "note": "Workday; posting open per Workday CXS API (2026-10-21)"
+  },
+  {
+   "company": "Mem0",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/mem0/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/mem0/jobs/85yRXxn-forward-deployed-engineer",
+   "website": "https://mem0.ai",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Microsoft",
+   "system": "Microsoft",
+   "careersUrl": "https://apply.careers.microsoft.com/careers?query=forward%20deployed%20engineer",
+   "exampleTitle": "Software Engineer - Forward Deployed Engineer",
+   "examplePostingUrl": "https://apply.careers.microsoft.com/careers/job/1970393557004814",
+   "website": "https://www.microsoft.com",
+   "note": "Microsoft careers (Eightfold PCS); search API lists several FDE reqs incl. Redmond and Tokyo"
+  },
+  {
+   "company": "Millennium",
+   "system": "Eightfold",
+   "careersUrl": "https://mlp.eightfold.ai/careers",
+   "exampleTitle": "Senior Forward Deployed Software Engineer - Equities Technology",
+   "examplePostingUrl": "https://mlp.eightfold.ai/careers",
+   "website": "https://mlp.com",
+   "note": "Eightfold; posting page returns HTTP 200; listed live on landed.jobs FDE list updated 2026-10-30"
+  },
+  {
+   "company": "Mundi",
+   "system": "Company careers site",
+   "careersUrl": "https://mundi.careers-page.com/jobs/430c0b2d-2818-4160-8124-35a1db2e4132",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://mundi.careers-page.com/jobs/430c0b2d-2818-4160-8124-35a1db2e4132",
+   "website": "",
+   "note": "Own careers page / other ATS; posting page live"
+  },
+  {
+   "company": "Murphy",
+   "system": "Company careers site",
+   "careersUrl": "https://careers.getmurphy.ai/jobs/8325982-forward-deployed-engineer-arabic-native",
+   "exampleTitle": "Forward Deployed Engineer - Arabic Native",
+   "examplePostingUrl": "https://careers.getmurphy.ai/jobs/8325982-forward-deployed-engineer-arabic-native",
+   "website": "https://getmurphy.ai",
+   "note": "Own careers page / other ATS; posting page live"
+  },
+  {
+   "company": "Nessie",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/nessie/jobs",
+   "exampleTitle": "Founding Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/nessie/jobs/rfwlLxQ-founding-forward-deployed-engineer",
+   "website": "https://nessielabs.com/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Nixo",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/nixo/jobs/nI0YNNA-forward-deployed-engineer",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/nixo/jobs/nI0YNNA-forward-deployed-engineer",
+   "website": "",
+   "note": "Y Combinator Work at a Startup / YC jobs page live"
+  },
+  {
+   "company": "Nutrient",
+   "system": "Rippling",
+   "careersUrl": "https://ats.rippling.com/nutrient/jobs/0b9affe0-28d2-4d98-aff2-dcbf22e761bc",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://ats.rippling.com/nutrient/jobs/0b9affe0-28d2-4d98-aff2-dcbf22e761bc",
+   "website": "",
+   "note": "Rippling ATS (ats.rippling.com); confirmed via Rippling board API"
+  },
+  {
+   "company": "nuvo",
+   "system": "Gem",
+   "careersUrl": "https://jobs.gem.com/nuvo/am9icG9zdDpBZcj7Xw2ZbmJ0YPf0Myy5",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://jobs.gem.com/nuvo/am9icG9zdDpBZcj7Xw2ZbmJ0YPf0Myy5",
+   "website": "https://nuvo.com",
+   "note": "Gem job board; confirmed via api.gem.com job_board"
+  },
+  {
+   "company": "NVIDIA",
+   "system": "Workday",
+   "careersUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
+   "exampleTitle": "Forward Deployed Engineer - Finance",
+   "examplePostingUrl": "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Forward-Deployed-Engineer---Finance_JR2026919",
+   "website": "https://nvidia.com",
+   "note": "Workday; posting open per Workday CXS API (2026-10-30)"
+  },
+  {
+   "company": "Ohm",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/ohm-2/jobs",
+   "exampleTitle": "Forward Deployed Engineer, Battery Engineering",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/ohm-2/jobs/p4AdikP-forward-deployed-engineer-battery-engineering",
+   "website": "https://www.ohm.ai",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "OutSystems",
+   "system": "Workday",
+   "careersUrl": "https://outsystems.wd503.myworkdayjobs.com/OutSystems",
+   "exampleTitle": "Principal Forward Deployed Engineer",
+   "examplePostingUrl": "https://outsystems.wd503.myworkdayjobs.com/OutSystems/job/US---Remote/Forward-Deployed-Engineer_R1360",
+   "website": "https://outsystems.com",
+   "note": "Workday; posting open per Workday CXS API (2026-10-19)"
+  },
+  {
+   "company": "Peakflo",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/peakflo/jobs",
+   "exampleTitle": "Forward Deployed Engineer (FDE) - (India/Remote)",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/peakflo/jobs/vIrPzMj-forward-deployed-engineer-fde-india-remote",
+   "website": "https://peakflo.co",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Penguin Ai",
+   "system": "Rippling",
+   "careersUrl": "https://ats.rippling.com/penguin-ai",
+   "exampleTitle": "Forward Deployed Engineer - FDE - Healthcare",
+   "examplePostingUrl": "https://ats.rippling.com/penguin-ai/jobs/334f473a-9fe1-43ef-8f62-c28a4820fc4e",
+   "website": "https://penguinai.app",
+   "note": "Rippling ATS; posting page returns HTTP 200; listed live on landed.jobs FDE list updated 2026-10-30"
+  },
+  {
+   "company": "Phonely",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/phonely/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/phonely/jobs/sTAy0qR-forward-deployed-engineer",
+   "website": "https://phonely.ai",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Plato",
+   "system": "Personio",
+   "careersUrl": "https://platoapp.jobs.personio.com/job/2650619",
+   "exampleTitle": "Forward Deployed Engineer Intern",
+   "examplePostingUrl": "https://platoapp.jobs.personio.com/job/2650619",
+   "website": "",
+   "note": "Personio; posting page live"
+  },
+  {
+   "company": "Plexe",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.workatastartup.com/jobs/78821",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.workatastartup.com/jobs/78821",
+   "website": "",
+   "note": "Y Combinator Work at a Startup / YC jobs page live"
+  },
+  {
+   "company": "PromptQL",
+   "system": "Gem",
+   "careersUrl": "https://jobs.gem.com/promptql/am9icG9zdDrTJDREd2JD10RtUgkMImCs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://jobs.gem.com/promptql/am9icG9zdDrTJDREd2JD10RtUgkMImCs",
+   "website": "https://promptql.ai",
+   "note": "Gem job board; confirmed via api.gem.com job_board"
+  },
+  {
+   "company": "Prox",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/prox/jobs",
+   "exampleTitle": "Forward-Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/prox/jobs/VKpZh1L-forward-deployed-engineer",
+   "website": "",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Qurrent",
+   "system": "Rippling",
+   "careersUrl": "https://ats.rippling.com/qurrent/jobs/5d0ea6e1-6ae4-408a-a5d3-50bec62edfdd",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://ats.rippling.com/qurrent/jobs/5d0ea6e1-6ae4-408a-a5d3-50bec62edfdd",
+   "website": "",
+   "note": "Rippling ATS (ats.rippling.com); confirmed via Rippling board API"
+  },
+  {
+   "company": "Rackspace",
+   "system": "Workday",
+   "careersUrl": "https://rackspace.wd1.myworkdayjobs.com/External",
+   "exampleTitle": "Senior Forward Deployed Engineer – Palantir Certified",
+   "examplePostingUrl": "https://rackspace.wd1.myworkdayjobs.com/External/job/US-Work-from-Home/Senior-Forward-Deployed-Engineer---Palantir-Certified_R-24066",
+   "website": "https://rackspace.com",
+   "note": "Workday; posting open per Workday CXS API (2026-10-19); Workday; managed-services firm, role requires Palantir certification"
+  },
+  {
+   "company": "Reasonable (reasonable.io)",
+   "system": "Workable",
+   "careersUrl": "https://apply.workable.com/j/5F34A88D3B",
+   "exampleTitle": "Forward Deployed Engineer (FDE)",
+   "examplePostingUrl": "https://apply.workable.com/j/5F34A88D3B",
+   "website": "https://reasonable.io",
+   "note": "Workable; posting page live"
+  },
+  {
+   "company": "Red Hat",
+   "system": "Workday",
+   "careersUrl": "https://redhat.wd5.myworkdayjobs.com/jobs",
+   "exampleTitle": "Principal Forward Deployed Engineer - AI Platform",
+   "examplePostingUrl": "https://redhat.wd5.myworkdayjobs.com/jobs/job/Singapore/Principal-Forward-Deployed-Engineer---AI-PlatformPrincipal-Forward-Deployed-Engineer---AI-Platform-Kubernetes-Pytorch_R-058510-2",
+   "website": "https://redhat.com",
+   "note": "Workday (redhat.wd5, jobs)"
+  },
+  {
+   "company": "Reflex",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/reflex/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/reflex/jobs/JtSDIe3-forward-deployed-engineer",
+   "website": "https://reflex.dev",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Rely Health",
+   "system": "Rippling",
+   "careersUrl": "https://ats.rippling.com/rely-health/jobs/e7d25d3f-e926-46cc-b38d-33655e850e06",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://ats.rippling.com/rely-health/jobs/e7d25d3f-e926-46cc-b38d-33655e850e06",
+   "website": "",
+   "note": "Rippling ATS (ats.rippling.com); confirmed via Rippling board API"
+  },
+  {
+   "company": "Resemble AI",
+   "system": "Dover",
+   "careersUrl": "https://app.dover.com/apply/resemble-ai/12cbda0f-ffc8-42af-8f44-f94466584c31",
+   "exampleTitle": "Solutions Engineer / Forward Deployed",
+   "examplePostingUrl": "https://app.dover.com/apply/resemble-ai/12cbda0f-ffc8-42af-8f44-f94466584c31",
+   "website": "",
+   "note": "Dover; confirmed active via Dover application-portal API"
+  },
+  {
+   "company": "Revion",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/revion/jobs",
+   "exampleTitle": "Founding Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/revion/jobs/1z9Zy5a-founding-forward-deployed-engineer",
+   "website": "https://revion.inc",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Risely AI",
+   "system": "Gem",
+   "careersUrl": "https://jobs.gem.com/risely-ai/am9icG9zdDp5JOMRP_RNCWc0fei3La05",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://jobs.gem.com/risely-ai/am9icG9zdDp5JOMRP_RNCWc0fei3La05",
+   "website": "https://risely.ai",
+   "note": "Gem job board; confirmed via api.gem.com job_board"
+  },
+  {
+   "company": "Rudus",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/rudus/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/rudus/jobs/62WqaHp-forward-deployed-engineer",
+   "website": "http://rudus.ai/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Runtime",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/runtime/jobs",
+   "exampleTitle": "Forward Deployed AI Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/runtime/jobs/exm704T-forward-deployed-ai-engineer",
+   "website": "https://www.runtm.com/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Safety Radar",
+   "system": "Rippling",
+   "careersUrl": "https://ats.rippling.com/safety-radar-careers/jobs/c5c830f1-16db-490f-912f-48f3a22f6ed7",
+   "exampleTitle": "Forward Deployed Engineer | AI Implementation & Customer Success",
+   "examplePostingUrl": "https://ats.rippling.com/safety-radar-careers/jobs/c5c830f1-16db-490f-912f-48f3a22f6ed7",
+   "website": "https://safetyradar.com",
+   "note": "Rippling ATS (ats.rippling.com); confirmed via Rippling board API"
+  },
+  {
+   "company": "screenpipe",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/screenpipe/jobs",
+   "exampleTitle": "Forward Deployed Engineer (Enterprise)",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/screenpipe/jobs/EudBGQb-forward-deployed-engineer-enterprise",
+   "website": "https://screenpipe.com",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Sigma Software",
+   "system": "SmartRecruiters",
+   "careersUrl": "https://jobs.smartrecruiters.com/SigmaSoftware2/744000127202589",
+   "exampleTitle": "Forward AI Deployment Engineer (FDE)",
+   "examplePostingUrl": "https://jobs.smartrecruiters.com/SigmaSoftware2/744000127202589",
+   "website": "",
+   "note": "SmartRecruiters; confirmed via SmartRecruiters API"
+  },
+  {
+   "company": "Simbie AI",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/simbie-ai/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/simbie-ai/jobs/W0NFn29-forward-deployed-engineer",
+   "website": "http://www.simbie.ai",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Skylink",
+   "system": "Dover",
+   "careersUrl": "https://app.dover.com/apply/skylink/c34ae174-1a8a-471d-beda-9d99a6335810",
+   "exampleTitle": "Forward-Deployed Engineer",
+   "examplePostingUrl": "https://app.dover.com/apply/skylink/c34ae174-1a8a-471d-beda-9d99a6335810",
+   "website": "https://tryskylink.com",
+   "note": "Dover; confirmed active via Dover application-portal API"
+  },
+  {
+   "company": "Solum Health",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/solum-health/jobs",
+   "exampleTitle": "Founnding Forward Deployed Engineer (FDE) - Healthcare Operations",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/solum-health/jobs/rt2Hgq1-founnding-forward-deployed-engineer-fde-healthcare-operations",
+   "website": "https://www.getsolum.com/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Soren",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/soren/jobs",
+   "exampleTitle": "Founding Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/soren/jobs/Hc2oUbv-founding-forward-deployed-engineer",
+   "website": "https://soren-ai.com",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Speedy Labs",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/speedy-labs/jobs",
+   "exampleTitle": "Forward Deployed Engineer (Remote – US Time Zones)",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/speedy-labs/jobs/O9XWRyK-forward-deployed-engineer-remote-us-time-zones",
+   "website": "https://speedylabs.ai/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Stacksync",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/stacksync/jobs",
+   "exampleTitle": "Forward Deployed Engineer + Product engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/stacksync/jobs/2I6rI5E-forward-deployed-engineer-product-engineer",
+   "website": "https://www.stacksync.com/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Strac",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/strac/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/strac/jobs/hh3yBCu-forward-deployed-engineer",
+   "website": "https://www.strac.io/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Synthio Labs",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/synthio-labs/jobs",
+   "exampleTitle": "Forward Deployed Engineer - Tech",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/synthio-labs/jobs/UMaZCqj-forward-deployed-engineer-tech",
+   "website": "https://synthiolabs.com/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Thomson Reuters",
+   "system": "Workday",
+   "careersUrl": "https://thomsonreuters.wd5.myworkdayjobs.com/External_Career_Site",
+   "exampleTitle": "Senior Software Engineer - AI, CoCounsel FDE",
+   "examplePostingUrl": "https://thomsonreuters.wd5.myworkdayjobs.com/External_Career_Site/job/United-States-of-America-Frisco-Texas/Senior-Software-Engineer---AI--CoCounsel-FDE_JREQ200170",
+   "website": "https://thomsonreuters.com",
+   "note": "Workday; posting open per Workday CXS API (2026-10-07)"
+  },
+  {
+   "company": "Tiger Analytics",
+   "system": "Workable",
+   "careersUrl": "https://apply.workable.com/j/56FE258F8F",
+   "exampleTitle": "Forward Deployed Engineer (Generative AI)",
+   "examplePostingUrl": "https://apply.workable.com/j/56FE258F8F",
+   "website": "https://tigeranalytics.com",
+   "note": "Workable; posting page live"
+  },
+  {
+   "company": "Tractorbeam",
+   "system": "Gem",
+   "careersUrl": "https://jobs.gem.com/tractorbeam/am9icG9zdDobbuoooecGHERIEe1PDjRu",
+   "exampleTitle": "Forward-deployed Software Engineer",
+   "examplePostingUrl": "https://jobs.gem.com/tractorbeam/am9icG9zdDobbuoooecGHERIEe1PDjRu",
+   "website": "https://tractorbeam.com",
+   "note": "Gem job board; confirmed via api.gem.com job_board"
+  },
+  {
+   "company": "Tsuga",
+   "system": "Gem",
+   "careersUrl": "https://jobs.gem.com/tsuga",
+   "exampleTitle": "Forward Deployed Engineer - USA East Coast",
+   "examplePostingUrl": "https://jobs.gem.com/tsuga/am9icG9zdDrvfOC-D9wbFmAcT4qAGViK",
+   "website": "https://tsuga.com",
+   "note": "Gem; posting page returns HTTP 200; listed live on landed.jobs FDE list updated 2026-10-30"
+  },
+  {
+   "company": "Uniphore",
+   "system": "Workday",
+   "careersUrl": "https://uniphore.wd503.myworkdayjobs.com/Uniphore",
+   "exampleTitle": "Senior Forward Deployed Engineer",
+   "examplePostingUrl": "https://uniphore.wd503.myworkdayjobs.com/Uniphore/job/UK---London/Senior-Forward-Deployed-Engineer_JR101024-1",
+   "website": "https://uniphore.com",
+   "note": "Workday (uniphore.wd503, Uniphore)"
+  },
+  {
+   "company": "Vantaca",
+   "system": "Gem",
+   "careersUrl": "https://jobs.gem.com/vantaca/am9icG9zdDptyAau7AbFK6JRIdxq_r4U",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://jobs.gem.com/vantaca/am9icG9zdDptyAau7AbFK6JRIdxq_r4U",
+   "website": "https://vantaca.com",
+   "note": "Gem job board; confirmed via api.gem.com job_board"
+  },
+  {
+   "company": "Variance",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/variance/jobs",
+   "exampleTitle": "Forward Deployed AI Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/variance/jobs/0BmwPv6-forward-deployed-ai-engineer",
+   "website": "https://www.variance.com/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "VAST Data",
+   "system": "Comeet",
+   "careersUrl": "https://www.comeet.com/jobs/vastdata",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.comeet.com/jobs/vastdata/43.001/forward-deployed-engineer/1E.173-68.20F",
+   "website": "https://vastdata.com",
+   "note": "Comeet; posting page returns HTTP 200; listed live on landed.jobs FDE list updated 2026-10-30"
+  },
+  {
+   "company": "Veritus",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/veritus/jobs",
+   "exampleTitle": "Forward Deployed Software Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/veritus/jobs/ikiycL5-forward-deployed-software-engineer",
+   "website": "https://www.veritus.com",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Weave",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/weave-3/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/weave-3/jobs/d74yywq-forward-deployed-engineer",
+   "website": "https://weaveos.com",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found; YC company Weave (weaveos.com), not Weave Communications"
+  },
+  {
+   "company": "Workiva",
+   "system": "Workday",
+   "careersUrl": "https://workiva.wd503.myworkdayjobs.com/careers",
+   "exampleTitle": "Forward Deployed Engineer (Growth Solutions)",
+   "examplePostingUrl": "https://workiva.wd503.myworkdayjobs.com/careers/job/USA---Remote/Forward-Deployed-Engineer--Growth-Solutions-_R12602",
+   "website": "https://workiva.com",
+   "note": "Workday; posting open per Workday CXS API (2026-09-29)"
+  },
+  {
+   "company": "Yondu",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/yondu/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/yondu/jobs/EYpToWD-forward-deployed-engineer",
+   "website": "https://yondu.ai/",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  },
+  {
+   "company": "Zebra Technologies",
+   "system": "Workday",
+   "careersUrl": "https://zebra.wd501.myworkdayjobs.com/Zebra_careers",
+   "exampleTitle": "Senior Forward Deployed Software Engineer - Customer Facing",
+   "examplePostingUrl": "https://zebra.wd501.myworkdayjobs.com/Zebra_careers/job/Holtsville-New-York/Senior-Forward-Deployed-Software-Engineer--FDE-_JR102563",
+   "website": "https://zebra.com",
+   "note": "Workday; posting open per Workday CXS API (2026-10-27)"
+  },
+  {
+   "company": "Zymbly",
+   "system": "Y Combinator",
+   "careersUrl": "https://www.ycombinator.com/companies/zymbly/jobs",
+   "exampleTitle": "Forward Deployed Engineer",
+   "examplePostingUrl": "https://www.ycombinator.com/companies/zymbly/jobs/ueWPYCh-forward-deployed-engineer",
+   "website": "https://www.zymbly.com",
+   "note": "Y Combinator Work at a Startup only; no Greenhouse/Lever/Ashby board found"
+  }
+ ]
+}

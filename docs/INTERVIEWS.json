@@ -740,586 +740,6 @@
    "gaps": "No Palantir-published description of the loop could be read: the employee-advice post at blog.palantir.com ('Interviewing at Palantir: advice from Palantirians') returned 403 to our fetcher, and palantir.com/careers renders no process text; Lever postings describe no stages. No employer statement on AI use in interviews. FDIE has no first-hand candidate report (only CleverPrep synthesis). Reddit threads were not fetchable. Decomposition and learning details vary widely by year and team; Taro/Exponent/PracHub reports are anonymous and unverified. Forward Deployed AI Engineer (AIP) loop: no role-specific report found."
   },
   {
-   "company": "OpenAI",
-   "slug": "openai",
-   "roles": [
-    "Forward Deployed Engineer (FDE)",
-    "Forward Deployed Software Engineer",
-    "AI Deployment Engineer",
-    "Technical Deployment Lead, FDE"
-   ],
-   "process": [
-    {
-     "stage": "Recruiter screen",
-     "format": "About 30-min call",
-     "assesses": "Why forward-deployed work specifically, hands-on LLM/API experience, background fit",
-     "source": "S1"
-    },
-    {
-     "stage": "Recruiter screen (candidate account)",
-     "format": "Call; recruiter explains the loop",
-     "assesses": "Behavioral fit; candidate was told the loop centres on a take-home plus a live coding screen",
-     "source": "S2"
-    },
-    {
-     "stage": "Early technical stage (varies by team)",
-     "format": "One of: ~1-week take-home case study with walkthrough; back-to-back coding and system design screens; or a single project-based phone screen",
-     "assesses": "Ability to build a working LLM application and tie design choices to customer needs",
-     "source": "S1"
-    },
-    {
-     "stage": "Take-home project",
-     "format": "About 1 week; submit code and a running app, then walk an engineer through design decisions",
-     "assesses": "Framing the use case, retrieval design choices, explaining trade-offs in customer terms",
-     "source": "S2"
-    },
-    {
-     "stage": "Live technical interview",
-     "format": "Multi-step, easy LeetCode-style problem; candidate describes it as AI-enabled",
-     "assesses": "Working code, then time and memory complexity",
-     "source": "S2"
-    },
-    {
-     "stage": "Virtual onsite / final round",
-     "format": "Third-party guide: 4-6 interviews over 1-2 days (coding, system design, project deep dive, behavioral). Candidate account: panel of about four plus hiring manager revisiting the take-home",
-     "assesses": "Production coding, LLM/agent system design, defending past decisions, customer-facing judgment",
-     "source": "S1"
-    }
-   ],
-   "questions": [
-    {
-     "id": "openai-q1",
-     "prompt": "Build a semantic search system over Amazon product data that ChatGPT can query; ship code and a working app, then present the design.",
-     "type": "take-home",
-     "role": "FDE",
-     "stage": "Take-home",
-     "evidence": "candidate",
-     "source": "S2",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "openai-q2",
-     "prompt": "For the take-home: what is the use case, and how specific should search results be for different customer intents?",
-     "type": "customer-scenario",
-     "role": "FDE",
-     "stage": "Take-home review",
-     "evidence": "candidate",
-     "source": "S2",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "openai-q3",
-     "prompt": "Where in your design did you choose one path over another, and why?",
-     "type": "presentation",
-     "role": "FDE",
-     "stage": "Take-home review",
-     "evidence": "candidate",
-     "source": "S2",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "openai-q4",
-     "prompt": "Solve a multi-step delivery-rate calculation problem, then state its time complexity and memory efficiency.",
-     "type": "coding",
-     "role": "FDE",
-     "stage": "Live technical interview",
-     "evidence": "candidate",
-     "source": "S2",
-     "year": "2026",
-     "note": "Candidate rated it easy; AI-enabled per the candidate"
-    },
-    {
-     "id": "openai-q5",
-     "prompt": "Implement a credit system where credits follow different expiration and usage rules.",
-     "type": "coding",
-     "role": "FDE",
-     "stage": "Onsite coding",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": "Listed by Aced as reported; no individual candidate link"
-    },
-    {
-     "id": "openai-q6",
-     "prompt": "Refactor deeply nested code to support new requirements while keeping an existing test suite passing.",
-     "type": "coding",
-     "role": "FDE",
-     "stage": "Onsite coding",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "openai-q7",
-     "prompt": "Simulate infection spread across a 2D grid in stages, passing tests at each stage.",
-     "type": "coding",
-     "role": "FDE",
-     "stage": "Onsite coding",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "openai-q8",
-     "prompt": "Design the retrieval layer, including chunking and indexing, for a customer's private knowledge base.",
-     "type": "system-design",
-     "role": "FDE",
-     "stage": "Onsite system design",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "openai-q9",
-     "prompt": "Design an end-to-end batching system for LLM requests, balancing latency against cost.",
-     "type": "system-design",
-     "role": "FDE",
-     "stage": "Onsite system design",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "openai-q10",
-     "prompt": "Your LLM traffic grows 10x overnight; how do you stay inside latency and cost targets?",
-     "type": "system-design",
-     "role": "FDE",
-     "stage": "Onsite system design",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "openai-q11",
-     "prompt": "What evaluation would catch failures before the customer sees them?",
-     "type": "system-design",
-     "role": "FDE",
-     "stage": "Onsite system design",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "openai-q12",
-     "prompt": "Present a challenging system you built; defend the key design decision, its trade-offs, and how you evaluated it.",
-     "type": "presentation",
-     "role": "FDE",
-     "stage": "Onsite project deep dive",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "openai-q13",
-     "prompt": "Why forward deployed engineering instead of a core product team?",
-     "type": "motivation",
-     "role": "FDE",
-     "stage": "Recruiter / behavioral",
-     "evidence": "third-party",
-     "source": "S3",
-     "year": "2026",
-     "note": "Question-bank entry, not individually attributed"
-    },
-    {
-     "id": "openai-q14",
-     "prompt": "Tell me about explaining a complex technical concept to a non-technical customer or stakeholder.",
-     "type": "behavioral",
-     "role": "FDE",
-     "stage": "Behavioral",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "openai-q15",
-     "prompt": "Describe a disagreement with a customer or teammate and how it was resolved.",
-     "type": "behavioral",
-     "role": "FDE",
-     "stage": "Behavioral",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": ""
-    }
-   ],
-   "tips": [
-    {
-     "text": "Coding still matters, but the candidate advises against over-investing in hard LeetCode; the live problem was easy and multi-step.",
-     "source": "S2"
-    },
-    {
-     "text": "Practise explaining technical choices in plain language and linking each to a customer need; the take-home review centred on this.",
-     "source": "S2"
-    },
-    {
-     "text": "Prepare case-style system design, including how you would adapt the solution when the customer's needs change.",
-     "source": "S2"
-    },
-    {
-     "text": "The early technical stage differs by team; confirm with the recruiter which format you will get and whether AI tools are allowed per round.",
-     "source": "S1"
-    },
-    {
-     "text": "Job postings stress up to 50% customer travel, discovery and scoping, and feeding field learnings back to Research and Product; expect to be probed on these.",
-     "source": "S4"
-    }
-   ],
-   "aiPolicy": {},
-   "sources": [
-    {
-     "id": "S1",
-     "url": "https://www.aced.io/guides/openai-forward-deployed-engineer-interview",
-     "title": "OpenAI Forward Deployed Engineer Interview Guide",
-     "publisher": "Aced (formerly Exponent; tryexponent.com URL redirects here)",
-     "date": "2026",
-     "kind": "third-party",
-     "checked": "Stage list, 3-6 week timeline, example questions by round, editorial tips; page says built from candidate and interviewer reports"
-    },
-    {
-     "id": "S2",
-     "url": "https://www.aced.io/experiences/openai-forward-deployed-engineer-interview-0b9c09",
-     "title": "OpenAI Forward Deployed Engineer interview experience",
-     "publisher": "Aced (anonymous verified candidate, US)",
-     "date": "2026-05",
-     "kind": "candidate",
-     "checked": "Recruiter screen, 1-week semantic-search take-home, AI-enabled delivery-rate coding problem, final panel not taken; candidate tips"
-    },
-    {
-     "id": "S3",
-     "url": "https://www.aced.io/guides/openai-forward-deployed-engineer-interview/questions",
-     "title": "OpenAI FDE interview questions",
-     "publisher": "Aced",
-     "date": "2026",
-     "kind": "third-party",
-     "checked": "Question bank (27 items, 10 visible) tagged to OpenAI FDE; individual questions not marked candidate-reported"
-    },
-    {
-     "id": "S4",
-     "url": "https://builtin.com/job/forward-deployed-engineer-sf/7120501",
-     "title": "Forward Deployed Engineer (FDE) - SF",
-     "publisher": "Built In (mirror of OpenAI posting)",
-     "date": "2026",
-     "kind": "employer",
-     "checked": "Responsibilities, 5+ yrs, up to 50% travel; no interview process described; listing removed Sep 2026"
-    }
-   ],
-   "gaps": "openai.com/interview-guide (which reportedly states that AI-tool permission varies by interview) returned HTTP 403 to our fetcher, so OpenAI's own AI-use policy and stage descriptions are not captured; aiPolicy is left empty. No Reddit or blog first-hand FDE accounts found; only one detailed candidate report (S2). Nothing found for Deployment Lead / AI Deployment Engineer loops specifically. IGotAnOffer's OpenAI FDE guide also returned 403."
-  },
-  {
-   "company": "Anthropic",
-   "slug": "anthropic",
-   "roles": [
-    "Forward Deployed Engineer, Applied AI",
-    "Manager, Forward Deployed Engineering",
-    "Solutions Architect, Applied AI",
-    "Applied AI Engineer"
-   ],
-   "process": [
-    {
-     "stage": "Application",
-     "format": "Resume plus written answers, including a 'Why Anthropic?' response; candidates must confirm they have read the AI guidance",
-     "assesses": "Motivation and written communication; posting says the Why Anthropic answer is weighted highly (often 200-400 words)",
-     "source": "S2"
-    },
-    {
-     "stage": "Recruiter screen",
-     "format": "About 30 min",
-     "assesses": "Background, motivation, level fit",
-     "source": "S4"
-    },
-    {
-     "stage": "Technical use-case screen",
-     "format": "Practical Claude deployment scenario (MCP tooling, long-context reliability)",
-     "assesses": "How you reason about deploying Claude for a customer",
-     "source": "S4"
-    },
-    {
-     "stage": "Coding exercise",
-     "format": "Multi-stage incremental problem on a CodeSignal-style platform",
-     "assesses": "Writing code as requirements change across stages",
-     "source": "S4"
-    },
-    {
-     "stage": "Hiring manager round",
-     "format": "Technical and behavioral deep dive on past projects",
-     "assesses": "Ownership, judgment on when an LLM fits, adoption outcomes",
-     "source": "S4"
-    },
-    {
-     "stage": "Solution design / final panel",
-     "format": "Architect a Claude deployment for an enterprise customer, plus behavioral",
-     "assesses": "Scoping, failure modes, security/compliance trade-offs",
-     "source": "S4"
-    },
-    {
-     "stage": "Values / culture interview",
-     "format": "Non-technical round in the onsite for nearly every role",
-     "assesses": "Ethics, honesty, willingness to disagree, views on AI risk; reported as a major late-stage rejection point",
-     "source": "S6"
-    },
-    {
-     "stage": "Solutions Architect loop (candidate account)",
-     "format": "Recruiter, hiring manager, panel presentation; each 45+ min; 2-3 weeks",
-     "assesses": "Motivation and role fit; presentation to a panel",
-     "source": "S7"
-    }
-   ],
-   "questions": [
-    {
-     "id": "anthropic-q1",
-     "prompt": "Why Anthropic? (written application answer, typically 200-400 words)",
-     "type": "motivation",
-     "role": "FDE Manager",
-     "stage": "Application",
-     "evidence": "employer",
-     "source": "S2",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "anthropic-q2",
-     "prompt": "Tell me about yourself, why Anthropic, and why this role.",
-     "type": "motivation",
-     "role": "Solutions Architect",
-     "stage": "Recruiter / hiring manager",
-     "evidence": "candidate",
-     "source": "S7",
-     "year": "2025",
-     "note": ""
-    },
-    {
-     "id": "anthropic-q3",
-     "prompt": "Implement an LRU cache, then extend it as new constraints arrive in later stages.",
-     "type": "coding",
-     "role": "FDE",
-     "stage": "Coding exercise",
-     "evidence": "third-party",
-     "source": "S4",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "anthropic-q4",
-     "prompt": "Convert sampled stack data into execution traces of function calls.",
-     "type": "coding",
-     "role": "FDE",
-     "stage": "Coding exercise",
-     "evidence": "third-party",
-     "source": "S4",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "anthropic-q5",
-     "prompt": "Read a set of files and remove duplicates.",
-     "type": "coding",
-     "role": "FDE",
-     "stage": "Coding exercise",
-     "evidence": "third-party",
-     "source": "S4",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "anthropic-q6",
-     "prompt": "Walk through your most significant project and justify its key technical decisions.",
-     "type": "behavioral",
-     "role": "FDE",
-     "stage": "Hiring manager",
-     "evidence": "third-party",
-     "source": "S4",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "anthropic-q7",
-     "prompt": "Why did you use ML or an LLM for that problem, and how did you know it fit?",
-     "type": "domain",
-     "role": "FDE",
-     "stage": "Hiring manager",
-     "evidence": "third-party",
-     "source": "S4",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "anthropic-q8",
-     "prompt": "How did adoption go, and how long until the solution was production-ready?",
-     "type": "behavioral",
-     "role": "FDE",
-     "stage": "Hiring manager",
-     "evidence": "third-party",
-     "source": "S4",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "anthropic-q9",
-     "prompt": "Design an API that lets users sample from large models, then design batch optimisation for it.",
-     "type": "system-design",
-     "role": "FDE",
-     "stage": "Solution design",
-     "evidence": "third-party",
-     "source": "S4",
-     "year": "2026",
-     "note": "Described prompt, not verbatim"
-    },
-    {
-     "id": "anthropic-q10",
-     "prompt": "Handle security and compliance for a Claude deployment at a regulated customer such as a government contractor.",
-     "type": "system-design",
-     "role": "FDE",
-     "stage": "Solution design",
-     "evidence": "third-party",
-     "source": "S4",
-     "year": "2026",
-     "note": "Described prompt, not verbatim"
-    },
-    {
-     "id": "anthropic-q11",
-     "prompt": "Role-played buyer: convince me Claude does something ChatGPT cannot.",
-     "type": "customer-scenario",
-     "role": "Applied AI Engineer",
-     "stage": "Customer-conversation simulation",
-     "evidence": "third-party",
-     "source": "S5",
-     "year": "2026",
-     "note": "Vendor blog; cites candidate reports only generically"
-    },
-    {
-     "id": "anthropic-q12",
-     "prompt": "Describe an unusual belief you hold and how you have defended it.",
-     "type": "behavioral",
-     "role": "All roles",
-     "stage": "Values interview",
-     "evidence": "third-party",
-     "source": "S6",
-     "year": "2026",
-     "note": "Daniela Amodei's description of the culture test, via Bloomberg summary"
-    }
-   ],
-   "tips": [
-    {
-     "text": "Draft application answers yourself and use Claude only to refine; never let AI describe experience you do not have.",
-     "source": "S1"
-    },
-    {
-     "text": "Using Claude to research Anthropic, rehearse answers, and prepare questions for interviewers is explicitly encouraged.",
-     "source": "S1"
-    },
-    {
-     "text": "Invest in the 'Why Anthropic?' answer; the posting says it is valued highly.",
-     "source": "S2"
-    },
-    {
-     "text": "In the values round, honest skepticism and a real example of a troubling decision land better than rehearsed enthusiasm; recruiters say strong technical candidates still fail here.",
-     "source": "S6"
-    },
-    {
-     "text": "In customer discovery role-plays, ask and reflect back rather than pitch, and give concrete deployment-risk reasoning instead of generic responsible-AI language.",
-     "source": "S5"
-    },
-    {
-     "text": "In solution design, drive the conversation: scope first, name failure modes early, and state trade-offs explicitly.",
-     "source": "S4"
-    },
-    {
-     "text": "Expect little feedback between rounds; one Solutions Architect candidate reported minimal feedback after each interview.",
-     "source": "S7"
-    }
-   ],
-   "aiPolicy": {
-    "text": "Anthropic's candidate guidance (updated July 2025): write application drafts yourself, then Claude may help refine them; Claude is encouraged for interview prep; take-homes and live interviews are without AI unless Anthropic says a specific task allows it. Applications require confirming you have read this guidance.",
-    "source": "S1"
-   },
-   "sources": [
-    {
-     "id": "S1",
-     "url": "https://www.anthropic.com/candidate-ai-guidance",
-     "title": "How to collaborate with Claude during our hiring process",
-     "publisher": "Anthropic",
-     "date": "2025-07",
-     "kind": "employer",
-     "checked": "Stage-by-stage AI rules: application refine-only, prep encouraged, take-home and live interviews no AI unless stated"
-    },
-    {
-     "id": "S2",
-     "url": "https://job-boards.greenhouse.io/anthropic/jobs/5099753008",
-     "title": "Manager, Forward Deployed Engineering",
-     "publisher": "Anthropic (Greenhouse)",
-     "date": "2026",
-     "kind": "employer",
-     "checked": "Why Anthropic answer valued highly (200-400 words); AI guidance acknowledgment required; 25-50% travel; no interview stages listed"
-    },
-    {
-     "id": "S3",
-     "url": "https://builtin.com/job/forward-deployed-engineer/7698230",
-     "title": "Forward Deployed Engineer, Applied AI",
-     "publisher": "Built In (mirror of Anthropic posting)",
-     "date": "2026",
-     "kind": "employer",
-     "checked": "Responsibilities (MCP servers, sub-agents, agent skills), 3+ yrs customer-facing, ~25% travel; no process described; removed Jun 2026"
-    },
-    {
-     "id": "S4",
-     "url": "https://www.aced.io/guides/anthropic-forward-deployed-engineer-interview",
-     "title": "Anthropic Forward Deployed Engineer Interview Guide",
-     "publisher": "Aced (formerly Exponent)",
-     "date": "2026",
-     "kind": "third-party",
-     "checked": "Six-stage loop, example coding/HM/design prompts, tips; Aced's experiences tab has no Anthropic FDE reports"
-    },
-    {
-     "id": "S5",
-     "url": "https://getperspective.ai/blog/anthropic-applied-ai-engineer-interview-process-frontier-lab-2026",
-     "title": "Anthropic Applied AI Engineer interview process",
-     "publisher": "Perspective AI (vendor blog)",
-     "date": "2026-05",
-     "kind": "third-party",
-     "checked": "Five-stage loop incl. customer-conversation simulation; cites candidate write-ups only generically"
-    },
-    {
-     "id": "S6",
-     "url": "https://www.implicator.ai/at-anthropic-the-culture-interview-is-the-top-late-stage-hiring-gate/",
-     "title": "At Anthropic, the culture interview is the top late-stage hiring gate",
-     "publisher": "Implicator.ai (summarising Bloomberg Businessweek)",
-     "date": "2026-05",
-     "kind": "third-party",
-     "checked": "Values round in nearly every onsite; up to five prior rounds; AI tools barred unless permitted; Amodei quotes"
-    },
-    {
-     "id": "S7",
-     "url": "https://www.jointaro.com/interviews/companies/anthropic/experiences/solutions-architect-new-york-ny-september-23-2025-no-offer-negative-5dee28fc",
-     "title": "Anthropic Solutions Architect, New York",
-     "publisher": "Taro (anonymous candidate)",
-     "date": "2025-09",
-     "kind": "candidate",
-     "checked": "Recruiter, HM, panel presentation; 45+ min each; questions: about you, why Anthropic, why role; no offer"
-    },
-    {
-     "id": "S8",
-     "url": "https://www.educative.io/courses/anthropic-forward-deployed-engineer-interview/the-interview-loop-overview",
-     "title": "The Interview Loop Overview",
-     "publisher": "Educative",
-     "date": "2026",
-     "kind": "third-party",
-     "checked": "Lists six stages (recruiter, technical use-case, coding, HM, final panel, values); no formats in visible excerpt"
-    }
-   ],
-   "gaps": "No first-hand FDE candidate account found on Reddit, blogs, Taro or Aced (Aced's Anthropic FDE experiences tab is empty); coding and design questions come from third-party guides. Glassdoor/Blind FDE reports exist but are excluded by policy. Stage counts conflict across guides (five vs six stages; whether a take-home exists). No employer description of the FDE loop itself."
-  },
-  {
    "company": "Databricks",
    "slug": "databricks",
    "roles": [
@@ -1726,251 +1146,6 @@
    "gaps": "No employer-published FDE interview guide or AI policy found (databricks.com interview-guides URL 404s). No Reddit threads reachable. Deployment Strategist and Engagement Manager loops undocumented. Stage counts differ across sources (5 to 6+ rounds), and the screen format varies (breadth quiz vs pair coding). Several candidate write-ups are partly paywalled. A Prepfully citation to a Databricks engineering leader's blog could not be located."
   },
   {
-   "company": "Scale AI",
-   "slug": "scale-ai",
-   "roles": [
-    "Forward Deployed Engineer / Forward Deployed Software Engineer (incl. Public Sector)",
-    "Frontier Agents Engineer (Forward Deployed Engineering)",
-    "Deployment Strategist / AI Deployment Strategist"
-   ],
-   "process": [
-    {
-     "stage": "Online assessment",
-     "format": "60-min HackerRank, one hard project-style problem",
-     "assesses": "Producing working code fast on a multi-part build",
-     "source": "S2 S1"
-    },
-    {
-     "stage": "Recruiter screen",
-     "format": "Non-technical resume walk-through",
-     "assesses": "End-to-end ownership, FDE vs SWE preference, motivation for customer work",
-     "source": "S2 S1"
-    },
-    {
-     "stage": "Non-technical phone screen",
-     "format": "Behavioral/project discussion",
-     "assesses": "Whether you have built something end to end",
-     "source": "S2"
-    },
-    {
-     "stage": "Coding phone screen",
-     "format": "~60-min project-oriented HackerRank over video; a PDF outline may be sent beforehand",
-     "assesses": "Completion over optimality, pace, narrated reasoning",
-     "source": "S2 S1"
-    },
-    {
-     "stage": "Onsite (five rounds)",
-     "format": "Credo (values behavioral), coding, system design, debugging in a large unfamiliar repo, hiring manager",
-     "assesses": "Scale's six credos; code volume and adaptation; LLM/AI system design; navigation of unfamiliar code; FDE vs SWE placement",
-     "source": "S2 S1 S4"
-    },
-    {
-     "stage": "Deployment Strategist loop (one report)",
-     "format": "Recruiter screen -> hiring-manager technical with shared screen and live SQL -> behavioral phone interview",
-     "assesses": "Motivation; diagnosing a customer data-quality problem with SQL while thinking aloud",
-     "source": "S3"
-    }
-   ],
-   "questions": [
-    {
-     "id": "scale-ai-q1",
-     "prompt": "A client says the data quality Scale supplies has dropped over the past month. Diagnose it, using live SQL.",
-     "type": "sql-data",
-     "role": "Deployment Strategist",
-     "stage": "Hiring manager technical",
-     "evidence": "candidate",
-     "source": "S3",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "scale-ai-q2",
-     "prompt": "Why did you leave your last role?",
-     "type": "behavioral",
-     "role": "Deployment Strategist",
-     "stage": "Phone interview",
-     "evidence": "candidate",
-     "source": "S3",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "scale-ai-q3",
-     "prompt": "Why do you want to work at Scale AI?",
-     "type": "motivation",
-     "role": "Deployment Strategist",
-     "stage": "Recruiter screen",
-     "evidence": "candidate",
-     "source": "S3",
-     "year": "2026",
-     "note": ""
-    },
-    {
-     "id": "scale-ai-q4",
-     "prompt": "Given several parties' time intervals, find the periods where none of them overlap.",
-     "type": "coding",
-     "role": "FDE",
-     "stage": "Online assessment",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": "Guide attributes to one reported candidate experience"
-    },
-    {
-     "id": "scale-ai-q5",
-     "prompt": "Using room-booking data, work out which rooms are free and when.",
-     "type": "coding",
-     "role": "FDE",
-     "stage": "Coding phone screen",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": "Attributed to candidate reports"
-    },
-    {
-     "id": "scale-ai-q6",
-     "prompt": "Merge adjacent segments sharing the same modifiers, then toggle a modifier over a start-to-end range.",
-     "type": "coding",
-     "role": "FDE",
-     "stage": "Coding phone screen",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": "Attributed to candidate reports"
-    },
-    {
-     "id": "scale-ai-q7",
-     "prompt": "Simulate a four-player card game from a PDF specification.",
-     "type": "coding",
-     "role": "FDE",
-     "stage": "Onsite coding",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": "Attributed to a candidate report"
-    },
-    {
-     "id": "scale-ai-q8",
-     "prompt": "Explain why the system returns no model output; root cause sat in prompt-hashing logic several layers down.",
-     "type": "debugging",
-     "role": "FDE",
-     "stage": "Onsite debugging",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": "Attributed to one reported round"
-    },
-    {
-     "id": "scale-ai-q9",
-     "prompt": "Design a claims-processing backend with retrieval and token-cost control.",
-     "type": "system-design",
-     "role": "FDE",
-     "stage": "Onsite system design",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": "Attributed to candidate reports"
-    },
-    {
-     "id": "scale-ai-q10",
-     "prompt": "Design an enterprise RAG system under privacy and latency constraints.",
-     "type": "system-design",
-     "role": "FDE",
-     "stage": "Onsite system design",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": "Attributed to candidate reports"
-    },
-    {
-     "id": "scale-ai-q11",
-     "prompt": "Describe your hardest project, and how you handled ambiguous requirements.",
-     "type": "behavioral",
-     "role": "FDE",
-     "stage": "Onsite credo round",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": "Attributed to candidate reports"
-    }
-   ],
-   "tips": [
-    {
-     "text": "Prepare as for a full SWE loop (hard coding, system design, debugging); the process felt SWE-coded with role fit sorted out later.",
-     "source": "S2"
-    },
-    {
-     "text": "Practice debugging inside a large repository you did not write; that round can surprise you.",
-     "source": "S2"
-    },
-    {
-     "text": "Have detailed stories about projects you built end to end; ownership mattered early.",
-     "source": "S2"
-    },
-    {
-     "text": "For the Deployment Strategist SQL round, know the common causes of data-quality decline and walk the interviewer through each line of investigation aloud.",
-     "source": "S3"
-    },
-    {
-     "text": "Map behavioral stories to Scale's published credos (e.g. Earn Customer Love, Quality is Our Cheat Code).",
-     "source": "S1 S4"
-    },
-    {
-     "text": "If a PDF outline is sent before the coding screen, read it closely.",
-     "source": "S1"
-    }
-   ],
-   "aiPolicy": {},
-   "sources": [
-    {
-     "id": "S1",
-     "url": "https://www.aced.io/guides/scale-ai-forward-deployed-engineer-interview",
-     "title": "Scale AI Forward Deployed Engineer Interview Guide",
-     "publisher": "Exponent (now aced.io)",
-     "date": "2026",
-     "kind": "third-party",
-     "checked": "OA, recruiter, tech screen, five-round onsite incl. credo and debugging; sample questions attributed to candidate reports; no AI policy"
-    },
-    {
-     "id": "S2",
-     "url": "https://www.aced.io/experiences/scale-ai-forward-deployed-engineer-interview-f232b4",
-     "title": "Scale AI Forward Deployed Engineer interview experience",
-     "publisher": "Exponent (now aced.io), verified anonymous candidate",
-     "date": "2026-08",
-     "kind": "candidate",
-     "checked": "Interview Aug 2025, offer; OA, recruiter, non-tech screen, coding screen, onsite credo/coding/design/debugging/HM; specific questions paywalled"
-    },
-    {
-     "id": "S3",
-     "url": "https://www.aced.io/experiences/scale-ai-deployment-strategist-interview-576125",
-     "title": "Scale AI Deployment Strategist (L3) interview experience",
-     "publisher": "Exponent (now aced.io), anonymous candidate",
-     "date": "2026",
-     "kind": "candidate",
-     "checked": "Rejected; recruiter, HM live-SQL data-quality diagnosis, behavioral phone interview; tips"
-    },
-    {
-     "id": "S4",
-     "url": "https://scale.com/careers",
-     "title": "Careers at Scale",
-     "publisher": "Scale AI",
-     "date": "2026",
-     "kind": "employer",
-     "checked": "Lists six internal core values (credos); no hiring-process or AI-policy text"
-    },
-    {
-     "id": "S5",
-     "url": "https://job-boards.greenhouse.io/scaleai/jobs/4481921005",
-     "title": "Forward Deployed Software Engineer, Public Sector",
-     "publisher": "Scale AI (Greenhouse posting)",
-     "date": "2026",
-     "kind": "employer",
-     "checked": "Read via Greenhouse public API: role exists; no interview stages described"
-    }
-   ],
-   "gaps": "Scale publishes no interview-process description; postings mention interviews only in compensation boilerplate. The one first-hand FDE report has its specific questions paywalled, so FDE question prompts rely on a third-party guide's candidate-attributed samples. Deployment Strategist evidence is a single report. No AI-in-interview policy found."
-  },
-  {
    "company": "Sierra",
    "slug": "sierra",
    "roles": [
@@ -2361,6 +1536,283 @@
    "gaps": "No first-hand candidate write-up of the new AI-native onsite yet (all candidate reports predate it). No public detail on the Strategist, Agent Development or Deployed Infrastructure Engineer loops. Glassdoor/Blind reports were found but excluded per policy."
   },
   {
+   "company": "OpenAI",
+   "slug": "openai",
+   "roles": [
+    "Forward Deployed Engineer (FDE)",
+    "Forward Deployed Software Engineer",
+    "AI Deployment Engineer",
+    "Technical Deployment Lead, FDE"
+   ],
+   "process": [
+    {
+     "stage": "Recruiter screen",
+     "format": "About 30-min call",
+     "assesses": "Why forward-deployed work specifically, hands-on LLM/API experience, background fit",
+     "source": "S1"
+    },
+    {
+     "stage": "Recruiter screen (candidate account)",
+     "format": "Call; recruiter explains the loop",
+     "assesses": "Behavioral fit; candidate was told the loop centres on a take-home plus a live coding screen",
+     "source": "S2"
+    },
+    {
+     "stage": "Early technical stage (varies by team)",
+     "format": "One of: ~1-week take-home case study with walkthrough; back-to-back coding and system design screens; or a single project-based phone screen",
+     "assesses": "Ability to build a working LLM application and tie design choices to customer needs",
+     "source": "S1"
+    },
+    {
+     "stage": "Take-home project",
+     "format": "About 1 week; submit code and a running app, then walk an engineer through design decisions",
+     "assesses": "Framing the use case, retrieval design choices, explaining trade-offs in customer terms",
+     "source": "S2"
+    },
+    {
+     "stage": "Live technical interview",
+     "format": "Multi-step, easy LeetCode-style problem; candidate describes it as AI-enabled",
+     "assesses": "Working code, then time and memory complexity",
+     "source": "S2"
+    },
+    {
+     "stage": "Virtual onsite / final round",
+     "format": "Third-party guide: 4-6 interviews over 1-2 days (coding, system design, project deep dive, behavioral). Candidate account: panel of about four plus hiring manager revisiting the take-home",
+     "assesses": "Production coding, LLM/agent system design, defending past decisions, customer-facing judgment",
+     "source": "S1"
+    }
+   ],
+   "questions": [
+    {
+     "id": "openai-q1",
+     "prompt": "Build a semantic search system over Amazon product data that ChatGPT can query; ship code and a working app, then present the design.",
+     "type": "take-home",
+     "role": "FDE",
+     "stage": "Take-home",
+     "evidence": "candidate",
+     "source": "S2",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "openai-q2",
+     "prompt": "For the take-home: what is the use case, and how specific should search results be for different customer intents?",
+     "type": "customer-scenario",
+     "role": "FDE",
+     "stage": "Take-home review",
+     "evidence": "candidate",
+     "source": "S2",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "openai-q3",
+     "prompt": "Where in your design did you choose one path over another, and why?",
+     "type": "presentation",
+     "role": "FDE",
+     "stage": "Take-home review",
+     "evidence": "candidate",
+     "source": "S2",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "openai-q4",
+     "prompt": "Solve a multi-step delivery-rate calculation problem, then state its time complexity and memory efficiency.",
+     "type": "coding",
+     "role": "FDE",
+     "stage": "Live technical interview",
+     "evidence": "candidate",
+     "source": "S2",
+     "year": "2026",
+     "note": "Candidate rated it easy; AI-enabled per the candidate"
+    },
+    {
+     "id": "openai-q5",
+     "prompt": "Implement a credit system where credits follow different expiration and usage rules.",
+     "type": "coding",
+     "role": "FDE",
+     "stage": "Onsite coding",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": "Listed by Aced as reported; no individual candidate link"
+    },
+    {
+     "id": "openai-q6",
+     "prompt": "Refactor deeply nested code to support new requirements while keeping an existing test suite passing.",
+     "type": "coding",
+     "role": "FDE",
+     "stage": "Onsite coding",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "openai-q7",
+     "prompt": "Simulate infection spread across a 2D grid in stages, passing tests at each stage.",
+     "type": "coding",
+     "role": "FDE",
+     "stage": "Onsite coding",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "openai-q8",
+     "prompt": "Design the retrieval layer, including chunking and indexing, for a customer's private knowledge base.",
+     "type": "system-design",
+     "role": "FDE",
+     "stage": "Onsite system design",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "openai-q9",
+     "prompt": "Design an end-to-end batching system for LLM requests, balancing latency against cost.",
+     "type": "system-design",
+     "role": "FDE",
+     "stage": "Onsite system design",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "openai-q10",
+     "prompt": "Your LLM traffic grows 10x overnight; how do you stay inside latency and cost targets?",
+     "type": "system-design",
+     "role": "FDE",
+     "stage": "Onsite system design",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "openai-q11",
+     "prompt": "What evaluation would catch failures before the customer sees them?",
+     "type": "system-design",
+     "role": "FDE",
+     "stage": "Onsite system design",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "openai-q12",
+     "prompt": "Present a challenging system you built; defend the key design decision, its trade-offs, and how you evaluated it.",
+     "type": "presentation",
+     "role": "FDE",
+     "stage": "Onsite project deep dive",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "openai-q13",
+     "prompt": "Why forward deployed engineering instead of a core product team?",
+     "type": "motivation",
+     "role": "FDE",
+     "stage": "Recruiter / behavioral",
+     "evidence": "third-party",
+     "source": "S3",
+     "year": "2026",
+     "note": "Question-bank entry, not individually attributed"
+    },
+    {
+     "id": "openai-q14",
+     "prompt": "Tell me about explaining a complex technical concept to a non-technical customer or stakeholder.",
+     "type": "behavioral",
+     "role": "FDE",
+     "stage": "Behavioral",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "openai-q15",
+     "prompt": "Describe a disagreement with a customer or teammate and how it was resolved.",
+     "type": "behavioral",
+     "role": "FDE",
+     "stage": "Behavioral",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": ""
+    }
+   ],
+   "tips": [
+    {
+     "text": "Coding still matters, but the candidate advises against over-investing in hard LeetCode; the live problem was easy and multi-step.",
+     "source": "S2"
+    },
+    {
+     "text": "Practise explaining technical choices in plain language and linking each to a customer need; the take-home review centred on this.",
+     "source": "S2"
+    },
+    {
+     "text": "Prepare case-style system design, including how you would adapt the solution when the customer's needs change.",
+     "source": "S2"
+    },
+    {
+     "text": "The early technical stage differs by team; confirm with the recruiter which format you will get and whether AI tools are allowed per round.",
+     "source": "S1"
+    },
+    {
+     "text": "Job postings stress up to 50% customer travel, discovery and scoping, and feeding field learnings back to Research and Product; expect to be probed on these.",
+     "source": "S4"
+    }
+   ],
+   "aiPolicy": {},
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://www.aced.io/guides/openai-forward-deployed-engineer-interview",
+     "title": "OpenAI Forward Deployed Engineer Interview Guide",
+     "publisher": "Aced (formerly Exponent; tryexponent.com URL redirects here)",
+     "date": "2026",
+     "kind": "third-party",
+     "checked": "Stage list, 3-6 week timeline, example questions by round, editorial tips; page says built from candidate and interviewer reports"
+    },
+    {
+     "id": "S2",
+     "url": "https://www.aced.io/experiences/openai-forward-deployed-engineer-interview-0b9c09",
+     "title": "OpenAI Forward Deployed Engineer interview experience",
+     "publisher": "Aced (anonymous verified candidate, US)",
+     "date": "2026-05",
+     "kind": "candidate",
+     "checked": "Recruiter screen, 1-week semantic-search take-home, AI-enabled delivery-rate coding problem, final panel not taken; candidate tips"
+    },
+    {
+     "id": "S3",
+     "url": "https://www.aced.io/guides/openai-forward-deployed-engineer-interview/questions",
+     "title": "OpenAI FDE interview questions",
+     "publisher": "Aced",
+     "date": "2026",
+     "kind": "third-party",
+     "checked": "Question bank (27 items, 10 visible) tagged to OpenAI FDE; individual questions not marked candidate-reported"
+    },
+    {
+     "id": "S4",
+     "url": "https://builtin.com/job/forward-deployed-engineer-sf/7120501",
+     "title": "Forward Deployed Engineer (FDE) - SF",
+     "publisher": "Built In (mirror of OpenAI posting)",
+     "date": "2026",
+     "kind": "employer",
+     "checked": "Responsibilities, 5+ yrs, up to 50% travel; no interview process described; listing removed Sep 2026"
+    }
+   ],
+   "gaps": "openai.com/interview-guide (which reportedly states that AI-tool permission varies by interview) returned HTTP 403 to our fetcher, so OpenAI's own AI-use policy and stage descriptions are not captured; aiPolicy is left empty. No Reddit or blog first-hand FDE accounts found; only one detailed candidate report (S2). Nothing found for Deployment Lead / AI Deployment Engineer loops specifically. IGotAnOffer's OpenAI FDE guide also returned 403."
+  },
+  {
    "company": "Cognition",
    "slug": "cognition",
    "roles": [
@@ -2637,6 +2089,554 @@
     }
    ],
    "gaps": "No employer-published process. All stage detail comes from one third-party guide plus candidate submissions on the same site; the stage sequence varies across candidates (some report a hands-on onsite with pair programming rather than pitch/case rounds). A techinterview.org guide about Cognition SWE interviews was not used because it is not FDE-specific and cites no sources."
+  },
+  {
+   "company": "Anthropic",
+   "slug": "anthropic",
+   "roles": [
+    "Forward Deployed Engineer, Applied AI",
+    "Manager, Forward Deployed Engineering",
+    "Solutions Architect, Applied AI",
+    "Applied AI Engineer"
+   ],
+   "process": [
+    {
+     "stage": "Application",
+     "format": "Resume plus written answers, including a 'Why Anthropic?' response; candidates must confirm they have read the AI guidance",
+     "assesses": "Motivation and written communication; posting says the Why Anthropic answer is weighted highly (often 200-400 words)",
+     "source": "S2"
+    },
+    {
+     "stage": "Recruiter screen",
+     "format": "About 30 min",
+     "assesses": "Background, motivation, level fit",
+     "source": "S4"
+    },
+    {
+     "stage": "Technical use-case screen",
+     "format": "Practical Claude deployment scenario (MCP tooling, long-context reliability)",
+     "assesses": "How you reason about deploying Claude for a customer",
+     "source": "S4"
+    },
+    {
+     "stage": "Coding exercise",
+     "format": "Multi-stage incremental problem on a CodeSignal-style platform",
+     "assesses": "Writing code as requirements change across stages",
+     "source": "S4"
+    },
+    {
+     "stage": "Hiring manager round",
+     "format": "Technical and behavioral deep dive on past projects",
+     "assesses": "Ownership, judgment on when an LLM fits, adoption outcomes",
+     "source": "S4"
+    },
+    {
+     "stage": "Solution design / final panel",
+     "format": "Architect a Claude deployment for an enterprise customer, plus behavioral",
+     "assesses": "Scoping, failure modes, security/compliance trade-offs",
+     "source": "S4"
+    },
+    {
+     "stage": "Values / culture interview",
+     "format": "Non-technical round in the onsite for nearly every role",
+     "assesses": "Ethics, honesty, willingness to disagree, views on AI risk; reported as a major late-stage rejection point",
+     "source": "S6"
+    },
+    {
+     "stage": "Solutions Architect loop (candidate account)",
+     "format": "Recruiter, hiring manager, panel presentation; each 45+ min; 2-3 weeks",
+     "assesses": "Motivation and role fit; presentation to a panel",
+     "source": "S7"
+    }
+   ],
+   "questions": [
+    {
+     "id": "anthropic-q1",
+     "prompt": "Why Anthropic? (written application answer, typically 200-400 words)",
+     "type": "motivation",
+     "role": "FDE Manager",
+     "stage": "Application",
+     "evidence": "employer",
+     "source": "S2",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "anthropic-q2",
+     "prompt": "Tell me about yourself, why Anthropic, and why this role.",
+     "type": "motivation",
+     "role": "Solutions Architect",
+     "stage": "Recruiter / hiring manager",
+     "evidence": "candidate",
+     "source": "S7",
+     "year": "2025",
+     "note": ""
+    },
+    {
+     "id": "anthropic-q3",
+     "prompt": "Implement an LRU cache, then extend it as new constraints arrive in later stages.",
+     "type": "coding",
+     "role": "FDE",
+     "stage": "Coding exercise",
+     "evidence": "third-party",
+     "source": "S4",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "anthropic-q4",
+     "prompt": "Convert sampled stack data into execution traces of function calls.",
+     "type": "coding",
+     "role": "FDE",
+     "stage": "Coding exercise",
+     "evidence": "third-party",
+     "source": "S4",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "anthropic-q5",
+     "prompt": "Read a set of files and remove duplicates.",
+     "type": "coding",
+     "role": "FDE",
+     "stage": "Coding exercise",
+     "evidence": "third-party",
+     "source": "S4",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "anthropic-q6",
+     "prompt": "Walk through your most significant project and justify its key technical decisions.",
+     "type": "behavioral",
+     "role": "FDE",
+     "stage": "Hiring manager",
+     "evidence": "third-party",
+     "source": "S4",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "anthropic-q7",
+     "prompt": "Why did you use ML or an LLM for that problem, and how did you know it fit?",
+     "type": "domain",
+     "role": "FDE",
+     "stage": "Hiring manager",
+     "evidence": "third-party",
+     "source": "S4",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "anthropic-q8",
+     "prompt": "How did adoption go, and how long until the solution was production-ready?",
+     "type": "behavioral",
+     "role": "FDE",
+     "stage": "Hiring manager",
+     "evidence": "third-party",
+     "source": "S4",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "anthropic-q9",
+     "prompt": "Design an API that lets users sample from large models, then design batch optimisation for it.",
+     "type": "system-design",
+     "role": "FDE",
+     "stage": "Solution design",
+     "evidence": "third-party",
+     "source": "S4",
+     "year": "2026",
+     "note": "Described prompt, not verbatim"
+    },
+    {
+     "id": "anthropic-q10",
+     "prompt": "Handle security and compliance for a Claude deployment at a regulated customer such as a government contractor.",
+     "type": "system-design",
+     "role": "FDE",
+     "stage": "Solution design",
+     "evidence": "third-party",
+     "source": "S4",
+     "year": "2026",
+     "note": "Described prompt, not verbatim"
+    },
+    {
+     "id": "anthropic-q11",
+     "prompt": "Role-played buyer: convince me Claude does something ChatGPT cannot.",
+     "type": "customer-scenario",
+     "role": "Applied AI Engineer",
+     "stage": "Customer-conversation simulation",
+     "evidence": "third-party",
+     "source": "S5",
+     "year": "2026",
+     "note": "Vendor blog; cites candidate reports only generically"
+    },
+    {
+     "id": "anthropic-q12",
+     "prompt": "Describe an unusual belief you hold and how you have defended it.",
+     "type": "behavioral",
+     "role": "All roles",
+     "stage": "Values interview",
+     "evidence": "third-party",
+     "source": "S6",
+     "year": "2026",
+     "note": "Daniela Amodei's description of the culture test, via Bloomberg summary"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Draft application answers yourself and use Claude only to refine; never let AI describe experience you do not have.",
+     "source": "S1"
+    },
+    {
+     "text": "Using Claude to research Anthropic, rehearse answers, and prepare questions for interviewers is explicitly encouraged.",
+     "source": "S1"
+    },
+    {
+     "text": "Invest in the 'Why Anthropic?' answer; the posting says it is valued highly.",
+     "source": "S2"
+    },
+    {
+     "text": "In the values round, honest skepticism and a real example of a troubling decision land better than rehearsed enthusiasm; recruiters say strong technical candidates still fail here.",
+     "source": "S6"
+    },
+    {
+     "text": "In customer discovery role-plays, ask and reflect back rather than pitch, and give concrete deployment-risk reasoning instead of generic responsible-AI language.",
+     "source": "S5"
+    },
+    {
+     "text": "In solution design, drive the conversation: scope first, name failure modes early, and state trade-offs explicitly.",
+     "source": "S4"
+    },
+    {
+     "text": "Expect little feedback between rounds; one Solutions Architect candidate reported minimal feedback after each interview.",
+     "source": "S7"
+    }
+   ],
+   "aiPolicy": {
+    "text": "Anthropic's candidate guidance (updated July 2025): write application drafts yourself, then Claude may help refine them; Claude is encouraged for interview prep; take-homes and live interviews are without AI unless Anthropic says a specific task allows it. Applications require confirming you have read this guidance.",
+    "source": "S1"
+   },
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://www.anthropic.com/candidate-ai-guidance",
+     "title": "How to collaborate with Claude during our hiring process",
+     "publisher": "Anthropic",
+     "date": "2025-07",
+     "kind": "employer",
+     "checked": "Stage-by-stage AI rules: application refine-only, prep encouraged, take-home and live interviews no AI unless stated"
+    },
+    {
+     "id": "S2",
+     "url": "https://job-boards.greenhouse.io/anthropic/jobs/5099753008",
+     "title": "Manager, Forward Deployed Engineering",
+     "publisher": "Anthropic (Greenhouse)",
+     "date": "2026",
+     "kind": "employer",
+     "checked": "Why Anthropic answer valued highly (200-400 words); AI guidance acknowledgment required; 25-50% travel; no interview stages listed"
+    },
+    {
+     "id": "S3",
+     "url": "https://builtin.com/job/forward-deployed-engineer/7698230",
+     "title": "Forward Deployed Engineer, Applied AI",
+     "publisher": "Built In (mirror of Anthropic posting)",
+     "date": "2026",
+     "kind": "employer",
+     "checked": "Responsibilities (MCP servers, sub-agents, agent skills), 3+ yrs customer-facing, ~25% travel; no process described; removed Jun 2026"
+    },
+    {
+     "id": "S4",
+     "url": "https://www.aced.io/guides/anthropic-forward-deployed-engineer-interview",
+     "title": "Anthropic Forward Deployed Engineer Interview Guide",
+     "publisher": "Aced (formerly Exponent)",
+     "date": "2026",
+     "kind": "third-party",
+     "checked": "Six-stage loop, example coding/HM/design prompts, tips; Aced's experiences tab has no Anthropic FDE reports"
+    },
+    {
+     "id": "S5",
+     "url": "https://getperspective.ai/blog/anthropic-applied-ai-engineer-interview-process-frontier-lab-2026",
+     "title": "Anthropic Applied AI Engineer interview process",
+     "publisher": "Perspective AI (vendor blog)",
+     "date": "2026-05",
+     "kind": "third-party",
+     "checked": "Five-stage loop incl. customer-conversation simulation; cites candidate write-ups only generically"
+    },
+    {
+     "id": "S6",
+     "url": "https://www.implicator.ai/at-anthropic-the-culture-interview-is-the-top-late-stage-hiring-gate/",
+     "title": "At Anthropic, the culture interview is the top late-stage hiring gate",
+     "publisher": "Implicator.ai (summarising Bloomberg Businessweek)",
+     "date": "2026-05",
+     "kind": "third-party",
+     "checked": "Values round in nearly every onsite; up to five prior rounds; AI tools barred unless permitted; Amodei quotes"
+    },
+    {
+     "id": "S7",
+     "url": "https://www.jointaro.com/interviews/companies/anthropic/experiences/solutions-architect-new-york-ny-september-23-2025-no-offer-negative-5dee28fc",
+     "title": "Anthropic Solutions Architect, New York",
+     "publisher": "Taro (anonymous candidate)",
+     "date": "2025-09",
+     "kind": "candidate",
+     "checked": "Recruiter, HM, panel presentation; 45+ min each; questions: about you, why Anthropic, why role; no offer"
+    },
+    {
+     "id": "S8",
+     "url": "https://www.educative.io/courses/anthropic-forward-deployed-engineer-interview/the-interview-loop-overview",
+     "title": "The Interview Loop Overview",
+     "publisher": "Educative",
+     "date": "2026",
+     "kind": "third-party",
+     "checked": "Lists six stages (recruiter, technical use-case, coding, HM, final panel, values); no formats in visible excerpt"
+    }
+   ],
+   "gaps": "No first-hand FDE candidate account found on Reddit, blogs, Taro or Aced (Aced's Anthropic FDE experiences tab is empty); coding and design questions come from third-party guides. Glassdoor/Blind FDE reports exist but are excluded by policy. Stage counts conflict across guides (five vs six stages; whether a take-home exists). No employer description of the FDE loop itself."
+  },
+  {
+   "company": "Scale AI",
+   "slug": "scale-ai",
+   "roles": [
+    "Forward Deployed Engineer / Forward Deployed Software Engineer (incl. Public Sector)",
+    "Frontier Agents Engineer (Forward Deployed Engineering)",
+    "Deployment Strategist / AI Deployment Strategist"
+   ],
+   "process": [
+    {
+     "stage": "Online assessment",
+     "format": "60-min HackerRank, one hard project-style problem",
+     "assesses": "Producing working code fast on a multi-part build",
+     "source": "S2 S1"
+    },
+    {
+     "stage": "Recruiter screen",
+     "format": "Non-technical resume walk-through",
+     "assesses": "End-to-end ownership, FDE vs SWE preference, motivation for customer work",
+     "source": "S2 S1"
+    },
+    {
+     "stage": "Non-technical phone screen",
+     "format": "Behavioral/project discussion",
+     "assesses": "Whether you have built something end to end",
+     "source": "S2"
+    },
+    {
+     "stage": "Coding phone screen",
+     "format": "~60-min project-oriented HackerRank over video; a PDF outline may be sent beforehand",
+     "assesses": "Completion over optimality, pace, narrated reasoning",
+     "source": "S2 S1"
+    },
+    {
+     "stage": "Onsite (five rounds)",
+     "format": "Credo (values behavioral), coding, system design, debugging in a large unfamiliar repo, hiring manager",
+     "assesses": "Scale's six credos; code volume and adaptation; LLM/AI system design; navigation of unfamiliar code; FDE vs SWE placement",
+     "source": "S2 S1 S4"
+    },
+    {
+     "stage": "Deployment Strategist loop (one report)",
+     "format": "Recruiter screen -> hiring-manager technical with shared screen and live SQL -> behavioral phone interview",
+     "assesses": "Motivation; diagnosing a customer data-quality problem with SQL while thinking aloud",
+     "source": "S3"
+    }
+   ],
+   "questions": [
+    {
+     "id": "scale-ai-q1",
+     "prompt": "A client says the data quality Scale supplies has dropped over the past month. Diagnose it, using live SQL.",
+     "type": "sql-data",
+     "role": "Deployment Strategist",
+     "stage": "Hiring manager technical",
+     "evidence": "candidate",
+     "source": "S3",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "scale-ai-q2",
+     "prompt": "Why did you leave your last role?",
+     "type": "behavioral",
+     "role": "Deployment Strategist",
+     "stage": "Phone interview",
+     "evidence": "candidate",
+     "source": "S3",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "scale-ai-q3",
+     "prompt": "Why do you want to work at Scale AI?",
+     "type": "motivation",
+     "role": "Deployment Strategist",
+     "stage": "Recruiter screen",
+     "evidence": "candidate",
+     "source": "S3",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "scale-ai-q4",
+     "prompt": "Given several parties' time intervals, find the periods where none of them overlap.",
+     "type": "coding",
+     "role": "FDE",
+     "stage": "Online assessment",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": "Guide attributes to one reported candidate experience"
+    },
+    {
+     "id": "scale-ai-q5",
+     "prompt": "Using room-booking data, work out which rooms are free and when.",
+     "type": "coding",
+     "role": "FDE",
+     "stage": "Coding phone screen",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": "Attributed to candidate reports"
+    },
+    {
+     "id": "scale-ai-q6",
+     "prompt": "Merge adjacent segments sharing the same modifiers, then toggle a modifier over a start-to-end range.",
+     "type": "coding",
+     "role": "FDE",
+     "stage": "Coding phone screen",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": "Attributed to candidate reports"
+    },
+    {
+     "id": "scale-ai-q7",
+     "prompt": "Simulate a four-player card game from a PDF specification.",
+     "type": "coding",
+     "role": "FDE",
+     "stage": "Onsite coding",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": "Attributed to a candidate report"
+    },
+    {
+     "id": "scale-ai-q8",
+     "prompt": "Explain why the system returns no model output; root cause sat in prompt-hashing logic several layers down.",
+     "type": "debugging",
+     "role": "FDE",
+     "stage": "Onsite debugging",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": "Attributed to one reported round"
+    },
+    {
+     "id": "scale-ai-q9",
+     "prompt": "Design a claims-processing backend with retrieval and token-cost control.",
+     "type": "system-design",
+     "role": "FDE",
+     "stage": "Onsite system design",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": "Attributed to candidate reports"
+    },
+    {
+     "id": "scale-ai-q10",
+     "prompt": "Design an enterprise RAG system under privacy and latency constraints.",
+     "type": "system-design",
+     "role": "FDE",
+     "stage": "Onsite system design",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": "Attributed to candidate reports"
+    },
+    {
+     "id": "scale-ai-q11",
+     "prompt": "Describe your hardest project, and how you handled ambiguous requirements.",
+     "type": "behavioral",
+     "role": "FDE",
+     "stage": "Onsite credo round",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": "Attributed to candidate reports"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Prepare as for a full SWE loop (hard coding, system design, debugging); the process felt SWE-coded with role fit sorted out later.",
+     "source": "S2"
+    },
+    {
+     "text": "Practice debugging inside a large repository you did not write; that round can surprise you.",
+     "source": "S2"
+    },
+    {
+     "text": "Have detailed stories about projects you built end to end; ownership mattered early.",
+     "source": "S2"
+    },
+    {
+     "text": "For the Deployment Strategist SQL round, know the common causes of data-quality decline and walk the interviewer through each line of investigation aloud.",
+     "source": "S3"
+    },
+    {
+     "text": "Map behavioral stories to Scale's published credos (e.g. Earn Customer Love, Quality is Our Cheat Code).",
+     "source": "S1 S4"
+    },
+    {
+     "text": "If a PDF outline is sent before the coding screen, read it closely.",
+     "source": "S1"
+    }
+   ],
+   "aiPolicy": {},
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://www.aced.io/guides/scale-ai-forward-deployed-engineer-interview",
+     "title": "Scale AI Forward Deployed Engineer Interview Guide",
+     "publisher": "Exponent (now aced.io)",
+     "date": "2026",
+     "kind": "third-party",
+     "checked": "OA, recruiter, tech screen, five-round onsite incl. credo and debugging; sample questions attributed to candidate reports; no AI policy"
+    },
+    {
+     "id": "S2",
+     "url": "https://www.aced.io/experiences/scale-ai-forward-deployed-engineer-interview-f232b4",
+     "title": "Scale AI Forward Deployed Engineer interview experience",
+     "publisher": "Exponent (now aced.io), verified anonymous candidate",
+     "date": "2026-08",
+     "kind": "candidate",
+     "checked": "Interview Aug 2025, offer; OA, recruiter, non-tech screen, coding screen, onsite credo/coding/design/debugging/HM; specific questions paywalled"
+    },
+    {
+     "id": "S3",
+     "url": "https://www.aced.io/experiences/scale-ai-deployment-strategist-interview-576125",
+     "title": "Scale AI Deployment Strategist (L3) interview experience",
+     "publisher": "Exponent (now aced.io), anonymous candidate",
+     "date": "2026",
+     "kind": "candidate",
+     "checked": "Rejected; recruiter, HM live-SQL data-quality diagnosis, behavioral phone interview; tips"
+    },
+    {
+     "id": "S4",
+     "url": "https://scale.com/careers",
+     "title": "Careers at Scale",
+     "publisher": "Scale AI",
+     "date": "2026",
+     "kind": "employer",
+     "checked": "Lists six internal core values (credos); no hiring-process or AI-policy text"
+    },
+    {
+     "id": "S5",
+     "url": "https://job-boards.greenhouse.io/scaleai/jobs/4481921005",
+     "title": "Forward Deployed Software Engineer, Public Sector",
+     "publisher": "Scale AI (Greenhouse posting)",
+     "date": "2026",
+     "kind": "employer",
+     "checked": "Read via Greenhouse public API: role exists; no interview stages described"
+    }
+   ],
+   "gaps": "Scale publishes no interview-process description; postings mention interviews only in compensation boilerplate. The one first-hand FDE report has its specific questions paywalled, so FDE question prompts rely on a third-party guide's candidate-attributed samples. Deployment Strategist evidence is a single report. No AI-in-interview policy found."
   },
   {
    "company": "Mistral AI",
@@ -3108,169 +3108,6 @@
    "gaps": "No employer-published description of the Clay interview loop. Growth Strategist detail rests on one third-party guide that quotes unnamed candidates; it does not use the 'Deployment Strategist' title. Durations are approximate."
   },
   {
-   "company": "ElevenLabs",
-   "slug": "elevenlabs",
-   "roles": [
-    "Forward Deployed Engineer",
-    "Forward Deployed Engineer / Strategist"
-   ],
-   "process": [
-    {
-     "stage": "Recruiter screen",
-     "format": "About 30 min",
-     "assesses": "Individual contributions on past projects, motivation",
-     "source": "S2"
-    },
-    {
-     "stage": "Online coding assessment",
-     "format": "Timed, about 60 min, three pattern-style problems on a CodeSignal-type platform",
-     "assesses": "Baseline coding; candidate called it a sanity check",
-     "source": "S2"
-    },
-    {
-     "stage": "Live coding interview",
-     "format": "Python in a shared Google Doc, opens with short behavioral chat",
-     "assesses": "Writing correct functions with hierarchy and time-ordered edge cases",
-     "source": "S2"
-    },
-    {
-     "stage": "Case study",
-     "format": "Conversational customer scenario with a role-played CTO; diagrammed on Excalidraw",
-     "assesses": "Customer discovery before solutioning",
-     "source": "S2"
-    },
-    {
-     "stage": "Founder / CTO interview",
-     "format": "High-level conversation",
-     "assesses": "Technical depth, ownership, understanding of the FDE role versus solutions architects",
-     "source": "S2"
-    }
-   ],
-   "questions": [
-    {
-     "id": "elevenlabs-q1",
-     "prompt": "Which project are you proudest of, and what did you personally build?",
-     "type": "behavioral",
-     "role": "FDE",
-     "stage": "Recruiter screen",
-     "evidence": "candidate",
-     "source": "S2",
-     "year": "2025",
-     "note": ""
-    },
-    {
-     "id": "elevenlabs-q2",
-     "prompt": "Why are you motivated by this kind of role?",
-     "type": "motivation",
-     "role": "FDE",
-     "stage": "Recruiter screen",
-     "evidence": "candidate",
-     "source": "S2",
-     "year": "2025",
-     "note": ""
-    },
-    {
-     "id": "elevenlabs-q3",
-     "prompt": "Folders grant or deny users and groups; write functions checking a user's file access, then handle inheritance and conflicting changes over time.",
-     "type": "coding",
-     "role": "FDE",
-     "stage": "Live coding",
-     "evidence": "candidate",
-     "source": "S2",
-     "year": "2025",
-     "note": ""
-    },
-    {
-     "id": "elevenlabs-q4",
-     "prompt": "An airline CTO says staff reschedule manually when planes break or schedules change. What would you do?",
-     "type": "customer-scenario",
-     "role": "FDE",
-     "stage": "Case study",
-     "evidence": "candidate",
-     "source": "S2",
-     "year": "2025",
-     "note": ""
-    },
-    {
-     "id": "elevenlabs-q5",
-     "prompt": "Why ElevenLabs, and how do you view the customer-facing side of the job?",
-     "type": "motivation",
-     "role": "FDE",
-     "stage": "Founder interview",
-     "evidence": "candidate",
-     "source": "S2",
-     "year": "2025",
-     "note": ""
-    },
-    {
-     "id": "elevenlabs-q6",
-     "prompt": "How does a forward deployed engineer differ from a solutions architect, and what does an FDE own?",
-     "type": "domain",
-     "role": "FDE",
-     "stage": "Founder interview",
-     "evidence": "candidate",
-     "source": "S2",
-     "year": "2025",
-     "note": ""
-    },
-    {
-     "id": "elevenlabs-q7",
-     "prompt": "Tell me about the most complex project you have led.",
-     "type": "behavioral",
-     "role": "FDE",
-     "stage": "Founder interview",
-     "evidence": "third-party",
-     "source": "S1",
-     "year": "2026",
-     "note": ""
-    }
-   ],
-   "tips": [
-    {
-     "text": "Be precise about what you personally built and decided; interviewers repeatedly probed individual ownership.",
-     "source": "S2"
-    },
-    {
-     "text": "Behavioral and values questions appear inside most rounds rather than in one dedicated round.",
-     "source": "S2"
-    },
-    {
-     "text": "In the case study, ask how the customer handles the problem today and what hurts before proposing anything; avoid jumping straight to an AI answer.",
-     "source": "S2"
-    },
-    {
-     "text": "Confirm hiring location and role scope early; the candidate passed every round but was not hired after the company limited the role to San Francisco.",
-     "source": "S2"
-    },
-    {
-     "text": "Be ready to describe your own AI-assisted engineering workflow.",
-     "source": "S1"
-    }
-   ],
-   "aiPolicy": {},
-   "sources": [
-    {
-     "id": "S1",
-     "url": "https://www.aced.io/guides/elevenlabs-forward-deployed-engineer-interview",
-     "title": "ElevenLabs Forward Deployed Engineer Interview Guide",
-     "publisher": "Aced (formerly Exponent)",
-     "date": "2026",
-     "kind": "third-party",
-     "checked": "Five stages, ~4-5 weeks, candidate-reported sample questions, tips; no formal AI policy"
-    },
-    {
-     "id": "S2",
-     "url": "https://www.aced.io/experiences/eleven-labs-solutions-architect-interview-ce0689",
-     "title": "ElevenLabs Forward Deployed Engineer interview experience",
-     "publisher": "Aced (anonymous candidate, UK)",
-     "date": "2025",
-     "kind": "candidate",
-     "checked": "Recruiter, OA, Python Google Doc coding (file permissions), airline CTO case, CTO round; verbal yes then rejected over location"
-    }
-   ],
-   "gaps": "Only one detailed candidate account (S2; URL slug says solutions-architect but page labels the role FDE; interview date shown only as roughly a year before posting). No employer-published process or AI policy found."
-  },
-  {
    "company": "Anduril",
    "slug": "anduril",
    "roles": [
@@ -3476,6 +3313,169 @@
    "gaps": "No employer description of the interview loop; postings (A6, A7) describe the role only. Only one first-hand FDE report (A1), several years old, with question titles but little detail. Technical Operations evidence is one thin report with a possibly placeholder date. No AI-in-interview policy found. Reddit not fetchable."
   },
   {
+   "company": "ElevenLabs",
+   "slug": "elevenlabs",
+   "roles": [
+    "Forward Deployed Engineer",
+    "Forward Deployed Engineer / Strategist"
+   ],
+   "process": [
+    {
+     "stage": "Recruiter screen",
+     "format": "About 30 min",
+     "assesses": "Individual contributions on past projects, motivation",
+     "source": "S2"
+    },
+    {
+     "stage": "Online coding assessment",
+     "format": "Timed, about 60 min, three pattern-style problems on a CodeSignal-type platform",
+     "assesses": "Baseline coding; candidate called it a sanity check",
+     "source": "S2"
+    },
+    {
+     "stage": "Live coding interview",
+     "format": "Python in a shared Google Doc, opens with short behavioral chat",
+     "assesses": "Writing correct functions with hierarchy and time-ordered edge cases",
+     "source": "S2"
+    },
+    {
+     "stage": "Case study",
+     "format": "Conversational customer scenario with a role-played CTO; diagrammed on Excalidraw",
+     "assesses": "Customer discovery before solutioning",
+     "source": "S2"
+    },
+    {
+     "stage": "Founder / CTO interview",
+     "format": "High-level conversation",
+     "assesses": "Technical depth, ownership, understanding of the FDE role versus solutions architects",
+     "source": "S2"
+    }
+   ],
+   "questions": [
+    {
+     "id": "elevenlabs-q1",
+     "prompt": "Which project are you proudest of, and what did you personally build?",
+     "type": "behavioral",
+     "role": "FDE",
+     "stage": "Recruiter screen",
+     "evidence": "candidate",
+     "source": "S2",
+     "year": "2025",
+     "note": ""
+    },
+    {
+     "id": "elevenlabs-q2",
+     "prompt": "Why are you motivated by this kind of role?",
+     "type": "motivation",
+     "role": "FDE",
+     "stage": "Recruiter screen",
+     "evidence": "candidate",
+     "source": "S2",
+     "year": "2025",
+     "note": ""
+    },
+    {
+     "id": "elevenlabs-q3",
+     "prompt": "Folders grant or deny users and groups; write functions checking a user's file access, then handle inheritance and conflicting changes over time.",
+     "type": "coding",
+     "role": "FDE",
+     "stage": "Live coding",
+     "evidence": "candidate",
+     "source": "S2",
+     "year": "2025",
+     "note": ""
+    },
+    {
+     "id": "elevenlabs-q4",
+     "prompt": "An airline CTO says staff reschedule manually when planes break or schedules change. What would you do?",
+     "type": "customer-scenario",
+     "role": "FDE",
+     "stage": "Case study",
+     "evidence": "candidate",
+     "source": "S2",
+     "year": "2025",
+     "note": ""
+    },
+    {
+     "id": "elevenlabs-q5",
+     "prompt": "Why ElevenLabs, and how do you view the customer-facing side of the job?",
+     "type": "motivation",
+     "role": "FDE",
+     "stage": "Founder interview",
+     "evidence": "candidate",
+     "source": "S2",
+     "year": "2025",
+     "note": ""
+    },
+    {
+     "id": "elevenlabs-q6",
+     "prompt": "How does a forward deployed engineer differ from a solutions architect, and what does an FDE own?",
+     "type": "domain",
+     "role": "FDE",
+     "stage": "Founder interview",
+     "evidence": "candidate",
+     "source": "S2",
+     "year": "2025",
+     "note": ""
+    },
+    {
+     "id": "elevenlabs-q7",
+     "prompt": "Tell me about the most complex project you have led.",
+     "type": "behavioral",
+     "role": "FDE",
+     "stage": "Founder interview",
+     "evidence": "third-party",
+     "source": "S1",
+     "year": "2026",
+     "note": ""
+    }
+   ],
+   "tips": [
+    {
+     "text": "Be precise about what you personally built and decided; interviewers repeatedly probed individual ownership.",
+     "source": "S2"
+    },
+    {
+     "text": "Behavioral and values questions appear inside most rounds rather than in one dedicated round.",
+     "source": "S2"
+    },
+    {
+     "text": "In the case study, ask how the customer handles the problem today and what hurts before proposing anything; avoid jumping straight to an AI answer.",
+     "source": "S2"
+    },
+    {
+     "text": "Confirm hiring location and role scope early; the candidate passed every round but was not hired after the company limited the role to San Francisco.",
+     "source": "S2"
+    },
+    {
+     "text": "Be ready to describe your own AI-assisted engineering workflow.",
+     "source": "S1"
+    }
+   ],
+   "aiPolicy": {},
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://www.aced.io/guides/elevenlabs-forward-deployed-engineer-interview",
+     "title": "ElevenLabs Forward Deployed Engineer Interview Guide",
+     "publisher": "Aced (formerly Exponent)",
+     "date": "2026",
+     "kind": "third-party",
+     "checked": "Five stages, ~4-5 weeks, candidate-reported sample questions, tips; no formal AI policy"
+    },
+    {
+     "id": "S2",
+     "url": "https://www.aced.io/experiences/eleven-labs-solutions-architect-interview-ce0689",
+     "title": "ElevenLabs Forward Deployed Engineer interview experience",
+     "publisher": "Aced (anonymous candidate, UK)",
+     "date": "2025",
+     "kind": "candidate",
+     "checked": "Recruiter, OA, Python Google Doc coding (file permissions), airline CTO case, CTO round; verbal yes then rejected over location"
+    }
+   ],
+   "gaps": "Only one detailed candidate account (S2; URL slug says solutions-architect but page labels the role FDE; interview date shown only as roughly a year before posting). No employer-published process or AI policy found."
+  },
+  {
    "company": "Baseten",
    "slug": "baseten",
    "roles": [
@@ -3622,6 +3622,455 @@
     }
    ],
    "gaps": "Only one third-party guide describes rounds, and its questions are mostly not tied to named candidate reports. The only first-hand interview account surfaced is on Glassdoor (excluded). No employer statement on process or AI use."
+  },
+  {
+   "company": "Decagon",
+   "slug": "decagon",
+   "roles": [
+    "Agent Product Manager",
+    "Senior Agent Product Manager",
+    "Agent Deployment Engineer",
+    "Agent Strategy Manager",
+    "Engineering Lead, Strategic Deployments",
+    "Forward Deployed Engineer, Agent Builder (older listing)"
+   ],
+   "process": [
+    {
+     "stage": "Recruiter screen",
+     "format": "~30 min",
+     "assesses": "Background, motivation for conversational AI, comfort with in-office pace",
+     "source": "S4"
+    },
+    {
+     "stage": "Hiring manager",
+     "format": "~45 min",
+     "assesses": "Product sense and technical depth; take-home usually introduced here",
+     "source": "S4"
+    },
+    {
+     "stage": "Take-home PRD",
+     "format": "~3 to 5 hours, PRD for a new platform feature",
+     "assesses": "Problem framing, metrics, technical dependencies, MVP scope",
+     "source": "S4"
+    },
+    {
+     "stage": "Leadership / CEO conversation",
+     "format": "~30 to 45 min",
+     "assesses": "Values alignment, a defended product opinion",
+     "source": "S4"
+    }
+   ],
+   "questions": [
+    {
+     "id": "decagon-q1",
+     "prompt": "Design an AI feature that turns raw conversation data into actionable insights.",
+     "type": "customer-scenario",
+     "role": "Product Manager",
+     "stage": "Hiring manager",
+     "evidence": "third-party",
+     "source": "S4",
+     "year": "2026",
+     "note": "From a generic PM guide; not confirmed for Agent PM"
+    },
+    {
+     "id": "decagon-q2",
+     "prompt": "How would you talk through a data model or API design with an engineer?",
+     "type": "domain",
+     "role": "Product Manager",
+     "stage": "Hiring manager",
+     "evidence": "third-party",
+     "source": "S4",
+     "year": "2026",
+     "note": "Generic PM guide"
+    },
+    {
+     "id": "decagon-q3",
+     "prompt": "How would you define success and adoption for a feature you shipped?",
+     "type": "behavioral",
+     "role": "Product Manager",
+     "stage": "Hiring manager",
+     "evidence": "third-party",
+     "source": "S4",
+     "year": "2026",
+     "note": "Generic PM guide"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Decagon's Agent PM lead says there is no single background; they hire for traits and look for a 'spike' in product thinking, customer strategy, systems design, or technical implementation.",
+     "source": "S1"
+    },
+    {
+     "text": "Agent PM work spans writing requirements with customers, designing prompt logic, testing tone and correctness, and measuring rollouts; prepare examples across those areas.",
+     "source": "S1"
+    },
+    {
+     "text": "Company values listed on the careers page include speed of execution, inventing what customers want, and a 'polymath' cross-functional bent.",
+     "source": "S2"
+    }
+   ],
+   "aiPolicy": {},
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://decagon.ai/blog/agent-product-manager",
+     "title": "Agent Product Manager",
+     "publisher": "Decagon (Max Lowenthal, Director, Agent PM)",
+     "date": "2025-04",
+     "kind": "employer",
+     "checked": "Role description and traits Decagon hires for; no interview process described"
+    },
+    {
+     "id": "S2",
+     "url": "https://decagon.ai/careers",
+     "title": "Careers",
+     "publisher": "Decagon",
+     "date": "2026",
+     "kind": "employer",
+     "checked": "Four company values; no interview process"
+    },
+    {
+     "id": "S3",
+     "url": "https://jobs.ashbyhq.com/decagon",
+     "title": "Decagon jobs (Ashby)",
+     "publisher": "Decagon",
+     "date": "2026-11",
+     "kind": "employer",
+     "checked": "Live titles: Agent PM, Senior Agent PM, Agent Deployment Engineer, Agent Strategy Manager, Engineering Lead Strategic Deployments; postings contain no interview-process text"
+    },
+    {
+     "id": "S4",
+     "url": "https://interview.norahq.com/interview-guides/decagon-product-manager-interview-guide-2026",
+     "title": "Decagon Product Manager interview guide 2026",
+     "publisher": "Nora AI",
+     "date": "2026-06",
+     "kind": "third-party",
+     "checked": "4 rounds incl. 3-5 hr PRD take-home; generic PM, does not mention Agent PM; no named sources"
+    },
+    {
+     "id": "S5",
+     "url": "https://mattsavage.substack.com/p/joining-decagon",
+     "title": "Joining Decagon",
+     "publisher": "Matt Savage (Agent PM)",
+     "date": "2025-04",
+     "kind": "employee",
+     "checked": "Employee joining as Agent PM; says talent bar is high; no interview detail"
+    }
+   ],
+   "gaps": "No usable first-hand account of the Agent PM, Agent Deployment Engineer, or Agent Strategy Manager loops. Agent PM reports of a hiring-manager screen, case study/data-analysis take-home, live presentation to Agent PMs, and SF onsite exist only on Glassdoor (excluded). Process above is from a generic PM guide and should be labelled as such."
+  },
+  {
+   "company": "Hebbia",
+   "slug": "hebbia",
+   "roles": [
+    "Forward Deployed Engineer"
+   ],
+   "process": [
+    {
+     "stage": "Recruiter call",
+     "format": "Phone screen",
+     "assesses": "Background and fit",
+     "source": "S3"
+    },
+    {
+     "stage": "Technical screen",
+     "format": "~45 min (15 min background, 30 min coding) on CoderPad",
+     "assesses": "Coding on an ambiguous text-relevance problem with some statistics",
+     "source": "S3"
+    },
+    {
+     "stage": "API design and data modeling",
+     "format": "Interview",
+     "assesses": "API and data-model design",
+     "source": "S2"
+    },
+    {
+     "stage": "Onsite build day",
+     "format": "Full day (~8 hours) at the office: build and deploy an app from scratch to given requirements",
+     "assesses": "End-to-end building and shipping",
+     "source": "S2"
+    }
+   ],
+   "questions": [
+    {
+     "id": "hebbia-q1",
+     "prompt": "Given a passage and per-position relevance scores, return the most relevant contiguous substring.",
+     "type": "coding",
+     "role": "Software Engineer (not FDE)",
+     "stage": "Technical screen",
+     "evidence": "candidate",
+     "source": "S3",
+     "year": "2025",
+     "note": "Same problem reported in 2024 (S4); output was left undefined, so clarify it"
+    },
+    {
+     "id": "hebbia-q2",
+     "prompt": "Build a React component that displays data and lets the user edit it.",
+     "type": "coding",
+     "role": "Software Engineer (not FDE)",
+     "stage": "Unspecified technical round",
+     "evidence": "candidate",
+     "source": "S2",
+     "year": "2024",
+     "note": ""
+    },
+    {
+     "id": "hebbia-q3",
+     "prompt": "In one day, build and deploy an app from scratch to a given set of requirements.",
+     "type": "ai-build",
+     "role": "Software Engineer (not FDE)",
+     "stage": "Onsite",
+     "evidence": "candidate",
+     "source": "S2",
+     "year": "2024",
+     "note": "Type is a full build exercise; AI use not mentioned"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Ask the interviewer to define the expected output before coding; the relevance problem was given with inputs but no clear output.",
+     "source": "S3"
+    },
+    {
+     "text": "Brush up basic statistics; candidates said the screen mixed coding with data-science fundamentals.",
+     "source": "S4"
+    },
+    {
+     "text": "Budget a full day for the onsite, which involves building and deploying an app.",
+     "source": "S2"
+    }
+   ],
+   "aiPolicy": {},
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://builtin.com/job/forward-deployed-engineer/9400002",
+     "title": "Forward Deployed Engineer - Hebbia",
+     "publisher": "Built In (mirror of Hebbia posting)",
+     "date": "2026",
+     "kind": "third-party",
+     "checked": "FDE embeds with finance customers; 5+ yrs; $180k-$300k range narrowed during interviews; no process text"
+    },
+    {
+     "id": "S2",
+     "url": "https://www.jointaro.com/interviews/companies/hebbiaai/experiences/software-engineer-new-york-ny-february-1-2024-no-offer-neutral-6dba43d7",
+     "title": "HebbiaAI Software Engineer interview, New York, Feb 2024",
+     "publisher": "Taro (candidate submission)",
+     "date": "2024-02",
+     "kind": "candidate",
+     "checked": "Recruiter, tech screen, API design/data modeling, 8-hour build-and-deploy onsite; React component question"
+    },
+    {
+     "id": "S3",
+     "url": "https://www.jointaro.com/interviews/companies/hebbiaai/experiences/software-engineer-united-states-april-28-2025-no-offer-negative-b8ee94c7",
+     "title": "HebbiaAI Software Engineer interview, Apr 2025",
+     "publisher": "Taro (candidate submission)",
+     "date": "2025-04",
+     "kind": "candidate",
+     "checked": "Recruiter call, CoderPad round; relevance-scores contiguous subarray problem; tips on clarifying output and stats"
+    },
+    {
+     "id": "S4",
+     "url": "https://www.jointaro.com/interviews/companies/hebbiaai/experiences/senior-software-engineer-new-york-ny-april-1-2024-no-offer-negative-6c4b6816",
+     "title": "HebbiaAI Senior Software Engineer interview, Apr 2024",
+     "publisher": "Taro (candidate submission)",
+     "date": "2024-04",
+     "kind": "candidate",
+     "checked": "45-min phone: 15 min background + 30 min coding on most relevant substring; felt like a mix of analyst/ML/SWE skills"
+    }
+   ],
+   "gaps": "No FDE-specific interview report found; all process detail comes from software engineer candidates and may differ for FDE. Label clearly as adjacent-role evidence."
+  },
+  {
+   "company": "Ode",
+   "slug": "ode",
+   "roles": [
+    "Member of Technical Staff (SF / NY / NC)",
+    "Forward Deployed Product Manager",
+    "Forward Deployed Product Manager, Financial Services",
+    "Bring Your Own Engineering Team (2-5 engineer teams)"
+   ],
+   "process": [
+    {
+     "stage": "Technical screen",
+     "format": "Not described publicly; scheduled in Ashby/ModernLoop",
+     "assesses": "Not described; listed as the first stage the coordinator schedules for engineering loops",
+     "source": "S3"
+    },
+    {
+     "stage": "Hands-on coding (x2)",
+     "format": "Two live hands-on-keyboard coding prompts (2024 Fractional AI loop); length not stated",
+     "assesses": "Clean code, problem solving, productivity, judgment, and how well the candidate uses an LLM to extend their abilities",
+     "source": "S1"
+    },
+    {
+     "stage": "Whiteboard client-scoping session",
+     "format": "Whiteboard session framed like a client call scoping a new AI-to-production project; LLM-free (2024 loop)",
+     "assesses": "Project management, architecture design, decision making, autonomy, customer engagement",
+     "source": "S1"
+    },
+    {
+     "stage": "Onsite",
+     "format": "In-person interviews at the office; panel held to the same bar for every engineer",
+     "assesses": "Full engineering bar (details not published)",
+     "source": "S3"
+    },
+    {
+     "stage": "Debrief",
+     "format": "Internal interviewer debrief with scorecards",
+     "assesses": "Hiring decision",
+     "source": "S3"
+    },
+    {
+     "stage": "Founder / executive chat",
+     "format": "Conversation with a founder or exec, targeted within 48 hours of the onsite",
+     "assesses": "Not described",
+     "source": "S3"
+    },
+    {
+     "stage": "References and real-world work",
+     "format": "References and examples of real projects supplement the loop",
+     "assesses": "Real-world signal beyond the interview 'laboratory'",
+     "source": "S1"
+    }
+   ],
+   "questions": [
+    {
+     "id": "ode-q1",
+     "prompt": "Act as if on a first client call: scope a new project to get an AI system into production, covering architecture and decisions.",
+     "type": "customer-scenario",
+     "role": "Software Engineer (now MTS)",
+     "stage": "Whiteboard client-scoping session",
+     "evidence": "employer",
+     "source": "S1",
+     "year": "2024",
+     "note": "Employer describes the format, not the exact prompt; chosen so ChatGPT is of limited help. Fractional AI loop as of May 2024."
+    },
+    {
+     "id": "ode-q2",
+     "prompt": "Undisclosed hands-on coding problem completed live; ChatGPT allowed, Copilot not; graded on clean code, judgment and LLM use.",
+     "type": "coding",
+     "role": "Software Engineer (now MTS)",
+     "stage": "Hands-on coding",
+     "evidence": "employer",
+     "source": "S1",
+     "year": "2024",
+     "note": "Two such prompts; actual problems not published."
+    }
+   ],
+   "tips": [
+    {
+     "text": "Expect to be judged on whether you can tell when an AI assistant helps and when it does not; the company treats AI use in interviews as a question of how, not if.",
+     "source": "S1"
+    },
+    {
+     "text": "Do not prepare for a take-home: Fractional AI tried take-homes and dropped them because it could not see how candidates relied on AI tools.",
+     "source": "S1"
+    },
+    {
+     "text": "Bring references and concrete examples of real-world projects; the company uses them to add signal beyond the interview itself.",
+     "source": "S1"
+    },
+    {
+     "text": "The engineer role is about 75% coding and 25% client work, often with client CTOs; be ready to show you can walk senior technical stakeholders through tradeoffs.",
+     "source": "S6"
+    },
+    {
+     "text": "Ode says the pace (two to three products a year per engineer) does not suit everyone and explicitly invites candidates to use the interview to ask engineers what the job is like.",
+     "source": "S6"
+    },
+    {
+     "text": "Teams of 2-5 engineers can apply together: same-day interviews, same panel and bar, and simultaneous offers that each person can accept individually.",
+     "source": "S2"
+    },
+    {
+     "text": "For Forward Deployed PM, show client-facing work under pressure where you pushed back or reframed the problem, and a willingness to use AI heavily in your own workflow.",
+     "source": "S7"
+    },
+    {
+     "text": "The CTO describes the loop as simulating real-world challenges and looking for people who do well in ambiguous, high-pressure settings.",
+     "source": "S5"
+    }
+   ],
+   "aiPolicy": {
+    "text": "Fractional AI (Ode's predecessor) published its policy in May 2024: candidates are told the rules in advance; in the two coding rounds ChatGPT-style chat assistants are allowed but inline Copilot is not; the whiteboard client-scoping round is LLM-free. Ode has not published an updated policy; its stated value 'Overuse AI' centers on Claude, so the tool list may have changed.",
+    "source": "S1"
+   },
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://www.fractional.ai/blog/technical-interviews-in-the-age-of-llms",
+     "title": "Technical Interviews in the Age of LLMs",
+     "publisher": "Fractional AI (Eddie Siegel, CTO; now Ode CTO)",
+     "date": "2024-05",
+     "kind": "employer",
+     "checked": "Two coding prompts (ChatGPT yes, Copilot no), one LLM-free whiteboard session modeled on a client scoping call, take-homes dropped, references used."
+    },
+    {
+     "id": "S2",
+     "url": "https://jobs.ashbyhq.com/odewithanthropic/5e655487-e0f9-4471-96fd-355b1f5e0185",
+     "title": "Bring Your Own Engineering Team",
+     "publisher": "Ode with Anthropic (Ashby)",
+     "date": "2024-11",
+     "kind": "employer",
+     "checked": "Same-day interviews with same panel and bar; one offer round for whole team; one first project; Fabius team example. First published 2024-11-29, still live 2026-11."
+    },
+    {
+     "id": "S3",
+     "url": "https://jobs.ashbyhq.com/odewithanthropic/633ec45f-157f-4a44-ac5c-8fd67f7ba4a6",
+     "title": "Senior Recruiting Coordinator & Talent Ops Lead",
+     "publisher": "Ode with Anthropic (Ashby)",
+     "date": "2026-10",
+     "kind": "employer",
+     "checked": "Lists tech screens, onsites, debriefs, founder and exec chats; onsite-to-founder-chat in 48 hours or less; ~750 interviews a month."
+    },
+    {
+     "id": "S4",
+     "url": "https://jobs.ashbyhq.com/odewithanthropic/d0b28758-dc1d-4386-9ff1-b17db2f6c42b",
+     "title": "Recruiting Coordinator",
+     "publisher": "Ode with Anthropic (Ashby)",
+     "date": "2026-09",
+     "kind": "employer",
+     "checked": "Describes in-person onsite interviews with prepared rooms and lunches."
+    },
+    {
+     "id": "S5",
+     "url": "https://www.audioscrape.com/podcast/1st10-podcast/episode/the-quiet-ai-revolution-eddie-siegel-fractional-ai-cto-talks-about-solving-real-problems-behind-the-ai-hype-43516",
+     "title": "1st10 Podcast: The Quiet AI Revolution, Eddie Siegel, Fractional AI CTO",
+     "publisher": "1st10 Podcast (show notes via Audioscrape)",
+     "date": "2025-02",
+     "kind": "employee",
+     "checked": "Show notes only (no transcript): process simulates real-world challenges; hiring chapter at 18:26."
+    },
+    {
+     "id": "S6",
+     "url": "https://jobs.ashbyhq.com/odewithanthropic/0d49754d-051e-4fb4-8bd3-0152ded416b8",
+     "title": "Member of Technical Staff (SF)",
+     "publisher": "Ode with Anthropic (Ashby)",
+     "date": "2026-09",
+     "kind": "employer",
+     "checked": "75/25 code/client split, 8+ years, 2-5 engineer pods, invites candidates to use interviews to hear from engineers."
+    },
+    {
+     "id": "S7",
+     "url": "https://jobs.ashbyhq.com/odewithanthropic/d93607e0-3e38-4a6f-a05e-f293d3f3bdf4",
+     "title": "Forward Deployed Product Manager (SF/NY)",
+     "publisher": "Ode with Anthropic (Ashby)",
+     "date": "2026-09",
+     "kind": "employer",
+     "checked": "Forward-deployed full-stack PM; 4+ yrs; client-facing high-stakes experience; willingness to overuse AI."
+    },
+    {
+     "id": "S8",
+     "url": "https://jobs.ashbyhq.com/odewithanthropic/3b7324b4-b4df-4eef-b436-e1d9ace7cfc6",
+     "title": "Forward Deployed Product Manager, Financial Services (SF/NY)",
+     "publisher": "Ode with Anthropic (Ashby)",
+     "date": "2026-10",
+     "kind": "employer",
+     "checked": "6-8+ yrs; FS domain; FDPMs interview other FDPM candidates."
+    }
+   ],
+   "gaps": "No first-hand candidate reports found for Ode or Fractional AI on Reddit, LeetCode Discuss, Medium or third-party prep sites (searches mostly return Fractal Analytics, a different company). The only detailed loop description is Fractional AI's May 2024 blog post, written before the May 2026 acquisition into Ode and the shift to Claude; treat stages and AI-tool rules as possibly outdated. Ode's 2026 postings confirm tech screen, onsite, debrief and founder/exec chat stages but not their content. No published process for Forward Deployed PM or Principal roles beyond the fact that FDPMs sit on FDPM panels (S8). Actual coding prompts are not public."
   },
   {
    "company": "Salesforce",
@@ -3843,264 +4292,6 @@
     }
    ],
    "gaps": "No first-hand FDE candidate account outside Glassdoor (excluded). Third-party guides (techinterview.org, Hashnode/gaijineer, Dataford) either listed generic likely-questions without sourcing or could not be read; not used for questions. Search results mixing in Cohere Health (a separate company) were discarded."
-  },
-  {
-   "company": "Hebbia",
-   "slug": "hebbia",
-   "roles": [
-    "Forward Deployed Engineer"
-   ],
-   "process": [
-    {
-     "stage": "Recruiter call",
-     "format": "Phone screen",
-     "assesses": "Background and fit",
-     "source": "S3"
-    },
-    {
-     "stage": "Technical screen",
-     "format": "~45 min (15 min background, 30 min coding) on CoderPad",
-     "assesses": "Coding on an ambiguous text-relevance problem with some statistics",
-     "source": "S3"
-    },
-    {
-     "stage": "API design and data modeling",
-     "format": "Interview",
-     "assesses": "API and data-model design",
-     "source": "S2"
-    },
-    {
-     "stage": "Onsite build day",
-     "format": "Full day (~8 hours) at the office: build and deploy an app from scratch to given requirements",
-     "assesses": "End-to-end building and shipping",
-     "source": "S2"
-    }
-   ],
-   "questions": [
-    {
-     "id": "hebbia-q1",
-     "prompt": "Given a passage and per-position relevance scores, return the most relevant contiguous substring.",
-     "type": "coding",
-     "role": "Software Engineer (not FDE)",
-     "stage": "Technical screen",
-     "evidence": "candidate",
-     "source": "S3",
-     "year": "2025",
-     "note": "Same problem reported in 2024 (S4); output was left undefined, so clarify it"
-    },
-    {
-     "id": "hebbia-q2",
-     "prompt": "Build a React component that displays data and lets the user edit it.",
-     "type": "coding",
-     "role": "Software Engineer (not FDE)",
-     "stage": "Unspecified technical round",
-     "evidence": "candidate",
-     "source": "S2",
-     "year": "2024",
-     "note": ""
-    },
-    {
-     "id": "hebbia-q3",
-     "prompt": "In one day, build and deploy an app from scratch to a given set of requirements.",
-     "type": "ai-build",
-     "role": "Software Engineer (not FDE)",
-     "stage": "Onsite",
-     "evidence": "candidate",
-     "source": "S2",
-     "year": "2024",
-     "note": "Type is a full build exercise; AI use not mentioned"
-    }
-   ],
-   "tips": [
-    {
-     "text": "Ask the interviewer to define the expected output before coding; the relevance problem was given with inputs but no clear output.",
-     "source": "S3"
-    },
-    {
-     "text": "Brush up basic statistics; candidates said the screen mixed coding with data-science fundamentals.",
-     "source": "S4"
-    },
-    {
-     "text": "Budget a full day for the onsite, which involves building and deploying an app.",
-     "source": "S2"
-    }
-   ],
-   "aiPolicy": {},
-   "sources": [
-    {
-     "id": "S1",
-     "url": "https://builtin.com/job/forward-deployed-engineer/9400002",
-     "title": "Forward Deployed Engineer - Hebbia",
-     "publisher": "Built In (mirror of Hebbia posting)",
-     "date": "2026",
-     "kind": "third-party",
-     "checked": "FDE embeds with finance customers; 5+ yrs; $180k-$300k range narrowed during interviews; no process text"
-    },
-    {
-     "id": "S2",
-     "url": "https://www.jointaro.com/interviews/companies/hebbiaai/experiences/software-engineer-new-york-ny-february-1-2024-no-offer-neutral-6dba43d7",
-     "title": "HebbiaAI Software Engineer interview, New York, Feb 2024",
-     "publisher": "Taro (candidate submission)",
-     "date": "2024-02",
-     "kind": "candidate",
-     "checked": "Recruiter, tech screen, API design/data modeling, 8-hour build-and-deploy onsite; React component question"
-    },
-    {
-     "id": "S3",
-     "url": "https://www.jointaro.com/interviews/companies/hebbiaai/experiences/software-engineer-united-states-april-28-2025-no-offer-negative-b8ee94c7",
-     "title": "HebbiaAI Software Engineer interview, Apr 2025",
-     "publisher": "Taro (candidate submission)",
-     "date": "2025-04",
-     "kind": "candidate",
-     "checked": "Recruiter call, CoderPad round; relevance-scores contiguous subarray problem; tips on clarifying output and stats"
-    },
-    {
-     "id": "S4",
-     "url": "https://www.jointaro.com/interviews/companies/hebbiaai/experiences/senior-software-engineer-new-york-ny-april-1-2024-no-offer-negative-6c4b6816",
-     "title": "HebbiaAI Senior Software Engineer interview, Apr 2024",
-     "publisher": "Taro (candidate submission)",
-     "date": "2024-04",
-     "kind": "candidate",
-     "checked": "45-min phone: 15 min background + 30 min coding on most relevant substring; felt like a mix of analyst/ML/SWE skills"
-    }
-   ],
-   "gaps": "No FDE-specific interview report found; all process detail comes from software engineer candidates and may differ for FDE. Label clearly as adjacent-role evidence."
-  },
-  {
-   "company": "Decagon",
-   "slug": "decagon",
-   "roles": [
-    "Agent Product Manager",
-    "Senior Agent Product Manager",
-    "Agent Deployment Engineer",
-    "Agent Strategy Manager",
-    "Engineering Lead, Strategic Deployments",
-    "Forward Deployed Engineer, Agent Builder (older listing)"
-   ],
-   "process": [
-    {
-     "stage": "Recruiter screen",
-     "format": "~30 min",
-     "assesses": "Background, motivation for conversational AI, comfort with in-office pace",
-     "source": "S4"
-    },
-    {
-     "stage": "Hiring manager",
-     "format": "~45 min",
-     "assesses": "Product sense and technical depth; take-home usually introduced here",
-     "source": "S4"
-    },
-    {
-     "stage": "Take-home PRD",
-     "format": "~3 to 5 hours, PRD for a new platform feature",
-     "assesses": "Problem framing, metrics, technical dependencies, MVP scope",
-     "source": "S4"
-    },
-    {
-     "stage": "Leadership / CEO conversation",
-     "format": "~30 to 45 min",
-     "assesses": "Values alignment, a defended product opinion",
-     "source": "S4"
-    }
-   ],
-   "questions": [
-    {
-     "id": "decagon-q1",
-     "prompt": "Design an AI feature that turns raw conversation data into actionable insights.",
-     "type": "customer-scenario",
-     "role": "Product Manager",
-     "stage": "Hiring manager",
-     "evidence": "third-party",
-     "source": "S4",
-     "year": "2026",
-     "note": "From a generic PM guide; not confirmed for Agent PM"
-    },
-    {
-     "id": "decagon-q2",
-     "prompt": "How would you talk through a data model or API design with an engineer?",
-     "type": "domain",
-     "role": "Product Manager",
-     "stage": "Hiring manager",
-     "evidence": "third-party",
-     "source": "S4",
-     "year": "2026",
-     "note": "Generic PM guide"
-    },
-    {
-     "id": "decagon-q3",
-     "prompt": "How would you define success and adoption for a feature you shipped?",
-     "type": "behavioral",
-     "role": "Product Manager",
-     "stage": "Hiring manager",
-     "evidence": "third-party",
-     "source": "S4",
-     "year": "2026",
-     "note": "Generic PM guide"
-    }
-   ],
-   "tips": [
-    {
-     "text": "Decagon's Agent PM lead says there is no single background; they hire for traits and look for a 'spike' in product thinking, customer strategy, systems design, or technical implementation.",
-     "source": "S1"
-    },
-    {
-     "text": "Agent PM work spans writing requirements with customers, designing prompt logic, testing tone and correctness, and measuring rollouts; prepare examples across those areas.",
-     "source": "S1"
-    },
-    {
-     "text": "Company values listed on the careers page include speed of execution, inventing what customers want, and a 'polymath' cross-functional bent.",
-     "source": "S2"
-    }
-   ],
-   "aiPolicy": {},
-   "sources": [
-    {
-     "id": "S1",
-     "url": "https://decagon.ai/blog/agent-product-manager",
-     "title": "Agent Product Manager",
-     "publisher": "Decagon (Max Lowenthal, Director, Agent PM)",
-     "date": "2025-04",
-     "kind": "employer",
-     "checked": "Role description and traits Decagon hires for; no interview process described"
-    },
-    {
-     "id": "S2",
-     "url": "https://decagon.ai/careers",
-     "title": "Careers",
-     "publisher": "Decagon",
-     "date": "2026",
-     "kind": "employer",
-     "checked": "Four company values; no interview process"
-    },
-    {
-     "id": "S3",
-     "url": "https://jobs.ashbyhq.com/decagon",
-     "title": "Decagon jobs (Ashby)",
-     "publisher": "Decagon",
-     "date": "2026-11",
-     "kind": "employer",
-     "checked": "Live titles: Agent PM, Senior Agent PM, Agent Deployment Engineer, Agent Strategy Manager, Engineering Lead Strategic Deployments; postings contain no interview-process text"
-    },
-    {
-     "id": "S4",
-     "url": "https://interview.norahq.com/interview-guides/decagon-product-manager-interview-guide-2026",
-     "title": "Decagon Product Manager interview guide 2026",
-     "publisher": "Nora AI",
-     "date": "2026-06",
-     "kind": "third-party",
-     "checked": "4 rounds incl. 3-5 hr PRD take-home; generic PM, does not mention Agent PM; no named sources"
-    },
-    {
-     "id": "S5",
-     "url": "https://mattsavage.substack.com/p/joining-decagon",
-     "title": "Joining Decagon",
-     "publisher": "Matt Savage (Agent PM)",
-     "date": "2025-04",
-     "kind": "employee",
-     "checked": "Employee joining as Agent PM; says talent bar is high; no interview detail"
-    }
-   ],
-   "gaps": "No usable first-hand account of the Agent PM, Agent Deployment Engineer, or Agent Strategy Manager loops. Agent PM reports of a hiring-manager screen, case study/data-analysis take-home, live presentation to Agent PMs, and SF onsite exist only on Glassdoor (excluded). Process above is from a generic PM guide and should be labelled as such."
   },
   {
    "company": "Glean",
@@ -4389,6 +4580,64 @@
    "gaps": "Candidate detail (CoderPad with 3 questions in 45 min, OOP-flavored LeetCode practical) exists only on Glassdoor and is excluded. No questions from a usable source. Dataford's Cresta FDE guide could not be opened (HTTP 429)."
   },
   {
+   "company": "xAI",
+   "slug": "xai",
+   "roles": [
+    "Forward Deployed AI Engineer - Enterprise",
+    "Forward Deployed AI Engineer",
+    "Member of Technical Staff, Enterprise, Forward Deployed"
+   ],
+   "process": [
+    {
+     "stage": "Application review",
+     "format": "CV plus a 'Statement of Exceptional Work', read by a technical team member (no recruiters)",
+     "assesses": "Evidence of exceptional past work; posting calls the statement a key deciding factor",
+     "source": "S1"
+    },
+    {
+     "stage": "Technical phone interview",
+     "format": "About 15 min",
+     "assesses": "Background and specialisation",
+     "source": "S1"
+    },
+    {
+     "stage": "Main process",
+     "format": "Four interviews: 15-min technical screen, two 45-min coding interviews, 1-hour 'Meet the Team'; Google Meet or in person; aim to finish within a week",
+     "assesses": "Coding ability and team fit",
+     "source": "S1"
+    }
+   ],
+   "questions": [],
+   "tips": [
+    {
+     "text": "Treat the Statement of Exceptional Work as the primary filter; the posting says it is a key deciding factor.",
+     "source": "S1"
+    }
+   ],
+   "aiPolicy": {},
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://builtin.com/job/forward-deployed-product-engineer/4654298",
+     "title": "Forward Deployed AI Engineer - Enterprise",
+     "publisher": "Built In (mirror of xAI posting)",
+     "date": "2025-08",
+     "kind": "employer",
+     "checked": "Interview process section: CV + exceptional-work statement, 15-min phone, 15-min screen, two 45-min coding, 1-hr meet the team; removed Aug 2025"
+    },
+    {
+     "id": "S2",
+     "url": "https://www.aced.io/blog/xai-interview-process",
+     "title": "xAI interview process",
+     "publisher": "Aced",
+     "date": "2026",
+     "kind": "third-party",
+     "checked": "Describes standard SWE loop only; states non-engineering roles may differ; nothing FDE-specific (used only to confirm gap)"
+    }
+   ],
+   "gaps": "No FDE question reports or candidate accounts found outside Glassdoor/Blind. Search snippets describe another xAI FDE posting variant with Rust/C++/Go plus Python coding and a design interview, but those pages returned 404 and could not be confirmed. No current FDE opening found on xAI's Greenhouse board (Nov 2026)."
+  },
+  {
    "company": "Cursor",
    "slug": "cursor",
    "roles": [
@@ -4463,62 +4712,37 @@
    "gaps": "No FDE-specific process, questions or candidate reports found. Process stages above come from adjacent AI Deployment Manager postings and CEO statements about engineering hires; applying them to FDE is an inference."
   },
   {
-   "company": "xAI",
-   "slug": "xai",
+   "company": "Cloudflare",
+   "slug": "cloudflare",
    "roles": [
-    "Forward Deployed AI Engineer - Enterprise",
-    "Forward Deployed AI Engineer",
-    "Member of Technical Staff, Enterprise, Forward Deployed"
+    "Forward Deployed Engineer (FDE)",
+    "Forward Deployed Engineer, Professional Services",
+    "Senior Forward Deployed Engineer",
+    "Senior Forward Deployed Infrastructure Engineer"
    ],
    "process": [
     {
-     "stage": "Application review",
-     "format": "CV plus a 'Statement of Exceptional Work', read by a technical team member (no recruiters)",
-     "assesses": "Evidence of exceptional past work; posting calls the statement a key deciding factor",
-     "source": "S1"
-    },
-    {
-     "stage": "Technical phone interview",
-     "format": "About 15 min",
-     "assesses": "Background and specialisation",
-     "source": "S1"
-    },
-    {
-     "stage": "Main process",
-     "format": "Four interviews: 15-min technical screen, two 45-min coding interviews, 1-hour 'Meet the Team'; Google Meet or in person; aim to finish within a week",
-     "assesses": "Coding ability and team fit",
+     "stage": "In-person interview (possible, at offer stage)",
+     "format": "Candidates who reach the offer stage may be asked to interview in person at a Cloudflare office or hub; details given at that stage",
+     "assesses": "Not stated",
      "source": "S1"
     }
    ],
    "questions": [],
-   "tips": [
-    {
-     "text": "Treat the Statement of Exceptional Work as the primary filter; the posting says it is a key deciding factor.",
-     "source": "S1"
-    }
-   ],
+   "tips": [],
    "aiPolicy": {},
    "sources": [
     {
      "id": "S1",
-     "url": "https://builtin.com/job/forward-deployed-product-engineer/4654298",
-     "title": "Forward Deployed AI Engineer - Enterprise",
-     "publisher": "Built In (mirror of xAI posting)",
-     "date": "2025-08",
+     "url": "https://boards.greenhouse.io/cloudflare/jobs/7572075",
+     "title": "Forward Deployed Engineer (FDE)",
+     "publisher": "Cloudflare (Greenhouse)",
+     "date": "2026-10",
      "kind": "employer",
-     "checked": "Interview process section: CV + exceptional-work statement, 15-min phone, 15-min screen, two 45-min coding, 1-hr meet the team; removed Aug 2025"
-    },
-    {
-     "id": "S2",
-     "url": "https://www.aced.io/blog/xai-interview-process",
-     "title": "xAI interview process",
-     "publisher": "Aced",
-     "date": "2026",
-     "kind": "third-party",
-     "checked": "Describes standard SWE loop only; states non-engineering roles may differ; nothing FDE-specific (used only to confirm gap)"
+     "checked": "Posting (read via Greenhouse API) says offer-stage applicants may be asked to attend an in-person interview at an office or hub; same text on all 11 FDE postings"
     }
    ],
-   "gaps": "No FDE question reports or candidate accounts found outside Glassdoor/Blind. Search snippets describe another xAI FDE posting variant with Rust/C++/Go plus Python coding and a design interview, but those pages returned 404 and could not be confirmed. No current FDE opening found on xAI's Greenhouse board (Nov 2026)."
+   "gaps": "No FDE interview stages, questions or candidate reports found. Postings emphasize Workers / Workers AI and enterprise customer work, but nothing confirms a Workers take-home for FDEs. Related Cloudflare take-home reports exist only for other roles (Glassdoor, excluded; a 2020 intern assignment)."
   },
   {
    "company": "Harvey",
@@ -4601,39 +4825,6 @@
    "gaps": "No public first-hand account of the Legal Engineer or Forward Deployed Finance Engineer interview beyond the recruiter step. Third-party Harvey guides (techprep, techinterview.org, Taro) cover software engineers only. No software-titled FDE role found on Harvey's board."
   },
   {
-   "company": "Cloudflare",
-   "slug": "cloudflare",
-   "roles": [
-    "Forward Deployed Engineer (FDE)",
-    "Forward Deployed Engineer, Professional Services",
-    "Senior Forward Deployed Engineer",
-    "Senior Forward Deployed Infrastructure Engineer"
-   ],
-   "process": [
-    {
-     "stage": "In-person interview (possible, at offer stage)",
-     "format": "Candidates who reach the offer stage may be asked to interview in person at a Cloudflare office or hub; details given at that stage",
-     "assesses": "Not stated",
-     "source": "S1"
-    }
-   ],
-   "questions": [],
-   "tips": [],
-   "aiPolicy": {},
-   "sources": [
-    {
-     "id": "S1",
-     "url": "https://boards.greenhouse.io/cloudflare/jobs/7572075",
-     "title": "Forward Deployed Engineer (FDE)",
-     "publisher": "Cloudflare (Greenhouse)",
-     "date": "2026-10",
-     "kind": "employer",
-     "checked": "Posting (read via Greenhouse API) says offer-stage applicants may be asked to attend an in-person interview at an office or hub; same text on all 11 FDE postings"
-    }
-   ],
-   "gaps": "No FDE interview stages, questions or candidate reports found. Postings emphasize Workers / Workers AI and enterprise customer work, but nothing confirms a Workers take-home for FDEs. Related Cloudflare take-home reports exist only for other roles (Glassdoor, excluded; a 2020 intern assignment)."
-  },
-  {
    "company": "Saronic",
    "slug": "saronic",
    "roles": [
@@ -4685,6 +4876,66 @@
    "gaps": "No first-hand FDE interview report readable outside Glassdoor (excluded). Dataford's Saronic FDE guide returned 429 and is largely paywalled. No sourced questions, no employer process description, no AI policy."
   },
   {
+   "company": "Modal",
+   "slug": "modal",
+   "roles": [
+    "Forward Deployed Engineer - ML",
+    "Forward Deployed Engineer - Systems",
+    "Forward Deployed ML Engineer - AI Coding Agents"
+   ],
+   "process": [],
+   "questions": [],
+   "tips": [],
+   "aiPolicy": {},
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://jobs.ashbyhq.com/modal/9fadb51f-ce11-41b1-84d5-470e66cc8ee9",
+     "title": "Forward Deployed Engineer - ML",
+     "publisher": "Modal (Ashby)",
+     "date": "2026-02",
+     "kind": "employer",
+     "checked": "Role posting: inference/training toolchains (vLLM, SGLang), in person NYC/SF/Stockholm; no interview process"
+    },
+    {
+     "id": "S2",
+     "url": "https://jobs.ashbyhq.com/modal/cbbbee50-3d3b-4873-8ae8-ff4b885b8e54",
+     "title": "Forward Deployed Engineer - Systems",
+     "publisher": "Modal (Ashby)",
+     "date": "2025-09",
+     "kind": "employer",
+     "checked": "Role posting: cloud migration, IaC, demos and POCs; no interview process"
+    }
+   ],
+   "gaps": "No interview process, questions or candidate reports found for Modal FDE roles. Third-party Modal pages surfaced were generic or appeared to describe a different company with a similar name."
+  },
+  {
+   "company": "Notion",
+   "slug": "notion",
+   "roles": [
+    "Forward Deployed Engineer, GTM",
+    "Forward Deployed Engineer (Services)",
+    "Forward Deployed Architect",
+    "Forward Deployed Engineer, Manager"
+   ],
+   "process": [],
+   "questions": [],
+   "tips": [],
+   "aiPolicy": {},
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://jobs.ashbyhq.com/notion/10437426-14c8-4c45-8075-67959ce80393",
+     "title": "Forward Deployed Engineer, GTM, AMER",
+     "publisher": "Notion (Ashby)",
+     "date": "2025-08",
+     "kind": "employer",
+     "checked": "Role scope (custom code, MCP/agent workflows, data pipelines) and a 'note on AI' expecting employees to use AI as a collaborator; nothing about interview stages or AI use in interviews"
+    }
+   ],
+   "gaps": "No FDE interview process, questions or candidate reports found. Notion SWE loop descriptions (take-home pairing, customer empathy round) exist on third-party sites but are not shown to apply to FDE/Architect roles, so they are not used. Posting's AI note concerns on-the-job AI use, not interviews."
+  },
+  {
    "company": "Perplexity",
    "slug": "perplexity",
    "roles": [
@@ -4712,67 +4963,6 @@
     }
    ],
    "gaps": "No public description of the FDE/Applied AI interview loop and no first-hand candidate account outside Glassdoor (excluded). Aced's Perplexity FDE page lists roles and pay only. Perplexity software engineer reports exist but are not FDE-specific and were not used."
-  },
-  {
-   "company": "Snowflake",
-   "slug": "snowflake",
-   "roles": [
-    "Forward Deployed Engineer, Applied AI",
-    "Forward Deployed Engineer, Frontier Engineering",
-    "Principal / Senior Principal Forward Deployed Engineer",
-    "Lead Forward Deployed Engineer - Migration"
-   ],
-   "process": [],
-   "questions": [],
-   "tips": [],
-   "aiPolicy": {},
-   "sources": [
-    {
-     "id": "S1",
-     "url": "https://jobs.ashbyhq.com/snowflake/467250b0-43bc-47aa-91d5-6312687e4097",
-     "title": "Forward Deployed Engineer, Applied AI (Warsaw)",
-     "publisher": "Snowflake (Ashby)",
-     "date": "2026-07",
-     "kind": "employer",
-     "checked": "Role posting read via Ashby public API; no interview process described"
-    },
-    {
-     "id": "S2",
-     "url": "https://jobs.ashbyhq.com/snowflake/2c4475a5-c88a-48fc-878a-8b324679745a",
-     "title": "Principal Forward Deployed Engineer I, Frontier Engineering (Menlo Park)",
-     "publisher": "Snowflake (Ashby)",
-     "date": "2026-10",
-     "kind": "employer",
-     "checked": "Role posting read via Ashby public API; no interview process described"
-    }
-   ],
-   "gaps": "No usable interview process or questions found. The only FDE-specific candidate report surfaced (a May 2026 take-home plus two technical screens) is on Glassdoor and is excluded by policy. No Aced/Prepfully FDE guide exists for Snowflake; Snowflake SWE guides were not used because the FDE loop is not shown to match."
-  },
-  {
-   "company": "Notion",
-   "slug": "notion",
-   "roles": [
-    "Forward Deployed Engineer, GTM",
-    "Forward Deployed Engineer (Services)",
-    "Forward Deployed Architect",
-    "Forward Deployed Engineer, Manager"
-   ],
-   "process": [],
-   "questions": [],
-   "tips": [],
-   "aiPolicy": {},
-   "sources": [
-    {
-     "id": "S1",
-     "url": "https://jobs.ashbyhq.com/notion/10437426-14c8-4c45-8075-67959ce80393",
-     "title": "Forward Deployed Engineer, GTM, AMER",
-     "publisher": "Notion (Ashby)",
-     "date": "2025-08",
-     "kind": "employer",
-     "checked": "Role scope (custom code, MCP/agent workflows, data pipelines) and a 'note on AI' expecting employees to use AI as a collaborator; nothing about interview stages or AI use in interviews"
-    }
-   ],
-   "gaps": "No FDE interview process, questions or candidate reports found. Notion SWE loop descriptions (take-home pairing, customer empathy round) exist on third-party sites but are not shown to apply to FDE/Architect roles, so they are not used. Posting's AI note concerns on-the-job AI use, not interviews."
   },
   {
    "company": "Ramp",
@@ -4808,12 +4998,12 @@
    "gaps": "No usable FDE process or questions. A Taro entry (Nov 2025, no offer) reportedly describes HM outreach, talent-team call, tech screens and onsite, but the page returned 404 on fetch so it is not cited. Ramp SWE loop guides (practical coding, product coding, system design, HM) exist but are not shown to apply to FDE."
   },
   {
-   "company": "Modal",
-   "slug": "modal",
+   "company": "Rippling",
+   "slug": "rippling",
    "roles": [
-    "Forward Deployed Engineer - ML",
-    "Forward Deployed Engineer - Systems",
-    "Forward Deployed ML Engineer - AI Coding Agents"
+    "Forward Deployed Engineer",
+    "Senior Forward Deployed Engineer",
+    "Manager, Forward Deployed Engineering"
    ],
    "process": [],
    "questions": [],
@@ -4822,24 +5012,15 @@
    "sources": [
     {
      "id": "S1",
-     "url": "https://jobs.ashbyhq.com/modal/9fadb51f-ce11-41b1-84d5-470e66cc8ee9",
-     "title": "Forward Deployed Engineer - ML",
-     "publisher": "Modal (Ashby)",
-     "date": "2026-02",
-     "kind": "employer",
-     "checked": "Role posting: inference/training toolchains (vLLM, SGLang), in person NYC/SF/Stockholm; no interview process"
-    },
-    {
-     "id": "S2",
-     "url": "https://jobs.ashbyhq.com/modal/cbbbee50-3d3b-4873-8ae8-ff4b885b8e54",
-     "title": "Forward Deployed Engineer - Systems",
-     "publisher": "Modal (Ashby)",
-     "date": "2025-09",
-     "kind": "employer",
-     "checked": "Role posting: cloud migration, IaC, demos and POCs; no interview process"
+     "url": "https://techjobs.marsdd.com/companies/rippling/jobs/63795632-forward-deployed-engineer",
+     "title": "Forward Deployed Engineer - Rippling",
+     "publisher": "MaRS job board (mirror of Rippling posting)",
+     "date": "2026",
+     "kind": "third-party",
+     "checked": "FDE builds custom solutions on Rippling Platform (TS/JS/Python/Go, SQL, no-code), 2+ yrs, ~25% travel; no interview process; listing closed"
     }
    ],
-   "gaps": "No interview process, questions or candidate reports found for Modal FDE roles. Third-party Modal pages surfaced were generic or appeared to describe a different company with a similar name."
+   "gaps": "FDE-specific interview reports (system-design phone screen, delivery-pay question) exist only on Glassdoor and are excluded. Dataford's Rippling FDE guide could not be opened (HTTP 429). Rippling's own ATS page redirected to the generic careers page."
   },
   {
    "company": "Rogo",
@@ -4883,6 +5064,41 @@
    "gaps": "No first-hand or employer description of Rogo's forward-deployed interview found. One prep page (Scoutify) lists questions inferred from postings, not candidates; excluded."
   },
   {
+   "company": "Snowflake",
+   "slug": "snowflake",
+   "roles": [
+    "Forward Deployed Engineer, Applied AI",
+    "Forward Deployed Engineer, Frontier Engineering",
+    "Principal / Senior Principal Forward Deployed Engineer",
+    "Lead Forward Deployed Engineer - Migration"
+   ],
+   "process": [],
+   "questions": [],
+   "tips": [],
+   "aiPolicy": {},
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://jobs.ashbyhq.com/snowflake/467250b0-43bc-47aa-91d5-6312687e4097",
+     "title": "Forward Deployed Engineer, Applied AI (Warsaw)",
+     "publisher": "Snowflake (Ashby)",
+     "date": "2026-07",
+     "kind": "employer",
+     "checked": "Role posting read via Ashby public API; no interview process described"
+    },
+    {
+     "id": "S2",
+     "url": "https://jobs.ashbyhq.com/snowflake/2c4475a5-c88a-48fc-878a-8b324679745a",
+     "title": "Principal Forward Deployed Engineer I, Frontier Engineering (Menlo Park)",
+     "publisher": "Snowflake (Ashby)",
+     "date": "2026-10",
+     "kind": "employer",
+     "checked": "Role posting read via Ashby public API; no interview process described"
+    }
+   ],
+   "gaps": "No usable interview process or questions found. The only FDE-specific candidate report surfaced (a May 2026 take-home plus two technical screens) is on Glassdoor and is excluded by policy. No Aced/Prepfully FDE guide exists for Snowflake; Snowflake SWE guides were not used because the FDE loop is not shown to match."
+  },
+  {
    "company": "Writer",
    "slug": "writer",
    "roles": [
@@ -4909,31 +5125,6 @@
     }
    ],
    "gaps": "No employer, candidate, or credible third-party description of the AI Deployment Engineer interview found. Only Glassdoor has Writer interview reviews (excluded)."
-  },
-  {
-   "company": "Rippling",
-   "slug": "rippling",
-   "roles": [
-    "Forward Deployed Engineer",
-    "Senior Forward Deployed Engineer",
-    "Manager, Forward Deployed Engineering"
-   ],
-   "process": [],
-   "questions": [],
-   "tips": [],
-   "aiPolicy": {},
-   "sources": [
-    {
-     "id": "S1",
-     "url": "https://techjobs.marsdd.com/companies/rippling/jobs/63795632-forward-deployed-engineer",
-     "title": "Forward Deployed Engineer - Rippling",
-     "publisher": "MaRS job board (mirror of Rippling posting)",
-     "date": "2026",
-     "kind": "third-party",
-     "checked": "FDE builds custom solutions on Rippling Platform (TS/JS/Python/Go, SQL, no-code), 2+ yrs, ~25% travel; no interview process; listing closed"
-    }
-   ],
-   "gaps": "FDE-specific interview reports (system-design phone screen, delivery-pay question) exist only on Glassdoor and are excluded. Dataford's Rippling FDE guide could not be opened (HTTP 429). Rippling's own ATS page redirected to the generic careers page."
   }
  ]
 }

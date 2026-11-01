@@ -26,15 +26,27 @@ The job list refreshes daily; the analysis text in `work/jobs-brief.mjs` does no
 3. Re-read 8–12 full postings (one or two per segment) before changing any qualitative claim, such as the five job types or a quoted company practice. Quote only what a posting says, in under 15 words.
 4. Keep the date in the brief and the method note honest: say which snapshot it reflects.
 
+## 1b. Find companies the list is missing
+
+The daily fetch only reads boards already in `companies` in `work/fetch-jobs.mjs`. Run discovery quarterly, or when the user names a company that is missing.
+
+1. Two sub-agents with `work/research/discovery-brief.md`, different methods: one searches the ATS domains and probes board APIs; one mines aggregators (joinplank `fde-jobs.json`, landed.jobs list, aced.io/jobs/fde, YC, HN Who is hiring, VC job boards). Output `work/research/out/discovery-*.json`.
+2. `npm run research:merge-discovery -- work/research/out/discovery-*.json`. It adds new boards as `system:slug` entries under a dated heading, adds slug fixes to existing companies, skips recruiters (`SKIP_NAMES`) and known bad boards (`SKIP`), and writes companies on unreadable systems (Workday, YC, Rippling, Gem) to `docs/OTHER_BOARDS.json`. Rerunning it adds nothing.
+3. `npm run refresh:jobs`, then audit before shipping: same-name companies on two boards (Ashby slugs ignore case, so `Kastle` and `kastle` are one board), multi-company boards, recruiters and venture studios posting for unnamed clients, and titles in other languages. The fetcher already drops CJK text and duplicate roles.
+4. A company whose forward-deployed engineers carry another title (Ode: Member of Technical Staff) goes in `roleOverrides` in `work/fetch-jobs.mjs`, with the posting phrase that justifies it.
+
 ## 2. Refresh company facts (jobs table: website, industry, stage, valuation, ARR)
 
 Data: `docs/COMPANIES.json`. Brief for researchers: `work/research/company-brief.md`.
 
 1. List companies needing work: new names in `docs/JOBS.json` (`npm run research:merge-companies` with no input prints `hiringCompaniesMissing`), and figures older than about 6 months.
 2. Split them into groups of about 20 and give each group to a sub-agent with the brief. Output to `work/research/out/companies-<n>.json` (gitignored).
-3. `npm run research:merge-companies -- work/research/out/companies-*.json`. It refuses unknown company names, bad URLs, non-numeric figures, and missing dates.
-4. Verify yourself before shipping: open the sources for the five largest valuations and any figure the researcher flagged as shaky. Tender, pre-money, acquisition price, and estimate must be labelled as such in `basis`.
-5. Recruiters posting for unnamed clients are not employers: remove them from `companies` in `work/fetch-jobs.mjs`.
+3. Null every field the researcher marked as from memory, general knowledge, inferred, or unverified, and every figure it flagged as inconsistent or a target rather than an actual.
+4. `npm run research:verify-companies -- --apply work/research/out/companies-*.json`. It loads every website (must name the company) and every figure's source (must contain the number) and writes `*.verified.json` without the failures. A figure sourced only to a job-board index page fails, because that page does not show the number. Sources behind bot walls (403/429) are listed for a manual look with WebFetch.
+5. `npm run research:merge-companies -- work/research/out/companies-*.verified.json`. It refuses unknown company names, bad URLs, non-numeric figures, and missing dates.
+6. Verify yourself before shipping: open the sources for the five largest valuations and any figure the researcher flagged as shaky. Tender, pre-money, acquisition price, and estimate must be labelled as such in `basis`.
+7. Sub-agents share one web-search quota per turn (about 200 searches). Batches of about 65 companies run out of searches halfway; split large refreshes across turns or keep batches near 25.
+8. Recruiters posting for unnamed clients are not employers: remove them from `companies` in `work/fetch-jobs.mjs` and add them to `SKIP_NAMES` in `merge-discovery.mjs`.
 
 ## 3. Refresh interview loops and questions (`/interview/`)
 
@@ -45,6 +57,10 @@ Data: `docs/INTERVIEWS.json`. Brief: `work/research/interview-brief.md`.
 3. Remove from the output any company the researcher found has no FDE-type role (it reports this in `gaps`). Then `npm run research:merge-interviews -- work/research/out/interviews-*.json`. A company in the input replaces its old entry; others stay. The script fails on unknown source ids, types, or evidence kinds.
 4. Verify yourself: open the sources behind each company's headline claims (take-home, decomposition prompt, AI-tool policy) and confirm they say it.
 5. Companies with 5 or more questions get their own page (`/interview/<slug>/`); fewer stay on the Companies tab. Changing that threshold needs edits in both `work/interviews.mjs` and `work/build-site.mjs`.
+
+## 3b. Add a company's case studies
+
+Case studies live in `cases` in `work/content.mjs`, each with a source in `sources`. Use only cases with a reported result; partnership announcements are not case studies. Credit the company that did the work at the time (for example "Fractional AI (now Ode)"), keep numbers exactly as published, and say in `limit` that the account is vendor-published.
 
 ## 4. Check sources
 

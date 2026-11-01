@@ -49,7 +49,7 @@ No keyword-volume tool (DataForSEO) is connected, so targets are directional; re
 | KDnuggets, Simplilearn, Analytics Vidhya, Scaler, Udemy blog | "How to become" listicles | Thin, generic; no primary sources or live jobs |
 | Wikipedia "Forward Deployed Engineer" | Definition | We can be the cited source for practice, not just definition |
 
-Our edge: a sourced 20-chapter path, a live job snapshot (588 postings / 92 companies), 16 interview questions with provenance, firsthand stories, and FDE vs SPE comparison. Each of those deserves its own URL.
+Our edge: a sourced 20-chapter path, a live job snapshot (1,847 postings / 630 companies on 1 Nov 2026), 182 interview questions with provenance, firsthand stories, and FDE vs SPE comparison. Each of those deserves its own URL.
 
 ## 4. Site architecture (target)
 

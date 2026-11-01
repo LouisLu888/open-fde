@@ -1,9 +1,9 @@
 {
- "snapshot": "2026-11-01T21:23:33.892Z",
- "postings": 582,
- "distinctRoles": 411,
- "companies": 91,
- "withText": 582,
+ "snapshot": "2026-11-01T22:23:17.765Z",
+ "postings": 1847,
+ "distinctRoles": 1464,
+ "companies": 630,
+ "withText": 1847,
  "topCompanies": [
   [
    "Databricks",
@@ -14,84 +14,174 @@
    106
   ],
   [
+   "Wonderful",
+   62
+  ],
+  [
+   "Mistral AI",
+   35
+  ],
+  [
    "OpenAI",
    34
   ],
   [
+   "HappyRobot",
+   22
+  ],
+  [
+   "Telnyx",
+   19
+  ],
+  [
    "Rogo",
    17
-  ],
-  [
-   "Scale AI",
-   15
-  ],
-  [
-   "Cohere",
-   13
-  ],
-  [
-   "Shield AI",
-   12
-  ],
-  [
-   "Cloudflare",
-   11
   ]
  ],
  "askedFor": {
-  "companies": 91,
+  "companies": 630,
   "shares": {
-   "Clear communication": 77,
-   "Feeding lessons back to product": 70,
-   "Customer-facing work": 62,
-   "Agents": 58,
-   "Comfort with ambiguity": 54,
-   "Startup or founder experience": 52,
-   "Python": 48,
-   "LLMs": 46,
-   "TypeScript or JavaScript": 24,
-   "SQL": 18,
-   "AWS, GCP, or Azure": 18,
-   "Fine-tuning": 9,
-   "RAG": 9,
-   "Data engineering": 20,
-   "Executives": 35,
-   "Travel": 44,
-   "Security clearance": 9,
-   "Consulting": 35,
-   "Production": 58,
-   "Demos": 18
+   "Clear communication": 71,
+   "Feeding lessons back to product": 62,
+   "Customer-facing work": 56,
+   "Agents": 57,
+   "Comfort with ambiguity": 53,
+   "Startup or founder experience": 50,
+   "Python": 52,
+   "LLMs": 45,
+   "TypeScript or JavaScript": 30,
+   "SQL": 19,
+   "AWS, GCP, or Azure": 24,
+   "Fine-tuning": 5,
+   "RAG": 12,
+   "Data engineering": 29,
+   "Executives": 30,
+   "Travel": 43,
+   "Security clearance": 6,
+   "Consulting": 39,
+   "Production": 67,
+   "Demos": 20
   }
  },
  "bySegment": {
   "Vertical and applied AI": {
-   "companies": 35,
+   "companies": 269,
    "shares": {
-    "Clear communication": 81,
-    "Feeding lessons back to product": 73,
-    "Customer-facing work": 67,
-    "Agents": 58,
-    "Comfort with ambiguity": 55,
-    "Startup or founder experience": 45,
-    "Python": 39,
-    "LLMs": 38,
-    "TypeScript or JavaScript": 21,
-    "SQL": 29,
-    "AWS, GCP, or Azure": 13,
-    "Fine-tuning": 7,
-    "RAG": 3,
-    "Data engineering": 14,
-    "Executives": 35,
-    "Travel": 45,
+    "Clear communication": 71,
+    "Feeding lessons back to product": 65,
+    "Customer-facing work": 57,
+    "Agents": 64,
+    "Comfort with ambiguity": 53,
+    "Startup or founder experience": 55,
+    "Python": 47,
+    "LLMs": 45,
+    "TypeScript or JavaScript": 31,
+    "SQL": 23,
+    "AWS, GCP, or Azure": 21,
+    "Fine-tuning": 4,
+    "RAG": 10,
+    "Data engineering": 30,
+    "Executives": 30,
+    "Travel": 34,
     "Security clearance": 2,
-    "Consulting": 43,
-    "Production": 44,
-    "Demos": 20
+    "Consulting": 46,
+    "Production": 62,
+    "Demos": 21
    },
    "pay": {
-    "postings": 57,
-    "medianLowK": 154,
+    "postings": 257,
+    "medianLowK": 160,
+    "medianHighK": 230
+   }
+  },
+  "Consultancies and services": {
+   "companies": 48,
+   "shares": {
+    "Clear communication": 65,
+    "Feeding lessons back to product": 56,
+    "Customer-facing work": 52,
+    "Agents": 73,
+    "Comfort with ambiguity": 52,
+    "Startup or founder experience": 39,
+    "Python": 53,
+    "LLMs": 68,
+    "TypeScript or JavaScript": 37,
+    "SQL": 15,
+    "AWS, GCP, or Azure": 41,
+    "Fine-tuning": 10,
+    "RAG": 40,
+    "Data engineering": 24,
+    "Executives": 41,
+    "Travel": 41,
+    "Security clearance": 4,
+    "Consulting": 55,
+    "Production": 77,
+    "Demos": 25
+   },
+   "pay": {
+    "postings": 56,
+    "medianLowK": 155,
+    "medianHighK": 216
+   }
+  },
+  "Defense, government, and industrial": {
+   "companies": 122,
+   "shares": {
+    "Clear communication": 69,
+    "Feeding lessons back to product": 58,
+    "Customer-facing work": 50,
+    "Agents": 26,
+    "Comfort with ambiguity": 47,
+    "Startup or founder experience": 41,
+    "Python": 57,
+    "LLMs": 24,
+    "TypeScript or JavaScript": 27,
+    "SQL": 17,
+    "AWS, GCP, or Azure": 19,
+    "Fine-tuning": 3,
+    "RAG": 5,
+    "Data engineering": 29,
+    "Executives": 20,
+    "Travel": 65,
+    "Security clearance": 23,
+    "Consulting": 22,
+    "Production": 60,
+    "Demos": 16
+   },
+   "pay": {
+    "postings": 182,
+    "medianLowK": 135,
     "medianHighK": 200
+   }
+  },
+  "Data, infra, and devtools": {
+   "companies": 122,
+   "shares": {
+    "Clear communication": 74,
+    "Feeding lessons back to product": 62,
+    "Customer-facing work": 64,
+    "Agents": 65,
+    "Comfort with ambiguity": 55,
+    "Startup or founder experience": 53,
+    "Python": 49,
+    "LLMs": 48,
+    "TypeScript or JavaScript": 29,
+    "SQL": 21,
+    "AWS, GCP, or Azure": 31,
+    "Fine-tuning": 3,
+    "RAG": 13,
+    "Data engineering": 33,
+    "Executives": 37,
+    "Travel": 42,
+    "Security clearance": 3,
+    "Consulting": 40,
+    "Production": 73,
+    "Demos": 21
+   },
+   "pay": {
+    "postings": 117,
+    "medianLowK": 175,
+    "medianHighK": 250
    }
   },
   "Large software companies with public boards": {
@@ -119,259 +209,245 @@
     "Demos": 11
    },
    "pay": {
-    "postings": 6,
+    "postings": 5,
     "medianLowK": 191,
     "medianHighK": 266
    }
   },
-  "Defense, government, and industrial": {
-   "companies": 10,
-   "shares": {
-    "Clear communication": 79,
-    "Feeding lessons back to product": 71,
-    "Customer-facing work": 57,
-    "Agents": 3,
-    "Comfort with ambiguity": 21,
-    "Startup or founder experience": 52,
-    "Python": 73,
-    "LLMs": 3,
-    "TypeScript or JavaScript": 28,
-    "SQL": 24,
-    "AWS, GCP, or Azure": 11,
-    "Fine-tuning": 0,
-    "RAG": 0,
-    "Data engineering": 29,
-    "Executives": 17,
-    "Travel": 83,
-    "Security clearance": 60,
-    "Consulting": 7,
-    "Production": 17,
-    "Demos": 16
-   },
-   "pay": {
-    "postings": 65,
-    "medianLowK": 135,
-    "medianHighK": 170
-   }
-  },
   "AI labs and model platforms": {
-   "companies": 16,
+   "companies": 58,
    "shares": {
-    "Clear communication": 73,
-    "Feeding lessons back to product": 60,
-    "Customer-facing work": 51,
-    "Agents": 70,
-    "Comfort with ambiguity": 42,
-    "Startup or founder experience": 70,
-    "Python": 64,
-    "LLMs": 70,
-    "TypeScript or JavaScript": 17,
-    "SQL": 8,
-    "AWS, GCP, or Azure": 18,
-    "Fine-tuning": 29,
-    "RAG": 28,
-    "Data engineering": 5,
-    "Executives": 38,
-    "Travel": 33,
-    "Security clearance": 5,
-    "Consulting": 34,
-    "Production": 77,
-    "Demos": 24
+    "Clear communication": 75,
+    "Feeding lessons back to product": 55,
+    "Customer-facing work": 56,
+    "Agents": 55,
+    "Comfort with ambiguity": 55,
+    "Startup or founder experience": 52,
+    "Python": 72,
+    "LLMs": 60,
+    "TypeScript or JavaScript": 30,
+    "SQL": 11,
+    "AWS, GCP, or Azure": 19,
+    "Fine-tuning": 18,
+    "RAG": 14,
+    "Data engineering": 19,
+    "Executives": 29,
+    "Travel": 41,
+    "Security clearance": 1,
+    "Consulting": 31,
+    "Production": 78,
+    "Demos": 15
    },
    "pay": {
-    "postings": 38,
+    "postings": 66,
     "medianLowK": 185,
     "medianHighK": 300
    }
   },
-  "Data, infra, and devtools": {
-   "companies": 21,
+  "Unclassified": {
+   "companies": 2,
    "shares": {
-    "Clear communication": 74,
-    "Feeding lessons back to product": 67,
-    "Customer-facing work": 71,
-    "Agents": 67,
-    "Comfort with ambiguity": 67,
-    "Startup or founder experience": 58,
-    "Python": 44,
-    "LLMs": 55,
-    "TypeScript or JavaScript": 26,
-    "SQL": 11,
-    "AWS, GCP, or Azure": 28,
-    "Fine-tuning": 6,
-    "RAG": 14,
-    "Data engineering": 38,
-    "Executives": 48,
-    "Travel": 35,
-    "Security clearance": 3,
-    "Consulting": 41,
-    "Production": 71,
-    "Demos": 14
+    "Clear communication": 100,
+    "Feeding lessons back to product": 0,
+    "Customer-facing work": 0,
+    "Agents": 50,
+    "Comfort with ambiguity": 50,
+    "Startup or founder experience": 50,
+    "Python": 50,
+    "LLMs": 50,
+    "TypeScript or JavaScript": 0,
+    "SQL": 50,
+    "AWS, GCP, or Azure": 0,
+    "Fine-tuning": 0,
+    "RAG": 0,
+    "Data engineering": 50,
+    "Executives": 50,
+    "Travel": 0,
+    "Security clearance": 0,
+    "Consulting": 0,
+    "Production": 100,
+    "Demos": 0
    },
    "pay": {
-    "postings": 25,
-    "medianLowK": 180,
-    "medianHighK": 270
+    "postings": 0,
+    "medianLowK": null,
+    "medianHighK": null
    }
   }
  },
  "pay": {
-  "postings": 191,
-  "medianLowK": 150,
-  "medianHighK": 200
+  "postings": 683,
+  "medianLowK": 155,
+  "medianHighK": 224
  },
  "deploymentStrategist": {
-  "postings": 82,
+  "postings": 288,
   "byCompany": [
    [
     "Palantir",
     36
    ],
    [
+    "Wonderful",
+    26
+   ],
+   [
+    "Mistral AI",
+    21
+   ],
+   [
     "Databricks",
     10
    ],
    [
-    "ElevenLabs",
-    7
-   ],
-   [
-    "Clay",
-    6
-   ],
-   [
-    "Cursor",
-    3
+    "TRM Labs",
+    9
    ]
   ]
  },
  "entryLevel": {
-  "roles": 27,
+  "roles": 58,
   "byCompany": [
    [
     "Palantir",
     23
    ],
    [
-    "Coinbase",
-    1
+    "CrossCountry Consulting",
+    3
    ],
    [
-    "Cresta",
-    1
+    "C3 AI",
+    2
    ],
    [
-    "Legora",
-    1
+    "Composio",
+    2
    ],
    [
-    "Saronic",
-    1
+    "Netic",
+    2
    ]
   ]
  },
  "distinctRolesMentioning": {
-  "production": 233,
-  "demos": 96
+  "production": 943,
+  "demos": 303
  },
  "minimumYears": {
-  "rolesStating": 278,
-  "median": 5
+  "rolesStating": 985,
+  "median": 4
  },
  "travelShareStated": [
   [
    "50",
-   63
-  ],
-  [
-   "20",
-   21
+   119
   ],
   [
    "25",
-   21
+   49
   ],
   [
-   "75",
-   20
-  ],
-  [
-   "40",
-   11
+   "20",
+   40
   ],
   [
    "30",
-   10
+   39
+  ],
+  [
+   "40",
+   37
+  ],
+  [
+   "75",
+   23
+  ],
+  [
+   "70",
+   14
+  ],
+  [
+   "10",
+   13
+  ],
+  [
+   "60",
+   13
+  ],
+  [
+   "80",
+   8
   ],
   [
    "0",
-   2
+   3
   ],
   [
    "15",
    2
   ],
   [
-   "70",
-   1
+   "90",
+   2
   ],
   [
-   "90",
+   "35",
    1
   ]
  ],
  "locations": [
   [
    "New York",
-   139
+   368
   ],
   [
    "San Francisco",
-   91
-  ],
-  [
-   "London",
-   66
-  ],
-  [
-   "Washington",
-   58
+   311
   ],
   [
    "Remote",
-   51
+   210
   ],
   [
-   "Austin",
-   20
+   "London",
+   146
   ],
   [
-   "Seattle",
-   16
-  ],
-  [
-   "Tokyo",
-   15
-  ],
-  [
-   "Singapore",
-   13
-  ],
-  [
-   "Boston",
-   12
+   "Washington",
+   105
   ],
   [
    "Munich",
-   10
+   49
+  ],
+  [
+   "Seattle",
+   45
+  ],
+  [
+   "Singapore",
+   36
+  ],
+  [
+   "Austin",
+   35
   ],
   [
    "Paris",
-   10
+   27
+  ],
+  [
+   "Tokyo",
+   26
+  ],
+  [
+   "Boston",
+   25
   ],
   [
    "Toronto",
-   9
+   24
   ]
  ]
 }
