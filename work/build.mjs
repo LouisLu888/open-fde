@@ -3,6 +3,7 @@ import {sources, people, weeks, questions, cases} from './content.mjs';
 import {categories, readings, related, routes, fieldnotes, enrich} from './library.mjs';
 import {stories, enrichStories} from './stories.mjs';
 import explanations from './chapters.mjs';
+import {jobsBrief} from './jobs-brief.mjs';
 import {analyticsBlock} from './analytics/build-analytics.mjs';
 enrich(sources,people,weeks,questions,cases);
 enrichStories(sources,readings,weeks);
@@ -419,7 +420,7 @@ th{font:600 13px/1.4 var(--font-body);letter-spacing:0;text-transform:none;backg
 .readlist .how strong{font-weight:600;color:var(--fg-1)}
 .row .cited{font-size:14px;color:var(--muted);margin:4px 0 6px}
 .job-locations a{display:inline-block;padding:4px 0;min-height:24px}
-.updated{font-size:14px;color:var(--muted);margin:-8px 0 24px}.tab-page>.breadcrumbs,.tab-page h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.tab-page .updated{margin:12px 0 0}
+.updated{font-size:14px;color:var(--muted);margin:-8px 0 24px}.market-brief{max-width:760px;margin:8px 0 48px;padding-bottom:40px;border-bottom:1px solid var(--line)}.market-brief h2,.jobs-list-title{font:500 clamp(26px,3vw,32px)/1.2 var(--font-headline);color:var(--fg-1);margin:0 0 12px}.market-brief h3{font:500 21px/1.3 var(--font-headline);color:var(--fg-1);margin:32px 0 10px}.market-brief p,.market-brief li{font-size:16px;line-height:1.65;color:var(--fg-2)}.brief-lede{font-size:17px!important}.brief-list{padding-left:22px;margin:0}.brief-list li{margin:0 0 10px}.brief-list strong{color:var(--fg-1)}.brief-note{font-size:14px!important;color:var(--muted)!important;margin:0 0 8px}.brief-bars{list-style:none;padding:0;margin:0 0 16px;display:grid;gap:6px}.brief-bars li{display:grid;grid-template-columns:minmax(150px,240px) 1fr 44px;align-items:center;gap:12px;font-size:15px}.brief-bars .bar{height:8px;border-radius:4px;background:linear-gradient(90deg,var(--primary) var(--share),var(--surface-low) var(--share))}.brief-bars .share{text-align:right;font-variant-numeric:tabular-nums;color:var(--fg-1)}.brief-table{width:100%;border-collapse:collapse;font-size:14px}.brief-table th,.brief-table td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}.brief-table thead th{color:var(--muted);font-weight:500}.brief-table td:nth-child(2){font-variant-numeric:tabular-nums}.brief-method{font-size:13px!important;color:var(--muted)!important;margin-top:24px}.jobs-list-title{margin-bottom:16px}@media(max-width:560px){.brief-bars li{grid-template-columns:1fr 44px}.brief-bars .bar{grid-column:1/-1;order:3}}.tab-page>.breadcrumbs,.tab-page h1{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.tab-page .updated{margin:12px 0 0}
 </style>
 </head>
 <body>
@@ -455,6 +456,8 @@ ${questionRows}
 </section>
 <section id="jobs" class="panel">${heading('','Who is hiring now.',`${jobData.jobs.length} open postings at ${jobCompanies.length} companies, grouped by employer. Snapshot checked ${jobDate}.`)}
 <details class="note"><summary>How this list is built</summary><p>an automated pass over the public Greenhouse, Lever, and Ashby job boards of ${jobData.companiesProbed} AI, data, software, and defense companies, keeping titles that contain Forward Deployed, FDE, Deployment Strategist, Special Projects Engineer, or AI Deployment Engineer. Each link opens the employer’s own posting. Postings close without notice, titles vary by employer, and companies using other hiring systems (for example Workday) are not covered. A listing is not an endorsement, and this site is not affiliated with any employer.</p></details>
+${jobsBrief()}
+<h2 class="jobs-list-title">Open roles by company</h2>
 <div class="filterbar"><label class="search-label"><span class="sr-only">Search jobs</span><input type="search" data-search="jobs" placeholder="Search a company, title, or city…"></label><label><span class="sr-only">Filter by role family</span><select data-filter="jobs"><option value="">All role families</option>${jobFamilies.map(family=>`<option>${family}</option>`).join('')}</select></label><label><span class="sr-only">Filter by region</span><select id="jobsRegion"><option value="">All regions</option>${jobRegionList.map(region=>`<option>${region}</option>`).join('')}</select></label><span class="result-count" data-count="jobs" aria-live="polite"></span></div><p class="empty" data-empty="jobs" hidden>No matches. Try another search or clear the filters.</p>
 <div class="job-index" aria-label="Jump to a company">${jobCompanies.map((group,index)=>`${index===16?`<details class="more-chips"><summary>All ${jobCompanies.length} companies</summary>`:''}<button type="button" class="chip" data-job-company="${escape(group.company)}">${escape(group.company)} <span>${group.jobs.length}</span></button>`).join('')}${jobCompanies.length>16?'</details>':''}</div>
 <div class="job-grid">${jobCards}</div>
