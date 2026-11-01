@@ -23,7 +23,7 @@ Active only on `open-fde.ai` / `www.open-fde.ai`. Off for downloaded copies, loc
 | Chapter Viewed | Feature | chapter_number, chapter_title, part_title, entry_point | A visitor read a chapter of the Learn book: its title stayed fully on screen for 1.5 seconds. Fires at most once per chapter per page load. The preface is chapter 0. The core learning metric; use it for most-read chapters and how far readers get. |
 | Search Performed | Engagement | search_scope, search_term, result_count | A visitor searched, either the site-wide search in the header or the jobs search. Fires once typing pauses for 0.9 seconds. search_scope tells the two apart. Use result_count = 0 to find content gaps. |
 | Search Result Opened | Engagement | search_term, section, result_content_type, result_title, result_rank | A visitor opened a result from the site-wide search. Fires on click or Enter. Pair with Search Performed to measure search success. |
-| Filter Applied | Engagement | section, filter_name, filter_value | A visitor narrowed the jobs list by role family, region, or company. Fires when a filter value changes; "all" means a filter was cleared. |
+| Filter Applied | Engagement | section, filter_name, filter_value | A visitor narrowed the jobs list (role family, region, company) or the interview question bank (question type, company, evidence). Fires when a filter value changes; "all" means a filter was cleared. |
 | Content Expanded | Engagement | section, content_type, content_title | A visitor opened a collapsed detail: a resource's "How to use it", an interview response guide, story notes, a case's approach and result, a source note, or the full company list. Fires on open only. Shows which items people go deeper on. |
 | Outbound Link Clicked | Engagement | section, content_type, content_title, link_text, destination_host | A visitor followed a link to another site: a book, article, podcast, talk, person's profile, case source, company jobs page, or GitHub. Does not fire for individual job postings (see Job Posting Clicked). |
 | Job Posting Clicked | Feature | company, job_title, role_family, job_location, destination_host | A visitor opened a specific job posting on the employer's site from the Open jobs tab. The site's main conversion. Use it with Filter Applied to see which filters lead to applications. |
@@ -33,7 +33,7 @@ Active only on `open-fde.ai` / `www.open-fde.ai`. Off for downloaded copies, loc
 | Property | Type | Description |
 | --- | --- | --- |
 | section | string | Top-level page the action happened on. Values: start, learn, resources, interview, jobs, stories, stats, header. |
-| tab | string | Tab id within a page. Examples: res-people, res-books, res-articles, res-podcasts, res-videos, questions, q-employer, q-practice, story-list, cases. |
+| tab | string | Tab id within a page. Examples: res-people, res-books, res-articles, res-podcasts, res-videos, interview-overview, interview-companies, interview-bank, q-practice, story-list, cases. |
 | chapter_number | number | Chapter number in the Learn book. 0 is the preface; 1–12 follow the delivery phases; 13–20 are advanced fieldcraft. |
 | chapter_title | string | Chapter title as shown. Example: Build a thin vertical slice. |
 | part_title | string | Book part the chapter belongs to. Examples: Discover, Build, Advanced fieldcraft, Preface. |
@@ -44,7 +44,7 @@ Active only on `open-fde.ai` / `www.open-fde.ai`. Off for downloaded copies, loc
 | result_content_type | string | Kind of item opened from search. Examples: chapter, part, person, book, article, podcast, interview question, story, case study, hiring company. |
 | result_title | string | Title of the opened search result. |
 | result_rank | number | 1-based position of the opened result in the search list. |
-| filter_name | string | Which jobs filter changed. Values: role_family, region, company. |
+| filter_name | string | Which filter changed. Jobs: role_family, region, company. Interview bank: role_family (question type select), company, evidence. |
 | filter_value | string | New filter value; "all" when cleared. Examples: Engineering, Europe & UK, Databricks. |
 | content_type | string | Kind of item acted on. Examples: book, article, podcast, video, person, interview question, story, case study, chapter, note, job_board, company_list, page_link. |
 | content_title | string | Title of the item acted on, max 120 characters. |

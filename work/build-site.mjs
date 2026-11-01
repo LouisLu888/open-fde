@@ -28,6 +28,7 @@ const spa=readFileSync(new URL('outputs/FDE_SPE_Field_Academy.html',root),'utf8'
 const indexNowKey=readFileSync(new URL('work/indexnow-key.txt',root),'utf8').trim();
 
 // Pages cut from the single-page build. Chapter pages are added from the book's contents.
+const interviewCompanies=JSON.parse(readFileSync(new URL('docs/INTERVIEWS.json',root),'utf8')).companies.filter(company=>company.questions.length>=5);
 const pages=[
  {path:'/',panel:'start',type:'home',title:'FDE Academy: free guide for forward deployed engineers',description:'Learn forward deployed engineering free: a 20-chapter guide, sourced books and podcasts, FDE interview questions, open FDE jobs, and firsthand stories.'},
  {path:'/what-is-a-forward-deployed-engineer/',panel:'what-is-fde',type:'answer',crumb:'What is an FDE?',title:'What is a forward deployed engineer (FDE)? | FDE Academy',description:'A forward deployed engineer works with customers to make a product deliver real outcomes in their systems. What FDEs do, where the role came from, who hires.'},
@@ -38,8 +39,10 @@ const pages=[
  {path:'/resources/articles/',panel:'resources',group:'res-articles',type:'collection',crumb:'Articles',parents:[['Resources','/resources/people/']],h1:'Articles and guides for forward deployed engineers',title:'Articles and guides for forward deployed engineers',description:'Hand-picked articles, papers, and documentation for forward deployed engineers, grouped by skill area, each with a reading plan and its limits.'},
  {path:'/resources/podcasts/',panel:'resources',group:'res-podcasts',type:'collection',crumb:'Podcasts',parents:[['Resources','/resources/people/']],h1:'Podcasts about forward deployed engineering',title:'Forward deployed engineer podcasts | FDE Academy',description:'Podcast episodes about forward deployed engineering from Lenny’s Podcast, YC Lightcone, Forward Deployed, and more, with what to listen for in each.'},
  {path:'/resources/videos/',panel:'resources',group:'res-videos',type:'collection',crumb:'Videos',parents:[['Resources','/resources/people/']],h1:'Talks and videos on forward deployed engineering',title:'Forward deployed engineering talks and videos',description:'Conference talks and videos on how companies such as Ramp and Cognition run forward deployed engineering, with notes on what each covers.'},
- {path:'/interview/',panel:'interview',group:'questions',type:'collection',crumb:'Interview questions',h1:'Forward deployed engineer interview questions',title:'Forward deployed engineer interview questions',description:'FDE interview questions paraphrased from first-person Palantir FDSE candidate reports, each with its source, a response guide, and likely follow-ups.'},
- {path:'/interview/employer-formats/',panel:'interview',group:'q-employer',type:'collection',crumb:'Employer formats',parents:[['Interview','/interview/']],h1:'FDE interview formats published by employers',title:'FDE interview formats published by employers',description:'Interview formats that employers such as Sierra published themselves, turned into practice questions with a response guide and follow-ups.'},
+ {path:'/interview/',panel:'interview',group:'interview-overview',type:'collection',crumb:'Interview',h1:'Forward deployed engineer interviews',title:'Forward deployed engineer interview guide',description:'How FDE interviews work at Palantir, OpenAI, Anthropic, Databricks, Sierra, and more: the shared loop, AI-tool policies, and how to read the evidence.'},
+ {path:'/interview/companies/',panel:'interview',group:'interview-companies',type:'collection',indexOnly:true,crumb:'Companies',parents:[['Interview','/interview/']],h1:'FDE interview guides by company',title:'FDE interview guides by company | FDE Academy',description:'Interview processes for forward deployed roles at more than 20 companies: stages in order, what each assesses, reported questions, and sources.'},
+ ...interviewCompanies.map(company=>({path:`/interview/${company.slug}/`,panel:'interview',group:'interview-companies',only:company.slug+'-interview',type:'collection',crumb:company.company,parents:[['Interview','/interview/'],['Companies','/interview/companies/']],h1:`${company.company} forward deployed engineer interview`,title:`${company.company} forward deployed engineer interview`,description:`${company.company} FDE interview: ${company.process.length} stages and ${company.questions.length} reported questions from ${company.sources.length} public sources, with what each round assesses.`})),
+ {path:'/interview/questions/',panel:'interview',group:'interview-bank',type:'collection',crumb:'Question bank',parents:[['Interview','/interview/']],h1:'Forward deployed engineer interview questions',title:'Forward deployed engineer interview questions',description:'Every reported FDE interview question in one bank, filterable by company, round type, and evidence, each with its source and the year it was reported.'},
  {path:'/interview/practice/',panel:'interview',group:'q-practice',type:'collection',crumb:'Practice questions',parents:[['Interview','/interview/']],h1:'FDE practice interview questions from real cases',title:'FDE practice interview questions from real cases',description:'Original FDE practice questions built from documented deployments and architecture, plus one operations scenario. Not reported employer questions.'},
  {path:'/jobs/',panel:'jobs',type:'jobs',crumb:'Jobs',h1:'Forward deployed engineer jobs',title:'Forward deployed engineer jobs by company | FDE Academy',description:'Open forward deployed engineer roles grouped by company from public job boards, each linking to the employer’s own posting. Filter by role and region.'},
  {path:'/stories/',panel:'stories',group:'story-list',type:'collection',crumb:'Stories',h1:'Forward deployed engineer stories',title:'Forward deployed engineer stories | FDE Academy',description:'Firsthand accounts from forward deployed engineers: career changes, life in the field, building FDE teams, and what comes after, with lessons and limits.'},
@@ -47,7 +50,7 @@ const pages=[
  {path:'/about/',panel:'about',type:'about',crumb:'About',title:'About FDE Academy: how the guide is made',description:'How FDE Academy chooses and checks its sources, how the jobs snapshot works, how to send corrections, and what the site does with analytics.'},
 ];
 // Ids that are whole pages. Everything else is reached as page#id.
-const pageIds={start:'/',learn:'/learn/','what-is-fde':'/what-is-a-forward-deployed-engineer/','fde-vs-spe':'/fde-vs-spe/',about:'/about/',resources:'/resources/people/','res-people':'/resources/people/','res-books':'/resources/books/','res-articles':'/resources/articles/','res-podcasts':'/resources/podcasts/','res-videos':'/resources/videos/',interview:'/interview/',questions:'/interview/','q-employer':'/interview/employer-formats/','q-practice':'/interview/practice/',jobs:'/jobs/',stories:'/stories/','story-list':'/stories/',cases:'/case-studies/',stats:'/stats/'};
+const pageIds={start:'/',learn:'/learn/','what-is-fde':'/what-is-a-forward-deployed-engineer/','fde-vs-spe':'/fde-vs-spe/',about:'/about/',resources:'/resources/people/','res-people':'/resources/people/','res-books':'/resources/books/','res-articles':'/resources/articles/','res-podcasts':'/resources/podcasts/','res-videos':'/resources/videos/',interview:'/interview/','interview-overview':'/interview/','interview-companies':'/interview/companies/','interview-bank':'/interview/questions/',questions:'/interview/questions/','q-employer':'/interview/companies/','q-practice':'/interview/practice/',jobs:'/jobs/',stories:'/stories/','story-list':'/stories/',cases:'/case-studies/',stats:'/stats/'};
 
 const browser=await chromium.launch({headless:true});
 const page=await browser.newPage();
@@ -76,6 +79,8 @@ const built=await page.evaluate(({spa,pages,pageIds,origin,today})=>{
   if(spec.group){
    panel.querySelectorAll(':scope>.group').forEach(group=>{if(group.id!==spec.group)group.remove();else group.removeAttribute('hidden');});
    panel.querySelectorAll('[role=tab]').forEach(tab=>tab.setAttribute('aria-selected',String(tab.dataset.tab===spec.group)));
+   if(spec.indexOnly)panel.querySelectorAll('[data-company-guide][data-rich]').forEach(guide=>guide.remove());
+   if(spec.only){panel.querySelectorAll('[data-company-guide]').forEach(guide=>{if(guide.id!==spec.only)guide.remove();});panel.querySelectorAll('.guide-index,.thin-title,.group-intro').forEach(element=>element.remove());}
   }
   const book=panel.querySelector('.book');
   if(spec.learn==='index'&&book)[...book.children].forEach(child=>{if(child.id!=='preface')child.remove();});
@@ -228,7 +233,7 @@ writeFileSync(new URL('404.html',site),built.notFound);
 writeFileSync(new URL('search-index.json',site),JSON.stringify(built.index));
 copyFileSync(new URL('outputs/og.png',root),new URL('og.png',site));
 writeFileSync(new URL(`${indexNowKey}.txt`,site),indexNowKey);
-writeFileSync(new URL('_redirects',site),'/FDE_SPE_Field_Academy.html / 301\n');
+writeFileSync(new URL('_redirects',site),'/FDE_SPE_Field_Academy.html / 301\n/interview/employer-formats/ /interview/companies/ 301\n');
 
 const aiAgents=['GPTBot','OAI-SearchBot','ChatGPT-User','ClaudeBot','Claude-User','Claude-SearchBot','PerplexityBot','Perplexity-User','Google-Extended','Applebot-Extended','CCBot','Bingbot','DuckAssistBot'];
 writeFileSync(new URL('robots.txt',site),'# Search engines and AI assistants are welcome to read and cite this guide.\nUser-agent: *\nAllow: /\n\n'+aiAgents.map(agent=>`User-agent: ${agent}\nAllow: /`).join('\n\n')+`\n\nSitemap: ${origin}/sitemap.xml\n`);
@@ -252,7 +257,7 @@ ${built.chapters.map(chapter=>`- [Chapter ${chapter.number}: ${chapter.title}]($
 ${['/resources/people/','/resources/books/','/resources/articles/','/resources/podcasts/','/resources/videos/'].map(line).join('\n')}
 
 ## Interview and jobs
-${['/interview/','/interview/employer-formats/','/interview/practice/','/jobs/'].map(line).join('\n')}
+${['/interview/','/interview/companies/','/interview/questions/','/interview/practice/',...interviewCompanies.map(company=>`/interview/${company.slug}/`),'/jobs/'].map(line).join('\n')}
 
 ## Stories and case studies
 ${['/stories/','/case-studies/'].map(line).join('\n')}

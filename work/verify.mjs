@@ -51,7 +51,7 @@ assert.match(await page.locator('#ch-14 h3').textContent(),/Permission revocatio
 assert(await page.locator('#ch-14').evaluate(element=>{const box=element.getBoundingClientRect();return box.top>=0&&box.top<innerHeight;}),'TOC link scrolls to the chapter');
 
 // Old links forward to the new sections.
-for(const [hash,visible] of [['roadmap','#learn'],['week-2','#ch-2'],['fieldcraft','#part-7'],['library','#resources'],['people','#res-people'],['interviews','#questions'],['cases','#cases']]){
+for(const [hash,visible] of [['roadmap','#learn'],['week-2','#ch-2'],['fieldcraft','#part-7'],['library','#resources'],['people','#res-people'],['interviews','#interview-bank'],['cases','#cases']]){
  await page.goto(outputPath.href+'#'+hash);
  await page.locator(visible).waitFor({state:'visible'});
 }
@@ -83,14 +83,20 @@ assert(await page.locator('#reading-zanzibar details').getAttribute('open')!==nu
 
 // Interview and stories.
 await page.locator('.nav a[href="#interview"]').click();
-await page.locator('#questions').waitFor({state:'visible'});
-assert.equal(await page.locator('#interview .row').count(),questions.length,'Every question is in one source tab');
-assert.deepEqual(await page.locator('#interview [role=tab]').allTextContents(),['Candidate reports','Employer formats','Practice questions']);
-assert.equal(await page.locator('#questions .row').count(),6,'Candidate reports are Q01-Q06');
-assert(await page.locator('#questions').isVisible()&&await page.locator('#q-practice').isHidden(),'Candidate reports tab is the default');
-await page.locator('[role=tab][href="#q-employer"]').click();
-await page.locator('#q-employer').waitFor({state:'visible'});
-assert.deepEqual(await page.locator('#q-employer .eyebrow').evaluateAll(rows=>rows.map(row=>row.textContent.slice(0,3))),['Q07','Q08']);
+await page.locator('[role=tab][href="#interview-overview"]').click();
+await page.locator('#interview-overview').waitFor({state:'visible'});
+const interviewData=JSON.parse(readFileSync(new URL('../docs/INTERVIEWS.json',import.meta.url),'utf8'));
+const reportedQuestions=interviewData.companies.reduce((sum,company)=>sum+company.questions.length,0);
+assert.deepEqual(await page.locator('#interview [role=tab]').allTextContents(),['Overview','Companies','Question bank','Practice']);
+assert(await page.locator('#interview-overview').isVisible()&&await page.locator('#interview-bank').isHidden(),'Overview tab shows only the overview');
+assert.equal(await page.locator('#interview-bank .q-item').count(),reportedQuestions,'Every reported question is in the bank');
+assert.equal(await page.locator('#q-practice .row').count(),questions.filter(question=>question.id>='Q09').length,'Practice keeps the original questions');
+for(const company of interviewData.companies)for(const item of [...company.process,...company.questions,...company.tips])for(const id of String(item.source).split(/\s+/))assert(company.sources.some(source=>source.id===id),'Source '+id+' exists for '+company.company);
+await page.locator('[role=tab][href="#interview-bank"]').click();
+await page.locator('#interview-bank').waitFor({state:'visible'});
+await page.locator('[data-extra-filter="questions"][data-field="company"]').selectOption('databricks');
+assert.equal(await page.locator('#interview-bank .q-item:not([hidden])').count(),interviewData.companies.find(company=>company.slug==='databricks').questions.length,'Company filter narrows the bank');
+await page.locator('[data-extra-filter="questions"][data-field="company"]').selectOption('');
 await page.locator('.nav a[href="#jobs"]').click();
 await page.locator('#jobs').waitFor({state:'visible'});
 assert(await page.locator('#interview').isHidden(),'Jobs is its own section');
