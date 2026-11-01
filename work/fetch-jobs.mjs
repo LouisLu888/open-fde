@@ -1,8 +1,8 @@
-import {writeFileSync} from 'node:fs';
+import {readFileSync, writeFileSync} from 'node:fs';
 
 // Collects open FDE-family postings from public ATS job-board APIs (Greenhouse, Lever, Ashby).
 // Each company is probed on every ATS by slug; only boards that respond are kept.
-// Usage: node work/fetch-jobs.mjs [--discover]  (--discover prints which slugs resolved)
+// Usage: node work/fetch-jobs.mjs [--discover] [--force]  (--discover prints which slugs resolved; --force writes even after a large drop)
 export const ROLE=/forward[\s-]*deploy|\bFDE\b|\bFDSE\b|special projects engineer|deployment strategist|ai deployment engineer/i;
 
 export const companies=[
@@ -62,8 +62,11 @@ export async function collect(){
 
 if(import.meta.url==='file://'+process.argv[1]){
  const {boards,jobs}=await collect();
+ // A board outage or rate limit can drop most postings at once; keep the last snapshot instead.
+ const previous=JSON.parse(readFileSync(new URL('../docs/JOBS.json',import.meta.url),'utf8')).jobs.length;
+ if(jobs.length<previous*0.6&&!process.argv.includes('--force')){console.error(`Only ${jobs.length} postings found, down from ${previous}. Snapshot not written; rerun with --force if the drop is real.`);process.exit(1);}
  const checkedAt=new Date().toISOString();
- jobs.sort((a,b)=>a.company.localeCompare(b.company)||a.title.localeCompare(b.title)||a.location.localeCompare(b.location));
+ jobs.sort((a,b)=>a.company.localeCompare(b.company)||a.title.localeCompare(b.title)||a.location.localeCompare(b.location)||a.url.localeCompare(b.url));
  writeFileSync(new URL('../docs/JOBS.json',import.meta.url),JSON.stringify({checkedAt,method:'Public Greenhouse, Lever, and Ashby job-board APIs; titles matched '+ROLE.source,boardsChecked:boards.length,companiesProbed:new Set(companies.map(([name])=>name)).size,jobs},null,1)+'\n');
  if(process.argv.includes('--discover'))console.log(boards.map(board=>board.company+' '+board.ats+':'+board.slug+' ('+board.openings+')').join('\n'));
  const byCompany={};for(const job of jobs)byCompany[job.company]=(byCompany[job.company]||0)+1;

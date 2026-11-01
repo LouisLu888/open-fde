@@ -13,14 +13,15 @@
     "verify:package": "node work/check-package.mjs",
     "refresh:research": "node work/export-research.mjs",
     "build:site": "node work/build.mjs && node work/build-site.mjs",
-    "deploy": "npm run build:site && wrangler deploy",
+    "deploy": "npm run refresh:jobs && npm run build:site && wrangler deploy",
     "build:og": "node work/og-image.mjs",
     "refresh:jobs": "node work/fetch-jobs.mjs",
     "test:analytics": "node work/verify-analytics.mjs",
     "analytics:register": "node work/analytics/register-events.mjs",
     "test:site": "node work/build-site.mjs && node work/verify-site.mjs",
     "seo:indexnow": "node work/indexnow.mjs",
-    "seo:crawl": "node work/seo-crawl.mjs"
+    "seo:crawl": "node work/seo-crawl.mjs",
+    "check:links": "node work/build.mjs && node work/check-links.mjs"
   },
   "devDependencies": {
     "esbuild": "^0.25.12",

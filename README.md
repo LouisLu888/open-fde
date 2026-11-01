@@ -9,8 +9,17 @@ The whole site is one self-contained HTML file generated from the modules in `wo
 ```sh
 node work/build.mjs     # regenerate outputs/FDE_SPE_Field_Academy.html
 npm ci && npx playwright install chromium && npm test   # browser verification
-npm run deploy          # build + publish to Cloudflare
+npm run deploy          # refresh jobs, build, publish to Cloudflare
+npm run check:links     # report broken external links in work/link-report.md
 ```
+
+## Automatic updates
+
+`.github/workflows/refresh.yml` rebuilds and deploys the site every day, on every merge to `main`, and on demand: it refreshes the jobs snapshot, runs all three test suites, deploys only if a page changed, and tells IndexNow which pages changed. A page's "Updated" date and sitemap `lastmod` move only when its content changes (hashes are published at `/page-dates.json`). Each day's jobs snapshot is committed to the `jobs-history` branch, with `counts.csv` for trends.
+
+`.github/workflows/links.yml` checks every external link on Mondays and keeps one `broken-links` issue open while any link is dead.
+
+Setup, once: repository secret `CLOUDFLARE_API_TOKEN` (Cloudflare "Edit Cloudflare Workers" template), repository variables `CLOUDFLARE_ACCOUNT_ID` and `AMPLITUDE_API_KEY`.
 
 ## Contributing
 

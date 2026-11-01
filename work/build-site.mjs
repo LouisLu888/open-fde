@@ -1,5 +1,6 @@
 import {chromium} from 'playwright';
 import {copyFileSync, mkdirSync, readFileSync, rmSync, writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
 
 // Assemble the static site served at https://open-fde.ai.
 // The single-page build (outputs/FDE_SPE_Field_Academy.html) is split into one crawlable page per
@@ -9,6 +10,20 @@ const root=new URL('../',import.meta.url);
 const site=new URL('site/',root);
 const origin='https://open-fde.ai';
 const today=new Date().toISOString().slice(0,10);
+// A page's "Updated" date, dateModified, and sitemap lastmod change only when its content does.
+// The live site publishes /page-dates.json (content hash and date per page); a page whose hash
+// matches keeps its published date. The jobs snapshot date is left out of the hash.
+const datesUrl=process.env.PAGE_DATES_URL||origin+'/page-dates.json';
+const publishedDates=await fetch(datesUrl,{signal:AbortSignal.timeout(15000)}).then(response=>{
+ if(response.status===404)return {};
+ if(!response.ok)throw Error('HTTP '+response.status);
+ return response.json();
+}).catch(error=>{
+ if(process.env.CI)throw Error('Cannot read published page dates from '+datesUrl+': '+error.message);
+ console.warn('Published page dates unavailable ('+error.message+'); every page is dated today.');
+ return {};
+});
+const jobDate=new Date(JSON.parse(readFileSync(new URL('docs/JOBS.json',root),'utf8')).checkedAt).toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric',timeZone:'UTC'});
 const spa=readFileSync(new URL('outputs/FDE_SPE_Field_Academy.html',root),'utf8');
 const indexNowKey=readFileSync(new URL('work/indexnow-key.txt',root),'utf8').trim();
 
@@ -84,8 +99,9 @@ const built=await page.evaluate(({spa,pages,pageIds,origin,today})=>{
   if(spec.type!=='chapter'&&!panel.querySelector('h2')&&panel.querySelector('h3')){
    panel.querySelectorAll('h3,h4').forEach(old=>{const next=doc.createElement('h'+(Number(old.tagName[1])-1));[...old.attributes].forEach(attribute=>next.setAttribute(attribute.name,attribute.value));next.innerHTML=old.innerHTML;old.replaceWith(next);});
   }
+  spec.fingerprint=[spec.title,spec.description,panel.innerHTML].join('\n');
   if(spec.type!=='home'){
-   const updated=doc.createElement('p');updated.className='updated';updated.innerHTML=`Updated <time datetime="${today}">${new Date(today+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'})}</time>`;
+   const updated=doc.createElement('p');updated.className='updated';updated.innerHTML='Updated <time datetime="__MODIFIED__">__MODIFIED_TEXT__</time>';
    panel.querySelector('h1').after(updated);
    const crumbs=[['Home','/'],...(spec.parents||[]),[spec.crumb,null]];
    const nav=doc.createElement('nav');nav.className='breadcrumbs';nav.setAttribute('aria-label','Breadcrumb');
@@ -105,7 +121,7 @@ const built=await page.evaluate(({spa,pages,pageIds,origin,today})=>{
  const rowLink=(row,path)=>{const external=row.querySelector('h3 a[href^="http"]');return external?external.href:origin+path+'#'+row.id;};
  const schema=(spec,panel,url)=>{
   const graph=[org];
-  const page={'@id':url,url,name:spec.title,description:spec.description,inLanguage:'en',isPartOf:{'@id':origin+'/#website'},dateModified:today};
+  const page={'@id':url,url,name:spec.title,description:spec.description,inLanguage:'en',isPartOf:{'@id':origin+'/#website'},dateModified:'__MODIFIED__'};
   if(spec.type==='home'){
    graph.push({'@type':'WebSite','@id':origin+'/#website',name:'FDE Academy',url:origin+'/',description:spec.description,publisher:{'@id':origin+'/#org'},inLanguage:'en'});
    graph.push({'@type':'FAQPage',...page,mainEntity:[...panel.querySelectorAll('.faq-item')].map(item=>({'@type':'Question',name:text(item.querySelector('summary')),acceptedAnswer:{'@type':'Answer',text:text(item.querySelector('p'))}}))});
@@ -152,7 +168,7 @@ const built=await page.evaluate(({spa,pages,pageIds,origin,today})=>{
   doc.head.append(ld);
   return '<!doctype html>\n'+doc.documentElement.outerHTML;
  };
- const output=docs.map(entry=>({path:entry.spec.path,html:finish(entry),heading:text(entry.panel.querySelector('h1')),eyebrow:entry.spec.type==='chapter'?`Chapter ${entry.spec.chapter.number} · ${entry.spec.chapter.part}`:(entry.spec.crumbs||[]).slice(1,-1).map(([name])=>name).concat(entry.spec.crumb?[entry.spec.crumb]:[]).join(' · '),image:(entry.spec.path==='/'?'home':entry.spec.path.replace(/^\/|\/$/g,'').replace(/\//g,'-'))+'.png',title:entry.spec.title,description:entry.spec.description,text:(()=>{const clone=entry.panel.cloneNode(true);clone.querySelectorAll('script,style,.tabs,.breadcrumbs,.filterbar,.job-index,svg').forEach(element=>element.remove());clone.querySelectorAll('p,li,h1,h2,h3,h4,tr,dt,dd,summary,article').forEach(element=>element.append('\n'));return clone.textContent.replace(/↗/g,'').replace(/[ \t]+/g,' ').replace(/\n\s*\n+/g,'\n\n').trim();})()}));
+ const output=docs.map(entry=>({path:entry.spec.path,html:finish(entry),fingerprint:entry.spec.fingerprint,heading:text(entry.panel.querySelector('h1')),eyebrow:entry.spec.type==='chapter'?`Chapter ${entry.spec.chapter.number} · ${entry.spec.chapter.part}`:(entry.spec.crumbs||[]).slice(1,-1).map(([name])=>name).concat(entry.spec.crumb?[entry.spec.crumb]:[]).join(' · '),image:(entry.spec.path==='/'?'home':entry.spec.path.replace(/^\/|\/$/g,'').replace(/\//g,'-'))+'.png',title:entry.spec.title,description:entry.spec.description,text:(()=>{const clone=entry.panel.cloneNode(true);clone.querySelectorAll('script,style,.tabs,.breadcrumbs,.filterbar,.job-index,svg').forEach(element=>element.remove());clone.querySelectorAll('p,li,h1,h2,h3,h4,tr,dt,dd,summary,article').forEach(element=>element.append('\n'));return clone.textContent.replace(/↗/g,'').replace(/[ \t]+/g,' ').replace(/\n\s*\n+/g,'\n\n').trim();})()}));
 
  // 404: the home shell with a short message.
  const notFound=parse();
@@ -185,7 +201,6 @@ mkdirSync(site,{recursive:true});
 mkdirSync(new URL('og/',site),{recursive:true});
 for(const [name,png] of Object.entries(cards))writeFileSync(new URL('og/'+name,site),png);
 // Shared CSS and page script are identical on every page; serve them once as cacheable files.
-const {createHash}=await import('node:crypto');
 const sharedStyle=built.output[0].html.match(/<style>([\s\S]*?)<\/style>/)[1];
 const sharedScript=built.output[0].html.match(/<script>(const cleanPage|const checkTypes|[\s\S]*?function navigate[\s\S]*?)<\/script>/)[1];
 const hash=value=>createHash('sha256').update(value).digest('hex').slice(0,10);
@@ -193,7 +208,13 @@ const cssName=`/assets/site.${hash(sharedStyle)}.css`,jsName=`/assets/site.${has
 mkdirSync(new URL('assets/',site),{recursive:true});
 writeFileSync(new URL('.'+cssName,site),sharedStyle);writeFileSync(new URL('.'+jsName,site),sharedScript);
 const externalize=html=>{const out=html.replace('<style>'+sharedStyle+'</style>',`<link rel="stylesheet" href="${cssName}">`).replace('<script>'+sharedScript+'</script>',`<script src="${jsName}"></script>`);if(out.includes(sharedScript))throw new Error('Shared script not externalized');return out;};
-for(const entry of built.output)entry.html=externalize(entry.html);
+for(const entry of built.output){
+ entry.hash=createHash('sha256').update(entry.fingerprint.replaceAll(jobDate,'')).digest('hex').slice(0,16);
+ entry.date=publishedDates[entry.path]?.hash===entry.hash?publishedDates[entry.path].date:today;
+ const label=new Date(entry.date+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});
+ entry.html=externalize(entry.html).replaceAll('__MODIFIED_TEXT__',label).replaceAll('__MODIFIED__',entry.date);
+ if(entry.html.includes('__MODIFIED'))throw new Error('Date placeholder left on '+entry.path);
+}
 built.notFound=built.notFound.replace('<style>'+sharedStyle+'</style>',`<link rel="stylesheet" href="${cssName}">`).replace('<script>'+sharedScript+'</script>',`<script src="${jsName}"></script>`);
 for(const {path,html} of built.output){
  const dir=new URL('.'+path,site);
@@ -208,7 +229,8 @@ writeFileSync(new URL('_redirects',site),'/FDE_SPE_Field_Academy.html / 301\n');
 
 const aiAgents=['GPTBot','OAI-SearchBot','ChatGPT-User','ClaudeBot','Claude-User','Claude-SearchBot','PerplexityBot','Perplexity-User','Google-Extended','Applebot-Extended','CCBot','Bingbot','DuckAssistBot'];
 writeFileSync(new URL('robots.txt',site),'# Search engines and AI assistants are welcome to read and cite this guide.\nUser-agent: *\nAllow: /\n\n'+aiAgents.map(agent=>`User-agent: ${agent}\nAllow: /`).join('\n\n')+`\n\nSitemap: ${origin}/sitemap.xml\n`);
-writeFileSync(new URL('sitemap.xml',site),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+built.output.map(({path})=>`<url><loc>${origin}${path}</loc><lastmod>${today}</lastmod></url>`).join('\n')+'\n</urlset>\n');
+writeFileSync(new URL('page-dates.json',site),JSON.stringify(Object.fromEntries(built.output.map(({path,hash,date})=>[path,{hash,date}])),null,1)+'\n');
+writeFileSync(new URL('sitemap.xml',site),'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+built.output.map(({path,date})=>`<url><loc>${origin}${path}</loc><lastmod>${date}</lastmod></url>`).join('\n')+'\n</urlset>\n');
 
 const byPath=Object.fromEntries(built.output.map(entry=>[entry.path,entry]));
 const line=path=>`- [${byPath[path].title.replace(/ \| FDE Academy$/,'')}](${origin}${path}): ${byPath[path].description}`;
@@ -238,4 +260,4 @@ ${['/stories/','/case-studies/'].map(line).join('\n')}
 `;
 writeFileSync(new URL('llms.txt',site),llms);
 writeFileSync(new URL('llms-full.txt',site),`# FDE Academy: full text\n\nGenerated ${today} from ${origin}. Each page below starts with its URL.\n\n`+built.output.map(({path,title,text})=>`---\n\n# ${title}\nURL: ${origin}${path}\n\n${text}\n`).join('\n'));
-console.log(`Site assembled in site/: ${built.output.length} pages, ${built.index.length} search entries.`);
+console.log(`Site assembled in site/: ${built.output.length} pages (${built.output.filter(entry=>entry.date===today).length} dated today), ${built.index.length} search entries.`);

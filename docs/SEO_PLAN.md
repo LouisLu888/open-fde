@@ -126,7 +126,7 @@ Status 2026-10-31: every Phase 1 `[me]` item is done and live (34 pages, `npm ru
 - [ ] [me] Per-page Open Graph images (chapter title cards)
 - [x] [me] Split the 485 KB single page so each URL ships only its content
 - [ ] [me] Internal links from resources back to the chapters that cite them
-- [ ] [me] Monthly job snapshot refresh with visible "updated" date (`npm run refresh:jobs`)
+- [x] [me] Daily job snapshot refresh with visible "updated" date (`.github/workflows/refresh.yml`; dates follow content hashes)
 - [ ] [you] Launch posts: Hacker News (Show HN), r/cscareerquestions, r/ExperiencedDevs, LinkedIn, X; link the most specific page per community
 - [ ] [you] Ask to be listed: amitshekhariitbhu roadmap, pierpaolo28/Awesome-FDE-Roadmap, roadmap.sh resources (PRs or issues from your GitHub)
 - [ ] [you] Tell the podcast hosts and authors featured (Forward Deployed, Lenny's, Lightcone) that they are cited; some will share
@@ -144,7 +144,7 @@ Status 2026-10-31: every Phase 1 `[me]` item is done and live (34 pages, `npm ru
 
 - [ ] [you] Original data: yearly "State of FDE hiring" report from the job snapshots (we have the data; you publish and pitch it)
 - [ ] [you] Talks or podcast appearances that link back
-- [ ] [me] Keep `dateModified` and sources current; prune dead links monthly
+- [ ] [me] Keep `dateModified` and sources current; prune dead links (weekly check in `.github/workflows/links.yml` opens an issue)
 
 ## Audit 2026-10-31
 

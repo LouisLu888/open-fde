@@ -1,0 +1,45 @@
+# Weekly check of every external link in the guide. Opens or updates one issue labelled
+# broken-links when a link returns 404/410 or its host is unreachable; closes it when all pass.
+name: Check links
+
+on:
+  schedule:
+    - cron: '41 14 * * 1'  # Mondays 14:41 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - id: check
+        run: |
+          npm run check:links | tail -1 | tee summary.json
+          echo "broken=$(node -e "console.log(require('./summary.json').broken)")" >> "$GITHUB_OUTPUT"
+
+      - name: Open, update, or close the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BROKEN: ${{ steps.check.outputs.broken }}
+        run: |
+          gh label create broken-links --color d93f0b --description 'Found by the weekly link check' --force
+          issue=$(gh issue list --label broken-links --state open --json number --jq '.[0].number')
+          if [ "$BROKEN" != "0" ]; then
+            if [ -n "$issue" ]; then gh issue edit "$issue" --body-file work/link-report.md
+            else gh issue create --title 'Broken links in the guide' --label broken-links --body-file work/link-report.md; fi
+          elif [ -n "$issue" ]; then
+            gh issue close "$issue" --comment 'All links pass the weekly check.'
+          fi

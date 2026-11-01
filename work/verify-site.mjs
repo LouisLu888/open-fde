@@ -85,4 +85,6 @@ await browser.close();server.close();
 const llms=readFileSync(new URL('llms.txt',site),'utf8');
 assert(llms.includes('/learn/build-a-thin-vertical-slice/')&&llms.includes('## Interview and jobs'));
 assert(readFileSync(new URL('robots.txt',site),'utf8').includes('User-agent: GPTBot'));
+const pageDates=JSON.parse(readFileSync(new URL('page-dates.json',site),'utf8'));
+assert(paths.every(path=>/^\d{4}-\d{2}-\d{2}$/.test(pageDates[path]?.date)&&sitemap.includes(`<loc>https://open-fde.ai${path}</loc><lastmod>${pageDates[path].date}</lastmod>`)),'Every page has a content date that matches the sitemap');
 console.log(JSON.stringify({site:'ok',pages:paths.length,internalLinks:internal.size},null,1));

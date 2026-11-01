@@ -1,0 +1,92 @@
+# Builds, tests, and deploys open-fde.ai with a fresh jobs snapshot.
+# Runs every day, on every push to main, and on demand. A page's "Updated" date changes only when
+# its content does (see work/build-site.mjs). Each run's snapshot is committed to the jobs-history
+# branch, so the hiring trend can be rebuilt from git history.
+#
+# Setup (repository settings):
+#   Secret   CLOUDFLARE_API_TOKEN   token with the "Edit Cloudflare Workers" template, this account only
+#   Variable CLOUDFLARE_ACCOUNT_ID  Cloudflare account ID
+#   Variable AMPLITUDE_API_KEY      Amplitude browser API key (public; the site already ships it)
+name: Refresh and deploy
+
+on:
+  schedule:
+    - cron: '17 13 * * *'  # 13:17 UTC daily, about 6 am Pacific
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      CI: 'true'
+      AMPLITUDE_API_KEY: ${{ vars.AMPLITUDE_API_KEY }}
+      AMPLITUDE_SERVER_ZONE: ${{ vars.AMPLITUDE_SERVER_ZONE }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - run: npx playwright install --with-deps chromium
+
+      - name: Check configuration
+        run: |
+          test -n "$AMPLITUDE_API_KEY" || { echo "::error::Set the AMPLITUDE_API_KEY repository variable so the deployed site keeps analytics."; exit 1; }
+          test -n "${{ secrets.CLOUDFLARE_API_TOKEN }}" || { echo "::error::Set the CLOUDFLARE_API_TOKEN repository secret."; exit 1; }
+
+      - name: Refresh jobs snapshot
+        run: npm run refresh:jobs
+
+      - name: Build and test
+        run: |
+          npm run build
+          npm test
+          npm run test:analytics
+          npm run test:site
+
+      - name: Decide whether to deploy
+        id: changes
+        run: |
+          changed=$(node -e "const d=require('./site/page-dates.json');const t=new Date().toISOString().slice(0,10);console.log(Object.values(d).filter(p=>p.date===t).length)")
+          echo "Pages with new content: $changed"
+          if [ "$changed" = "0" ] && [ "${{ github.event_name }}" = "schedule" ]; then echo "deploy=false" >> "$GITHUB_OUTPUT"; else echo "deploy=true" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Deploy to Cloudflare
+        if: steps.changes.outputs.deploy == 'true'
+        run: npx --yes wrangler@4.149.0 deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+
+      - name: Notify IndexNow of changed pages
+        if: steps.changes.outputs.deploy == 'true'
+        run: npm run seo:indexnow -- --changed
+        continue-on-error: true
+
+      - name: Record snapshot on jobs-history
+        if: github.event_name != 'push'
+        run: |
+          day=$(date -u +%F)
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if git fetch --depth=1 origin jobs-history; then git worktree add history FETCH_HEAD && git -C history switch -c jobs-history; else git worktree add --orphan -b jobs-history history; fi
+          cp docs/JOBS.json history/jobs.json
+          [ -f history/counts.csv ] || echo 'date,postings,companies' > history/counts.csv
+          grep -q "^$day," history/counts.csv || node -e "const d=require('./docs/JOBS.json');console.log('$day,'+d.jobs.length+','+new Set(d.jobs.map(j=>j.company)).size)" >> history/counts.csv
+          git -C history add jobs.json counts.csv
+          git -C history diff --cached --quiet || git -C history commit -m "Jobs snapshot $day"
+          git -C history push origin jobs-history
