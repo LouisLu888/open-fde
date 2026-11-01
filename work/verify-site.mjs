@@ -42,6 +42,11 @@ for(const path of paths){
  assert(title.length<=60,'Title over 60 characters on '+path+': '+title);
  const levels=await page.locator('main h1, main h2, main h3, main h4').evaluateAll(headings=>headings.map(heading=>Number(heading.tagName[1])));
  assert(levels.every((level,index)=>index===0||level<=levels[index-1]+1),'Heading level skipped on '+path+': '+levels.join(','));
+ if(/^\/learn\/.+/.test(path)){
+  assert.equal(await page.locator('.chapter h2.chapter-sub',{hasText:'Worked example'}).count(),1,'Worked example on '+path);
+  const words=(await page.locator('main .chapter').innerText()).split(/\s+/).length;
+  assert(words>=550,'Chapter too thin on '+path+': '+words+' words');
+ }
  const image=new URL(await page.locator('meta[property="og:image"]').getAttribute('content')).pathname;
  assert.equal((await page.request.get(base+image)).status(),200,'Social image '+image);
  for(const href of await page.locator('main a[href^="/"], .masthead a[href^="/"]').evaluateAll(links=>links.map(link=>link.getAttribute('href'))))internal.add(href.split('#')[0]);

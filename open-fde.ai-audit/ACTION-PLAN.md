@@ -26,9 +26,9 @@ Health score 59 → 85 after the fixes below (2026-10-31). Details: `FULL-AUDIT-
 4. Bing Webmaster Tools: import from Search Console, submit the sitemap.
 5. First mentions: Show HN, relevant subreddits, LinkedIn/X; ask to be listed in the FDE roadmap repos.
 
-## High: agent can do next (ask)
+## High: done after the audit
 
-6. Write a 400–600 word explanation and one worked example for each of the 20 chapters (biggest remaining content gap; each claim sourced).
+6. [x] Every chapter has a sourced "How it works" explanation and a hypothetical worked example (chapters now 650–930 words; `work/chapters.mjs`; `npm run test:site` fails any chapter under 550 words).
 
 ## Medium / Low: backlog
 
