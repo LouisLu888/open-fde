@@ -1,0 +1,988 @@
+[
+ {
+  "url": "https://open-fde.ai/",
+  "status": 200,
+  "bytes": 29186,
+  "errors": [],
+  "title": "FDE Academy: free guide for forward deployed engineers",
+  "desc": "Learn forward deployed engineering free: a 20-chapter guide, sourced books and podcasts, FDE interview questions, open FDE jobs, and firsthand stories.",
+  "h1": [
+   "From customer problem to measurable impact."
+  ],
+  "headingSkips": 0,
+  "words": 574,
+  "internal": 19,
+  "external": 4,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "WebSite",
+   "FAQPage"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/home.png",
+  "lcp": 436,
+  "cls": 0.001,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/what-is-a-forward-deployed-engineer/",
+  "status": 200,
+  "bytes": 23165,
+  "errors": [],
+  "title": "What is a forward deployed engineer (FDE)? | FDE Academy",
+  "desc": "A forward deployed engineer works with customers to make a product deliver real outcomes in their systems. What FDEs do, where the role came from, who hires.",
+  "h1": [
+   "What is a forward deployed engineer?"
+  ],
+  "headingSkips": 0,
+  "words": 385,
+  "internal": 10,
+  "external": 8,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/what-is-a-forward-deployed-engineer.png",
+  "lcp": 624,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/fde-vs-spe/",
+  "status": 200,
+  "bytes": 23543,
+  "errors": [],
+  "title": "FDE vs SPE: forward deployed vs special projects engineer",
+  "desc": "How a Forward Deployed Engineer differs from a Special Projects Engineer, phase by phase: who owns what, where the work happens, and what to read for each role.",
+  "h1": [
+   "FDE vs SPE: what is the difference?"
+  ],
+  "headingSkips": 0,
+  "words": 403,
+  "internal": 7,
+  "external": 8,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/fde-vs-spe.png",
+  "lcp": 300,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/",
+  "status": 200,
+  "bytes": 28782,
+  "errors": [],
+  "title": "Learn forward deployed engineering: free 20-chapter guide",
+  "desc": "A free 20-chapter book on forward deployed engineering, from the first customer meeting to the handoff, with reading, tasks, and a test for each chapter.",
+  "h1": [
+   "Learn the work, in order."
+  ],
+  "headingSkips": 0,
+  "words": 531,
+  "internal": 41,
+  "external": 6,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Course",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn.png",
+  "lcp": 300,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/understand-the-role/",
+  "status": 200,
+  "bytes": 23567,
+  "errors": [],
+  "title": "Understand the role | FDE Academy",
+  "desc": "Chapter 1 (Discover): Define the customer, the workflow, and your decision rights. Reading, tasks, and a done-when test.",
+  "h1": [
+   "Understand the role"
+  ],
+  "headingSkips": 0,
+  "words": 410,
+  "internal": 10,
+  "external": 7,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-understand-the-role.png",
+  "lcp": 332,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/discover-the-real-problem/",
+  "status": 200,
+  "bytes": 21696,
+  "errors": [],
+  "title": "Discover the real problem | FDE Academy",
+  "desc": "Chapter 2 (Discover): Observe a recurring workflow before proposing a solution. Reading, tasks, and a done-when test.",
+  "h1": [
+   "Discover the real problem"
+  ],
+  "headingSkips": 0,
+  "words": 197,
+  "internal": 10,
+  "external": 4,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-discover-the-real-problem.png",
+  "lcp": 308,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/decompose-and-scope/",
+  "status": 200,
+  "bytes": 21511,
+  "errors": [],
+  "title": "Decompose and scope | FDE Academy",
+  "desc": "Chapter 3 (Frame): Choose the smallest valuable change you can evaluate. Reading, tasks, and a done-when test.",
+  "h1": [
+   "Decompose and scope"
+  ],
+  "headingSkips": 0,
+  "words": 198,
+  "internal": 10,
+  "external": 4,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-decompose-and-scope.png",
+  "lcp": 268,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/make-the-data-usable/",
+  "status": 200,
+  "bytes": 22836,
+  "errors": [],
+  "title": "Make the data usable | FDE Academy",
+  "desc": "Chapter 4 (Frame): Turn permissions, schemas, and dirty records into explicit constraints. Reading, tasks, and a done-when test.",
+  "h1": [
+   "Make the data usable"
+  ],
+  "headingSkips": 0,
+  "words": 302,
+  "internal": 10,
+  "external": 6,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-make-the-data-usable.png",
+  "lcp": 284,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/build-a-thin-vertical-slice/",
+  "status": 200,
+  "bytes": 22383,
+  "errors": [],
+  "title": "Build a thin vertical slice | FDE Academy",
+  "desc": "Chapter 5 (Build): Deliver one complete user action through the system. Reading, tasks, and a done-when test.",
+  "h1": [
+   "Build a thin vertical slice"
+  ],
+  "headingSkips": 0,
+  "words": 277,
+  "internal": 10,
+  "external": 5,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-build-a-thin-vertical-slice.png",
+  "lcp": 304,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/evaluate-before-expanding/",
+  "status": 200,
+  "bytes": 21382,
+  "errors": [],
+  "title": "Evaluate before expanding | FDE Academy",
+  "desc": "Chapter 6 (Build): Make failures visible and reproducible. Reading, tasks, and a done-when test.",
+  "h1": [
+   "Evaluate before expanding"
+  ],
+  "headingSkips": 0,
+  "words": 188,
+  "internal": 10,
+  "external": 4,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-evaluate-before-expanding.png",
+  "lcp": 252,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/engineer-for-production/",
+  "status": 200,
+  "bytes": 22784,
+  "errors": [],
+  "title": "Engineer for production | FDE Academy",
+  "desc": "Chapter 7 (Deploy): Handle partial failure and make operations understandable. Reading, tasks, and a done-when test.",
+  "h1": [
+   "Engineer for production"
+  ],
+  "headingSkips": 0,
+  "words": 283,
+  "internal": 10,
+  "external": 6,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-engineer-for-production.png",
+  "lcp": 248,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/run-a-controlled-pilot/",
+  "status": 200,
+  "bytes": 21818,
+  "errors": [],
+  "title": "Run a controlled pilot | FDE Academy",
+  "desc": "Chapter 8 (Deploy): Put the system into a real workflow with a named owner. Reading, tasks, and a done-when test.",
+  "h1": [
+   "Run a controlled pilot"
+  ],
+  "headingSkips": 0,
+  "words": 221,
+  "internal": 10,
+  "external": 5,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-run-a-controlled-pilot.png",
+  "lcp": 320,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/measure-adoption-and-value/",
+  "status": 200,
+  "bytes": 22194,
+  "errors": [],
+  "title": "Measure adoption and value | FDE Academy",
+  "desc": "Chapter 9 (Measure): Connect usage to outcomes and account for ongoing work. Reading, tasks, and a done-when test.",
+  "h1": [
+   "Measure adoption and value"
+  ],
+  "headingSkips": 0,
+  "words": 259,
+  "internal": 10,
+  "external": 5,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-measure-adoption-and-value.png",
+  "lcp": 396,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/close-the-feedback-loop/",
+  "status": 200,
+  "bytes": 21400,
+  "errors": [],
+  "title": "Close the feedback loop | FDE Academy",
+  "desc": "Chapter 10 (Measure): Convert corrections into durable improvements. Reading, tasks, and a done-when test.",
+  "h1": [
+   "Close the feedback loop"
+  ],
+  "headingSkips": 0,
+  "words": 184,
+  "internal": 10,
+  "external": 4,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-close-the-feedback-loop.png",
+  "lcp": 292,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/generalize-and-hand-off/",
+  "status": 200,
+  "bytes": 23874,
+  "errors": [],
+  "title": "Generalize and hand off | FDE Academy",
+  "desc": "Chapter 11 (Scale): Make the next deployment cheaper to deliver and maintain. Reading, tasks, and a done-when test.",
+  "h1": [
+   "Generalize and hand off"
+  ],
+  "headingSkips": 0,
+  "words": 380,
+  "internal": 10,
+  "external": 8,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-generalize-and-hand-off.png",
+  "lcp": 256,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/defend-the-work/",
+  "status": 200,
+  "bytes": 21211,
+  "errors": [],
+  "title": "Defend the work | FDE Academy",
+  "desc": "Chapter 12 (Scale): Show judgment, evidence, and an honest account of limits. Reading, tasks, and a done-when test.",
+  "h1": [
+   "Defend the work"
+  ],
+  "headingSkips": 0,
+  "words": 169,
+  "internal": 10,
+  "external": 4,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-defend-the-work.png",
+  "lcp": 440,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/a-high-score-can-hide-the-failures-that-matter/",
+  "status": 200,
+  "bytes": 22327,
+  "errors": [],
+  "title": "A high score can hide the failures that matter | FDE Academy",
+  "desc": "Chapter 13 (Advanced fieldcraft): A model change improves average success, but users report more incorrect actions. Reading, tasks, and a done-when test.",
+  "h1": [
+   "A high score can hide the failures that matter"
+  ],
+  "headingSkips": 0,
+  "words": 266,
+  "internal": 10,
+  "external": 3,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-a-high-score-can-hide-the-failures-that-matter.png",
+  "lcp": 252,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/permission-revocation-is-a-data-consistency-problem/",
+  "status": 200,
+  "bytes": 22783,
+  "errors": [],
+  "title": "Permission revocation is a data-consistency problem",
+  "desc": "Chapter 14 (Advanced fieldcraft): A removed user can still obtain a newly edited document through a search cache. Reading, tasks, and a done-when test.",
+  "h1": [
+   "Permission revocation is a data-consistency problem"
+  ],
+  "headingSkips": 0,
+  "words": 277,
+  "internal": 10,
+  "external": 4,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-permission-revocation-is-a-data-consistency-problem.png",
+  "lcp": 344,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/a-timeout-does-not-tell-you-whether-a-write-happened/",
+  "status": 200,
+  "bytes": 22651,
+  "errors": [],
+  "title": "A timeout does not tell you whether a write happened",
+  "desc": "Chapter 15 (Advanced fieldcraft): A CRM update times out after the remote system commits it. An agent retries. Reading, tasks, and a done-when test.",
+  "h1": [
+   "A timeout does not tell you whether a write happened"
+  ],
+  "headingSkips": 0,
+  "words": 278,
+  "internal": 10,
+  "external": 4,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-a-timeout-does-not-tell-you-whether-a-write-happened.png",
+  "lcp": 364,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/find-the-first-broken-step-in-retrieval/",
+  "status": 200,
+  "bytes": 21965,
+  "errors": [],
+  "title": "Find the first broken step in retrieval | FDE Academy",
+  "desc": "Chapter 16 (Advanced fieldcraft): A convincing answer cites the wrong policy despite an apparently strong language model. Reading, tasks, and a done-when…",
+  "h1": [
+   "Find the first broken step in retrieval"
+  ],
+  "headingSkips": 0,
+  "words": 227,
+  "internal": 10,
+  "external": 3,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-find-the-first-broken-step-in-retrieval.png",
+  "lcp": 256,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/lower-token-cost-can-raise-cost-per-successful-task/",
+  "status": 200,
+  "bytes": 22621,
+  "errors": [],
+  "title": "Lower token cost can raise cost per successful task",
+  "desc": "Chapter 17 (Advanced fieldcraft): A cheaper model needs more retries and longer human review. Reading, tasks, and a done-when test.",
+  "h1": [
+   "Lower token cost can raise cost per successful task"
+  ],
+  "headingSkips": 0,
+  "words": 274,
+  "internal": 10,
+  "external": 4,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-lower-token-cost-can-raise-cost-per-successful-task.png",
+  "lcp": 260,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/a-pilot-can-be-technically-good-and-operationally-abandoned/",
+  "status": 200,
+  "bytes": 22546,
+  "errors": [],
+  "title": "A pilot can be technically good and operationally abandoned",
+  "desc": "Chapter 18 (Advanced fieldcraft): The sponsor likes the demo, but operators return to spreadsheets after launch. Reading, tasks, and a done-when test.",
+  "h1": [
+   "A pilot can be technically good and operationally abandoned"
+  ],
+  "headingSkips": 0,
+  "words": 255,
+  "internal": 10,
+  "external": 4,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-a-pilot-can-be-technically-good-and-operationally-abandoned.png",
+  "lcp": 260,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/productize-the-repeated-constraint/",
+  "status": 200,
+  "bytes": 23021,
+  "errors": [],
+  "title": "Productize the repeated constraint | FDE Academy",
+  "desc": "Chapter 19 (Advanced fieldcraft): Three customers need similar integrations, each living on a different branch. Reading, tasks, and a done-when test.",
+  "h1": [
+   "Productize the repeated constraint"
+  ],
+  "headingSkips": 0,
+  "words": 306,
+  "internal": 10,
+  "external": 5,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-productize-the-repeated-constraint.png",
+  "lcp": 300,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/learn/protect-the-invariant-before-optimizing-recovery-time/",
+  "status": 200,
+  "bytes": 22212,
+  "errors": [],
+  "title": "Protect the invariant before optimizing recovery time",
+  "desc": "Chapter 20 (Advanced fieldcraft): Automated database failover restores connectivity but leaves divergent writes. Reading, tasks, and a done-when test.",
+  "h1": [
+   "Protect the invariant before optimizing recovery time"
+  ],
+  "headingSkips": 0,
+  "words": 215,
+  "internal": 9,
+  "external": 4,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "Article",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/learn-protect-the-invariant-before-optimizing-recovery-time.png",
+  "lcp": 300,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/resources/people/",
+  "status": 200,
+  "bytes": 35575,
+  "errors": [],
+  "title": "People to follow in forward deployed engineering",
+  "desc": "Practitioners and team builders who publish how forward deployed engineering works, with what to read or watch from each and their X handles.",
+  "h1": [
+   "People to follow in forward deployed engineering"
+  ],
+  "headingSkips": 0,
+  "words": 572,
+  "internal": 13,
+  "external": 29,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "CollectionPage",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/resources-people.png",
+  "lcp": 236,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/resources/books/",
+  "status": 200,
+  "bytes": 33726,
+  "errors": [],
+  "title": "Books for forward deployed engineers | FDE Academy",
+  "desc": "Books worth reading for forward deployed engineering, each with why it matters, what to focus on, how to apply it, and its limits.",
+  "h1": [
+   "Books for forward deployed engineers"
+  ],
+  "headingSkips": 0,
+  "words": 486,
+  "internal": 27,
+  "external": 11,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "CollectionPage",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/resources-books.png",
+  "lcp": 292,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/resources/articles/",
+  "status": 200,
+  "bytes": 50510,
+  "errors": [],
+  "title": "Articles and guides for forward deployed engineers",
+  "desc": "Hand-picked articles, papers, and documentation for forward deployed engineers, grouped by skill area, each with a reading plan and its limits.",
+  "h1": [
+   "Articles and guides for forward deployed engineers"
+  ],
+  "headingSkips": 0,
+  "words": 1062,
+  "internal": 51,
+  "external": 23,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "CollectionPage",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/resources-articles.png",
+  "lcp": 300,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/resources/podcasts/",
+  "status": 200,
+  "bytes": 33797,
+  "errors": [],
+  "title": "Forward deployed engineer podcasts | FDE Academy",
+  "desc": "Podcast episodes about forward deployed engineering from Lenny’s Podcast, YC Lightcone, Forward Deployed, and more, with what to listen for in each.",
+  "h1": [
+   "Podcasts about forward deployed engineering"
+  ],
+  "headingSkips": 0,
+  "words": 455,
+  "internal": 16,
+  "external": 11,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "CollectionPage",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/resources-podcasts.png",
+  "lcp": 280,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/resources/videos/",
+  "status": 200,
+  "bytes": 24397,
+  "errors": [],
+  "title": "Forward deployed engineering talks and videos",
+  "desc": "Conference talks and videos on how companies such as Ramp and Cognition run forward deployed engineering, with notes on what each covers.",
+  "h1": [
+   "Talks and videos on forward deployed engineering"
+  ],
+  "headingSkips": 0,
+  "words": 214,
+  "internal": 16,
+  "external": 6,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "CollectionPage",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/resources-videos.png",
+  "lcp": 296,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/interview/",
+  "status": 200,
+  "bytes": 39437,
+  "errors": [],
+  "title": "Forward deployed engineer interview questions",
+  "desc": "FDE interview questions from Palantir, Sierra, and case discussions, each labeled reported, published, or editorial, with a response guide and follow-ups.",
+  "h1": [
+   "Forward deployed engineer interview questions"
+  ],
+  "headingSkips": 0,
+  "words": 559,
+  "internal": 9,
+  "external": 17,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "CollectionPage",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/interview.png",
+  "lcp": 244,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/jobs/",
+  "status": 200,
+  "bytes": 286624,
+  "errors": [],
+  "title": "Forward deployed engineer jobs by company | FDE Academy",
+  "desc": "Open forward deployed engineer roles grouped by company from public job boards, each linking to the employer’s own posting. Filter by role and region.",
+  "h1": [
+   "Forward deployed engineer jobs"
+  ],
+  "headingSkips": 0,
+  "words": 7606,
+  "internal": 9,
+  "external": 681,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "CollectionPage",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/jobs.png",
+  "lcp": 348,
+  "cls": 0,
+  "tapSmall": 92,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/stories/",
+  "status": 200,
+  "bytes": 38486,
+  "errors": [],
+  "title": "Forward deployed engineer stories | FDE Academy",
+  "desc": "Firsthand accounts from forward deployed engineers: career changes, life in the field, building FDE teams, and what comes after, with lessons and limits.",
+  "h1": [
+   "Forward deployed engineer stories"
+  ],
+  "headingSkips": 0,
+  "words": 272,
+  "internal": 9,
+  "external": 25,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "CollectionPage",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/stories.png",
+  "lcp": 236,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/case-studies/",
+  "status": 200,
+  "bytes": 41004,
+  "errors": [],
+  "title": "Forward deployed engineering case studies",
+  "desc": "Case studies of customer AI deployments: the problem, the approach, the reported result, and the evidence limit, with discussion questions.",
+  "h1": [
+   "Forward deployed engineering case studies"
+  ],
+  "headingSkips": 0,
+  "words": 489,
+  "internal": 9,
+  "external": 18,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "CollectionPage",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/case-studies.png",
+  "lcp": 236,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ },
+ {
+  "url": "https://open-fde.ai/about/",
+  "status": 200,
+  "bytes": 20030,
+  "errors": [],
+  "title": "About FDE Academy: how the guide is made",
+  "desc": "How FDE Academy chooses and checks its sources, how the jobs snapshot works, how to send corrections, and what the site does with analytics.",
+  "h1": [
+   "About FDE Academy"
+  ],
+  "headingSkips": 0,
+  "words": 204,
+  "internal": 7,
+  "external": 3,
+  "imgs": 0,
+  "imgNoAlt": 0,
+  "ld": [
+   "Organization",
+   "AboutPage",
+   "BreadcrumbList"
+  ],
+  "lang": "en",
+  "ogImage": "https://open-fde.ai/og/about.png",
+  "lcp": 312,
+  "cls": 0,
+  "tapSmall": 0,
+  "overflow": false,
+  "robots": ""
+ }
+]

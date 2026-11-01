@@ -39,6 +39,11 @@ for(const path of paths){
  assert.equal(await page.locator('link[rel="canonical"]').getAttribute('href'),'https://open-fde.ai'+path);
  for(const block of await page.locator('script[type="application/ld+json"]').allTextContents()){const data=JSON.parse(block);assert(data['@graph'].length>=2,'JSON-LD graph on '+path);}
  assert.equal(await page.locator('main>.panel').count(),1,'One section per page on '+path);
+ assert(title.length<=60,'Title over 60 characters on '+path+': '+title);
+ const levels=await page.locator('main h1, main h2, main h3, main h4').evaluateAll(headings=>headings.map(heading=>Number(heading.tagName[1])));
+ assert(levels.every((level,index)=>index===0||level<=levels[index-1]+1),'Heading level skipped on '+path+': '+levels.join(','));
+ const image=new URL(await page.locator('meta[property="og:image"]').getAttribute('content')).pathname;
+ assert.equal((await page.request.get(base+image)).status(),200,'Social image '+image);
  for(const href of await page.locator('main a[href^="/"], .masthead a[href^="/"]').evaluateAll(links=>links.map(link=>link.getAttribute('href'))))internal.add(href.split('#')[0]);
 }
 for(const href of internal){const response=await page.request.get(base+href);assert.equal(response.status(),200,'Internal link '+href);}

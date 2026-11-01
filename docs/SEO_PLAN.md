@@ -146,6 +146,10 @@ Status 2026-10-31: every Phase 1 `[me]` item is done and live (34 pages, `npm ru
 - [ ] [you] Talks or podcast appearances that link back
 - [ ] [me] Keep `dateModified` and sources current; prune dead links monthly
 
+## Audit 2026-10-31
+
+Full audit and action plan: `open-fde.ai-audit/`. Health score 59 → 85. Fixed: HTTP/www 301s via `src/worker.js`, permanent trailing-slash redirects, security headers, titles ≤ 60, heading order, per-page social images, Course offers, shared cached assets, tap targets, chapter reading notes, resource → chapter links, visible updated dates.
+
 ## 8. Risks
 
 - Brand confusion with fde.academy: may lose clicks and look derivative. Mitigation: rename, or differentiate the title tag ("open-fde: free FDE field guide").

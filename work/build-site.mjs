@@ -14,19 +14,19 @@ const indexNowKey=readFileSync(new URL('work/indexnow-key.txt',root),'utf8').tri
 
 // Pages cut from the single-page build. Chapter pages are added from the book's contents.
 const pages=[
- {path:'/',panel:'start',type:'home',title:'FDE Academy: a free field guide for forward deployed engineers',description:'Learn forward deployed engineering free: a 20-chapter guide, sourced books and podcasts, FDE interview questions, open FDE jobs, and firsthand stories.'},
+ {path:'/',panel:'start',type:'home',title:'FDE Academy: free guide for forward deployed engineers',description:'Learn forward deployed engineering free: a 20-chapter guide, sourced books and podcasts, FDE interview questions, open FDE jobs, and firsthand stories.'},
  {path:'/what-is-a-forward-deployed-engineer/',panel:'what-is-fde',type:'answer',crumb:'What is an FDE?',title:'What is a forward deployed engineer (FDE)? | FDE Academy',description:'A forward deployed engineer works with customers to make a product deliver real outcomes in their systems. What FDEs do, where the role came from, who hires.'},
- {path:'/fde-vs-spe/',panel:'fde-vs-spe',type:'answer',crumb:'FDE vs SPE',title:'FDE vs SPE: forward deployed vs special projects engineer | FDE Academy',description:'How a Forward Deployed Engineer differs from a Special Projects Engineer, phase by phase: who owns what, where the work happens, and what to read for each role.'},
- {path:'/learn/',panel:'learn',type:'course',learn:'index',crumb:'Learn',title:'Learn forward deployed engineering: a free 20-chapter guide | FDE Academy',description:'A free 20-chapter book on forward deployed engineering, from the first customer meeting to the handoff, with reading, tasks, and a test for each chapter.'},
- {path:'/resources/people/',panel:'resources',group:'res-people',type:'collection',crumb:'People',parents:[['Resources','/resources/people/']],h1:'People to follow in forward deployed engineering',title:'People to follow in forward deployed engineering | FDE Academy',description:'Practitioners and team builders who publish how forward deployed engineering works, with what to read or watch from each and their X handles.'},
+ {path:'/fde-vs-spe/',panel:'fde-vs-spe',type:'answer',crumb:'FDE vs SPE',title:'FDE vs SPE: forward deployed vs special projects engineer',description:'How a Forward Deployed Engineer differs from a Special Projects Engineer, phase by phase: who owns what, where the work happens, and what to read for each role.'},
+ {path:'/learn/',panel:'learn',type:'course',learn:'index',crumb:'Learn',title:'Learn forward deployed engineering: free 20-chapter guide',description:'A free 20-chapter book on forward deployed engineering, from the first customer meeting to the handoff, with reading, tasks, and a test for each chapter.'},
+ {path:'/resources/people/',panel:'resources',group:'res-people',type:'collection',crumb:'People',parents:[['Resources','/resources/people/']],h1:'People to follow in forward deployed engineering',title:'People to follow in forward deployed engineering',description:'Practitioners and team builders who publish how forward deployed engineering works, with what to read or watch from each and their X handles.'},
  {path:'/resources/books/',panel:'resources',group:'res-books',type:'collection',crumb:'Books',parents:[['Resources','/resources/people/']],h1:'Books for forward deployed engineers',title:'Books for forward deployed engineers | FDE Academy',description:'Books worth reading for forward deployed engineering, each with why it matters, what to focus on, how to apply it, and its limits.'},
- {path:'/resources/articles/',panel:'resources',group:'res-articles',type:'collection',crumb:'Articles',parents:[['Resources','/resources/people/']],h1:'Articles and guides for forward deployed engineers',title:'Articles and guides for forward deployed engineers | FDE Academy',description:'Hand-picked articles, papers, and documentation for forward deployed engineers, grouped by skill area, each with a reading plan and its limits.'},
- {path:'/resources/podcasts/',panel:'resources',group:'res-podcasts',type:'collection',crumb:'Podcasts',parents:[['Resources','/resources/people/']],h1:'Podcasts about forward deployed engineering',title:'Forward deployed engineer podcasts: the best FDE episodes | FDE Academy',description:'Podcast episodes about forward deployed engineering from Lenny’s Podcast, YC Lightcone, Forward Deployed, and more, with what to listen for in each.'},
- {path:'/resources/videos/',panel:'resources',group:'res-videos',type:'collection',crumb:'Videos',parents:[['Resources','/resources/people/']],h1:'Talks and videos on forward deployed engineering',title:'Forward deployed engineering talks and videos | FDE Academy',description:'Conference talks and videos on how companies such as Ramp and Cognition run forward deployed engineering, with notes on what each covers.'},
- {path:'/interview/',panel:'interview',group:'questions',type:'collection',crumb:'Interview questions',h1:'Forward deployed engineer interview questions',title:'Forward deployed engineer interview questions, with sources | FDE Academy',description:'FDE interview questions from Palantir, Sierra, and case discussions, each labeled reported, published, or editorial, with a response guide and follow-ups.'},
- {path:'/jobs/',panel:'interview',group:'jobs',type:'jobs',crumb:'Jobs',h1:'Forward deployed engineer jobs',title:'Forward deployed engineer jobs: open FDE roles by company | FDE Academy',description:'Open forward deployed engineer roles grouped by company from public job boards, each linking to the employer’s own posting. Filter by role and region.'},
- {path:'/stories/',panel:'stories',group:'story-list',type:'collection',crumb:'Stories',h1:'Forward deployed engineer stories',title:'Forward deployed engineer stories: careers in the field | FDE Academy',description:'Firsthand accounts from forward deployed engineers: career changes, life in the field, building FDE teams, and what comes after, with lessons and limits.'},
- {path:'/case-studies/',panel:'stories',group:'cases',type:'collection',crumb:'Case studies',h1:'Forward deployed engineering case studies',title:'Forward deployed engineering case studies | FDE Academy',description:'Case studies of customer AI deployments: the problem, the approach, the reported result, and the evidence limit, with discussion questions.'},
+ {path:'/resources/articles/',panel:'resources',group:'res-articles',type:'collection',crumb:'Articles',parents:[['Resources','/resources/people/']],h1:'Articles and guides for forward deployed engineers',title:'Articles and guides for forward deployed engineers',description:'Hand-picked articles, papers, and documentation for forward deployed engineers, grouped by skill area, each with a reading plan and its limits.'},
+ {path:'/resources/podcasts/',panel:'resources',group:'res-podcasts',type:'collection',crumb:'Podcasts',parents:[['Resources','/resources/people/']],h1:'Podcasts about forward deployed engineering',title:'Forward deployed engineer podcasts | FDE Academy',description:'Podcast episodes about forward deployed engineering from Lenny’s Podcast, YC Lightcone, Forward Deployed, and more, with what to listen for in each.'},
+ {path:'/resources/videos/',panel:'resources',group:'res-videos',type:'collection',crumb:'Videos',parents:[['Resources','/resources/people/']],h1:'Talks and videos on forward deployed engineering',title:'Forward deployed engineering talks and videos',description:'Conference talks and videos on how companies such as Ramp and Cognition run forward deployed engineering, with notes on what each covers.'},
+ {path:'/interview/',panel:'interview',group:'questions',type:'collection',crumb:'Interview questions',h1:'Forward deployed engineer interview questions',title:'Forward deployed engineer interview questions',description:'FDE interview questions from Palantir, Sierra, and case discussions, each labeled reported, published, or editorial, with a response guide and follow-ups.'},
+ {path:'/jobs/',panel:'interview',group:'jobs',type:'jobs',crumb:'Jobs',h1:'Forward deployed engineer jobs',title:'Forward deployed engineer jobs by company | FDE Academy',description:'Open forward deployed engineer roles grouped by company from public job boards, each linking to the employer’s own posting. Filter by role and region.'},
+ {path:'/stories/',panel:'stories',group:'story-list',type:'collection',crumb:'Stories',h1:'Forward deployed engineer stories',title:'Forward deployed engineer stories | FDE Academy',description:'Firsthand accounts from forward deployed engineers: career changes, life in the field, building FDE teams, and what comes after, with lessons and limits.'},
+ {path:'/case-studies/',panel:'stories',group:'cases',type:'collection',crumb:'Case studies',h1:'Forward deployed engineering case studies',title:'Forward deployed engineering case studies',description:'Case studies of customer AI deployments: the problem, the approach, the reported result, and the evidence limit, with discussion questions.'},
  {path:'/about/',panel:'about',type:'about',crumb:'About',title:'About FDE Academy: how the guide is made',description:'How FDE Academy chooses and checks its sources, how the jobs snapshot works, how to send corrections, and what the site does with analytics.'},
 ];
 // Ids that are whole pages. Everything else is reached as page#id.
@@ -46,7 +46,7 @@ const built=await page.evaluate(({spa,pages,pageIds,origin,today})=>{
  const chapters=[...source.querySelectorAll('#learn .chapter[id^="ch-"]')].map(chapter=>({id:chapter.id,number:Number(chapter.dataset.chapter),title:text(chapter.querySelector('h3')),part:chapter.dataset.part,lead:text(chapter.querySelector('.lead'))}));
  chapters.forEach(chapter=>{chapter.path='/learn/'+slug(chapter.title)+'/';pageIds[chapter.id]=chapter.path;});
  const learnIndex=pages.findIndex(spec=>spec.path==='/learn/');
- pages.splice(learnIndex+1,0,...chapters.map((chapter,index)=>({path:chapter.path,panel:'learn',learn:chapter.id,type:'chapter',chapter,prev:chapters[index-1],next:chapters[index+1],crumb:`Chapter ${chapter.number}`,parents:[['Learn','/learn/']],title:`${chapter.title}: chapter ${chapter.number} | FDE Academy`,description:clip(`Chapter ${chapter.number} (${chapter.part}): ${chapter.lead} Reading, tasks, and a done-when test.`,158)})));
+ pages.splice(learnIndex+1,0,...chapters.map((chapter,index)=>({path:chapter.path,panel:'learn',learn:chapter.id,type:'chapter',chapter,prev:chapters[index-1],next:chapters[index+1],crumb:`Chapter ${chapter.number}`,parents:[['Learn','/learn/']],title:(`${chapter.title} | FDE Academy`.length<=60?`${chapter.title} | FDE Academy`:chapter.title),description:clip(`Chapter ${chapter.number} (${chapter.part}): ${chapter.lead} Reading, tasks, and a done-when test.`,158)})));
  [...source.querySelectorAll('#learn .part')].forEach(part=>{const first=part.nextElementSibling;if(first&&pageIds[first.id])pageIds[part.id]=pageIds[first.id]+'#'+part.id;});
  if(source.getElementById('stats'))pages.push({path:'/stats/',panel:'stats',type:'about',crumb:'Stats',title:'How readers use FDE Academy: live stats',description:'Live, anonymous, aggregated usage of open-fde.ai from Amplitude: most-read chapters, sections, and the companies readers apply to.'});
 
@@ -69,6 +69,8 @@ const built=await page.evaluate(({spa,pages,pageIds,origin,today})=>{
    const part=chapter.previousElementSibling?.classList.contains('part')?chapter.previousElementSibling:null;
    [...book.children].forEach(child=>{if(child!==chapter&&child!==part)child.remove();});
    const heading=chapter.querySelector('h3');const h1=doc.createElement('h1');h1.innerHTML=heading.innerHTML;heading.replaceWith(h1);
+   if(part){const label=part.querySelector('h3');const p=doc.createElement('p');p.className='part-title';p.innerHTML=label.innerHTML;label.replaceWith(p);}
+   chapter.querySelectorAll('h4').forEach(h4=>{const h2=doc.createElement('h2');h2.className='chapter-sub';h2.innerHTML=h4.innerHTML;h4.replaceWith(h2);});
    const nav=doc.createElement('nav');nav.className='chapter-nav';nav.setAttribute('aria-label','Chapters');
    const prev=spec.prev?{href:spec.prev.path,label:`Chapter ${spec.prev.number}`,title:spec.prev.title}:{href:'/learn/#preface',label:'Preface',title:'What the job is'};
    nav.innerHTML=`<a class="prev" href="${prev.href}" rel="prev"><span>← ${prev.label}</span><strong>${prev.title}</strong></a>`+(spec.next?`<a class="next" href="${spec.next.path}" rel="next"><span>Chapter ${spec.next.number} →</span><strong>${spec.next.title}</strong></a>`:'');
@@ -77,7 +79,12 @@ const built=await page.evaluate(({spa,pages,pageIds,origin,today})=>{
    const heading=panel.querySelector('.section-heading h2');
    if(heading){const h1=doc.createElement('h1');h1.setAttribute('tabindex','-1');h1.textContent=spec.h1||heading.textContent;heading.replaceWith(h1);}
   }
+  if(spec.type!=='chapter'&&!panel.querySelector('h2')&&panel.querySelector('h3')){
+   panel.querySelectorAll('h3,h4').forEach(old=>{const next=doc.createElement('h'+(Number(old.tagName[1])-1));[...old.attributes].forEach(attribute=>next.setAttribute(attribute.name,attribute.value));next.innerHTML=old.innerHTML;old.replaceWith(next);});
+  }
   if(spec.type!=='home'){
+   const updated=doc.createElement('p');updated.className='updated';updated.innerHTML=`Updated <time datetime="${today}">${new Date(today+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'})}</time>`;
+   panel.querySelector('h1').after(updated);
    const crumbs=[['Home','/'],...(spec.parents||[]),[spec.crumb,null]];
    const nav=doc.createElement('nav');nav.className='breadcrumbs';nav.setAttribute('aria-label','Breadcrumb');
    nav.innerHTML='<ol>'+crumbs.map(([name,href])=>href?`<li><a href="${href}">${name}</a></li>`:`<li aria-current="page">${name}</li>`).join('')+'</ol>';
@@ -101,9 +108,9 @@ const built=await page.evaluate(({spa,pages,pageIds,origin,today})=>{
    graph.push({'@type':'WebSite','@id':origin+'/#website',name:'FDE Academy',url:origin+'/',description:spec.description,publisher:{'@id':origin+'/#org'},inLanguage:'en'});
    graph.push({'@type':'FAQPage',...page,mainEntity:[...panel.querySelectorAll('.faq-item')].map(item=>({'@type':'Question',name:text(item.querySelector('summary')),acceptedAnswer:{'@type':'Answer',text:text(item.querySelector('p'))}}))});
   }else if(spec.type==='answer'||spec.type==='chapter'){
-   graph.push({'@type':'Article',...page,headline:text(panel.querySelector('h1')),author:{'@id':origin+'/#org'},publisher:{'@id':origin+'/#org'},datePublished:'2026-10-31',image:origin+'/og.png',...(spec.type==='chapter'?{isPartOf:{'@type':'Course','@id':origin+'/learn/#course',name:'Learn forward deployed engineering'},position:spec.chapter.number}:{})});
+   graph.push({'@type':'Article',...page,headline:text(panel.querySelector('h1')),author:{'@id':origin+'/#org'},publisher:{'@id':origin+'/#org'},datePublished:'2026-10-31',image:origin+'/og/'+spec.path.replace(/^\/|\/$/g,'').replace(/\//g,'-')+'.png',...(spec.type==='chapter'?{isPartOf:{'@type':'Course','@id':origin+'/learn/#course',name:'Learn forward deployed engineering'},position:spec.chapter.number}:{})});
   }else if(spec.type==='course'){
-   graph.push({'@type':'Course','@id':origin+'/learn/#course',name:'Learn forward deployed engineering',description:spec.description,url,provider:{'@id':origin+'/#org'},isAccessibleForFree:true,inLanguage:'en',hasPart:chapters.map(chapter=>({'@type':'CreativeWork',name:`Chapter ${chapter.number}: ${chapter.title}`,url:origin+chapter.path}))});
+   graph.push({'@type':'Course','@id':origin+'/learn/#course',name:'Learn forward deployed engineering',description:spec.description,url,provider:{'@id':origin+'/#org'},isAccessibleForFree:true,inLanguage:'en',offers:{'@type':'Offer',price:0,priceCurrency:'USD',category:'Free'},hasCourseInstance:{'@type':'CourseInstance',courseMode:'Online',courseWorkload:'PT80H'},hasPart:chapters.map(chapter=>({'@type':'CreativeWork',name:`Chapter ${chapter.number}: ${chapter.title}`,url:origin+chapter.path}))});
   }else if(spec.type==='collection'||spec.type==='jobs'){
    const rows=[...panel.querySelectorAll('.group [data-kind]')].filter(row=>row.id);
    graph.push({'@type':'CollectionPage',...page,mainEntity:{'@type':'ItemList',numberOfItems:rows.length,itemListElement:rows.map((row,index)=>({'@type':'ListItem',position:index+1,name:text(row.querySelector('h3,strong')),url:spec.type==='jobs'?origin+spec.path+'#'+row.id:rowLink(row,spec.path)}))}});
@@ -126,6 +133,8 @@ const built=await page.evaluate(({spa,pages,pageIds,origin,today})=>{
   setMeta(doc,'meta[property="og:type"]','content',spec.type==='chapter'||spec.type==='answer'?'article':'website');
   setMeta(doc,'meta[name="twitter:title"]','content',spec.title);
   setMeta(doc,'meta[name="twitter:description"]','content',spec.description);
+  const image=origin+'/og/'+(spec.path==='/'?'home':spec.path.replace(/^\/|\/$/g,'').replace(/\//g,'-'))+'.png';
+  setMeta(doc,'meta[property="og:image"]','content',image);setMeta(doc,'meta[name="twitter:image"]','content',image);setMeta(doc,'meta[property="og:image:alt"]','content',spec.title);
   // Links: section and item hashes become page URLs unless the target is on this page.
   doc.querySelectorAll('a[href^="#"]').forEach(link=>{
    const id=link.getAttribute('href').slice(1);
@@ -141,7 +150,7 @@ const built=await page.evaluate(({spa,pages,pageIds,origin,today})=>{
   doc.head.append(ld);
   return '<!doctype html>\n'+doc.documentElement.outerHTML;
  };
- const output=docs.map(entry=>({path:entry.spec.path,html:finish(entry),title:entry.spec.title,description:entry.spec.description,text:(()=>{const clone=entry.panel.cloneNode(true);clone.querySelectorAll('script,style,.tabs,.breadcrumbs,.filterbar,.job-index,svg').forEach(element=>element.remove());clone.querySelectorAll('p,li,h1,h2,h3,h4,tr,dt,dd,summary,article').forEach(element=>element.append('\n'));return clone.textContent.replace(/↗/g,'').replace(/[ \t]+/g,' ').replace(/\n\s*\n+/g,'\n\n').trim();})()}));
+ const output=docs.map(entry=>({path:entry.spec.path,html:finish(entry),heading:text(entry.panel.querySelector('h1')),eyebrow:entry.spec.type==='chapter'?`Chapter ${entry.spec.chapter.number} · ${entry.spec.chapter.part}`:(entry.spec.crumbs||[]).slice(1,-1).map(([name])=>name).concat(entry.spec.crumb?[entry.spec.crumb]:[]).join(' · '),image:(entry.spec.path==='/'?'home':entry.spec.path.replace(/^\/|\/$/g,'').replace(/\//g,'-'))+'.png',title:entry.spec.title,description:entry.spec.description,text:(()=>{const clone=entry.panel.cloneNode(true);clone.querySelectorAll('script,style,.tabs,.breadcrumbs,.filterbar,.job-index,svg').forEach(element=>element.remove());clone.querySelectorAll('p,li,h1,h2,h3,h4,tr,dt,dd,summary,article').forEach(element=>element.append('\n'));return clone.textContent.replace(/↗/g,'').replace(/[ \t]+/g,' ').replace(/\n\s*\n+/g,'\n\n').trim();})()}));
 
  // 404: the home shell with a short message.
  const notFound=parse();
@@ -159,10 +168,31 @@ const built=await page.evaluate(({spa,pages,pageIds,origin,today})=>{
 
  return {output,notFound:'<!doctype html>\n'+notFound.documentElement.outerHTML,index,chapters};
 },{spa,pages,pageIds,origin,today});
+const cards={};
+const card=await browser.newPage({viewport:{width:1200,height:630}});
+for(const entry of built.output){
+ const big=entry.heading.length>48?72:entry.heading.length>30?84:96;
+ await card.setContent(`<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500&display=block"><style>*{box-sizing:border-box;margin:0}body{width:1200px;height:630px;background:#1d4a3e;color:#f7f8f3;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;padding:72px 80px;display:flex;flex-direction:column;justify-content:space-between}.top{font:500 26px 'Newsreader',Georgia,serif;color:#cfdcd4}.top span{font:400 22px ui-sans-serif,system-ui,sans-serif;color:#a9bfb5;margin-left:14px}h1{font:500 ${big}px/1.04 'Newsreader',Georgia,serif;letter-spacing:-.02em;max-width:1040px}.foot{display:flex;justify-content:space-between;font-size:24px;color:#a9bfb5}.foot b{color:#e9b824;font-weight:600}</style></head><body><div class="top">FDE Academy${entry.eyebrow?`<span>${entry.eyebrow.replace(/&/g,'&amp;').replace(/</g,'&lt;')}</span>`:''}</div><h1>${entry.heading.replace(/&/g,'&amp;').replace(/</g,'&lt;')}</h1><div class="foot"><span>A free field guide for forward deployed engineers</span><b>open-fde.ai</b></div></body></html>`,{waitUntil:'networkidle'});
+ await card.evaluate(()=>document.fonts.ready);
+ cards[entry.image]=await card.screenshot({type:'png'});
+}
 await browser.close();
 
 rmSync(site,{recursive:true,force:true});
 mkdirSync(site,{recursive:true});
+mkdirSync(new URL('og/',site),{recursive:true});
+for(const [name,png] of Object.entries(cards))writeFileSync(new URL('og/'+name,site),png);
+// Shared CSS and page script are identical on every page; serve them once as cacheable files.
+const {createHash}=await import('node:crypto');
+const sharedStyle=built.output[0].html.match(/<style>([\s\S]*?)<\/style>/)[1];
+const sharedScript=built.output[0].html.match(/<script>(const cleanPage|const checkTypes|[\s\S]*?function navigate[\s\S]*?)<\/script>/)[1];
+const hash=value=>createHash('sha256').update(value).digest('hex').slice(0,10);
+const cssName=`/assets/site.${hash(sharedStyle)}.css`,jsName=`/assets/site.${hash(sharedScript)}.js`;
+mkdirSync(new URL('assets/',site),{recursive:true});
+writeFileSync(new URL('.'+cssName,site),sharedStyle);writeFileSync(new URL('.'+jsName,site),sharedScript);
+const externalize=html=>{const out=html.replace('<style>'+sharedStyle+'</style>',`<link rel="stylesheet" href="${cssName}">`).replace('<script>'+sharedScript+'</script>',`<script src="${jsName}"></script>`);if(out.includes(sharedScript))throw new Error('Shared script not externalized');return out;};
+for(const entry of built.output)entry.html=externalize(entry.html);
+built.notFound=built.notFound.replace('<style>'+sharedStyle+'</style>',`<link rel="stylesheet" href="${cssName}">`).replace('<script>'+sharedScript+'</script>',`<script src="${jsName}"></script>`);
 for(const {path,html} of built.output){
  const dir=new URL('.'+path,site);
  mkdirSync(dir,{recursive:true});

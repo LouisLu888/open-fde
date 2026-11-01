@@ -19,7 +19,8 @@
     "test:analytics": "node work/verify-analytics.mjs",
     "analytics:register": "node work/analytics/register-events.mjs",
     "test:site": "node work/build-site.mjs && node work/verify-site.mjs",
-    "seo:indexnow": "node work/indexnow.mjs"
+    "seo:indexnow": "node work/indexnow.mjs",
+    "seo:crawl": "node work/seo-crawl.mjs"
   },
   "devDependencies": {
     "esbuild": "^0.25.12",

@@ -1,0 +1,99 @@
+{
+ "summary": {
+  "health_score": 85,
+  "health_score_before": 59,
+  "business_type": "Educational publisher (free learning guide, resource directory, job list)",
+  "top_findings": [
+   "HTTP did not redirect to HTTPS (fixed)",
+   "www served a duplicate site (fixed)",
+   "16 titles over 60 characters (fixed)",
+   "Chapter pages thin at 120-240 words (improved to 170-410; still open)",
+   "No named author (open, owner decision)"
+  ],
+  "quick_wins": [
+   "Security headers (done)",
+   "Per-page social images (done)",
+   "Visible updated dates (done)",
+   "Course schema offers (done)",
+   "Shared cached CSS/JS (done)"
+  ]
+ },
+ "categories": [
+  {
+   "name": "Technical SEO",
+   "score": 92,
+   "score_before": 45
+  },
+  {
+   "name": "Content Quality",
+   "score": 66,
+   "score_before": 55
+  },
+  {
+   "name": "On-Page SEO",
+   "score": 94,
+   "score_before": 60
+  },
+  {
+   "name": "Schema / Structured Data",
+   "score": 88,
+   "score_before": 70
+  },
+  {
+   "name": "Performance (CWV)",
+   "score": 93,
+   "score_before": 75
+  },
+  {
+   "name": "AI Search Readiness",
+   "score": 85,
+   "score_before": 75
+  },
+  {
+   "name": "Images",
+   "score": 90,
+   "score_before": 50
+  }
+ ],
+ "action_plan": {
+  "phases": [
+   {
+    "name": "Phase 1: Critical Fixes",
+    "timeframe": "Week 1",
+    "items": [
+     "Done: HTTPS/www redirects, headers, titles, headings, schema, images, assets",
+     "Owner: brand decision, authorship, Search Console, Bing"
+    ]
+   },
+   {
+    "name": "Phase 2: High-Impact Improvements",
+    "timeframe": "Weeks 2-3",
+    "items": [
+     "Chapter explanations and worked examples",
+     "Launch posts and roadmap listings"
+    ]
+   },
+   {
+    "name": "Phase 3: Content & Authority",
+    "timeframe": "Month 2",
+    "items": [
+     "CSP report-only",
+     "Self-host font",
+     "Company job pages on demand"
+    ]
+   },
+   {
+    "name": "Phase 4: Monitoring & Iteration",
+    "timeframe": "Ongoing",
+    "items": [
+     "npm run seo:crawl monthly",
+     "AI citation checks quarterly"
+    ]
+   }
+  ]
+ },
+ "artifacts": {
+  "findings_dir": "FULL-AUDIT-REPORT.md",
+  "screenshots_dir": "site/og/"
+ }
+}

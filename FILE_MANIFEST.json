@@ -20,8 +20,8 @@
     },
     {
       "path": "START_HERE.md",
-      "bytes": 4848,
-      "sha256": "245aafcdfb20c1c053ff6d0cd390b5760d180122529ac79e7a3261737a93dbb2"
+      "bytes": 5046,
+      "sha256": "ca65ab8c854e4c91469251ae08926f930e5fc17348e17a80c398ff696cfda18f"
     },
     {
       "path": "docs/CONTENT_INVENTORY.json",
@@ -35,8 +35,8 @@
     },
     {
       "path": "docs/RESEARCH_CONTEXT.md",
-      "bytes": 11503,
-      "sha256": "ee63ca295bac94954bb4125477f84557c1ca5909dea0b45d99b342faa0c55087"
+      "bytes": 11996,
+      "sha256": "cee2201e39cb3ea87aea142367b55cbdb73fc0bfab97413fa420ba5dbbc100ab"
     },
     {
       "path": "docs/SOURCES.json",
@@ -50,8 +50,8 @@
     },
     {
       "path": "outputs/FDE_SPE_Field_Academy.html",
-      "bytes": 504300,
-      "sha256": "a5e259857b2ef8a69da53ebb93ef171c7e575a807a9725ba14f77be6a363d012"
+      "bytes": 525025,
+      "sha256": "f8926cb4e7e6c6d58cc2c78147bdaa8b06953c647e9fea210e55f11ecfed32d0"
     },
     {
       "path": "package-lock.json",
@@ -60,8 +60,8 @@
     },
     {
       "path": "package.json",
-      "bytes": 927,
-      "sha256": "3392daa850d72704c00876357c382dfef90a17f858834c360ba2c2480de7e2a7"
+      "bytes": 1017,
+      "sha256": "621b9d2ce0309e796b5b4b6b1839ec1b70782f8c5ff6b993d19ecbe10844af06"
     },
     {
       "path": "previews/desktop-preview.png",
@@ -80,13 +80,13 @@
     },
     {
       "path": "previews/stories-preview.png",
-      "bytes": 117446,
-      "sha256": "02aa94238f7947b2c44c9f8bf268e2e6479b6981924e4a7bcf7c9392ca3c42f6"
+      "bytes": 117455,
+      "sha256": "dc836bff1deeaa41e6b930f6a31d083ac1ccb723f12debe4c437a536a03f6209"
     },
     {
       "path": "work/build.mjs",
-      "bytes": 100514,
-      "sha256": "59bbe423c2bfb6d173449d6b3a90b43bc60a3fc1d2e91b2a44b7887a8663619a"
+      "bytes": 100527,
+      "sha256": "044e12e9c767e08cdb3e1d3fe56336eb69f78a1e588b9ab687f9261b0e441479"
     },
     {
       "path": "work/check-package.mjs",
@@ -125,13 +125,13 @@
     },
     {
       "path": "wrangler.jsonc",
-      "bytes": 383,
-      "sha256": "a1639fdebb4250d060187c06c0a0bae615ebb7cf511a8daf1e18696dcb791c59"
+      "bytes": 465,
+      "sha256": "7aa61c7fd579aad813b9c52cf8ce768ede72f59edd73426aee29ee22823fc001"
     },
     {
       "path": "work/build-site.mjs",
-      "bytes": 21218,
-      "sha256": "07c0816a5004d2461762f8e8e8fdb6f1935610fdbfe7030c0201f8d386a113ab"
+      "bytes": 25763,
+      "sha256": "abf7e939cde7779660c14dc17744059be2a1eb2a440a063ab49a2711f9cae9a3"
     },
     {
       "path": "work/og-image.mjs",
