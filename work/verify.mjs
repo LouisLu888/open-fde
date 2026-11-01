@@ -22,7 +22,7 @@ await page.goto(outputPath.href);
 await page.locator('h1').waitFor();
 assert.deepEqual(await page.locator('.nav a').allTextContents(),['Learn','Resources','Interview','Stories & cases']);
 assert.equal(await page.locator('.door').count(),4);
-assert.equal(await page.locator('.compare tbody tr').count(),9,'FDE vs SPE comparison on home');
+assert.equal(await page.locator('#start .compare tbody tr').count(),9,'FDE vs SPE comparison on home');
 assert.equal((await page.locator('.brand').textContent()).startsWith('FDE Academy'),true);
 assert.equal(await page.locator('#downloadHtml').count(),0,'No download button');
 const statsOn=html.includes('id="stats"');

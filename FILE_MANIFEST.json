@@ -50,8 +50,8 @@
     },
     {
       "path": "outputs/FDE_SPE_Field_Academy.html",
-      "bytes": 484696,
-      "sha256": "df9bad51ea281814bfed65dde7e8071f63ab1d417372bb64ce6cf924c92e85af"
+      "bytes": 504300,
+      "sha256": "a5e259857b2ef8a69da53ebb93ef171c7e575a807a9725ba14f77be6a363d012"
     },
     {
       "path": "package-lock.json",
@@ -60,8 +60,8 @@
     },
     {
       "path": "package.json",
-      "bytes": 853,
-      "sha256": "5fee1a5a2859c0a7b78f5e0fc4be41292e35bc86e449b35babe97493f22e4ed6"
+      "bytes": 927,
+      "sha256": "3392daa850d72704c00876357c382dfef90a17f858834c360ba2c2480de7e2a7"
     },
     {
       "path": "previews/desktop-preview.png",
@@ -85,8 +85,8 @@
     },
     {
       "path": "work/build.mjs",
-      "bytes": 90502,
-      "sha256": "94fe9be5ebd09bcc82eead96371e21814ddde35d0fb52e7e0bf6b97efc7376d5"
+      "bytes": 100514,
+      "sha256": "59bbe423c2bfb6d173449d6b3a90b43bc60a3fc1d2e91b2a44b7887a8663619a"
     },
     {
       "path": "work/check-package.mjs",
@@ -115,8 +115,8 @@
     },
     {
       "path": "work/verify.mjs",
-      "bytes": 14292,
-      "sha256": "f4381a60505a83d1dd26449dc2f0479859473bdfa6d9129e81821b0ec2a99186"
+      "bytes": 14299,
+      "sha256": "fddea5bb50e6f1ea026925b6312600e70a44a8ffc3f1774da9c3cbb502cc3597"
     },
     {
       "path": "README.md",
@@ -125,13 +125,13 @@
     },
     {
       "path": "wrangler.jsonc",
-      "bytes": 398,
-      "sha256": "d08f60d65e1f26770bfb0430153f628d15c42a5b73a5a1644eded1370b84a9f1"
+      "bytes": 383,
+      "sha256": "a1639fdebb4250d060187c06c0a0bae615ebb7cf511a8daf1e18696dcb791c59"
     },
     {
       "path": "work/build-site.mjs",
-      "bytes": 854,
-      "sha256": "f91ac9a5b8a20504563765ef1ebc59fad2eb6bb52a44b22a9415ee328e72c5ea"
+      "bytes": 21218,
+      "sha256": "07c0816a5004d2461762f8e8e8fdb6f1935610fdbfe7030c0201f8d386a113ab"
     },
     {
       "path": "work/og-image.mjs",

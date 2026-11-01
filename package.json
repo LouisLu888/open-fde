@@ -17,7 +17,9 @@
     "build:og": "node work/og-image.mjs",
     "refresh:jobs": "node work/fetch-jobs.mjs",
     "test:analytics": "node work/verify-analytics.mjs",
-    "analytics:register": "node work/analytics/register-events.mjs"
+    "analytics:register": "node work/analytics/register-events.mjs",
+    "test:site": "node work/build-site.mjs && node work/verify-site.mjs",
+    "seo:indexnow": "node work/indexnow.mjs"
   },
   "devDependencies": {
     "esbuild": "^0.25.12",

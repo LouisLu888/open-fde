@@ -95,7 +95,9 @@ The live site is a Cloudflare Worker serving static assets from `site/`. With Wr
 ```sh
 npm run build:og      # only when counts or the card design change
 npm test
-npm run deploy        # builds HTML, assembles site/, runs wrangler deploy
+npm run deploy        # builds HTML, splits it into 34 pages in site/, runs wrangler deploy
+npm run test:site     # checks every generated page: h1, titles, JSON-LD, links, 404, tabs, search
+npm run seo:indexnow  # tells Bing/IndexNow that every URL in the sitemap changed
 ```
 
 `wrangler.jsonc` binds both `open-fde.ai` and `www.open-fde.ai` as custom domains.
