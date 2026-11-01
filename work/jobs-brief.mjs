@@ -11,8 +11,7 @@ const segments=[
  ['Large software companies',9,'Product feedback 83%, ambiguity 82%, LLMs 63%','$191K–$266K (6)'],
 ];
 
-export const jobsBrief=()=>`<div class="market-brief" id="jobs-brief" role="region" aria-labelledby="jobs-brief-title">
-<h2 id="jobs-brief-title">What the market is asking for</h2>
+export const jobsBrief=()=>`<div class="market-brief">
 <p class="brief-lede">We read the full text of all 588 postings in the 1 November 2026 snapshot: 417 distinct roles at 92 companies. Forward deployed is one title covering five different jobs. All five want an engineer who owns an outcome inside someone else’s systems and can explain it to executives. The employer you pick decides whether you also need model depth, domain experience, or a security clearance.</p>
 <h3>One title, five jobs</h3>
 <ol class="brief-list">

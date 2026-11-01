@@ -33,7 +33,7 @@ Active only on `open-fde.ai` / `www.open-fde.ai`. Off for downloaded copies, loc
 | Property | Type | Description |
 | --- | --- | --- |
 | section | string | Top-level page the action happened on. Values: start, learn, resources, interview, jobs, stories, stats, header. |
-| tab | string | Tab id within a page. Examples: res-people, res-books, res-articles, res-podcasts, res-videos, interview-overview, interview-companies, interview-bank, q-practice, story-list, cases. |
+| tab | string | Tab id within a page. Examples: jobs-open, jobs-market, res-people, res-books, res-articles, res-podcasts, res-videos, interview-overview, interview-companies, interview-bank, q-practice, story-list, cases. |
 | chapter_number | number | Chapter number in the Learn book. 0 is the preface; 1–12 follow the delivery phases; 13–20 are advanced fieldcraft. |
 | chapter_title | string | Chapter title as shown. Example: Build a thin vertical slice. |
 | part_title | string | Book part the chapter belongs to. Examples: Discover, Build, Advanced fieldcraft, Preface. |
