@@ -52,3 +52,6 @@ Aim for depth on the big hirers and honesty on the rest: 8 to 20 sourced questio
 
 ## What counts as a question
 A question is a prompt a candidate could answer. If a source names a stage but not what is asked ("a case study", "a coding round, problem not disclosed"), record it under `process` only. Never write an example prompt to stand in for an undisclosed one.
+
+## Date range
+Report only questions asked in 2025 or later, and set `year` on every question. Skip older reports; loops change quickly.

@@ -55,9 +55,10 @@ Data: `docs/INTERVIEWS.json`. Brief: `work/research/interview-brief.md`.
 1. Pick companies: the biggest hirers in `docs/JOBS.json`, companies with no guide yet, and guides whose newest source is over 9 months old.
 2. One sub-agent per 4–6 companies with the brief. Output `work/research/out/interviews-<group>.json`. Glassdoor and Blind are excluded (terms forbid reuse). Questions are paraphrased, 25 words or fewer.
 3. Remove from the output any company the researcher found has no FDE-type role (it reports this in `gaps`). Then `npm run research:merge-interviews -- work/research/out/interviews-*.json`. A company in the input replaces its old entry; others stay. The script fails on unknown source ids, types, or evidence kinds.
-4. A question must be a prompt a candidate can answer. When a source names a stage but not its content ("case study, content not published"), it goes in `process` only; restating it as a question duplicates the source. The build fails on notes such as "not published" or "exact prompt not disclosed". Also drop illustrative prompts a researcher made up because the real one is undisclosed.
-5. Verify yourself: open the sources behind each company's headline claims (take-home, decomposition prompt, AI-tool policy) and confirm they say it.
-6. Companies with 5 or more questions get their own page (`/interview/<slug>/`); fewer stay on the Companies tab, and the old page redirects there. Changing that threshold needs edits in both `work/interviews.mjs` and `work/build-site.mjs`.
+4. Keep only questions asked in 2025 or later. Every question needs a `year` (the year it was asked, or the source's date when the report gives no interview date); drop older or undated ones before merging. The build fails on any question dated before 2025. Process stages and tips may cite older sources, but say how old they are.
+5. A question must be a prompt a candidate can answer. When a source names a stage but not its content ("case study, content not published"), it goes in `process` only; restating it as a question duplicates the source. The build fails on notes such as "not published" or "exact prompt not disclosed". Also drop illustrative prompts a researcher made up because the real one is undisclosed.
+6. Verify yourself: open the sources behind each company's headline claims (take-home, decomposition prompt, AI-tool policy) and confirm they say it.
+7. Companies with 5 or more questions get their own page (`/interview/<slug>/`); fewer stay on the Companies tab, and the old page redirects there. Changing that threshold needs edits in both `work/interviews.mjs` and `work/build-site.mjs`.
 
 ## 3b. Add a company's case studies
 

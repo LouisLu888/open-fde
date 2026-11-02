@@ -174,39 +174,6 @@
      "note": ""
     },
     {
-     "id": "palantir-q10",
-     "prompt": "Design a system for internal company teams to organize meetups around hobbies, then code one core feature.",
-     "type": "decomposition",
-     "role": "FDSE (Commercial)",
-     "stage": "Technical screen",
-     "evidence": "candidate",
-     "source": "S6",
-     "year": "2024",
-     "note": "Approximate year; candidate says interview was about two years before a 2026 post"
-    },
-    {
-     "id": "palantir-q11",
-     "prompt": "Using documentation for an obscure programming language, solve a set of problems with it.",
-     "type": "coding",
-     "role": "FDSE (Commercial)",
-     "stage": "Onsite learning round",
-     "evidence": "candidate",
-     "source": "S6",
-     "year": "2024",
-     "note": "Candidate attributes rejection to asking questions that signalled too much hand-holding"
-    },
-    {
-     "id": "palantir-q12",
-     "prompt": "Design Yelp, then extend the design as the interviewer adds complexity.",
-     "type": "system-design",
-     "role": "FDSE (Commercial)",
-     "stage": "Onsite decomposition",
-     "evidence": "candidate",
-     "source": "S6",
-     "year": "2024",
-     "note": ""
-    },
-    {
      "id": "palantir-q13",
      "prompt": "How would you optimize a given scheduling system?",
      "type": "coding",
@@ -249,39 +216,6 @@
      "source": "S11",
      "year": "2025",
      "note": "Candidate was told no preparation was needed; failed this round"
-    },
-    {
-     "id": "palantir-q17",
-     "prompt": "Solve a problem about playing a unique card game.",
-     "type": "coding",
-     "role": "FDSE (New Grad)",
-     "stage": "Technical interview",
-     "evidence": "candidate",
-     "source": "S10",
-     "year": "2023",
-     "note": ""
-    },
-    {
-     "id": "palantir-q18",
-     "prompt": "Online assessment with one SQL task, one API-call task and one algorithm problem.",
-     "type": "take-home",
-     "role": "FDSE (New Grad)",
-     "stage": "Online assessment",
-     "evidence": "candidate",
-     "source": "S10",
-     "year": "2023",
-     "note": ""
-    },
-    {
-     "id": "palantir-q19",
-     "prompt": "Given a vague real-world problem and a described database, design an application.",
-     "type": "decomposition",
-     "role": "FDSE / SWE (London)",
-     "stage": "Onsite decomposition",
-     "evidence": "candidate",
-     "source": "S13",
-     "year": "2022",
-     "note": "Feedback: should have split into subproblems first"
     },
     {
      "id": "palantir-q20",
@@ -3169,61 +3103,6 @@
      "source": "S3",
      "year": "2025",
      "note": "S3 calls it a contiguous subarray; S4 a substring. Output was left undefined, so clarify it"
-    },
-    {
-     "id": "hebbia-q2",
-     "prompt": "Build a React component that displays data and lets the user edit it.",
-     "type": "coding",
-     "role": "Software Engineer (not FDE)",
-     "stage": "Unspecified technical round",
-     "evidence": "candidate",
-     "source": "S2",
-     "year": "2024",
-     "note": ""
-    },
-    {
-     "id": "hebbia-q3",
-     "prompt": "In one day, build and deploy an app from scratch to a given set of requirements.",
-     "type": "ai-build",
-     "role": "Software Engineer (not FDE)",
-     "stage": "Onsite",
-     "evidence": "candidate",
-     "source": "S2",
-     "year": "2024",
-     "note": "Type is a full build exercise; AI use not mentioned"
-    },
-    {
-     "id": "hebbia-q4",
-     "prompt": "Read a design document, leave review comments, and answer follow-up questions on it.",
-     "type": "system-design",
-     "role": "Senior Software Engineer (not FDE)",
-     "stage": "Online technical assessment",
-     "evidence": "candidate",
-     "source": "S6",
-     "year": "2024",
-     "note": "Timed, about 45 min"
-    },
-    {
-     "id": "hebbia-q5",
-     "prompt": "In a small unfamiliar codebase, implement several features within a timed session.",
-     "type": "coding",
-     "role": "Senior Software Engineer (not FDE)",
-     "stage": "Online technical assessment",
-     "evidence": "candidate",
-     "source": "S6",
-     "year": "2024",
-     "note": "Timed, about 45 min"
-    },
-    {
-     "id": "hebbia-q7",
-     "prompt": "Over a full day, build a service on AWS from a vague prompt, then present and discuss it.",
-     "type": "coding",
-     "role": "Senior Software Engineer (not FDE)",
-     "stage": "Onsite",
-     "evidence": "candidate",
-     "source": "S6",
-     "year": "2024",
-     "note": "Used own AWS account; a buddy was available. A July 2025 report also describes a full-day toy-app build (S12)"
     }
    ],
    "tips": [
@@ -3602,28 +3481,6 @@
      "note": ""
     },
     {
-     "id": "glean-q4",
-     "prompt": "Describe a time you handled an objection.",
-     "type": "behavioral",
-     "role": "Solutions Architect (adjacent)",
-     "stage": "Recruiter / hiring manager",
-     "evidence": "candidate",
-     "source": "S3",
-     "year": "2024",
-     "note": ""
-    },
-    {
-     "id": "glean-q5",
-     "prompt": "Index 50 documents using Glean's Indexing API; an optional bonus extension follows.",
-     "type": "take-home",
-     "role": "Solutions Architect (adjacent, India)",
-     "stage": "Technical assessment",
-     "evidence": "candidate",
-     "source": "S4",
-     "year": "2024",
-     "note": "Candidate says the bonus was treated as the main task and a deployed AWS solution was expected"
-    },
-    {
      "id": "glean-q6",
      "prompt": "Implement the game Connect 4.",
      "type": "coding",
@@ -3767,72 +3624,6 @@
     }
    ],
    "questions": [
-    {
-     "id": "anduril-q1",
-     "prompt": "Tell me about yourself, and why Anduril?",
-     "type": "motivation",
-     "role": "Forward Deployed Engineer",
-     "stage": "Recruiter screen",
-     "evidence": "candidate",
-     "source": "S1",
-     "year": "2023",
-     "note": "Year approximate: report says interview ~3 years before a 2026 submission"
-    },
-    {
-     "id": "anduril-q2",
-     "prompt": "Sort a binary array in linear time.",
-     "type": "coding",
-     "role": "Forward Deployed Engineer",
-     "stage": "Technical interview",
-     "evidence": "candidate",
-     "source": "S1",
-     "year": "2023",
-     "note": ""
-    },
-    {
-     "id": "anduril-q3",
-     "prompt": "A grid search coding problem.",
-     "type": "coding",
-     "role": "Forward Deployed Engineer",
-     "stage": "Final round",
-     "evidence": "candidate",
-     "source": "S1",
-     "year": "2023",
-     "note": "Only the title 'Grid Search' is given"
-    },
-    {
-     "id": "anduril-q4",
-     "prompt": "Walk through your past projects.",
-     "type": "behavioral",
-     "role": "Forward Deployed Engineer",
-     "stage": "Final round",
-     "evidence": "candidate",
-     "source": "S1",
-     "year": "2023",
-     "note": ""
-    },
-    {
-     "id": "anduril-q5",
-     "prompt": "Explain the difference between UDP and TCP.",
-     "type": "domain",
-     "role": "Technical Operations Engineer",
-     "stage": "Technical interviews",
-     "evidence": "candidate",
-     "source": "S2",
-     "year": "",
-     "note": "Date on page (Jan 2021) may be a placeholder"
-    },
-    {
-     "id": "anduril-q6",
-     "prompt": "What is especially hard in your current role, and how did you make it easier over time?",
-     "type": "behavioral",
-     "role": "Mission Operations Engineer (adjacent ops role)",
-     "stage": "Onsite",
-     "evidence": "candidate",
-     "source": "S3",
-     "year": "2023",
-     "note": ""
-    },
     {
      "id": "anduril-q7",
      "prompt": "Give a presentation on why Anduril should hire you.",
@@ -4847,17 +4638,6 @@
     }
    ],
    "questions": [
-    {
-     "id": "cohere-q1",
-     "prompt": "How have you integrated Cohere in past work, and which components did you use?",
-     "type": "domain",
-     "role": "Solutions Architect",
-     "stage": "Unspecified",
-     "evidence": "candidate",
-     "source": "S3",
-     "year": "2023",
-     "note": "Single report; candidate called the process disorganised"
-    },
     {
      "id": "cohere-q2",
      "prompt": "What are you most proud of building, why Cohere, and why move now?",
