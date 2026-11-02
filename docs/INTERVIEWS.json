@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-11-01",
+ "checkedAt": "2026-11-02",
  "method": "Public employer pages, job postings, first-hand candidate and employee accounts, and third-party prep guides, each opened and read. Glassdoor and Blind excluded. Questions paraphrased.",
  "companies": [
   {
@@ -3108,6 +3108,658 @@
    "gaps": "No employer-published description of the Clay interview loop. Growth Strategist detail rests on one third-party guide that quotes unnamed candidates; it does not use the 'Deployment Strategist' title. Durations are approximate."
   },
   {
+   "company": "Hebbia",
+   "slug": "hebbia",
+   "roles": [
+    "Forward Deployed Engineer"
+   ],
+   "process": [
+    {
+     "stage": "Recruiter call",
+     "format": "Phone screen",
+     "assesses": "Background and fit",
+     "source": "S3"
+    },
+    {
+     "stage": "Technical screen",
+     "format": "~45 min (15 min background, 30 min coding) on CoderPad",
+     "assesses": "Coding on an ambiguous text-relevance problem with some statistics",
+     "source": "S3"
+    },
+    {
+     "stage": "API design and data modeling",
+     "format": "Interview",
+     "assesses": "API and data-model design",
+     "source": "S2"
+    },
+    {
+     "stage": "Onsite build day",
+     "format": "Full day (~8 hours) at the office: build and deploy an app from scratch to given requirements",
+     "assesses": "End-to-end building and shipping",
+     "source": "S2"
+    },
+    {
+     "stage": "Online technical assessment (some loops)",
+     "format": "Two timed parts, about 45 min each: design-doc review and feature work in a small codebase",
+     "assesses": "Code-review judgment and working in unfamiliar code",
+     "source": "S6"
+    },
+    {
+     "stage": "Coding screen (some loops)",
+     "format": "45 min, practical with an algorithm-design component",
+     "assesses": "Algorithms and practical coding",
+     "source": "S5"
+    },
+    {
+     "stage": "System design screen",
+     "format": "45 min live",
+     "assesses": "Architecture choices, scaling and tradeoffs",
+     "source": "S5"
+    },
+    {
+     "stage": "Onsite build, presentation",
+     "format": "Full day (reported 10am to 5pm) building on AWS from a vague prompt, then 1+ hour presentation and discussion",
+     "assesses": "End-to-end delivery under ambiguity; explaining decisions",
+     "source": "S6"
+    },
+    {
+     "stage": "CEO screen",
+     "format": "15 min, after onsite",
+     "assesses": "Final fit",
+     "source": "S5"
+    }
+   ],
+   "questions": [
+    {
+     "id": "hebbia-q1",
+     "prompt": "Given a text and a list of per-position relevance scores, return the most relevant contiguous span.",
+     "type": "coding",
+     "role": "Software Engineer (not FDE)",
+     "stage": "Technical screen",
+     "evidence": "candidate",
+     "source": "S3",
+     "year": "2025",
+     "note": "S3 calls it a contiguous subarray; S4 a substring. Output was left undefined, so clarify it"
+    },
+    {
+     "id": "hebbia-q2",
+     "prompt": "Build a React component that displays data and lets the user edit it.",
+     "type": "coding",
+     "role": "Software Engineer (not FDE)",
+     "stage": "Unspecified technical round",
+     "evidence": "candidate",
+     "source": "S2",
+     "year": "2024",
+     "note": ""
+    },
+    {
+     "id": "hebbia-q3",
+     "prompt": "In one day, build and deploy an app from scratch to a given set of requirements.",
+     "type": "ai-build",
+     "role": "Software Engineer (not FDE)",
+     "stage": "Onsite",
+     "evidence": "candidate",
+     "source": "S2",
+     "year": "2024",
+     "note": "Type is a full build exercise; AI use not mentioned"
+    },
+    {
+     "id": "hebbia-q4",
+     "prompt": "Read a design document, leave review comments, and answer follow-up questions on it.",
+     "type": "system-design",
+     "role": "Senior Software Engineer (not FDE)",
+     "stage": "Online technical assessment",
+     "evidence": "candidate",
+     "source": "S6",
+     "year": "2024",
+     "note": "Timed, about 45 min"
+    },
+    {
+     "id": "hebbia-q5",
+     "prompt": "In a small unfamiliar codebase, implement several features within a timed session.",
+     "type": "coding",
+     "role": "Senior Software Engineer (not FDE)",
+     "stage": "Online technical assessment",
+     "evidence": "candidate",
+     "source": "S6",
+     "year": "2024",
+     "note": "Timed, about 45 min"
+    },
+    {
+     "id": "hebbia-q6",
+     "prompt": "Answer a standard live system design prompt and defend the tradeoffs.",
+     "type": "system-design",
+     "role": "Senior Software Engineer (not FDE)",
+     "stage": "System design",
+     "evidence": "candidate",
+     "source": "S6",
+     "year": "2024",
+     "note": "Prompt not disclosed"
+    },
+    {
+     "id": "hebbia-q7",
+     "prompt": "Over a full day, build a service on AWS from a vague prompt, then present and discuss it.",
+     "type": "coding",
+     "role": "Senior Software Engineer (not FDE)",
+     "stage": "Onsite",
+     "evidence": "candidate",
+     "source": "S6",
+     "year": "2024",
+     "note": "Used own AWS account; a buddy was available. A July 2025 report also describes a full-day toy-app build (S12)"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Ask the interviewer to define the expected output before coding; one candidate said the relevance problem came with inputs but no defined output.",
+     "source": "S3"
+    },
+    {
+     "text": "Brush up basic statistics; one candidate said the screen involved data-science/stats fundamentals, another that it wanted an analyst/ML/SWE generalist.",
+     "source": "S3"
+    },
+    {
+     "text": "Budget a full day for the onsite, which involves building and deploying an app.",
+     "source": "S2"
+    },
+    {
+     "text": "For the coding screen, one candidate who got an offer recommends reviewing algorithm design (Knuth/CLRS) and current distributed-systems tradeoffs for the design screen.",
+     "source": "S5"
+    },
+    {
+     "text": "Expect an open-ended all-day AWS build with little guidance; one candidate paid small AWS costs on a personal account and found recruiter prep unhelpful.",
+     "source": "S6"
+    },
+    {
+     "text": "A 2025 candidate who failed the full-day build said they should have read others' interview posts beforehand.",
+     "source": "S7"
+    }
+   ],
+   "aiPolicy": {},
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://builtin.com/job/forward-deployed-engineer/9400002",
+     "title": "Forward Deployed Engineer - Hebbia",
+     "publisher": "Built In (mirror of Hebbia posting)",
+     "date": "2026",
+     "kind": "third-party",
+     "checked": "FDE embeds with finance customers; 5+ yrs; $180k-$300k range narrowed during interviews; no process text"
+    },
+    {
+     "id": "S2",
+     "url": "https://www.jointaro.com/interviews/companies/hebbiaai/experiences/software-engineer-new-york-ny-february-1-2024-no-offer-neutral-6dba43d7",
+     "title": "HebbiaAI Software Engineer interview, New York, Feb 2024",
+     "publisher": "Taro (candidate submission)",
+     "date": "2024-02",
+     "kind": "candidate",
+     "checked": "Recruiter, tech screen, API design/data modeling, 8-hour build-and-deploy onsite; React component question"
+    },
+    {
+     "id": "S3",
+     "url": "https://www.jointaro.com/interviews/companies/hebbiaai/experiences/software-engineer-united-states-april-28-2025-no-offer-negative-b8ee94c7",
+     "title": "HebbiaAI Software Engineer interview, Apr 2025",
+     "publisher": "Taro (candidate submission)",
+     "date": "2025-04",
+     "kind": "candidate",
+     "checked": "Recruiter call, CoderPad round; relevance-scores contiguous subarray problem; tips on clarifying output and stats"
+    },
+    {
+     "id": "S4",
+     "url": "https://www.jointaro.com/interviews/companies/hebbiaai/experiences/senior-software-engineer-new-york-ny-april-1-2024-no-offer-negative-6c4b6816",
+     "title": "HebbiaAI Senior Software Engineer interview, Apr 2024",
+     "publisher": "Taro (candidate submission)",
+     "date": "2024-04",
+     "kind": "candidate",
+     "checked": "45-min phone: 15 min background + 30 min coding on most relevant substring; felt like a mix of analyst/ML/SWE skills"
+    },
+    {
+     "id": "S5",
+     "url": "https://www.jointaro.com/interviews/companies/hebbiaai/experiences/senior-software-engineer-new-york-ny-june-1-2025-declined-offer-positive-c3334679/",
+     "title": "HebbiaAI Senior Software Engineer interview, New York, Jun 2025",
+     "publisher": "Taro (candidate submission)",
+     "date": "2025-06",
+     "kind": "candidate",
+     "checked": "Recruiter 30m, coding 45m, system design 45m, full-day toy project onsite, 15m CEO screen; got offer"
+    },
+    {
+     "id": "S6",
+     "url": "https://www.jointaro.com/interviews/companies/hebbiaai/experiences/senior-software-engineer-new-york-ny-august-1-2024-no-offer-neutral-c4f921bf",
+     "title": "HebbiaAI Senior Software Engineer interview, New York, Aug 2024",
+     "publisher": "Taro (candidate submission)",
+     "date": "2024-08",
+     "kind": "candidate",
+     "checked": "HR call; two-part online assessment (design doc review, codebase features); system design; all-day AWS build plus presentation"
+    },
+    {
+     "id": "S7",
+     "url": "https://www.jointaro.com/interviews/companies/hebbiaai/experiences/software-engineer-united-states-july-9-2025-no-offer-negative-726d7a09",
+     "title": "HebbiaAI Software Engineer interview, Jul 2025",
+     "publisher": "Taro (candidate submission)",
+     "date": "2025-07",
+     "kind": "candidate",
+     "checked": "Full-day onsite building a toy application; no offer"
+    }
+   ],
+   "gaps": "Still no FDE-specific interview report; all process detail is from software engineer candidates, and loops vary by year (some include an online assessment, some a CEO screen). A Glassdoor report (excluded) describes an AI Strategist loop with a live client-value case. Hebbia FDE, Forward Deployed Banker/Investor and FDPM postings carry no interview-process text. No AI-use policy published."
+  },
+  {
+   "company": "LangChain",
+   "slug": "langchain",
+   "roles": [
+    "Deployed Engineer (regional: Bay Area, NYC, Boston, Chicago, Seattle, Atlanta, Charlotte, Raleigh, UK, Singapore/APAC)",
+    "Deployed Engineer (Early Career - SF)",
+    "Deployed Engineer (Federal)",
+    "Deployed Engineer, Professional Services",
+    "Deployed Architect, Professional Services"
+   ],
+   "process": [
+    {
+     "stage": "Screening call",
+     "format": "About 30 minutes, often run by the hiring manager rather than a recruiter (per guide)",
+     "assesses": "Mutual interest, background, developer and customer-facing experience; may touch on salary",
+     "source": "S3"
+    },
+    {
+     "stage": "Recruiter / intro screen",
+     "format": "Call; one candidate reported five behavioral questions",
+     "assesses": "Customer exposure, risk management, GenAI and agent deployment experience, LangGraph familiarity",
+     "source": "S4"
+    },
+    {
+     "stage": "Technical interview",
+     "format": "Conversation; question content is behind the source page paywall",
+     "assesses": "Production debugging, approach to debugging AI apps, product understanding, handling a customer churn scenario",
+     "source": "S4"
+    },
+    {
+     "stage": "Peer interview",
+     "format": "Engineer-to-engineer conversation",
+     "assesses": "Views on agents, coding assistants, observability, evaluation, customer adoption, industry direction",
+     "source": "S4"
+    },
+    {
+     "stage": "Take-home 1: product presentation",
+     "format": "No time limit; presented in a 20-30 minute slot (guide gives both figures)",
+     "assesses": "Grasp of a LangChain product's features and value, ability to tell a narrative for a non-technical audience",
+     "source": "S3"
+    },
+    {
+     "stage": "Take-home 2: agent build and present",
+     "format": "Build an agent demo for a fictional customer, interviewers reachable via a Slack channel; technical presentation to hiring manager and team, not a role-play",
+     "assesses": "Architecture decisions, handling documentation gaps, depth on LangChain tools, receptiveness to feedback",
+     "source": "S3"
+    },
+    {
+     "stage": "Overall evaluation and timeline",
+     "format": "Remote-capable; about one month end to end (guide)",
+     "assesses": "Employer says the offer level depends on impact, craft, leadership and communication shown during interviews, and it tells candidates early where they are tracking",
+     "source": "S1"
+    }
+   ],
+   "questions": [
+    {
+     "id": "langchain-q1",
+     "prompt": "What kinds of customers do you support in your current role?",
+     "type": "behavioral",
+     "role": "Deployed Engineer",
+     "stage": "Recruiter screen",
+     "evidence": "candidate",
+     "source": "S4",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "langchain-q2",
+     "prompt": "How have you managed risk on a project?",
+     "type": "behavioral",
+     "role": "Deployed Engineer",
+     "stage": "Recruiter screen",
+     "evidence": "candidate",
+     "source": "S4",
+     "year": "2026",
+     "note": "Also listed on the third-party question page (S5)."
+    },
+    {
+     "id": "langchain-q3",
+     "prompt": "Tell me about a generative AI project you worked on.",
+     "type": "behavioral",
+     "role": "Deployed Engineer",
+     "stage": "Recruiter screen",
+     "evidence": "candidate",
+     "source": "S4",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "langchain-q4",
+     "prompt": "Have you deployed AI applications to production?",
+     "type": "behavioral",
+     "role": "Deployed Engineer",
+     "stage": "Recruiter screen",
+     "evidence": "candidate",
+     "source": "S4",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "langchain-q5",
+     "prompt": "What is your experience building agents and using LangGraph?",
+     "type": "domain",
+     "role": "Deployed Engineer",
+     "stage": "Recruiter screen",
+     "evidence": "candidate",
+     "source": "S4",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "langchain-q6",
+     "prompt": "Prepare a presentation on a LangChain product such as LangSmith or LangGraph for a non-technical audience, covering its benefits.",
+     "type": "presentation",
+     "role": "Deployed Engineer",
+     "stage": "Take-home 1",
+     "evidence": "third-party",
+     "source": "S3",
+     "year": "2026",
+     "note": "Guide states it drew on input from LangChain deployed engineers; slot length given as both 20 and 30 minutes."
+    },
+    {
+     "id": "langchain-q7",
+     "prompt": "Prototype an agent (e.g. customer support) for a fictional customer from supplied product and purchase data in LangGraph Studio, then present implementation and trade-offs.",
+     "type": "ai-build",
+     "role": "Deployed Engineer",
+     "stage": "Take-home 2",
+     "evidence": "third-party",
+     "source": "S3",
+     "year": "2026",
+     "note": ""
+    }
+   ],
+   "tips": [
+    {
+     "text": "Use every resource offered (docs, LangChain Academy, the interview Slack channel), but ask considered questions in Slack; the guide says the channel is itself evaluated.",
+     "source": "S3"
+    },
+    {
+     "text": "Split effort between building and presenting; over-investing in code alone is listed as a common mistake.",
+     "source": "S3"
+    },
+    {
+     "text": "Do not assume the docs are complete; be ready to explain how you worked around gaps.",
+     "source": "S3"
+    },
+    {
+     "text": "Be able to talk about agent pain points, especially measuring quality and observability.",
+     "source": "S3"
+    },
+    {
+     "text": "Take feedback on your build without defensiveness, even on decisions you think were right.",
+     "source": "S3"
+    },
+    {
+     "text": "Prioritise solving the customer's problem over reciting LangChain features; understand how LangChain, LangGraph and LangSmith fit together.",
+     "source": "S4"
+    },
+    {
+     "text": "Tie past customer work to the trust, debugging and production-readiness problems LangChain customers face, and be candid about platform or infrastructure gaps.",
+     "source": "S4"
+    }
+   ],
+   "aiPolicy": {},
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://jobs.ashbyhq.com/langchain/e773649c-4ea7-47c2-9987-74d525474e82",
+     "title": "Deployed Engineer (Bay Area)",
+     "publisher": "LangChain (Ashby)",
+     "date": "2026-10",
+     "kind": "employer",
+     "checked": "Says offer depends on impact, craft, leadership and communication seen in interviews; promises early tracking feedback and comp talk before offer. No stage list."
+    },
+    {
+     "id": "S2",
+     "url": "https://jobs.ashbyhq.com/langchain/0f35c8e1-9318-411d-929b-04c60e6d8522",
+     "title": "Deployed Engineer (Early Career- SF)",
+     "publisher": "LangChain (Ashby)",
+     "date": "2026-10",
+     "kind": "employer",
+     "checked": "Same interview-evaluation language as S1; 1-3 years experience, 40% travel; no stage list."
+    },
+    {
+     "id": "S3",
+     "url": "https://www.aced.io/guides/langchain-deployed-engineer-interview",
+     "title": "LangChain Deployed Engineer Interview guide",
+     "publisher": "Aced (formerly Exponent), Graham Carlson",
+     "date": "2026",
+     "kind": "third-party",
+     "checked": "Screening call, two take-homes (product presentation, agent build with Slack channel), tips and common mistakes; claims input from LangChain deployed engineers; no AI-tool policy."
+    },
+    {
+     "id": "S4",
+     "url": "https://www.aced.io/experiences/lang-chain-forward-deployed-engineer-interview-8c2ffb",
+     "title": "LangChain Deployed Engineer interview experience (Mid level, US)",
+     "publisher": "Aced (anonymous candidate)",
+     "date": "2026-06",
+     "kind": "candidate",
+     "checked": "Recruiter screen (5 Qs), technical interview (4 Qs), take-home agent build/defend, peer interview; outcome in progress; tips."
+    },
+    {
+     "id": "S5",
+     "url": "https://www.aced.io/guides/langchain-deployed-engineer-interview/questions",
+     "title": "LangChain Deployed Engineer interview questions",
+     "publisher": "Aced",
+     "date": "2026",
+     "kind": "third-party",
+     "checked": "Lists six questions overlapping S4, incl. LangGraph vs LangSmith and the MLflow migration scenario; no per-question provenance."
+    }
+   ],
+   "gaps": "No employer-published stage list for Deployed Engineer roles; postings only describe evaluation dimensions. Candidate evidence rests on a single Aced report (outcome pending). A search summary mentioned a second candidate report (offer; intro chat, LangSmith demo take-home, LangGraph build-and-present) but I could not locate or open it, so it is excluded. Glassdoor reports exist and were not used. No stated AI-tool policy for take-homes. Third-party SWE guides (TechPrep) describe a founder chat and a 500k-line codebase take-home with AI tools encouraged, but they cover software engineers, not Deployed Engineers, so they are excluded. No separate evidence for Deployed Architect or Federal loops."
+  },
+  {
+   "company": "Glean",
+   "slug": "glean",
+   "roles": [
+    "Founding Forward Deployed Engineer",
+    "Solutions Architect (adjacent customer-facing role)"
+   ],
+   "process": [
+    {
+     "stage": "AI-focused exercise or discussion",
+     "format": "Brief exercise or conversation (format not specified)",
+     "assesses": "How the candidate thinks about, designs and uses AI to drive impact in the role",
+     "source": "S1"
+    },
+    {
+     "stage": "Level assessment",
+     "format": "Across the loop",
+     "assesses": "Level is set during interviews; the posted pay range spans several levels",
+     "source": "S1"
+    },
+    {
+     "stage": "Application questions",
+     "format": "Written answers on the Greenhouse form",
+     "assesses": "Agent-building experience and current AI tool use",
+     "source": "S2"
+    },
+    {
+     "stage": "Recruiter and hiring manager (Solutions Architect, adjacent)",
+     "format": "Calls",
+     "assesses": "Customer handling, e.g. objection handling",
+     "source": "S3"
+    },
+    {
+     "stage": "Technical assessment and review (Solutions Architect, India, adjacent)",
+     "format": "Build task on Glean's Indexing API, then technical review",
+     "assesses": "Working code against Glean APIs; reviewer expected it deployed on AWS",
+     "source": "S4"
+    },
+    {
+     "stage": "Software Engineer loop (adjacent)",
+     "format": "1h coding screen, HM behavioral, virtual onsite: 45m algorithmic, 1h coding, 1h system design, 2h coding assignment",
+     "assesses": "Algorithms, practical coding, system design",
+     "source": "S5"
+    }
+   ],
+   "questions": [
+    {
+     "id": "glean-q1",
+     "prompt": "Show how you think about, design and use AI to drive impact in your role, referencing tools and workflows you use today.",
+     "type": "ai-build",
+     "role": "Founding FDE",
+     "stage": "AI-focused exercise",
+     "evidence": "employer",
+     "source": "S1",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "glean-q2",
+     "prompt": "Have you built AI agents? If so, describe them.",
+     "type": "ai-build",
+     "role": "Founding FDE",
+     "stage": "Application form",
+     "evidence": "employer",
+     "source": "S2",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "glean-q3",
+     "prompt": "Which AI tools do you use today, and how do you use them?",
+     "type": "ai-build",
+     "role": "Founding FDE",
+     "stage": "Application form",
+     "evidence": "employer",
+     "source": "S2",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "glean-q4",
+     "prompt": "Describe a time you handled an objection.",
+     "type": "behavioral",
+     "role": "Solutions Architect (adjacent)",
+     "stage": "Recruiter / hiring manager",
+     "evidence": "candidate",
+     "source": "S3",
+     "year": "2024",
+     "note": ""
+    },
+    {
+     "id": "glean-q5",
+     "prompt": "Index 50 documents using Glean's Indexing API; an optional bonus extension follows.",
+     "type": "take-home",
+     "role": "Solutions Architect (adjacent, India)",
+     "stage": "Technical assessment",
+     "evidence": "candidate",
+     "source": "S4",
+     "year": "2024",
+     "note": "Candidate says the bonus was treated as the main task and a deployed AWS solution was expected"
+    },
+    {
+     "id": "glean-q6",
+     "prompt": "Implement the game Connect 4.",
+     "type": "coding",
+     "role": "Software Engineer (not FDE)",
+     "stage": "Technical screen",
+     "evidence": "candidate",
+     "source": "S5",
+     "year": "2025",
+     "note": "1-hour virtual screen"
+    },
+    {
+     "id": "glean-q7",
+     "prompt": "Complete an open-ended practical coding task largely on your own; interviewer checks in at the end.",
+     "type": "coding",
+     "role": "Software Engineer (not FDE)",
+     "stage": "Onsite",
+     "evidence": "candidate",
+     "source": "S6",
+     "year": "2026",
+     "note": "Curated by PracHub"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Glean says prior Glean experience is not required for the AI exercise; bring the tools, platforms and workflows you already use.",
+     "source": "S1"
+    },
+    {
+     "text": "Prepare written answers on agents you have built and the AI tools you use; both are required on the FDE application form.",
+     "source": "S2"
+    },
+    {
+     "text": "Confirm scope before a take-home: one Solutions Architect candidate was told coding was light, then judged on an optional bonus and on deploying to AWS.",
+     "source": "S4"
+    },
+    {
+     "text": "A 2026 engineering candidate said one onsite round was open-ended practical coding with little interviewer input; practice building independently against a timer.",
+     "source": "S6"
+    }
+   ],
+   "aiPolicy": {
+    "text": "Glean's posting says every candidate completes a brief AI-focused exercise or discussion and may reference any AI tools, platforms or workflows they use. It does not address AI assistance during other rounds.",
+    "source": "S1"
+   },
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://job-boards.greenhouse.io/gleanwork/jobs/4651991005",
+     "title": "Founding Forward Deployed Engineer",
+     "publisher": "Glean (Greenhouse)",
+     "date": "2026-10",
+     "kind": "employer",
+     "checked": "AI-focused exercise statement, level assessed during interviews, 25-50% travel, Remote-US"
+    },
+    {
+     "id": "S2",
+     "url": "https://job-boards.greenhouse.io/gleanwork/jobs/4651991005",
+     "title": "Founding Forward Deployed Engineer - application form",
+     "publisher": "Glean (Greenhouse job board API)",
+     "date": "2026-11",
+     "kind": "employer",
+     "checked": "Application asks about built AI agents and current AI tool use"
+    },
+    {
+     "id": "S3",
+     "url": "https://www.jointaro.com/interviews/companies/glean/experiences/solutions-architect-san-francisco-ca-september-1-2024-no-offer-neutral-dca30246",
+     "title": "Glean Solutions Architect interview, San Francisco, Sep 2024",
+     "publisher": "Taro (candidate submission)",
+     "date": "2024-09",
+     "kind": "candidate",
+     "checked": "Recruiter then hiring manager; objection-handling question; no offer"
+    },
+    {
+     "id": "S4",
+     "url": "https://www.jointaro.com/interviews/companies/glean/experiences/solutions-architect-india-november-1-2024-no-offer-negative-17038831",
+     "title": "Glean Solutions Architect interview, India, Nov 2024",
+     "publisher": "Taro (candidate submission)",
+     "date": "2024-11",
+     "kind": "candidate",
+     "checked": "HM round, Indexing API assessment (50 docs), technical review expecting AWS deployment"
+    },
+    {
+     "id": "S5",
+     "url": "https://www.jointaro.com/interviews/companies/glean/experiences/software-engineer-san-francisco-ca-july-16-2025-no-offer-neutral-2566e2d7",
+     "title": "Glean Software Engineer interview, San Francisco, Jul 2025",
+     "publisher": "Taro (candidate submission)",
+     "date": "2025-07",
+     "kind": "candidate",
+     "checked": "1h screen (Connect 4), HM behavioral, virtual onsite with 2h coding assignment"
+    },
+    {
+     "id": "S6",
+     "url": "https://prachub.com/interview-experiences/glean-ca-software-engineer-practical-coding-and-system-design-onsite-8c885c22da",
+     "title": "Glean (CA) Software Engineer: practical coding and system design onsite",
+     "publisher": "PracHub (curated candidate report)",
+     "date": "2026-03",
+     "kind": "candidate",
+     "checked": "LeetCode-style screen; onsite two coding (one open-ended practical) and system design"
+    }
+   ],
+   "gaps": "Still no candidate report for the Founding FDE loop itself. Added evidence is from the FDE application form (employer) plus Solutions Architect and Software Engineer reports (adjacent roles, small samples). A LeetCode Discuss new-grad post returned HTTP 403 and was not used. Refresh.cv stats not used."
+  },
+  {
    "company": "Anduril",
    "slug": "anduril",
    "roles": [
@@ -3476,6 +4128,585 @@
    "gaps": "Only one detailed candidate account (S2; URL slug says solutions-architect but page labels the role FDE; interview date shown only as roughly a year before posting). No employer-published process or AI policy found."
   },
   {
+   "company": "HappyRobot",
+   "slug": "happyrobot",
+   "roles": [
+    "Forward Deployed Engineer",
+    "Founding Forward Deployed Engineer",
+    "Deployment Strategist"
+   ],
+   "process": [
+    {
+     "stage": "HR interview",
+     "format": "30 min",
+     "assesses": "Not described",
+     "source": "S1"
+    },
+    {
+     "stage": "Technical interview / technical challenge",
+     "format": "Listed as 4 hours by the employer; candidates describe a take-home built on the HappyRobot platform (one repo calls it the Stage 2 technical challenge)",
+     "assesses": "Building a working voice-agent workflow plus backend API, deployment, and reporting dashboard",
+     "source": "S1"
+    },
+    {
+     "stage": "Team interview",
+     "format": "3 hours",
+     "assesses": "Not described",
+     "source": "S1"
+    },
+    {
+     "stage": "Offer",
+     "format": "",
+     "assesses": "",
+     "source": "S1"
+    }
+   ],
+   "questions": [
+    {
+     "id": "happyrobot-q1",
+     "prompt": "On the HappyRobot platform, build an inbound carrier-sales voice agent that verifies a carrier's MC number against the FMCSA API.",
+     "type": "take-home",
+     "role": "FDE / Solutions Engineer",
+     "stage": "Technical challenge",
+     "evidence": "candidate",
+     "source": "S2",
+     "year": "2025",
+     "note": "Freight-brokerage scenario; README title says FDE interview, body says Solutions Engineer; author reports an offer."
+    },
+    {
+     "id": "happyrobot-q2",
+     "prompt": "Have the agent search and match available loads to the caller and pitch the best fit.",
+     "type": "take-home",
+     "role": "FDE / Solutions Engineer",
+     "stage": "Technical challenge",
+     "evidence": "candidate",
+     "source": "S2",
+     "year": "2025",
+     "note": ""
+    },
+    {
+     "id": "happyrobot-q3",
+     "prompt": "Implement automated rate negotiation with the carrier, capped at three rounds.",
+     "type": "take-home",
+     "role": "FDE",
+     "stage": "Stage 2 technical challenge",
+     "evidence": "candidate",
+     "source": "S3",
+     "year": "2025",
+     "note": ""
+    },
+    {
+     "id": "happyrobot-q4",
+     "prompt": "Classify each call's outcome and caller sentiment and extract key call data for reporting.",
+     "type": "take-home",
+     "role": "FDE",
+     "stage": "Stage 2 technical challenge",
+     "evidence": "candidate",
+     "source": "S3",
+     "year": "2025",
+     "note": ""
+    },
+    {
+     "id": "happyrobot-q5",
+     "prompt": "Build and deploy a backend API the agent calls (carrier check, loads, call logging), containerised and live on a cloud host with API-key auth.",
+     "type": "take-home",
+     "role": "FDE / Solutions Engineer",
+     "stage": "Technical challenge",
+     "evidence": "candidate",
+     "source": "S2",
+     "year": "2025",
+     "note": "Both repos use FastAPI + Docker; one on Google Cloud Run, one on Railway-style hosting."
+    },
+    {
+     "id": "happyrobot-q6",
+     "prompt": "Build a metrics dashboard showing call outcomes, transcripts, negotiation results and success rates.",
+     "type": "take-home",
+     "role": "FDE",
+     "stage": "Technical challenge",
+     "evidence": "candidate",
+     "source": "S3",
+     "year": "2025",
+     "note": ""
+    },
+    {
+     "id": "happyrobot-q7",
+     "prompt": "Submit documentation, a short (about 5-minute) demo video, and a client-ready presentation of the solution.",
+     "type": "presentation",
+     "role": "FDE",
+     "stage": "Technical challenge",
+     "evidence": "candidate",
+     "source": "S3",
+     "year": "2025",
+     "note": ""
+    }
+   ],
+   "tips": [
+    {
+     "text": "A candidate who received an offer chose speed over polish (an HTML dashboard served from the API instead of a separate React app) to avoid stretching the process.",
+     "source": "S2"
+    },
+    {
+     "text": "Write deployment docs so reviewers can run your solution; successful repos include Docker setup and a deployment guide.",
+     "source": "S2"
+    },
+    {
+     "text": "The freight scenario depends on the public FMCSA carrier lookup for MC-number verification; get that integration working first, since later steps depend on it.",
+     "source": "S3"
+    },
+    {
+     "text": "Postings require full-stack React/TypeScript/Node plus Python and hands-on LLM prompting and voice/transcriber tuning; expect these in the technical stage.",
+     "source": "S4"
+    }
+   ],
+   "aiPolicy": {},
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://www.ycombinator.com/companies/happyrobot/jobs/atsn2pi-forward-deployed-engineer",
+     "title": "Forward Deployed Engineer at HappyRobot",
+     "publisher": "Y Combinator Work at a Startup (employer-posted)",
+     "date": "2025-01",
+     "kind": "employer",
+     "checked": "Interview process field lists HR 30 min, technical 4 hr, team 3 hr, offer; posted 2025-01-10; other current YC FDE/DS postings leave the field empty"
+    },
+    {
+     "id": "S2",
+     "url": "https://github.com/jonleinena/happyrobot-interview",
+     "title": "happyrobot-interview",
+     "publisher": "Jon Leiñena (GitHub)",
+     "date": "2025-06",
+     "kind": "candidate",
+     "checked": "README describes the take-home build (FMCSA check, load matching, negotiation, call logging, dashboard, Cloud Run deploy) and says offer received"
+    },
+    {
+     "id": "S3",
+     "url": "https://github.com/fahd78/happyrobot-inbound-carrier",
+     "title": "happyrobot-inbound-carrier",
+     "publisher": "fahd78 (GitHub)",
+     "date": "2025-09",
+     "kind": "candidate",
+     "checked": "README says built for HappyRobot Stage 2 Technical Challenge; lists FMCSA verification, 3-round negotiation, sentiment classification, dashboard, docs, 5-min demo, client presentation"
+    },
+    {
+     "id": "S4",
+     "url": "https://jobs.ashbyhq.com/happyrobot.ai/47d4191c-39b3-496e-86ec-772da9fb2046",
+     "title": "Forward Deployed Engineer",
+     "publisher": "HappyRobot (Ashby)",
+     "date": "2026-06",
+     "kind": "employer",
+     "checked": "Must-haves: React/TS/Node, Python, LLM prompting and tuning, APIs/integrations, communication; no process described"
+    }
+   ],
+   "gaps": "Employer-stated process is from a January 2025 YC posting; current Ashby postings describe none. Candidate accounts of a longer 2026 loop (phone screen, take-home, system design, sales interview, engineering interview, founders) exist only on Glassdoor and were excluded. No sourced questions for the system-design, team, or founder rounds, and nothing specific to Deployment Strategist interviews. A techinterview.org guide exists but openly reconstructs the loop and its questions, so none were used. Whether the take-home is paid, timed, or waived is undocumented."
+  },
+  {
+   "company": "Decagon",
+   "slug": "decagon",
+   "roles": [
+    "Agent Product Manager",
+    "Senior Agent Product Manager",
+    "Agent Deployment Engineer",
+    "Agent Strategy Manager",
+    "Engineering Lead, Strategic Deployments",
+    "Forward Deployed Engineer, Agent Builder (older listing)"
+   ],
+   "process": [
+    {
+     "stage": "Recruiter screen",
+     "format": "~30 min",
+     "assesses": "Background, motivation for conversational AI, comfort with in-office pace",
+     "source": "S4"
+    },
+    {
+     "stage": "Hiring manager",
+     "format": "~45 min",
+     "assesses": "Product sense and technical depth; take-home usually introduced here",
+     "source": "S4"
+    },
+    {
+     "stage": "Take-home PRD",
+     "format": "~3 to 5 hours, PRD for a new platform feature",
+     "assesses": "Problem framing, metrics, technical dependencies, MVP scope",
+     "source": "S4"
+    },
+    {
+     "stage": "Leadership / CEO conversation",
+     "format": "~30 to 45 min",
+     "assesses": "Values alignment, a defended product opinion",
+     "source": "S4"
+    },
+    {
+     "stage": "Technical phone screen (Software Engineer loop, adjacent role)",
+     "format": "Live coding call",
+     "assesses": "Practical state-management coding",
+     "source": "S7"
+    },
+    {
+     "stage": "System design phone screen (Software Engineer loop, adjacent role)",
+     "format": "Design call",
+     "assesses": "Designing security for an LLM chatbot product",
+     "source": "S7"
+    },
+    {
+     "stage": "Onsite culture screen (Software Engineer loop, adjacent role)",
+     "format": "Behavioral interview",
+     "assesses": "Project stories, a failed project, and how the candidate uses AI",
+     "source": "S7"
+    }
+   ],
+   "questions": [
+    {
+     "id": "decagon-q1",
+     "prompt": "Design an AI feature that turns raw conversation data into actionable insights.",
+     "type": "customer-scenario",
+     "role": "Product Manager",
+     "stage": "Hiring manager",
+     "evidence": "third-party",
+     "source": "S4",
+     "year": "2026",
+     "note": "From a generic PM guide; not confirmed for Agent PM"
+    },
+    {
+     "id": "decagon-q2",
+     "prompt": "How would you talk through a data model or API design with an engineer?",
+     "type": "domain",
+     "role": "Product Manager",
+     "stage": "Hiring manager",
+     "evidence": "third-party",
+     "source": "S4",
+     "year": "2026",
+     "note": "Generic PM guide"
+    },
+    {
+     "id": "decagon-q3",
+     "prompt": "How would you define success and adoption for a feature you shipped?",
+     "type": "behavioral",
+     "role": "Product Manager",
+     "stage": "Hiring manager",
+     "evidence": "third-party",
+     "source": "S4",
+     "year": "2026",
+     "note": "Generic PM guide"
+    },
+    {
+     "id": "decagon-q4",
+     "prompt": "Implement a shopping cart supporting add and remove, with undo and redo.",
+     "type": "coding",
+     "role": "Software Engineer (not deployment role)",
+     "stage": "Technical phone screen",
+     "evidence": "candidate",
+     "source": "S7",
+     "year": "2026",
+     "note": "Curated by PracHub; adjacent role"
+    },
+    {
+     "id": "decagon-q5",
+     "prompt": "Design the security architecture for Decagon's LLM customer-support chatbot.",
+     "type": "system-design",
+     "role": "Software Engineer (not deployment role)",
+     "stage": "System design phone screen",
+     "evidence": "candidate",
+     "source": "S7",
+     "year": "2026",
+     "note": "Curated by PracHub; adjacent role"
+    },
+    {
+     "id": "decagon-q6",
+     "prompt": "Walk through a project, a project that went wrong, and how you use AI in your work.",
+     "type": "behavioral",
+     "role": "Software Engineer (not deployment role)",
+     "stage": "Onsite culture screen",
+     "evidence": "candidate",
+     "source": "S7",
+     "year": "2026",
+     "note": "Candidate was rejected after this round"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Decagon's Agent PM lead says there is no single background; they hire for traits and look for a 'spike' in product thinking, customer strategy, systems design, or technical implementation.",
+     "source": "S1"
+    },
+    {
+     "text": "Agent PM work spans writing requirements with customers, designing prompt logic, testing tone and correctness, and measuring rollouts; prepare examples across those areas.",
+     "source": "S1"
+    },
+    {
+     "text": "Company values listed on the careers page include speed of execution, inventing what customers want, and a 'polymath' cross-functional bent.",
+     "source": "S2"
+    },
+    {
+     "text": "Decagon's ADE manager says people who thrive trace production failures to their root cause, tolerate ambiguity, and can explain tradeoffs directly to customers; bring debugging stories.",
+     "source": "S6"
+    },
+    {
+     "text": "Agent Deployment Engineers turn customer goals and policies into agent instructions and tools, then test against real conversations; prepare an example of iterating an agent after launch.",
+     "source": "S6"
+    },
+    {
+     "text": "In one 2026 software engineer loop the behavioral culture screen ended the process; prepare a failure story and a concrete account of how you use AI.",
+     "source": "S7"
+    }
+   ],
+   "aiPolicy": {},
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://decagon.ai/blog/agent-product-manager",
+     "title": "Agent Product Manager",
+     "publisher": "Decagon (Max Lowenthal, Director, Agent PM)",
+     "date": "2025-04",
+     "kind": "employer",
+     "checked": "Role description and traits Decagon hires for; no interview process described"
+    },
+    {
+     "id": "S2",
+     "url": "https://decagon.ai/careers",
+     "title": "Careers",
+     "publisher": "Decagon",
+     "date": "2026",
+     "kind": "employer",
+     "checked": "Four company values; no interview process"
+    },
+    {
+     "id": "S3",
+     "url": "https://jobs.ashbyhq.com/decagon",
+     "title": "Decagon jobs (Ashby)",
+     "publisher": "Decagon",
+     "date": "2026-11",
+     "kind": "employer",
+     "checked": "Live titles: Agent PM, Senior Agent PM, Agent Deployment Engineer, Agent Strategy Manager, Engineering Lead Strategic Deployments; postings contain no interview-process text"
+    },
+    {
+     "id": "S4",
+     "url": "https://interview.norahq.com/interview-guides/decagon-product-manager-interview-guide-2026",
+     "title": "Decagon Product Manager interview guide 2026",
+     "publisher": "Nora AI",
+     "date": "2026-06",
+     "kind": "third-party",
+     "checked": "4 rounds incl. 3-5 hr PRD take-home; generic PM, does not mention Agent PM; no named sources"
+    },
+    {
+     "id": "S5",
+     "url": "https://mattsavage.substack.com/p/joining-decagon",
+     "title": "Joining Decagon",
+     "publisher": "Matt Savage (Agent PM)",
+     "date": "2025-04",
+     "kind": "employee",
+     "checked": "Employee joining as Agent PM; says talent bar is high; no interview detail"
+    },
+    {
+     "id": "S6",
+     "url": "https://decagon.ai/blog/agent-deployment-engineering",
+     "title": "Agent Deployment Engineering",
+     "publisher": "Decagon (Alex Lewis, Manager, Agent Deployment Engineering)",
+     "date": "2026-08",
+     "kind": "employer",
+     "checked": "Describes ADE work and traits of people who thrive; no interview process"
+    },
+    {
+     "id": "S7",
+     "url": "https://prachub.com/interview-experiences/decagon-software-engineer-interview-experience-rejected-after-the-onsite-culture-screen",
+     "title": "Decagon Software Engineer interview experience, rejected after the onsite culture screen",
+     "publisher": "PracHub (first-person account, curated and edited by PracHub)",
+     "date": "2026-09",
+     "kind": "candidate",
+     "checked": "Hiring call, shopping-cart undo/redo coding screen, LLM chatbot security design screen, culture screen incl. AI use"
+    }
+   ],
+   "gaps": "No public first-hand account of the Agent Deployment Engineer, Agent PM or Agent Strategy Manager loops outside Glassdoor (excluded); Glassdoor reports of a case study/presentation for Agent PM and a screen, technical, case study and 4-interview onsite for Customer Engineer, Agent Builder were seen but not used. Engineering questions added here come from a single 2026 software engineer account (PracHub) and an uncited third-party guide; label as adjacent-role evidence. No AI-use policy published."
+  },
+  {
+   "company": "TRM Labs",
+   "slug": "trm-labs",
+   "roles": [
+    "Forward Deployed Engineer - US National Security",
+    "Deployment Strategist (APAC, CTI, Eastern Europe, National Security, Private Sector, Public Sector: Embedded Account / EMEA / Law Enforcement / Regulators)"
+   ],
+   "process": [
+    {
+     "stage": "Intro to TRM (recruiter screen)",
+     "format": "30-45 min call with a recruiter",
+     "assesses": "Basic qualifications, role alignment, interest, availability; recruiter shares notes with hiring team",
+     "source": "S4"
+    },
+    {
+     "stage": "Hiring manager interview",
+     "format": "45-60 min conversation",
+     "assesses": "Experience, skills alignment and past impact; candidate also asks about team and role",
+     "source": "S4"
+    },
+    {
+     "stage": "First round / technical assessment",
+     "format": "1-2 interviews (company-wide page: 30-60 min, format varies by role)",
+     "assesses": "The skills most critical to the role; subject-matter expertise calibrated to level. Most loops include an AI skills assessment",
+     "source": "S1"
+    },
+    {
+     "stage": "Final round",
+     "format": "Hands-on case study, usually panel-style; company-wide page says 90+ min, 3-7 one-on-one or panel interviews",
+     "assesses": "Craft, problem-solving and alignment with TRM; includes a Leadership Principles interview; each interviewer scores against a fixed question bank and rubric",
+     "source": "S1"
+    },
+    {
+     "stage": "Skill and behavioral interviews (blog view of the same loop)",
+     "format": "3-4 skill-based interviews (technical, strategic or case-based) plus 2-3 behavioral interviews",
+     "assesses": "Skills: how you think and solve problems; behavioral: collaboration, decision-making, velocity",
+     "source": "S3"
+    }
+   ],
+   "questions": [
+    {
+     "id": "trm-labs-q1",
+     "prompt": "Hands-on case study in a panel setting, going deep on your craft and how you solve the problem.",
+     "type": "decomposition",
+     "role": "FDE / Deployment Strategist",
+     "stage": "Final round",
+     "evidence": "employer",
+     "source": "S1",
+     "year": "2026",
+     "note": "Case content is not published; the posting only names the format. Same block appears on every Deployment Strategist posting checked (S2)."
+    },
+    {
+     "id": "trm-labs-q2",
+     "prompt": "AI skills assessment: show applied AI fluency in how you work.",
+     "type": "ai-build",
+     "role": "FDE / Deployment Strategist",
+     "stage": "First or final round",
+     "evidence": "employer",
+     "source": "S1",
+     "year": "2026",
+     "note": "Posting says 'most' processes include it and candidates are evaluated on applied AI fluency; format not described."
+    },
+    {
+     "id": "trm-labs-q3",
+     "prompt": "Leadership Principles interview: examples showing craftsmanship, being an inspiring colleague, and impact-oriented trailblazing.",
+     "type": "behavioral",
+     "role": "FDE / Deployment Strategist",
+     "stage": "Final round",
+     "evidence": "employer",
+     "source": "S1",
+     "year": "2026",
+     "note": "Principle names from the TRM interviewing blog (S3); exact questions not published."
+    },
+    {
+     "id": "trm-labs-q4",
+     "prompt": "Walk through something you built: the decisions you made and the trade-offs you handled.",
+     "type": "behavioral",
+     "role": "All roles",
+     "stage": "Hiring manager / skill interviews",
+     "evidence": "employer",
+     "source": "S3",
+     "year": "2025",
+     "note": ""
+    },
+    {
+     "id": "trm-labs-q5",
+     "prompt": "Why does TRM fit your personal mission and goals?",
+     "type": "motivation",
+     "role": "All roles",
+     "stage": "Recruiter / hiring manager",
+     "evidence": "employer",
+     "source": "S3",
+     "year": "2025",
+     "note": "Blog lists this as something strong candidates have a clear view on, rather than a verbatim question."
+    },
+    {
+     "id": "trm-labs-q6",
+     "prompt": "Behavioral questions on collaboration, decision-making and velocity (how fast you ship under ambiguity).",
+     "type": "behavioral",
+     "role": "All roles",
+     "stage": "Behavioral interviews",
+     "evidence": "employer",
+     "source": "S3",
+     "year": "2025",
+     "note": ""
+    }
+   ],
+   "tips": [
+    {
+     "text": "Show outcomes you delivered rather than activities, and explain your decision framework including alternatives you rejected.",
+     "source": "S3"
+    },
+    {
+     "text": "Clarity, curiosity and rigor count for more than a perfect answer; TRM says it does not test with puzzles.",
+     "source": "S3"
+    },
+    {
+     "text": "Review TRM's three leadership principles before interviewing and prepare for real-world scenario and startup-style questions.",
+     "source": "S4"
+    },
+    {
+     "text": "Some technical interviews need accounts set up in advance (Gmail, Notion, Whimsical, CoderPad).",
+     "source": "S4"
+    },
+    {
+     "text": "Postings tell candidates who prefer predictability or a balanced workload to use the interview to test whether the pace suits them.",
+     "source": "S1"
+    },
+    {
+     "text": "For the FDE track, TRM's FDE team says it values prior experience building and running production data platforms, comfort with ambiguity, and writing handoff artifacts customers can operate.",
+     "source": "S5"
+    },
+    {
+     "text": "Your recruiter sends a role-specific interview plan and preparation guidance once you are in process.",
+     "source": "S1"
+    }
+   ],
+   "aiPolicy": {
+    "text": "AI tools of any kind during interviews (notetakers, interview assistants, real-time coaching tools) are not permitted without TRM's prior approval; TRM takes notes with its own tools. Separately, candidates are evaluated on applied AI fluency and most loops include an AI skills assessment.",
+    "source": "S1"
+   },
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://jobs.ashbyhq.com/trm-labs/e4992057-b59e-4fb3-8f18-a919497d0ba5",
+     "title": "Forward Deployed Engineer - US National Security",
+     "publisher": "TRM Labs (Ashby)",
+     "date": "2026-09",
+     "kind": "employer",
+     "checked": "Read via Ashby posting API: 'Interviewing with TRM' block (first round 1-2 interviews, final hands-on panel case study, case study + AI skills + Leadership Principles), AI-tool ban, AI fluency evaluation."
+    },
+    {
+     "id": "S2",
+     "url": "https://jobs.ashbyhq.com/trm-labs/d37df443-8e99-40ef-97c6-781b635473cf",
+     "title": "Deployment Strategist, Private Sector",
+     "publisher": "TRM Labs (Ashby)",
+     "date": "2026-08",
+     "kind": "employer",
+     "checked": "Same interview block and AI-tool policy as S1; identical text on all 9 Deployment Strategist postings checked on 2026-11-01."
+    },
+    {
+     "id": "S3",
+     "url": "https://trmlabs.com/resources/blog/interviewing-at-trm-how-we-hire-and-what-success-looks-like",
+     "title": "Interviewing at TRM: How We Hire and What Success Looks Like",
+     "publisher": "TRM Labs blog",
+     "date": "2025-09",
+     "kind": "employer",
+     "checked": "Stages (recruiter, HM, 3-4 skill, 2-3 behavioral), walk-through-what-you-built focus, no puzzles, tips on outcomes and trade-offs, three traits."
+    },
+    {
+     "id": "S4",
+     "url": "https://www.trmlabs.com/interviewing",
+     "title": "Interviewing at TRM",
+     "publisher": "TRM Labs",
+     "date": "",
+     "kind": "employer",
+     "checked": "Stage lengths (30-45, 45-60, 30-60, 90+ min with 3-7 interviews), rubric/question bank, interview-specific tools list, prep checklist. Undated."
+    },
+    {
+     "id": "S5",
+     "url": "https://www.trmlabs.com/resources/blog/inside-trms-forward-deployed-engineering-team",
+     "title": "Inside TRM's Forward Deployed Engineering Team",
+     "publisher": "TRM Labs blog (Chris Eldering)",
+     "date": "2026-05",
+     "kind": "employee",
+     "checked": "What the FDE team hires for and the skill stack (Spark, Airflow, AWS, K8s); no interview stages described."
+    }
+   ],
+   "gaps": "No first-hand candidate accounts of a TRM FDE or Deployment Strategist loop found on Reddit, LeetCode, Medium or X (candidate reports surfaced only on Glassdoor, which is excluded). Actual case-study prompts and the AI skills assessment format are unpublished. Which of the R&D tool-specific interviews (S4) apply to FDEs is unstated."
+  },
+  {
    "company": "Baseten",
    "slug": "baseten",
    "roles": [
@@ -3624,262 +4855,354 @@
    "gaps": "Only one third-party guide describes rounds, and its questions are mostly not tied to named candidate reports. The only first-hand interview account surfaced is on Glassdoor (excluded). No employer statement on process or AI use."
   },
   {
-   "company": "Decagon",
-   "slug": "decagon",
+   "company": "Cohere",
+   "slug": "cohere",
    "roles": [
-    "Agent Product Manager",
-    "Senior Agent Product Manager",
-    "Agent Deployment Engineer",
-    "Agent Strategy Manager",
-    "Engineering Lead, Strategic Deployments",
-    "Forward Deployed Engineer, Agent Builder (older listing)"
+    "Forward Deployed Engineer, Agentic Platform",
+    "Forward Deployed Engineer, Infrastructure Specialist",
+    "Solutions Architect"
    ],
    "process": [
     {
-     "stage": "Recruiter screen",
-     "format": "~30 min",
-     "assesses": "Background, motivation for conversational AI, comfort with in-office pace",
+     "stage": "Application review",
+     "format": "Resume review; postings note AI-enabled tools may be used to screen applicants",
+     "assesses": "Fit against posted criteria",
+     "source": "S2"
+    },
+    {
+     "stage": "Recruiter conversation",
+     "format": "Call",
+     "assesses": "Background and interest",
+     "source": "S1"
+    },
+    {
+     "stage": "Take-home assignment (role-dependent)",
+     "format": "Possible take-home",
+     "assesses": "Not specified by employer",
+     "source": "S1"
+    },
+    {
+     "stage": "Hiring manager meeting",
+     "format": "Video or in person",
+     "assesses": "Not specified by employer",
+     "source": "S1"
+    },
+    {
+     "stage": "Final round with team members",
+     "format": "Video conference possible",
+     "assesses": "Not specified by employer",
+     "source": "S1"
+    },
+    {
+     "stage": "Take-home project (Senior SWE report, adjacent)",
+     "format": "Build a small service",
+     "assesses": "Edge-case handling in a streaming server",
      "source": "S4"
     },
     {
-     "stage": "Hiring manager",
-     "format": "~45 min",
-     "assesses": "Product sense and technical depth; take-home usually introduced here",
+     "stage": "Technical interview (Senior SWE report, adjacent)",
+     "format": "Live coding without documentation",
+     "assesses": "Traversal fundamentals",
      "source": "S4"
     },
     {
-     "stage": "Take-home PRD",
-     "format": "~3 to 5 hours, PRD for a new platform feature",
-     "assesses": "Problem framing, metrics, technical dependencies, MVP scope",
-     "source": "S4"
-    },
-    {
-     "stage": "Leadership / CEO conversation",
-     "format": "~30 to 45 min",
-     "assesses": "Values alignment, a defended product opinion",
+     "stage": "Final round: system design and hiring manager (Senior SWE report, adjacent)",
+     "format": "Interviews",
+     "assesses": "Infrastructure design (GPU scheduling, queuing)",
      "source": "S4"
     }
    ],
    "questions": [
     {
-     "id": "decagon-q1",
-     "prompt": "Design an AI feature that turns raw conversation data into actionable insights.",
-     "type": "customer-scenario",
-     "role": "Product Manager",
-     "stage": "Hiring manager",
-     "evidence": "third-party",
-     "source": "S4",
-     "year": "2026",
-     "note": "From a generic PM guide; not confirmed for Agent PM"
-    },
-    {
-     "id": "decagon-q2",
-     "prompt": "How would you talk through a data model or API design with an engineer?",
+     "id": "cohere-q1",
+     "prompt": "How have you integrated Cohere in past work, and which components did you use?",
      "type": "domain",
-     "role": "Product Manager",
-     "stage": "Hiring manager",
-     "evidence": "third-party",
-     "source": "S4",
-     "year": "2026",
-     "note": "Generic PM guide"
-    },
-    {
-     "id": "decagon-q3",
-     "prompt": "How would you define success and adoption for a feature you shipped?",
-     "type": "behavioral",
-     "role": "Product Manager",
-     "stage": "Hiring manager",
-     "evidence": "third-party",
-     "source": "S4",
-     "year": "2026",
-     "note": "Generic PM guide"
-    }
-   ],
-   "tips": [
-    {
-     "text": "Decagon's Agent PM lead says there is no single background; they hire for traits and look for a 'spike' in product thinking, customer strategy, systems design, or technical implementation.",
-     "source": "S1"
-    },
-    {
-     "text": "Agent PM work spans writing requirements with customers, designing prompt logic, testing tone and correctness, and measuring rollouts; prepare examples across those areas.",
-     "source": "S1"
-    },
-    {
-     "text": "Company values listed on the careers page include speed of execution, inventing what customers want, and a 'polymath' cross-functional bent.",
-     "source": "S2"
-    }
-   ],
-   "aiPolicy": {},
-   "sources": [
-    {
-     "id": "S1",
-     "url": "https://decagon.ai/blog/agent-product-manager",
-     "title": "Agent Product Manager",
-     "publisher": "Decagon (Max Lowenthal, Director, Agent PM)",
-     "date": "2025-04",
-     "kind": "employer",
-     "checked": "Role description and traits Decagon hires for; no interview process described"
-    },
-    {
-     "id": "S2",
-     "url": "https://decagon.ai/careers",
-     "title": "Careers",
-     "publisher": "Decagon",
-     "date": "2026",
-     "kind": "employer",
-     "checked": "Four company values; no interview process"
-    },
-    {
-     "id": "S3",
-     "url": "https://jobs.ashbyhq.com/decagon",
-     "title": "Decagon jobs (Ashby)",
-     "publisher": "Decagon",
-     "date": "2026-11",
-     "kind": "employer",
-     "checked": "Live titles: Agent PM, Senior Agent PM, Agent Deployment Engineer, Agent Strategy Manager, Engineering Lead Strategic Deployments; postings contain no interview-process text"
-    },
-    {
-     "id": "S4",
-     "url": "https://interview.norahq.com/interview-guides/decagon-product-manager-interview-guide-2026",
-     "title": "Decagon Product Manager interview guide 2026",
-     "publisher": "Nora AI",
-     "date": "2026-06",
-     "kind": "third-party",
-     "checked": "4 rounds incl. 3-5 hr PRD take-home; generic PM, does not mention Agent PM; no named sources"
-    },
-    {
-     "id": "S5",
-     "url": "https://mattsavage.substack.com/p/joining-decagon",
-     "title": "Joining Decagon",
-     "publisher": "Matt Savage (Agent PM)",
-     "date": "2025-04",
-     "kind": "employee",
-     "checked": "Employee joining as Agent PM; says talent bar is high; no interview detail"
-    }
-   ],
-   "gaps": "No usable first-hand account of the Agent PM, Agent Deployment Engineer, or Agent Strategy Manager loops. Agent PM reports of a hiring-manager screen, case study/data-analysis take-home, live presentation to Agent PMs, and SF onsite exist only on Glassdoor (excluded). Process above is from a generic PM guide and should be labelled as such."
-  },
-  {
-   "company": "Hebbia",
-   "slug": "hebbia",
-   "roles": [
-    "Forward Deployed Engineer"
-   ],
-   "process": [
-    {
-     "stage": "Recruiter call",
-     "format": "Phone screen",
-     "assesses": "Background and fit",
-     "source": "S3"
-    },
-    {
-     "stage": "Technical screen",
-     "format": "~45 min (15 min background, 30 min coding) on CoderPad",
-     "assesses": "Coding on an ambiguous text-relevance problem with some statistics",
-     "source": "S3"
-    },
-    {
-     "stage": "API design and data modeling",
-     "format": "Interview",
-     "assesses": "API and data-model design",
-     "source": "S2"
-    },
-    {
-     "stage": "Onsite build day",
-     "format": "Full day (~8 hours) at the office: build and deploy an app from scratch to given requirements",
-     "assesses": "End-to-end building and shipping",
-     "source": "S2"
-    }
-   ],
-   "questions": [
-    {
-     "id": "hebbia-q1",
-     "prompt": "Given a passage and per-position relevance scores, return the most relevant contiguous substring.",
-     "type": "coding",
-     "role": "Software Engineer (not FDE)",
-     "stage": "Technical screen",
+     "role": "Solutions Architect",
+     "stage": "Unspecified",
      "evidence": "candidate",
      "source": "S3",
-     "year": "2025",
-     "note": "Same problem reported in 2024 (S4); output was left undefined, so clarify it"
+     "year": "2023",
+     "note": "Single report; candidate called the process disorganised"
     },
     {
-     "id": "hebbia-q2",
-     "prompt": "Build a React component that displays data and lets the user edit it.",
-     "type": "coding",
-     "role": "Software Engineer (not FDE)",
-     "stage": "Unspecified technical round",
+     "id": "cohere-q2",
+     "prompt": "What are you most proud of building, why Cohere, and why move now?",
+     "type": "motivation",
+     "role": "Senior Software Engineer (not FDE)",
+     "stage": "Recruiter screen",
      "evidence": "candidate",
-     "source": "S2",
-     "year": "2024",
+     "source": "S4",
+     "year": "2026",
      "note": ""
     },
     {
-     "id": "hebbia-q3",
-     "prompt": "In one day, build and deploy an app from scratch to a given set of requirements.",
-     "type": "ai-build",
-     "role": "Software Engineer (not FDE)",
-     "stage": "Onsite",
+     "id": "cohere-q3",
+     "prompt": "Build a server that streams words back like an LLM endpoint, handling edge cases.",
+     "type": "take-home",
+     "role": "Senior Software Engineer (not FDE)",
+     "stage": "Take-home",
      "evidence": "candidate",
-     "source": "S2",
-     "year": "2024",
-     "note": "Type is a full build exercise; AI use not mentioned"
+     "source": "S4",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "cohere-q4",
+     "prompt": "Implement a breadth-first web crawler without consulting documentation.",
+     "type": "coding",
+     "role": "Senior Software Engineer (not FDE)",
+     "stage": "Technical interview",
+     "evidence": "candidate",
+     "source": "S4",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "cohere-q5",
+     "prompt": "How would you schedule jobs on a GPU fleet, handling cold starts, traffic priority and queues?",
+     "type": "system-design",
+     "role": "Senior Software Engineer (not FDE)",
+     "stage": "Final round",
+     "evidence": "candidate",
+     "source": "S4",
+     "year": "2026",
+     "note": ""
     }
    ],
    "tips": [
     {
-     "text": "Ask the interviewer to define the expected output before coding; the relevance problem was given with inputs but no clear output.",
+     "text": "Have a concrete example of building with Cohere's own APIs; the one public candidate report was asked about past Cohere integrations.",
      "source": "S3"
     },
     {
-     "text": "Brush up basic statistics; candidates said the screen mixed coding with data-science fundamentals.",
+     "text": "A senior engineering candidate advises learning Cohere's models and trying its APIs, and reviewing traversals, rate limiting and scheduling policies.",
      "source": "S4"
     },
     {
-     "text": "Budget a full day for the onsite, which involves building and deploying an app.",
-     "source": "S2"
+     "text": "Expect a long process; the same candidate reported about five weeks with waits between rounds.",
+     "source": "S4"
     }
    ],
-   "aiPolicy": {},
+   "aiPolicy": {
+    "text": "No interview AI-use rule published. Cohere job postings state the company may itself use AI-enabled tools to screen and assess applicants.",
+    "source": "S2"
+   },
    "sources": [
     {
      "id": "S1",
-     "url": "https://builtin.com/job/forward-deployed-engineer/9400002",
-     "title": "Forward Deployed Engineer - Hebbia",
-     "publisher": "Built In (mirror of Hebbia posting)",
+     "url": "https://cohere.com/careers",
+     "title": "Careers at Cohere",
+     "publisher": "Cohere",
      "date": "2026",
-     "kind": "third-party",
-     "checked": "FDE embeds with finance customers; 5+ yrs; $180k-$300k range narrowed during interviews; no process text"
+     "kind": "employer",
+     "checked": "FAQ: application review, recruiter conversation, possible take-home, hiring manager, final round with team; video interviews"
     },
     {
      "id": "S2",
-     "url": "https://www.jointaro.com/interviews/companies/hebbiaai/experiences/software-engineer-new-york-ny-february-1-2024-no-offer-neutral-6dba43d7",
-     "title": "HebbiaAI Software Engineer interview, New York, Feb 2024",
-     "publisher": "Taro (candidate submission)",
-     "date": "2024-02",
-     "kind": "candidate",
-     "checked": "Recruiter, tech screen, API design/data modeling, 8-hour build-and-deploy onsite; React component question"
+     "url": "https://jobs.ashbyhq.com/cohere/291e5dee-dcda-49e6-a1b6-dae0d48f80af",
+     "title": "Forward Deployed Engineer, Infrastructure Specialist (Middle East)",
+     "publisher": "Cohere (Ashby, via posting API)",
+     "date": "2026-09",
+     "kind": "employer",
+     "checked": "Posting has no interview stages; states AI-enabled tools may be used to screen applicants"
     },
     {
      "id": "S3",
-     "url": "https://www.jointaro.com/interviews/companies/hebbiaai/experiences/software-engineer-united-states-april-28-2025-no-offer-negative-b8ee94c7",
-     "title": "HebbiaAI Software Engineer interview, Apr 2025",
-     "publisher": "Taro (candidate submission)",
-     "date": "2025-04",
+     "url": "https://www.jointaro.com/interviews/companies/cohere/experiences/solutions-architect-toronto-on-august-1-2023-no-offer-neutral-e65f6dde",
+     "title": "Cohere Solutions Architect, Toronto",
+     "publisher": "Taro (anonymous candidate)",
+     "date": "2023-08",
      "kind": "candidate",
-     "checked": "Recruiter call, CoderPad round; relevance-scores contiguous subarray problem; tips on clarifying output and stats"
+     "checked": "Asked about past Cohere integrations and components; no offer; process described as disorganised"
     },
     {
      "id": "S4",
-     "url": "https://www.jointaro.com/interviews/companies/hebbiaai/experiences/senior-software-engineer-new-york-ny-april-1-2024-no-offer-negative-6c4b6816",
-     "title": "HebbiaAI Senior Software Engineer interview, Apr 2024",
-     "publisher": "Taro (candidate submission)",
-     "date": "2024-04",
+     "url": "https://www.aced.io/experiences/cohere-senior-software-engineer-interview-865daa",
+     "title": "Cohere Senior Software Engineer interview",
+     "publisher": "aced.io (formerly Exponent; user-submitted, unverified)",
+     "date": "2026",
      "kind": "candidate",
-     "checked": "45-min phone: 15 min background + 30 min coding on most relevant substring; felt like a mix of analyst/ML/SWE skills"
+     "checked": "Recruiter, streaming-server take-home, BFS crawler, GPU-fleet scheduling design + HM; tips; outcome pending"
     }
    ],
-   "gaps": "No FDE-specific interview report found; all process detail comes from software engineer candidates and may differ for FDE. Label clearly as adjacent-role evidence."
+   "gaps": "Still no first-hand FDE account outside Glassdoor (excluded; Glassdoor shows an FDE asked to build a sample app on the Cohere API and another asked to walk through a system they designed). The gaijineer/Hashnode FDE article showed only a teaser and datainterview.com returned HTTP 429, so neither was used. New questions come from one senior SWE report and an uncited guide. Cohere Health (separate company) results discarded."
+  },
+  {
+   "company": "Cursor",
+   "slug": "cursor",
+   "roles": [
+    "Forward Deployed Engineer (SF, EMEA, India, Japan, Australia)",
+    "Forward Deployed Strategist",
+    "AI Deployment Manager",
+    "Regional Director, Forward Deployed Engineering"
+   ],
+   "process": [
+    {
+     "stage": "Short technical interviews",
+     "format": "2-3 short technical interviews (stated on Cursor's AI Deployment Manager postings, not on FDE postings)",
+     "assesses": "Not stated",
+     "source": "S1"
+    },
+    {
+     "stage": "Onsite project",
+     "format": "In-office onsite: work on a small project, discuss ideas, meet the team (AI Deployment Manager postings). For engineering hires the CEO describes a two-day onsite on a real project with a demo",
+     "assesses": "Whether the candidate can do real work and cares about the problem; mutual fit",
+     "source": "S1"
+    },
+    {
+     "stage": "Phone coding interviews (Software Engineer reports, adjacent role)",
+     "format": "Two phone coding interviews; one report describes a HackerRank session with an engineer",
+     "assesses": "Practical coding logic; interviewer said syntax was not the point",
+     "source": "S6"
+    },
+    {
+     "stage": "Two-day onsite (Software Engineer report)",
+     "format": "Work on a real project in the actual codebase with support as if an employee",
+     "assesses": "Real work output and mutual fit",
+     "source": "S6"
+    }
+   ],
+   "questions": [
+    {
+     "id": "cursor-q1",
+     "prompt": "What would you most like to build in Cursor?",
+     "type": "motivation",
+     "role": "Software Engineer (not FDE)",
+     "stage": "Unspecified",
+     "evidence": "candidate",
+     "source": "S6",
+     "year": "2025",
+     "note": "Candidate received an offer"
+    },
+    {
+     "id": "cursor-q2",
+     "prompt": "Over a two-day onsite, build a real feature in Cursor's actual codebase with team support.",
+     "type": "coding",
+     "role": "Software Engineer (not FDE)",
+     "stage": "Onsite",
+     "evidence": "candidate",
+     "source": "S6",
+     "year": "2025",
+     "note": "Matches CEO description in S2"
+    },
+    {
+     "id": "cursor-q3",
+     "prompt": "Solve a practical HackerRank coding problem live with an engineer, focused on logic rather than syntax.",
+     "type": "coding",
+     "role": "Software Engineer (not FDE)",
+     "stage": "Technical interview",
+     "evidence": "candidate",
+     "source": "S7",
+     "year": "2025",
+     "note": "Problem not disclosed"
+    },
+    {
+     "id": "cursor-q4",
+     "prompt": "Talk about your personal technical interests.",
+     "type": "motivation",
+     "role": "Software Engineer (not FDE)",
+     "stage": "Technical interview",
+     "evidence": "candidate",
+     "source": "S7",
+     "year": "2025",
+     "note": ""
+    },
+    {
+     "id": "cursor-q5",
+     "prompt": "Work on a small project in the office, discuss ideas, and meet the team.",
+     "type": "take-home",
+     "role": "AI Deployment Manager",
+     "stage": "Onsite",
+     "evidence": "employer",
+     "source": "S5",
+     "year": "2026",
+     "note": "Posting text; project content not specified"
+    }
+   ],
+   "tips": [
+    {
+     "text": "Cursor's CEO says the in-office project days double as a culture interview: candidates eat with the team and demo what they built.",
+     "source": "S2"
+    },
+    {
+     "text": "A candidate said the interviewer repeatedly stressed that syntax was not the point of the coding round; talk through logic.",
+     "source": "S7"
+    },
+    {
+     "text": "A candidate who got an offer called the two-day onsite a good way to judge whether you want to work there; you get support like a full-time employee.",
+     "source": "S6"
+    }
+   ],
+   "aiPolicy": {
+    "text": "CEO Michael Truell said (June 2025) that first technical screens are done without AI beyond autocomplete. This was said about engineering hiring generally; no FDE-specific statement found.",
+    "source": "S2"
+   },
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://jobs.ashbyhq.com/cursor/e3ccb495-a8a3-4ff0-a27b-262188abb9df",
+     "title": "AI Deployment Manager - Singapore (posting since closed)",
+     "publisher": "Cursor (Ashby)",
+     "date": "2026-10",
+     "kind": "employer",
+     "checked": "Applying section: 2-3 short technicals, then in-office onsite with a small project; FDE postings themselves carry no process text"
+    },
+    {
+     "id": "S2",
+     "url": "https://www.aol.com/inside-cursors-hiring-strategy-no-052015324.html",
+     "title": "Inside Cursor's hiring strategy: no AI in interviews and a 2-day project with the team",
+     "publisher": "Business Insider (via AOL), Lee Chong Ming",
+     "date": "2025-06",
+     "kind": "third-party",
+     "checked": "Quotes CEO Truell on no-AI first technical screens and two-day in-office project with demo"
+    },
+    {
+     "id": "S3",
+     "url": "https://jobs.ashbyhq.com/cursor/34cecd0c-c392-4454-8ef5-261310541011",
+     "title": "Forward Deployed Engineer (San Francisco) (posting since closed)",
+     "publisher": "Cursor (Ashby)",
+     "date": "2026-10",
+     "kind": "employer",
+     "checked": "FDE posting; no interview process stated"
+    },
+    {
+     "id": "S4",
+     "url": "https://www.learncursor.dev/learn/cursor-interview",
+     "title": "Cursor interview prep",
+     "publisher": "learncursor.dev",
+     "date": "2026-10",
+     "kind": "third-party",
+     "checked": "States Cursor publishes no company-wide loop and that FDE sits in Field & Solutions, whose postings lack the engineering process note"
+    },
+    {
+     "id": "S5",
+     "url": "https://jobs.ashbyhq.com/cursor/a4e8f126-9761-4a01-ab21-84e20c8b5de9",
+     "title": "AI Deployment Manager - Australia",
+     "publisher": "Cursor (Ashby, via posting API)",
+     "date": "2026-11",
+     "kind": "employer",
+     "checked": "Live posting, Customer Success dept; Applying section: 2-3 short technicals then in-office onsite with small project"
+    },
+    {
+     "id": "S6",
+     "url": "https://www.jointaro.com/interviews/companies/anysphere/experiences/software-engineer-united-states-october-28-2025-accepted-offer-positive-26fbd167",
+     "title": "Anysphere Software Engineer interview, Oct 2025",
+     "publisher": "Taro (candidate submission)",
+     "date": "2025-10",
+     "kind": "candidate",
+     "checked": "Two phone coding interviews, two-day onsite on real codebase; asked what they'd build in Cursor; offer"
+    },
+    {
+     "id": "S7",
+     "url": "https://www.jointaro.com/interviews/companies/anysphere/experiences/software-engineer-united-states-september-1-2025-no-offer-neutral-e5de3e81",
+     "title": "Anysphere Software Engineer interview, Sep 2025",
+     "publisher": "Taro (candidate submission)",
+     "date": "2025-09",
+     "kind": "candidate",
+     "checked": "Recruiter call, HackerRank practical round with engineer; syntax not the point; no offer"
+    }
+   ],
+   "gaps": "No FDE- or Forward Deployed Strategist-specific process, questions or candidate reports found (checked Exponent/aced.io, learncursor.dev, Reddit/X searches). learncursor.dev's FDE question list is explicitly inferred from postings and was not used. Stages for customer-facing roles come from AI Deployment Manager postings; engineering stages from two software engineer reports and CEO statements. Applying either to FDE is an inference."
   },
   {
    "company": "Ode",
@@ -4073,6 +5396,131 @@
    "gaps": "No first-hand candidate reports found for Ode or Fractional AI on Reddit, LeetCode Discuss, Medium or third-party prep sites (searches mostly return Fractal Analytics, a different company). The only detailed loop description is Fractional AI's May 2024 blog post, written before the May 2026 acquisition into Ode and the shift to Claude; treat stages and AI-tool rules as possibly outdated. Ode's 2026 postings confirm tech screen, onsite, debrief and founder/exec chat stages but not their content. No published process for Forward Deployed PM or Principal roles beyond the fact that FDPMs sit on FDPM panels (S8). Actual coding prompts are not public."
   },
   {
+   "company": "OpenAI Deployment Company",
+   "slug": "openai-deployment-company",
+   "roles": [
+    "Forward Deployed Engineer",
+    "Forward Deployed Engineer - Cleared",
+    "Forward Deployed Engineer - Cybersecurity",
+    "Technical Deployment Lead",
+    "Apply with Your Team (2-5 person teams)"
+   ],
+   "process": [
+    {
+     "stage": "Sourcer / recruiter conversation",
+     "format": "Initial conversation, often after sourcer outreach",
+     "assesses": "Experience, interests, and fit for the FDE role; technical ability, customer focus and judgment",
+     "source": "S3"
+    },
+    {
+     "stage": "Team application (team route only)",
+     "format": "One application for a 2-5 person team",
+     "assesses": "Who the team is, how it has worked together, what it built, why DeployCo",
+     "source": "S2"
+    },
+    {
+     "stage": "Individual interviews and technical assessment",
+     "format": "Individual conversations plus a technical assessment; each person held to the same bar as individual applicants",
+     "assesses": "Fit against the specific DeployCo role (FDE, deployment lead, etc.)",
+     "source": "S2"
+    },
+    {
+     "stage": "Joint working session (team route only)",
+     "format": "Working session with the whole team",
+     "assesses": "How the team solves problems together, collaborates, learns and delivers",
+     "source": "S2"
+    },
+    {
+     "stage": "Decision",
+     "format": "Coordinated timeline; separate individual offers",
+     "assesses": "",
+     "source": "S2"
+    }
+   ],
+   "questions": [
+    {
+     "id": "openai-deployment-company-q1",
+     "prompt": "Explain who your team is, how you have worked together, what you have built, and why you want to join DeployCo.",
+     "type": "motivation",
+     "role": "Team route",
+     "stage": "Application",
+     "evidence": "employer",
+     "source": "S2",
+     "year": "2026",
+     "note": ""
+    },
+    {
+     "id": "openai-deployment-company-q2",
+     "prompt": "Working session: solve a problem together as a team while interviewers observe how you divide and drive the work.",
+     "type": "decomposition",
+     "role": "Team route",
+     "stage": "Joint working session",
+     "evidence": "employer",
+     "source": "S2",
+     "year": "2026",
+     "note": "Format described, content not published."
+    }
+   ],
+   "tips": [
+    {
+     "text": "On the team route, a strong team does not make up for a weak individual; every member is assessed alone against the role bar.",
+     "source": "S2"
+    },
+    {
+     "text": "DeployCo says it values reliable systems over impressive prototypes; bring examples of production outcomes, not demos.",
+     "source": "S2"
+    },
+    {
+     "text": "FDE postings emphasise standardisation-versus-customisation judgment, 0-to-1 reusable capabilities, production JS/Python, and a fast path toward people management.",
+     "source": "S1"
+    },
+    {
+     "text": "Do not assume OpenAI's own FDE loop applies: DeployCo is a separate subsidiary with its own Ashby board and recruiting team.",
+     "source": "S4"
+    }
+   ],
+   "aiPolicy": {},
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://jobs.ashbyhq.com/openai-deployment-company/4dee14d2-a346-470a-b0c8-5dd29466ba6e",
+     "title": "Forward Deployed Engineer - US",
+     "publisher": "OpenAI Deployment Company (Ashby)",
+     "date": "2026-06",
+     "kind": "employer",
+     "checked": "Role description and 'may thrive' list (4+ yrs, player-coach, up to 50% travel); no interview stages"
+    },
+    {
+     "id": "S2",
+     "url": "https://jobs.ashbyhq.com/openai-deployment-company/07e4a25d-2762-4a6a-8645-9280155b3da6",
+     "title": "Apply with Your Team",
+     "publisher": "OpenAI Deployment Company (Ashby)",
+     "date": "2026-09",
+     "kind": "employer",
+     "checked": "'How the process works' section: apply together, individual conversations + technical assessment + joint working session, coordinated individual offers"
+    },
+    {
+     "id": "S3",
+     "url": "https://jobs.ashbyhq.com/openai-deployment-company/3406d3d7-3e23-4193-a75b-d998cc08e0bb",
+     "title": "Talent Sourcer",
+     "publisher": "OpenAI Deployment Company (Ashby)",
+     "date": "2026-10",
+     "kind": "employer",
+     "checked": "Sourcer runs initial candidate conversations for FDE hiring and screens for technical ability, customer focus, judgment"
+    },
+    {
+     "id": "S4",
+     "url": "https://www.techzine.eu/news/analytics/141219/openai-launches-deployment-company-to-build-and-deploy-ai-systems/",
+     "title": "OpenAI launches Deployment Company to build and deploy AI systems",
+     "publisher": "Techzine",
+     "date": "2026-05",
+     "kind": "third-party",
+     "checked": "Launched 2026-05-11 as a separate OpenAI-linked unit with $4B+; Tomoro acquisition adds ~150 engineers; no hiring process"
+    }
+   ],
+   "gaps": "The individual-applicant FDE loop (number of rounds, coding vs decomposition vs customer case) is not published by DeployCo and I found no first-hand candidate accounts; the company is only about six months old. Third-party OpenAI FDE guides (Exponent, IGotAnOffer, Paraform) describe OpenAI proper and were not reused here. No stated AI-tool policy. Content of the technical assessment is unknown."
+  },
+  {
    "company": "Salesforce",
    "slug": "salesforce",
    "roles": [
@@ -4200,126 +5648,66 @@
    "gaps": "No first-hand candidate account outside Glassdoor (excluded). The two third-party process descriptions disagree (OA vs no OA) and neither cites candidates. No Reddit access. No reported questions with provenance beyond topic lists."
   },
   {
-   "company": "Cohere",
-   "slug": "cohere",
+   "company": "Taktile",
+   "slug": "taktile",
    "roles": [
-    "Forward Deployed Engineer, Agentic Platform",
-    "Forward Deployed Engineer, Infrastructure Specialist",
-    "Solutions Architect"
+    "Forward Deployed Engineer",
+    "Forward Deployed Engineer (Ops)",
+    "Senior Forward Deployed Engineer",
+    "Lead Forward Deployed Engineer",
+    "Director of Forward Deployed Engineering, NORAM",
+    "Deployment Lead"
    ],
    "process": [
     {
-     "stage": "Application review",
-     "format": "Resume review; postings note AI-enabled tools may be used to screen applicants",
-     "assesses": "Fit against posted criteria",
-     "source": "S2"
-    },
-    {
-     "stage": "Recruiter conversation",
-     "format": "Call",
-     "assesses": "Background and interest",
+     "stage": "Recruiter call",
+     "format": "Call with the recruiting team",
+     "assesses": "Start of process; say which role is your top priority if you applied to several",
      "source": "S1"
     },
     {
-     "stage": "Take-home assignment (role-dependent)",
-     "format": "Possible take-home",
-     "assesses": "Not specified by employer",
+     "stage": "Hiring manager interview",
+     "format": "Conversation",
+     "assesses": "Your experience, how you approach problems, and how your skills map to the role",
      "source": "S1"
     },
     {
-     "stage": "Hiring manager meeting",
-     "format": "Video or in person",
-     "assesses": "Not specified by employer",
+     "stage": "Skills assessment",
+     "format": "Technical interview or take-home challenge, depending on the team",
+     "assesses": "How you work",
      "source": "S1"
     },
     {
-     "stage": "Final round with team members",
-     "format": "Video conference possible",
-     "assesses": "Not specified by employer",
+     "stage": "Final interview",
+     "format": "With a founder or senior leader",
+     "assesses": "What motivates you",
+     "source": "S1"
+    },
+    {
+     "stage": "References",
+     "format": "Reference conversations if successful",
+     "assesses": "",
      "source": "S1"
     }
    ],
    "questions": [
     {
-     "id": "cohere-q1",
-     "prompt": "How have you integrated Cohere in past work, and which components did you use?",
-     "type": "domain",
-     "role": "Solutions Architect",
-     "stage": "Unspecified",
-     "evidence": "candidate",
-     "source": "S3",
-     "year": "2023",
-     "note": "Single report; candidate called the process disorganised"
-    }
-   ],
-   "tips": [
-    {
-     "text": "Have a concrete example of building with Cohere's own APIs; the one public candidate report was asked about past Cohere integrations.",
-     "source": "S3"
-    }
-   ],
-   "aiPolicy": {
-    "text": "No interview AI-use rule published. Cohere job postings state the company may itself use AI-enabled tools to screen and assess applicants.",
-    "source": "S2"
-   },
-   "sources": [
-    {
-     "id": "S1",
-     "url": "https://cohere.com/careers",
-     "title": "Careers at Cohere",
-     "publisher": "Cohere",
-     "date": "2026",
-     "kind": "employer",
-     "checked": "FAQ: application review, recruiter conversation, possible take-home, hiring manager, final round with team; video interviews"
+     "id": "taktile-q1",
+     "prompt": "Walk the hiring manager through your experience and how you approach solving problems relevant to this role.",
+     "type": "behavioral",
+     "role": "All roles",
+     "stage": "Hiring manager interview",
+     "evidence": "employer",
+     "source": "S1",
+     "year": "2026",
+     "note": "Topic description, not a verbatim question."
     },
     {
-     "id": "S2",
-     "url": "https://jobs.ashbyhq.com/cohere/291e5dee-dcda-49e6-a1b6-dae0d48f80af",
-     "title": "Forward Deployed Engineer, Infrastructure Specialist (Middle East)",
-     "publisher": "Cohere (Ashby, via posting API)",
-     "date": "2026-09",
-     "kind": "employer",
-     "checked": "Posting has no interview stages; states AI-enabled tools may be used to screen applicants"
-    },
-    {
-     "id": "S3",
-     "url": "https://www.jointaro.com/interviews/companies/cohere/experiences/solutions-architect-toronto-on-august-1-2023-no-offer-neutral-e65f6dde",
-     "title": "Cohere Solutions Architect, Toronto",
-     "publisher": "Taro (anonymous candidate)",
-     "date": "2023-08",
-     "kind": "candidate",
-     "checked": "Asked about past Cohere integrations and components; no offer; process described as disorganised"
-    }
-   ],
-   "gaps": "No first-hand FDE candidate account outside Glassdoor (excluded). Third-party guides (techinterview.org, Hashnode/gaijineer, Dataford) either listed generic likely-questions without sourcing or could not be read; not used for questions. Search results mixing in Cohere Health (a separate company) were discarded."
-  },
-  {
-   "company": "Glean",
-   "slug": "glean",
-   "roles": [
-    "Founding Forward Deployed Engineer"
-   ],
-   "process": [
-    {
-     "stage": "AI-focused exercise or discussion",
-     "format": "Brief exercise or conversation (format not specified)",
-     "assesses": "How the candidate thinks about, designs and uses AI to drive impact in the role",
-     "source": "S1"
-    },
-    {
-     "stage": "Level assessment",
-     "format": "Across the loop",
-     "assesses": "Level is set during interviews; the posted pay range spans several levels",
-     "source": "S1"
-    }
-   ],
-   "questions": [
-    {
-     "id": "glean-q1",
-     "prompt": "Show how you think about, design and use AI to drive impact in your role, referencing tools and workflows you use today.",
-     "type": "ai-build",
-     "role": "Founding FDE",
-     "stage": "AI-focused exercise",
+     "id": "taktile-q2",
+     "prompt": "What motivates you? Discussed with a founder or senior leader.",
+     "type": "motivation",
+     "role": "All roles",
+     "stage": "Final interview",
      "evidence": "employer",
      "source": "S1",
      "year": "2026",
@@ -4328,26 +5716,427 @@
    ],
    "tips": [
     {
-     "text": "Glean says prior Glean experience is not required for the AI exercise; bring the tools, platforms and workflows you already use.",
+     "text": "FDE interviews assess four traits: technical excellence (judgment and action over perfection), communication, business acumen on risk/reward, and product sense.",
+     "source": "S2"
+    },
+    {
+     "text": "Expect to discuss translating between risk policy and code and running stakeholder workshops; the FDE team describes this as core to the job.",
+     "source": "S2"
+    },
+    {
+     "text": "Apply to at most three roles and flag visa needs and accommodation requests early.",
      "source": "S1"
+    },
+    {
+     "text": "Postings ask for production-grade Python, SQL and REST API design plus customer-facing delivery experience.",
+     "source": "S3"
+    }
+   ],
+   "aiPolicy": {},
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://www.taktile.com/careers",
+     "title": "Careers",
+     "publisher": "Taktile",
+     "date": "",
+     "kind": "employer",
+     "checked": "Four-step hiring process (recruiter, HM, technical interview or take-home, founder/senior leader) plus references; FAQ tips. Company-wide, undated."
+    },
+    {
+     "id": "S2",
+     "url": "https://taktile.com/blog/fde-at-taktile",
+     "title": "How Forward Deployed Engineering works at Taktile",
+     "publisher": "Taktile blog (Miroslav Kral)",
+     "date": "2026-07",
+     "kind": "employee",
+     "checked": "Lists four traits assessed in the FDE interview process; team uses Claude Code and Cursor daily; no stages or questions."
+    },
+    {
+     "id": "S3",
+     "url": "https://jobs.ashbyhq.com/taktile/594e7ab1-3c77-43b5-be3f-bc30d513c14c",
+     "title": "Forward Deployed Engineer (Berlin / London)",
+     "publisher": "Taktile (Ashby)",
+     "date": "2026-07",
+     "kind": "employer",
+     "checked": "Read via Ashby posting API; requirements only, no interview section."
+    }
+   ],
+   "gaps": "No FDE-specific stage detail, case prompts or take-home content found; whether FDEs get the technical interview or the take-home is unstated. No AI-tool policy for interviews (the blog's Claude Code/Cursor note is about the job, not interviews). Candidate reports surfaced only on Glassdoor (excluded) and were for SWE roles; a Scoutify question list states it is inferred, so it was not used."
+  },
+  {
+   "company": "Harvey",
+   "slug": "harvey",
+   "roles": [
+    "Legal Engineer (Pre-Sale)",
+    "Legal Engineer, Product Specialist (Post-Sale)",
+    "Legal Engineer, Custom Solutions",
+    "Forward Deployed Finance Engineer (Private Credit, Buyout, Real Estate)",
+    "Founding Forward Deployed Engineer (NYC; posting removed Feb 2026)"
+   ],
+   "process": [
+    {
+     "stage": "Initial recruiting interview",
+     "format": "Call with recruiting team",
+     "assesses": "Background; recruiter explains the three Legal Engineer tracks and matches you to one based on fit and hiring needs",
+     "source": "S1"
+    },
+    {
+     "stage": "Recruiter call (Software Engineer loop, adjacent role)",
+     "format": "Call",
+     "assesses": "Current role, past projects, hardest project, reasons for leaving",
+     "source": "S5"
+    },
+    {
+     "stage": "Technical phone screen (Software Engineer loop, adjacent role)",
+     "format": "Coding call, non-standard practical problem",
+     "assesses": "API design and practical coding",
+     "source": "S5"
+    }
+   ],
+   "questions": [
+    {
+     "id": "harvey-q1",
+     "prompt": "Implement a retry wrapper supporting fixed-interval and exponential backoff, max attempts, and both sync and async functions.",
+     "type": "coding",
+     "role": "Software Engineer (not FDE)",
+     "stage": "Technical phone screen",
+     "evidence": "candidate",
+     "source": "S5",
+     "year": "2025",
+     "note": "Candidate called it a non-standard question"
+    },
+    {
+     "id": "harvey-q2",
+     "prompt": "What was your most difficult project, and why are you leaving your current role?",
+     "type": "behavioral",
+     "role": "Software Engineer (not FDE)",
+     "stage": "Recruiter call",
+     "evidence": "candidate",
+     "source": "S5",
+     "year": "2025",
+     "note": ""
+    }
+   ],
+   "tips": [
+    {
+     "text": "Harvey says legal judgment is the core requirement for Legal Engineers, not technical skill; product training happens on the job.",
+     "source": "S2"
+    },
+    {
+     "text": "Know which track fits you: Pre-Sale (demos, pilots with AEs), Post-Sale Product Specialist (onboarding, enablement, agents on real matters), or Custom Solutions (no-code multi-step workflows).",
+     "source": "S1"
+    },
+    {
+     "text": "Legal Engineer work centers on loading a prospect's real documents, building a workflow, testing, and refining it; be ready to discuss a concrete workflow from your practice.",
+     "source": "S2"
+    },
+    {
+     "text": "Finance Engineer postings ask for advanced Excel/modeling, comfort with prompting and agentic workflows, and ability to lead a live demo or workshop.",
+     "source": "S3"
+    },
+    {
+     "text": "The now-removed Founding FDE posting asked for production LLM apps (retrieval, tools/agents), hands-on evals, direct customer work, and in-person NYC; prepare a shipped LLM example with its eval setup.",
+     "source": "S6"
     }
    ],
    "aiPolicy": {
-    "text": "Glean's posting says every candidate completes a brief AI-focused exercise or discussion and may reference any AI tools, platforms or workflows they use. It does not address AI assistance during other rounds.",
+    "text": "Harvey postings say the company uses AI in its recruitment process but makes no automated decisions and has humans review AI output. Nothing published on candidate AI use.",
+    "source": "S4"
+   },
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://jobs.ashbyhq.com/harvey/fd3eee99-2c94-4127-8b82-3582a79cd418",
+     "title": "Legal Engineer (Law Firm, Corporate)",
+     "publisher": "Harvey",
+     "date": "2026-06",
+     "kind": "employer",
+     "checked": "Describes Pre-Sale, Product Specialist, Custom Solutions tracks; initial recruiting interview identifies best-fit track"
+    },
+    {
+     "id": "S2",
+     "url": "https://www.harvey.ai/blog/day-in-the-life-legal-engineer",
+     "title": "A day in the life of a Legal Engineer",
+     "publisher": "Harvey",
+     "date": "2026-04",
+     "kind": "employer",
+     "checked": "Legal Engineers are former lawyers; legal judgment core; three tracks; traits that succeed; no interview process"
+    },
+    {
+     "id": "S3",
+     "url": "https://jobs.ashbyhq.com/harvey/43c6e218-ea85-4519-b2fe-dd188ff3234f",
+     "title": "Forward Deployed Finance Engineer, Private Credit",
+     "publisher": "Harvey",
+     "date": "2026-10",
+     "kind": "employer",
+     "checked": "Role duties (pilots, underwriting workflows) and requirements; no interview process"
+    },
+    {
+     "id": "S4",
+     "url": "https://jobs.ashbyhq.com/harvey/01f31ece-f3fe-4991-b6fb-b59f21faa8e9",
+     "title": "Staff Software Engineer, Full Stack",
+     "publisher": "Harvey",
+     "date": "2026",
+     "kind": "employer",
+     "checked": "Statement that Harvey uses AI in recruitment with human review and no automated decisions"
+    },
+    {
+     "id": "S5",
+     "url": "https://www.jointaro.com/interviews/companies/harvey-ai/experiences/software-engineer-united-states-may-23-2025-no-offer-positive-8fdc6717",
+     "title": "Harvey Software Engineer interview, May 2025",
+     "publisher": "Taro (candidate submission)",
+     "date": "2025-05",
+     "kind": "candidate",
+     "checked": "Recruiter call topics; phone screen retryer function with backoff, sync/async"
+    },
+    {
+     "id": "S6",
+     "url": "https://builtin.com/job/forward-deployment-engineer/7406694",
+     "title": "Founding Forward Deployed Engineer - Harvey",
+     "publisher": "Built In (mirror of Harvey posting)",
+     "date": "2026-02",
+     "kind": "third-party",
+     "checked": "Listing removed 2026-02-09; NYC in-office; requirements incl. LLM apps in production, evals, customer-facing; no interview text"
+    }
+   ],
+   "gaps": "Still no public first-hand account of the Legal Engineer, Forward Deployed Finance Engineer or Founding FDE interview beyond the recruiter step. The async Google Doc format is confirmed only for executive hires. Engineering questions are from one software engineer report. Third-party Harvey guides (techprep, techinterview.org) cover software engineers only and cite no sources."
+  },
+  {
+   "company": "Parloa",
+   "slug": "parloa",
+   "roles": [
+    "Forward Deployed Engineer - US",
+    "Manager, Forward Deployed Engineering",
+    "Staff Deployment Strategist - US"
+   ],
+   "process": [
+    {
+     "stage": "TA (recruiter) screen",
+     "format": "Not specified",
+     "assesses": "Not specified by employer",
+     "source": "S1"
+    },
+    {
+     "stage": "Hiring manager call",
+     "format": "Not specified",
+     "assesses": "Not specified by employer",
+     "source": "S1"
+    },
+    {
+     "stage": "Technical interview (FDE); technical interview(s) for FDE Manager",
+     "format": "Not specified",
+     "assesses": "Not specified by employer",
+     "source": "S1"
+    },
+    {
+     "stage": "Bar raiser (final stage, FDE and FDE Manager)",
+     "format": "Not specified",
+     "assesses": "Not specified by employer",
+     "source": "S3"
+    },
+    {
+     "stage": "Deployment Strategist: case study take-home",
+     "format": "Take-home after TA screen and hiring manager call",
+     "assesses": "Not specified by employer",
+     "source": "S4"
+    },
+    {
+     "stage": "Deployment Strategist: case study presentation, then bar raiser interview",
+     "format": "Presentation of the take-home, followed by a bar raiser",
+     "assesses": "Not specified by employer",
+     "source": "S4"
+    }
+   ],
+   "questions": [
+    {
+     "id": "parloa-q1",
+     "prompt": "Complete a take-home case study, then present it in a dedicated presentation round.",
+     "type": "take-home",
+     "role": "Staff Deployment Strategist",
+     "stage": "Case study",
+     "evidence": "employer",
+     "source": "S4",
+     "year": "2026",
+     "note": "Employer names the stage only; the case content is not public."
+    }
+   ],
+   "tips": [],
+   "aiPolicy": {},
+   "sources": [
+    {
+     "id": "S1",
+     "url": "https://jobs.ashbyhq.com/parloa/0d32d63b-20ed-4402-aa2e-d392a74c68cf",
+     "title": "Forward Deployed Engineer - US",
+     "publisher": "Parloa (Ashby)",
+     "date": "2025-08",
+     "kind": "employer",
+     "checked": "Recruiting process listed as TA Screen, Hiring Manager Call, Technical Interview, Bar Raiser."
+    },
+    {
+     "id": "S2",
+     "url": "https://job-boards.eu.greenhouse.io/parloa/jobs/4604587101",
+     "title": "Forward Deployed Engineer - US",
+     "publisher": "Parloa (Greenhouse EU)",
+     "date": "2026-08",
+     "kind": "employer",
+     "checked": "Same four-step process as S1."
+    },
+    {
+     "id": "S3",
+     "url": "https://jobs.ashbyhq.com/parloa/6cc555d8-9843-4859-9e7b-5ef46a3a0001",
+     "title": "Manager, Forward Deployed Engineering",
+     "publisher": "Parloa (Ashby; mirrored on Greenhouse EU job 5009506101)",
+     "date": "2026-10",
+     "kind": "employer",
+     "checked": "Process: Talent Acquisition, Hiring Manager, Technical Interview(s), Bar Raiser."
+    },
+    {
+     "id": "S4",
+     "url": "https://jobs.ashbyhq.com/parloa/f078c19a-8a6b-4bb0-99f5-f178083419ea",
+     "title": "Staff Deployment Strategist - US",
+     "publisher": "Parloa (Ashby)",
+     "date": "2026-03",
+     "kind": "employer",
+     "checked": "Process: TA Screen, Hiring Manager Call, Case Study (take-home), Case Study Presentation, Bar Raiser Interview."
+    },
+    {
+     "id": "S5",
+     "url": "https://job-boards.eu.greenhouse.io/parloa/jobs/4794825101",
+     "title": "Staff Deployment Strategist - US",
+     "publisher": "Parloa (Greenhouse EU)",
+     "date": "2026-10",
+     "kind": "employer",
+     "checked": "Same five-step process as S4."
+    }
+   ],
+   "gaps": "Employer lists stage names only, with no format, length or rubric, and does not say what the bar raiser assesses. No non-Glassdoor candidate reports found; Glassdoor accounts (system design plus an AI-assisted coding task in the technical round) were not used. JobMentis covers Parloa SWE, not FDE. JOBS.json also lists two 'TEST - Forward Deployed Engineer' Ashby postings, which look like placeholder entries and were ignored. No AI-tool policy stated."
+  },
+  {
+   "company": "Wonderful",
+   "slug": "wonderful",
+   "roles": [
+    "Forward Deployed Engineer",
+    "Deployment Strategist"
+   ],
+   "process": [
+    {
+     "stage": "Application",
+     "format": "Ashby application; some DACH/Benelux FDE postings promise every applicant a reply",
+     "assesses": "Not described",
+     "source": "S2"
+    },
+    {
+     "stage": "First interview (optional AI agent)",
+     "format": "Candidate may choose to take the first interview with Wonderful's in-house AI agent",
+     "assesses": "Professional experience, education and skill set; Wonderful says no decision is made without human involvement",
+     "source": "S1"
+    },
+    {
+     "stage": "Agency-run process (some markets)",
+     "format": "In Johannesburg the role is advertised by recruiter OfferZen, which runs the interview process on Wonderful's behalf",
+     "assesses": "Not described",
+     "source": "S4"
+    },
+    {
+     "stage": "Later rounds",
+     "format": "Not published by the employer; stage list, length and content unknown",
+     "assesses": "Unknown. Postings stress structuring ambiguous problems, customer-facing confidence, system design, APIs/integrations",
+     "source": "S3"
+    }
+   ],
+   "questions": [
+    {
+     "id": "wonderful-q1",
+     "prompt": "Describe your professional experience, education and skills (first-round screen that can be run by Wonderful's AI agent).",
+     "type": "behavioral",
+     "role": "All roles",
+     "stage": "First interview",
+     "evidence": "employer",
+     "source": "S1",
+     "year": "2026",
+     "note": "Topics stated in the candidate privacy notice; exact questions not published."
+    }
+   ],
+   "tips": [
+    {
+     "text": "You can opt to take the first interview with Wonderful's own AI agent; the notice says a human is always involved in decisions about your application.",
+     "source": "S1"
+    },
+    {
+     "text": "Interviews and calls may be recorded where the law allows, and assessment results feed into evaluation.",
+     "source": "S1"
+    },
+    {
+     "text": "FDE postings ask for 5+ years building software and weight the ability to bring structure to ambiguous problems and work directly with customers; prepare examples of both.",
+     "source": "S3"
+    },
+    {
+     "text": "Deployment Strategist postings expect fluency with APIs, MCP, data flows and integrations even though the role is not primarily coding.",
+     "source": "S5"
+    }
+   ],
+   "aiPolicy": {
+    "text": "Wonderful states it uses AI and automated tools to screen and assess candidates and offers an optional AI-agent first interview, with human involvement in all decisions. No published policy on candidates using AI tools during interviews.",
     "source": "S1"
    },
    "sources": [
     {
      "id": "S1",
-     "url": "https://job-boards.greenhouse.io/gleanwork/jobs/4651991005",
-     "title": "Founding Forward Deployed Engineer",
-     "publisher": "Glean (Greenhouse)",
-     "date": "2026-10",
+     "url": "https://www.wonderful.ai/careers/candidate_notice",
+     "title": "Candidate Privacy Notice",
+     "publisher": "Wonderful",
+     "date": "2026-07",
      "kind": "employer",
-     "checked": "AI-focused exercise statement, level assessed during interviews, 25-50% travel, Remote-US"
+     "checked": "Notice (updated 2026-07-29) mentions optional first interview with Wonderful's AI agent, AI-assisted screening, recordings, no solely automated decisions"
+    },
+    {
+     "id": "S2",
+     "url": "https://jobs.ashbyhq.com/wonderful/66fceb23-9367-4ef4-a73d-3c8b80d223f6",
+     "title": "Forward Deployed Engineer, Germany - Hybrid",
+     "publisher": "Wonderful (Ashby)",
+     "date": "2026-09",
+     "kind": "employer",
+     "checked": "Posting text (via Ashby posting API) ends with a line saying every applicant will get a response; no interview stages listed"
+    },
+    {
+     "id": "S3",
+     "url": "https://jobs.ashbyhq.com/wonderful/3b782aec-0271-427d-9145-40e736c54f73",
+     "title": "Forward Deployed Engineer",
+     "publisher": "Wonderful (Ashby)",
+     "date": "2026-04",
+     "kind": "employer",
+     "checked": "Standard FDE posting (33 near-identical copies on the board): 5+ yrs, system design, APIs, ambiguity, customer work; no process described"
+    },
+    {
+     "id": "S4",
+     "url": "https://www.dreamworkhq.com/job/8368c1b1-2b47-43a1-99e6-063076817632",
+     "title": "Forward Deployed Engineer (FDE) at OfferZen",
+     "publisher": "OfferZen via DreamWorkHQ",
+     "date": "2026",
+     "kind": "third-party",
+     "checked": "Agency listing for Wonderful FDE in Johannesburg says the agency runs the interview process; no stages described"
+    },
+    {
+     "id": "S5",
+     "url": "https://jobs.ashbyhq.com/wonderful/0157bd9d-0434-4ed1-a289-4b940a6130b3",
+     "title": "Deployment Strategist",
+     "publisher": "Wonderful (Ashby)",
+     "date": "2026-03",
+     "kind": "employer",
+     "checked": "DS posting lists comfort with APIs, MCP, data flows, integrations and stakeholder management; no process described"
+    },
+    {
+     "id": "S6",
+     "url": "https://www.wonderful.ai/careers",
+     "title": "Careers",
+     "publisher": "Wonderful",
+     "date": "2026",
+     "kind": "employer",
+     "checked": "Describes FDE/DS/GTM roles and values (high-ownership builders, on-site with customers); no interview process"
     }
    ],
-   "gaps": "No candidate reports or other stages found for the FDE loop. Refresh.cv data on a Glean solution architect role is a tiny, unverified sample and was not used."
+   "gaps": "Despite being the largest FDE hirer on the site, Wonderful publishes no interview process and I found no usable first-hand candidate accounts (Reddit, LeetCode, Medium, LinkedIn, YouTube searches all empty). The only candidate reports surfaced were on Glassdoor (excluded); they mention a case study for Deployment Strategists, CTO interviews, and rejections without feedback, but cannot be used. A JobMentis 'Wonderful AI SWE' page lists coding/system-design questions but describes an ad-optimization business and cites no verifiable candidates, so it was excluded as likely a different company. No technical-round, case-study or take-home content is sourced."
   },
   {
    "company": "Shield AI",
@@ -4638,80 +6427,6 @@
    "gaps": "No FDE question reports or candidate accounts found outside Glassdoor/Blind. Search snippets describe another xAI FDE posting variant with Rust/C++/Go plus Python coding and a design interview, but those pages returned 404 and could not be confirmed. No current FDE opening found on xAI's Greenhouse board (Nov 2026)."
   },
   {
-   "company": "Cursor",
-   "slug": "cursor",
-   "roles": [
-    "Forward Deployed Engineer (SF, EMEA, India, Japan, Australia)",
-    "Forward Deployed Strategist",
-    "AI Deployment Manager",
-    "Regional Director, Forward Deployed Engineering"
-   ],
-   "process": [
-    {
-     "stage": "Short technical interviews",
-     "format": "2-3 short technical interviews (stated on Cursor's AI Deployment Manager postings, not on FDE postings)",
-     "assesses": "Not stated",
-     "source": "S1"
-    },
-    {
-     "stage": "Onsite project",
-     "format": "In-office onsite: work on a small project, discuss ideas, meet the team (AI Deployment Manager postings). For engineering hires the CEO describes a two-day onsite on a real project with a demo",
-     "assesses": "Whether the candidate can do real work and cares about the problem; mutual fit",
-     "source": "S1"
-    }
-   ],
-   "questions": [],
-   "tips": [
-    {
-     "text": "Cursor's CEO says the in-office project days double as a culture interview: candidates eat with the team and demo what they built.",
-     "source": "S2"
-    }
-   ],
-   "aiPolicy": {
-    "text": "CEO Michael Truell said (June 2025) that first technical screens are done without AI beyond autocomplete. This was said about engineering hiring generally; no FDE-specific statement found.",
-    "source": "S2"
-   },
-   "sources": [
-    {
-     "id": "S1",
-     "url": "https://jobs.ashbyhq.com/cursor/e3ccb495-a8a3-4ff0-a27b-262188abb9df",
-     "title": "AI Deployment Manager - Singapore (posting since closed)",
-     "publisher": "Cursor (Ashby)",
-     "date": "2026-10",
-     "kind": "employer",
-     "checked": "Applying section: 2-3 short technicals, then in-office onsite with a small project; FDE postings themselves carry no process text"
-    },
-    {
-     "id": "S2",
-     "url": "https://www.aol.com/inside-cursors-hiring-strategy-no-052015324.html",
-     "title": "Inside Cursor's hiring strategy: no AI in interviews and a 2-day project with the team",
-     "publisher": "Business Insider (via AOL), Lee Chong Ming",
-     "date": "2025-06",
-     "kind": "third-party",
-     "checked": "Quotes CEO Truell on no-AI first technical screens and two-day in-office project with demo"
-    },
-    {
-     "id": "S3",
-     "url": "https://jobs.ashbyhq.com/cursor/34cecd0c-c392-4454-8ef5-261310541011",
-     "title": "Forward Deployed Engineer (San Francisco) (posting since closed)",
-     "publisher": "Cursor (Ashby)",
-     "date": "2026-10",
-     "kind": "employer",
-     "checked": "FDE posting; no interview process stated"
-    },
-    {
-     "id": "S4",
-     "url": "https://www.learncursor.dev/learn/cursor-interview",
-     "title": "Cursor interview prep",
-     "publisher": "learncursor.dev",
-     "date": "2026-10",
-     "kind": "third-party",
-     "checked": "States Cursor publishes no company-wide loop and that FDE sits in Field & Solutions, whose postings lack the engineering process note"
-    }
-   ],
-   "gaps": "No FDE-specific process, questions or candidate reports found. Process stages above come from adjacent AI Deployment Manager postings and CEO statements about engineering hires; applying them to FDE is an inference."
-  },
-  {
    "company": "Cloudflare",
    "slug": "cloudflare",
    "roles": [
@@ -4743,86 +6458,6 @@
     }
    ],
    "gaps": "No FDE interview stages, questions or candidate reports found. Postings emphasize Workers / Workers AI and enterprise customer work, but nothing confirms a Workers take-home for FDEs. Related Cloudflare take-home reports exist only for other roles (Glassdoor, excluded; a 2020 intern assignment)."
-  },
-  {
-   "company": "Harvey",
-   "slug": "harvey",
-   "roles": [
-    "Legal Engineer (Pre-Sale)",
-    "Legal Engineer, Product Specialist (Post-Sale)",
-    "Legal Engineer, Custom Solutions",
-    "Forward Deployed Finance Engineer (Private Credit, Buyout, Real Estate)"
-   ],
-   "process": [
-    {
-     "stage": "Initial recruiting interview",
-     "format": "Call with recruiting team",
-     "assesses": "Background; recruiter explains the three Legal Engineer tracks and matches you to one based on fit and hiring needs",
-     "source": "S1"
-    }
-   ],
-   "questions": [],
-   "tips": [
-    {
-     "text": "Harvey says legal judgment is the core requirement for Legal Engineers, not technical skill; product training happens on the job.",
-     "source": "S2"
-    },
-    {
-     "text": "Know which track fits you: Pre-Sale (demos, pilots with AEs), Post-Sale Product Specialist (onboarding, enablement, agents on real matters), or Custom Solutions (no-code multi-step workflows).",
-     "source": "S1"
-    },
-    {
-     "text": "Legal Engineer work centers on loading a prospect's real documents, building a workflow, testing, and refining it; be ready to discuss a concrete workflow from your practice.",
-     "source": "S2"
-    },
-    {
-     "text": "Finance Engineer postings ask for advanced Excel/modeling, comfort with prompting and agentic workflows, and ability to lead a live demo or workshop.",
-     "source": "S3"
-    }
-   ],
-   "aiPolicy": {
-    "text": "Harvey postings say the company uses AI in its recruitment process but makes no automated decisions and has humans review AI output. Nothing published on candidate AI use.",
-    "source": "S4"
-   },
-   "sources": [
-    {
-     "id": "S1",
-     "url": "https://jobs.ashbyhq.com/harvey/fd3eee99-2c94-4127-8b82-3582a79cd418",
-     "title": "Legal Engineer (Law Firm, Corporate)",
-     "publisher": "Harvey",
-     "date": "2026-06",
-     "kind": "employer",
-     "checked": "Describes Pre-Sale, Product Specialist, Custom Solutions tracks; initial recruiting interview identifies best-fit track"
-    },
-    {
-     "id": "S2",
-     "url": "https://www.harvey.ai/blog/day-in-the-life-legal-engineer",
-     "title": "A day in the life of a Legal Engineer",
-     "publisher": "Harvey",
-     "date": "2026-04",
-     "kind": "employer",
-     "checked": "Legal Engineers are former lawyers; legal judgment core; three tracks; traits that succeed; no interview process"
-    },
-    {
-     "id": "S3",
-     "url": "https://jobs.ashbyhq.com/harvey/43c6e218-ea85-4519-b2fe-dd188ff3234f",
-     "title": "Forward Deployed Finance Engineer, Private Credit",
-     "publisher": "Harvey",
-     "date": "2026-10",
-     "kind": "employer",
-     "checked": "Role duties (pilots, underwriting workflows) and requirements; no interview process"
-    },
-    {
-     "id": "S4",
-     "url": "https://jobs.ashbyhq.com/harvey/01f31ece-f3fe-4991-b6fb-b59f21faa8e9",
-     "title": "Staff Software Engineer, Full Stack",
-     "publisher": "Harvey",
-     "date": "2026",
-     "kind": "employer",
-     "checked": "Statement that Harvey uses AI in recruitment with human review and no automated decisions"
-    }
-   ],
-   "gaps": "No public first-hand account of the Legal Engineer or Forward Deployed Finance Engineer interview beyond the recruiter step. Third-party Harvey guides (techprep, techinterview.org, Taro) cover software engineers only. No software-titled FDE role found on Harvey's board."
   },
   {
    "company": "Saronic",

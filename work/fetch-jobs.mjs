@@ -66,7 +66,8 @@ export async function collect(){
  for(const board of boards){
   for(const job of normalize(board.ats,board.data)){
    const role=board.name+'|'+job.title.trim().toLowerCase()+'|'+job.location.trim().toLowerCase();
-   if(!(ROLE.test(job.title)||roleOverrides[board.name]?.test(job.title))||!job.url||seen.has(job.url.toLowerCase())||seen.has(role))continue;
+   // Skip placeholder postings such as Parloa's "TEST - Forward Deployed Engineer".
+   if(!(ROLE.test(job.title)||roleOverrides[board.name]?.test(job.title))||/^\s*test\b/i.test(job.title)||!job.url||seen.has(job.url.toLowerCase())||seen.has(role))continue;
    seen.add(job.url.toLowerCase());seen.add(role);
    jobs.push({company:board.name,ats:board.ats,board:board.slug,...job,title:english(job.title),location:english(job.location)});
   }

@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-11-01T22:23:17.765Z",
+ "checkedAt": "2026-11-02T02:09:59.407Z",
  "method": "Public Greenhouse, Lever, and Ashby job-board APIs; titles matched forward[\\s-]*deploy|\\bFDE\\b|\\bFDSE\\b|special projects engineer|deployment strategist|ai deployment engineer|^deployed engineer\\b",
  "boardsChecked": 782,
  "companiesProbed": 840,
@@ -15077,30 +15077,6 @@
    "compensation": ""
   },
   {
-   "company": "Parloa",
-   "ats": "ashby",
-   "board": "parloa",
-   "title": "TEST - Forward Deployed Engineer",
-   "url": "https://jobs.ashbyhq.com/parloa/e97475fd-81c6-4755-93dd-b714766d7f02",
-   "location": "New York",
-   "remote": false,
-   "posted": "2026-10-18",
-   "department": "Engineering",
-   "compensation": "$130K – $160K • Offers Equity"
-  },
-  {
-   "company": "Parloa",
-   "ats": "ashby",
-   "board": "parloa",
-   "title": "TEST - Forward Deployed Engineer - Alex",
-   "url": "https://jobs.ashbyhq.com/parloa/c65730bb-fef1-419e-b664-4da177262188",
-   "location": "Berlin · Munich",
-   "remote": true,
-   "posted": "2026-10-22",
-   "department": "Engineering",
-   "compensation": ""
-  },
-  {
    "company": "PartsBase",
    "ats": "ashby",
    "board": "partsbase",
@@ -16575,54 +16551,6 @@
    "posted": "2026-05-21",
    "department": "Engineering",
    "compensation": ""
-  },
-  {
-   "company": "Retell AI",
-   "ats": "ashby",
-   "board": "retell-ai",
-   "title": "Deployment Strategist",
-   "url": "https://jobs.ashbyhq.com/retell-ai/72dcc20d-0f0e-4639-9b7e-1806327acd97",
-   "location": "San Francisco Bay Area",
-   "remote": false,
-   "posted": "2026-10-08",
-   "department": "Applied AI",
-   "compensation": "$170K – $260K • Offers Equity"
-  },
-  {
-   "company": "Retell AI",
-   "ats": "ashby",
-   "board": "retell-ai",
-   "title": "Senior Forward Deployed Engineer",
-   "url": "https://jobs.ashbyhq.com/retell-ai/5652ab47-6c89-4889-a507-7a3a943c3669",
-   "location": "San Francisco Bay Area",
-   "remote": false,
-   "posted": "2025-02-20",
-   "department": "Applied AI",
-   "compensation": "$160K – $300K • Offers Equity"
-  },
-  {
-   "company": "Retell AI",
-   "ats": "ashby",
-   "board": "retell-ai",
-   "title": "Senior Forward Deployed Engineer (Mandarin Fluency Required)",
-   "url": "https://jobs.ashbyhq.com/retell-ai/7a614b87-2dd8-4723-ae79-7cdca82aac73",
-   "location": "San Francisco Bay Area",
-   "remote": false,
-   "posted": "2026-08-05",
-   "department": "Applied AI",
-   "compensation": "$160K – $300K • Offers Equity"
-  },
-  {
-   "company": "Retell AI",
-   "ats": "ashby",
-   "board": "retell-ai",
-   "title": "Senior Forward Deployed Engineer (Spanish Fluency Required)",
-   "url": "https://jobs.ashbyhq.com/retell-ai/e6b26f71-d747-4f1d-8756-e6cf91ee1e50",
-   "location": "San Francisco Bay Area",
-   "remote": false,
-   "posted": "2026-08-13",
-   "department": "Applied AI",
-   "compensation": "$160K – $300K • Offers Equity"
   },
   {
    "company": "Reveal Technology",
