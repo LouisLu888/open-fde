@@ -851,17 +851,6 @@
      "note": ""
     },
     {
-     "id": "databricks-q5",
-     "prompt": "In a notebook, write a function that turns a list of records into a per-user summary.",
-     "type": "coding",
-     "role": "FDE",
-     "stage": "Coding",
-     "evidence": "third-party",
-     "source": "S2",
-     "year": "2026",
-     "note": "Candidate S3 confirms a practical notebook problem easier than typical LeetCode; exact prompt not disclosed."
-    },
-    {
      "id": "databricks-q6",
      "prompt": "You have a city's traffic data. Build a system that improves traffic congestion there.",
      "type": "decomposition",
@@ -2006,7 +1995,7 @@
      "evidence": "candidate",
      "source": "S2",
      "year": "2026",
-     "note": "Exact spec not disclosed."
+     "note": "The candidate names the task; the full spec is not in the report."
     },
     {
      "id": "cognition-q14",
@@ -3226,17 +3215,6 @@
      "note": "Timed, about 45 min"
     },
     {
-     "id": "hebbia-q6",
-     "prompt": "Answer a standard live system design prompt and defend the tradeoffs.",
-     "type": "system-design",
-     "role": "Senior Software Engineer (not FDE)",
-     "stage": "System design",
-     "evidence": "candidate",
-     "source": "S6",
-     "year": "2024",
-     "note": "Prompt not disclosed"
-    },
-    {
      "id": "hebbia-q7",
      "prompt": "Over a full day, build a service on AWS from a vague prompt, then present and discuss it.",
      "type": "coding",
@@ -3601,17 +3579,6 @@
     }
    ],
    "questions": [
-    {
-     "id": "glean-q1",
-     "prompt": "Show how you think about, design and use AI to drive impact in your role, referencing tools and workflows you use today.",
-     "type": "ai-build",
-     "role": "Founding FDE",
-     "stage": "AI-focused exercise",
-     "evidence": "employer",
-     "source": "S1",
-     "year": "2026",
-     "note": ""
-    },
     {
      "id": "glean-q2",
      "prompt": "Have you built AI agents? If so, describe them.",
@@ -4557,39 +4524,6 @@
    ],
    "questions": [
     {
-     "id": "trm-labs-q1",
-     "prompt": "Hands-on case study in a panel setting, going deep on your craft and how you solve the problem.",
-     "type": "decomposition",
-     "role": "FDE / Deployment Strategist",
-     "stage": "Final round",
-     "evidence": "employer",
-     "source": "S1",
-     "year": "2026",
-     "note": "Case content is not published; the posting only names the format. Same block appears on every Deployment Strategist posting checked (S2)."
-    },
-    {
-     "id": "trm-labs-q2",
-     "prompt": "AI skills assessment: show applied AI fluency in how you work.",
-     "type": "ai-build",
-     "role": "FDE / Deployment Strategist",
-     "stage": "First or final round",
-     "evidence": "employer",
-     "source": "S1",
-     "year": "2026",
-     "note": "Posting says 'most' processes include it and candidates are evaluated on applied AI fluency; format not described."
-    },
-    {
-     "id": "trm-labs-q3",
-     "prompt": "Leadership Principles interview: examples showing craftsmanship, being an inspiring colleague, and impact-oriented trailblazing.",
-     "type": "behavioral",
-     "role": "FDE / Deployment Strategist",
-     "stage": "Final round",
-     "evidence": "employer",
-     "source": "S1",
-     "year": "2026",
-     "note": "Principle names from the TRM interviewing blog (S3); exact questions not published."
-    },
-    {
      "id": "trm-labs-q4",
      "prompt": "Walk through something you built: the decisions you made and the trade-offs you handled.",
      "type": "behavioral",
@@ -4609,7 +4543,7 @@
      "evidence": "employer",
      "source": "S3",
      "year": "2025",
-     "note": "Blog lists this as something strong candidates have a clear view on, rather than a verbatim question."
+     "note": "The hiring blog says strong candidates have a clear answer to this."
     },
     {
      "id": "trm-labs-q6",
@@ -5086,17 +5020,6 @@
      "note": "Matches CEO description in S2"
     },
     {
-     "id": "cursor-q3",
-     "prompt": "Solve a practical HackerRank coding problem live with an engineer, focused on logic rather than syntax.",
-     "type": "coding",
-     "role": "Software Engineer (not FDE)",
-     "stage": "Technical interview",
-     "evidence": "candidate",
-     "source": "S7",
-     "year": "2025",
-     "note": "Problem not disclosed"
-    },
-    {
      "id": "cursor-q4",
      "prompt": "Talk about your personal technical interests.",
      "type": "motivation",
@@ -5106,17 +5029,6 @@
      "source": "S7",
      "year": "2025",
      "note": ""
-    },
-    {
-     "id": "cursor-q5",
-     "prompt": "Work on a small project in the office, discuss ideas, and meet the team.",
-     "type": "take-home",
-     "role": "AI Deployment Manager",
-     "stage": "Onsite",
-     "evidence": "employer",
-     "source": "S5",
-     "year": "2026",
-     "note": "Posting text; project content not specified"
     }
    ],
    "tips": [
@@ -5257,30 +5169,7 @@
      "source": "S1"
     }
    ],
-   "questions": [
-    {
-     "id": "ode-q1",
-     "prompt": "Act as if on a first client call: scope a new project to get an AI system into production, covering architecture and decisions.",
-     "type": "customer-scenario",
-     "role": "Software Engineer (now MTS)",
-     "stage": "Whiteboard client-scoping session",
-     "evidence": "employer",
-     "source": "S1",
-     "year": "2024",
-     "note": "Employer describes the format, not the exact prompt; chosen so ChatGPT is of limited help. Fractional AI loop as of May 2024."
-    },
-    {
-     "id": "ode-q2",
-     "prompt": "Undisclosed hands-on coding problem completed live; ChatGPT allowed, Copilot not; graded on clean code, judgment and LLM use.",
-     "type": "coding",
-     "role": "Software Engineer (now MTS)",
-     "stage": "Hands-on coding",
-     "evidence": "employer",
-     "source": "S1",
-     "year": "2024",
-     "note": "Two such prompts; actual problems not published."
-    }
-   ],
+   "questions": [],
    "tips": [
     {
      "text": "Expect to be judged on whether you can tell when an AI assistant helps and when it does not; the company treats AI use in interviews as a question of how, not if.",
@@ -5448,17 +5337,6 @@
      "source": "S2",
      "year": "2026",
      "note": ""
-    },
-    {
-     "id": "openai-deployment-company-q2",
-     "prompt": "Working session: solve a problem together as a team while interviewers observe how you divide and drive the work.",
-     "type": "decomposition",
-     "role": "Team route",
-     "stage": "Joint working session",
-     "evidence": "employer",
-     "source": "S2",
-     "year": "2026",
-     "note": "Format described, content not published."
     }
    ],
    "tips": [
@@ -5691,17 +5569,6 @@
     }
    ],
    "questions": [
-    {
-     "id": "taktile-q1",
-     "prompt": "Walk the hiring manager through your experience and how you approach solving problems relevant to this role.",
-     "type": "behavioral",
-     "role": "All roles",
-     "stage": "Hiring manager interview",
-     "evidence": "employer",
-     "source": "S1",
-     "year": "2026",
-     "note": "Topic description, not a verbatim question."
-    },
     {
      "id": "taktile-q2",
      "prompt": "What motivates you? Discussed with a founder or senior leader.",
@@ -5948,19 +5815,7 @@
      "source": "S4"
     }
    ],
-   "questions": [
-    {
-     "id": "parloa-q1",
-     "prompt": "Complete a take-home case study, then present it in a dedicated presentation round.",
-     "type": "take-home",
-     "role": "Staff Deployment Strategist",
-     "stage": "Case study",
-     "evidence": "employer",
-     "source": "S4",
-     "year": "2026",
-     "note": "Employer names the stage only; the case content is not public."
-    }
-   ],
+   "questions": [],
    "tips": [],
    "aiPolicy": {},
    "sources": [
@@ -6045,19 +5900,7 @@
      "source": "S3"
     }
    ],
-   "questions": [
-    {
-     "id": "wonderful-q1",
-     "prompt": "Describe your professional experience, education and skills (first-round screen that can be run by Wonderful's AI agent).",
-     "type": "behavioral",
-     "role": "All roles",
-     "stage": "First interview",
-     "evidence": "employer",
-     "source": "S1",
-     "year": "2026",
-     "note": "Topics stated in the candidate privacy notice; exact questions not published."
-    }
-   ],
+   "questions": [],
    "tips": [
     {
      "text": "You can opt to take the first interview with Wonderful's own AI agent; the notice says a human is always involved in decisions about your application.",

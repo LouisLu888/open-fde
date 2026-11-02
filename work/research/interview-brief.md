@@ -49,3 +49,6 @@ Write one JSON file to the path given in your task (usually work/research/out/in
 ```
 
 Aim for depth on the big hirers and honesty on the rest: 8 to 20 sourced questions for a major company is good; 0 to 3 for a small one is fine if that is what exists. Source ids are local to each company. Keep running notes short; finish with a one-paragraph summary of coverage and weakest evidence.
+
+## What counts as a question
+A question is a prompt a candidate could answer. If a source names a stage but not what is asked ("a case study", "a coding round, problem not disclosed"), record it under `process` only. Never write an example prompt to stand in for an undisclosed one.

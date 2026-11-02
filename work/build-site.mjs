@@ -234,7 +234,9 @@ writeFileSync(new URL('404.html',site),built.notFound);
 writeFileSync(new URL('search-index.json',site),JSON.stringify(built.index));
 copyFileSync(new URL('outputs/og.png',root),new URL('og.png',site));
 writeFileSync(new URL(`${indexNowKey}.txt`,site),indexNowKey);
-writeFileSync(new URL('_redirects',site),'/FDE_SPE_Field_Academy.html / 301\n/interview/employer-formats/ /interview/companies/ 301\n');
+// A company page disappears when its question count drops below 5; send old links to its entry on the Companies tab.
+const thinInterviewRedirects=JSON.parse(readFileSync(new URL('docs/INTERVIEWS.json',root),'utf8')).companies.filter(company=>company.questions.length<5).map(company=>`/interview/${company.slug}/ /interview/companies/#${company.slug}-interview 301\n`).join('');
+writeFileSync(new URL('_redirects',site),'/FDE_SPE_Field_Academy.html / 301\n/interview/employer-formats/ /interview/companies/ 301\n'+thinInterviewRedirects);
 
 const aiAgents=['GPTBot','OAI-SearchBot','ChatGPT-User','ClaudeBot','Claude-User','Claude-SearchBot','PerplexityBot','Perplexity-User','Google-Extended','Applebot-Extended','CCBot','Bingbot','DuckAssistBot'];
 writeFileSync(new URL('robots.txt',site),'# Search engines and AI assistants are welcome to read and cite this guide.\nUser-agent: *\nAllow: /\n\n'+aiAgents.map(agent=>`User-agent: ${agent}\nAllow: /`).join('\n\n')+`\n\nSitemap: ${origin}/sitemap.xml\n`);
