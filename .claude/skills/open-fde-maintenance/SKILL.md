@@ -46,7 +46,8 @@ Data: `docs/COMPANIES.json`. Brief for researchers: `work/research/company-brief
 5. `npm run research:merge-companies -- work/research/out/companies-*.verified.json`. It refuses unknown company names, bad URLs, non-numeric figures, and missing dates.
 6. Verify yourself before shipping: open the sources for the five largest valuations and any figure the researcher flagged as shaky. Tender, pre-money, acquisition price, and estimate must be labelled as such in `basis`.
 7. Sub-agents share one web-search quota per turn (about 200 searches). Batches of about 65 companies run out of searches halfway; split large refreshes across turns or keep batches near 25.
-8. Recruiters posting for unnamed clients are not employers: remove them from `companies` in `work/fetch-jobs.mjs` and add them to `SKIP_NAMES` in `merge-discovery.mjs`.
+8. The Jobs filters group free-text industries into sectors and stages into funding rounds with the rules in `work/company-groups.mjs`. After adding companies, check that few land in `Other`; add a rule (order matters, first match wins) rather than renaming the industry.
+9. Recruiters posting for unnamed clients are not employers: remove them from `companies` in `work/fetch-jobs.mjs` and add them to `SKIP_NAMES` in `merge-discovery.mjs`.
 
 ## 3. Refresh interview loops and questions (`/interview/`)
 

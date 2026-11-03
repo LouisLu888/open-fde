@@ -169,6 +169,13 @@ assert(await page.locator('#jobs [data-job]:visible').evaluateAll(rows=>rows.eve
 await page.locator('[data-search="jobs"]').fill('impossible-search-zz');
 assert(await page.locator('[data-empty="jobs"]').isVisible());
 await page.locator('[data-search="jobs"]').fill('');await page.locator('#jobsRegion').selectOption('');await page.locator('[data-filter="jobs"]').selectOption('');
+await page.locator('#jobsSector').selectOption('Healthcare and life sciences');
+const healthRows=await page.locator('[data-item="jobs"]:visible').evaluateAll(rows=>rows.map(row=>row.dataset.sector));
+assert(healthRows.length>0&&healthRows.every(sector=>sector==='Healthcare and life sciences'),'Industry filter keeps only that sector');
+await page.locator('#jobsStage').selectOption('Series A');
+const seriesA=await page.locator('[data-item="jobs"]:visible').evaluateAll(rows=>rows.map(row=>[row.dataset.sector,row.dataset.stage]));
+assert(seriesA.length<=healthRows.length&&seriesA.every(([sector,stage])=>sector==='Healthcare and life sciences'&&stage==='Series A'),'Stage and industry filters combine');
+await page.locator('#jobsSector').selectOption('');await page.locator('#jobsStage').selectOption('');
 await page.locator('#globalSearch').fill('Anthropic');
 assert(await page.locator('#globalResults small',{hasText:'Hiring company'}).count()>=1,'Global search finds hiring companies');
 await page.locator('#globalSearch').fill('');
