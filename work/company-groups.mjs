@@ -18,5 +18,5 @@ export const sectorList=[...sectorRules.map(([name])=>name),'Other','Unknown'];
 export const sectorOf=industry=>industry?(sectorRules.find(([,rule])=>rule.test(industry))?.[0]||'Other'):'Unknown';
 
 // Funding stage, from the stage label ("Private, Series B", "Public", "Acquired", ...).
-export const stageList=['Seed','Series A','Series B','Series C','Series D and later','Late-stage private','Public','Acquired or subsidiary','Unknown'];
-export const stageOf=stage=>!stage?'Unknown':/seed/i.test(stage)?'Seed':/series a\b/i.test(stage)?'Series A':/series b\b/i.test(stage)?'Series B':/series c\b/i.test(stage)?'Series C':/series [d-z]/i.test(stage)?'Series D and later':/late/i.test(stage)?'Late-stage private':/public/i.test(stage)?'Public':/acqui|subsidiar/i.test(stage)?'Acquired or subsidiary':'Unknown';
+export const stageList=['Seed','Series A','Series B','Series C','Series D and later','Late-stage private','Bootstrapped','Public','Acquired or subsidiary','Unknown'];
+export const stageOf=stage=>!stage?'Unknown':/seed/i.test(stage)?'Seed':/series a\b/i.test(stage)?'Series A':/series b\b/i.test(stage)?'Series B':/series c\b/i.test(stage)?'Series C':/series [d-z]/i.test(stage)?'Series D and later':/late/i.test(stage)?'Late-stage private':/bootstrap/i.test(stage)?'Bootstrapped':/public/i.test(stage)?'Public':/acqui|subsidiar/i.test(stage)?'Acquired or subsidiary':'Unknown';

@@ -22,7 +22,9 @@ for(const file of process.argv.slice(2)){
   const name=entry.company;
   if(!hiring.has(name))errors.push(`${name}: not a company in docs/JOBS.json (check the exact name)`);
   if(entry.website&&!/^https?:\/\//.test(entry.website))errors.push(`${name}: website must be a URL`);
-  byName.set(name,{company:name,website:entry.website||'',industry:entry.industry||'',hq:entry.hq||'',stage:entry.stage||'',ticker:entry.ticker||'',valuation:checkFigure(name,'valuation',entry.valuation),arr:checkFigure(name,'arr',entry.arr),note:entry.note||''});
+  // A stage filled by merge-stages.mjs keeps its source when the new research gives the same stage.
+  const previous=byName.get(name)||{},stage=entry.stage||previous.stage||'';const keepSource=stage===previous.stage&&previous.stageSource&&!entry.stageSource;
+  byName.set(name,{company:name,website:entry.website||'',industry:entry.industry||'',hq:entry.hq||'',stage,ticker:entry.ticker||'',...(keepSource?{stageDate:previous.stageDate||'',stageSource:previous.stageSource,stageSourceTitle:previous.stageSourceTitle||''}:entry.stageSource?{stageDate:entry.stageDate||'',stageSource:entry.stageSource,stageSourceTitle:entry.stageSourceTitle||''}:{}),valuation:checkFigure(name,'valuation',entry.valuation),arr:checkFigure(name,'arr',entry.arr),note:entry.note||''});
  }
 }
 if(errors.length){console.error(errors.join('\n'));process.exit(1);}

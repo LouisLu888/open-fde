@@ -80,11 +80,14 @@
    "website": "https://aerovy.com",
    "industry": "Energy/EV infrastructure software",
    "hq": "Atlanta",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "HQ Atlanta per https://aerovy.com/llms.txt (engineering in Seattle). Backed by Mudita, M25, Quorum, Knoll, Purdue Ventures; job posts say ARR up 4x+ (no absolute figure)."
+   "note": "HQ Atlanta per https://aerovy.com/llms.txt (engineering in Seattle). Backed by Mudita, M25, Quorum, Knoll, Purdue Ventures; job posts say ARR up 4x+ (no absolute figure). $800K pre-seed (Purdue Innovates, M25, Flywheel). Simplify claims a later seed (Sep 2026), unverified.",
+   "stageDate": "2023-10",
+   "stageSource": "https://www.insideindianabusiness.com/articles/aerospace-startup-closes-pre-seed-funding-with-800k",
+   "stageSourceTitle": "Inside Indiana Business: Aerospace startup closes pre-seed funding with $800K"
   },
   {
    "company": "Afresh",
@@ -174,11 +177,14 @@
    "website": "https://www.airops.com",
    "industry": "AI content marketing",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series B",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Job post: backed by Greylock, Unusual, Wing VC, Founder Collective; headquartered in San Francisco, New York and Montevideo. Round letter not confirmed on an opened page."
+   "note": "Job post: backed by Greylock, Unusual, Wing VC, Founder Collective; headquartered in San Francisco, New York and Montevideo. Round letter not confirmed on an opened page. Led by Greylock at $225M valuation.",
+   "stageDate": "2025-11",
+   "stageSource": "https://www.thesaasnews.com/news/airops-raises-40-million-in-series-b/",
+   "stageSourceTitle": "The SaaS News: AirOps Raises $40 Million in Series B"
   },
   {
    "company": "AiStudio Artificial Intelligence Technologies Ltd",
@@ -286,22 +292,28 @@
    "website": "https://alternativepayments.io",
    "industry": "B2B payments",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "No funding or HQ disclosure found."
+   "note": "No funding or HQ disclosure found. $22M Series A led by MissionOG and Third Prime; NYC. Company acquired Delmar Insights Nov 2025.",
+   "stageDate": "2025-04",
+   "stageSource": "https://alleywatch.com/2025/04/alternative-payments-merchant-services-automation-b2b-payment-infrastructure-platform-msp-baxter-lanius/",
+   "stageSourceTitle": "AlleyWatch: Alternative Payments raises $22M Series A"
   },
   {
    "company": "Ampersand",
    "website": "https://www.withampersand.com/",
    "industry": "Integration infrastructure",
    "hq": "San Francisco",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Stage not verified."
+   "note": "Stage not verified. Led by Bessemer; integration infrastructure + Andi agent matches withampersand.com.",
+   "stageDate": "2026-10",
+   "stageSource": "https://pulse2.com/ampersand-raises-15-million-series-a-to-expand-integration-enterprise-infrastructure-connecting-ai-agents/",
+   "stageSourceTitle": "Pulse 2.0: Ampersand Raises $15 Million Series A To Expand Integration Enterprise Infrastructure Connecting AI Agents"
   },
   {
    "company": "Amplitude",
@@ -382,22 +394,28 @@
    "website": "https://anysignal.com",
    "industry": "Space RF / defense hardware",
    "hq": "Los Angeles",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Funding not confirmed on a page opened."
+   "note": "Funding not confirmed on a page opened. Led by Upfront Ventures.",
+   "stageDate": "2025-12",
+   "stageSource": "https://payloadspace.com/anysignal-raises-24m-series-a-for-radio-production",
+   "stageSourceTitle": "Payload: AnySignal Raises $24M Series A for Radio Production"
   },
   {
    "company": "Apollo Research",
    "website": "https://www.apolloresearch.ai",
    "industry": "AI safety research",
    "hq": "London",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Historically grant-funded (Open Philanthropy grants 2023-2024). Legal form/stage not stated on site; Caplight lists a 2026 'Seed' with no details. Offices London, SF, DC."
+   "note": "Historically grant-funded (Open Philanthropy grants 2023-2024). Legal form/stage not stated on site; Caplight lists a 2026 'Seed' with no details. Offices London, SF, DC. Spun out of fiscal sponsor into a public benefit corporation; Seed round led by 50Y (Juniper, Macroscopic, Common Metal, SAIF).",
+   "stageDate": "2026-01",
+   "stageSource": "https://www.apolloresearch.ai/blog/apollo-research-is-becoming-a-pbc/",
+   "stageSourceTitle": "Apollo Research: Apollo Research is becoming a PBC"
   },
   {
    "company": "Appen",
@@ -465,11 +483,14 @@
    "website": "https://archera.ai",
    "industry": "Cloud cost management",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series C",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "No funding details verified."
+   "note": "No funding details verified. PitchBook dates close Jul 2026; article Oct 29 2026.",
+   "stageDate": "2026-10",
+   "stageSource": "https://pulse2.com/archera-raises-15-million-series-c-led-by-pivot-investment-partners/",
+   "stageSourceTitle": "Pulse 2.0: Archera Raises $15 Million Series C Led By Pivot Investment Partners"
   },
   {
    "company": "Arini",
@@ -504,11 +525,14 @@
    "website": "https://www.aronhq.com",
    "industry": "Procurement AI",
    "hq": "San Francisco",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Formerly NegotiateAI. HQ from address on company site (548 Market St, San Francisco). No funding disclosure found."
+   "note": "Formerly NegotiateAI. HQ from address on company site (548 Market St, San Francisco). No funding disclosure found. $6M seed led by Storm Ventures + $2M pre-seed led by Menlo; website aronhq.com.",
+   "stageDate": "2026-09",
+   "stageSource": "https://www.thesaasnews.com/news/aron-raises-8m-pre-seed-seed/",
+   "stageSourceTitle": "The SaaS News: Aron Raises $8M in Pre-Seed and Seed"
   },
   {
    "company": "Arta Finance",
@@ -526,11 +550,14 @@
    "website": "https://artificialanalysis.ai",
    "industry": "AI benchmarking",
    "hq": "San Francisco",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "HQ from company site (Headquartered in San Francisco, office in Melbourne). No funding disclosure found."
+   "note": "HQ from company site (Headquartered in San Francisco, office in Melbourne). No funding disclosure found. Podcast notes say it raised 'a full seed round' from Nat Friedman and Daniel Gross (AI Grant). Round month and amount not disclosed; source dated Jan 2026.",
+   "stageDate": "",
+   "stageSource": "https://latent.space/p/artificialanalysis",
+   "stageSourceTitle": "Latent Space: Artificial Analysis: The Independent Ratings Agency of AI"
   },
   {
    "company": "Artificial Labs",
@@ -581,22 +608,28 @@
    "website": "",
    "industry": "Healthcare AI (prior auth)",
    "hq": "New York",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Prior-authorization automation; job post says headquartered in New York City. No funding found."
+   "note": "Prior-authorization automation; job post says headquartered in New York City. No funding found. $10M Series A led by Deerfield, Northwell participating; New York-based, prior auth automation. Month from Axios Pro URL (2025-04-22).",
+   "stageDate": "2025-04",
+   "stageSource": "https://www.digitalhealthnews.com/ascertain-raises-10mn-to-expand-ai-based-case-management-tools",
+   "stageSourceTitle": "Digital Health News: Ascertain Raises $10Mn to Expand AI-Based Case Management Tools"
   },
   {
    "company": "Aslan",
    "website": "",
    "industry": "Defense / intelligence tech",
    "hq": "Washington, DC",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Job posts: '$20M raised to date' (Khosla, XYZ, BoxGroup). Round letter unknown."
+   "note": "Job posts: '$20M raised to date' (Khosla, XYZ, BoxGroup). Round letter unknown. Aslan Protects; $20.8M seed co-led by Khosla and XYZ, BoxGroup participating (matches job-post investors).",
+   "stageDate": "2026-09",
+   "stageSource": "https://fundraiseinsider.com/blog/aslan-protects-raises-20-8m-for-national-security-ai/",
+   "stageSourceTitle": "Fundraise Insider: Aslan Protects Raises $20.8M for National Security AI"
   },
   {
    "company": "AssemblyAI",
@@ -664,11 +697,14 @@
    "website": "",
    "industry": "Legal AI",
    "hq": "New York",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "NYC in-person legal AI company ('backed by leading investors'). No funding round details found on an opened page."
+   "note": "NYC in-person legal AI company ('backed by leading investors'). No funding round details found on an opened page. $7M seed led by NEA and Pear VC (Business Wire release Aug 5, 2025). Website www.august.law, HQ New York (per article). One outlet mislabels it Series A.",
+   "stageDate": "2025-08",
+   "stageSource": "https://www.lawfuel.com/?p=183287",
+   "stageSourceTitle": "LawFuel: New Legal AI Venture August Scores $7 Million Seed Round"
   },
   {
    "company": "Aurelian",
@@ -697,11 +733,14 @@
    "website": "https://autoscience.ai/",
    "industry": "AI research automation",
    "hq": "San Mateo",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Stage not verified."
+   "note": "Stage not verified. $14M seed led by General Catalyst; article links autoscience.ai.",
+   "stageDate": "2026-03",
+   "stageSource": "https://siliconangle.com/2026/03/19/autoscience-builds-automated-research-lab-machine-learning-models-14m/",
+   "stageSourceTitle": "SiliconANGLE: Autoscience builds automated research lab for machine learning models with $14M"
   },
   {
    "company": "Auxia",
@@ -786,11 +825,14 @@
    "website": "https://www.axle.insure",
    "industry": "Insurtech",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Insurance verification. Backed by Base10, Y Combinator, Gradient Ventures per job board; job posts cite 'mid 7-figures ARR' (too vague to record). Offices Atlanta and NYC."
+   "note": "Insurance verification. Backed by Base10, Y Combinator, Gradient Ventures per job board; job posts cite 'mid 7-figures ARR' (too vague to record). Offices Atlanta and NYC. $17.5M Series A led by Base10, YC and Gradient participating.",
+   "stageDate": "2026-08",
+   "stageSource": "https://www.axle.insure/blog/announcing-our-17-5m-series-a-led-by-base10",
+   "stageSourceTitle": "Axle: Announcing our $17.5M Series A led by Base10"
   },
   {
    "company": "AZX",
@@ -869,11 +911,14 @@
    "website": "https://www.getbasis.ai/",
    "industry": "Accounting AI agents",
    "hq": "New York",
-   "stage": "",
+   "stage": "Private, Series B",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Company job board: 'recently raised $100M at >$1B valuation' (lower bound, not an exact post-money; round letter not given)."
+   "note": "Company job board: 'recently raised $100M at >$1B valuation' (lower bound, not an exact post-money; round letter not given). $100M Series B led by Accel at $1.15B valuation.",
+   "stageDate": "2026-02",
+   "stageSource": "https://builtin.com/articles/basis-raises-100m-series-b-20260226",
+   "stageSourceTitle": "Built In: Basis Raises $100M to Deploy Automated Accounting Agents"
   },
   {
    "company": "Binti",
@@ -906,7 +951,7 @@
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Job post: 'over \u20ac3M raised' from 468 Capital, Lea Partners, Rockstart; stage inferred from amount."
+   "note": "Job post: 'over €3M raised' from 468 Capital, Lea Partners, Rockstart; stage inferred from amount."
   },
   {
    "company": "Blitzy",
@@ -1097,11 +1142,14 @@
    "website": "",
    "industry": "Finance/accounting AI agents",
    "hq": "Madrid",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Roles in Madrid; builds agents integrating with customer accounting systems. Funding not found."
+   "note": "Roles in Madrid; builds agents integrating with customer accounting systems. Funding not found. $20M seed led by Base10, closed Sept 2026, announced Oct 2026; offices in Madrid and Munich. Prior $10M pre-seed (Creandum, Jun 2026).",
+   "stageDate": "2026-09",
+   "stageSource": "https://fortune.com/2026/10/13/startup-causa-prima-20-million-billing-disputes-ai-agents/",
+   "stageSourceTitle": "Fortune: Causa Prima $20 million seed round"
   },
   {
    "company": "Caylent",
@@ -1259,11 +1307,14 @@
    "website": "https://ciridae.com/",
    "industry": "AI deployment services",
    "hq": "San Francisco",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Funding not researched (search budget exhausted)."
+   "note": "Funding not researched (search budget exhausted). $20M seed led by Accel with a16z and General Catalyst (Business Wire May 11, 2026).",
+   "stageDate": "2026-05",
+   "stageSource": "https://pulse2.com/ciridae-raises-20-million-seed-round-led-by-accel-to-bring-ai-transformation-to-real-economy-businesses/",
+   "stageSourceTitle": "Pulse 2.0: Ciridae Raises $20 Million Seed Round Led By Accel"
   },
   {
    "company": "Claim Health",
@@ -1281,11 +1332,14 @@
    "website": "https://www.claimsorted.com",
    "industry": "Insurance claims AI",
    "hq": "London",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Backed by Y Combinator, Atomico and Eurazeo; job posts say it 'raised one of the largest InsurTech rounds of its kind' and grew 10x YoY (https://jobs.ashbyhq.com/claimsorted). Round letter not confirmed."
+   "note": "Backed by Y Combinator, Atomico and Eurazeo; job posts say it 'raised one of the largest InsurTech rounds of its kind' and grew 10x YoY (https://jobs.ashbyhq.com/claimsorted). Round letter not confirmed. $13.3M seed led by Atomico with Eurazeo, YC. The 'largest round' claim in job posts refers to this seed.",
+   "stageDate": "2025-10",
+   "stageSource": "https://fintech.global/?p=217762",
+   "stageSourceTitle": "FinTech Global: InsurTech ClaimSorted secures $13.3m seed round"
   },
   {
    "company": "Clarion",
@@ -1388,11 +1442,14 @@
    "website": "https://cogent.com",
    "industry": "Cybersecurity AI",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "AI agents for vulnerability remediation; backed by Greylock and Bain Capital Ventures (job posts). Job post references 'our HQ' in San Francisco. Round letter not confirmed."
+   "note": "AI agents for vulnerability remediation; backed by Greylock and Bain Capital Ventures (job posts). Job post references 'our HQ' in San Francisco. Round letter not confirmed. $42M Series A led by Bain Capital Ventures, Greylock participating; $11M seed July 2025.",
+   "stageDate": "2026-02",
+   "stageSource": "https://cogent.com/blog/cogent-security-raises-42m-series-a",
+   "stageSourceTitle": "Cogent: Cogent Security Raises $42M Series A"
   },
   {
    "company": "Cognite",
@@ -1524,11 +1581,14 @@
    "website": "https://column.com",
    "industry": "Banking infrastructure",
    "hq": "",
-   "stage": "",
+   "stage": "Private, bootstrapped",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Nationally chartered bank for developers. Funding stage, valuation and HQ not confirmed on opened pages (search budget exhausted)."
+   "note": "Nationally chartered bank for developers. Funding stage, valuation and HQ not confirmed on opened pages (search budget exhausted). Owned by founders and employees, 'funded with its own money and profits'; founder William Hockey bought Northern California National Bank with his own funds. No venture round.",
+   "stageDate": "",
+   "stageSource": "https://techcrunch.com/2022/04/21/plaid-cofounders-next-venture-is-a-bank-to-power-fintech-apps/",
+   "stageSourceTitle": "TechCrunch: Plaid co-founder's next venture is a bank to power fintech apps"
   },
   {
    "company": "Comena",
@@ -1640,11 +1700,14 @@
    "website": "https://condukt.co",
    "industry": "Compliance / KYB AI",
    "hq": "London",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Backed by Lightspeed and MMC Ventures (job posts). Round not confirmed."
+   "note": "Backed by Lightspeed and MMC Ventures (job posts). Round not confirmed. $10M seed led by Lightspeed and MMC Ventures.",
+   "stageDate": "2025-11",
+   "stageSource": "https://tech.eu/2025/11/18/condukt-emerges-from-stealth-with-10m-to-power-next-generation-compliance/",
+   "stageSourceTitle": "Tech.eu: Condukt emerges from stealth with $10M to power next-generation compliance"
   },
   {
    "company": "Confido",
@@ -1774,11 +1837,14 @@
    "website": "https://www.crogl.com",
    "industry": "Security AI",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Autonomous AI agents for SOC alert investigation. No funding details verified."
+   "note": "Autonomous AI agents for SOC alert investigation. No funding details verified. $25M Series A from Menlo Ventures.",
+   "stageDate": "2025-03",
+   "stageSource": "https://siliconangle.com/2025/03/06/crogl-raises-25m-launches-knowledge-engine-scale-enterprise-security/",
+   "stageSourceTitle": "SiliconANGLE: Crogl raises $25M, launches knowledge engine to scale enterprise security"
   },
   {
    "company": "CrossCountry Consulting",
@@ -1807,11 +1873,14 @@
    "website": "https://cruxocm.com",
    "industry": "Industrial automation",
    "hq": "Calgary",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Control-room automation for energy/pipelines; 'venture capital-backed' per job posts. Round details not found."
+   "note": "Control-room automation for energy/pipelines; 'venture capital-backed' per job posts. Round details not found. US$17M Series A led by M12.",
+   "stageDate": "2024-08",
+   "stageSource": "https://betakit.com/cruxocm-closes-23-3-million-cad-series-a-led-by-microsofts-venture-fund/",
+   "stageSourceTitle": "BetaKit: CruxOCM closes $23.3-million CAD Series A led by Microsoft's venture fund"
   },
   {
    "company": "Cursor",
@@ -1841,11 +1910,14 @@
    "website": "https://www.cyvl.com",
    "industry": "Infrastructure AI for cities",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "No funding or HQ disclosure found."
+   "note": "No funding or HQ disclosure found. $14M Series A led by Sentinel Global (Business Wire release 2025-10-01). Article does not name the domain; product match (AI road/infrastructure mapping for cities).",
+   "stageDate": "2025-10",
+   "stageSource": "https://pulse2.com/cyvl-14-million-series-a-raised-for-ai-infrastructure-intelligence-platform",
+   "stageSourceTitle": "Pulse 2.0: Cyvl: $14 Million Series A Raised For AI Infrastructure Intelligence Platform"
   },
   {
    "company": "Databricks",
@@ -1920,11 +1992,14 @@
    "website": "https://www.datarails.com",
    "industry": "FP&A software",
    "hq": "New York",
-   "stage": "",
+   "stage": "Private, Series C",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Job postings: 'over $100 million in funding'; offices in NYC and Tel Aviv. Round letter and valuation not confirmed (search budget exhausted)."
+   "note": "Job postings: 'over $100 million in funding'; offices in NYC and Tel Aviv. Round letter and valuation not confirmed (search budget exhausted). $70M Series C led by One Peak; total ~$175M.",
+   "stageDate": "2026-01",
+   "stageSource": "https://financialit.net/news/fundraising-news/datarails-raises-70m-series-c-led-one-peak-make-ai-foundation-cfos-office",
+   "stageSourceTitle": "Financial IT: Datarails Raises $70M Series C Led by One Peak To Make AI the Foundation of the CFO's Office"
   },
   {
    "company": "DataSnipper",
@@ -1992,11 +2067,14 @@
    "website": "https://www.defenseunicorns.com",
    "industry": "Defense software delivery",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series B",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Software delivery (UDS) for military systems. HQ and funding not found on opened pages."
+   "note": "Software delivery (UDS) for military systems. HQ and funding not found on opened pages. $136M Series B led by Bain Capital.",
+   "stageDate": "2026-01",
+   "stageSource": "https://intelligencecommunitynews.com/defense-unicorns-reaches-1b-valuation-in-series-b-round/",
+   "stageSourceTitle": "Intelligence Community News: Defense Unicorns reaches $1B valuation in Series B round"
   },
   {
    "company": "Denari",
@@ -2053,11 +2131,14 @@
    "website": "https://www.dexory.com",
    "industry": "Warehouse robotics",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series C",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Warehouse intelligence robots; UK and Nashville (US HQ) operations. No funding details verified."
+   "note": "Warehouse intelligence robots; UK and Nashville (US HQ) operations. No funding details verified. $100M Series C led by Eurazeo plus $65M debt.",
+   "stageDate": "2025-10",
+   "stageSource": "https://www.robotics247.com/article/dexory_announces_100m_series_c_accelerating_global_expansion_and_ai_powered_capabilities",
+   "stageSourceTitle": "Robotics 24/7: Dexory announces $100M Series C, accelerating global expansion and AI-powered capabilities"
   },
   {
    "company": "Dexterity",
@@ -2131,11 +2212,14 @@
    "website": "https://www.ditto.com",
    "industry": "Edge sync database",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series B",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Job posts: 'more than $145 million in funding' (https://jobs.ashbyhq.com/ditto). Round and HQ not confirmed (most roles Atlanta)."
+   "note": "Job posts: 'more than $145 million in funding' (https://jobs.ashbyhq.com/ditto). Round and HQ not confirmed (most roles Atlanta). $82M Series B co-led by Top Tier Capital Partners and Acrew Capital.",
+   "stageDate": "2025-03",
+   "stageSource": "https://ditto.com/blog/ditto-lands-82m-to-pioneer-the-edge-native-revolution",
+   "stageSourceTitle": "Ditto: Ditto lands $82M to pioneer the edge-native revolution"
   },
   {
    "company": "Docebo",
@@ -2248,11 +2332,14 @@
    "website": "https://www.duna.com",
    "industry": "Compliance / KYB",
    "hq": "Amsterdam",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Backed by CapitalG and Index Ventures (job posts). Round not confirmed."
+   "note": "Backed by CapitalG and Index Ventures (job posts). Round not confirmed. Led by CapitalG; Index Ventures (seed lead) participated. Article links duna.com.",
+   "stageDate": "2026-02",
+   "stageSource": "https://ffnews.com/newsarticle/funding/identity-fintech-duna-raises-e30m-in-series-a-round/",
+   "stageSourceTitle": "FF News: Identity fintech Duna raises EUR30M in Series A round"
   },
   {
    "company": "Duvo",
@@ -2270,44 +2357,56 @@
    "website": "https://www.esource.com/",
    "industry": "Utility research & data",
    "hq": "",
-   "stage": "",
+   "stage": "Acquired",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Research/consulting firm for utilities; ownership/stage not verified. HQ not verified."
+   "note": "Research/consulting firm for utilities; ownership/stage not verified. HQ not verified. Majority stake acquired by Align Capital Partners (private equity, Cleveland/Dallas) in June 2019; Boulder-based. PE-owned rather than VC-staged.",
+   "stageDate": "2019-06",
+   "stageSource": "https://bizwest.com/2019/06/24/private-equity-firm-buys-majority-stake-in-e-source/",
+   "stageSourceTitle": "BizWest: Private equity firm buys majority stake in E Source"
   },
   {
    "company": "Eagle",
    "website": "https://www.eagleeng.com",
    "industry": "Civil engineering software",
    "hq": "New York",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Backed by Lightspeed per job board."
+   "note": "Backed by Lightspeed per job board. Lightspeed page lists stage invested 'Seed' in 2026 and links eagleeng.com; no announcement with amount or month found.",
+   "stageDate": "",
+   "stageSource": "https://lsvp.com/company/eagle/",
+   "stageSourceTitle": "Lightspeed: Eagle portfolio page (stage invested: Seed, 2026)"
   },
   {
    "company": "EdgeRunner AI",
    "website": "https://www.edgerunnerai.com",
    "industry": "Defense edge AI",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Job posts: raised $17.5M from Madrona, HP Tech Ventures, Four Rivers, Alumni Ventures (https://jobs.ashbyhq.com/edgerunner-ai). Round letter and HQ not confirmed (roles listed Remote)."
+   "note": "Job posts: raised $17.5M from Madrona, HP Tech Ventures, Four Rivers, Alumni Ventures (https://jobs.ashbyhq.com/edgerunner-ai). Round letter and HQ not confirmed (roles listed Remote). $12M Series A led by Madrona; $17.5M total incl. $5.5M seed (2024).",
+   "stageDate": "2025-05",
+   "stageSource": "https://pulse2.com/edgerunner-12-million-series-a-funding-raised-for-on-device-ai-agents-for-military-and-enterprise/amp/",
+   "stageSourceTitle": "Pulse 2.0: EdgeRunner: $12 Million Series A Funding Raised For On-Device AI Agents For Military And Enterprise"
   },
   {
    "company": "Edison Scientific",
    "website": "https://edisonscientific.com",
    "industry": "AI for scientific R&D",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Makes Kosmos AI scientist platform; no funding figures on opened pages. HQ unverified."
+   "note": "Makes Kosmos AI scientist platform; no funding figures on opened pages. HQ unverified. FutureHouse spinout; $70M seed led by Triatomic and Spark at reported $250M valuation.",
+   "stageDate": "2025-12",
+   "stageSource": "https://siliconangle.com/?p=725574",
+   "stageSourceTitle": "SiliconANGLE: Edison Scientific $70M seed round"
   },
   {
    "company": "Edra",
@@ -2381,11 +2480,14 @@
    "website": "https://www.ellipsishealth.com",
    "industry": "Healthcare voice AI",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Job posts say 'headquartered in Silicon Valley'; roles in San Francisco. Funding not confirmed."
+   "note": "Job posts say 'headquartered in Silicon Valley'; roles in San Francisco. Funding not confirmed. $45M Series A led by Salesforce Ventures, Khosla, CVS Health Ventures (some outlets call it Series A-1). Earlier $26M Series A in 2021.",
+   "stageDate": "2025-06",
+   "stageSource": "https://hlth.com/insights/news/ellipsis-health-raises-45m-to-launch-sage-an-emotionally-intelligent-ai-care-manager-2025-06-16",
+   "stageSourceTitle": "HLTH: Ellipsis Health raises $45M to launch Sage, an emotionally intelligent AI care manager"
   },
   {
    "company": "Ema",
@@ -2425,22 +2527,28 @@
    "website": "https://www.endeavor.ai",
    "industry": "Defense and industrial AI",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "No funding or HQ disclosure found."
+   "note": "No funding or HQ disclosure found. $7M seed led by Craft Ventures with Heartland, Contrary, BoxGroup. Article links www.endeavor.ai. No later round found.",
+   "stageDate": "2024-11",
+   "stageSource": "https://theaiinsider.tech/2024/11/04/endeavor-raises-7m-to-revitalize-american-manufacturing-with-ai/",
+   "stageSourceTitle": "The AI Insider: Endeavor raises $7M to revitalize American manufacturing with AI"
   },
   {
    "company": "Ent",
    "website": "https://ent.ai/",
    "industry": "Cybersecurity",
    "hq": "San Francisco",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Stage not verified."
+   "note": "Stage not verified. Article does not name the domain; company is SF workspace-security startup (founders ex-RiskIQ/Microsoft).",
+   "stageDate": "2026-06",
+   "stageSource": "https://securitybrief.co.nz/story/ent-raises-usd-100-million-seed-round-led-by-decibel",
+   "stageSourceTitle": "SecurityBrief NZ: Ent raises USD $100 million seed round led by Decibel"
   },
   {
    "company": "Eon",
@@ -2605,55 +2713,70 @@
    "website": "https://fal.ai",
    "industry": "Generative media inference",
    "hq": "San Francisco",
-   "stage": "",
+   "stage": "Private, Series D",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Funding and valuation not confirmed on opened pages (search budget exhausted)."
+   "note": "Funding and valuation not confirmed on opened pages (search budget exhausted). $140M Series D led by Sequoia.",
+   "stageDate": "2025-12",
+   "stageSource": "https://blog.fal.ai/our-series-d-scaling-fal",
+   "stageSourceTitle": "fal blog: Our Series D: Scaling fal"
   },
   {
    "company": "Faros",
    "website": "https://www.faros.ai",
    "industry": "Engineering intelligence",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "No funding details verified."
+   "note": "No funding details verified. $20M Series A led by Lobby Capital; no later round found.",
+   "stageDate": "2023-06",
+   "stageSource": "https://siliconangle.com/?p=621471",
+   "stageSourceTitle": "SiliconANGLE: Faros AI raises $20M Series A"
   },
   {
    "company": "Fastino AI",
    "website": "https://fastino.ai",
    "industry": "Small language models",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Fastino Labs; no funding or HQ on opened pages."
+   "note": "Fastino Labs; no funding or HQ on opened pages. No later round found.",
+   "stageDate": "2025-05",
+   "stageSource": "https://www.insightpartners.com/ideas/fastino-launches-tlms-task-specific-language-models-with-17-5m-seed-round-led-by-khosla-ventures/",
+   "stageSourceTitle": "Insight Partners: Fastino Launches TLMs with $17.5M Seed Round Led by Khosla Ventures"
   },
   {
    "company": "Fathom",
    "website": "https://fathomhealth.com",
    "industry": "Medical coding AI",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series B",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Strategic investment from CVS Health Ventures (company blog, undated, amount undisclosed). Round letter unknown."
+   "note": "Strategic investment from CVS Health Ventures (company blog, undated, amount undisclosed). Round letter unknown. Co-led by Alkeon and Lightspeed. Later CVS Health Ventures strategic investment (no letter) does not change stage.",
+   "stageDate": "2022-11",
+   "stageSource": "https://hitconsultant.net/2022/11/09/fathom-ai-medical-coding-automation-funding",
+   "stageSourceTitle": "HIT Consultant: Fathom raises $46M in Series B funding"
   },
   {
    "company": "Feathery",
    "website": "https://www.feathery.io/",
    "industry": "Financial services AI",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Company job board: over $30M raised (Portage, Allstate Ventures, Index). Round letter and HQ not verified."
+   "note": "Company job board: over $30M raised (Portage, Allstate Ventures, Index). Round letter and HQ not verified. Led by Portage; $30M total funding including Series A; feathery.io.",
+   "stageDate": "2026-07",
+   "stageSource": "https://www.thesaasnews.com/news/feathery-raises-30m-series-a/",
+   "stageSourceTitle": "The SaaS News: Feathery Raises $30M Series A"
   },
   {
    "company": "FieldAI",
@@ -2844,7 +2967,7 @@
     "sourceTitle": "Tech.eu: Led by 20VC, fonio.ai raises $17M for omnichannel AI platform"
    },
    "arr": null,
-   "note": "Company press release states \u20ac14.6M seed at \u20ac120M valuation (https://www.fonio.ai/de/news-cool-stuff/pm-14mio-seed-funding-20vc)."
+   "note": "Company press release states €14.6M seed at €120M valuation (https://www.fonio.ai/de/news-cool-stuff/pm-14mio-seed-funding-20vc)."
   },
   {
    "company": "Footprint",
@@ -2884,11 +3007,14 @@
    "website": "https://forgepoint.ai",
    "industry": "Manufacturing sales AI",
    "hq": "New York",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "AI inside sales rep for manufacturers; backed by a16z speedrun per job board."
+   "note": "AI inside sales rep for manufacturers; backed by a16z speedrun per job board. $9.8M seed led by Primary Venture Partners and a16z speedrun; product Frank, AI inside sales rep for manufacturers.",
+   "stageDate": "2026-10",
+   "stageSource": "https://americanbazaaronline.com/2026/10/14/forgepoint-raises-9-8-million-seed-round-to-automate-manufacturing-quotes-with-ai-490040/",
+   "stageSourceTitle": "American Bazaar: Forgepoint raises $9.8 million seed round to automate manufacturing quotes with AI"
   },
   {
    "company": "Foundry Robotics",
@@ -3795,11 +3921,14 @@
    "website": "https://www.jetsonhome.com",
    "industry": "Home electrification",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "HQ inferred from most frequent job location (North Vancouver); not stated on the homepage. Funding not confirmed."
+   "note": "HQ inferred from most frequent job location (North Vancouver); not stated on the homepage. Funding not confirmed. Led by Eclipse with 8VC, Activate Capital.",
+   "stageDate": "2026-01",
+   "stageSource": "https://jetsonhome.com/us/press/jetson-raises-50-m-series-a-to-expand-home-electrification-across-new-u-s-markets",
+   "stageSourceTitle": "Jetson: Jetson raises $50M Series A to expand home electrification across new U.S. markets"
   },
   {
    "company": "Juniper Square",
@@ -3823,11 +3952,14 @@
    "website": "https://www.kaizenlabs.co",
    "industry": "GovTech",
    "hq": "New York",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Job board: founded 2022, based in NYC and DC, raised $35M total from NEA, a16z, Accel and others; says revenue grew 35x this year. Round letter not stated."
+   "note": "Job board: founded 2022, based in NYC and DC, raised $35M total from NEA, a16z, Accel and others; says revenue grew 35x this year. Round letter not stated. $21M Series A led by NEA (Axios Pro, 2025-10-30); co-founders Nikhil Reddy and KJ Shah; $35M total matches job-board note.",
+   "stageDate": "2025-10",
+   "stageSource": "https://pulse2.com/kaizen-21-million-series-a-raised-for-modernizing-americas-public-services/amp/",
+   "stageSourceTitle": "Pulse 2.0: Kaizen: $21 Million Series A raised for modernizing America's public services"
   },
   {
    "company": "Kalepa",
@@ -3946,11 +4078,14 @@
    "website": "https://latentlabs.com",
    "industry": "AI protein design",
    "hq": "London",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Funding details not confirmed on a page opened (search budget exhausted). Offices London and San Francisco."
+   "note": "Funding details not confirmed on a page opened (search budget exhausted). Offices London and San Francisco. $40M Series A co-led by Radical Ventures and Sofinnova plus $10M seed.",
+   "stageDate": "2025-02",
+   "stageSource": "https://tech.eu/2025/02/13/ai-pioneer-dr-simon-kohls-latent-labs-raises-50m/",
+   "stageSourceTitle": "Tech.eu: AI pioneer Dr Simon Kohl's Latent Labs emerges from stealth, raising $50M for programmable biology"
   },
   {
    "company": "Laurel",
@@ -4118,11 +4253,14 @@
    "website": "https://www.litellm.ai",
    "industry": "LLM gateway",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Open-source AI gateway by BerriAI (footer: Berrie AI Incorporated). Funding/HQ not confirmed."
+   "note": "Open-source AI gateway by BerriAI (footer: Berrie AI Incorporated). Funding/HQ not confirmed. BerriAI (YC W23) $1.6M seed from YC, Gravity Fund, Pioneer Fund. Round date uncertain: datasets say June 2023, article published Aug 2025, Preqin says Aug 2026. No Series A found.",
+   "stageDate": "2023-06",
+   "stageSource": "https://getcoai.com/news/job-alert-open-source-litellm-raises-1-6m-now-hiring-founding-engineer",
+   "stageSourceTitle": "CO/AI: Open-source LiteLLM raises $1.6M, now hiring founding engineer"
   },
   {
    "company": "LiveKit",
@@ -4764,11 +4902,14 @@
    "website": "https://nash.ai/",
    "industry": "Logistics software",
    "hq": "San Francisco",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Founded 2021, backed by YC and a16z (company job board). Stage not verified."
+   "note": "Founded 2021, backed by YC and a16z (company job board). Stage not verified. a16z led $20M Series A; no later round found as of 2026 job posts.",
+   "stageDate": "2022-07",
+   "stageSource": "https://a16z.com/announcement/investing-in-nash/",
+   "stageSourceTitle": "a16z: Investing in Nash"
   },
   {
    "company": "Natera",
@@ -5216,22 +5357,28 @@
    "website": "https://www.ophelos.com",
    "industry": "Debt resolution fintech",
    "hq": "London",
-   "stage": "",
+   "stage": "Acquired",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "All roles in London. Funding not confirmed."
+   "note": "All roles in London. Funding not confirmed. Acquired by Intrum (Nasdaq Stockholm: INTRUM); deal closed 2023-10-17 for SEK 718M; operates as separate brand. Announced 2023-09 (Credit Connect).",
+   "stageDate": "2023-10",
+   "stageSource": "https://www.goodwinlaw.com/en/news-and-events/news/2023/11/announcements-technology-intrum-acquires-ophelos",
+   "stageSourceTitle": "Goodwin: Intrum Acquires Ophelos"
   },
   {
    "company": "Orbital Industries",
    "website": "https://www.orbitalindustries.com",
    "industry": "AI materials & manufacturing",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series B",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "'AI Industrial company' (CurieOS). Offices London, San Francisco, Calgary. No funding details found."
+   "note": "'AI Industrial company' (CurieOS). Offices London, San Francisco, Calgary. No funding details found. $50M Series B led by Plural; formerly Orbital Materials. Also reported by Fortune (2026-05-28).",
+   "stageDate": "2026-05",
+   "stageSource": "https://dealroom.co/news/129951-orbital-industries-raises-50m-series-b-to-scale-ai-designed-materials/",
+   "stageSourceTitle": "Dealroom: Orbital Industries raises $50M Series B to scale AI-designed materials"
   },
   {
    "company": "Orchard Robotics",
@@ -5657,11 +5804,14 @@
    "website": "https://www.prenuvo.com",
    "industry": "Whole-body MRI screening",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series B",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Funding not confirmed on a page opened (search budget exhausted). Job board shows Vancouver, BC and remote US/Canada roles."
+   "note": "Funding not confirmed on a page opened (search budget exhausted). Job board shows Vancouver, BC and remote US/Canada roles. $120M Series B co-led by Forerunner and Left Lane, secured in 2024, disclosed Feb 2025.",
+   "stageDate": "2025-02",
+   "stageSource": "https://www.auntminnie.com/clinical-news/mri/article/15737532/prenuvo-raises-120m-to-expand-body-composition-platform",
+   "stageSourceTitle": "AuntMinnie: Prenuvo raises $120M to expand body composition platform"
   },
   {
    "company": "Preql AI",
@@ -5724,11 +5874,14 @@
    "website": "https://www.prodigaltech.com",
    "industry": "Collections AI",
    "hq": "Mountain View",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "AI agents for loan servicing/collections; backed by YC, Accel, Menlo (job posts). Round letter not confirmed."
+   "note": "AI agents for loan servicing/collections; backed by YC, Accel, Menlo (job posts). Round letter not confirmed. $12M Series A led by Menlo Ventures (announced 2021-07-22). YourStory Dec 2025 cites $14M total equity; no later round found.",
+   "stageDate": "2021-07",
+   "stageSource": "https://prodigaltech.com/blog/our-series-a",
+   "stageSourceTitle": "Prodigal: Our Series A"
   },
   {
    "company": "Profound",
@@ -5769,11 +5922,14 @@
    "website": "https://www.joinpromise.com",
    "industry": "Government payments tech",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series B",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Job posts: 'over $50 million in funding' (YC, 8VC, First Round, Kapor and others). Offices in Washington DC, San Francisco and Fairfield. Round letter not confirmed; website not opened."
+   "note": "Job posts: 'over $50 million in funding' (YC, 8VC, First Round, Kapor and others). Offices in Washington DC, San Francisco and Fairfield. Round letter not confirmed; website not opened. $25M+ Series B announced 2022-02-24; investors include The General Partnership, First Round, Kapor, XYZ, YC.",
+   "stageDate": "2022-02",
+   "stageSource": "https://www.pymnts.com/?p=1249336",
+   "stageSourceTitle": "PYMNTS: Promise raises $25M Series B"
   },
   {
    "company": "Prosper AI",
@@ -5791,11 +5947,14 @@
    "website": "https://www.withprotege.ai",
    "industry": "AI training data",
    "hq": "New York",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "AI training-data exchange platform. HQ from site footer. No funding details found."
+   "note": "AI training-data exchange platform. HQ from site footer. No funding details found. $30M Series A extension led by a16z, expanding the $25M Series A (Aug 2025, led by Footwork). Release lists withprotege.ai.",
+   "stageDate": "2026-01",
+   "stageSource": "https://stocks.observer-reporter.com/observerreporter/article/bizwire-2026-1-8-protege-raises-30-million-led-by-a16z-to-unlock-access-to-data-for-ai-development",
+   "stageSourceTitle": "Business Wire (via Observer-Reporter): Protege raises $30 million led by a16z"
   },
   {
    "company": "Protex AI",
@@ -5879,11 +6038,14 @@
    "website": "https://www.quindar.space/",
    "industry": "Space mission software",
    "hq": "Denver",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Stage not verified."
+   "note": "Stage not verified. Led by Washington Harbour Partners.",
+   "stageDate": "2025-11",
+   "stageSource": "https://washingtontechnology.com/companies/2025/11/quindar-closes-18m-series-round-classified-business-push/409631",
+   "stageSourceTitle": "Washington Technology: Quindar closes $18M Series A round for classified business push"
   },
   {
    "company": "Qventus",
@@ -6225,11 +6387,14 @@
    "website": "https://roboflow.com/",
    "industry": "Computer vision platform",
    "hq": "San Francisco",
-   "stage": "",
+   "stage": "Private, Series B",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Company job board says it has raised $100M (investors incl. GV, Craft, YC); round letter and valuation not verified."
+   "note": "Company job board says it has raised $100M (investors incl. GV, Craft, YC); round letter and valuation not verified. $40M Series B led by GV; article links roboflow.com.",
+   "stageDate": "2024-11",
+   "stageSource": "https://siliconangle.com/2024/11/19/vision-ai-training-deployment-startup-roboflow-raises-40m/",
+   "stageSourceTitle": "SiliconANGLE: Vision AI training and deployment startup Roboflow raises $40M"
   },
   {
    "company": "Robots and Pencils",
@@ -6358,11 +6523,14 @@
    "website": "https://withsable.com",
    "industry": "AI sales agents",
    "hq": "San Francisco",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Builds Aidan, an AI agent that leads product demos/customer calls. No funding details found."
+   "note": "Builds Aidan, an AI agent that leads product demos/customer calls. No funding details found. $45M co-led by Sequoia and 8VC; Sequoia says it led the seed and co-led the Series A. Sable itself does not label the round.",
+   "stageDate": "2026-07",
+   "stageSource": "https://magica.com/news/sable-aidan-ai-agent-product-demos",
+   "stageSourceTitle": "Magica: Sable raises $45M for Aidan AI agent for product demos"
   },
   {
    "company": "Safari AI",
@@ -6928,11 +7096,14 @@
    "website": "https://solve.ai",
    "industry": "Enterprise AI app builder",
    "hq": "London",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Backed by GV and Accel (job post); round not stated. Website inferred from board slug."
+   "note": "Backed by GV and Accel (job post); round not stated. Website inferred from board slug. $45M Series A led by GV (closed Nov 2025, announced Feb 2026) after $5M Accel pre-seed. London-based.",
+   "stageDate": "2025-11",
+   "stageSource": "https://fortune.com/2026/02/25/exclusive-solveai-eight-months-raises-50-million-ai-coding-tool-race/",
+   "stageSourceTitle": "Fortune: Exclusive: SolveAI, eight months old, raises $50 million"
   },
   {
    "company": "Sourgum",
@@ -7197,7 +7368,7 @@
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Company job board: Sequoia and Index-backed, more than \u20ac50M raised. Round letter not verified."
+   "note": "Company job board: Sequoia and Index-backed, more than €50M raised. Round letter not verified."
   },
   {
    "company": "Tagup",
@@ -7308,7 +7479,7 @@
    "company": "Telepatia",
    "website": "https://www.telepatia.ai",
    "industry": "Healthcare AI",
-   "hq": "S\u00e3o Paulo",
+   "hq": "São Paulo",
    "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
@@ -7364,11 +7535,14 @@
    "website": "https://tenex.co",
    "industry": "Applied AI consultancy",
    "hq": "New York",
-   "stage": "",
+   "stage": "Private, bootstrapped",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Different company from Tenex.AI. Job posts: 'bootstrapped and profitable', NYC office. No outside funding, so no round stage."
+   "note": "Different company from Tenex.AI. Job posts: 'bootstrapped and profitable', NYC office. No outside funding, so no round stage. Job post: 'We're bootstrapped and profitable'. Job posting may expire; not Tenex.AI (cybersecurity, venture-backed).",
+   "stageDate": "",
+   "stageSource": "https://www.builtinnyc.com/job/bring-your-own-pod/9970000",
+   "stageSourceTitle": "Built In NYC: Tenex (tenex.co) job posting"
   },
   {
    "company": "Tenex.AI",
@@ -7504,11 +7678,14 @@
    "website": "https://www.titanbanking.ai",
    "industry": "Banking AI",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "AI software for banks (small language models, banking ontology). Job board says 'backed by leading fintech investors'; no funding round found. Not to be confused with titan.ai (robot autonomy) or Titan (titanmsp.ai, IT services). Search budget ran out before funding could be checked."
+   "note": "AI software for banks (small language models, banking ontology). Job board says 'backed by leading fintech investors'; no funding round found. Not to be confused with titan.ai (robot autonomy) or Titan (titanmsp.ai, IT services). Search budget ran out before funding could be checked. $3M seed led by Entropy Ventures (Business Wire release June 9, 2026 says 'new funding'; AlleyWatch quotes 'seed financing'). FinTech Global links titanbanking.ai. A Sept 2026 Form D reports $4M sold toward $5M, possibly a seed extension.",
+   "stageDate": "2026-06",
+   "stageSource": "https://alleywatch.com/2026/06/titan-banking-native-ai-compliance-regulated-platform-arjun-sirrah/",
+   "stageSourceTitle": "AlleyWatch: Titan banking-native AI platform raises $3M seed"
   },
   {
    "company": "Together AI",
@@ -7593,11 +7770,14 @@
    "website": "https://trebellar.com/",
    "industry": "Real estate AI",
    "hq": "",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Backed by Blossom Capital (company job board). Stage not verified."
+   "note": "Backed by Blossom Capital (company job board). Stage not verified. Led by Blossom Capital.",
+   "stageDate": "2026-10",
+   "stageSource": "https://pulse2.com/trebellar-raises-18-million-series-a-to-bring-ai-to-corporate-real-estate-management/",
+   "stageSourceTitle": "Pulse 2.0: Trebellar Raises $18 Million Series A To Bring AI To Corporate Real Estate Management"
   },
   {
    "company": "Treeswift",
@@ -7849,11 +8029,14 @@
    "website": "https://www.varickagents.com",
    "industry": "Enterprise AI agents",
    "hq": "San Francisco",
-   "stage": "",
+   "stage": "Private, Seed",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "Venture-backed; all roles in SF. No funding details found."
+   "note": "Venture-backed; all roles in SF. No funding details found. Aggregator only: $4.0M, most recent round Seed, NOMO Ventures. Low confidence.",
+   "stageDate": "2026-03",
+   "stageSource": "https://www.vcbacked.co/company/varick-agents",
+   "stageSourceTitle": "VCBacked: Varick Agents"
   },
   {
    "company": "Veeam Software",
@@ -8018,11 +8201,14 @@
    "website": "https://www.webai.com",
    "industry": "Edge AI infrastructure",
    "hq": "Austin",
-   "stage": "",
+   "stage": "Private, Series A",
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "HQ Austin per job postings. No funding details verified (search budget exhausted)."
+   "note": "HQ Austin per job postings. No funding details verified (search budget exhausted). $60M Series A at $700M valuation (Sep 2024). Jan 2026: Axios reported a high double-digit Series A extension at $2.5B pre-money; company blog (Jan 14 2026) gives no letter. Still Series A.",
+   "stageDate": "2024-09",
+   "stageSource": "https://www.thesaasnews.com/news/webai-raises-60-million-in-series-a/",
+   "stageSourceTitle": "The SaaS News: webAI Raises $60 Million in Series A"
   },
   {
    "company": "WeRide",
@@ -8206,7 +8392,7 @@
    "ticker": "",
    "valuation": null,
    "arr": null,
-   "note": "ZeitMind; YC S24. Job board reports \u20ac1M ARR in first 12 months (EUR, not converted). Website not verified."
+   "note": "ZeitMind; YC S24. Job board reports €1M ARR in first 12 months (EUR, not converted). Website not verified."
   },
   {
    "company": "Zip",
