@@ -1,3 +1,4 @@
+import {palantirSources, palantirCases} from './palantir-cases.mjs';
 export const categories = [
  ['foundations','Fundamental knowledge','Reason about data, protocols, and failure before choosing a framework.'],
  ['discovery','Discovery & scoping','Find the workflow worth changing and agree on a bounded intervention.'],
@@ -177,7 +178,7 @@ export const fieldnotes = [
 
 export function enrich(sources,people,weeks,questions,cases){
  sources.forEach(source=>source.reviewed='2026-10-30');
- sources.push(...addedSources,...listSources);
+ sources.push(...addedSources,...listSources,...palantirSources);
  const stripe=sources.find(source=>source.id==='idempotency');
  stripe.author='Brandur Leach · Stripe';
  stripe.date='2017-02-22';
@@ -201,8 +202,9 @@ export function enrich(sources,people,weeks,questions,cases){
   ['Q16','Unit economics','Case-derived question','Production operations discussion','The model bill falls, but review and support increase. How do you decide whether the deployment improved?','toil','An original synthesis applying the published toil framework to FDE delivery; the scenario is hypothetical.','Use total cost per accepted task, include failures and human work, and hold task mix and quality constant. Separate realized savings from theoretical capacity.','What changes if usage doubles but the support team cannot grow?']
  ].map(([id,topic,evidence,company,prompt,source,context,guide,followup])=>({id,topic,evidence,company,prompt,source,context,guide,followup})));
  cases.push(...[
-  ['C15','Stripe · A live subscription migration','Integration','migration','Subscriptions outgrew their original customer-record representation.','Stage duplicate writes and backfill, validate the new representation, switch reads, then retire the old path.','The engineering account describes a staged live migration and verification strategy.','An adjacent software-engineering case, not an identified FDE engagement. The 2017 stack is historical.','What must be true at every phase before you can advance or roll back?'],
-  ['C16','GitHub · When failover made recovery harder','Reliability','github-incident','A short network partition triggered database failover into a topology the application could not tolerate.','The team preserved writes, degraded parts of the service, restored replication, and recovered queued work.','GitHub reports 24 hours and 11 minutes of degradation after a 43-second connectivity loss.','A company postmortem from 2018; included for recovery judgment, not as an FDE project or a current architecture description.','Which application assumptions should a disaster-recovery exercise test beyond database health?'],
-  ['C17','Google · Authorization that respects content changes','Security','zanzibar','A stale access decision can expose newly changed content after a user’s permission is removed.','Zanzibar couples authorization reads to causal ordering and content-version consistency tokens.','The paper describes a deployed authorization system and its production properties.','A research paper about Google’s infrastructure, not an FDE customer engagement. Its scale is not a requirement for applying the invariant.','How would the same invariant appear in an enterprise search cache or a generated summary?']
+  ['C25','Stripe · A live subscription migration','Integration','migration','Subscriptions outgrew their original customer-record representation.','Stage duplicate writes and backfill, validate the new representation, switch reads, then retire the old path.','The engineering account describes a staged live migration and verification strategy.','An adjacent software-engineering case, not an identified FDE engagement. The 2017 stack is historical.','What must be true at every phase before you can advance or roll back?'],
+  ['C26','GitHub · When failover made recovery harder','Reliability','github-incident','A short network partition triggered database failover into a topology the application could not tolerate.','The team preserved writes, degraded parts of the service, restored replication, and recovered queued work.','GitHub reports 24 hours and 11 minutes of degradation after a 43-second connectivity loss.','A company postmortem from 2018; included for recovery judgment, not as an FDE project or a current architecture description.','Which application assumptions should a disaster-recovery exercise test beyond database health?'],
+  ['C27','Google · Authorization that respects content changes','Security','zanzibar','A stale access decision can expose newly changed content after a user’s permission is removed.','Zanzibar couples authorization reads to causal ordering and content-version consistency tokens.','The paper describes a deployed authorization system and its production properties.','A research paper about Google’s infrastructure, not an FDE customer engagement. Its scale is not a requirement for applying the invariant.','How would the same invariant appear in an enterprise search cache or a generated summary?']
  ].map(([id,title,theme,source,problem,approach,result,limit,question])=>({id,title,theme,source,problem,approach,result,limit,question})));
+ cases.push(...palantirCases);
 }

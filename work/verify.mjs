@@ -109,6 +109,19 @@ assert.equal(await page.locator('#cases .row').count(),cases.length);
 await page.locator('[role=tab][href="#cases"]').click();
 await page.locator('#cases').waitFor({state:'visible'});
 assert(await page.locator('#story-list').isHidden());
+// Case studies filter by industry and company, alone and together.
+const caseCount=async()=>page.locator('#cases [data-case]:visible').count();
+await page.locator('#caseCompany').selectOption('Palantir');
+assert.equal(await caseCount(),await page.locator('#cases [data-case][data-company="Palantir"]').count());
+await page.locator('#caseCompany').selectOption('');
+await page.locator('#caseIndustry').selectOption('Financial services');
+assert.equal(await caseCount(),await page.locator('#cases [data-case][data-industry="Financial services"]').count());
+await page.locator('#caseCompany').selectOption('OpenAI');
+assert.equal(await caseCount(),await page.locator('#cases [data-case][data-industry="Financial services"][data-company="OpenAI"]').count());
+assert(await caseCount()>0);
+assert.match(await page.locator('[data-count="cases"]').textContent(),/^\d+ case stud/);
+await page.locator('#caseIndustry').selectOption('');await page.locator('#caseCompany').selectOption('');
+assert.equal(await caseCount(),await page.locator('#cases [data-case]').count());
 await page.screenshot({path:fileURLToPath(new URL('stories-preview.png',import.meta.url)),fullPage:false});
 
 // Phone width: no horizontal overflow.

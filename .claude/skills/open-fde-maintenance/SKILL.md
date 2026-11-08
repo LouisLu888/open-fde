@@ -64,7 +64,7 @@ Data: `docs/INTERVIEWS.json`. Brief: `work/research/interview-brief.md`.
 
 ## 3b. Add a company's case studies
 
-Case studies live in `cases` in `work/content.mjs`, each with a source in `sources`. Use only cases with a reported result; partnership announcements are not case studies. Credit the company that did the work at the time (for example "Fractional AI (now Ode)"), keep numbers exactly as published, and say in `limit` that the account is vendor-published.
+Case studies live in `cases` in `work/content.mjs`, each with a source in `sources`. Use only cases with a reported result; partnership announcements are not case studies. Credit the company that did the work at the time (for example "Fractional AI (now Ode)"), keep numbers exactly as published, and say in `limit` that the account is vendor-published. Every case needs `company` (the firm that did the deployment) and `industry` (the customer's, from `caseIndustries` in `work/case-groups.mjs`); set them on new cases or add the id to the map there. The build fails on a missing company, an unknown industry, or a duplicate id. These drive the industry and company filters on `/case-studies/`.
 
 ## 4. Check sources
 
