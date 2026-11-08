@@ -78,7 +78,7 @@ const book=parts.map(part=>`<div class="part" id="${part.id}"><p class="part-no"
 
 const citedIn={};parts.forEach(part=>part.chapters.forEach(chapter=>(chapter.week?[...chapter.week.refs,...chapter.week.deeper]:chapter.note.refs).forEach(id=>(citedIn[id]??=[]).push(chapter))));
 const citedLinks=id=>citedIn[id]?`<p class="cited">Used in ${citedIn[id].map(chapter=>`<a href="#${chapter.id}">chapter ${chapter.number}: ${escape(chapter.title)}</a>`).join(', ')}</p>`:'';
-const readingRow=reading=>{const source=byId[reading.id];return `<article class="row" id="reading-${reading.id}" data-kind="${reading.format}"><p class="eyebrow">${categories.find(category=>category.id===reading.category).title}, ${reading.level.toLowerCase()}</p><h3>${link(reading.id)}</h3><p class="row-meta">${escape(source.author)}, ${escape(source.date)}. ${reading.access}</p><p class="row-summary">${reading.why}</p>${citedLinks(reading.id)}<details><summary>How to use it</summary><dl><dt>Focus your reading</dt><dd>${reading.focus}</dd><dt>Put it to work</dt><dd>${reading.outcome}</dd><dt>Before you start</dt><dd>${reading.caveat}</dd></dl><p class="status">${escape(source.status)}. Reviewed ${source.reviewed}</p></details></article>`;};
+const readingRow=reading=>{const source=byId[reading.id];return `<article class="row" id="reading-${reading.id}" data-kind="${reading.format}"><p class="eyebrow">${categories.find(category=>category.id===reading.category).title}, ${reading.level.toLowerCase()}</p><h3>${link(reading.id)}</h3><p class="row-meta">${escape(source.author)}, ${escape(source.date)}. ${reading.access}</p><p class="row-summary">${reading.why}</p>${reading.pick?`<p class="row-pick"><strong>Read it if</strong> ${escape(reading.pick.replace(/^./,c=>c.toLowerCase()))}</p>`:''}${citedLinks(reading.id)}<details><summary>How to use it</summary><dl><dt>Focus your reading</dt><dd>${reading.focus}</dd><dt>Put it to work</dt><dd>${reading.outcome}</dd><dt>Before you start</dt><dd>${reading.caveat}</dd></dl><p class="status">${escape(source.status)}. Reviewed ${source.reviewed}</p></details></article>`;};
 const readingIds=new Set(readings.map(reading=>reading.id));
 const extraVideos=sources.filter(source=>source.type==='Video'&&!readingIds.has(source.id));
 const resourceGroups=[
@@ -257,7 +257,7 @@ th{font:600 13px/1.4 var(--font-body);letter-spacing:0;text-transform:none;backg
 .row h3 a{color:var(--fg-1);text-decoration-color:var(--line);text-decoration-thickness:1px}
 .row h3 a:hover{text-decoration-color:currentColor}
 .row h3.question{font-size:22px;line-height:1.35}
-.row-meta{font-size:14px;color:var(--muted);margin:0 0 8px}
+.row-meta{font-size:14px;color:var(--muted);margin:0 0 8px}.row-pick{font-size:14px;line-height:1.55;max-width:68ch;margin:0 0 8px}.row-pick strong{font-weight:650;margin-right:4px}
 .row-summary{font-size:16px;line-height:1.6;color:var(--fg-2);max-width:68ch;margin:0 0 6px}
 .row-links{display:flex;flex-wrap:wrap;gap:4px 20px;font-size:14px;margin:6px 0 0}
 .row details,.item details{border:0;margin:6px 0 0;padding:0}
