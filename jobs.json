@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-11-07T18:03:35.903Z",
+ "checkedAt": "2026-11-08T18:22:21.706Z",
  "method": "Public Greenhouse, Lever, and Ashby job-board APIs; titles matched forward[\\s-]*deploy|\\bFDE\\b|\\bFDSE\\b|special projects engineer|deployment strategist|ai deployment engineer|^deployed engineer\\b",
  "boardsChecked": 776,
  "companiesProbed": 840,
@@ -7202,7 +7202,7 @@
    "remote": false,
    "posted": "2026-09-02",
    "department": "GTM",
-   "compensation": "$150K – $250K • Offers Equity"
+   "compensation": "SGD 150K – SGD 250K • Offers Equity • Multiple Ranges"
   },
   {
    "company": "Exa",
@@ -14989,7 +14989,7 @@
    "location": "New York · New York",
    "remote": true,
    "posted": "2026-11-06",
-   "department": "Product",
+   "department": "Technology",
    "compensation": "$276K – $315K"
   },
   {
@@ -18863,7 +18863,7 @@
    "title": "Forward Deployed Engineer",
    "url": "https://jobs.ashbyhq.com/tacto/c90de680-5c9e-4cee-990a-3e78459e1b78",
    "location": "Munich",
-   "remote": true,
+   "remote": false,
    "posted": "2026-11-03",
    "department": "Product & Technology",
    "compensation": ""
@@ -20841,6 +20841,18 @@
    "ats": "ashby",
    "board": "wonderful",
    "title": "Deployment Strategist",
+   "url": "https://jobs.ashbyhq.com/wonderful/291236a5-c00d-4368-9970-5c60feefa2bd",
+   "location": "Adriatics",
+   "remote": false,
+   "posted": "2026-04-09",
+   "department": "S&M",
+   "compensation": ""
+  },
+  {
+   "company": "Wonderful",
+   "ats": "ashby",
+   "board": "wonderful",
+   "title": "Deployment Strategist",
    "url": "https://jobs.ashbyhq.com/wonderful/1ea8fc39-ea29-47d4-9c7e-f7799837d085",
    "location": "Australia",
    "remote": false,
@@ -21119,6 +21131,18 @@
    "title": "Deployment Strategist",
    "url": "https://jobs.ashbyhq.com/wonderful/65802c72-68e6-4e8b-9585-0a459283ef5d",
    "location": "Turkey",
+   "remote": false,
+   "posted": "2026-03-12",
+   "department": "S&M",
+   "compensation": ""
+  },
+  {
+   "company": "Wonderful",
+   "ats": "ashby",
+   "board": "wonderful",
+   "title": "Forward Deployed Engineer",
+   "url": "https://jobs.ashbyhq.com/wonderful/a1bd7f66-0b06-42e8-8e56-ce38d8ea1b6d",
+   "location": "Adriatics",
    "remote": false,
    "posted": "2026-03-12",
    "department": "S&M",
