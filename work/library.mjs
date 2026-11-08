@@ -1,4 +1,5 @@
 import {palantirSources, palantirCases} from './palantir-cases.mjs';
+import {labSources, labCases} from './lab-cases.mjs';
 export const categories = [
  ['foundations','Fundamental knowledge','Reason about data, protocols, and failure before choosing a framework.'],
  ['discovery','Discovery & scoping','Find the workflow worth changing and agree on a bounded intervention.'],
@@ -178,7 +179,7 @@ export const fieldnotes = [
 
 export function enrich(sources,people,weeks,questions,cases){
  sources.forEach(source=>source.reviewed='2026-10-30');
- sources.push(...addedSources,...listSources,...palantirSources);
+ sources.push(...addedSources,...listSources,...palantirSources,...labSources);
  const stripe=sources.find(source=>source.id==='idempotency');
  stripe.author='Brandur Leach · Stripe';
  stripe.date='2017-02-22';
@@ -206,5 +207,5 @@ export function enrich(sources,people,weeks,questions,cases){
   ['C26','GitHub · When failover made recovery harder','Reliability','github-incident','A short network partition triggered database failover into a topology the application could not tolerate.','The team preserved writes, degraded parts of the service, restored replication, and recovered queued work.','GitHub reports 24 hours and 11 minutes of degradation after a 43-second connectivity loss.','A company postmortem from 2018; included for recovery judgment, not as an FDE project or a current architecture description.','Which application assumptions should a disaster-recovery exercise test beyond database health?'],
   ['C27','Google · Authorization that respects content changes','Security','zanzibar','A stale access decision can expose newly changed content after a user’s permission is removed.','Zanzibar couples authorization reads to causal ordering and content-version consistency tokens.','The paper describes a deployed authorization system and its production properties.','A research paper about Google’s infrastructure, not an FDE customer engagement. Its scale is not a requirement for applying the invariant.','How would the same invariant appear in an enterprise search cache or a generated summary?']
  ].map(([id,title,theme,source,problem,approach,result,limit,question])=>({id,title,theme,source,problem,approach,result,limit,question})));
- cases.push(...palantirCases);
+ cases.push(...palantirCases,...labCases);
 }

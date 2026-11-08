@@ -1,7 +1,7 @@
 // Industry and company for each case study, used by the case-study filters.
 // Company is the firm that did the deployment work; industry is the customer's.
 // New cases set `company` and `industry` on the case itself; this map covers the older ones.
-export const caseIndustries=['Aerospace and defense','Manufacturing and industrial','Automotive','Energy and utilities','Healthcare and life sciences','Financial services','Insurance','Retail and consumer goods','Transportation and logistics','Telecom','Government and public sector','Professional services','Media and advertising','Software and internet'];
+export const caseIndustries=['Aerospace and defense','Manufacturing and industrial','Automotive','Energy and utilities','Healthcare and life sciences','Financial services','Insurance','Retail and consumer goods','Transportation and logistics','Travel and hospitality','Telecom','Government and public sector','Nonprofit','Education','Professional services','Media and advertising','Software and internet'];
 
 const meta={
  C01:['Cognition','Software and internet'],

@@ -112,16 +112,20 @@ assert(await page.locator('#story-list').isHidden());
 // Case studies filter by industry and company, alone and together.
 const caseCount=async()=>page.locator('#cases [data-case]:visible').count();
 await page.locator('#caseCompany').selectOption('Palantir');
-assert.equal(await caseCount(),await page.locator('#cases [data-case][data-company="Palantir"]').count());
+assert.equal(await caseCount(),Math.min(30,await page.locator('#cases [data-case][data-company="Palantir"]').count()));
 await page.locator('#caseCompany').selectOption('');
 await page.locator('#caseIndustry').selectOption('Financial services');
-assert.equal(await caseCount(),await page.locator('#cases [data-case][data-industry="Financial services"]').count());
+const finance=await page.locator('#cases [data-case][data-industry="Financial services"]').count();
+assert.equal(await caseCount(),Math.min(finance,30));
+assert.match(await page.locator('[data-count="cases"]').textContent(),new RegExp('^'+finance+' case stud'));
+if(finance>30){await page.locator('[data-more="cases"]').click();assert.equal(await caseCount(),Math.min(finance,60));}
 await page.locator('#caseCompany').selectOption('OpenAI');
 assert.equal(await caseCount(),await page.locator('#cases [data-case][data-industry="Financial services"][data-company="OpenAI"]').count());
 assert(await caseCount()>0);
 assert.match(await page.locator('[data-count="cases"]').textContent(),/^\d+ case stud/);
 await page.locator('#caseIndustry').selectOption('');await page.locator('#caseCompany').selectOption('');
-assert.equal(await caseCount(),await page.locator('#cases [data-case]').count());
+assert.equal(await caseCount(),Math.min(30,cases.length));
+assert(await page.locator('[data-more="cases"]').isVisible()===(cases.length>30));
 await page.screenshot({path:fileURLToPath(new URL('stories-preview.png',import.meta.url)),fullPage:false});
 
 // Phone width: no horizontal overflow.
