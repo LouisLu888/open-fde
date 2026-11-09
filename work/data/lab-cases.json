@@ -6353,6 +6353,29 @@
   ]
  },
  {
+  "id": "C459",
+  "sourceId": "oai-adventhealth",
+  "vendor": "OpenAI",
+  "slug": "adventhealth",
+  "url": "https://openai.com/index/adventhealth/",
+  "customer": "AdventHealth",
+  "pageTitle": "AdventHealth advances whole-person care with OpenAI",
+  "date": "2026-05",
+  "industry": "Healthcare and life sciences",
+  "theme": "Adoption",
+  "title": "AdventHealth · ChatGPT for Healthcare rollout",
+  "problem": "AdventHealth faces tight margins and heavy administrative work, such as physician advisors spending about 10 minutes per utilization management case, while many staff were unsure how to use AI.",
+  "approach": "The system treated adoption as the product: it adopted ChatGPT Enterprise then ChatGPT for Healthcare, formed domain-based peer groups, tracked messages per user per day, and measured utilization management time from EHR timestamps.",
+  "result": "AdventHealth reports reduced time on repetitive documentation, faster turnaround and increased capacity without additional staffing, measured partly through system-level data.",
+  "limit": "The headline administrative time reduction is not broken down in the body, and the page publishes no per-case review times, sample sizes or significance results, despite saying they are tracked.",
+  "question": "AdventHealth measures time from EHR timestamps rather than self-reports; what other signals would you pair with timestamps to confirm review quality did not drop?",
+  "why": "Hospital system describes adoption-first rollout and timestamp-based measurement.",
+  "evidence": [
+   "Increased capacity without additional staffing",
+   "The organization measures impact using system-level data, including timestamps in electronic health records"
+  ]
+ },
+ {
   "id": "C322",
   "sourceId": "oai-altera",
   "vendor": "OpenAI",
@@ -6556,6 +6579,54 @@
   ]
  },
  {
+  "id": "C460",
+  "sourceId": "oai-australian-payments-plus",
+  "vendor": "OpenAI",
+  "slug": "australian-payments-plus",
+  "url": "https://openai.com/index/australian-payments-plus/",
+  "customer": "Australian Payments Plus",
+  "pageTitle": "Australian Payments Plus moves faster with ChatGPT and Codex",
+  "date": "2026-07",
+  "industry": "Financial services",
+  "theme": "Adoption",
+  "title": "AP+ · ChatGPT Enterprise and Codex",
+  "problem": "Australian Payments Plus staff must synthesize scheme rules, technical specifications and operational documents, where accuracy matters, and technical teams face slow investigations of payments issues.",
+  "approach": "AP+ introduced ChatGPT Enterprise company-wide for summarizing, drafting and structuring work, and added Codex for technical investigation and building working product simulations, with expert review kept in place.",
+  "result": "AP+ reports that ChatGPT helped 80% of employees be more creative or improve work quality, Codex builds working simulations in 1 day, and complex reconciliation investigations that took 4 hours are shorter.",
+  "limit": "The 80% figure comes from AP+ internal data (a survey of employees) with no definition of work quality, and the time savings are self-reported comparisons to unmeasured previous effort.",
+  "question": "When time savings are reported from employee surveys, how would you check them against operational data before presenting them to a regulated client's risk team?",
+  "why": "Payments operator reports survey results and Codex time savings.",
+  "evidence": [
+   "ChatGPT helped 80% of employees be more creative or improve work quality",
+   "AP+ uses Codex to build working simulations in 1 day, down from what could previously take days to weeks",
+   "investigation time for complex reconciliation issues using Codex, down from 4 hours previously"
+  ]
+ },
+ {
+  "id": "C461",
+  "sourceId": "oai-autoscout24",
+  "vendor": "OpenAI",
+  "slug": "autoscout24",
+  "url": "https://openai.com/index/autoscout24/",
+  "customer": "AutoScout24",
+  "pageTitle": "AutoScout24 scales engineering with AI-powered workflows",
+  "date": "2026-05",
+  "industry": "Software and internet",
+  "theme": "Adoption",
+  "title": "AutoScout24 · ChatGPT and Codex rollout",
+  "problem": "AutoScout24 faced growing system complexity, legacy systems and large migrations while needing faster delivery without hurting reliability.",
+  "approach": "The company rolled out ChatGPT to about 2,000 employees and embedded Codex in engineering, data and product workflows for about 1,000 builders after a three-month evaluation, supported by an AI Champions network.",
+  "result": "AutoScout24 reports development timelines for select projects fell from 2–3 weeks to 2–3 days, with about 2,000 employees given AI tools and around 1,000 builders using Codex.",
+  "limit": "The speed-up applies to select projects only with no baseline method, and 'measurable' quality gains are claimed without numbers.",
+  "question": "How would you pick the 'select projects' for a before-and-after comparison so the 10x speed claim is not just the easiest work?",
+  "why": "Car marketplace rolls out Codex and reports shorter development timelines.",
+  "evidence": [
+   "Reduced development timelines from 2–3 weeks to 2–3 days for select projects",
+   "giving approximately 2,000 employees access to AI tools",
+   "equipping around 1,000 builder employees with a coding agent integrated directly into their daily processes"
+  ]
+ },
+ {
   "id": "C331",
   "sourceId": "oai-avatarin",
   "vendor": "OpenAI",
@@ -6575,6 +6646,77 @@
   "why": "avatarin reports a voice shopping agent trial for Yamada Denki.",
   "evidence": [
    "approximately 30,000 people used the agent; 92% of survey responses were positive"
+  ]
+ },
+ {
+  "id": "C462",
+  "sourceId": "oai-axios-allison-murphy",
+  "vendor": "OpenAI",
+  "slug": "axios-allison-murphy",
+  "url": "https://openai.com/index/axios-allison-murphy/",
+  "customer": "Axios",
+  "pageTitle": "How Axios uses AI to help deliver high-impact local journalism",
+  "date": "2026-03",
+  "industry": "Media and advertising",
+  "theme": "Delivery",
+  "title": "Axios · AI workflows in local newsrooms",
+  "problem": "Local news is hard to run profitably because each community needs tailored coverage, and one audience insights lead could not turn survey data into city-level summaries quickly.",
+  "approach": "Axios Local built a custom GPT for headlines and style, captured reporters' curation process into prompts for newsletter roundups, and uses AI to summarize survey responses and public meeting records for reporters.",
+  "result": "Axios says AI now produces one-page reader survey summaries for every city in less than a day, where this took weeks, and roundups that took hours now take minutes.",
+  "limit": "This is an executive interview with no measured data or sample, and the time comparisons are the COO's own statements.",
+  "question": "How would you keep an editor in the loop for AI-curated local roundups so quality does not slip while production time falls?",
+  "why": "News company COO describes AI workflows in local newsrooms.",
+  "evidence": [
+   "we can analyze the responses and generate clear one-page summaries for every city in less than a day",
+   "Before, turning that data into something reporters could actually use took weeks",
+   "What used to take hours now takes minutes"
+  ]
+ },
+ {
+  "id": "C463",
+  "sourceId": "oai-balyasny-asset-management",
+  "vendor": "OpenAI",
+  "slug": "balyasny-asset-management",
+  "url": "https://openai.com/index/balyasny-asset-management/",
+  "customer": "Balyasny Asset Management",
+  "pageTitle": "How Balyasny Asset Management built an AI research engine",
+  "date": "2026-03",
+  "industry": "Financial services",
+  "theme": "Evaluation",
+  "title": "Balyasny · AI investment research system",
+  "problem": "Analysts at Balyasny had to parse thousands of documents under time pressure, and off-the-shelf AI tools could not handle mixed data, workflow orchestration or compliance rules.",
+  "approach": "A central Applied AI team built a research system, tested models across 12+ dimensions on internal benchmarks before deploying, and uses GPT-5.4 as a reasoning engine alongside internal models with agents for tasks like merger arbitrage monitoring.",
+  "result": "Balyasny reports about 95% of investment teams use the platform, deep research that took days now takes hours, and one agent cut scenario analysis from 2 days to about 30 minutes.",
+  "limit": "Figures are firm-reported with no measurement method, and the page gives no data on output accuracy or investment performance.",
+  "question": "For an evaluation pipeline across many dimensions, how would you decide which dimension is allowed to veto a model for a given task?",
+  "why": "Investment firm describes evaluation-first research agents and usage results.",
+  "evidence": [
+   "Today, ~95% of Balyasny investment teams actively use their AI platform",
+   "Deep research tasks that once required days are now completed in hours",
+   "A Central Bank Speech Analyst cut macroeconomic scenario analysis time from 2 days to ~30 minutes"
+  ]
+ },
+ {
+  "id": "C464",
+  "sourceId": "oai-basis",
+  "vendor": "OpenAI",
+  "slug": "basis",
+  "url": "https://openai.com/index/basis/",
+  "customer": "Basis",
+  "pageTitle": "Basis scales accounting by turning OpenAI model progress into trusted agents",
+  "date": "2025-08",
+  "industry": "Software and internet",
+  "theme": "Architecture",
+  "title": "Basis · Supervising agent for accounting work",
+  "problem": "Accounting firms need repetitive work such as reconciliations and journal entries automated in a way that accountants can review and control.",
+  "approach": "Basis built a multi-agent system with a supervising agent that routes tasks to sub-agents, picks models through an internal benchmark suite, and shows accountants the data, reasoning and confidence behind each entry.",
+  "result": "Basis reports firms using it save 30% of time on average, and the newest model achieved a perfect 100% success rate on Basis's parallel tool-calling benchmark.",
+  "limit": "The time savings are a company-reported average with no sample or method, and the 100% score is on Basis's own benchmark.",
+  "question": "A perfect score on an internal tool-calling benchmark says little about edge cases; what would you add to the benchmark before widening agent autonomy?",
+  "why": "Accounting agent startup reports time savings and a benchmark score.",
+  "evidence": [
+   "Firms using Basis report 30% time savings on average",
+   "achieved a perfect 100% success rate while also leading all other models across reasoning benchmarks"
   ]
  },
  {
@@ -6598,6 +6740,30 @@
   "evidence": [
    "GPT‑6 Astra took 50% less time to finish complex tasks vs. GPT‑5.6 Sol",
    "Basis compared GPT‑6 Astra and GPT‑5.6 Sol on a complicated tax workbook with 50 tabs"
+  ]
+ },
+ {
+  "id": "C465",
+  "sourceId": "oai-bbva",
+  "vendor": "OpenAI",
+  "slug": "bbva",
+  "url": "https://openai.com/index/bbva/",
+  "customer": "BBVA",
+  "pageTitle": "BBVA puts AI at the core of banking with OpenAI",
+  "date": "2026-06",
+  "industry": "Financial services",
+  "theme": "Adoption",
+  "title": "BBVA · ChatGPT Enterprise at scale",
+  "problem": "BBVA, a regulated global bank, wanted to integrate AI across customer experience, operations and employee work without unmanaged use of consumer AI tools.",
+  "approach": "After a 2024 start with 3,000 employees, BBVA expanded ChatGPT Enterprise with aligned security and legal teams, an AI champions network, leader training and employee-built custom GPTs for risk, legal and customer service.",
+  "result": "BBVA reports about 100,000 employees using ChatGPT Enterprise, about 3 hours saved per employee per week, and up to 80% efficiency gains in selected workflows.",
+  "limit": "Hours saved and efficiency gains are company-reported with no stated method, and the 80% figure applies only to selected workflows.",
+  "question": "How would you validate a figure like 3 hours saved per employee per week across 100,000 users before using it to justify expansion?",
+  "why": "Global bank scales ChatGPT Enterprise and reports time savings.",
+  "evidence": [
+   "100,000 employees using ChatGPT Enterprise globally",
+   "~3 hours saved per employee, per week",
+   "Up to 80% efficiency gains in selected workflows"
   ]
  },
  {
@@ -6668,6 +6834,54 @@
   ]
  },
  {
+  "id": "C466",
+  "sourceId": "oai-blue-j",
+  "vendor": "OpenAI",
+  "slug": "blue-j",
+  "url": "https://openai.com/index/blue-j/",
+  "customer": "Blue J",
+  "pageTitle": "Blue J’s approach for scaling fast in complex, regulated domains",
+  "date": "2025-08",
+  "industry": "Software and internet",
+  "theme": "Productization",
+  "title": "Blue J · Tax research engine with feedback loop",
+  "problem": "Tax professionals spend hours or days sifting statutes, rulings and commentary, and small errors can trigger audits or cost clients money.",
+  "approach": "Blue J built a retrieval-augmented tax research engine using GPT-4.1 over a curated document library, with citations, a disagree button on every answer, and a benchmark of over 350 prompts to test each new model.",
+  "result": "Blue J reports users save 2.7 hours per user per week, fewer than 1 in 700 responses are disputed, and more than 70% of users log in weekly.",
+  "limit": "The 2.7 hours is Blue J's figure with no stated method, and the disagree rate counts only answers users chose to flag, not all errors.",
+  "question": "A disagree rate only counts errors users noticed and reported; how would you estimate the errors that nobody flagged?",
+  "why": "Tax research startup reports time savings and a low dispute rate.",
+  "evidence": [
+   "saving 2.7 hours per user per week on research and client communication",
+   "disagree rate of fewer than 1 in 700 responses",
+   "More than 70% of users log in weekly"
+  ]
+ },
+ {
+  "id": "C467",
+  "sourceId": "oai-bny",
+  "vendor": "OpenAI",
+  "slug": "bny",
+  "url": "https://openai.com/index/bny/",
+  "customer": "BNY",
+  "pageTitle": "BNY builds “AI for everyone, everywhere” with OpenAI",
+  "date": "2025-12",
+  "industry": "Financial services",
+  "theme": "Adoption",
+  "title": "BNY · Eliza platform and employee-built agents",
+  "problem": "BNY, a systemically important financial institution, wanted AI across the firm without sacrificing governance, and wanted employees beyond technologists to build with it.",
+  "approach": "BNY built the Eliza platform with governed prompting, agent building and model selection, review boards and an AI council, mandatory training before access, and agents such as a Contract Review Assistant.",
+  "result": "BNY reports 20,000 employees actively building agents, 99% of its workforce trained on Gen AI, and 75% less legal review time from four hours to one for the Contract Review Assistant.",
+  "limit": "The legal review figure is from one early agent and BNY's own measure, with no quality check described, and agent counts do not show business outcomes.",
+  "question": "Making governance part of the tooling can speed adoption; which governance checks would you keep manual for high-risk agents anyway?",
+  "why": "Global custodian bank describes governed agent platform and early results.",
+  "evidence": [
+   "That platform now supports over 125 live use cases, with 20,000 employees actively building agents",
+   "The company now has 99% of its workforce trained on Gen AI",
+   "Contract Review Assistant: Reduces legal review time by 75%, from four hours to one"
+  ]
+ },
+ {
   "id": "C336",
   "sourceId": "oai-booking-com",
   "vendor": "OpenAI",
@@ -6688,6 +6902,53 @@
   "evidence": [
    "The first prototype, capable of destination discovery and itinerary building, was launched in just 10 weeks.",
    "We started with OpenAI’s API, ran a hackathon, and within 10 weeks, we launched the AI Trip Planner."
+  ]
+ },
+ {
+  "id": "C468",
+  "sourceId": "oai-boston-childrens-hospital",
+  "vendor": "OpenAI",
+  "slug": "boston-childrens-hospital",
+  "url": "https://openai.com/index/boston-childrens-hospital/",
+  "customer": "Boston Children's Hospital",
+  "pageTitle": "Boston Children’s uses AI to unlock new diagnoses",
+  "date": "2026-05",
+  "industry": "Healthcare and life sciences",
+  "theme": "Adoption",
+  "title": "Boston Children's · Enterprise AI layer",
+  "problem": "Boston Children's faces tight finances and heavy administrative work, and rare disease cases involve fragmented genetic data and too much literature for physicians to synthesize alone.",
+  "approach": "The hospital built a secure internal ChatGPT environment as an enterprise AI layer with governance, used it for supply chain and scheduling automations, and developed a 'co-pilot geneticist' that combines genetic data, phenotypes and literature.",
+  "result": "Boston Children's reports more than 50 automations capturing about 60,000 hours, equal to more than $7 million in redeployed labor, and more than 40 rare conditions diagnosed that had gone unresolved.",
+  "limit": "The dollar value converts hours to labor cost rather than showing cash savings, and the diagnosis count has no denominator or validation method on the page.",
+  "question": "How would you validate that diagnoses attributed to an AI co-pilot were caused by the tool and not by clinicians who would have reached them anyway?",
+  "why": "Children's hospital reports operational savings and rare disease diagnoses.",
+  "evidence": [
+   "has captured about 60,000 hours in time savings, which is equivalent to more than $7 million in redeployed labor",
+   "Across more than 50 automations",
+   "helped diagnose more than 40 rare conditions that had previously gone unresolved"
+  ]
+ },
+ {
+  "id": "C469",
+  "sourceId": "oai-braintrust",
+  "vendor": "OpenAI",
+  "slug": "braintrust",
+  "url": "https://openai.com/index/braintrust/",
+  "customer": "Braintrust",
+  "pageTitle": "How Braintrust turns customer requests into code with Codex",
+  "date": "2026-05",
+  "industry": "Software and internet",
+  "theme": "Delivery",
+  "title": "Braintrust · Codex for customer feature previews",
+  "problem": "Customer feature requests at Braintrust used to enter a backlog and be prioritized later, which slowed feedback with customers.",
+  "approach": "Engineers paste a request into Codex with GPT-5.5, create a preview branch and show the working result to the customer, and run experiments by writing a failing test and a sandbox for Codex to work in.",
+  "result": "Braintrust says half of its team moved to Codex in one month, and engineers can now show a customer a preview branch for a request within minutes.",
+  "limit": "The page gives adoption and an anecdotal speed claim only, with no data on how many previews were accepted or shipped.",
+  "question": "What would you measure to show that same-day previews improve which features get built, not just how fast prototypes appear?",
+  "why": "Eval platform describes turning customer requests into preview branches with Codex.",
+  "evidence": [
+   "In one month, half of the Braintrust team moved to Codex.",
+   "create a preview branch, and show the completed request to the customer in minutes"
   ]
  },
  {
@@ -6780,6 +7041,30 @@
   ]
  },
  {
+  "id": "C470",
+  "sourceId": "oai-choco",
+  "vendor": "OpenAI",
+  "slug": "choco",
+  "url": "https://openai.com/index/choco/",
+  "customer": "Choco",
+  "pageTitle": "Choco automates food distribution with AI agents",
+  "date": "2026-04",
+  "industry": "Retail and consumer goods",
+  "theme": "Productization",
+  "title": "Choco · OrderAgent for food distributors",
+  "problem": "Food distributors received orders by email, text, voicemail, images and handwritten notes, and staff manually entered them into ERP systems, a slow and error-prone process.",
+  "approach": "Choco built OrderAgent to convert multimodal inputs into structured ERP orders and VoiceAgent on the Realtime API for phone orders, with an evaluation framework, an optional Autopilot mode above confidence thresholds, and learning from corrections.",
+  "result": "Choco reports more than 8.8 million orders processed annually, up to 50% less manual order entry, and 2x productivity without added headcount.",
+  "limit": "All figures are Choco's own and 'up to' values with no baseline definition, and error rates are given only as a range tied to configurable thresholds.",
+  "question": "What would you log to know whether Autopilot's confidence threshold sends the right orders to human review rather than only the easy ones?",
+  "why": "Food supply platform builds order-entry agents and reports volume and efficiency.",
+  "evidence": [
+   "Processes over 8.8 million orders annually, eliminating millions of manual workflows",
+   "Achieves up to 50% reduction in manual order entry, freeing teams for higher-value work",
+   "Enables 2x productivity gains, allowing teams to scale without additional headcount"
+  ]
+ },
+ {
   "id": "C341",
   "sourceId": "oai-circles",
   "vendor": "OpenAI",
@@ -6800,6 +7085,29 @@
   "evidence": [
    "Circles’ AI-powered personalization has helped increase ARPU by 22% and reduce churn by 9%",
    "now delivers a 65% autonomous resolution rate for customer support"
+  ]
+ },
+ {
+  "id": "C471",
+  "sourceId": "oai-cisco",
+  "vendor": "OpenAI",
+  "slug": "cisco",
+  "url": "https://openai.com/index/cisco/",
+  "customer": "Cisco",
+  "pageTitle": "Cisco and OpenAI redefine enterprise engineering with Codex",
+  "date": "2026-05",
+  "industry": "Software and internet",
+  "theme": "Delivery",
+  "title": "Cisco · Codex in enterprise engineering",
+  "problem": "Cisco builds large multi-repository, C/C++-heavy systems under strict security and governance requirements, and wanted to cut time on build optimization, defect repair and framework migrations.",
+  "approach": "Cisco integrated Codex and Codex CLI into production engineering workflows, using it to optimize builds across interconnected repositories, automate defect repair in C/C++ code, and handle bulk changes in UI migrations, and gave feedback to OpenAI on enterprise readiness.",
+  "result": "Cisco reports a ~20% reduction in build times with more than 1,500 engineering hours saved per month, and a 10-15× increase in defect resolution throughput using Codex CLI.",
+  "limit": "The figures are Cisco's own for selected workflows with no stated baseline period or method, and the page does not report defect quality or rework rates.",
+  "question": "What checks would you put around automated defect repair so that a 10-15× throughput gain does not hide fixes that fail review later?",
+  "why": "Networking company reports Codex gains in builds and defect repair.",
+  "evidence": [
+   "a ~20% reduction in build times and more than 1,500 engineering hours saved per month across global environments",
+   "delivering a 10-15× increase in defect resolution throughput"
   ]
  },
  {
@@ -6939,6 +7247,50 @@
   ]
  },
  {
+  "id": "C472",
+  "sourceId": "oai-commonwealth-bank-of-australia",
+  "vendor": "OpenAI",
+  "slug": "commonwealth-bank-of-australia",
+  "url": "https://openai.com/index/commonwealth-bank-of-australia/",
+  "customer": "Commonwealth Bank of Australia",
+  "pageTitle": "Commonwealth Bank of Australia builds AI fluency at scale",
+  "date": "2025-12",
+  "industry": "Financial services",
+  "theme": "Adoption",
+  "title": "CBA · ChatGPT Enterprise rollout",
+  "problem": "CBA wanted AI to be a core capability for the whole organization rather than a limited pilot, with consistency and security.",
+  "approach": "CBA is rolling out ChatGPT Enterprise to nearly 50,000 employees and building fluency through connectors, training, leadership role modeling and hands-on programs, planning agent use cases for customer service and scam response later.",
+  "result": "CBA reports it is rolling out ChatGPT Enterprise to nearly 50,000 employees, but the page gives no outcome measures.",
+  "limit": "This short page is a rollout announcement with one headcount figure and a CEO quote, and reports no usage, productivity or customer results.",
+  "question": "With only a headcount to show, which two adoption and outcome measures would you set before the next quarterly review?",
+  "why": "Australian bank announces enterprise-wide ChatGPT rollout.",
+  "evidence": [
+   "roll out ChatGPT Enterprise across nearly 50,000 employees"
+  ]
+ },
+ {
+  "id": "C473",
+  "sourceId": "oai-consensus",
+  "vendor": "OpenAI",
+  "slug": "consensus",
+  "url": "https://openai.com/index/consensus/",
+  "customer": "Consensus",
+  "pageTitle": "Consensus uses GPT‑5 and the Responses API to complete weeks of research in minutes",
+  "date": "2025-10",
+  "industry": "Software and internet",
+  "theme": "Architecture",
+  "title": "Consensus · Scholar Agent multi-agent research",
+  "problem": "Researchers face millions of new papers a year and spend most of their time finding and interpreting prior work, and a search-only product could not interpret and compare findings.",
+  "approach": "Consensus built Scholar Agent on GPT-5 and the Responses API with planning, search, reading and analysis agents, each with narrow scope, and a research context pack tied to source studies, declining to answer when evidence is too weak.",
+  "result": "Consensus says it grew to more than 8 million researchers and increased revenue by 8x over the past year.",
+  "limit": "Growth numbers are company-reported and not tied to the agent system specifically, and the claim of weeks of research in minutes has no measured example.",
+  "question": "Why might a system that declines to answer when evidence is thin be a better enterprise default, and how would you measure its refusal rate?",
+  "why": "Research assistant startup describes multi-agent design and growth.",
+  "evidence": [
+   "growing to more than 8 million researchers worldwide and increasing revenue by 8x"
+  ]
+ },
+ {
   "id": "C348",
   "sourceId": "oai-cooley-gopublic",
   "vendor": "OpenAI",
@@ -6958,6 +7310,30 @@
   "why": "Cooley builds an IPO preparation offering on ChatGPT Work.",
   "evidence": [
    "The workflow comes together into a tailored starting point for an IPO"
+  ]
+ },
+ {
+  "id": "C474",
+  "sourceId": "oai-cred-swamy-seetharaman",
+  "vendor": "OpenAI",
+  "slug": "cred-swamy-seetharaman",
+  "url": "https://openai.com/index/cred-swamy-seetharaman/",
+  "customer": "CRED",
+  "pageTitle": "How CRED is tapping AI to deliver premium customer experiences",
+  "date": "2025-11",
+  "industry": "Financial services",
+  "theme": "Productization",
+  "title": "CRED · Cleo support companion",
+  "problem": "As CRED scaled across products and teams, it became harder to keep context and quality in customer support for its affluent members.",
+  "approach": "CRED built Cleo, a conversational support companion on OpenAI models that classifies intent and maps it to the right SOP, plus Thea for support agents and Stark for operations teams updating SOPs.",
+  "result": "CRED reports a 14 percentage point improvement in CSAT, 98% resolution accuracy for Cleo with 18% more multi-intent conversations resolved, and 31% fewer session drop-offs, which it calls early results.",
+  "limit": "These are early, company-reported figures from an interview with no baseline period, and 'resolution accuracy' is not defined.",
+  "question": "How would you define and audit 'resolution accuracy' so that 98% means the customer's issue was fixed, not just that an SOP was matched?",
+  "why": "Fintech members club builds AI support tools and reports early metrics.",
+  "evidence": [
+   "a 14 percentage point improvement in our CSAT scores",
+   "Cleo has reached a 98% resolution accuracy rate, with 18% more multi-intent conversations being resolved successfully",
+   "session drop-offs have fallen by 31%"
   ]
  },
  {
@@ -7007,6 +7383,100 @@
   ]
  },
  {
+  "id": "C475",
+  "sourceId": "oai-cyberagent",
+  "vendor": "OpenAI",
+  "slug": "cyberagent",
+  "url": "https://openai.com/index/cyberagent/",
+  "customer": "CyberAgent",
+  "pageTitle": "CyberAgent moves faster with ChatGPT Enterprise and Codex",
+  "date": "2026-04",
+  "industry": "Media and advertising",
+  "theme": "Adoption",
+  "title": "CyberAgent · ChatGPT Enterprise and Codex adoption",
+  "problem": "CyberAgent staff were unsure what information could be entered into AI tools, which slowed adoption and made usage uneven across departments.",
+  "approach": "The company adopted ChatGPT Enterprise for admin and access controls, wrote guidelines for confidential data, and built adoption mechanisms such as shared prompts, private usage rankings and Slack follow-ups, plus OpenAI-run training and Codex for design review.",
+  "result": "CyberAgent reports a 93% monthly active user rate for ChatGPT Enterprise across nearly all departments, without a company-wide tool mandate.",
+  "limit": "Only a usage rate is given; the page reports no productivity or quality measurements for ChatGPT or Codex, only user quotes.",
+  "question": "Monthly active use can be high without changing outcomes; which signals would you add to show that use is improving work and not just logging in?",
+  "why": "Japanese internet company reports high usage after governance-first rollout.",
+  "evidence": [
+   "reaching a monthly active user rate of 93%"
+  ]
+ },
+ {
+  "id": "C476",
+  "sourceId": "oai-dai-nippon-printing",
+  "vendor": "OpenAI",
+  "slug": "dai-nippon-printing",
+  "url": "https://openai.com/index/dai-nippon-printing/",
+  "customer": "Dai Nippon Printing",
+  "pageTitle": "Advancing organizational transformation for business innovation",
+  "date": "2025-10",
+  "industry": "Manufacturing and industrial",
+  "theme": "Adoption",
+  "title": "DNP · ChatGPT Enterprise across ten departments",
+  "problem": "DNP, a large printing company, wanted measurable productivity gains from generative AI and to preserve expertise held by experienced staff and analog documents.",
+  "approach": "DNP launched ChatGPT Enterprise in ten core departments with benchmarks of 100 uses per employee per week and over 50% task-time automation, spread use through custom GPTs, and built workflows for patent research, IT compliance and knowledge digitization.",
+  "result": "DNP reports 90% of use cases showed measurable results, 100% weekly active usage, an 87% automation rate in task time reduction, 10x processing volume, and a 95% reduction in patent research time.",
+  "limit": "All figures are DNP-reported, drawn from the first three months in selected departments, and 'automation rate' and 'measurable results' are not defined.",
+  "question": "DNP set targets of 100 uses per week per employee; what could go wrong with using a usage target as a goal, and what would you track instead?",
+  "why": "Printing company reports departmental ChatGPT results over three months.",
+  "evidence": [
+   "90% of use cases showed measurable results",
+   "100% weekly active usage rate",
+   "87% automation rate in task time reduction",
+   "10x increase in processing volume",
+   "95% reduction in patent research time"
+  ]
+ },
+ {
+  "id": "C477",
+  "sourceId": "oai-databricks",
+  "vendor": "OpenAI",
+  "slug": "databricks",
+  "url": "https://openai.com/index/databricks/",
+  "customer": "Databricks",
+  "pageTitle": "Databricks brings GPT‑5.5 to enterprise agent workflows",
+  "date": "2026-05",
+  "industry": "Software and internet",
+  "theme": "Evaluation",
+  "title": "Databricks · OfficeQA Pro benchmark results",
+  "problem": "Databricks wanted to know how well models handle parsing, retrieval and grounded reasoning over scanned PDFs, legacy files and long documents, which often break production agents.",
+  "approach": "Databricks tested the new OpenAI model on its OfficeQA Pro benchmark in an agent-harness setting, then made it available through its gateway for workflows built with AgentBricks and the Agent Supervisor API.",
+  "result": "Databricks reports the new model reduced errors by 46% compared to its predecessor and was the first to surpass 50% accuracy on OfficeQA Pro.",
+  "limit": "This is a vendor-run benchmark on Databricks' own test set, with results from one harness; no customer production outcomes are reported.",
+  "question": "A benchmark gain in document parsing does not guarantee the same gain on your client's documents; how would you build a quick local check before switching models?",
+  "why": "Data platform reports benchmark gains and makes the model available to customers.",
+  "evidence": [
+   "reduced errors by 46% compared to",
+   "became the first model to surpass 50% accuracy on OfficeQA Pro"
+  ]
+ },
+ {
+  "id": "C478",
+  "sourceId": "oai-datadog",
+  "vendor": "OpenAI",
+  "slug": "datadog",
+  "url": "https://openai.com/index/datadog/",
+  "customer": "Datadog",
+  "pageTitle": "Datadog uses Codex for system-level code review",
+  "date": "2026-01",
+  "industry": "Software and internet",
+  "theme": "Evaluation",
+  "title": "Datadog · Codex incident replay for code review",
+  "problem": "Datadog engineers ignored earlier AI review tools that behaved like linters, and code review needed system-level context to catch risks that senior reviewers cannot hold at scale.",
+  "approach": "Datadog piloted Codex on all pull requests in a large repository and built an incident replay harness that ran Codex on past pull requests linked to incidents, then asked incident owners whether its feedback would have helped.",
+  "result": "Datadog reports Codex found more than 10 cases, roughly 22% of the incidents examined, where engineers confirmed its feedback would have made a difference, and more than 1,000 engineers now use it regularly.",
+  "limit": "The replay used hindsight on known incidents, the engineers confirming usefulness owned those incidents, and the page gives no false-positive rate or time savings.",
+  "question": "A replay on past incidents rewards finding known problems; what would you measure to understand the review noise it adds to pull requests with no incident?",
+  "why": "Observability company evaluates AI code review using past incidents.",
+  "evidence": [
+   "Codex found more than 10 cases, or roughly 22% of the incidents that Datadog examined",
+   "Today more than 1,000 engineers use it regularly"
+  ]
+ },
+ {
   "id": "C351",
   "sourceId": "oai-decagon",
   "vendor": "OpenAI",
@@ -7026,6 +7496,53 @@
   "why": "A support automation startup mixes fine-tuned and frontier OpenAI models.",
   "evidence": [
    "we handle 91% of all their global support, without a human being involved"
+  ]
+ },
+ {
+  "id": "C479",
+  "sourceId": "oai-descript",
+  "vendor": "OpenAI",
+  "slug": "descript",
+  "url": "https://openai.com/index/descript/",
+  "customer": "Descript",
+  "pageTitle": "How Descript engineers multilingual video dubbing at scale",
+  "date": "2026-03",
+  "industry": "Software and internet",
+  "theme": "Productization",
+  "title": "Descript · Duration-aware video dubbing",
+  "problem": "Dubbed audio often sounded unnatural because translations run longer or shorter than the original speech, forcing artificial speed changes or manual retiming.",
+  "approach": "Descript redesigned its translation pipeline with OpenAI reasoning models to optimize meaning and duration together, splitting transcripts into chunks, counting syllables to target timing, and measuring pacing and semantic fidelity with automated evals.",
+  "result": "Descript reports that in the first 30 days exports of dubbed videos rose 15%, duration adherence improved by 13 to 43 percentage points, and 85.5% of segments scored four or five on semantic adherence.",
+  "limit": "Results are Descript-reported for a 30-day window with language-dependent ranges, and semantic quality is judged by another model rather than human raters.",
+  "question": "The semantic score comes from a model-as-judge; what human-rated sample would you add to confirm that score reflects what a native speaker hears?",
+  "why": "Video editor startup reports dubbing timing and quality improvements.",
+  "evidence": [
+   "In the first 30 days after rollout, exports of translated videos with dubbing increased 15%",
+   "duration adherence improved by 13 to 43 percentage points, depending on the language",
+   "85.5% of segments were rated a four or five out of five for semantic adherence"
+  ]
+ },
+ {
+  "id": "C480",
+  "sourceId": "oai-deutsche-telekom",
+  "vendor": "OpenAI",
+  "slug": "deutsche-telekom",
+  "url": "https://openai.com/index/deutsche-telekom/",
+  "customer": "Deutsche Telekom",
+  "pageTitle": "How Deutsche Telekom is rewiring telecommunications with AI",
+  "date": "2026-07",
+  "industry": "Telecom",
+  "theme": "Adoption",
+  "title": "Deutsche Telekom · AI-native operating model",
+  "problem": "Deutsche Telekom serves over 300 million customers with large care operations and network infrastructure, and wanted to treat AI as a redesign of how the company works rather than a software rollout.",
+  "approach": "It rolled out ChatGPT Enterprise to employees first, then began redesigning customer care workflows and exploring live translation, in-call assistants and post-call summaries, while using AI with partners for network optimization.",
+  "result": "Deutsche Telekom reports 50,000+ monthly active users of ChatGPT and API tooling and a 546% increase in AI tool usage since the start of the year.",
+  "limit": "Only usage metrics are given; there is no baseline for the usage count, and customer care and voice results are described as early or exploratory with no outcome numbers.",
+  "question": "If the only hard metrics are usage counts, what outcome measures would you add before claiming a customer care workflow has been redesigned successfully?",
+  "why": "Telecom group describes enterprise AI rollout and plans for AI in voice and care.",
+  "evidence": [
+   "50,000+ monthly active users of ChatGPT and API tooling",
+   "546% increase in AI tool usage since the beginning of 2026"
   ]
  },
  {
@@ -7076,6 +7593,29 @@
   ]
  },
  {
+  "id": "C481",
+  "sourceId": "oai-doppel",
+  "vendor": "OpenAI",
+  "slug": "doppel",
+  "url": "https://openai.com/index/doppel/",
+  "customer": "Doppel",
+  "pageTitle": "Doppel’s AI defense system stops attacks before they spread",
+  "date": "2025-10",
+  "industry": "Software and internet",
+  "theme": "Architecture",
+  "title": "Doppel · LLM pipeline with reinforcement fine-tuning",
+  "problem": "Attackers can generate phishing sites and impersonations faster than human analysts can review them, and analyst judgments on the same threat were inconsistent.",
+  "approach": "Doppel built a pipeline that filters signals with o4-mini, confirms threats with parallel GPT-5 prompts, classifies with an RFT-tuned o4-mini trained on analyst decisions, verifies with a second pass, and routes low-confidence cases to humans.",
+  "result": "Doppel reports analyst workloads cut by 80%, threat-handling capacity tripled, and response times reduced from hours to minutes.",
+  "limit": "The figures are company-reported with no baseline period or error rates for automated takedowns, and false positives are not discussed.",
+  "question": "Automated takedowns act without a human in the loop above a confidence threshold; how would you choose and monitor that threshold?",
+  "why": "Anti-impersonation startup describes RFT-based threat classification pipeline.",
+  "evidence": [
+   "Cut analyst workloads by 80%",
+   "triples threat-handling capacity, and reduces response times from hours to minutes"
+  ]
+ },
+ {
   "id": "C354",
   "sourceId": "oai-duolingo",
   "vendor": "OpenAI",
@@ -7096,6 +7636,50 @@
   "evidence": [
    "“GPT‑4 gives us far more confidence in the accuracy of AI responses in Explain my Answer,” says Peterson.",
    "Over 50 million learners rely on Duolingo every month to teach them a second language."
+  ]
+ },
+ {
+  "id": "C482",
+  "sourceId": "oai-endava",
+  "vendor": "OpenAI",
+  "slug": "endava",
+  "url": "https://openai.com/index/endava/",
+  "customer": "Endava",
+  "pageTitle": "How Endava builds an agentic organization with Codex",
+  "date": "2026-05",
+  "industry": "Professional services",
+  "theme": "Delivery",
+  "title": "Endava · Codex across the delivery lifecycle",
+  "problem": "Endava delivers software for banks, insurers and retailers, and analysis, design and build steps were handed between specialists and each took days or weeks.",
+  "approach": "Endava codified senior architects' judgment into Codex so junior engineers get senior guidance, and uses it for requirements, design, specifications, development and operations, including generating a requirements spec from a recorded stakeholder meeting.",
+  "result": "Endava reports requirements analysis time fell from weeks to hours, and in one legal engagement a usable spec came from two one-hour meetings instead of an estimated week or two of revision.",
+  "limit": "The comparison is an estimate for a single engagement, with no measured baseline or quality review of the generated specification.",
+  "question": "How would you review a requirements spec generated from a meeting transcript to catch what the stakeholders implied but never said?",
+  "why": "IT services firm uses Codex for requirements analysis and delivery.",
+  "evidence": [
+   "a week or two of revision was compressed into two one-hour meetings and produced a usable spec"
+  ]
+ },
+ {
+  "id": "C483",
+  "sourceId": "oai-endava-frontiers",
+  "vendor": "OpenAI",
+  "slug": "endava-frontiers",
+  "url": "https://openai.com/index/endava-frontiers/",
+  "customer": "Endava",
+  "pageTitle": "How Endava is redesigning software delivery around AI agents",
+  "date": "2026-06",
+  "industry": "Professional services",
+  "theme": "Adoption",
+  "title": "Endava · AI-native delivery with DavaFlow",
+  "problem": "Endava found that once developers used AI coding tools, requirements gathering, analysis and coordination became the bottleneck in software delivery.",
+  "approach": "Endava made OpenAI its enterprise AI platform with ChatGPT Enterprise and Codex, and built DavaFlow, an AI-native delivery methodology, then extended use to legal, finance, project management and commercial teams.",
+  "result": "Endava's CTO says every part of the DavaFlow lifecycle uses OpenAI technology and non-engineering teams now build internal tools, but the page gives no quantified outcome.",
+  "limit": "No metrics are given; the page lists qualitative results such as faster delivery and reduced reporting work without any baseline.",
+  "question": "If an AI-native delivery method has no published metrics, which delivery measures would you set up to confirm faster delivery for clients?",
+  "why": "IT services firm describes agent-based delivery methodology without metrics.",
+  "evidence": [
+   "There isn’t a part of DavaFlow that doesn’t use OpenAI technology"
   ]
  },
  {
@@ -7120,6 +7704,31 @@
    "Endex has improved intelligence at one-third the latency per turn",
    "With OpenAI o1, they’ve simplified this process without sacrificing accuracy.",
    "financial experts preferred responses generated by OpenAI’s o1 model 70% of the ti"
+  ]
+ },
+ {
+  "id": "C484",
+  "sourceId": "oai-eneos-materials",
+  "vendor": "OpenAI",
+  "slug": "eneos-materials",
+  "url": "https://openai.com/index/eneos-materials/",
+  "customer": "ENEOS Materials",
+  "pageTitle": "ENEOS Materials brings ChatGPT Enterprise to manufacturing",
+  "date": "2025-09",
+  "industry": "Manufacturing and industrial",
+  "theme": "Adoption",
+  "title": "ENEOS Materials · ChatGPT Enterprise rollout",
+  "problem": "ENEOS Materials faces labor shortages and rising costs in Japan, and needed secure AI use with proprietary information and faster research across language barriers.",
+  "approach": "After a volunteer cross-department team piloted ChatGPT Enterprise, the company expanded it to all employees and built custom GPTs for plant design and HR training analysis, plus deep research for foreign-language investigations.",
+  "result": "ENEOS Materials reports over 90% weekly use, 80% of employees reporting significant workflow gains in the pilot, a 90% reduction in HR data aggregation and analysis time, and over 1,000 custom GPTs.",
+  "limit": "Workflow gains are employee self-reports and the time reductions are individual examples with no baseline method or sample.",
+  "question": "A pilot survey of 80% reporting gains can reflect enthusiasm; what behavioral measure would you pair with it before rolling out company-wide?",
+  "why": "Materials maker reports ChatGPT Enterprise adoption and department time savings.",
+  "evidence": [
+   "Over 90% of employees using ChatGPT Enterprise weekly",
+   "80% of employees reported significant workflow improvements during their pilot phase",
+   "90% reduction in HR data aggregation and analysis time",
+   "Over 1,000 custom GPTs created across the organization"
   ]
  },
  {
@@ -7328,6 +7937,31 @@
   ]
  },
  {
+  "id": "C485",
+  "sourceId": "oai-gradient-labs",
+  "vendor": "OpenAI",
+  "slug": "gradient-labs",
+  "url": "https://openai.com/index/gradient-labs/",
+  "customer": "Gradient Labs",
+  "pageTitle": "Gradient Labs gives every bank customer an AI account manager",
+  "date": "2026-04",
+  "industry": "Software and internet",
+  "theme": "Evaluation",
+  "title": "Gradient Labs · Voice agents for bank support",
+  "problem": "Banking support cases such as fraud and blocked payments follow strict procedures across teams, and voice agents must follow them without hallucinating while keeping latency low.",
+  "approach": "Gradient Labs benchmarks models on trajectory accuracy over hard procedures, uses OpenAI models for reasoning steps and smaller models for fast tasks, runs parallel guardrail checks, and rolls out to banks gradually with simulation and replayed conversations.",
+  "result": "Gradient Labs reports one OpenAI model hit 97% trajectory accuracy against 88% for the next closest provider in an early eval, customer CSAT as high as 98%, and revenue growth of more than 10x.",
+  "limit": "The accuracy comparison comes from the company's own initial eval with no published test set, CSAT and revenue figures are company-reported, and the 98% is described as 'as high as'.",
+  "question": "Trajectory accuracy of 97% still means failures on regulated procedures; what fallback or human handoff would you design for the remaining cases?",
+  "why": "Banking support startup describes evaluation-led voice agents and company results.",
+  "evidence": [
+   "was the only model to hit 97% trajectory accuracy and consistency",
+   "The next closest provider was 88%",
+   "CSAT scores as high as 98%",
+   "Gradient Labs has increased revenue more than 10x over the past year"
+  ]
+ },
+ {
   "id": "C365",
   "sourceId": "oai-greptile-code-review-codex-astra",
   "vendor": "OpenAI",
@@ -7510,6 +8144,52 @@
   ]
  },
  {
+  "id": "C486",
+  "sourceId": "oai-hibob",
+  "vendor": "OpenAI",
+  "slug": "hibob",
+  "url": "https://openai.com/index/hibob/",
+  "customer": "HiBob",
+  "pageTitle": "HiBob turns 2,500 GPTs into product and team growth",
+  "date": "2025-10",
+  "industry": "Software and internet",
+  "theme": "Adoption",
+  "title": "HiBob · GPT-to-agent pipeline",
+  "problem": "HiBob wanted AI to be a working capability for every employee and a source of tested ideas for customer-facing features.",
+  "approach": "An AI team set a five-step process from idea to scaled agent, with a named owner and documentation for each custom GPT, and builds proven ideas into AI features in its HR platform through the OpenAI API.",
+  "result": "HiBob reports more than 90% of employees actively use ChatGPT Enterprise, and that 2,500+ experimental GPTs were built to deploy 200 into internal workflows.",
+  "limit": "The page says GPTs have goals such as hours saved and revenue, but publishes none of those outcomes, only adoption and build counts.",
+  "question": "Only 200 of 2,500 GPTs went into workflows; what would you use as the promotion criteria and how would you retire the rest?",
+  "why": "HR software firm describes a structured GPT-to-agent process and adoption counts.",
+  "evidence": [
+   "Over 90% of employees actively using ChatGPT Enterprise",
+   "2,500+ experimental GPTs built to deploy 200 successfully into internal workflows"
+  ]
+ },
+ {
+  "id": "C487",
+  "sourceId": "oai-higgsfield",
+  "vendor": "OpenAI",
+  "slug": "higgsfield",
+  "url": "https://openai.com/index/higgsfield/",
+  "customer": "Higgsfield",
+  "pageTitle": "How Higgsfield turns simple ideas into cinematic social videos",
+  "date": "2026-01",
+  "industry": "Software and internet",
+  "theme": "Productization",
+  "title": "Higgsfield · Planning layer for social video",
+  "problem": "Creators describe a feeling rather than a shot list, while video models need structured direction on timing, camera motion and pacing, and effective short-form video follows hidden rules.",
+  "approach": "Higgsfield built a planning layer using GPT-4.1 mini and GPT-5 to expand intent into a video plan, maps products into preset trend structures, and sends the plan to Sora 2, routing tasks between models by reasoning depth and latency.",
+  "result": "Higgsfield reports a 150% increase in share velocity versus its earlier baseline and that more than 20% of professional creators and enterprise teams adopted Click-to-Ad since launch.",
+  "limit": "The comparison uses Higgsfield's own earlier baseline and engagement metrics, and the adoption share is defined by downloads, publishing or sharing rather than business results.",
+  "question": "Share velocity measures how videos spread; what customer outcome would you track to show the ads actually performed for the marketing teams using them?",
+  "why": "Video generation startup describes a planning layer and engagement results.",
+  "evidence": [
+   "videos generated through this system show a 150% increase in share velocity and roughly 3x higher cognitive capture",
+   "Click-to-Ad has been adopted by more than 20% of professional creators and enterprise teams on the platform"
+  ]
+ },
+ {
   "id": "C373",
   "sourceId": "oai-higgsfield-from-prompt-to-production-with-astra",
   "vendor": "OpenAI",
@@ -7602,6 +8282,29 @@
   ]
  },
  {
+  "id": "C488",
+  "sourceId": "oai-hygh",
+  "vendor": "OpenAI",
+  "slug": "hygh",
+  "url": "https://openai.com/index/hygh/",
+  "customer": "HYGH",
+  "pageTitle": "HYGH speeds development and campaigns with ChatGPT Business",
+  "date": "2025-10",
+  "industry": "Media and advertising",
+  "theme": "Delivery",
+  "title": "HYGH · ChatGPT Business for MVPs and ad previews",
+  "problem": "HYGH's internal development process required endless meetings even for small tools, and its in-house agency needed faster visual mock-ups to win advertisers.",
+  "approach": "HYGH uses ChatGPT Business to generate product requirements documents from recorded discussions, Codex to bootstrap prototypes, and OpenAI APIs for campaign preview tools that show an advertiser's product on its screens.",
+  "result": "HYGH estimates it saves 5.5 hours per employee per week and now ships about two usable MVP products every week, where it used to take 1-2 months.",
+  "limit": "Savings are HYGH's own estimates with no method, and the MVP pace counts internal tools whose usage and quality are not reported.",
+  "question": "Shipping two MVPs a week is a throughput claim; what measure would show that those tools were actually adopted by internal users?",
+  "why": "Digital advertising firm reports time savings and faster MVP shipping.",
+  "evidence": [
+   "saving 5.5 hours per employee, per week",
+   "HYGH now ships about two usable MVP software products every week-when it used to take 1-2 months"
+  ]
+ },
+ {
   "id": "C377",
   "sourceId": "oai-indeed",
   "vendor": "OpenAI",
@@ -7624,6 +8327,30 @@
    "nearly 20 million messages per day",
    "+20% increase in started job applications",
    "+13% uplift in downstream success"
+  ]
+ },
+ {
+  "id": "C489",
+  "sourceId": "oai-indeed-maggie-hulce",
+  "vendor": "OpenAI",
+  "slug": "indeed-maggie-hulce",
+  "url": "https://openai.com/index/indeed-maggie-hulce/",
+  "customer": "Indeed",
+  "pageTitle": "How Indeed uses AI to help evolve the job search",
+  "date": "2026-01",
+  "industry": "Software and internet",
+  "theme": "Productization",
+  "title": "Indeed · AI features for job search and hiring",
+  "problem": "Indeed wanted AI across job search and hiring to match job seekers and employers faster while keeping employers as the final decision-makers.",
+  "approach": "Indeed uses OpenAI APIs for features such as Invite-to-Apply, Talent Scout and Career Scout, and has a VP of AI driving internal adoption through training, hackathons and peer sharing.",
+  "result": "Indeed's CRO reports about 70% of Sponsored Jobs applications now come from AI recommendations, employers using AI in Smart Sourcing hire 40% faster, and recommended, contacted candidates are 15 times more likely to apply.",
+  "limit": "These are executive-interview figures with no comparison group or time period, and several refer to Indeed's own products rather than to OpenAI-specific features.",
+  "question": "What would you ask to learn whether employers hiring 40% faster are also hiring candidates who perform as well?",
+  "why": "Job platform executive cites product metrics from AI recommendations.",
+  "evidence": [
+   "about 70% of sponsored applications now come from AI-powered recommendations",
+   "employers who use AI capabilities are hiring 40% faster",
+   "those candidates are 15 times more likely to apply than if they discovered the job on their own"
   ]
  },
  {
@@ -7987,6 +8714,29 @@
   ]
  },
  {
+  "id": "C490",
+  "sourceId": "oai-lseg",
+  "vendor": "OpenAI",
+  "slug": "lseg",
+  "url": "https://openai.com/index/lseg/",
+  "customer": "LSEG",
+  "pageTitle": "From data to decisions: how LSEG is scaling trusted AI",
+  "date": "2026-06",
+  "industry": "Financial services",
+  "theme": "Adoption",
+  "title": "LSEG · ChatGPT Enterprise and faster releases",
+  "problem": "LSEG's knowledge work still involved manual synthesis and fragmented workflows, and regulatory, compliance and security requirements made product releases slow.",
+  "approach": "LSEG deployed ChatGPT Enterprise and OpenAI APIs to thousands of employees within weeks, with model evaluation frameworks, human review for critical outputs and data controls, and is combining OpenAI models with its data through an MCP integration.",
+  "result": "LSEG reports product release cycles fell from 3–6 months to 2 weeks and customer delivery now takes about 4 weeks from request to production.",
+  "limit": "The figures are LSEG's own and come from executive quotes without a baseline cohort; the release-cycle change applies to 'many' products adapted for AI consumption, not all.",
+  "question": "A release cycle shortened from months to weeks can come from tooling or from changed process; how would you tell which one drove the change?",
+  "why": "Data provider deploys ChatGPT Enterprise and reports faster releases.",
+  "evidence": [
+   "Reduced product release cycles from 3–6 months to 2 weeks",
+   "Accelerated customer delivery timelines to ~4 weeks from request to production"
+  ]
+ },
+ {
   "id": "C394",
   "sourceId": "oai-ly-corporation",
   "vendor": "OpenAI",
@@ -8126,6 +8876,56 @@
   ]
  },
  {
+  "id": "C491",
+  "sourceId": "oai-mirakl",
+  "vendor": "OpenAI",
+  "slug": "mirakl",
+  "url": "https://openai.com/index/mirakl/",
+  "customer": "Mirakl",
+  "pageTitle": "Inside Mirakl’s agentic commerce vision",
+  "date": "2025-12",
+  "industry": "Software and internet",
+  "theme": "Productization",
+  "title": "Mirakl · AI in docs, support and catalog onboarding",
+  "problem": "Mirakl wanted every employee to build with AI, and its marketplace customers needed faster catalog onboarding and better data quality.",
+  "approach": "Mirakl used ChatGPT Enterprise for technical documentation, built a support agent grounded in its documentation, and launched an AI-native Catalog Transformer for catalog onboarding.",
+  "result": "Mirakl reports 70% faster internal documentation, a 37% efficiency gain in support with 96% satisfaction, 91% faster catalog onboarding and about 50% fewer categorisation errors.",
+  "limit": "All figures are Mirakl-reported with no baseline, sample or measurement method, and 'efficiency' in support is not defined.",
+  "question": "If a support agent improves efficiency 37% at 96% satisfaction, which cases would you sample to be sure satisfaction holds for hard tickets?",
+  "why": "Marketplace software firm reports internal and product efficiency gains.",
+  "evidence": [
+   "70% faster creation of internal technical documentation using ChatGPT Enterprise",
+   "37% efficiency improvement in customer support, while maintaining 96% customer satisfaction",
+   "91% faster catalog onboarding with Mirakl’s AI-native Catalog Transformer",
+   "~50% fewer categorisation errors, improving data quality and conversion"
+  ]
+ },
+ {
+  "id": "C492",
+  "sourceId": "oai-mixi",
+  "vendor": "OpenAI",
+  "slug": "mixi",
+  "url": "https://openai.com/index/mixi/",
+  "customer": "MIXI",
+  "pageTitle": "MIXI reimagines communication with ChatGPT",
+  "date": "2025-08",
+  "industry": "Media and advertising",
+  "theme": "Adoption",
+  "title": "MIXI · ChatGPT Enterprise in 45 days",
+  "problem": "MIXI had subsidized ChatGPT Plus for over 1,000 employees, but had inconsistent data settings and unclear rules for company data.",
+  "approach": "MIXI worked with OpenAI's Customer Success team to roll out ChatGPT Enterprise company-wide, using mitigation playbooks, ChatGPT 101 sessions, a new-hire workshop and an Agents SDK hackathon.",
+  "result": "MIXI reports a 45-day rollout, over 80% of employees active weekly within three months, more than 1,600 GPTs, and investment review time cut from 1 to 2 hours to 5 to 10 minutes.",
+  "limit": "The figures are company-reported with no sampling or quality check, and 'cut work hours by over 90%' applies to selected projects only.",
+  "question": "A review that drops from hours to minutes may skip steps; what quality check would you add to the investment review GPT?",
+  "why": "Japanese entertainment company rolls out ChatGPT Enterprise quickly and reports usage and time savings.",
+  "evidence": [
+   "MIXI finished in 45 days thanks to a tight partnership",
+   "over 80% of employees became active weekly users within three months, creating more than 1,600 GPTs",
+   "Previously, evaluating a single investment took between 1 to 2 hours",
+   "shortened that time to just 5 to 10 minutes"
+  ]
+ },
+ {
   "id": "C400",
   "sourceId": "oai-model-ml",
   "vendor": "OpenAI",
@@ -8168,6 +8968,122 @@
   "evidence": [
    "adopted by more than 80% of employees across the company",
    "which now has 2,000 active weekly participants."
+  ]
+ },
+ {
+  "id": "C493",
+  "sourceId": "oai-mufg",
+  "vendor": "OpenAI",
+  "slug": "mufg",
+  "url": "https://openai.com/index/mufg/",
+  "customer": "MUFG",
+  "pageTitle": "MUFG aims to become AI-native with OpenAI",
+  "date": "2026-07",
+  "industry": "Financial services",
+  "theme": "Adoption",
+  "title": "MUFG · Bank-wide ChatGPT Enterprise rollout",
+  "problem": "MUFG wanted employees at Mitsubishi UFJ Bank to use AI daily, but staff did not know how or whether they were allowed to use it, and the bank needed governance and security controls.",
+  "approach": "The bank began a phased ChatGPT Enterprise rollout to about 35,000 employees, with mandatory e-learning, custom GPT training, department AI champions and OpenAI help on security requirements.",
+  "result": "MUFG reports 100% training participation among account recipients, more than 1,800 custom GPTs created in four months, and a 20-30% workload reduction in selected research tasks.",
+  "limit": "The workload reduction is self-reported by employees for selected research tasks only, with no baseline method, and 'early signs' are the page's own framing.",
+  "question": "What does mandatory training before access trade off against speed of adoption, and how would you measure whether it created the positive cycle MUFG describes?",
+  "why": "Japanese bank rolls out ChatGPT Enterprise with mandatory training and champions.",
+  "evidence": [
+   "Training participation among employees receiving accounts reached 100%",
+   "employees created more than 1,800 custom GPTs in four months",
+   "employees reported a 20-30% reduction in workload"
+  ]
+ },
+ {
+  "id": "C494",
+  "sourceId": "oai-netomi",
+  "vendor": "OpenAI",
+  "slug": "netomi",
+  "url": "https://openai.com/index/netomi/",
+  "customer": "Netomi",
+  "pageTitle": "Netomi’s lessons for scaling agentic systems into the enterprise",
+  "date": "2026-01",
+  "industry": "Software and internet",
+  "theme": "Architecture",
+  "title": "Netomi · Governed agents for enterprise support",
+  "problem": "Enterprise customer support spans booking, loyalty, payments and policy systems, with incomplete data and traffic spikes, so agents must be fast, predictable and safe.",
+  "approach": "Netomi pairs GPT-4.1 for low-latency tool use with GPT-5.2 for multi-step planning inside a governed runtime with schema validation, policy checks, PII masking, deterministic fallback and parallelized execution.",
+  "result": "Netomi reports sustained sub-three-second responses with 98% intent classification accuracy during DraftKings traffic spikes above 40,000 concurrent customer requests per second.",
+  "limit": "The metrics are vendor-reported for one customer's peak events, with no definition of how intent accuracy was measured or what share of requests resolved correctly.",
+  "question": "Intent classification accuracy is not resolution accuracy; which end-to-end metric would you request to know customers actually got the right outcome?",
+  "why": "Support automation startup describes governed agent architecture and peak-load metrics.",
+  "evidence": [
+   "Maintained 98% intent classification accuracy at scale",
+   "Handled traffic spikes exceeding 40,000 concurrent customer requests per second"
+  ]
+ },
+ {
+  "id": "C495",
+  "sourceId": "oai-neurogum",
+  "vendor": "OpenAI",
+  "slug": "neurogum",
+  "url": "https://openai.com/index/neurogum/",
+  "customer": "Neuro",
+  "pageTitle": "Neuro drives national retail wins with ChatGPT Business",
+  "date": "2025-11",
+  "industry": "Retail and consumer goods",
+  "theme": "Adoption",
+  "title": "Neuro · ChatGPT Business at a lean CPG brand",
+  "problem": "Neuro, a gum and mints brand with fewer than seventy people, needed to cover legal, marketing, data and finance work without a specialist for each area.",
+  "approach": "The team uses ChatGPT Business to draft and stress-test contracts before counsel, analyze customer reviews and ad reports, reframe product messaging, and run deep research on finance questions.",
+  "result": "Neuro says ChatGPT helped it show CVS that TikTok virality drove sales, securing premium checkout placement in every U.S. store, and its co-founder says he feels about fifty percent more efficient but finds it hard to quantify.",
+  "limit": "The efficiency figure is a founder's self-assessment, legal savings are stated as tens of thousands without detail, and the link between ChatGPT use and the CVS placement is asserted by the company.",
+  "question": "What evidence would you ask a small brand for before crediting an AI tool with a retail placement win rather than the underlying TikTok sales data?",
+  "why": "Consumer brand describes ChatGPT use across legal, marketing and analysis.",
+  "evidence": [
+   "securing upcoming premium checkout placement in every U.S. store",
+   "hard to quantify, but I feel fifty percent more efficient"
+  ]
+ },
+ {
+  "id": "C496",
+  "sourceId": "oai-nextdoor",
+  "vendor": "OpenAI",
+  "slug": "nextdoor",
+  "url": "https://openai.com/index/nextdoor/",
+  "customer": "Nextdoor",
+  "pageTitle": "How engineers at Nextdoor use Codex to build without limits",
+  "date": "2026-06",
+  "industry": "Software and internet",
+  "theme": "Delivery",
+  "title": "Nextdoor · Codex on the core platform team",
+  "problem": "Nextdoor's platform team serves over 110 million users, and features spanning mobile, frontend and backend usually needed several teams and could stall in the backlog.",
+  "approach": "Engineers use Codex with a clean environment and investigation harness to debug hard issues, and to build features end to end, working toward an outcome rather than prompting step by step.",
+  "result": "Nextdoor says one engineer built a service-provider map feature end to end that historically needed several teams, and its head of engineering says bottlenecks have moved from engineering to deciding what to build.",
+  "limit": "The page gives no time, cost or quality numbers; the results are one example and executive statements.",
+  "question": "If engineering stops being the bottleneck, what upstream process would you check first to make sure the faster output is the right output?",
+  "why": "Social platform describes Codex use on its core platform team.",
+  "evidence": [
+   "we were able to have one engineer build it end to end",
+   "the bottlenecks are no longer in engineering"
+  ]
+ },
+ {
+  "id": "C497",
+  "sourceId": "oai-notion",
+  "vendor": "OpenAI",
+  "slug": "notion",
+  "url": "https://openai.com/index/notion/",
+  "customer": "Notion",
+  "pageTitle": "What Codex unlocks for Notion",
+  "date": "2026-06",
+  "industry": "Software and internet",
+  "theme": "Delivery",
+  "title": "Notion · Codex for AI voice input on web",
+  "problem": "Notion's mobile app had AI voice input but the web and desktop clients did not, and engineers were limited by meetings and peer support to one task at a time.",
+  "approach": "An engineer pointed Codex at the mobile codebase, described the web behavior, and supplied a way to verify the result. Codex produced a first implementation in one pass, and the team now hands it spec documents and runs tasks in parallel.",
+  "result": "Notion's Ryan Nystrom says the web voice input feature took maybe three or four hours alone with Codex, against an estimate of two weeks for him and another engineer two years ago.",
+  "limit": "The comparison is one engineer's recollection of a past estimate for a single feature, with no measured baseline or quality data.",
+  "question": "What verification harness would you give a coding agent so that a one-shot implementation can be trusted to ship the next day?",
+  "why": "Productivity software maker describes one feature built with Codex.",
+  "evidence": [
+   "this is a project that would've taken me and maybe another engineer two weeks",
+   "With Codex, I was able to build this in maybe three or four hours, entirely by myself."
   ]
  },
  {
@@ -8216,6 +9132,28 @@
   ]
  },
  {
+  "id": "C498",
+  "sourceId": "oai-nvidia",
+  "vendor": "OpenAI",
+  "slug": "nvidia",
+  "url": "https://openai.com/index/nvidia/",
+  "customer": "NVIDIA",
+  "pageTitle": "How NVIDIA engineers and researchers build with Codex",
+  "date": "2026-05",
+  "industry": "Software and internet",
+  "theme": "Delivery",
+  "title": "NVIDIA · Codex for engineering and research",
+  "problem": "NVIDIA engineers needed help with complex production engineering, and researchers spent time on the manual steps of running machine learning experiments on remote machines.",
+  "approach": "Engineers use Codex with GPT-5.5 as a default tool for complex tasks, and researchers use it as a research agent that reads papers, writes experiment scripts and runs them on remote hosts over SSH.",
+  "result": "An NVIDIA AI researcher reports a 10x speed improvement just in terms of running experiments because Codex handles the end-to-end machine learning research workflow.",
+  "limit": "The 10x claim is one researcher's quote with no baseline or measurement method, and the page reports no results from the production-system work beyond anecdotes.",
+  "question": "If a researcher says an agent made experiments 10x faster, which part of the workflow (setup, scripting, waiting on compute, analysis) would you time first to confirm it?",
+  "why": "Chip company engineers and researchers describe Codex use with a speed claim.",
+  "evidence": [
+   "10x speed improvement just in terms of running experiments"
+  ]
+ },
+ {
   "id": "C404",
   "sourceId": "oai-nvidia-chatgpt-work",
   "vendor": "OpenAI",
@@ -8236,6 +9174,28 @@
   "evidence": [
    "Across the 12-week GTC planning cycle, the workflow saves about 16 hours per week.",
    "manual analysis consumed about 40% of his time"
+  ]
+ },
+ {
+  "id": "C499",
+  "sourceId": "oai-omio",
+  "vendor": "OpenAI",
+  "slug": "omio",
+  "url": "https://openai.com/index/omio/",
+  "customer": "Omio",
+  "pageTitle": "How Omio is building the future of conversational travel",
+  "date": "2026-06",
+  "industry": "Travel and hospitality",
+  "theme": "Productization",
+  "title": "Omio · Conversational travel and Codex",
+  "problem": "Omio, a multimodal travel platform, wanted travelers to describe a trip and get bookable journeys, and wanted to speed up internal product development.",
+  "approach": "Omio connected OpenAI models to live transportation inventory and pricing for a ChatGPT travel experience, and rolled out ChatGPT then Codex across engineering and some business functions.",
+  "result": "Omio estimates that many products can now be built in roughly 20% of the time previously required, with projects once needing several developers a quarter now done by one developer in about a month.",
+  "limit": "The 20% figure is Omio's own estimate with no baseline project or measurement method, and no traveler-facing results such as bookings are reported.",
+  "question": "If a team says development now takes 20% of the previous effort, which metrics would you ask for to separate real speed-up from scope or quality changes?",
+  "why": "Travel platform builds ChatGPT travel experience and reports faster development with Codex.",
+  "evidence": [
+   "Omio estimates that many products can now be built in roughly 20% of the time previously required"
   ]
  },
  {
@@ -8375,6 +9335,28 @@
   ]
  },
  {
+  "id": "C500",
+  "sourceId": "oai-parloa",
+  "vendor": "OpenAI",
+  "slug": "parloa",
+  "url": "https://openai.com/index/parloa/",
+  "customer": "Parloa",
+  "pageTitle": "Parloa builds service agents customers want to talk to",
+  "date": "2026-05",
+  "industry": "Software and internet",
+  "theme": "Evaluation",
+  "title": "Parloa · Simulation and evaluation for voice agents",
+  "problem": "Parloa's enterprise customers need voice customer service agents that behave consistently in production, and rigid intent trees were hard to maintain.",
+  "approach": "Parloa's Agent Management Platform lets business experts define agents in natural language, simulates callers with OpenAI models, scores conversations with deterministic checks and LLM-as-a-judge, and benchmarks each new model on real scenarios before deploying.",
+  "result": "Parloa says in one deployment a global travel company reduced requests for a human agent by 80%.",
+  "limit": "The single 80% figure comes from one unnamed deployment with no baseline period or definition of how requests were counted, and no accuracy, latency or cost numbers are given.",
+  "question": "What would you check to be sure a drop in human-agent requests means callers were served well rather than that they gave up?",
+  "why": "Voice agent startup describes simulation-based evaluation and one deployment result.",
+  "evidence": [
+   "a global travel company reduced requests for a human agent by 80%"
+  ]
+ },
+ {
   "id": "C411",
   "sourceId": "oai-perplexity-improving-accuracy-with-astra",
   "vendor": "OpenAI",
@@ -8394,6 +9376,28 @@
   "why": "Perplexity uses GPT-6 Astra to test applications end to end.",
   "evidence": [
    "trust it with full end-to-end systems and check in on it much less frequently"
+  ]
+ },
+ {
+  "id": "C501",
+  "sourceId": "oai-philips",
+  "vendor": "OpenAI",
+  "slug": "philips",
+  "url": "https://openai.com/index/philips/",
+  "customer": "Philips",
+  "pageTitle": "How Philips is scaling AI literacy across 70,000 employees",
+  "date": "2025-11",
+  "industry": "Healthcare and life sciences",
+  "theme": "Adoption",
+  "title": "Philips · AI literacy across the company",
+  "problem": "Philips had AI embedded in products for years, but wanted every employee, not only specialist teams, to use AI confidently in a regulated health setting.",
+  "approach": "Philips trained executives hands-on first, ran a company-wide challenge to collect use cases, provided ChatGPT Enterprise, and started with low-risk internal workflows under formal responsible AI principles.",
+  "result": "Philips reports expanding AI literacy and hands-on use, with executive leadership trained directly, but gives no quantified results.",
+  "limit": "The page lists qualitative results only, with no usage, time-saved or outcome numbers, and the clinician time-back goal is stated as a priority rather than achieved.",
+  "question": "Philips moves from low-risk internal workflows toward clinical ones; what evidence would you want before AI touches patient-impacting work?",
+  "why": "Health technology company describes AI literacy program without metrics.",
+  "evidence": [
+   "Executive leadership trained directly, modeling the change"
   ]
  },
  {
@@ -8417,6 +9421,53 @@
   "evidence": [
    "Playco cut manual fixes 50% prototyping games with GPT‑6 Astra",
    "Playco says GPT‑6 Astra produced all three in one go"
+  ]
+ },
+ {
+  "id": "C502",
+  "sourceId": "oai-plex-coffee",
+  "vendor": "OpenAI",
+  "slug": "plex-coffee",
+  "url": "https://openai.com/index/plex-coffee/",
+  "customer": "Plex Coffee",
+  "pageTitle": "Plex Coffee delivers fast, personal service with ChatGPT",
+  "date": "2025-10",
+  "industry": "Retail and consumer goods",
+  "theme": "Delivery",
+  "title": "Plex Coffee · Knowledge sharing and onboarding GPTs",
+  "problem": "As Plex grew from one café to four, routine questions flooded WhatsApp groups and a 25-page handbook failed to standardize new-hire training.",
+  "approach": "Plex connected its Notion wiki to ChatGPT Business so staff ask questions in natural language, and turned the handbook into a custom GPT shared in onboarding emails that teaches values and technical details conversationally.",
+  "result": "Plex reports onboarding time reduced from weeks to days and WhatsApp messages on certain issues cut by over 50%.",
+  "limit": "Both figures are the co-founder's statements for a four-café business, with no measurement method, and the sample is small.",
+  "question": "For a small chain, how would you measure the effect of a handbook GPT on new-hire performance rather than only on onboarding time?",
+  "why": "Coffee chain reports faster onboarding and fewer chat questions with ChatGPT.",
+  "evidence": [
+   "Onboarding time has gone from weeks to days",
+   "cut down our WhatsApp messages on certain issues by over 50%"
+  ]
+ },
+ {
+  "id": "C503",
+  "sourceId": "oai-podium",
+  "vendor": "OpenAI",
+  "slug": "podium",
+  "url": "https://openai.com/index/podium/",
+  "customer": "Podium",
+  "pageTitle": "How Podium is arming 10,000+ SMBs with AI agents",
+  "date": "2025-12",
+  "industry": "Software and internet",
+  "theme": "Productization",
+  "title": "Podium · AI agents for local businesses",
+  "problem": "Local businesses lose revenue when leads arrive after hours or replies are slow, and each business has its own services, tone and policies.",
+  "approach": "Podium built Jerry, an AI agent on GPT-5.1 that captures leads, schedules and follows up across channels, with vertical baselines, plain-language tuning by owners, human escalation and release evaluations on production-like scenarios.",
+  "result": "Podium reports 300% year-over-year AI revenue growth, its model choice winning 65.4% of head-to-head evaluations with 41% lower cost per conversation and 39% faster responses, and one auto group's after-hours bookings up 80%.",
+  "limit": "The growth, evaluation and customer figures are Podium's own with no baselines or sample sizes, and the 80% booking gain comes from a single unnamed auto group.",
+  "question": "Podium evaluates for conversion rather than correctness; what would be your first guard against an agent that books more jobs by over-promising?",
+  "why": "SMB software maker builds sales agents and reports revenue and evaluation results.",
+  "evidence": [
+   "seen 300% year-over-year AI revenue growth",
+   "won the majority at 65.4%, delivered 41% lower cost per conversation, and responded 39% faster than competitors",
+   "A large midwestern auto group saw after-hours bookings grow 80%"
   ]
  },
  {
@@ -8462,6 +9513,52 @@
   "evidence": [
    "Now, 30% of creator sessions start from these templates or trending-format workflows",
    "Today, Pollo AI serves more than 26 million users"
+  ]
+ },
+ {
+  "id": "C504",
+  "sourceId": "oai-praktika",
+  "vendor": "OpenAI",
+  "slug": "praktika",
+  "url": "https://openai.com/index/praktika/",
+  "customer": "Praktika",
+  "pageTitle": "Inside Praktika's conversational approach to language learning",
+  "date": "2026-01",
+  "industry": "Education",
+  "theme": "Architecture",
+  "title": "Praktika · Multi-agent AI tutor",
+  "problem": "Traditional language classes left the founders able to read and write but not to speak confidently, and Praktika wanted AI tutors that adapt lessons in real time.",
+  "approach": "Praktika built a multi-agent tutor with a lesson agent, a student progress agent and a learning planning agent sharing a persistent memory layer, using OpenAI models selected through internal evaluations on retention and conversion.",
+  "result": "Praktika reports a 24% increase in Day-1 retention and doubled revenue within a few months after introducing its long-term memory system.",
+  "limit": "The figures are company-reported with no baseline period or test design, and revenue growth is attributed to the memory system without isolating other changes.",
+  "question": "Praktika credits memory for a retention gain; how would you run an experiment to separate memory's effect from model upgrades released at the same time?",
+  "why": "Language learning app builds a multi-agent tutor and reports retention gains.",
+  "evidence": [
+   "Praktika saw a 24% increase in Day-1 retention and doubled revenue in just a few months"
+  ]
+ },
+ {
+  "id": "C505",
+  "sourceId": "oai-preply",
+  "vendor": "OpenAI",
+  "slug": "preply",
+  "url": "https://openai.com/index/preply/",
+  "customer": "Preply",
+  "pageTitle": "How Preply combines AI and human tutors to personalize learning",
+  "date": "2026-06",
+  "industry": "Education",
+  "theme": "Productization",
+  "title": "Preply · Lesson Insights for tutors",
+  "problem": "Preply tutors spend time on repetitive lesson notes and plans, while students want a clearer sense of progress to stay engaged.",
+  "approach": "Preply built Lesson Insights on the OpenAI API: lessons are recorded with consent, transcribed, and analyzed to produce feedback on grammar, vocabulary and pronunciation plus inputs for personalized homework.",
+  "result": "Preply reports 75% of English-language learners actively use Lesson Insights, a 4.7/5 satisfaction rating from more than 300k ratings, and 95% weekly ChatGPT usage among its employees.",
+  "limit": "Results are company-reported usage and satisfaction figures; there are no learning outcome measures, and the retention benefit is stated qualitatively without numbers.",
+  "question": "Which learner outcome metric would show that Lesson Insights improves learning rather than just engagement, and how would you collect it?",
+  "why": "Language marketplace builds AI lesson summaries and reports usage and satisfaction.",
+  "evidence": [
+   "75% of English-language learners actively use Lesson Insights, powered by OpenAI APIs",
+   "4.7/5 satisfaction rating among tutors and students, from more than 300k ratings received directly on the platform",
+   "95% ChatGPT weekly active usage among Preply employees"
   ]
  },
  {
@@ -8556,6 +9653,29 @@
   ]
  },
  {
+  "id": "C506",
+  "sourceId": "oai-rakuten",
+  "vendor": "OpenAI",
+  "slug": "rakuten",
+  "url": "https://openai.com/index/rakuten/",
+  "customer": "Rakuten",
+  "pageTitle": "Rakuten fixes issues twice as fast with Codex",
+  "date": "2026-03",
+  "industry": "Retail and consumer goods",
+  "theme": "Delivery",
+  "title": "Rakuten · Codex for incident response and builds",
+  "problem": "Rakuten's engineering teams ship across a large product ecosystem where both speed and reliability matter, including faster recovery when issues occur.",
+  "approach": "Engineers use Codex alongside KQL-based monitoring to find root causes, in CI/CD for code review and vulnerability checks using internal standards, and to build larger projects from partial specifications.",
+  "result": "Rakuten estimates MTTR falls by approximately 50% with this approach, and says Codex cut the development time of one mobile app project from one quarter to weeks.",
+  "limit": "The MTTR figure is Rakuten's own estimate with no incident sample or baseline period, and the project speed-up is a single example.",
+  "question": "How would you separate Codex's effect on mean time to recovery from changes in incident mix or on-call process over the same period?",
+  "why": "E-commerce group estimates faster incident recovery with Codex.",
+  "evidence": [
+   "Rakuten estimates this approach can reduce MTTR by approximately 50% when issues occur",
+   "Codex cut the development time for this project from one quarter to weeks"
+  ]
+ },
+ {
   "id": "C419",
   "sourceId": "oai-rakuten-2024",
   "vendor": "OpenAI",
@@ -8575,6 +9695,28 @@
   "why": "Rakuten applies RAG to support tickets and reviews with security as a priority.",
   "evidence": [
    "This innovation has significantly improved response times and efficiency."
+  ]
+ },
+ {
+  "id": "C507",
+  "sourceId": "oai-ramp",
+  "vendor": "OpenAI",
+  "slug": "ramp",
+  "url": "https://openai.com/index/ramp/",
+  "customer": "Ramp",
+  "pageTitle": "How Ramp engineers accelerate code review with Codex",
+  "date": "2026-05",
+  "industry": "Financial services",
+  "theme": "Delivery",
+  "title": "Ramp · Codex code review and On-Call Assistant",
+  "problem": "Ramp engineers waited hours for a first code review, and on-call rotations demand heavy context and reasoning across a large product surface.",
+  "approach": "Ramp's AI developer experience team uses Codex with GPT-5.5 for pull request review and to help build On-Call Assistant, an agentic tool for engineers on call.",
+  "result": "Ramp says engineers get substantive pull request feedback from Codex in minutes instead of hours, and that On-Call Assistant became significantly faster to build.",
+  "limit": "The page gives no measured review times, defect rates or adoption numbers; the claims come from the engineer leading the effort.",
+  "question": "What would you compare to know whether AI code review catches issues that human reviewers miss, rather than only returning feedback faster?",
+  "why": "Fintech reports faster AI code review and an on-call agent.",
+  "evidence": [
+   "helping teams get substantive pull request feedback in minutes instead of hours"
   ]
  },
  {
@@ -8762,6 +9904,30 @@
   ]
  },
  {
+  "id": "C508",
+  "sourceId": "oai-safetykit",
+  "vendor": "OpenAI",
+  "slug": "safetykit",
+  "url": "https://openai.com/index/safetykit/",
+  "customer": "SafetyKit",
+  "pageTitle": "SafetyKit scales risk agents with OpenAI’s most capable models",
+  "date": "2025-09",
+  "industry": "Software and internet",
+  "theme": "Productization",
+  "title": "SafetyKit · Multimodal content risk agents",
+  "problem": "Marketplaces and payment platforms must detect fraud and prohibited content across text, images and listings, and legacy keyword or rule systems miss subtle policy cases.",
+  "approach": "SafetyKit builds agents per risk category that route each item to the best-fit OpenAI model, uses reinforcement fine-tuning and deep research, and benchmarks every new model release on its hardest cases.",
+  "result": "SafetyKit reports 95%+ accuracy reviewing 100% of customer content by its own evals, 16B tokens processed daily up from 200M in six months, and 10+ point gains on its hardest vision tasks.",
+  "limit": "Accuracy comes from SafetyKit's own evals with no public test set, and token volume measures usage rather than outcomes.",
+  "question": "What would make you trust a vendor's 95%+ accuracy claim for content review, and which categories would you spot-check yourself?",
+  "why": "Trust and safety startup reports accuracy and volume from model-matched agents.",
+  "evidence": [
+   "95%+ accuracy reviewing 100% of customer content",
+   "16B tokens processed daily, up from 200M in six months",
+   "10+ point benchmark gains on hardest vision tasks"
+  ]
+ },
+ {
   "id": "C428",
   "sourceId": "oai-salesforce",
   "vendor": "OpenAI",
@@ -8808,6 +9974,97 @@
   ]
  },
  {
+  "id": "C509",
+  "sourceId": "oai-scania",
+  "vendor": "OpenAI",
+  "slug": "scania",
+  "url": "https://openai.com/index/scania/",
+  "customer": "Scania",
+  "pageTitle": "How Scania accelerates work with AI across its global workforce",
+  "date": "2025-11",
+  "industry": "Automotive",
+  "theme": "Adoption",
+  "title": "Scania · Team-based ChatGPT Enterprise rollout",
+  "problem": "Scania, an engineering-led truck and bus maker, wanted to let teams across engineering and operations explore AI with governance that supported experimentation.",
+  "approach": "Scania made ChatGPT Enterprise licences widely available, built guardrails with legal and security from day one, and onboarded whole teams together rather than individuals, integrating AI into lean processes.",
+  "result": "Scania reports strong bottom-up demand and fast early gains in productivity, quality and operational workflows, with no figures given.",
+  "limit": "The page gives no numbers; the gains are stated qualitatively and the CIO's quote is the only evidence.",
+  "question": "Team-based onboarding is Scania's choice over individual training; what would you measure to know whether it actually produced lasting capability?",
+  "why": "Truck maker describes team-based ChatGPT rollout without metrics.",
+  "evidence": [
+   "Fast early gains in productivity, quality, and operational workflows"
+  ]
+ },
+ {
+  "id": "C510",
+  "sourceId": "oai-schoolai",
+  "vendor": "OpenAI",
+  "slug": "schoolai",
+  "url": "https://openai.com/index/schoolai/",
+  "customer": "SchoolAI",
+  "pageTitle": "SchoolAI builds an AI platform that empowers teachers",
+  "date": "2025-09",
+  "industry": "Education",
+  "theme": "Productization",
+  "title": "SchoolAI · Teacher-in-the-loop classroom platform",
+  "problem": "Teachers cannot keep up with every student's needs, and AI tools that hand students answers or lack oversight raise cheating and safety concerns.",
+  "approach": "SchoolAI built a platform where teachers create lessons through the Dot assistant, students use the Sidekick tutor, every interaction is observable, and requests run through an agent graph that routes to different OpenAI models and guardrails.",
+  "result": "SchoolAI reports it reached 1 million classrooms across 80+ countries with over 500 education partnerships, and that teachers report saving 10+ hours a week.",
+  "limit": "Reach counts are company-reported, the teacher time savings are anecdotal reports without a survey size, and no learning outcomes are given.",
+  "question": "The tutor is designed not to give answers; how would you test whether students actually learn more rather than just stay engaged longer?",
+  "why": "Education startup reports reach and teacher time savings from an observable AI platform.",
+  "evidence": [
+   "Reached 1 million classrooms across 80+ countries",
+   "Embedded in over 500 education partnerships",
+   "Teachers report saving 10+ hours a week"
+  ]
+ },
+ {
+  "id": "C511",
+  "sourceId": "oai-scout24",
+  "vendor": "OpenAI",
+  "slug": "scout24",
+  "url": "https://openai.com/index/scout24/",
+  "customer": "Scout24",
+  "pageTitle": "How Scout24 is building the next generation of real-estate search with AI",
+  "date": "2025-12",
+  "industry": "Software and internet",
+  "theme": "Evaluation",
+  "title": "Scout24 · HeyImmo conversational search assistant",
+  "problem": "Scout24 found that users of its real-estate platform wanted guidance as well as better search results, and needed answer quality they could trust before launch.",
+  "approach": "The team simplified an early multi-agent idea into function calling and focused components, built a custom eval system inspired by the OpenAI Evals framework, and ran company-wide testing to stress-test edge cases.",
+  "result": "Scout24 says it built a conversational search assistant, HeyImmo, and delayed launch once to meet its defined quality bar, but reports no outcome metrics.",
+  "limit": "The page reports process and lessons only, with no user, quality or business figures.",
+  "question": "What did Scout24 gain by delaying launch to meet a defined quality bar, and how would you explain that trade-off to a client under schedule pressure?",
+  "why": "Real-estate platform describes an eval-driven conversational search assistant.",
+  "evidence": [
+   "The company delayed launch once to ensure the experience met the bar they had defined.",
+   "Custom eval system built on the OpenAI Evals framework to define and measure answer quality"
+  ]
+ },
+ {
+  "id": "C512",
+  "sourceId": "oai-sea-david-chen",
+  "vendor": "OpenAI",
+  "slug": "sea-david-chen",
+  "url": "https://openai.com/index/sea-david-chen/",
+  "customer": "Sea",
+  "pageTitle": "Sea's View on the Future of Agentic Software Development with Codex",
+  "date": "2026-05",
+  "industry": "Software and internet",
+  "theme": "Adoption",
+  "title": "Sea · Codex rollout across developers",
+  "problem": "Sea's engineering teams run large microservice systems across fragmented Southeast Asian markets, where tracing dependencies and legacy logic slows developers.",
+  "approach": "Sea is rolling out Codex across its developer organization, with agents increasingly running inside CI/CD pipelines for requirements reasoning, test-driven implementations and debugging, and is hosting a regional Codex hackathon series.",
+  "result": "Sea reports internal data showing 87% of Codex users are weekly active users.",
+  "limit": "This is an executive interview with one usage figure; there are no productivity, quality or delivery outcome numbers.",
+  "question": "Weekly active use is an adoption measure only; what delivery metric would you ask Sea for to show Codex changed engineering outcomes?",
+  "why": "Tech conglomerate executive discusses Codex rollout with one usage metric.",
+  "evidence": [
+   "with our internal data showing 87% of users are weekly active users"
+  ]
+ },
+ {
   "id": "C430",
   "sourceId": "oai-sentinelone",
   "vendor": "OpenAI",
@@ -8828,6 +10085,53 @@
   "evidence": [
    "would’ve taken a top-flight researcher four or six weeks to do",
    "AI is now doing at human-level output in something like eight hours"
+  ]
+ },
+ {
+  "id": "C513",
+  "sourceId": "oai-simplex",
+  "vendor": "OpenAI",
+  "slug": "simplex",
+  "url": "https://openai.com/index/simplex/",
+  "customer": "Simplex",
+  "pageTitle": "Simplex rethinks software development with Codex",
+  "date": "2026-05",
+  "industry": "Software and internet",
+  "theme": "Evaluation",
+  "title": "Simplex · Measured Codex gains per screen",
+  "problem": "Simplex, a consulting and systems development partner, wanted to quantify whether AI-driven development improves productivity before expanding it across projects.",
+  "approach": "The company adopted ChatGPT Enterprise and chose Codex as its main coding agent, using it for code generation from design documents, unit tests, review and fixes during integration testing, and measured effort on CRUD-based web applications.",
+  "result": "Simplex reports 40% fewer hours to design each screen, 70% fewer hours to develop each screen, and 17% fewer hours for internal integration testing.",
+  "limit": "Results come from an initial use case of CRUD-based web applications, the page notes results may vary, and it gives no sample size or measurement method.",
+  "question": "Gains were measured on CRUD web screens; how would you test whether they carry over to systems with more complex logic before promising them to a client?",
+  "why": "IT services firm quantifies Codex time savings on web screen development.",
+  "evidence": [
+   "40% fewer hours to design each screen",
+   "70% fewer hours to develop each screen",
+   "17% fewer hours for internal integration testing"
+  ]
+ },
+ {
+  "id": "C514",
+  "sourceId": "oai-singular-bank",
+  "vendor": "OpenAI",
+  "slug": "singular-bank",
+  "url": "https://openai.com/index/singular-bank/",
+  "customer": "Singular Bank",
+  "pageTitle": "Singular Bank helps bankers move fast with ChatGPT and Codex",
+  "date": "2026-05",
+  "industry": "Financial services",
+  "theme": "Delivery",
+  "title": "Singular Bank · Singularity banker assistant",
+  "problem": "Before Singularity, bankers pulled positions across systems and reconciled data by hand to prepare each client meeting.",
+  "approach": "Singular Bank built Singularity, an internal assistant powered by ChatGPT and Codex and integrated with core systems, that flags portfolio risks, recommends actions, and drafts follow-up communications from approved data sources.",
+  "result": "Singular Bank reports bankers save 60 to 90 minutes per day, with meeting preparation dropping from about 20 minutes to under 1 minute.",
+  "limit": "Time figures are bank-reported averages with no stated sample or measurement method, and recommendation quality and compliance review results are not given.",
+  "question": "Meeting prep fell to under a minute; what review step would you add so a banker still checks the portfolio flags before advising a client?",
+  "why": "Private bank builds an internal assistant and reports banker time savings.",
+  "evidence": [
+   "Across the team, bankers are saving 60 to 90 minutes per day with Singularity",
+   "Meeting preparation: ~20 minutes → under 1 minute"
   ]
  },
  {
@@ -8876,6 +10180,31 @@
   ]
  },
  {
+  "id": "C515",
+  "sourceId": "oai-stadler",
+  "vendor": "OpenAI",
+  "slug": "stadler",
+  "url": "https://openai.com/index/stadler/",
+  "customer": "STADLER",
+  "pageTitle": "STADLER reshapes knowledge work at a 230-year-old company",
+  "date": "2026-03",
+  "industry": "Manufacturing and industrial",
+  "theme": "Adoption",
+  "title": "STADLER · ChatGPT across 650 employees",
+  "problem": "STADLER staff spent too much time turning raw knowledge into usable output through summarizing, translating and drafting.",
+  "approach": "The company gave employees company-wide ChatGPT access with training and guardrails, combining leadership support with bottom-up experiments and custom GPTs for translation, email and process documentation.",
+  "result": "STADLER reports 30-40% time savings on common knowledge tasks, 2.5x faster time to first draft, more than 85% daily active usage, and more than 125 custom GPTs created.",
+  "limit": "The time savings are company-reported averages with no measurement method or sample, and quality gains are described without numbers.",
+  "question": "If time to first draft falls 2.5x, how would you check that review and rewriting time did not eat the gain?",
+  "why": "Industrial equipment maker reports ChatGPT time savings and usage.",
+  "evidence": [
+   "30-40% time savings on common knowledge tasks such as summarizing and documentation",
+   "2.5x faster time to first draft on average, with up to 6x acceleration in high-volume use cases like social media",
+   ">85% daily active usage, with employees engaging multiple times per day",
+   "STADLER has created more than 125 custom GPTs"
+  ]
+ },
+ {
   "id": "C433",
   "sourceId": "oai-stampli",
   "vendor": "OpenAI",
@@ -8919,6 +10248,30 @@
   "evidence": [
    "The program’s success led to a full rollout in July, just four months after the beta launch",
    "What once took weeks to complete can now be done in under 48 hours"
+  ]
+ },
+ {
+  "id": "C516",
+  "sourceId": "oai-steuerrecht",
+  "vendor": "OpenAI",
+  "slug": "steuerrecht",
+  "url": "https://openai.com/index/steuerrecht/",
+  "customer": "Steuerrecht.com",
+  "pageTitle": "Steuerrecht.com delivers client-ready legal analysis with ChatGPT",
+  "date": "2025-10",
+  "industry": "Professional services",
+  "theme": "Delivery",
+  "title": "Steuerrecht.com · ChatGPT Business for a boutique firm",
+  "problem": "A ten-person tax law boutique competes with larger firms and lacked the bandwidth for routine contracts, research and visibility work.",
+  "approach": "The firm adopted ChatGPT Business, with custom GPTs for contracts, connected internal text modules, research and counter-argument drafting, and firm-wide prompting sessions, chosen partly for GDPR compliance and no training on customer data.",
+  "result": "The founder says he saves up to ten hours of work per week, routine contracts take minutes instead of hours, and some court submissions are drafted in about ten minutes before legal review.",
+  "limit": "The time savings come from the founder's own estimates with no measurement, and the review time spent on AI drafts is not counted.",
+  "question": "If routine drafting drops from hours to minutes, how would you check that the legal review step still catches errors in the AI-drafted text?",
+  "why": "Tax law boutique reports time savings from ChatGPT Business.",
+  "evidence": [
+   "I personally save up to ten hours of work per week thanks to ChatGPT",
+   "Routine contracts generated in minutes instead of hours",
+   "is often reduced to ten minutes before a final legal review"
   ]
  },
  {
@@ -9012,6 +10365,28 @@
    "More than 85% of Superhuman’s users are opting in to the new GPT‑powered features.",
    "this number has grown 55% since launch",
    "In beta, users were writing emails twice as fast as before"
+  ]
+ },
+ {
+  "id": "C517",
+  "sourceId": "oai-taisei",
+  "vendor": "OpenAI",
+  "slug": "taisei",
+  "url": "https://openai.com/index/taisei/",
+  "customer": "Taisei Corporation",
+  "pageTitle": "Taisei Corporation shapes the next generation of talent with AI",
+  "date": "2026-01",
+  "industry": "Manufacturing and industrial",
+  "theme": "Adoption",
+  "title": "Taisei · HR-led ChatGPT Enterprise rollout",
+  "problem": "Taisei, a construction company, wanted AI to support people development as well as efficiency, and needed safe handling of information across the organization.",
+  "approach": "Taisei's HR team led a ChatGPT Enterprise rollout using a Middle Out approach that combined leadership direction with front-line training, events, communities of practice and hackathons, with access controls, usage logs and monitoring.",
+  "result": "Taisei reports strong weekly adoption, substantial time savings per employee, and thousands of custom GPTs created since introducing ChatGPT Enterprise.",
+  "limit": "The page's headline tiles list 3,300 custom GPTs, 90% weekly usage and 5.5+ hours saved, but the body gives no method, baseline or definition for any of them.",
+  "question": "If the headline figures arrive without definitions, which three questions would you ask the customer before repeating a time-saved number to others?",
+  "why": "Construction company describes HR-led rollout with headline adoption metrics.",
+  "evidence": [
+   "including strong weekly adoption, substantial time savings per employee, and thousands of custom GPTs created"
   ]
  },
  {
@@ -9130,6 +10505,74 @@
   ]
  },
  {
+  "id": "C518",
+  "sourceId": "oai-tolan",
+  "vendor": "OpenAI",
+  "slug": "tolan",
+  "url": "https://openai.com/index/tolan/",
+  "customer": "Tolan",
+  "pageTitle": "How Tolan builds voice-first AI with GPT‑5.1",
+  "date": "2026-01",
+  "industry": "Software and internet",
+  "theme": "Productization",
+  "title": "Tolan · Voice companion with memory",
+  "problem": "A voice companion must respond with near-instant latency, track topic shifts and keep a consistent personality over long conversations.",
+  "approach": "Tolan rebuilds its context window every turn from recent messages, a persona card and vector-retrieved memories, stores embedded memories in a vector database with nightly compression, and moved to GPT-5.1 and the Responses API.",
+  "result": "Tolan reports memory recall misses fell 30% and next-day retention rose more than 20% after the newer model's personas launched, and speech initiation time dropped by over 0.7 seconds.",
+  "limit": "Results are company-reported, and the memory metric is based on in-product frustration signals rather than a direct accuracy test, with no experiment design described.",
+  "question": "Memory misses are measured through user frustration signals; what direct test would you build to check recall accuracy as a complement?",
+  "why": "Voice companion app describes context design and retention gains.",
+  "evidence": [
+   "memory recall misses dropped by 30% (based on in-product frustration signals), and next-day user retention rose more than 20%",
+   "cut speech initiation time by over 0.7 seconds"
+  ]
+ },
+ {
+  "id": "C519",
+  "sourceId": "oai-travelers",
+  "vendor": "OpenAI",
+  "slug": "travelers",
+  "url": "https://openai.com/index/travelers/",
+  "customer": "Travelers",
+  "pageTitle": "Travelers deploys AI-powered claims countrywide with OpenAI",
+  "date": "2026-06",
+  "industry": "Insurance",
+  "theme": "Productization",
+  "title": "Travelers · AI Claim Assistant for auto claims",
+  "problem": "Catastrophe events can produce more than 100,000 claims in days, and Travelers needed to give auto accident callers immediate help at scale.",
+  "approach": "Travelers built AI Claim Assistant, an autonomous voice agent on the OpenAI Realtime API and frontier models, connected to its claims systems to take first notice of loss for auto property damage claims.",
+  "result": "Travelers reports that 85–90% of customers using the assistant now complete claim filing through AI, after expanding from eight states to countrywide within two months.",
+  "limit": "The completion rate is Travelers' figure with no definition of how it handles customers who drop out or escalate, and no accuracy or cost data is given.",
+  "question": "What would you log to distinguish a customer who finished filing through the voice agent from one who was merely routed through it?",
+  "why": "Insurer launches autonomous voice assistant for first notice of loss.",
+  "evidence": [
+   "with 85–90% of customers using the AI Assistant now completing their claim filing through AI",
+   "After launching in eight states, Travelers expanded the assistant countrywide within two months"
+  ]
+ },
+ {
+  "id": "C520",
+  "sourceId": "oai-trustbank",
+  "vendor": "OpenAI",
+  "slug": "trustbank",
+  "url": "https://openai.com/index/trustbank/",
+  "customer": "TRUSTBANK",
+  "pageTitle": "TRUSTBANK uses AI agents to personalize Furusato Nozei gifts",
+  "date": "2026-01",
+  "industry": "Financial services",
+  "theme": "Productization",
+  "title": "TRUSTBANK · Choice AI gift recommendations",
+  "problem": "Donors on Japan's Furusato Choice platform face roughly 760,000 thank-you gifts and often find the hometown tax donation program difficult to navigate.",
+  "approach": "With partner Recursive, TRUSTBANK built Choice AI on OpenAI models: a routing model delegates to search, recommendation and greeting agents backed by RAG, with controlled randomness to spread recommendations across municipalities.",
+  "result": "TRUSTBANK reports that users of Choice AI saw higher conversion rates than users of standard on-site search, with no figure given.",
+  "limit": "No conversion numbers, sample or test design are provided, and users who choose AI search may differ from those who do not.",
+  "question": "Choice AI users converted better than search users; how would you design the comparison so self-selection does not explain the gap?",
+  "why": "Gift donation platform builds conversational recommendations with a partner.",
+  "evidence": [
+   "users who used Choice AI saw higher conversion rates than those who relied on standard on-site search"
+  ]
+ },
+ {
   "id": "C444",
   "sourceId": "oai-typeform",
   "vendor": "OpenAI",
@@ -9150,6 +10593,29 @@
   "evidence": [
    "The platform, built with OpenAI’s GPT‑3.5 Turbo model as well as GPT‑4, handles the rest.",
    "we make it ten times easier to make delightful and extremely powerful form experiences"
+  ]
+ },
+ {
+  "id": "C521",
+  "sourceId": "oai-uber",
+  "vendor": "OpenAI",
+  "slug": "uber",
+  "url": "https://openai.com/index/uber/",
+  "customer": "Uber",
+  "pageTitle": "Uber uses OpenAI to help people earn smarter and book faster",
+  "date": "2026-05",
+  "industry": "Transportation and logistics",
+  "theme": "Productization",
+  "title": "Uber · Uber Assistant and voice booking",
+  "problem": "Drivers constantly weigh where to position and when to switch between rides and deliveries, and riders face friction booking complex trips through taps and menus.",
+  "approach": "Uber built Uber Assistant, a multi-agent system that routes requests to specialized models, with an AI Guard governance layer, and added voice booking using the Realtime API and other frontier models.",
+  "result": "Uber reports that hundreds of thousands of U.S. drivers now have access to Uber Assistant beta experiences, with strong repeat engagement, but gives no outcome figures.",
+  "limit": "The rollout is experimental, and the page gives no measured earnings, ramp-up or latency numbers, only qualitative claims of repeat engagement and better time use.",
+  "question": "Repeat engagement shows drivers return to an assistant; what metric would show that the advice actually improved their earnings?",
+  "why": "Mobility company describes driver assistant and voice booking in beta.",
+  "evidence": [
+   "Hundreds of thousands of U.S. drivers now have access to Uber Assistant beta experiences",
+   "Strong repeat engagement, with users returning after successful interactions"
   ]
  },
  {
@@ -9244,6 +10710,29 @@
   ]
  },
  {
+  "id": "C522",
+  "sourceId": "oai-vfl-wolfsburg",
+  "vendor": "OpenAI",
+  "slug": "vfl-wolfsburg",
+  "url": "https://openai.com/index/vfl-wolfsburg/",
+  "customer": "VfL Wolfsburg",
+  "pageTitle": "VfL Wolfsburg turns ChatGPT into a club-wide capability",
+  "date": "2026-03",
+  "industry": "Media and advertising",
+  "theme": "Adoption",
+  "title": "VfL Wolfsburg · Club-wide ChatGPT Enterprise",
+  "problem": "The football club faced rising expectations with fixed budgets and headcount, repetitive drafting and translation, knowledge held by few specialists, and costly external agencies.",
+  "approach": "After a year with ChatGPT Team and Business licenses, the club adopted ChatGPT Enterprise and built custom GPTs around real workflows, such as turf disease, invoicing, HR and ESG checks.",
+  "result": "VfL Wolfsburg reports 50+ custom GPTs in active daily use and six-figure annual cost savings from reduced reliance on external agencies for repeatable work.",
+  "limit": "The page's headline tile says 1M+ annual savings while the body says six-figure savings, and no method for the savings or time saved is given.",
+  "question": "When a headline savings figure and the body text disagree, how would you reconcile them with the customer before using either in a business case?",
+  "why": "Football club reports custom GPT use and agency cost savings.",
+  "evidence": [
+   "50+ custom GPTs in active daily use across operations, communications, marketing, HR, and administration",
+   "Six-figure annual cost savings through reduced reliance on external agencies for repeatable work"
+  ]
+ },
+ {
   "id": "C449",
   "sourceId": "oai-viable",
   "vendor": "OpenAI",
@@ -9266,6 +10755,29 @@
   ]
  },
  {
+  "id": "C523",
+  "sourceId": "oai-virgin-atlantic",
+  "vendor": "OpenAI",
+  "slug": "virgin-atlantic",
+  "url": "https://openai.com/index/virgin-atlantic/",
+  "customer": "Virgin Atlantic",
+  "pageTitle": "How Virgin Atlantic ships faster with Codex",
+  "date": "2026-05",
+  "industry": "Travel and hospitality",
+  "theme": "Delivery",
+  "title": "Virgin Atlantic · Codex for app launch and refactoring",
+  "problem": "Virgin Atlantic needed to ship a revamped mobile app before the Christmas travel rush, a high-risk period, while maintaining years of legacy code.",
+  "approach": "The team used Codex to raise unit test coverage on the new app, refactor legacy codebases, and let analyst teams prototype internal applications against the data warehouse.",
+  "result": "Virgin Atlantic reports near-complete unit test coverage and zero P1 defects at launch of the app, and says a two-week refactoring task now takes about 30 minutes to an hour.",
+  "limit": "Results are quotes from Virgin Atlantic leaders; 'zero P1 defects' and the refactoring comparison have no stated measurement window or baseline, and codebase size reduction is not the same as quality.",
+  "question": "Why might a 78-80% reduction in codebase size be a poor success metric on its own for a legacy refactor?",
+  "why": "Airline reports Codex-assisted app launch and faster legacy refactoring.",
+  "evidence": [
+   "near-complete unit test coverage and zero P1 defects at launch",
+   "a two-week piece of work now maybe takes about 30 minutes to an hour"
+  ]
+ },
+ {
   "id": "C450",
   "sourceId": "oai-virgin-atlantic-chatgpt-work",
   "vendor": "OpenAI",
@@ -9285,6 +10797,52 @@
   "why": "Virgin Atlantic speeds competitive research using ChatGPT Work.",
   "evidence": [
    "The team could start the work in the morning, return a few hours later"
+  ]
+ },
+ {
+  "id": "C524",
+  "sourceId": "oai-warp",
+  "vendor": "OpenAI",
+  "slug": "warp",
+  "url": "https://openai.com/index/warp/",
+  "customer": "Warp",
+  "pageTitle": "Warp’s big bet on building open source with GPT‑5.5",
+  "date": "2026-05",
+  "industry": "Software and internet",
+  "theme": "Architecture",
+  "title": "Warp · Agent orchestration with Oz",
+  "problem": "Warp, a terminal maker, wanted to run long-horizon coding agents across local and cloud environments and to open-source its client with agents helping manage contributions.",
+  "approach": "Warp built Oz, a control plane that launches and monitors agents with memory, context compaction and subagents, and uses GPT-5.5 in the OpenAI model mix for demanding coding tasks and as an LLM judge in its evaluations.",
+  "result": "Warp reports in internal benchmarks the model used 30% fewer tokens per task than its predecessor, and agents now co-create around 90% of its own pull requests.",
+  "limit": "Both numbers are internal and vendor-reported: the token benchmark lacks task definitions, and the pull request share does not say how much human review or rework those pull requests needed.",
+  "question": "If agents co-create 90% of pull requests, which review and quality metrics would you track to show the human supervision step is still effective?",
+  "why": "Terminal startup describes agent orchestration and internal agent-written code share.",
+  "evidence": [
+   "used 30% fewer tokens per agentic coding task than",
+   "agents now co-create around 90% of the company’s pull requests"
+  ]
+ },
+ {
+  "id": "C525",
+  "sourceId": "oai-wasmer",
+  "vendor": "OpenAI",
+  "slug": "wasmer",
+  "url": "https://openai.com/index/wasmer/",
+  "customer": "Wasmer",
+  "pageTitle": "How Wasmer used Codex to build a Node.js runtime for the edge",
+  "date": "2026-06",
+  "industry": "Software and internet",
+  "theme": "Productization",
+  "title": "Wasmer · Edge.js built with Codex",
+  "problem": "Wasmer is a small team that wanted to run Node.js workloads in a WebAssembly sandbox at the edge, a project it lacked the time and resources to take on.",
+  "approach": "The team used Codex with GPT-5.5 from initial architecture through final polish to build Edge.js, and relied on it to find bugs and root causes, including low-level issues using logs and a debugger.",
+  "result": "Wasmer reports building a JavaScript runtime in two weeks that it says would have taken one year, and says development speed rose by 10x to 20x.",
+  "limit": "The speed-up claim is the founder's estimate with no measured baseline, and the quality or production use of Edge.js is not reported.",
+  "question": "How would you check a founder's 10x to 20x speed claim against what the team would realistically have shipped without the agent?",
+  "why": "Edge hosting startup reports building a runtime in two weeks with Codex.",
+  "evidence": [
+   "We have increased development speed by 10x to 20x, at least",
+   "This effort would have taken one year without Codex, but with Codex, it took two weeks."
   ]
  },
  {
@@ -9380,6 +10938,30 @@
   ]
  },
  {
+  "id": "C526",
+  "sourceId": "oai-wrtn",
+  "vendor": "OpenAI",
+  "slug": "wrtn",
+  "url": "https://openai.com/index/wrtn/",
+  "customer": "Wrtn",
+  "pageTitle": "With GPT‑5, Wrtn builds lifestyle AI for millions in Korea",
+  "date": "2025-10",
+  "industry": "Software and internet",
+  "theme": "Productization",
+  "title": "Wrtn · Lifestyle AI apps in Korea",
+  "problem": "Wrtn wanted to move from productivity tools to approachable AI for everyday life in Korea, where early model outputs sounded like translations.",
+  "approach": "Wrtn uses persona prompts, memory scaffolding and a router in which small models classify traffic and larger models handle heavy tasks, swapping in each new OpenAI release as it ships.",
+  "result": "Wrtn reports 6.5 million monthly active users, session time up 15% and month-one retention up 10% after a router upgrade, and an 8% rise in daily active users within a week of adopting the newest model.",
+  "limit": "These are company-reported before-and-after figures with no test design, and other releases or product changes may overlap with the gains.",
+  "question": "When a model swap coincides with other product changes, how would you set up a clean test to attribute a daily-user gain to the model?",
+  "why": "Korean AI app maker reports usage gains from router upgrades and new models.",
+  "evidence": [
+   "reaching 6.5 million monthly active users",
+   "After a router upgrade, session time rose 15% and month-one retention jumped 10%",
+   "Within a week, the company saw an 8% increase in daily active users"
+  ]
+ },
+ {
   "id": "C455",
   "sourceId": "oai-yabble",
   "vendor": "OpenAI",
@@ -9468,6 +11050,30 @@
   "evidence": [
    "Increasing automation rates toward 80%",
    "This shift reduces setup time from days to minutes"
+  ]
+ },
+ {
+  "id": "C527",
+  "sourceId": "oai-zenken",
+  "vendor": "OpenAI",
+  "slug": "zenken",
+  "url": "https://openai.com/index/zenken/",
+  "customer": "Zenken",
+  "pageTitle": "Zenken boosts a lean sales team with ChatGPT Enterprise",
+  "date": "2026-01",
+  "industry": "Media and advertising",
+  "theme": "Adoption",
+  "title": "Zenken · ChatGPT Enterprise for sales",
+  "problem": "Zenken's sales staff spent large amounts of time on research, proposals and emails, limiting customer conversations, and translation for its overseas HR business relied on outsourcing.",
+  "approach": "Zenken rolled out ChatGPT Enterprise company-wide after checking it against twelve requirements, using reasoning models for analysis, custom GPTs for proposals and emails, and translation of job postings and contracts.",
+  "result": "Zenken reports win rate for new deals up 5 to 10%, proposals passing initial review up 15 to 20%, and 50 million yen in annual outsourcing cost savings.",
+  "limit": "The numbers are company-reported with no measurement method, and the ranges and the claim of roughly doubled productivity come without a baseline or sample.",
+  "question": "A win-rate gain of 5 to 10% could come from the AI or from better lead mix; what comparison would help you separate them?",
+  "why": "Japanese marketing firm reports sales and outsourcing gains from ChatGPT.",
+  "evidence": [
+   "Win rate for new deals up 5 to 10%",
+   "Proposals passing initial review up 15 to 20%",
+   "50 million yen in annual outsourcing cost savings compared with the previous year"
   ]
  }
 ]
