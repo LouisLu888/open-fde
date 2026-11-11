@@ -493,6 +493,16 @@ th{font:600 13px/1.4 var(--font-body);letter-spacing:0;text-transform:none;backg
 .joke.search-hit{outline:3px solid var(--secondary-container);outline-offset:6px;border-radius:2px}
 @media(max-width:720px){.joke-filter{top:var(--joke-sticky,154px)}.joke-section,.joke,.translator{scroll-margin-top:220px}.translator-head{display:none!important}.joke-lead{padding:20px 18px;margin-bottom:24px}.joke-section{margin-top:40px}.joke-filter{flex-wrap:nowrap;overflow-x:auto}.say,.joke-setup,.punch-text{font-size:18px}.translator-rows>div{grid-template-columns:1fr;gap:2px}.translator-rows dt,.translator-rows dd{font-size:18px}}
 @media(prefers-reduced-motion:reduce){.joke-pick-punch:not([hidden]),.joke .punch[open]>*:not(summary),.swing .punch[open]>*:not(summary){animation:none}}
+.panel{margin-top:20px}
+.breadcrumbs{margin:0 0 8px;font-size:13px}
+.section-heading{margin-bottom:20px}
+.section-heading h1,.section-heading h2{font-size:clamp(26px,2.6vw,34px);line-height:1.15;letter-spacing:-.02em;max-width:760px;margin:0 0 8px}
+.section-heading p{font-size:16px;line-height:1.55;margin:8px 0 0}
+.panel :not(.section-heading)>h2{font-size:clamp(22px,2.2vw,26px);line-height:1.2;letter-spacing:-.015em}
+.panel>h1+.updated+*{margin-top:12px}
+.section-heading .updated,.panel>h1+.updated{font-size:13px;margin:6px 0 0}
+.tab-page .section-heading{margin-bottom:16px}
+@media(max-width:720px){.panel{margin-top:12px}.section-heading h1,.section-heading h2{font-size:26px}.section-heading p{font-size:15px}}
 </style>
 </head>
 <body>
