@@ -85,3 +85,7 @@ OpenAI and Anthropic customer stories are bulk data in `work/data/lab-cases.json
 - Label evidence: employer, employee, candidate, third-party; for money: post-money, tender, market cap, run-rate, ARR, TTM/FY revenue.
 - Sub-agents do the reading; you verify a sample yourself before anything ships, and you write the final prose.
 - No visitor state, no internal company material, English only (see `AGENTS.md`).
+
+## Local preview
+
+`npm run preview:install` once per machine: a launchd service serves `site/` at http://localhost:8811, starts at login, and restarts if it stops. After `npm run build:site` the new pages are live there with no restart. `npm run preview:status` checks it; `npm run preview:uninstall` removes it. Do not start ad-hoc servers on port 8811 from a terminal tab or the preview tool: those die when the editor session reloads, and they block the service's port.
