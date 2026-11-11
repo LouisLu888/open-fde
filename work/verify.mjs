@@ -20,8 +20,8 @@ const errors=[];
 page.on('pageerror',error=>errors.push(error.message));
 await page.goto(outputPath.href);
 await page.locator('h1').waitFor();
-assert.deepEqual(await page.locator('.nav a').allTextContents(),['Learn','Resources','Interview','Jobs','Stories & cases','Breakroom']);
-assert.equal(await page.locator('.door').count(),5);
+assert.deepEqual(await page.locator('.nav a').allTextContents(),['Learn','Resources','Interview','Jobs','Transition stories','Case studies','Breakroom']);
+assert.equal(await page.locator('.door').count(),6);
 assert.equal(await page.locator('#start .compare tbody tr').count(),9,'FDE vs SPE comparison on home');
 assert.equal((await page.locator('.brand').textContent()).startsWith('FDE Academy'),true);
 assert.equal(await page.locator('#downloadHtml').count(),0,'No download button');
@@ -122,7 +122,7 @@ assert.equal(await page.locator('#story-list .row').count(),stories.length);
 assert.equal(new Set(stories.map(story=>story.source)).size,stories.length);
 assert.match(await page.locator('#story-S04').textContent(),/platform AI translation/);
 assert.equal(await page.locator('#cases .row').count(),cases.length);
-await page.locator('[role=tab][href="#cases"]').click();
+await page.locator('.nav a[href="#case-studies"]').click();
 await page.locator('#cases').waitFor({state:'visible'});
 assert(await page.locator('#story-list').isHidden());
 // Case studies filter by industry and company, alone and together.
@@ -146,7 +146,7 @@ await page.screenshot({path:fileURLToPath(new URL('stories-preview.png',import.m
 
 // Phone width: no horizontal overflow.
 await page.setViewportSize({width:390,height:844});
-for(const section of ['start','learn','resources','interview','jobs','stories']){
+for(const section of ['start','learn','resources','interview','jobs','stories','case-studies','breakroom']){
  await page.goto(outputPath.href+'#'+section);
  await page.locator('#'+section).waitFor({state:'visible'});
  const dimensions=await page.evaluate(()=>({width:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth}));
