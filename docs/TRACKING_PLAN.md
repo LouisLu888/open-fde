@@ -18,13 +18,13 @@ Active only on `open-fde.ai` / `www.open-fde.ai`. Off for downloaded copies, loc
 
 | Event | Category | Properties | Description |
 | --- | --- | --- | --- |
-| Section Viewed | Engagement | section | A visitor opened one of the site's top-level pages: home, Learn, Resources, Interview, Stories & cases, or Stats. Fires on first load and on each navigation to a different page, not on tab switches or scrolling within a page. Use it for traffic by section and as the first step of section funnels. |
+| Section Viewed | Engagement | section | A visitor opened one of the site's top-level pages: home, Learn, Resources, Interview, Jobs, Transition stories, Case studies, Breakroom, or Stats. Fires on first load and on each navigation to a different page, not on tab switches or scrolling within a page. Use it for traffic by section and as the first step of section funnels. |
 | Tab Selected | Engagement | section, tab | A visitor switched tabs inside a page, for example from People to Books in Resources, or from Candidate reports to Practice questions in Interview. Fires on click or arrow-key selection, not when a link or search result opens a tab. Shows which resource types and job content people seek out. |
 | Chapter Viewed | Feature | chapter_number, chapter_title, part_title, entry_point | A visitor read a chapter of the Learn book: its title stayed fully on screen for 1.5 seconds. Fires at most once per chapter per page load. The preface is chapter 0. The core learning metric; use it for most-read chapters and how far readers get. |
 | Search Performed | Engagement | search_scope, search_term, result_count | A visitor searched, either the site-wide search in the header or the jobs search. Fires once typing pauses for 0.9 seconds. search_scope tells the two apart. Use result_count = 0 to find content gaps. |
 | Search Result Opened | Engagement | search_term, section, result_content_type, result_title, result_rank | A visitor opened a result from the site-wide search. Fires on click or Enter. Pair with Search Performed to measure search success. |
-| Filter Applied | Engagement | section, filter_name, filter_value | A visitor narrowed the jobs list (role family, region, industry, funding stage, company) the interview question bank (question type, company, evidence), or the case studies (industry, company). Fires when a filter value changes; "all" means a filter was cleared. |
-| Content Expanded | Engagement | section, content_type, content_title | A visitor opened a collapsed detail: a resource's "How to use it", an interview response guide, story notes, a case's approach and result, a source note, or the full company list. Fires on open only. Shows which items people go deeper on. |
+| Filter Applied | Engagement | section, filter_name, filter_value | A visitor narrowed the jobs list (role family, region, industry, funding stage, company) the interview question bank (question type, company, evidence), the case studies (industry, company), or the Breakroom jokes (topic). Fires when a filter value changes; "all" means a filter was cleared. |
+| Content Expanded | Engagement | section, content_type, content_title | A visitor opened a collapsed detail: a resource's "How to use it", an interview response guide, story notes, a case's approach and result, a source note, the full company list, or a joke punchline in the Breakroom (content_type joke, or featured_joke for the joke of the day). Fires on open only. Shows which items people go deeper on. |
 | Outbound Link Clicked | Engagement | section, content_type, content_title, link_text, destination_host | A visitor followed a link to another site: a book, article, podcast, talk, person's profile, case source, company jobs page, or GitHub. Does not fire for individual job postings (see Job Posting Clicked). |
 | Job Posting Clicked | Feature | company, job_title, role_family, job_location, destination_host | A visitor opened a specific job posting on the employer's site from the Open jobs tab. The site's main conversion. Use it with Filter Applied to see which filters lead to applications. |
 
@@ -32,7 +32,7 @@ Active only on `open-fde.ai` / `www.open-fde.ai`. Off for downloaded copies, loc
 
 | Property | Type | Description |
 | --- | --- | --- |
-| section | string | Top-level page the action happened on. Values: start, learn, resources, interview, jobs, stories, stats, header. |
+| section | string | Top-level page the action happened on. Values: start, learn, resources, interview, jobs, stories, case-studies, breakroom, stats, header. |
 | tab | string | Tab id within a page. Examples: jobs-open, jobs-market, res-people, res-books, res-articles, res-podcasts, res-videos, interview-overview, interview-companies, interview-bank, q-practice, story-list, cases. |
 | chapter_number | number | Chapter number in the Learn book. 0 is the preface; 1–12 follow the delivery phases; 13–20 are advanced fieldcraft. |
 | chapter_title | string | Chapter title as shown. Example: Build a thin vertical slice. |
