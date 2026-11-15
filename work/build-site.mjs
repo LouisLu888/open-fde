@@ -32,6 +32,7 @@ const interviewCompanies=JSON.parse(readFileSync(new URL('docs/INTERVIEWS.json',
 const pages=[
  {path:'/',panel:'start',type:'home',title:'FDE Academy: free guide for forward deployed engineers',description:'Learn forward deployed engineering free: a 20-chapter guide, sourced books and podcasts, FDE interview questions, open FDE jobs, and firsthand stories.'},
  {path:'/what-is-a-forward-deployed-engineer/',panel:'what-is-fde',type:'answer',crumb:'What is an FDE?',title:'What is a forward deployed engineer (FDE)? | FDE Academy',description:'A forward deployed engineer works with customers to make a product deliver real outcomes in their systems. What FDEs do, where the role came from, who hires.'},
+ {path:'/fde-vs-solutions-engineer-vs-solutions-architect/',panel:'fde-vs-se-sa',type:'answer',crumb:'FDE vs SE vs SA',title:'FDE vs Solutions Engineer vs Solutions Architect',description:'How a Forward Deployed Engineer differs from a Solutions Engineer and a Solutions Architect: when each arrives, what each produces, and how success is judged.'},
  {path:'/fde-vs-spe/',panel:'fde-vs-spe',type:'answer',crumb:'FDE vs SPE',title:'FDE vs SPE: forward deployed vs special projects engineer',description:'How a Forward Deployed Engineer differs from a Special Projects Engineer, phase by phase: who owns what, where the work happens, and what to read for each role.'},
  {path:'/learn/',panel:'learn',type:'course',learn:'index',crumb:'Learn',title:'Learn forward deployed engineering: free 20-chapter guide',description:'A free 20-chapter book on forward deployed engineering, from the first customer meeting to the handoff, with reading, tasks, and a test for each chapter.'},
  {path:'/resources/people/',panel:'resources',group:'res-people',type:'collection',crumb:'People',parents:[['Resources','/resources/people/']],h1:'People to follow in forward deployed engineering',title:'People to follow in forward deployed engineering',description:'Practitioners and team builders who publish how forward deployed engineering works, with what to read or watch from each and their X handles.'},
@@ -52,7 +53,7 @@ const pages=[
  {path:'/about/',panel:'about',type:'about',crumb:'About',title:'About FDE Academy: how the guide is made',description:'How FDE Academy chooses and checks its sources, how the jobs snapshot works, how to send corrections, and what the site does with analytics.'},
 ];
 // Ids that are whole pages. Everything else is reached as page#id.
-const pageIds={start:'/',learn:'/learn/','what-is-fde':'/what-is-a-forward-deployed-engineer/','fde-vs-spe':'/fde-vs-spe/',about:'/about/',resources:'/resources/people/','res-people':'/resources/people/','res-books':'/resources/books/','res-articles':'/resources/articles/','res-podcasts':'/resources/podcasts/','res-videos':'/resources/videos/',interview:'/interview/','interview-overview':'/interview/','interview-companies':'/interview/companies/','interview-bank':'/interview/questions/',questions:'/interview/questions/','q-employer':'/interview/companies/','q-practice':'/interview/practice/',jobs:'/jobs/','jobs-open':'/jobs/','jobs-market':'/jobs/market/',stories:'/stories/','story-list':'/stories/',cases:'/case-studies/','case-studies':'/case-studies/',breakroom:'/breakroom/','breakroom-list':'/breakroom/',stats:'/stats/'};
+const pageIds={start:'/',learn:'/learn/','what-is-fde':'/what-is-a-forward-deployed-engineer/','fde-vs-spe':'/fde-vs-spe/','fde-vs-se-sa':'/fde-vs-solutions-engineer-vs-solutions-architect/',about:'/about/',resources:'/resources/people/','res-people':'/resources/people/','res-books':'/resources/books/','res-articles':'/resources/articles/','res-podcasts':'/resources/podcasts/','res-videos':'/resources/videos/',interview:'/interview/','interview-overview':'/interview/','interview-companies':'/interview/companies/','interview-bank':'/interview/questions/',questions:'/interview/questions/','q-employer':'/interview/companies/','q-practice':'/interview/practice/',jobs:'/jobs/','jobs-open':'/jobs/','jobs-market':'/jobs/market/',stories:'/stories/','story-list':'/stories/',cases:'/case-studies/','case-studies':'/case-studies/',breakroom:'/breakroom/','breakroom-list':'/breakroom/',stats:'/stats/'};
 
 const browser=await chromium.launch({headless:true});
 const page=await browser.newPage();
@@ -251,7 +252,7 @@ const llms=`# FDE Academy
 > A free, open-source field guide for forward deployed engineers (FDEs): a 20-chapter learning path from the first customer meeting to the handoff, curated and sourced resources, interview questions with provenance, a dated snapshot of open FDE jobs, and firsthand stories. Independent; every resource links to its original publication.
 
 ## Start here
-${['/what-is-a-forward-deployed-engineer/','/fde-vs-spe/','/about/'].map(line).join('\n')}
+${['/what-is-a-forward-deployed-engineer/','/fde-vs-spe/','/fde-vs-solutions-engineer-vs-solutions-architect/','/about/'].map(line).join('\n')}
 
 ## Learn
 ${line('/learn/')}
