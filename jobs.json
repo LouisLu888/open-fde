@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-11-14T18:44:42.085Z",
+ "checkedAt": "2026-11-15T19:23:11.413Z",
  "method": "Public Greenhouse, Lever, and Ashby job-board APIs; titles matched forward[\\s-]*deploy|\\bFDE\\b|\\bFDSE\\b|special projects engineer|deployment strategist|ai deployment engineer|^deployed engineer\\b",
  "boardsChecked": 774,
  "companiesProbed": 840,
@@ -9985,7 +9985,7 @@
    "location": "New York Office",
    "remote": false,
    "posted": "2026-09-30",
-   "department": "Implementation",
+   "department": "Engineering",
    "compensation": "$150K – $190K • Offers Equity • The compensation range listed reflects the expected salary band for this position. Final compensation is determined on an individual basis and may vary depending on factors such as experience, qualifications, skills, and location."
   },
   {
@@ -9993,10 +9993,10 @@
    "ats": "ashby",
    "board": "lio",
    "title": "Forward Deployed Engineer (all genders)",
-   "url": "https://jobs.ashbyhq.com/lio/8e037444-9a05-4470-b1a1-eeeee26c8815",
+   "url": "https://jobs.ashbyhq.com/lio/933adcc3-36a7-4ecc-9321-348142ff9297",
    "location": "Munich Office",
    "remote": false,
-   "posted": "2026-10-09",
+   "posted": "2026-11-12",
    "department": "Engineering",
    "compensation": ""
   },
