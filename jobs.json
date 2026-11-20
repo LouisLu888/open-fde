@@ -1,5 +1,5 @@
 {
- "checkedAt": "2026-11-19T21:35:13.844Z",
+ "checkedAt": "2026-11-20T21:06:23.946Z",
  "method": "Public Greenhouse, Lever, and Ashby job-board APIs; titles matched forward[\\s-]*deploy|\\bFDE\\b|\\bFDSE\\b|special projects engineer|deployment strategist|ai deployment engineer|^deployed engineer\\b",
  "boardsChecked": 768,
  "companiesProbed": 840,
@@ -440,18 +440,6 @@
    "company": "Aircall",
    "ats": "greenhouse",
    "board": "aircallioinc",
-   "title": "Forward Deployed Engineer (AI Solutions) - NA West Market",
-   "url": "https://job-boards.greenhouse.io/aircallioinc/jobs/4315316009",
-   "location": "San Francisco Office",
-   "remote": false,
-   "posted": "2026-07-15",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Aircall",
-   "ats": "greenhouse",
-   "board": "aircallioinc",
    "title": "Forward Deployed Engineering Team Lead",
    "url": "https://job-boards.greenhouse.io/aircallioinc/jobs/4415622009",
    "location": "Paris Office",
@@ -555,18 +543,6 @@
    "posted": "2026-08-28",
    "department": "Product & Engineering",
    "compensation": "$200K – $400K"
-  },
-  {
-   "company": "AKASA",
-   "ats": "ashby",
-   "board": "akasa",
-   "title": "Forward Deployed Engineer",
-   "url": "https://jobs.ashbyhq.com/akasa/7ef5ac9f-92f2-4e40-a11f-c334d307ca28",
-   "location": "San Francisco · New York City, New York, United States",
-   "remote": true,
-   "posted": "2026-08-03",
-   "department": "Engineering",
-   "compensation": ""
   },
   {
    "company": "Alloy",
@@ -740,6 +716,18 @@
    "company": "Anduril",
    "ats": "greenhouse",
    "board": "andurilindustries",
+   "title": "Forward Deployed Software Engineer, Connected Warfare (Active Clearance)",
+   "url": "https://boards.greenhouse.io/andurilindustries/jobs/5304081007?gh_jid=5304081007",
+   "location": "Washington, District of Columbia, United States",
+   "remote": false,
+   "posted": "2026-11-20",
+   "department": "",
+   "compensation": ""
+  },
+  {
+   "company": "Anduril",
+   "ats": "greenhouse",
+   "board": "andurilindustries",
    "title": "Forward Deployed Software Engineer, JBLM (Active Clearance)",
    "url": "https://boards.greenhouse.io/andurilindustries/jobs/5286149007?gh_jid=5286149007",
    "location": "Tacoma, Washington, United States",
@@ -877,18 +865,6 @@
    "location": "Paris, France",
    "remote": false,
    "posted": "2026-08-17",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Anthropic",
-   "ats": "greenhouse",
-   "board": "anthropic",
-   "title": "GTM Strategy & Operations, FDE",
-   "url": "https://job-boards.greenhouse.io/anthropic/jobs/5427938008",
-   "location": "San Francisco, CA | New York City, NY",
-   "remote": false,
-   "posted": "2026-09-30",
    "department": "",
    "compensation": ""
   },
@@ -1610,7 +1586,7 @@
    "remote": true,
    "posted": "2026-10-12",
    "department": "Delivery & Enterprise Solutions",
-   "compensation": "$220K – $270K • Offers Equity"
+   "compensation": "$210K – $270K • Offers Equity"
   },
   {
    "company": "Axle",
@@ -1931,7 +1907,7 @@
    "title": "Forward Deployed Engineer - R01572128",
    "url": "https://jobs.lever.co/brillio-2/d7d9bed8-4770-439a-b6ae-e5fb0c815c04",
    "location": "Minneapolis, Minnesota",
-   "remote": false,
+   "remote": true,
    "posted": "2026-10-01",
    "department": "Digital Engineering : Digital Engineering",
    "compensation": ""
@@ -2565,7 +2541,7 @@
    "ats": "greenhouse",
    "board": "chaosindustries",
    "title": "Forward Deployed Engineer - Software",
-   "url": "https://job-boards.greenhouse.io/chaosindustries/jobs/5253701007",
+   "url": "https://job-boards.greenhouse.io/chaosindustries/jobs/5253700007",
    "location": "London, England, United Kingdom",
    "remote": false,
    "posted": "2026-10-22",
@@ -2627,7 +2603,7 @@
    "title": "Forward Deployed Engineer",
    "url": "https://jobs.ashbyhq.com/cinder/6f396cdb-f89b-4f41-a0c2-8b316a3509ef",
    "location": "London, United Kingdom",
-   "remote": true,
+   "remote": false,
    "posted": "2026-09-28",
    "department": "Product & Engineering",
    "compensation": "£115K – £145K • Offers Equity"
@@ -2777,6 +2753,18 @@
    "compensation": "$190K – $210K • Offers Equity"
   },
   {
+   "company": "ClickHouse",
+   "ats": "ashby",
+   "board": "clickhouse",
+   "title": "Senior Forward-Deployed Engineer - Data Plane",
+   "url": "https://jobs.ashbyhq.com/clickhouse/10e09c73-e42a-4b7d-8103-417b7c4b6306",
+   "location": "United States",
+   "remote": true,
+   "posted": "2026-11-20",
+   "department": "Support Services",
+   "compensation": "$155K – $230K • Offers Equity"
+  },
+  {
    "company": "Cloudflare",
    "ats": "greenhouse",
    "board": "cloudflare",
@@ -2793,10 +2781,10 @@
    "ats": "greenhouse",
    "board": "cloudflare",
    "title": "Forward Deployed Engineer, Professional Services",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8043339?gh_jid=8043339",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8043305?gh_jid=8043305",
    "location": "Distributed",
    "remote": false,
-   "posted": "2026-08-26",
+   "posted": "2026-09-23",
    "department": "",
    "compensation": ""
   },
@@ -2805,10 +2793,10 @@
    "ats": "greenhouse",
    "board": "cloudflare",
    "title": "Senior Forward Deployed Engineer",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8206674?gh_jid=8206674",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8173707?gh_jid=8173707",
    "location": "Hybrid",
    "remote": false,
-   "posted": "2026-09-21",
+   "posted": "2026-09-02",
    "department": "",
    "compensation": ""
   },
@@ -3886,7 +3874,7 @@
    "board": "cursor",
    "title": "Regional Director, Forward Deployed Engineering - Financial Services",
    "url": "https://jobs.ashbyhq.com/cursor/9f5d7596-501a-4934-9a25-daba53412e95",
-   "location": "Washington, D.C.",
+   "location": "New York, NY",
    "remote": false,
    "posted": "2026-11-18",
    "department": "Solutions",
@@ -4069,18 +4057,6 @@
    "location": "United States",
    "remote": false,
    "posted": "2026-05-06",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Databricks",
-   "ats": "greenhouse",
-   "board": "databricks",
-   "title": "Evergreen - AI Engineer, AI FDE",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8878946002",
-   "location": "Bengaluru, India",
-   "remote": false,
-   "posted": "2026-11-01",
    "department": "",
    "compensation": ""
   },
@@ -5321,18 +5297,6 @@
    "compensation": ""
   },
   {
-   "company": "Datadog",
-   "ats": "greenhouse",
-   "board": "datadog",
-   "title": "Senior Forward Deployed Engineer",
-   "url": "https://careers.datadoghq.com/detail/8346224/?gh_jid=8346224",
-   "location": "Denver, Colorado, USA; New York, New York, USA; San Francisco, California, USA",
-   "remote": false,
-   "posted": "2026-11-16",
-   "department": "",
-   "compensation": ""
-  },
-  {
    "company": "Dataleap",
    "ats": "ashby",
    "board": "dataleap",
@@ -6212,18 +6176,6 @@
    "company": "ElevenLabs",
    "ats": "ashby",
    "board": "elevenlabs",
-   "title": "Deployment Strategist, Public Sector (Federal & SLED) - North America",
-   "url": "https://jobs.ashbyhq.com/ElevenLabs/7758cdc5-b5c9-4a5c-8c80-11678f7cba9d",
-   "location": "United States · Washington, D.C.",
-   "remote": true,
-   "posted": "2026-11-06",
-   "department": "Engineering & Product",
-   "compensation": ""
-  },
-  {
-   "company": "ElevenLabs",
-   "ats": "ashby",
-   "board": "elevenlabs",
    "title": "Forward Deployed Engineer - Software Engineer - Argentina",
    "url": "https://jobs.ashbyhq.com/ElevenLabs/1f7a2786-46d3-46c9-81f3-c3849b412988",
    "location": "Argentina",
@@ -6596,6 +6548,18 @@
    "company": "Eudia",
    "ats": "greenhouse",
    "board": "eudia",
+   "title": "Deployment Strategist",
+   "url": "https://job-boards.greenhouse.io/eudia/jobs/4511805009",
+   "location": "Palo Alto, CA, New York, NY",
+   "remote": false,
+   "posted": "2026-11-19",
+   "department": "",
+   "compensation": ""
+  },
+  {
+   "company": "Eudia",
+   "ats": "greenhouse",
+   "board": "eudia",
    "title": "Forward Deployed Lawyer",
    "url": "https://job-boards.greenhouse.io/eudia/jobs/4234525009",
    "location": "Palo Alto, CA",
@@ -6613,18 +6577,6 @@
    "location": "New York, NY",
    "remote": false,
    "posted": "2026-07-20",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Eulerity",
-   "ats": "greenhouse",
-   "board": "eulerity",
-   "title": "Forward Deployed Marketing Analyst",
-   "url": "https://job-boards.greenhouse.io/eulerity/jobs/4714830006",
-   "location": "New York",
-   "remote": false,
-   "posted": "2026-09-18",
    "department": "",
    "compensation": ""
   },
@@ -7253,18 +7205,6 @@
    "compensation": "$170K – $205K • Offers Equity"
   },
   {
-   "company": "Forerunner",
-   "ats": "ashby",
-   "board": "forerunner",
-   "title": "Deployment Strategist",
-   "url": "https://jobs.ashbyhq.com/forerunner/b04d78cc-616e-4f02-84c0-4754e792f6b2",
-   "location": "Portland, ME · San Francisco, CA · New York, NY",
-   "remote": true,
-   "posted": "2026-08-26",
-   "department": "Customer Success",
-   "compensation": ""
-  },
-  {
    "company": "forgd",
    "ats": "ashby",
    "board": "forgd-ai",
@@ -7311,18 +7251,6 @@
    "posted": "2026-10-15",
    "department": "Engineering",
    "compensation": "$175K – $215K • $50K – $90K Equity"
-  },
-  {
-   "company": "Foundry Robotics",
-   "ats": "ashby",
-   "board": "foundry-robotics",
-   "title": "Physical AI Deployment Strategist",
-   "url": "https://jobs.ashbyhq.com/foundry-robotics/284bfc0c-97c3-45bf-852f-fca705a43d4b",
-   "location": "Emeryville, CA",
-   "remote": false,
-   "posted": "2026-09-03",
-   "department": "Operations",
-   "compensation": ""
   },
   {
    "company": "FriendliAI",
@@ -8048,6 +7976,18 @@
    "company": "Handshake",
    "ats": "ashby",
    "board": "handshake",
+   "title": "Forward Deployed Engineer",
+   "url": "https://jobs.ashbyhq.com/handshake/52be2db3-794d-466e-b3be-cae5d1ab5232",
+   "location": "San Francisco, CA",
+   "remote": false,
+   "posted": "2026-11-20",
+   "department": "Engineering",
+   "compensation": "$151K – $189K"
+  },
+  {
+   "company": "Handshake",
+   "ats": "ashby",
+   "board": "handshake",
    "title": "Forward Deployed Engineer I",
    "url": "https://jobs.ashbyhq.com/handshake/f632f0c3-0b9c-49a7-984b-de92e18e6d0b",
    "location": "India",
@@ -8313,18 +8253,6 @@
    "ats": "ashby",
    "board": "harvey",
    "title": "Forward Deployed Finance Engineer, Private Credit",
-   "url": "https://jobs.ashbyhq.com/harvey/8407b840-8645-471b-8bbf-f4c6c8861a2d",
-   "location": "London",
-   "remote": true,
-   "posted": "2026-10-28",
-   "department": "Go to Market",
-   "compensation": ""
-  },
-  {
-   "company": "Harvey",
-   "ats": "ashby",
-   "board": "harvey",
-   "title": "Forward Deployed Finance Engineer, Private Credit",
    "url": "https://jobs.ashbyhq.com/harvey/43c6e218-ea85-4519-b2fe-dd188ff3234f",
    "location": "New York",
    "remote": true,
@@ -8343,6 +8271,18 @@
    "posted": "2026-10-06",
    "department": "Go to Market",
    "compensation": "$254.6K – $350K • Offers Equity"
+  },
+  {
+   "company": "Harvey",
+   "ats": "ashby",
+   "board": "harvey",
+   "title": "Forward Deployed Investment Professional, Private Credit",
+   "url": "https://jobs.ashbyhq.com/harvey/8407b840-8645-471b-8bbf-f4c6c8861a2d",
+   "location": "London",
+   "remote": true,
+   "posted": "2026-10-28",
+   "department": "Go to Market",
+   "compensation": ""
   },
   {
    "company": "Hatch",
@@ -8901,6 +8841,18 @@
    "ats": "greenhouse",
    "board": "intercom",
    "title": "Forward Deployed Engineer",
+   "url": "https://job-boards.greenhouse.io/intercom/jobs/8405770",
+   "location": "New York, New York",
+   "remote": false,
+   "posted": "2026-11-20",
+   "department": "",
+   "compensation": ""
+  },
+  {
+   "company": "Intercom",
+   "ats": "greenhouse",
+   "board": "intercom",
+   "title": "Forward Deployed Engineer",
    "url": "https://job-boards.greenhouse.io/intercom/jobs/8333690",
    "location": "NYC, Remote; San Francisco, California",
    "remote": true,
@@ -8926,8 +8878,8 @@
    "board": "intercom",
    "title": "Senior Forward Deployed Data Scientist",
    "url": "https://job-boards.greenhouse.io/intercom/jobs/8403398",
-   "location": "NYC, Remote",
-   "remote": true,
+   "location": "New York, New York",
+   "remote": false,
    "posted": "2026-11-19",
    "department": "",
    "compensation": ""
@@ -9231,6 +9183,18 @@
    "posted": "2026-10-30",
    "department": "All Cost Center",
    "compensation": "$125,370 – $179,100 • Offers Equity • Offers Bonus"
+  },
+  {
+   "company": "Kong",
+   "ats": "ashby",
+   "board": "kong",
+   "title": "Forward-Deployed Engineer, AI Gateway (APJ)",
+   "url": "https://jobs.ashbyhq.com/kong/79823f9d-9833-4eea-9cf4-67656eb72cda",
+   "location": "Australia",
+   "remote": true,
+   "posted": "2026-11-20",
+   "department": "All Cost Center",
+   "compensation": ""
   },
   {
    "company": "Labelbox",
@@ -10990,7 +10954,7 @@
    "board": "n8n",
    "title": "Deployment Strategist | Remote | US East Coast",
    "url": "https://jobs.ashbyhq.com/n8n/58ff2bb3-d077-4d99-9ce3-d60739f09e6a",
-   "location": "Boston · California · Pennsylvania · Florida · New York · Massachusetts · Virginia · Georgia · Washington State · Colorado · New Jersey · Texas",
+   "location": "Boston, Massachusetts, United States · California, United States · Pennsylvania, United States · Florida, United States · New York, United States · Massachusetts, United States · Virginia, United States · Georgia, United States · Washington, United States · Colorado, United States · New Jersey, United States · Texas, United States",
    "remote": true,
    "posted": "2026-10-28",
    "department": "Sales",
@@ -11002,7 +10966,7 @@
    "board": "n8n",
    "title": "Forward Deployed Engineer - EMEA",
    "url": "https://jobs.ashbyhq.com/n8n/c9fc97fa-a473-4133-b3cb-502785649ecd",
-   "location": "Berlin Office · Bosnia · Norway · Estonia · Latvia · Slovenia · Netherlands · Hungary · Portugal · Poland · Serbia · Austria · Finland · Montenegro · London Office · Albania · Lithuania · Slovakia · Ireland · Bulgaria · Denmark · Belgium · Czech Republic · United Kingdom · Croatia · Spain · Greece",
+   "location": "Berlin, Germany · Bosnia · Norway · Estonia · Latvia · Slovenia · Netherlands · Hungary · Portugal · Poland · Serbia · Austria · Finland · Montenegro · London, United Kingdom · Albania · Lithuania · Slovakia · Ireland · Bulgaria · Denmark · Belgium · Czech Republic · United Kingdom · Croatia · Spain · Greece",
    "remote": true,
    "posted": "2026-11-16",
    "department": "Sales",
@@ -11014,7 +10978,7 @@
    "board": "n8n",
    "title": "Forward Deployed Engineer - US East Coast",
    "url": "https://jobs.ashbyhq.com/n8n/98dc8c86-b135-4803-8044-1d6f6a631aa8",
-   "location": "Boston · California · Pennsylvania · Florida · New York · Massachusetts · Virginia · Washington State · Colorado · New Jersey · Georgia · Texas",
+   "location": "Boston, Massachusetts, United States · California, United States · Pennsylvania, United States · Florida, United States · New York, United States · Massachusetts, United States · Virginia, United States · Washington, United States · Colorado, United States · New Jersey, United States · Georgia · Texas, United States",
    "remote": true,
    "posted": "2026-09-15",
    "department": "Sales",
@@ -11026,7 +10990,7 @@
    "board": "n8n",
    "title": "Lead Deployment Strategist - EMEA",
    "url": "https://jobs.ashbyhq.com/n8n/b3d7abe0-8766-4a75-9018-2f38cabe01c0",
-   "location": "Berlin Office · Bosnia · Norway · Estonia · Latvia · Slovenia · Netherlands · Hungary · Portugal · Poland · Serbia · Austria · Finland · Montenegro · London Office · Albania · Lithuania · Slovakia · Ireland · Bulgaria · Denmark · Belgium · Czech Republic · United Kingdom · Croatia · Spain · Greece",
+   "location": "Berlin, Germany · Bosnia · Norway · Estonia · Latvia · Slovenia · Netherlands · Hungary · Portugal · Poland · Serbia · Austria · Finland · Montenegro · London, United Kingdom · Albania · Lithuania · Slovakia · Ireland · Bulgaria · Denmark · Belgium · Czech Republic · United Kingdom · Croatia · Spain · Greece",
    "remote": true,
    "posted": "2026-11-11",
    "department": "Sales",
@@ -11038,7 +11002,7 @@
    "board": "n8n",
    "title": "Lead Forward Deployed Engineer - EMEA",
    "url": "https://jobs.ashbyhq.com/n8n/fb5e4f97-a769-4b87-95f4-bdc5e4c3b031",
-   "location": "Berlin Office · Bosnia · Norway · Estonia · Latvia · Slovenia · Netherlands · Hungary · Portugal · Poland · Serbia · Austria · Finland · Montenegro · London Office · Albania · Lithuania · Slovakia · Ireland · Bulgaria · Denmark · Belgium · Czech Republic · United Kingdom · Croatia · Spain · Greece",
+   "location": "Berlin, Germany · Bosnia · Norway · Estonia · Latvia · Slovenia · Netherlands · Hungary · Portugal · Poland · Serbia · Austria · Finland · Montenegro · London, United Kingdom · Albania · Lithuania · Slovakia · Ireland · Bulgaria · Denmark · Belgium · Czech Republic · United Kingdom · Croatia · Spain · Greece",
    "remote": true,
    "posted": "2026-11-11",
    "department": "Sales",
@@ -11271,30 +11235,6 @@
    "posted": "2026-09-09",
    "department": "Engineering, Product, and Design",
    "compensation": "$145K – $330K"
-  },
-  {
-   "company": "Netic",
-   "ats": "ashby",
-   "board": "netic",
-   "title": "Forward Deployed Engineer (FDE) - Intern - 2026-2027",
-   "url": "https://jobs.ashbyhq.com/netic/ffd6af1a-cebb-41f5-ac1d-e695adfd067c",
-   "location": "San Francisco",
-   "remote": false,
-   "posted": "2026-07-15",
-   "department": "University",
-   "compensation": "$138K – $160K"
-  },
-  {
-   "company": "Netic",
-   "ats": "ashby",
-   "board": "netic",
-   "title": "Forward Deployed Engineer (FDE) - New Grad - 2026-2027",
-   "url": "https://jobs.ashbyhq.com/netic/f2d170eb-c4c3-4715-9d2e-84dd4fe857c8",
-   "location": "San Francisco",
-   "remote": false,
-   "posted": "2026-07-15",
-   "department": "University",
-   "compensation": "$138K – $160K"
   },
   {
    "company": "NeuraFlash",
@@ -11689,7 +11629,7 @@
    "location": "San Francisco",
    "remote": true,
    "posted": "2026-07-23",
-   "department": "Customer Success & Support",
+   "department": "Customer Success",
    "compensation": "$150K – $170K • Offers Equity"
   },
   {
@@ -11701,7 +11641,7 @@
    "location": "United States (Any Time Zone)",
    "remote": true,
    "posted": "2026-03-25",
-   "department": "Customer Success & Support",
+   "department": "Customer Success",
    "compensation": "$150K – $170K • Offers Equity"
   },
   {
@@ -11810,6 +11750,18 @@
    "remote": true,
    "posted": "2026-09-15",
    "department": "Engineering",
+   "compensation": ""
+  },
+  {
+   "company": "Notion",
+   "ats": "ashby",
+   "board": "notion",
+   "title": "Manager, Forward Deployed Architect, Japan & Korea",
+   "url": "https://jobs.ashbyhq.com/notion/499868d5-70d0-4a7f-9b26-9ae64a536034",
+   "location": "Tokyo, Japan",
+   "remote": true,
+   "posted": "2026-11-20",
+   "department": "Sales",
    "compensation": ""
   },
   {
@@ -11943,6 +11895,18 @@
    "posted": "2026-09-26",
    "department": "Engineering",
    "compensation": "$275K – $400K • Offers Equity"
+  },
+  {
+   "company": "Ode",
+   "ats": "ashby",
+   "board": "odewithanthropic",
+   "title": "Member of Technical Staff (UAE)",
+   "url": "https://jobs.ashbyhq.com/odewithanthropic/a546a133-5856-4372-a960-f3632bec207f",
+   "location": "Dubai Office",
+   "remote": false,
+   "posted": "2026-08-14",
+   "department": "Engineering",
+   "compensation": ""
   },
   {
    "company": "Oden Technologies",
@@ -12248,6 +12212,18 @@
    "company": "OpenAI",
    "ats": "ashby",
    "board": "openai",
+   "title": "Forward Deployed Engineer (FDE), Cyber - London",
+   "url": "https://jobs.ashbyhq.com/openai/83b21911-d467-44ab-af3b-c0b898488ab4",
+   "location": "London, UK",
+   "remote": true,
+   "posted": "2026-11-20",
+   "department": "Forward Deployed Engineering",
+   "compensation": ""
+  },
+  {
+   "company": "OpenAI",
+   "ats": "ashby",
+   "board": "openai",
    "title": "Forward Deployed Engineer (FDE), Cyber - NYC",
    "url": "https://jobs.ashbyhq.com/openai/9c1aa1f3-b4d0-48fa-814b-37d36ad0ad2e",
    "location": "New York City · San Francisco",
@@ -12267,6 +12243,18 @@
    "posted": "2026-11-05",
    "department": "Forward Deployed Engineering",
    "compensation": "$185K – $300K • Offers Equity"
+  },
+  {
+   "company": "OpenAI",
+   "ats": "ashby",
+   "board": "openai",
+   "title": "Forward Deployed Engineer (FDE), Cyber - Tokyo",
+   "url": "https://jobs.ashbyhq.com/openai/77a73c98-cdc9-4cc2-9cf8-ec49ef952856",
+   "location": "Tokyo, Japan",
+   "remote": true,
+   "posted": "2026-11-20",
+   "department": "Forward Deployed Engineering",
+   "compensation": ""
   },
   {
    "company": "OpenAI",
@@ -12313,18 +12301,6 @@
    "location": "San Francisco",
    "remote": true,
    "posted": "2026-08-06",
-   "department": "Forward Deployed Engineering",
-   "compensation": "$185K – $300K • Offers Equity"
-  },
-  {
-   "company": "OpenAI",
-   "ats": "ashby",
-   "board": "openai",
-   "title": "Forward Deployed Engineer (FDE), Legal-NYC",
-   "url": "https://jobs.ashbyhq.com/openai/51977acc-b1f8-48af-bde6-95ddba936d65",
-   "location": "New York City",
-   "remote": true,
-   "posted": "2026-08-26",
    "department": "Forward Deployed Engineering",
    "compensation": "$185K – $300K • Offers Equity"
   },
@@ -12435,6 +12411,18 @@
    "posted": "2025-09-03",
    "department": "OpenAI for Gov",
    "compensation": "$145.8K – $280K • Offers Equity"
+  },
+  {
+   "company": "OpenAI",
+   "ats": "ashby",
+   "board": "openai",
+   "title": "Forward Deployment Strategy and Operations",
+   "url": "https://jobs.ashbyhq.com/openai/08e8d03a-df94-46af-8664-cd9aab1af445",
+   "location": "San Francisco",
+   "remote": true,
+   "posted": "2026-11-19",
+   "department": "Go To Market",
+   "compensation": "$293K – $325K • Offers Equity"
   },
   {
    "company": "OpenAI",
@@ -12797,18 +12785,6 @@
    "compensation": ""
   },
   {
-   "company": "PackageX",
-   "ats": "lever",
-   "board": "packagex",
-   "title": "Senior Forward Deployed Engineer (FDE)",
-   "url": "https://jobs.lever.co/packagex/66ff22d5-b14b-4d9c-8bff-4c5b231af6b0",
-   "location": "Remote - USA",
-   "remote": true,
-   "posted": "2026-09-30",
-   "department": "Customer Products",
-   "compensation": ""
-  },
-  {
    "company": "PagerDuty",
    "ats": "greenhouse",
    "board": "pagerduty",
@@ -12877,18 +12853,6 @@
    "location": "New York, NY",
    "remote": false,
    "posted": "2022-11-29",
-   "department": "Echo",
-   "compensation": ""
-  },
-  {
-   "company": "Palantir",
-   "ats": "lever",
-   "board": "palantir",
-   "title": "Deployment Strategist",
-   "url": "https://jobs.lever.co/palantir/b81be534-e1d6-4946-8121-1e1360d4d030",
-   "location": "Oslo, Norway",
-   "remote": false,
-   "posted": "2026-06-25",
    "department": "Echo",
    "compensation": ""
   },
@@ -14661,10 +14625,10 @@
    "ats": "lever",
    "board": "provectus",
    "title": "FDE AI/ Solutions Architect (AI, Python/Data)",
-   "url": "https://jobs.lever.co/provectus/cd168e4b-04a0-4be6-ba2e-80df4bcee772",
-   "location": "Tbilisi · Yerevan · Belgrade · Novi Sad, Vojvodina · Poland · Portugal",
+   "url": "https://jobs.lever.co/provectus/2f6ea719-c829-4a31-81dc-c3d985494c90",
+   "location": "Ukraine · Serbia · Yerevan · Spain · Slovakia · Slovenia · Poland",
    "remote": true,
-   "posted": "2026-06-30",
+   "posted": "2026-10-30",
    "department": "AI practice - David Sarkisyan",
    "compensation": ""
   },
@@ -14673,10 +14637,10 @@
    "ats": "lever",
    "board": "provectus",
    "title": "FDE AI/ Solutions Architect (AI, Python/Data)",
-   "url": "https://jobs.lever.co/provectus/2f6ea719-c829-4a31-81dc-c3d985494c90",
-   "location": "Ukraine · Serbia · Yerevan · Spain · Slovakia · Slovenia · Poland",
+   "url": "https://jobs.lever.co/provectus/cd168e4b-04a0-4be6-ba2e-80df4bcee772",
+   "location": "Yerevan · Belgrade · Novi Sad, Vojvodina · Poland · Portugal",
    "remote": true,
-   "posted": "2026-10-30",
+   "posted": "2026-06-30",
    "department": "AI practice - David Sarkisyan",
    "compensation": ""
   },
@@ -15550,18 +15514,6 @@
    "board": "revel",
    "title": "Internship: Forward Deployed Engineer, Software",
    "url": "https://jobs.ashbyhq.com/revel/34f97b81-c981-4c4b-9f4d-d471c33b46cc",
-   "location": "Los Angeles · San Francisco",
-   "remote": false,
-   "posted": "2026-10-06",
-   "department": "Internship",
-   "compensation": ""
-  },
-  {
-   "company": "Revel",
-   "ats": "ashby",
-   "board": "revel",
-   "title": "Internship: Forward Deployed Engineer, Test",
-   "url": "https://jobs.ashbyhq.com/revel/6ca4dca8-a43e-41da-acc3-e6b4d8f9b3c1",
    "location": "Los Angeles · San Francisco",
    "remote": false,
    "posted": "2026-10-06",
@@ -16512,7 +16464,7 @@
    "url": "https://jobs.ashbyhq.com/savvy/90602fc4-1827-406c-beba-16cd602e8344",
    "location": "NYC Office",
    "remote": true,
-   "posted": "2026-11-19",
+   "posted": "2026-11-20",
    "department": "R&D",
    "compensation": ""
   },
@@ -16524,7 +16476,7 @@
    "url": "https://jobs.ashbyhq.com/savvy/7315a9b5-177a-443b-8f25-af7660c25324",
    "location": "NYC Office",
    "remote": true,
-   "posted": "2026-11-18",
+   "posted": "2026-11-20",
    "department": "R&D",
    "compensation": ""
   },
@@ -17045,42 +16997,6 @@
    "compensation": "$185K – $230K • Offers Equity • Offers Commission • Offers Bonus"
   },
   {
-   "company": "Smartsheet",
-   "ats": "greenhouse",
-   "board": "smartsheet",
-   "title": "Sr. Forward Deployed AI Engineer (Remote Eligible in Germany)",
-   "url": "https://job-boards.greenhouse.io/smartsheet/jobs/7874013",
-   "location": "Munich, DE",
-   "remote": false,
-   "posted": "2026-05-01",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Smartsheet",
-   "ats": "greenhouse",
-   "board": "smartsheet",
-   "title": "Sr. Forward Deployed AI Engineer (Remote Eligible in the UK)",
-   "url": "https://job-boards.greenhouse.io/smartsheet/jobs/7930145",
-   "location": "London, UK",
-   "remote": false,
-   "posted": "2026-05-15",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Smartsheet",
-   "ats": "greenhouse",
-   "board": "smartsheet",
-   "title": "Sr. Forward Deployed AI Engineer (Remote Eligible in the UK)",
-   "url": "https://job-boards.greenhouse.io/smartsheet/jobs/7873872",
-   "location": "REMOTE, UK",
-   "remote": true,
-   "posted": "2026-05-01",
-   "department": "",
-   "compensation": ""
-  },
-  {
    "company": "SnapLogic",
    "ats": "lever",
    "board": "snaplogic",
@@ -17209,7 +17125,7 @@
    "location": "IN-Bangalore-MSO · IN-Mumbai-MSO",
    "remote": true,
    "posted": "2026-11-17",
-   "department": "Professional Services",
+   "department": "Engineering",
    "compensation": ""
   },
   {
@@ -17661,18 +17577,6 @@
    "ats": "greenhouse",
    "board": "staffbase",
    "title": "Senior Forward Deployed Engineer - Global Markets",
-   "url": "https://job-boards.greenhouse.io/staffbase/jobs/8940942002",
-   "location": "Toronto, Ontario, Canada",
-   "remote": false,
-   "posted": "2026-11-13",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Staffbase",
-   "ats": "greenhouse",
-   "board": "staffbase",
-   "title": "Senior Forward Deployed Engineer - Global Markets",
    "url": "https://job-boards.greenhouse.io/staffbase/jobs/8933032002",
    "location": "United Kingdom",
    "remote": false,
@@ -17757,10 +17661,10 @@
    "ats": "greenhouse",
    "board": "stripe",
    "title": "Forward Deployed AI Accelerator, Marketing",
-   "url": "https://stripe.com/jobs/search?gh_jid=7747640",
+   "url": "https://stripe.com/jobs/search?gh_jid=8406140",
    "location": "Seattle, San Francisco, New York, Chicago, Atlanta, Remote in the US, Canada",
    "remote": true,
-   "posted": "2026-03-26",
+   "posted": "2026-11-20",
    "department": "",
    "compensation": ""
   },
@@ -18001,6 +17905,18 @@
    "location": "Remote (Canada)",
    "remote": true,
    "posted": "2026-08-17",
+   "department": "",
+   "compensation": ""
+  },
+  {
+   "company": "Tailscale",
+   "ats": "greenhouse",
+   "board": "tailscale",
+   "title": "Forward Deployed Engineer",
+   "url": "https://job-boards.greenhouse.io/tailscale/jobs/4754860005",
+   "location": "Remote (United Kingdom)",
+   "remote": true,
+   "posted": "2026-11-19",
    "department": "",
    "compensation": ""
   },
@@ -18639,18 +18555,6 @@
    "posted": "2026-10-22",
    "department": "Client Services",
    "compensation": "$140K – $220K"
-  },
-  {
-   "company": "Tines",
-   "ats": "greenhouse",
-   "board": "tines",
-   "title": "Senior Forward Deployed Engineer - West",
-   "url": "https://job-boards.greenhouse.io/tines/jobs/6141304004",
-   "location": "North America (Remote)",
-   "remote": true,
-   "posted": "2026-09-02",
-   "department": "",
-   "compensation": ""
   },
   {
    "company": "Titan",
@@ -19388,13 +19292,13 @@
    "company": "UiPath",
    "ats": "ashby",
    "board": "uipath",
-   "title": "Principal Solution Deployment Strategist (Healthcare)",
-   "url": "https://jobs.ashbyhq.com/uipath/86f8c30b-c8d4-438c-bf33-7eaa7ae681ec",
-   "location": "New York",
+   "title": "Forward Deployed Engineer II",
+   "url": "https://jobs.ashbyhq.com/uipath/1806abfb-08fd-4ddb-9abd-8eb15c8a1b9f",
+   "location": "Bucharest",
    "remote": false,
-   "posted": "2026-11-13",
-   "department": "Product",
-   "compensation": "$190K – $240K"
+   "posted": "2026-11-20",
+   "department": "Services",
+   "compensation": ""
   },
   {
    "company": "UiPath",
@@ -19405,6 +19309,18 @@
    "location": "Bucharest",
    "remote": false,
    "posted": "2026-11-13",
+   "department": "Engineering",
+   "compensation": ""
+  },
+  {
+   "company": "UiPath",
+   "ats": "ashby",
+   "board": "uipath",
+   "title": "Senior Forward Deployed Engineer",
+   "url": "https://jobs.ashbyhq.com/uipath/5e7cf364-8056-491c-ba08-e3d6411712ab",
+   "location": "Paris",
+   "remote": false,
+   "posted": "2026-11-20",
    "department": "Engineering",
    "compensation": ""
   },
@@ -19886,18 +19802,6 @@
    "remote": false,
    "posted": "2024-03-27",
    "department": "Software Engineering",
-   "compensation": ""
-  },
-  {
-   "company": "Whop",
-   "ats": "ashby",
-   "board": "whop",
-   "title": "Forward Deployed Engineer, Platforms (US)",
-   "url": "https://jobs.ashbyhq.com/whop/1987ef82-eeb4-4299-b1df-bde6698694b4",
-   "location": "Brooklyn, NY",
-   "remote": false,
-   "posted": "2026-11-05",
-   "department": "Sales",
    "compensation": ""
   },
   {
