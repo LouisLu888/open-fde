@@ -1,7 +1,7 @@
 {
- "checkedAt": "2026-11-20T21:06:23.946Z",
+ "checkedAt": "2026-11-21T20:07:05.963Z",
  "method": "Public Greenhouse, Lever, and Ashby job-board APIs; titles matched forward[\\s-]*deploy|\\bFDE\\b|\\bFDSE\\b|special projects engineer|deployment strategist|ai deployment engineer|^deployed engineer\\b",
- "boardsChecked": 768,
+ "boardsChecked": 767,
  "companiesProbed": 840,
  "jobs": [
   {
@@ -4160,18 +4160,6 @@
    "company": "Databricks",
    "ats": "greenhouse",
    "board": "databricks",
-   "title": "Forward Deployed Engineering Manager",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8910850002",
-   "location": "London, United Kingdom",
-   "remote": false,
-   "posted": "2026-10-26",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Databricks",
-   "ats": "greenhouse",
-   "board": "databricks",
    "title": "Lead Engagement Manager, FDE - Healthcare & Life Sciences",
    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8438803002",
    "location": "Central - United States; Northeast - United States; Southeast - United States",
@@ -5209,6 +5197,18 @@
    "location": "Tokyo, Japan",
    "remote": false,
    "posted": "2026-09-15",
+   "department": "",
+   "compensation": ""
+  },
+  {
+   "company": "Databricks",
+   "ats": "greenhouse",
+   "board": "databricks",
+   "title": "Sr. Staff Forward Deployed Engineer",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8951023002",
+   "location": "Remote - Washington D.C.; Washington, D.C.",
+   "remote": true,
+   "posted": "2026-11-20",
    "department": "",
    "compensation": ""
   },
@@ -6584,18 +6584,6 @@
    "company": "Everpure (Pure Storage)",
    "ats": "greenhouse",
    "board": "purestorage",
-   "title": "Forward Deployed Engineer, AI Systems",
-   "url": "https://job-boards.greenhouse.io/purestorage/jobs/8165519",
-   "location": "Santa Clara, California",
-   "remote": false,
-   "posted": "2026-09-29",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Everpure (Pure Storage)",
-   "ats": "greenhouse",
-   "board": "purestorage",
    "title": "Forward Deployed Engineering, Portworx",
    "url": "https://job-boards.greenhouse.io/purestorage/jobs/8113513",
    "location": "Bellevue, Washington; Chicago, Illinois; New York, New York; Santa Clara, California",
@@ -6663,18 +6651,6 @@
    "posted": "2025-06-26",
    "department": "GTM",
    "compensation": "$160K – $300K • Offers Equity"
-  },
-  {
-   "company": "Exa",
-   "ats": "ashby",
-   "board": "exa",
-   "title": "Product Manager, Forward Deployed",
-   "url": "https://jobs.ashbyhq.com/exa/521540d5-697e-4020-aa83-cd2f60e144a2",
-   "location": "San Francisco, California",
-   "remote": false,
-   "posted": "2026-09-26",
-   "department": "Product",
-   "compensation": "$155K – $275K • Offers Equity • Offers Bonus"
   },
   {
    "company": "Extreme Networks",
@@ -6794,18 +6770,6 @@
    "remote": true,
    "posted": "2026-10-01",
    "department": "Autonomy",
-   "compensation": ""
-  },
-  {
-   "company": "FieldAI",
-   "ats": "lever",
-   "board": "field-ai",
-   "title": "Forward Deployed Engineer (Federal)",
-   "url": "https://jobs.lever.co/field-ai/3ea0a2e6-b3e7-4887-b17d-f1cb16ea4d50",
-   "location": "Irvine, CA",
-   "remote": false,
-   "posted": "2026-05-11",
-   "department": "Federal",
    "compensation": ""
   },
   {
@@ -8420,6 +8384,18 @@
    "company": "Hippocratic AI",
    "ats": "ashby",
    "board": "hippocratic%20ai",
+   "title": "Associate Deployment Strategist",
+   "url": "https://jobs.ashbyhq.com/Hippocratic%20AI/b8e5655f-5b3b-45bf-ac99-fc8f0ec85a84",
+   "location": "Menlo Park, CA",
+   "remote": false,
+   "posted": "2026-11-21",
+   "department": "Customer Experience",
+   "compensation": ""
+  },
+  {
+   "company": "Hippocratic AI",
+   "ats": "ashby",
+   "board": "hippocratic%20ai",
    "title": "Deployment Strategist",
    "url": "https://jobs.ashbyhq.com/Hippocratic%20AI/32a71060-b389-4339-b52d-93048d718e61",
    "location": "United States",
@@ -8612,7 +8588,7 @@
    "company": "Icarus",
    "ats": "greenhouse",
    "board": "icarus",
-   "title": "Forward Deployed Engineer",
+   "title": "Forward Deployed Operator",
    "url": "https://job-boards.greenhouse.io/icarus/jobs/5287322008",
    "location": "El Segundo",
    "remote": false,
@@ -9254,7 +9230,7 @@
    "remote": false,
    "posted": "2026-08-22",
    "department": "Deployed Engineering",
-   "compensation": ""
+   "compensation": "$150K – $250K • Offers Equity • Offers Commission"
   },
   {
    "company": "LangChain",
@@ -9266,7 +9242,7 @@
    "remote": true,
    "posted": "2026-04-14",
    "department": "Deployed Engineering",
-   "compensation": ""
+   "compensation": "$150K – $250K • Offers Equity • Offers Commission"
   },
   {
    "company": "LangChain",
@@ -9278,7 +9254,7 @@
    "remote": true,
    "posted": "2026-08-05",
    "department": "Deployed Engineering",
-   "compensation": ""
+   "compensation": "$200K – $300K • Offers Equity"
   },
   {
    "company": "LangChain",
@@ -9290,7 +9266,7 @@
    "remote": false,
    "posted": "2026-10-07",
    "department": "Deployed Engineering",
-   "compensation": ""
+   "compensation": "$160K – $185K • Offers Equity • Offers Commission"
   },
   {
    "company": "LangChain",
@@ -9302,7 +9278,7 @@
    "remote": true,
    "posted": "2026-10-09",
    "department": "Deployed Engineering",
-   "compensation": ""
+   "compensation": "$185K – $315K • Offers Equity • Offers Commission"
   },
   {
    "company": "LangChain",
@@ -9314,7 +9290,7 @@
    "remote": true,
    "posted": "2026-04-14",
    "department": "Deployed Engineering",
-   "compensation": ""
+   "compensation": "$150K – $250K • Offers Equity • Offers Commission"
   },
   {
    "company": "LangChain",
@@ -9326,7 +9302,7 @@
    "remote": false,
    "posted": "2026-06-04",
    "department": "Deployed Engineering",
-   "compensation": ""
+   "compensation": "$165K – $380K • Offers Equity"
   },
   {
    "company": "LangChain",
@@ -14541,10 +14517,10 @@
    "ats": "ashby",
    "board": "promise",
    "title": "Deployment Strategist",
-   "url": "https://jobs.ashbyhq.com/Promise/0978ad8a-3098-4404-82b1-b931fc9412f9",
+   "url": "https://jobs.ashbyhq.com/Promise/fb838ccc-aae2-4b85-9da8-2a158366f2ec",
    "location": "San Francisco",
    "remote": true,
-   "posted": "2026-09-21",
+   "posted": "2026-11-21",
    "department": "Delivery",
    "compensation": "$150K – $210K • Offers Equity"
   },
@@ -14555,7 +14531,7 @@
    "title": "Deployment Strategist",
    "url": "https://jobs.ashbyhq.com/Promise/ac00e00f-0be5-40d4-9641-09fb8afd92a4",
    "location": "Washington, D.C.",
-   "remote": false,
+   "remote": true,
    "posted": "2026-09-30",
    "department": "Delivery",
    "compensation": "$150K – $210K • Offers Equity"
@@ -16169,18 +16145,6 @@
    "compensation": ""
   },
   {
-   "company": "SambaNova",
-   "ats": "greenhouse",
-   "board": "sambanovasystems",
-   "title": "Forward Deployment Engineer",
-   "url": "https://sambanova.ai/sambanova-available-positions/?gh_jid=6191763004",
-   "location": "Tokyo Prefecture, Japan",
-   "remote": false,
-   "posted": "2026-09-14",
-   "department": "",
-   "compensation": ""
-  },
-  {
    "company": "Sand Technologies",
    "ats": "greenhouse",
    "board": "sandtechholdingslimited",
@@ -17693,18 +17657,6 @@
    "compensation": ""
   },
   {
-   "company": "Suki",
-   "ats": "greenhouse",
-   "board": "suki",
-   "title": "Senior Forward Deployed Engineer",
-   "url": "https://www.suki.ai/open-positions?gh_jid=8047234003",
-   "location": "Redwood City, CA",
-   "remote": false,
-   "posted": "2026-11-06",
-   "department": "",
-   "compensation": ""
-  },
-  {
    "company": "Summation",
    "ats": "ashby",
    "board": "summation",
@@ -17913,7 +17865,7 @@
    "ats": "greenhouse",
    "board": "tailscale",
    "title": "Forward Deployed Engineer",
-   "url": "https://job-boards.greenhouse.io/tailscale/jobs/4754860005",
+   "url": "https://job-boards.greenhouse.io/tailscale/jobs/4754865005",
    "location": "Remote (United Kingdom)",
    "remote": true,
    "posted": "2026-11-19",
@@ -18032,11 +17984,59 @@
    "company": "Talkdesk",
    "ats": "greenhouse",
    "board": "talkdesk2",
+   "title": "Forward Deployed AI Deployment Strategist",
+   "url": "https://job-boards.greenhouse.io/talkdesk2/jobs/8401268",
+   "location": "Bellevue",
+   "remote": false,
+   "posted": "2026-11-20",
+   "department": "",
+   "compensation": ""
+  },
+  {
+   "company": "Talkdesk",
+   "ats": "greenhouse",
+   "board": "talkdesk2",
    "title": "Forward Deployed AI Engineer",
    "url": "https://job-boards.greenhouse.io/talkdesk2/jobs/8396748",
    "location": "Bellevue",
    "remote": false,
    "posted": "2026-11-18",
+   "department": "",
+   "compensation": ""
+  },
+  {
+   "company": "Talkdesk",
+   "ats": "greenhouse",
+   "board": "talkdesk2",
+   "title": "Senior Forward Deployed AI Deployment Strategist",
+   "url": "https://job-boards.greenhouse.io/talkdesk2/jobs/8401270",
+   "location": "Bellevue",
+   "remote": false,
+   "posted": "2026-11-20",
+   "department": "",
+   "compensation": ""
+  },
+  {
+   "company": "Talkdesk",
+   "ats": "greenhouse",
+   "board": "talkdesk2",
+   "title": "Senior Forward Deployed AI Engineer",
+   "url": "https://job-boards.greenhouse.io/talkdesk2/jobs/8401153",
+   "location": "Bellevue",
+   "remote": false,
+   "posted": "2026-11-20",
+   "department": "",
+   "compensation": ""
+  },
+  {
+   "company": "Talkdesk",
+   "ats": "greenhouse",
+   "board": "talkdesk2",
+   "title": "Senior Manager Forward Deployed AI Engineer",
+   "url": "https://job-boards.greenhouse.io/talkdesk2/jobs/8401303",
+   "location": "Bellevue",
+   "remote": false,
+   "posted": "2026-11-20",
    "department": "",
    "compensation": ""
   },
