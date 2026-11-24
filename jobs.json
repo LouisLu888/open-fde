@@ -1,7 +1,7 @@
 {
- "checkedAt": "2026-11-22T20:21:57.024Z",
+ "checkedAt": "2026-11-24T00:51:27.174Z",
  "method": "Public Greenhouse, Lever, and Ashby job-board APIs; titles matched forward[\\s-]*deploy|\\bFDE\\b|\\bFDSE\\b|special projects engineer|deployment strategist|ai deployment engineer|^deployed engineer\\b",
- "boardsChecked": 767,
+ "boardsChecked": 766,
  "companiesProbed": 840,
  "jobs": [
   {
@@ -181,6 +181,18 @@
    "location": "San Francisco, California, United States",
    "remote": false,
    "posted": "2026-09-16",
+   "department": "",
+   "compensation": ""
+  },
+  {
+   "company": "Afresh",
+   "ats": "greenhouse",
+   "board": "afresh",
+   "title": "Deployment Strategist Director",
+   "url": "https://job-boards.greenhouse.io/afresh/jobs/6269261004",
+   "location": "San Francisco, California, United States",
+   "remote": false,
+   "posted": "2026-11-23",
    "department": "",
    "compensation": ""
   },
@@ -428,11 +440,11 @@
    "company": "Aircall",
    "ats": "greenhouse",
    "board": "aircallioinc",
-   "title": "Forward Deployed Engineer (AI Solutions) - NA East Market",
-   "url": "https://job-boards.greenhouse.io/aircallioinc/jobs/4308436009",
-   "location": "New York Office",
+   "title": "Forward Deployed Engineering (FDE) Lead, AMER",
+   "url": "https://job-boards.greenhouse.io/aircallioinc/jobs/4415454009",
+   "location": "New York Office; San Francisco Office",
    "remote": false,
-   "posted": "2026-07-15",
+   "posted": "2026-09-22",
    "department": "",
    "compensation": ""
   },
@@ -443,18 +455,6 @@
    "title": "Forward Deployed Engineering Team Lead",
    "url": "https://job-boards.greenhouse.io/aircallioinc/jobs/4415622009",
    "location": "Paris Office",
-   "remote": false,
-   "posted": "2026-09-22",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Aircall",
-   "ats": "greenhouse",
-   "board": "aircallioinc",
-   "title": "Manager, Forward Deployed Engineering (FDE)",
-   "url": "https://job-boards.greenhouse.io/aircallioinc/jobs/4415454009",
-   "location": "New York Office; San Francisco Office",
    "remote": false,
    "posted": "2026-09-22",
    "department": "",
@@ -561,10 +561,10 @@
    "ats": "greenhouse",
    "board": "alphasense",
    "title": "Forward-Deployed Banker",
-   "url": "https://job-boards.greenhouse.io/alphasense/jobs/8939346002",
+   "url": "https://job-boards.greenhouse.io/alphasense/jobs/8958670002",
    "location": "London, Greater London, England, United Kingdom",
    "remote": false,
-   "posted": "2026-11-12",
+   "posted": "2026-11-23",
    "department": "",
    "compensation": ""
   },
@@ -1082,7 +1082,7 @@
    "remote": false,
    "posted": "2025-10-30",
    "department": "Engineering",
-   "compensation": "$120K – $300K • Offers Equity"
+   "compensation": "$120K – $250K • Offers Equity"
   },
   {
    "company": "Arize AI",
@@ -1589,30 +1589,6 @@
    "compensation": "$210K – $270K • Offers Equity"
   },
   {
-   "company": "Axle",
-   "ats": "ashby",
-   "board": "axleinsure",
-   "title": "Lead Deployment Strategist",
-   "url": "https://jobs.ashbyhq.com/axleinsure/4e1b1bf9-4d77-4b11-8bf1-f2d6cb6b955a",
-   "location": "New York City · Atlanta",
-   "remote": false,
-   "posted": "2026-06-25",
-   "department": "GTM",
-   "compensation": "$190K – $240K • 0.15% – 0.3%"
-  },
-  {
-   "company": "Axle",
-   "ats": "ashby",
-   "board": "axleinsure",
-   "title": "Senior Deployment Strategist",
-   "url": "https://jobs.ashbyhq.com/axleinsure/7c6208ba-898d-41ab-ac93-3d4c7fe8f2c4",
-   "location": "New York City · Atlanta",
-   "remote": false,
-   "posted": "2026-06-25",
-   "department": "GTM",
-   "compensation": "$160K – $200K • 0.08% – 0.15%"
-  },
-  {
    "company": "AZX",
    "ats": "ashby",
    "board": "careers.azx.io",
@@ -1643,18 +1619,6 @@
    "title": "Forward Deployment Engineer",
    "url": "https://job-boards.greenhouse.io/baidu/jobs/8109541",
    "location": "Los Angeles, California",
-   "remote": false,
-   "posted": "2026-08-05",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "BambooHR",
-   "ats": "greenhouse",
-   "board": "bamboohr17",
-   "title": "Sr. Forward Deployed Engineer",
-   "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/6115974004",
-   "location": "Utah | Hybrid",
    "remote": false,
    "posted": "2026-08-05",
    "department": "",
@@ -2132,30 +2096,6 @@
    "company": "Caylent",
    "ats": "greenhouse",
    "board": "caylent",
-   "title": "Forward Deployed AI Lead",
-   "url": "https://job-boards.greenhouse.io/caylent/jobs/5969995004",
-   "location": "CANADA",
-   "remote": false,
-   "posted": "2026-04-14",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Caylent",
-   "ats": "greenhouse",
-   "board": "caylent",
-   "title": "Forward Deployed AI Lead",
-   "url": "https://job-boards.greenhouse.io/caylent/jobs/5969990004",
-   "location": "USA",
-   "remote": false,
-   "posted": "2026-04-14",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Caylent",
-   "ats": "greenhouse",
-   "board": "caylent",
    "title": "Forward Deployed Engineer",
    "url": "https://job-boards.greenhouse.io/caylent/jobs/5973733004",
    "location": "CANADA",
@@ -2387,7 +2327,7 @@
    "title": "Forward Deployed Engineer",
    "url": "https://jobs.ashbyhq.com/chalk/262b99de-c605-42d8-bf9d-d65528112122",
    "location": "Dublin, Ireland",
-   "remote": false,
+   "remote": true,
    "posted": "2025-09-25",
    "department": "Engineering",
    "compensation": ""
@@ -2781,10 +2721,10 @@
    "ats": "greenhouse",
    "board": "cloudflare",
    "title": "Senior Forward Deployed Engineer",
-   "url": "https://boards.greenhouse.io/cloudflare/jobs/8173707?gh_jid=8173707",
+   "url": "https://boards.greenhouse.io/cloudflare/jobs/8385867?gh_jid=8385867",
    "location": "Hybrid",
    "remote": false,
-   "posted": "2026-09-02",
+   "posted": "2026-11-13",
    "department": "",
    "compensation": ""
   },
@@ -2902,8 +2842,8 @@
    "board": "cognition",
    "title": "Forward Deployed Engineer - Federal",
    "url": "https://jobs.ashbyhq.com/cognition/f1430967-f367-4afe-9107-e58da423633c",
-   "location": "Washington DC · San Francisco",
-   "remote": true,
+   "location": "Washington DC",
+   "remote": false,
    "posted": "2026-01-26",
    "department": "Customer Engineering",
    "compensation": "$180K – $280K • Offers Equity • Offers Bonus"
@@ -3992,6 +3932,18 @@
    "company": "Databricks",
    "ats": "greenhouse",
    "board": "databricks",
+   "title": "Associate Forward Deployed Engineer",
+   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8910846002",
+   "location": "Mountain View, California",
+   "remote": false,
+   "posted": "2026-10-23",
+   "department": "",
+   "compensation": ""
+  },
+  {
+   "company": "Databricks",
+   "ats": "greenhouse",
+   "board": "databricks",
    "title": "Delivery Partner Manager, FDE",
    "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8920618002",
    "location": "Northeast - United States; San Francisco, California; Seattle, Washington; Southeast - United States",
@@ -4261,18 +4213,6 @@
    "location": "London, United Kingdom",
    "remote": false,
    "posted": "2026-10-26",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Databricks",
-   "ats": "greenhouse",
-   "board": "databricks",
-   "title": "Senior Forward Deployed Engineer, Sr FDE (L5)",
-   "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8876680002",
-   "location": "Remote - India",
-   "remote": true,
-   "posted": "2026-10-19",
    "department": "",
    "compensation": ""
   },
@@ -5285,6 +5225,18 @@
    "compensation": ""
   },
   {
+   "company": "Datadog",
+   "ats": "greenhouse",
+   "board": "datadog",
+   "title": "Manager, Forward Deployed Engineering - Implementation Services",
+   "url": "https://careers.datadoghq.com/detail/8380309/?gh_jid=8380309",
+   "location": "New York, New York, USA",
+   "remote": false,
+   "posted": "2026-11-23",
+   "department": "",
+   "compensation": ""
+  },
+  {
    "company": "Dataleap",
    "ats": "ashby",
    "board": "dataleap",
@@ -5745,7 +5697,7 @@
    "ats": "greenhouse",
    "board": "dominodatalab",
    "title": "Forward Deployed Engineer, Intern - Campus Recruiting 2027",
-   "url": "https://app.careerpuck.com/job-board/domino-data-lab/job/7992534?gh_jid=7992534",
+   "url": "https://job-boards.greenhouse.io/dominodatalab/jobs/7992534",
    "location": "New York City, New York",
    "remote": false,
    "posted": "2026-09-09",
@@ -5757,7 +5709,7 @@
    "ats": "greenhouse",
    "board": "dominodatalab",
    "title": "Forward Deployed Engineer, Life Sciences",
-   "url": "https://app.careerpuck.com/job-board/domino-data-lab/job/8204250?gh_jid=8204250",
+   "url": "https://job-boards.greenhouse.io/dominodatalab/jobs/8204250",
    "location": "Barcelona, Spain",
    "remote": false,
    "posted": "2026-09-15",
@@ -5769,7 +5721,7 @@
    "ats": "greenhouse",
    "board": "dominodatalab",
    "title": "Forward Deployed Engineer, Life Sciences",
-   "url": "https://app.careerpuck.com/job-board/domino-data-lab/job/8201819?gh_jid=8201819",
+   "url": "https://job-boards.greenhouse.io/dominodatalab/jobs/8201819",
    "location": "Berlin, Germany",
    "remote": false,
    "posted": "2026-09-15",
@@ -6116,18 +6068,6 @@
    "company": "ElevenLabs",
    "ats": "ashby",
    "board": "elevenlabs",
-   "title": "Deployment Strategist - North America",
-   "url": "https://jobs.ashbyhq.com/ElevenLabs/8c068ebf-c79f-4f12-97ef-b4c9a4f7ae5f",
-   "location": "United States · New York · Los Angeles · Boston · San Francisco · Washington, D.C.",
-   "remote": true,
-   "posted": "2026-11-02",
-   "department": "Engineering & Product",
-   "compensation": ""
-  },
-  {
-   "company": "ElevenLabs",
-   "ats": "ashby",
-   "board": "elevenlabs",
    "title": "Deployment Strategist Lead - India",
    "url": "https://jobs.ashbyhq.com/ElevenLabs/6b5a902d-49ea-4fa9-ab67-d6e88c361695",
    "location": "India",
@@ -6140,11 +6080,11 @@
    "company": "ElevenLabs",
    "ats": "ashby",
    "board": "elevenlabs",
-   "title": "Deployment Strategist Lead - Middle East",
-   "url": "https://jobs.ashbyhq.com/ElevenLabs/829d5af0-3581-4d49-8073-866f30d09503",
-   "location": "UAE · Saudi Arabia",
+   "title": "Deployment Strategist, Public Sector (Federal & SLED) - North America",
+   "url": "https://jobs.ashbyhq.com/ElevenLabs/7758cdc5-b5c9-4a5c-8c80-11678f7cba9d",
+   "location": "United States · Washington, D.C.",
    "remote": true,
-   "posted": "2026-11-04",
+   "posted": "2026-11-22",
    "department": "Engineering & Product",
    "compensation": ""
   },
@@ -6194,6 +6134,18 @@
    "remote": true,
    "posted": "2026-10-14",
    "department": "Engineering & Product",
+   "compensation": ""
+  },
+  {
+   "company": "EliseAI",
+   "ats": "ashby",
+   "board": "eliseai",
+   "title": "Associate Deployment Strategist, Future Platforms | Housing",
+   "url": "https://jobs.ashbyhq.com/EliseAI/97c0cc28-b7f7-4416-a907-1ce7fcf5ff39",
+   "location": "New York City · Toronto",
+   "remote": false,
+   "posted": "2026-11-23",
+   "department": "Deployments",
    "compensation": ""
   },
   {
@@ -6586,11 +6538,11 @@
    "board": "exa",
    "title": "Forward Deployed Engineer, APJ",
    "url": "https://jobs.ashbyhq.com/exa/8dc40d41-c1f3-4796-aed7-b614bcef1d72",
-   "location": "Singapore / India / Sydney",
+   "location": "Singapore",
    "remote": false,
    "posted": "2026-09-02",
    "department": "GTM",
-   "compensation": "SGD 190K – SGD 315K • Offers Equity • Multiple Ranges"
+   "compensation": "SGD 190K – SGD 315K • Offers Equity"
   },
   {
    "company": "Exa",
@@ -6843,6 +6795,18 @@
    "posted": "2026-10-01",
    "department": "Engineering",
    "compensation": "$130K – $175K • Offers Equity"
+  },
+  {
+   "company": "First Resonance",
+   "ats": "ashby",
+   "board": "first-resonance",
+   "title": "Forward Deployed Engineering Intern (Summer 2027)",
+   "url": "https://jobs.ashbyhq.com/first-resonance/465193ff-26d7-41d1-8202-2b4ecb22ad0a",
+   "location": "Los Angeles",
+   "remote": false,
+   "posted": "2026-11-23",
+   "department": "Internships",
+   "compensation": "$30 – $35"
   },
   {
    "company": "First Resonance",
@@ -7310,7 +7274,7 @@
    "remote": true,
    "posted": "2026-06-12",
    "department": "Engineering, Product & Design",
-   "compensation": "$165K – $350K • Offers Equity"
+   "compensation": "$207K – $386K • Offers Equity"
   },
   {
    "company": "Gecko Robotics",
@@ -7844,19 +7808,7 @@
    "company": "Hadrian",
    "ats": "ashby",
    "board": "hadrian-automation",
-   "title": "Director, Forward Deployed Engineering - Manufacturing",
-   "url": "https://jobs.ashbyhq.com/hadrian-automation/3dbea2da-8e23-4f0c-baff-9a4cf6268e95",
-   "location": "Los Angeles, CA",
-   "remote": false,
-   "posted": "2026-10-28",
-   "department": "Manufacturing",
-   "compensation": "$300K – $415K • Offers Equity"
-  },
-  {
-   "company": "Hadrian",
-   "ats": "ashby",
-   "board": "hadrian-automation",
-   "title": "Director, Forward Deployed Software Engineering",
+   "title": "Director, Forward Deployed Engineering",
    "url": "https://jobs.ashbyhq.com/hadrian-automation/9e76c3d0-b5a6-49e8-91b5-73967708628d",
    "location": "Los Angeles, CA",
    "remote": false,
@@ -7868,12 +7820,24 @@
    "company": "Hadrian",
    "ats": "ashby",
    "board": "hadrian-automation",
-   "title": "Director, Forward Deployed Software Engineering",
+   "title": "Director, Forward Deployed Engineering",
    "url": "https://jobs.ashbyhq.com/hadrian-automation/1153f8c7-57ca-49bc-b4ea-b1262aebf255",
    "location": "San Francisco Bay Area, CA",
    "remote": false,
    "posted": "2026-10-20",
    "department": "Engineering, Product, Design",
+   "compensation": "$300K – $415K • Offers Equity"
+  },
+  {
+   "company": "Hadrian",
+   "ats": "ashby",
+   "board": "hadrian-automation",
+   "title": "Director, Forward Deployed Engineering - Manufacturing",
+   "url": "https://jobs.ashbyhq.com/hadrian-automation/3dbea2da-8e23-4f0c-baff-9a4cf6268e95",
+   "location": "Los Angeles, CA",
+   "remote": false,
+   "posted": "2026-10-28",
+   "department": "Manufacturing",
    "compensation": "$300K – $415K • Offers Equity"
   },
   {
@@ -7892,7 +7856,7 @@
    "company": "Hadrian",
    "ats": "ashby",
    "board": "hadrian-automation",
-   "title": "Sr. Director, Forward Deployed Software Engineering",
+   "title": "Sr. Director, Forward Deployed Engineering",
    "url": "https://jobs.ashbyhq.com/hadrian-automation/801e864e-5fbb-493b-bc3a-9b5ff265fbaa",
    "location": "Los Angeles, CA",
    "remote": false,
@@ -7904,7 +7868,7 @@
    "company": "Hadrian",
    "ats": "ashby",
    "board": "hadrian-automation",
-   "title": "Sr. Director, Forward Deployed Software Engineering",
+   "title": "Sr. Director, Forward DeployedEngineering",
    "url": "https://jobs.ashbyhq.com/hadrian-automation/64b210f6-83f4-42d6-ba48-98df7c0cdf8c",
    "location": "San Francisco Bay Area, CA",
    "remote": false,
@@ -8345,18 +8309,6 @@
    "compensation": ""
   },
   {
-   "company": "Higharc",
-   "ats": "ashby",
-   "board": "higharc",
-   "title": "Forward Deployed Engineer",
-   "url": "https://jobs.ashbyhq.com/Higharc/8b550914-c42c-4b32-9f41-9a12a8812264",
-   "location": "Remote (New York City, NY) · Remote (Austin, TX) · Remote (Durham, NC) · Remote (San Francisco, CA)",
-   "remote": true,
-   "posted": "2026-09-17",
-   "department": "Software Engineering",
-   "compensation": ""
-  },
-  {
    "company": "Hippocratic AI",
    "ats": "ashby",
    "board": "hippocratic%20ai",
@@ -8762,18 +8714,6 @@
    "remote": false,
    "posted": "2025-09-05",
    "department": "Engineering",
-   "compensation": ""
-  },
-  {
-   "company": "Intercom",
-   "ats": "greenhouse",
-   "board": "intercom",
-   "title": "Forward Deployed Data Scientist",
-   "url": "https://job-boards.greenhouse.io/intercom/jobs/8245700",
-   "location": "Dublin, Ireland; London, England",
-   "remote": false,
-   "posted": "2026-10-05",
-   "department": "",
    "compensation": ""
   },
   {
@@ -9572,18 +9512,6 @@
    "company": "Lio",
    "ats": "ashby",
    "board": "lio",
-   "title": "Forward Deployed Engineer (all genders)",
-   "url": "https://jobs.ashbyhq.com/lio/cd43bf1d-099f-47a4-840c-a944587086a0",
-   "location": "New York Office",
-   "remote": false,
-   "posted": "2026-11-18",
-   "department": "Engineering",
-   "compensation": ""
-  },
-  {
-   "company": "Lio",
-   "ats": "ashby",
-   "board": "lio",
    "title": "Forward Deployed Engineer Intern (all genders)",
    "url": "https://jobs.ashbyhq.com/lio/79ab27cf-0508-4f00-97b8-1149b1ddc91e",
    "location": "Munich Office",
@@ -10010,18 +9938,6 @@
    "remote": true,
    "posted": "2026-09-30",
    "department": "Customer Success",
-   "compensation": ""
-  },
-  {
-   "company": "Matillion",
-   "ats": "lever",
-   "board": "matillion",
-   "title": "Staff Forward Deployed Engineer",
-   "url": "https://jobs.lever.co/matillion/a9b1cc3a-4509-4444-842e-2bec0276714d",
-   "location": "Manchester",
-   "remote": true,
-   "posted": "2026-08-03",
-   "department": "Software Development",
    "compensation": ""
   },
   {
@@ -11073,30 +10989,6 @@
    "ats": "greenhouse",
    "board": "nearform",
    "title": "Forward Deployed Strategist",
-   "url": "https://job-boards.greenhouse.io/nearform/jobs/8196651003",
-   "location": "Ireland",
-   "remote": false,
-   "posted": "2026-11-05",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Nearform",
-   "ats": "greenhouse",
-   "board": "nearform",
-   "title": "Forward Deployed Strategist",
-   "url": "https://job-boards.greenhouse.io/nearform/jobs/8196647003",
-   "location": "UK",
-   "remote": false,
-   "posted": "2026-11-05",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Nearform",
-   "ats": "greenhouse",
-   "board": "nearform",
-   "title": "Forward Deployed Strategist",
    "url": "https://job-boards.greenhouse.io/nearform/jobs/8196648003",
    "location": "United States",
    "remote": false,
@@ -11979,6 +11871,18 @@
    "posted": "2026-10-27",
    "department": "Forward Deployed Engineering",
    "compensation": "$207K – $294K • Offers Equity"
+  },
+  {
+   "company": "OpenAI",
+   "ats": "ashby",
+   "board": "openai",
+   "title": "Forward Deployed Engineer - Dublin",
+   "url": "https://jobs.ashbyhq.com/openai/b40efa93-da3c-4593-bc98-03d203cd0488",
+   "location": "Dublin, Ireland",
+   "remote": true,
+   "posted": "2026-11-23",
+   "department": "Forward Deployed Engineering",
+   "compensation": ""
   },
   {
    "company": "OpenAI",
@@ -13460,6 +13364,18 @@
    "company": "Palantir",
    "ats": "lever",
    "board": "palantir",
+   "title": "Forward Deployed Software Engineer - Spain",
+   "url": "https://jobs.lever.co/palantir/53fb4c05-f949-4146-a046-5c063c36a628",
+   "location": "Madrid, Spain",
+   "remote": false,
+   "posted": "2026-06-29",
+   "department": "Delta",
+   "compensation": ""
+  },
+  {
+   "company": "Palantir",
+   "ats": "lever",
+   "board": "palantir",
    "title": "Forward Deployed Software Engineer - Tactical Edge",
    "url": "https://jobs.lever.co/palantir/3d0d9d92-0321-4459-a17d-fa1a76636a43",
    "location": "Washington, D.C.",
@@ -13641,30 +13557,6 @@
    "ats": "lever",
    "board": "palantir",
    "title": "Forward Deployed Software Engineer, Internship - Commercial",
-   "url": "https://jobs.lever.co/palantir/d5486403-c050-4920-b2e0-91b69b61ebb2",
-   "location": "Chicago, IL",
-   "remote": false,
-   "posted": "2026-06-30",
-   "department": "Delta",
-   "compensation": ""
-  },
-  {
-   "company": "Palantir",
-   "ats": "lever",
-   "board": "palantir",
-   "title": "Forward Deployed Software Engineer, Internship - Commercial",
-   "url": "https://jobs.lever.co/palantir/4d29249a-d7e8-4c39-880d-3b35d7b2f6f6",
-   "location": "New York, NY",
-   "remote": false,
-   "posted": "2016-02-24",
-   "department": "Delta",
-   "compensation": ""
-  },
-  {
-   "company": "Palantir",
-   "ats": "lever",
-   "board": "palantir",
-   "title": "Forward Deployed Software Engineer, Internship - Commercial",
    "url": "https://jobs.lever.co/palantir/2ad0ab10-34c3-410d-883b-8052864a95cd",
    "location": "Seoul, South Korea",
    "remote": false,
@@ -13753,18 +13645,6 @@
    "location": "Chicago, IL",
    "remote": false,
    "posted": "2026-06-29",
-   "department": "Delta",
-   "compensation": ""
-  },
-  {
-   "company": "Palantir",
-   "ats": "lever",
-   "board": "palantir",
-   "title": "Forward Deployed Software Engineer, New Grad - Commercial",
-   "url": "https://jobs.lever.co/palantir/2aa14e4f-d406-486e-9aa8-6ff3358d70a0",
-   "location": "London, United Kingdom",
-   "remote": false,
-   "posted": "2025-08-01",
    "department": "Delta",
    "compensation": ""
   },
@@ -14336,18 +14216,6 @@
    "company": "PolyAI",
    "ats": "greenhouse",
    "board": "polyai",
-   "title": "Deployment Strategist (Must be based in U.S.)",
-   "url": "https://job-boards.eu.greenhouse.io/polyai/jobs/5041610101",
-   "location": "United States",
-   "remote": false,
-   "posted": "2026-11-18",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "PolyAI",
-   "ats": "greenhouse",
-   "board": "polyai",
    "title": "Deployment Strategist (Must be in U.K.)",
    "url": "https://job-boards.eu.greenhouse.io/polyai/jobs/5041617101",
    "location": "United Kingdom",
@@ -14480,11 +14348,11 @@
    "company": "project44",
    "ats": "greenhouse",
    "board": "project44",
-   "title": "Senior Forward Deployed Engineer- LSP",
-   "url": "https://job-boards.greenhouse.io/project44/jobs/8020636",
+   "title": "Senior Forward Deployed Engineer",
+   "url": "https://job-boards.greenhouse.io/project44/jobs/8383640",
    "location": "Chicago",
    "remote": false,
-   "posted": "2026-11-16",
+   "posted": "2026-11-23",
    "department": "",
    "compensation": ""
   },
@@ -14673,10 +14541,10 @@
    "ats": "lever",
    "board": "provectus",
    "title": "Senior Forward Deployed AI Engineer / Solutions Architect (GenAI, AWS)",
-   "url": "https://jobs.lever.co/provectus/e8ec6bcc-1884-4d81-967e-e118c67d4245",
+   "url": "https://jobs.lever.co/provectus/aa7c9d45-9691-4b09-b531-85bd0071d2a7",
    "location": "New York, New York · New York City Metropolitan Area · New Jersey · Connecticut · San Francisco Bay Area, California",
    "remote": true,
-   "posted": "2026-07-27",
+   "posted": "2026-11-23",
    "department": "SA practice - Pavel Borobov",
    "compensation": ""
   },
@@ -15278,18 +15146,6 @@
    "remote": false,
    "posted": "2026-03-12",
    "department": "Software & Systems Engineering",
-   "compensation": ""
-  },
-  {
-   "company": "RELEX Solutions",
-   "ats": "greenhouse",
-   "board": "relex",
-   "title": "Forward Deployed Engineer | Merchandising",
-   "url": "https://www.relexsolutions.com/careers/jobs/?gh_jid=7893773003",
-   "location": "Atlanta, GA, United States",
-   "remote": false,
-   "posted": "2026-08-18",
-   "department": "",
    "compensation": ""
   },
   {
@@ -16244,18 +16100,6 @@
    "company": "Sardine",
    "ats": "ashby",
    "board": "sardine",
-   "title": "Forward Deployed AI Engineer",
-   "url": "https://jobs.ashbyhq.com/sardine/4ff32b5d-13c6-4024-826c-04ed2881d688",
-   "location": "North America · United States · Canada",
-   "remote": true,
-   "posted": "2026-06-11",
-   "department": "Engineering",
-   "compensation": "$160K – $210K • Offers Equity • Multiple Ranges"
-  },
-  {
-   "company": "Sardine",
-   "ats": "ashby",
-   "board": "sardine",
    "title": "Forward Deployed Engineer, Integrations",
    "url": "https://jobs.ashbyhq.com/sardine/5a6411d4-455f-48d5-a282-7bec2bec3494",
    "location": "United States / Canada",
@@ -16334,7 +16178,7 @@
    "remote": false,
    "posted": "2026-10-21",
    "department": "Forward Deployable Eng",
-   "compensation": ""
+   "compensation": "$119K – $341K • Offers Equity • Multiple Ranges"
   },
   {
    "company": "Saronic",
@@ -16388,11 +16232,23 @@
    "company": "Sarvam",
    "ats": "ashby",
    "board": "sarvam",
-   "title": "Deployment Strategist",
-   "url": "https://jobs.ashbyhq.com/sarvam/48c228f1-0762-4d4e-9d83-ae8f751ce19d",
-   "location": "Bengaluru",
+   "title": "Deployment Strategist I (DS-1)",
+   "url": "https://jobs.ashbyhq.com/sarvam/9d8a0c6b-c391-46bf-960d-1b733f999863",
+   "location": "Delhi · Mumbai",
    "remote": false,
-   "posted": "2026-08-11",
+   "posted": "2026-11-23",
+   "department": "Deployment Engineering",
+   "compensation": ""
+  },
+  {
+   "company": "Sarvam",
+   "ats": "ashby",
+   "board": "sarvam",
+   "title": "Deployment Strategist II (DS-2)",
+   "url": "https://jobs.ashbyhq.com/sarvam/0e02db36-768a-4d16-9a54-a8eee10eb2c1",
+   "location": "Mumbai · Delhi",
+   "remote": false,
+   "posted": "2026-11-23",
    "department": "Deployment Engineering",
    "compensation": ""
   },
@@ -16406,7 +16262,7 @@
    "remote": true,
    "posted": "2026-11-20",
    "department": "R&D",
-   "compensation": ""
+   "compensation": "$170K – $225K • Offers Equity • Competitive Relocation Package"
   },
   {
    "company": "Savvy",
@@ -17061,18 +16917,6 @@
    "ats": "ashby",
    "board": "snowflake",
    "title": "Forward Deployed Engineer, Frontier Engineering",
-   "url": "https://jobs.ashbyhq.com/snowflake/a276eb40-644b-4384-9d9a-bae1c263baa6",
-   "location": "IN-Bangalore-MSO · IN-Mumbai-MSO",
-   "remote": true,
-   "posted": "2026-11-17",
-   "department": "Engineering",
-   "compensation": ""
-  },
-  {
-   "company": "Snowflake",
-   "ats": "ashby",
-   "board": "snowflake",
-   "title": "Forward Deployed Engineer, Frontier Engineering",
    "url": "https://jobs.ashbyhq.com/snowflake/e054c37d-8940-4cf6-b166-d5741991ad12",
    "location": "NZ-New Zealand-Remote",
    "remote": true,
@@ -17120,6 +16964,18 @@
    "company": "Snowflake",
    "ats": "ashby",
    "board": "snowflake",
+   "title": "Senior Forward Deployed Engineer, Applied AI",
+   "url": "https://jobs.ashbyhq.com/snowflake/fe41fd7e-56ad-4bdc-b13f-20adb2542171",
+   "location": "US-CA-Menlo Park · US-WA-Bellevue",
+   "remote": false,
+   "posted": "2026-10-28",
+   "department": "Engineering",
+   "compensation": "$200K – $287.5K"
+  },
+  {
+   "company": "Snowflake",
+   "ats": "ashby",
+   "board": "snowflake",
    "title": "Senior Principal Forward Deployed Engineer, Frontier Engineering",
    "url": "https://jobs.ashbyhq.com/snowflake/320f140f-bd7b-4df6-a2a8-f561bf83f7bf",
    "location": "US-CA-Menlo Park",
@@ -17151,18 +17007,6 @@
    "posted": "2026-09-24",
    "department": "Engineering",
    "compensation": "$200K – $270K"
-  },
-  {
-   "company": "Snowflake",
-   "ats": "ashby",
-   "board": "snowflake",
-   "title": "Staff Forward Deployed Engineer, Applied AI",
-   "url": "https://jobs.ashbyhq.com/snowflake/fe41fd7e-56ad-4bdc-b13f-20adb2542171",
-   "location": "US-CA-Menlo Park · US-WA-Bellevue",
-   "remote": false,
-   "posted": "2026-10-28",
-   "department": "Engineering",
-   "compensation": "$200K – $287.5K"
   },
   {
    "company": "Snowflake",
@@ -17621,18 +17465,6 @@
    "compensation": ""
   },
   {
-   "company": "Stripe",
-   "ats": "greenhouse",
-   "board": "stripe",
-   "title": "Forward Deployed Security Engineer",
-   "url": "https://stripe.com/jobs/search?gh_jid=8181003",
-   "location": "Dublin",
-   "remote": false,
-   "posted": "2026-09-06",
-   "department": "",
-   "compensation": ""
-  },
-  {
    "company": "Summation",
    "ats": "ashby",
    "board": "summation",
@@ -17841,7 +17673,7 @@
    "ats": "greenhouse",
    "board": "tailscale",
    "title": "Forward Deployed Engineer",
-   "url": "https://job-boards.greenhouse.io/tailscale/jobs/4754865005",
+   "url": "https://job-boards.greenhouse.io/tailscale/jobs/4754860005",
    "location": "Remote (United Kingdom)",
    "remote": true,
    "posted": "2026-11-19",
@@ -18116,11 +17948,11 @@
    "company": "Telnyx",
    "ats": "greenhouse",
    "board": "telnyx54",
-   "title": "Forward Deployed Engineer",
-   "url": "https://job-boards.greenhouse.io/telnyx54/jobs/7992744003",
-   "location": "Japan",
+   "title": "Forward Deployed Engineer (Remote)",
+   "url": "https://job-boards.greenhouse.io/telnyx54/jobs/7638348003",
+   "location": "New York, NY; Dallas, TX",
    "remote": false,
-   "posted": "2026-09-11",
+   "posted": "2026-03-06",
    "department": "",
    "compensation": ""
   },
@@ -18128,11 +17960,11 @@
    "company": "Telnyx",
    "ats": "greenhouse",
    "board": "telnyx54",
-   "title": "Forward Deployed Engineer (Remote)",
-   "url": "https://job-boards.greenhouse.io/telnyx54/jobs/7638348003",
-   "location": "New York, NY; Dallas, TX",
+   "title": "Forward Deployed Engineer | Remote",
+   "url": "https://job-boards.greenhouse.io/telnyx54/jobs/7992744003",
+   "location": "Japan",
    "remote": false,
-   "posted": "2026-03-06",
+   "posted": "2026-09-11",
    "department": "",
    "compensation": ""
   },
@@ -18169,18 +18001,6 @@
    "location": "Paris, France",
    "remote": false,
    "posted": "2026-09-21",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Telnyx",
-   "ats": "greenhouse",
-   "board": "telnyx54",
-   "title": "Forward Deployed Engineer, Hong Kong",
-   "url": "https://job-boards.greenhouse.io/telnyx54/jobs/7992749003",
-   "location": "Hong Kong",
-   "remote": false,
-   "posted": "2026-09-11",
    "department": "",
    "compensation": ""
   },
@@ -18263,18 +18083,6 @@
    "title": "Forward Deployed Engineer, Southern Europe",
    "url": "https://job-boards.greenhouse.io/telnyx54/jobs/7992715003",
    "location": "Milan, Italy",
-   "remote": false,
-   "posted": "2026-09-11",
-   "department": "",
-   "compensation": ""
-  },
-  {
-   "company": "Telnyx",
-   "ats": "greenhouse",
-   "board": "telnyx54",
-   "title": "Forward Deployed Engineer, UAE",
-   "url": "https://job-boards.greenhouse.io/telnyx54/jobs/7992726003",
-   "location": "Dubai, United Arab Emirates",
    "remote": false,
    "posted": "2026-09-11",
    "department": "",
@@ -18422,7 +18230,7 @@
    "remote": true,
    "posted": "2026-10-27",
    "department": "Embedded Solutions",
-   "compensation": "$170K – $190K • Offers Equity • Offers Commission • $30K – $40K Bonus"
+   "compensation": "$170K – $190K • Offers Equity • Offers Commission • $35K – $55K Bonus"
   },
   {
    "company": "Tennr",
@@ -18536,13 +18344,13 @@
    "company": "Titan",
    "ats": "ashby",
    "board": "titan-msp",
-   "title": "Forward Deployed Engineer, Customer Deployments",
+   "title": "Member of Technical Staff, Forward Deployed",
    "url": "https://jobs.ashbyhq.com/titan-msp/e1e6ea7c-aadb-4e08-9f5b-f2739f52ed5c",
    "location": "New York City · San Francisco",
    "remote": false,
-   "posted": "2026-11-17",
+   "posted": "2026-11-23",
    "department": "Engineering",
-   "compensation": ""
+   "compensation": "$150K – $250K • Offers Equity"
   },
   {
    "company": "Titan AI",
@@ -18579,6 +18387,18 @@
    "posted": "2026-05-27",
    "department": "Forward Deployed Engineering",
    "compensation": "$180K – $250K • Offers Equity"
+  },
+  {
+   "company": "Together AI",
+   "ats": "greenhouse",
+   "board": "togetherai",
+   "title": "Forward Deployed Engineer (Applied AI)",
+   "url": "https://job-boards.greenhouse.io/togetherai/jobs/5302781007",
+   "location": "San Francisco",
+   "remote": false,
+   "posted": "2026-11-23",
+   "department": "",
+   "compensation": ""
   },
   {
    "company": "Together AI",
@@ -18932,18 +18752,6 @@
    "company": "TRM Labs",
    "ats": "ashby",
    "board": "trm-labs",
-   "title": "Deployment Strategist, APAC",
-   "url": "https://jobs.ashbyhq.com/trm-labs/9ba428bd-9d7c-4799-bc4f-bad22ac200c5",
-   "location": "Singapore, Singapore",
-   "remote": true,
-   "posted": "2026-07-17",
-   "department": "Go-To-Market",
-   "compensation": ""
-  },
-  {
-   "company": "TRM Labs",
-   "ats": "ashby",
-   "board": "trm-labs",
    "title": "Deployment Strategist, CTI",
    "url": "https://jobs.ashbyhq.com/trm-labs/356c681c-d5b9-4078-8530-d29520987a34",
    "location": "United States",
@@ -19059,30 +18867,6 @@
    "posted": "2026-09-24",
    "department": "Product",
    "compensation": "$128,700 – $209,000 • Offers Equity • Multiple Ranges"
-  },
-  {
-   "company": "Trunk Tools",
-   "ats": "ashby",
-   "board": "trunk%20tools",
-   "title": "Forward Deployed Expert",
-   "url": "https://jobs.ashbyhq.com/Trunk%20Tools/c0574cc5-b2fb-4831-b0c2-78bf1a50eeec",
-   "location": "New York City HQ · Austin",
-   "remote": false,
-   "posted": "2026-07-28",
-   "department": "Customer Success ",
-   "compensation": "$148.5K – $200K • Offers Equity • Multiple Ranges"
-  },
-  {
-   "company": "Trunk Tools",
-   "ats": "ashby",
-   "board": "trunk%20tools",
-   "title": "Forward Deployed Expert, Manager",
-   "url": "https://jobs.ashbyhq.com/Trunk%20Tools/fdbd0699-1a22-4dcd-8bdd-d03ff5aa2a54",
-   "location": "New York City HQ",
-   "remote": false,
-   "posted": "2026-07-28",
-   "department": "Customer Success ",
-   "compensation": "$178K – $200K • Offers Equity"
   },
   {
    "company": "Turgon AI",
@@ -19845,18 +19629,6 @@
    "ats": "ashby",
    "board": "wonderful",
    "title": "Deployment Strategist",
-   "url": "https://jobs.ashbyhq.com/wonderful/e1d1cd24-c8bc-4ab5-8f6b-0a5efa0fad10",
-   "location": "Bulgaria",
-   "remote": false,
-   "posted": "2026-05-01",
-   "department": "S&M",
-   "compensation": ""
-  },
-  {
-   "company": "Wonderful",
-   "ats": "ashby",
-   "board": "wonderful",
-   "title": "Deployment Strategist",
    "url": "https://jobs.ashbyhq.com/wonderful/0503ad39-70f3-493e-9d08-67e337456b20",
    "location": "Czech Republic",
    "remote": false,
@@ -20421,9 +20193,21 @@
    "ats": "ashby",
    "board": "wonderful",
    "title": "Forward Deployed Engineer",
+   "url": "https://jobs.ashbyhq.com/wonderful/a72a7b06-68f5-42c2-9184-b518603b72ad",
+   "location": "Switzerland - Geneva",
+   "remote": true,
+   "posted": "2026-11-23",
+   "department": "S&M",
+   "compensation": ""
+  },
+  {
+   "company": "Wonderful",
+   "ats": "ashby",
+   "board": "wonderful",
+   "title": "Forward Deployed Engineer",
    "url": "https://jobs.ashbyhq.com/wonderful/7680ed64-80f1-485b-87b9-78cf32656d06",
    "location": "Switzerland - Zurich",
-   "remote": false,
+   "remote": true,
    "posted": "2026-08-31",
    "department": "S&M",
    "compensation": ""
